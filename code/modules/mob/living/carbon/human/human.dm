@@ -1117,3 +1117,29 @@
 
 /mob/living/carbon/human/species/zombie/infectious
 	race = /datum/species/zombie/infectious
+
+// honk start -- adds russ station species
+/mob/living/carbon/human/species/diona
+	race = /datum/species/diona
+
+/mob/living/carbon/human/species/dwarf
+	race = /datum/species/dwarf
+
+/mob/living/carbon/human/species/dwarf/lavaland
+	race = /datum/species/dwarf/lavaland
+
+/mob/living/carbon/human/species/skaven
+	race = /datum/species/skaven
+
+/mob/living/carbon/human/species/kitsune
+	race = /datum/species/human/kitsune
+
+/mob/living/carbon/human/species/kobold
+	race = /datum/species/kobold
+
+/mob/living/carbon/human/species/dwarf/mountain
+	race = /datum/species/dwarf/mountain
+
+/mob/living/carbon/human/species/dwarf/chaos
+	race = /datum/species/dwarf/chaos
+// honk end

@@ -1,0 +1,38 @@
+{
+	"version": 1,
+    "map_name": "Sugma Station",
+    "map_path": "map_files/ShitStation",
+    "map_file": "ShitStation.dmm",
+    "shuttles": {
+	    "cargo": "cargo_shit",
+	    "ferry": "ferry_fancy",
+	    "whiteship": "whiteship_box",
+	    "emergency": "emergency_shit"
+    },
+	"traits": [
+		{
+			"Baseturf": "/turf/open/space",
+			"Linkage": "Cross"
+		}
+	],
+	"minetype": "badlands",
+	"job_changes": {
+		"Captain": {
+			"total_positions": 3,
+			"spawn_positions": 2,
+			"paycheck": 25
+		},
+		"Clown": {
+			"total_positions": 4,
+			"spawn_positions": 3
+		},
+		"Cyborg": {
+			"total_positions": 3,
+			"spawn_positions": 2
+		},
+		"Prisoner": {
+			"total_positions": 5,
+			"spawn_positions": 3
+		}
+	}
+}

@@ -270,7 +270,7 @@
 		defense_mod += 1
 	if(HAS_TRAIT(target, TRAIT_GRABWEAKNESS))
 		defense_mod -= 2
-	if(HAS_TRAIT(target, TRAIT_DWARF))
+	if(HAS_TRAIT(target, TRAIT_DWARF) || HAS_TRAIT(target, TRAIT_LESSER_DWARFISM))//HONK -- added lesser dwarf
 		defense_mod -= 2
 	if(HAS_TRAIT(target, TRAIT_GIANT))
 		defense_mod += 2
@@ -313,10 +313,14 @@
 
 	if(HAS_TRAIT(sacker, TRAIT_CLUMSY))
 		attack_mod -= 2
-	if(HAS_TRAIT(sacker, TRAIT_DWARF))
+	if(HAS_TRAIT(sacker, TRAIT_DWARF) || HAS_TRAIT(sacker, TRAIT_LESSER_DWARFISM)) //HONK -- Added lesser dwarf
 		attack_mod -= 2
 	if(HAS_TRAIT(sacker, TRAIT_GIANT))
 		attack_mod += 2
+	// honk start -- Natural Tackler trait check
+	if(HAS_TRAIT(sacker, TRAIT_NATURALTACKLER))
+		attack_mod += 2
+	// honk end
 
 	if(HAS_TRAIT(sacker, TRAIT_TACKLING_WINGED_ATTACKER))
 		var/obj/item/organ/external/wings/moth/sacker_moth_wing = sacker.get_organ_slot(ORGAN_SLOT_EXTERNAL_WINGS)

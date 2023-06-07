@@ -88,7 +88,7 @@
 
 
 /turf/closed/mineral/attackby(obj/item/I, mob/user, params)
-	if (!ISADVANCEDTOOLUSER(user))
+	if (!ISADVANCEDTOOLUSER(user) && !islavalanddwarf(user)) // honk - dwarf exception for mining
 		to_chat(usr, span_warning("You don't have the dexterity to do this!"))
 		return
 

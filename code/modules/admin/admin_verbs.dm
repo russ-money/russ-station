@@ -79,6 +79,7 @@ GLOBAL_PROTECT(admin_verbs_admin)
 	/client/proc/jumptomob, /*allows us to jump to a specific mob*/
 	/client/proc/jumptoturf, /*allows us to jump to a specific turf*/
 	/client/proc/jumptocoord, /*we ghost and jump to a coordinate*/
+	/datum/admins/proc/manage_cryptocurrency, // honk - access crypto app without a console
 	/client/proc/list_bombers,
 	/client/proc/list_dna,
 	/client/proc/list_fingerprints,
@@ -123,6 +124,9 @@ GLOBAL_LIST_INIT(admin_verbs_fun, list(
 	/client/proc/set_ooc,
 	/client/proc/show_tip,
 	/client/proc/smite,
+	/client/proc/honk_smite, // honk -- new smites
+	/client/proc/twitchmeteor, // honk -- twitch intergration
+	/client/proc/twitch_command_announcement, //honk -- twitch intergration
 	/client/proc/summon_ert,
 	/client/proc/toggle_nuke,
 	/client/proc/toggle_random_events,

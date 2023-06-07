@@ -62,6 +62,11 @@
 			var/obj/item/organ/internal/liver/liver = drinker.get_organ_slot(ORGAN_SLOT_LIVER)
 			if (istype(liver))
 				liver.apply_organ_damage(((max(sqrt(volume) * (boozepwr ** ALCOHOL_EXPONENT) * liver.alcohol_tolerance * seconds_per_tick, 0))/150))
+	//HONK START -- Dwarf healing
+	if(isdwarftype(drinker))
+		drinker.adjustBruteLoss(-0.9 * REM * seconds_per_tick)
+		drinker.adjustFireLoss(-0.9 * REM * seconds_per_tick)
+	//HONK END
 	return ..()
 
 /datum/reagent/consumable/ethanol/expose_obj(obj/exposed_obj, reac_volume)
@@ -1072,7 +1077,7 @@
 /datum/reagent/consumable/ethanol/manly_dorf/on_mob_metabolize(mob/living/drinker)
 	if(ishuman(drinker))
 		var/mob/living/carbon/human/potential_dwarf = drinker
-		if(HAS_TRAIT(potential_dwarf, TRAIT_DWARF))
+		if(HAS_TRAIT(potential_dwarf, TRAIT_DWARF) || HAS_TRAIT(potential_dwarf, TRAIT_LESSER_DWARFISM)) //HONK - Added Lesser Dwarf
 			to_chat(potential_dwarf, span_notice("Now THAT is MANLY!"))
 			boozepwr = 50 // will still smash but not as much.
 			dorf_mode = TRUE

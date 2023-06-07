@@ -88,6 +88,11 @@
 	color = "#8228A0"
 	toxpwr = 3
 	material = /datum/material/plasma
+	//honk - start
+	produce_type = /obj/item/stack/sheet/mineral/plasma
+	attack_force = 10
+	pick_speed = 0.6
+	//honk - end
 	penetrates_skin = NONE
 	ph = 4
 	burning_temperature = 4500//plasma is hot!!

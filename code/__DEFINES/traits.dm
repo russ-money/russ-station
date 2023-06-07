@@ -1021,6 +1021,10 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 /// Currently fishing
 #define TRAIT_GONE_FISHING "fishing"
 
+// Honk Start: Kitsune Tackling Trait
+#define TRAIT_NATURALTACKLER "natural_tackler"
+// Honk end
+
 /// Makes a species be better/worse at tackling depending on their wing's status
 #define TRAIT_TACKLING_WINGED_ATTACKER "tacking_winged_attacker"
 

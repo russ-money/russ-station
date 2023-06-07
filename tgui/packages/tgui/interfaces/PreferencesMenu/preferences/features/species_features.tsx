@@ -79,3 +79,24 @@ export const heterochromatic: Feature<string> = {
   name: 'Heterochromatic (Right Eye) color',
   component: FeatureColorInput,
 };
+
+// honk start -- skaven features
+export const feature_skavencolor: FeatureChoiced = {
+  name: 'Fur color',
+  component: FeatureDropdownInput,
+};
+
+export const feature_skaven_tail: FeatureChoiced = {
+  name: 'Tail',
+  component: FeatureDropdownInput,
+};
+// honk end
+
+// honk start -- Kitsune tail
+
+export const feature_kitsune_tail: FeatureChoiced = {
+  name: 'Tail',
+  component: FeatureDropdownInput,
+};
+
+// honk end

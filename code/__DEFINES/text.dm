@@ -29,9 +29,9 @@
 
 // JSON text files found in the tgstation/strings folder
 /// File location for brain damage traumas
-#define BRAIN_DAMAGE_FILE "traumas.json"
+#define BRAIN_DAMAGE_FILE "russ_traumas.json" // honk -- replaced by our files
 /// File location for AI ion laws
-#define ION_FILE "ion_laws.json"
+#define ION_FILE "russ_ion_laws.json" // honk -- replaced by our files
 /// File location for pirate names
 #define PIRATE_NAMES_FILE "pirates.json"
 /// File location for redpill questions

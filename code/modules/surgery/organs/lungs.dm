@@ -41,6 +41,7 @@
 
 	//Breath damage
 	//These thresholds are checked against what amounts to total_mix_pressure * (gas_type_mols/total_mols)
+	var/safe_miasma_min = 0 // honk - skaven breathing, the real value is inside skaven lungs
 	var/safe_oxygen_min = 16 // Minimum safe partial pressure of O2, in kPa
 	var/safe_oxygen_max = 0
 	var/safe_nitro_min = 0
@@ -64,6 +65,8 @@
 	// Vars for N2O/healium induced euphoria, stun, and sleep.
 	var/n2o_euphoria = EUPHORIA_LAST_FLAG
 	var/healium_euphoria = EUPHORIA_LAST_FLAG
+
+
 
 
 	var/oxy_breath_dam_min = MIN_TOXIC_GAS_DAMAGE
@@ -115,6 +118,10 @@
 		respiration_type |= RESPIRATION_OXYGEN
 	if(safe_plasma_min)
 		respiration_type |= RESPIRATION_PLASMA
+	// honk start -- miasma
+	if(safe_miasma_min)
+		respiration_type |= RESPIRATION_MIASMA
+	// honk end
 
 	// Sets up what gases we want to react to, and in what way
 	// always is always processed, while_present is called when the gas is in the breath, and on_loss is called right after a gas is lost
@@ -146,6 +153,10 @@
 	add_gas_reaction(/datum/gas/healium, while_present = PROC_REF(consume_healium), on_loss = PROC_REF(lose_healium))
 	add_gas_reaction(/datum/gas/helium, while_present = PROC_REF(consume_helium), on_loss = PROC_REF(lose_helium))
 	add_gas_reaction(/datum/gas/hypernoblium, while_present = PROC_REF(consume_hypernoblium))
+	// honk start - sniff that fart gas
+	if(safe_miasma_min)
+		add_gas_reaction(/datum/gas/miasma, always = PROC_REF(breathe_miasma))
+	// honk end
 	if(suffers_miasma)
 		add_gas_reaction(/datum/gas/miasma, while_present = PROC_REF(too_much_miasma), on_loss = PROC_REF(safe_miasma))
 	add_gas_reaction(/datum/gas/nitrous_oxide, while_present = PROC_REF(too_much_n2o), on_loss = PROC_REF(safe_n2o))
@@ -163,6 +174,7 @@
 	receiver.clear_alert(ALERT_NOT_ENOUGH_NITRO)
 	receiver.clear_alert(ALERT_NOT_ENOUGH_PLASMA)
 	receiver.clear_alert(ALERT_NOT_ENOUGH_N2O)
+	receiver.clear_alert(ALERT_NOT_ENOUGH_MIASMA) // honk - dismisses the alert for skavens
 
 /obj/item/organ/internal/lungs/Remove(mob/living/carbon/organ_owner, special)
 	. = ..()
@@ -370,6 +382,27 @@
 /// Resets plasma side effects
 /obj/item/organ/internal/lungs/proc/safe_plasma(mob/living/carbon/breather, datum/gas_mixture/breath, old_plasma_pp)
 	breather.clear_alert(ALERT_TOO_MUCH_PLASMA)
+
+/// honk start - Miasma breathing, TG handles too_much_miasma
+/obj/item/organ/internal/lungs/proc/breathe_miasma(mob/living/carbon/breather, datum/gas_mixture/breath, miasma_pp, old_miasma_pp)
+	if(miasma_pp < safe_miasma_min && !HAS_TRAIT(src, TRAIT_SPACEBREATHING))
+		// Suffocation
+		breather.throw_alert(ALERT_NOT_ENOUGH_MIASMA, /atom/movable/screen/alert/not_enough_miasma)
+		// Still exhales CO2
+		var/gas_breathed = handle_suffocation(breather, miasma_pp, safe_miasma_min, breath.gases[/datum/gas/miasma][MOLES])
+		if(miasma_pp)
+			breathe_gas_volume(breath, /datum/gas/miasma, /datum/gas/carbon_dioxide, volume = gas_breathed)
+		return
+
+	if(old_miasma_pp < safe_miasma_min)
+		breather.failed_last_breath = FALSE
+		breather.clear_alert(ALERT_NOT_ENOUGH_MIASMA)
+	// Inhale Miasma, exhale equivalent amount of CO2.
+	breathe_gas_volume(breath, /datum/gas/miasma, /datum/gas/carbon_dioxide)
+	// Heal mob if not in crit.
+	if(breather.health >= breather.crit_threshold && breather.oxyloss)
+		breather.adjustOxyLoss(-5)
+/// honk end
 
 /// Too much funny gas, time to get brain damage
 /obj/item/organ/internal/lungs/proc/too_much_bz(mob/living/carbon/breather, datum/gas_mixture/breath, bz_pp, old_bz_pp)

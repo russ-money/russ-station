@@ -8,7 +8,7 @@
 	build_type = LIMBGROWER
 	reagents_list = list(/datum/reagent/medicine/c2/synthflesh = 25)
 	build_path = /obj/item/bodypart/arm/left
-	category = list(RND_CATEGORY_INITIAL, SPECIES_HUMAN, SPECIES_LIZARD, SPECIES_MOTH, SPECIES_PLASMAMAN, SPECIES_ETHEREAL)
+	category = list(RND_CATEGORY_INITIAL, SPECIES_HUMAN, SPECIES_LIZARD, SPECIES_MOTH, SPECIES_PLASMAMAN, SPECIES_ETHEREAL, SPECIES_SKAVEN)//honk - adds skaven limbs to the list
 
 /datum/design/rightarm
 	name = "Right Arm"
@@ -16,7 +16,7 @@
 	build_type = LIMBGROWER
 	reagents_list = list(/datum/reagent/medicine/c2/synthflesh = 25)
 	build_path = /obj/item/bodypart/arm/right
-	category = list(RND_CATEGORY_INITIAL, SPECIES_HUMAN, SPECIES_LIZARD, SPECIES_MOTH, SPECIES_PLASMAMAN, SPECIES_ETHEREAL)
+	category = list(RND_CATEGORY_INITIAL, SPECIES_HUMAN, SPECIES_LIZARD, SPECIES_MOTH, SPECIES_PLASMAMAN, SPECIES_ETHEREAL, SPECIES_SKAVEN)//honk - adds skaven limbs to the list
 
 /datum/design/leftleg
 	name = "Left Leg"
@@ -24,7 +24,7 @@
 	build_type = LIMBGROWER
 	reagents_list = list(/datum/reagent/medicine/c2/synthflesh = 25)
 	build_path = /obj/item/bodypart/leg/left
-	category = list(RND_CATEGORY_INITIAL, SPECIES_HUMAN, SPECIES_LIZARD, SPECIES_MOTH, SPECIES_PLASMAMAN, SPECIES_ETHEREAL, RND_CATEGORY_LIMBS_DIGITIGRADE)
+	category = list(RND_CATEGORY_INITIAL, SPECIES_HUMAN, SPECIES_LIZARD, SPECIES_MOTH, SPECIES_PLASMAMAN, SPECIES_ETHEREAL, RND_CATEGORY_LIMBS_DIGITIGRADE, SPECIES_SKAVEN)//honk - adds skaven limbs to the list
 
 /datum/design/rightleg
 	name = "Right Leg"
@@ -32,7 +32,7 @@
 	build_type = LIMBGROWER
 	reagents_list = list(/datum/reagent/medicine/c2/synthflesh = 25)
 	build_path = /obj/item/bodypart/leg/right
-	category = list(RND_CATEGORY_INITIAL, SPECIES_HUMAN, SPECIES_LIZARD, SPECIES_MOTH, SPECIES_PLASMAMAN, SPECIES_ETHEREAL, RND_CATEGORY_LIMBS_DIGITIGRADE)
+	category = list(RND_CATEGORY_INITIAL, SPECIES_HUMAN, SPECIES_LIZARD, SPECIES_MOTH, SPECIES_PLASMAMAN, SPECIES_ETHEREAL, RND_CATEGORY_LIMBS_DIGITIGRADE, SPECIES_SKAVEN)//honk - adds skaven limbs to the list
 
 //Non-limb limb designs
 
@@ -197,6 +197,41 @@
 	build_path = /obj/item/organ/internal/lungs/ethereal
 	category = list(SPECIES_ETHEREAL)
 
+//honk start - Skaven Organ Limb Designs
+/datum/design/skaven_lungs
+	name = "Skaven Lungs"
+	id = "skavenlungs"
+	build_type = LIMBGROWER
+	reagents_list = list(/datum/reagent/medicine/c2/synthflesh = 15, /datum/reagent/toxin/bad_food = 10)
+	build_path = /obj/item/organ/internal/lungs/skaven
+	category = list(SPECIES_SKAVEN)
+
+/datum/design/skaven_tongue
+	name = "Putrid Blistering Tongue"
+	id = "skaventongue"
+	build_type = LIMBGROWER
+	reagents_list = list(/datum/reagent/medicine/c2/synthflesh = 10, /datum/reagent/toxin/bad_food = 10)
+	build_path = /obj/item/organ/internal/tongue/skaven
+	category = list(SPECIES_SKAVEN)
+
+/datum/design/skaven_ears
+	name = "Skaven Ears"
+	id = "skavenears"
+	build_type = LIMBGROWER
+	reagents_list = list(/datum/reagent/medicine/c2/synthflesh = 10, /datum/reagent/toxin/bad_food = 10)
+	build_path = /obj/item/organ/internal/ears/skaven
+	category = list(SPECIES_SKAVEN)
+
+/datum/design/skaven_tail
+	name = "Skaven Tail"
+	id = "skaventail"
+	build_type = LIMBGROWER
+	reagents_list = list(/datum/reagent/medicine/c2/synthflesh = 20, /datum/reagent/toxin/bad_food = 10)
+	build_path = /obj/item/organ/external/tail/skaven
+	category = list(SPECIES_SKAVEN)
+
+//honk end
+
 // Intentionally not growable by normal means - for balance conerns.
 /datum/design/ethereal_heart
 	name = "Crystal Core"
@@ -213,6 +248,24 @@
 	reagents_list = list(/datum/reagent/medicine/c2/synthflesh = 75)
 	build_path = /obj/item/melee/synthetic_arm_blade
 	category = list(RND_CATEGORY_LIMBS_OTHER, RND_CATEGORY_HACKED)
+
+// Honk start -- Kitsune designs
+/datum/design/fox_ears
+	name = "Fox Ears"
+	id = "foxears"
+	build_type = LIMBGROWER
+	reagents_list = list(/datum/reagent/medicine/c2/synthflesh = 10)
+	build_path = /obj/item/organ/internal/ears/kitsune
+	category = list(SPECIES_KITSUNE)
+
+/datum/design/fox_tail
+	name = "Fox Tail"
+	id = "foxtail"
+	build_type = LIMBGROWER
+	reagents_list = list(/datum/reagent/medicine/c2/synthflesh = 15)
+	build_path = /obj/item/organ/external/tail/kitsune
+	category = list(SPECIES_KITSUNE)
+// honk end
 
 /// Design disks and designs - for adding limbs and organs to the limbgrower.
 /obj/item/disk/design_disk/limbs
@@ -279,3 +332,26 @@
 	desc = "Contains designs for ethereal organs for the limbgrower - Ethereal tongue and stomach."
 	id = "limbdesign_ethereal"
 	build_path = /obj/item/disk/design_disk/limbs/ethereal
+
+// Honk start -- kitsune and skaven design disks
+/obj/item/disk/design_disk/limbs/kitsune
+	name = "Kitsune Organ Design Disk"
+	limb_designs = list(/datum/design/fox_ears, /datum/design/fox_tail)
+
+/datum/design/limb_disk/kitsune
+	name = "Kitsune Organ Design Disk"
+	desc = "Contains designs for Kitsune organs for the limbgrower - Kitsune ears and tail."
+	id = "limbdesign_kitsune"
+	build_path = /obj/item/disk/design_disk/limbs/kitsune
+
+/obj/item/disk/design_disk/limbs/skaven
+	name = "Skaven Organ Design Disk"
+	limb_designs = list(/datum/design/skaven_lungs, /datum/design/skaven_tongue, /datum/design/skaven_ears, /datum/design/skaven_tail)
+
+/datum/design/limb_disk/skaven
+	name = "Skaven Organ Design Disk"
+	desc = "Contains designs for skaven organs for the limbgrower - Skaven ears, tail, lungs, and tongue."
+	id = "limbdesign_skaven"
+	build_path = /obj/item/disk/design_disk/limbs/skaven
+
+// honk end

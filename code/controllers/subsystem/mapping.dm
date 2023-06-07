@@ -242,11 +242,17 @@ SUBSYSTEM_DEF(mapping)
 	var/list/ice_ruins = levels_by_trait(ZTRAIT_ICE_RUINS)
 	if (ice_ruins.len)
 		// needs to be whitelisted for underground too so place_below ruins work
-		seedRuins(ice_ruins, CONFIG_GET(number/icemoon_budget), list(/area/icemoon/surface/outdoors/unexplored), themed_ruins[ZTRAIT_ICE_RUINS], clear_below = TRUE)
+		seedRuins(ice_ruins, CONFIG_GET(number/icemoon_budget), list(/area/icemoon/surface/outdoors/unexplored, /area/icemoon/underground/unexplored), themed_ruins[ZTRAIT_ICE_RUINS])
 
 	var/list/ice_ruins_underground = levels_by_trait(ZTRAIT_ICE_RUINS_UNDERGROUND)
 	if (ice_ruins_underground.len)
-		seedRuins(ice_ruins_underground, CONFIG_GET(number/icemoon_budget), list(/area/icemoon/underground/unexplored), themed_ruins[ZTRAIT_ICE_RUINS_UNDERGROUND], clear_below = TRUE)
+		seedRuins(ice_ruins_underground, CONFIG_GET(number/icemoon_budget), list(/area/icemoon/underground/unexplored), themed_ruins[ZTRAIT_ICE_RUINS_UNDERGROUND])
+
+	// honk start - badlands ruins generation
+	var/list/badlands_ruins = levels_by_trait(ZTRAIT_BADLANDS_RUINS)
+	if (badlands_ruins.len)
+		seedRuins(badlands_ruins, CONFIG_GET(number/lavaland_budget), list(/area/badlands/unexplored), themed_ruins[ZTRAIT_BADLANDS_RUINS])
+	// honk end
 
 	// Generate deep space ruins
 	var/list/space_ruins = levels_by_trait(ZTRAIT_SPACE_RUINS)
@@ -263,11 +269,17 @@ SUBSYSTEM_DEF(mapping)
 
 	var/list/ice_ruins = levels_by_trait(ZTRAIT_ICE_RUINS)
 	for (var/ice_z in ice_ruins)
-		spawn_rivers(ice_z, 4, /turf/open/openspace/icemoon, /area/icemoon/surface/outdoors/unexplored/rivers)
+		spawn_rivers(ice_z, 4, /turf/open/misc/asteroid/snow/icemoon, /area/icemoon/surface/outdoors/unexplored/rivers) // honk - prevent ruin chasms into station
 
 	var/list/ice_ruins_underground = levels_by_trait(ZTRAIT_ICE_RUINS_UNDERGROUND)
 	for (var/ice_z in ice_ruins_underground)
 		spawn_rivers(ice_z, 4, level_trait(ice_z, ZTRAIT_BASETURF), /area/icemoon/underground/unexplored/rivers)
+
+	// honk start -- bad lands shrugs
+	var/list/badlands_ruins = levels_by_trait(ZTRAIT_BADLANDS_RUINS)
+	for (var/bad_z in badlands_ruins)
+		spawn_rivers(bad_z, 4, level_trait(bad_z, ZTRAIT_BASETURF), /area/badlands/unexplored)
+	// honk end
 
 /datum/controller/subsystem/mapping/proc/wipe_reservations(wipe_safety_delay = 100)
 	if(clearing_reserved_turfs || !initialized) //in either case this is just not needed.
@@ -429,6 +441,12 @@ Used by the AI doomsday and the self-destruct nuke.
 
 	if(config.minetype == "lavaland")
 		LoadGroup(FailedZs, "Lavaland", "map_files/Mining", "Lavaland.dmm", default_traits = ZTRAITS_LAVALAND)
+	// honk start - IceMoon and Badlands variants
+	else if(config.minetype == "icemoon")
+		LoadGroup(FailedZs, "IceMoon", "map_files/Mining", "IceMoon.dmm", default_traits = ZTRAITS_ICEMOON)
+	else if(config.minetype == "badlands")
+		LoadGroup(FailedZs, "Badlands", "map_files/Mining", "Badlands.dmm", default_traits = ZTRAITS_BADLANDS)
+	// honk end
 	else if (!isnull(config.minetype) && config.minetype != "none")
 		INIT_ANNOUNCE("WARNING: An unknown minetype '[config.minetype]' was set! This is being ignored! Update the maploader code!")
 #endif
