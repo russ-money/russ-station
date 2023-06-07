@@ -771,7 +771,12 @@
 		if(owner_species.fixed_mut_color)
 			species_color = owner_species.fixed_mut_color
 		else
-			species_color = human_owner.dna.features["mcolor"]
+			// honk start - skaven unique colors
+			if(isskaven(human_owner))
+				species_color = human_owner.dna.features["skaven_color"]
+			else
+				species_color = human_owner.dna.features["mcolor"]
+			// honk end
 	else
 		species_color = null
 

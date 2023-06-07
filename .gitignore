@@ -233,3 +233,9 @@ Tracy.exe
 
 # From /tools/define_sanity/check.py - potential output file that we load onto the user's machine that we don't want to have committed.
 define_sanity_output.txt
+# Private configs
+/config/dbconfig.txt
+/config/in_character_filter.txt
+
+# upstream github workflows (until we integrate them)
+/.github/workflows/*

@@ -21,6 +21,7 @@
 #define POLL_IGNORE_ACADEMY_WIZARD "academy_wizard"
 #define POLL_IGNORE_PAI "pai"
 #define POLL_IGNORE_VENUSHUMANTRAP "venus_human_trap"
+#define POLL_IGNORE_DWARF "dwarf" //honk
 #define POLL_IGNORE_REGAL_RAT "regal_rat"
 #define POLL_IGNORE_CARGORILLA "cargorilla"
 #define POLL_IGNORE_MONKEY_HELMET "mind_magnified_monkey"
@@ -50,6 +51,7 @@ GLOBAL_LIST_INIT(poll_ignore_desc, list(
 	POLL_IGNORE_ACADEMY_WIZARD = "Academy Wizard Defender",
 	POLL_IGNORE_PAI = JOB_PERSONAL_AI,
 	POLL_IGNORE_VENUSHUMANTRAP = "Venus Human Traps",
+	POLL_IGNORE_DWARF = "Dwarf Dorm Room", // honk
 	POLL_IGNORE_REGAL_RAT = "Regal rat",
 	POLL_IGNORE_CARGORILLA = "Cargorilla",
 	POLL_IGNORE_MONKEY_HELMET = "Mind magnified monkey",

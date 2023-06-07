@@ -121,7 +121,7 @@
 	if(SSshuttle.arrivals?.mode == SHUTTLE_CALL)
 		var/atom/movable/screen/splash/Spl = new(null, boarder.client, TRUE)
 		Spl.Fade(TRUE)
-		boarder.playsound_local(get_turf(boarder), 'sound/voice/ApproachingTG.ogg', 25)
+		boarder.playsound_local(get_turf(boarder), 'russstation/sound/voice/ApproachingRuss.ogg', 25) // honk - we're not tg
 	boarder.update_parallax_teleport()
 
 

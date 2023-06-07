@@ -1063,6 +1063,13 @@
 	reagent_state = SOLID
 	taste_description = "iron"
 	material = /datum/material/iron
+	//honk - start
+	produce_type = /obj/item/stack/sheet/iron
+	attack_force = 15
+	pick_speed = 1
+	blunt_damage = TRUE
+	sharp_result = TRUE
+	//honk end
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 	color = "#606060" //pure iron? let's make it violet of course
 	ph = 6
@@ -1079,6 +1086,13 @@
 	color = "#F7C430" // rgb: 247, 196, 48
 	taste_description = "expensive metal"
 	material = /datum/material/gold
+	//honk - start
+	produce_type = /obj/item/stack/sheet/mineral/gold
+	attack_force = 10
+	pick_speed = 1.5
+	blunt_damage = TRUE
+	sharp_result = TRUE
+	//honk end
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 
 /datum/reagent/silver
@@ -1088,6 +1102,13 @@
 	color = "#D0D0D0" // rgb: 208, 208, 208
 	taste_description = "expensive yet reasonable metal"
 	material = /datum/material/silver
+	//honk - start
+	produce_type = /obj/item/stack/sheet/mineral/silver
+	attack_force = 15
+	pick_speed = 1.2
+	blunt_damage = TRUE
+	sharp_result = TRUE
+	//honk end
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 
 /datum/reagent/uranium
@@ -1102,6 +1123,12 @@
 	material = /datum/material/uranium
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 	default_container = /obj/effect/decal/cleanable/greenglow
+	//honk start - dorfsmithing stats
+	produce_type = /obj/item/stack/sheet/mineral/uranium
+	attack_force = 10
+	pick_speed = 1.75
+	sharp_result = TRUE
+	//honk end
 
 /datum/reagent/uranium/on_mob_life(mob/living/carbon/affected_mob, seconds_per_tick, times_fired)
 	affected_mob.adjustToxLoss(tox_damage * seconds_per_tick * REM)

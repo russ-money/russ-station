@@ -101,4 +101,5 @@
 	var/datum/atom_hud/fan = GLOB.huds[DATA_HUD_FAN]
 	fan.show_to(H)
 	H.faction |= FACTION_CLOWN
+	H.fart = new /datum/fart/human/clown() // honk -- clown farts
 

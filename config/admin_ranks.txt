@@ -54,29 +54,29 @@ Include = @ SPAWN VAREDIT BAN
 Exclude =
 Edit =
 
-Name = Badmin
+Name = Admin
 Include = @ POSSESS POLL BUILD SERVER FUN
 Exclude =
 Edit =
 
-Name = Game Admin
+Name = Badmin
 Include = @ STEALTH SOUND DEBUG
 Exclude =
 Edit =
 
-Name = Game Master
-Include = EVERYTHING
+Name = Goodmin
+Include = @
 Exclude =
-Edit = EVERYTHING
+Edit =
 
-Name = Lazy Master
-Include = EVERYTHING
-Exclude = AUTOADMIN
-Edit = EVERYTHING
+Name = Dadmin
+Include = @
+Exclude =
+Edit =
 
 Name = Host
 Include = EVERYTHING
-Exclude =
+Exclude = AUTOADMIN
 Edit = EVERYTHING
 
 Name = Coder

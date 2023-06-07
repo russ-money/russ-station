@@ -23,6 +23,7 @@ GLOBAL_LIST_INIT(exp_specialmap, list(
 		ROLE_MAINTENANCE_DRONE,
 		ROLE_VENUSHUMANTRAP,
 		ROLE_GHOST_ROLE,
+		ROLE_DWARF, // honk -- add dwarf role
 		), // Ghost roles
 	EXP_TYPE_GHOST = list() // dead people, observers
 ))

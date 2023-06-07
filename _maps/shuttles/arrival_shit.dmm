@@ -1,0 +1,131 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ab" = (
+/obj/machinery/door/airlock/shuttle/glass,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/arrival)
+"ac" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/obj/machinery/light/dim/directional/west,
+/turf/open/floor/mineral/titanium/white,
+/area/shuttle/arrival)
+"ai" = (
+/obj/effect/spawner/structure/window/reinforced/shuttle,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/arrival)
+"am" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/machinery/light/dim/directional/north,
+/turf/open/floor/mineral/titanium/white,
+/area/shuttle/arrival)
+"at" = (
+/obj/machinery/power/shuttle_engine/propulsion/burst/right{
+	dir = 4
+	},
+/obj/docking_port/mobile/arrivals{
+	height = 6;
+	width = 5
+	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/arrival)
+"aD" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/corner,
+/obj/machinery/light/dim/directional/west,
+/turf/open/floor/mineral/titanium/white,
+/area/shuttle/arrival)
+"aN" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/turf/open/floor/mineral/titanium/white,
+/area/shuttle/arrival)
+"aY" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/turf/open/floor/mineral/titanium/white,
+/area/shuttle/arrival)
+"hm" = (
+/obj/machinery/light/dim/directional/south,
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/turf/open/floor/mineral/titanium/white,
+/area/shuttle/arrival)
+"hy" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/turf/open/floor/mineral/titanium/white,
+/area/shuttle/arrival)
+"ip" = (
+/obj/machinery/power/shuttle_engine/propulsion/burst/right{
+	dir = 4
+	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/arrival)
+"Yu" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/arrival)
+
+(1,1,1) = {"
+Yu
+Yu
+ai
+Yu
+Yu
+"}
+(2,1,1) = {"
+Yu
+ac
+hy
+aD
+Yu
+"}
+(3,1,1) = {"
+ab
+aY
+hy
+aN
+ab
+"}
+(4,1,1) = {"
+ab
+aY
+hy
+aN
+ab
+"}
+(5,1,1) = {"
+Yu
+am
+hy
+hm
+Yu
+"}
+(6,1,1) = {"
+ip
+ip
+at
+ip
+ip
+"}

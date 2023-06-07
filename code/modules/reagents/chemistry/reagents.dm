@@ -62,6 +62,15 @@ GLOBAL_LIST_INIT(name2reagent, build_name2reagent())
 	var/harmful = FALSE
 	/// Are we from a material? We might wanna know that for special stuff. Like metalgen. Is replaced with a ref of the material on New()
 	var/datum/material/material
+	//honk - dorf smithing vars (tried creating a sperate file but it wouldn't work, this is the best way to do it)
+	var/attack_force = 5 //damage by force
+	var/penetration_value = 0 // bad dragon xd
+	var/sharp_result = FALSE // if the molded reagent comes out sharp
+	var/pick_speed = 40 // how fast the reagent would mine
+	var/produce_type = /obj/item/stack/ore/slag // what a reagent produces if used in mold... dumbs it down so you dont add oxygen to molds making oxygen tools
+	var/blunt_damage = FALSE //if the reagen would make a good blunt weapon
+	//honk - end (These values do not effect the overall reagent, the only time these vars come into action is when smelting them into weapons! so dont panic)
+
 	///A list of causes why this chem should skip being removed, if the length is 0 it will be removed from holder naturally, if this is >0 it will not be removed from the holder.
 	var/list/reagent_removal_skip_list = list()
 	///The set of exposure methods this penetrates skin with.

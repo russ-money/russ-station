@@ -1,0 +1,198 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aI" = (
+/obj/machinery/power/shuttle_engine/propulsion{
+	dir = 1;
+	engine_power = 5
+	},
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/escape)
+"aS" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/escape)
+"dN" = (
+/obj/machinery/power/shuttle_engine/propulsion{
+	dir = 1;
+	engine_power = 5
+	},
+/turf/closed/wall/mineral/titanium/interior,
+/area/shuttle/escape)
+"eg" = (
+/obj/machinery/door/airlock/titanium{
+	name = "Emergency Shuttle Airlock"
+	},
+/obj/docking_port/mobile/emergency{
+	dir = 2;
+	height = 5;
+	port_direction = 1;
+	preferred_direction = 2;
+	width = 13
+	},
+/turf/open/floor/mineral/titanium/yellow,
+/area/shuttle/escape)
+"fy" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/item/grown/bananapeel/bluespace{
+	icon_state = "banana_peel"
+	},
+/obj/item/grown/bananapeel/bluespace{
+	icon_state = "banana_peel"
+	},
+/obj/item/grown/bananapeel/bluespace{
+	icon_state = "banana_peel"
+	},
+/turf/open/floor/mineral/titanium/yellow,
+/area/shuttle/escape)
+"gD" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/obj/item/grown/bananapeel/bluespace{
+	icon_state = "banana_peel"
+	},
+/obj/item/grown/bananapeel/bluespace{
+	icon_state = "banana_peel"
+	},
+/obj/item/grown/bananapeel/bluespace{
+	icon_state = "banana_peel"
+	},
+/turf/open/floor/mineral/titanium/yellow,
+/area/shuttle/escape)
+"qw" = (
+/turf/closed/wall/mineral/titanium/overspace,
+/area/shuttle/escape)
+"zI" = (
+/obj/structure/chair/comfy/shuttle,
+/obj/item/grown/bananapeel/bluespace{
+	icon_state = "banana_peel"
+	},
+/obj/item/grown/bananapeel/bluespace{
+	icon_state = "banana_peel"
+	},
+/turf/open/floor/mineral/titanium/yellow,
+/area/shuttle/escape)
+"AA" = (
+/obj/machinery/computer/emergency_shuttle{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium/yellow,
+/area/shuttle/escape)
+"Bk" = (
+/obj/effect/spawner/structure/window/reinforced/shuttle,
+/turf/open/floor/plating,
+/area/shuttle/escape)
+"TX" = (
+/obj/machinery/light/directional/north,
+/obj/item/grown/bananapeel/bluespace{
+	icon_state = "banana_peel"
+	},
+/obj/item/grown/bananapeel/bluespace{
+	icon_state = "banana_peel"
+	},
+/obj/item/grown/bananapeel/bluespace{
+	icon_state = "banana_peel"
+	},
+/turf/open/floor/mineral/titanium/yellow,
+/area/shuttle/escape)
+"Wu" = (
+/obj/machinery/door/airlock/titanium{
+	name = "Emergency Shuttle Airlock"
+	},
+/turf/open/floor/mineral/titanium/yellow,
+/area/shuttle/escape)
+"XU" = (
+/turf/template_noop,
+/area/template_noop)
+
+(1,1,1) = {"
+aI
+aS
+qw
+XU
+XU
+"}
+(2,1,1) = {"
+Wu
+fy
+aS
+aS
+qw
+"}
+(3,1,1) = {"
+aS
+TX
+zI
+AA
+Bk
+"}
+(4,1,1) = {"
+Wu
+gD
+aS
+aS
+qw
+"}
+(5,1,1) = {"
+dN
+aS
+qw
+XU
+XU
+"}
+(6,1,1) = {"
+XU
+XU
+XU
+XU
+XU
+"}
+(7,1,1) = {"
+XU
+XU
+XU
+XU
+XU
+"}
+(8,1,1) = {"
+XU
+XU
+XU
+XU
+XU
+"}
+(9,1,1) = {"
+aI
+aS
+qw
+XU
+XU
+"}
+(10,1,1) = {"
+eg
+fy
+aS
+aS
+qw
+"}
+(11,1,1) = {"
+aS
+TX
+zI
+AA
+Bk
+"}
+(12,1,1) = {"
+Wu
+gD
+aS
+aS
+qw
+"}
+(13,1,1) = {"
+dN
+aS
+qw
+XU
+XU
+"}

@@ -372,7 +372,7 @@
 		"component_printer",
 		"integrated_circuit",
 		"module_duplicator",
-		"usb_cable"
+		"usb_cable",
 	)
 
 /////////////////////////Biotech/////////////////////////
@@ -435,8 +435,11 @@
 		"limbdesign_ethereal",
 		"limbdesign_felinid",
 		"limbdesign_lizard",
-		"limbdesign_plasmaman",
+		"limbdesign_plasmaman",//honk start - Adding the Skaven and kitsune Designs to the Research
+		"limbdesign_skaven",
+		"limbdesign_kitsune",//honk end
 	)
+
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 6500)
 	discount_experiments = list(
 		/datum/experiment/scanning/random/cytology/easy = 1000,
@@ -595,6 +598,7 @@
 		"thermomachine",
 		"w-recycler",
 		"welding_goggles",
+		"crypto_mining_rig", // honk - add crypto base rig to basic engineering techweb
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 12500)
 	discount_experiments = list(/datum/experiment/scanning/random/material/easy = 7500)
