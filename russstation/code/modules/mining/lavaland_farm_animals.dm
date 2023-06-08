@@ -15,7 +15,7 @@
 		/obj/item/stack/sheet/bone = 15,
 	)
 
-/mob/living/simple_animal/chicken/lavaland
+/mob/living/basic/chicken/lavaland
 	name = "\improper lavaland chicken"
 	desc = "Hopefully the eggs are good this season. Looks like you could feed it anything edible."
 	color = "#444444"
@@ -28,11 +28,11 @@
 		/obj/item/stack/sheet/bone = 2,
 		/obj/item/food/egg/lavaegg = 1
 	)
-	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
-	minbodytemp = 0
-	maxbodytemp = 1500
+	habitable_atmos = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
+	minimum_survivable_temperature = 0
+	maximum_survivable_temperature = 0
 
-/mob/living/simple_animal/chicken/lavaland/Initialize(mapload)
+/mob/living/basic/chicken/lavaland/Initialize(mapload)
 	. = ..()
 	GLOB.chicken_count++
 	AddElement(/datum/element/animal_variety, "chicken", pick("brown","black","white"), TRUE)
@@ -48,7 +48,7 @@
 	)
 	ADD_TRAIT(src, TRAIT_VENTCRAWLER_ALWAYS, INNATE_TRAIT)
 
-/mob/living/simple_animal/chick/lavaland
+/mob/living/basic/chick/lavaland
 	name = "\improper lavaland chick"
 	desc = "Looks like a walking puddle of water, but loud."
 	color = "#992121"
@@ -56,13 +56,7 @@
 		/obj/item/food/meat/slab/chicken = 1,
 		/obj/item/stack/sheet/bone = 1,
 	)
-	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
-	minbodytemp = 0
-	maxbodytemp = 1500
-
-/mob/living/simple_animal/chick/lavaland/Life(seconds_per_tick = SSMOBS_DT, times_fired)
-	if(!stat && !ckey)
-		amount_grown += rand(0.5 * seconds_per_tick, 1 * seconds_per_tick)
-		if(amount_grown >= 100)
-			new /mob/living/simple_animal/chicken/lavaland(src.loc)
-			qdel(src)
+	habitable_atmos = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
+	minimum_survivable_temperature = 0
+	maximum_survivable_temperature = 0
+	grow_as = /mob/living/basic/chicken/lavaland

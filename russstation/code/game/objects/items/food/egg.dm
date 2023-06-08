@@ -19,14 +19,14 @@
 		var/chance = rand(0, 255)
 		switch(chance)
 			if(0 to 30)
-				new /mob/living/simple_animal/chick/icemoon(hit_turf)
+				new /mob/living/basic/chick/icemoon(hit_turf)
 				GLOB.chicks_from_eggs++
 				visible_message(span_notice("A chick comes out of the cracked egg!"))
 			if(31)
 				var/spawned_chickens = min(4, MAX_CHICKENS - GLOB.chicks_from_eggs) // We don't want to go over the limit
 				visible_message(span_notice("[spawned_chickens] chicks come out of the egg! Jackpot!"))
 				for(var/i in 1 to spawned_chickens)
-					new /mob/living/simple_animal/chick/icemoon(hit_turf)
+					new /mob/living/basic/chick/icemoon(hit_turf)
 					GLOB.chicks_from_eggs++
 	qdel(src)
 
@@ -34,7 +34,7 @@
 	. = ..()
 
 	AddComponent(/datum/component/fertile_egg,\
-		embryo_type = /mob/living/simple_animal/chick/icemoon,\
+		embryo_type = /mob/living/basic/chick/icemoon,\
 		minimum_growth_rate = 1,\
 		maximum_growth_rate = 2,\
 		total_growth_required = 200,\
@@ -64,14 +64,14 @@
 		var/chance = rand(0, 255)
 		switch(chance)
 			if(0 to 30)
-				new /mob/living/simple_animal/chick/lavaland(hit_turf)
+				new /mob/living/basic/chick/lavaland(hit_turf)
 				GLOB.chicks_from_eggs++
 				visible_message(span_notice("A chick comes out of the cracked egg!"))
 			if(31)
 				var/spawned_chickens = min(4, MAX_CHICKENS - GLOB.chicks_from_eggs) // We don't want to go over the limit
 				visible_message(span_notice("[spawned_chickens] chicks come out of the egg! Jackpot!"))
 				for(var/i in 1 to spawned_chickens)
-					new /mob/living/simple_animal/chick/lavaland(hit_turf)
+					new /mob/living/basic/chick/lavaland(hit_turf)
 					GLOB.chicks_from_eggs++
 	qdel(src)
 
@@ -79,7 +79,7 @@
 	. = ..()
 
 	AddComponent(/datum/component/fertile_egg,\
-		embryo_type = /mob/living/simple_animal/chick/lavaland,\
+		embryo_type = /mob/living/basic/chick/lavaland,\
 		minimum_growth_rate = 1,\
 		maximum_growth_rate = 2,\
 		total_growth_required = 200,\

@@ -15,7 +15,7 @@
 		/obj/item/stack/sheet/bone = 15,
 	)
 
-/mob/living/simple_animal/chicken/icemoon
+/mob/living/basic/chicken/icemoon
 	name = "\improper icemoon chicken"
 	desc = "They know when its morning even when buried under 30 meters of snow. This chicken will eat anything that is edible."
 	color = "#003f72"
@@ -28,11 +28,11 @@
 		/obj/item/stack/sheet/bone = 2,
 		/obj/item/food/egg/iceegg = 1
 	)
-	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
-	minbodytemp = 0
-	maxbodytemp = 1500
+	habitable_atmos = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
+	minimum_survivable_temperature = 0
+	maximum_survivable_temperature = 1500
 
-/mob/living/simple_animal/chicken/icemoon/Initialize(mapload)
+/mob/living/basic/chicken/icemoon/Initialize(mapload)
 	. = ..()
 	GLOB.chicken_count++
 
@@ -49,7 +49,7 @@
 	)
 	ADD_TRAIT(src, TRAIT_VENTCRAWLER_ALWAYS, INNATE_TRAIT)
 
-/mob/living/simple_animal/chick/icemoon
+/mob/living/basic/chick/icemoon
 	name = "\improper icemoon chick"
 	desc = "Looks like a walking puddle of water, but loud."
 	color = "#216399"
@@ -57,13 +57,7 @@
 		/obj/item/food/meat/slab/chicken = 1,
 		/obj/item/stack/sheet/bone = 1,
 	)
-	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
-	minbodytemp = 0
-	maxbodytemp = 1500
-
-/mob/living/simple_animal/chick/icemoon/Life(seconds_per_tick = SSMOBS_DT, times_fired)
-	if(!stat && !ckey)
-		amount_grown += rand(0.5 * seconds_per_tick, 1 * seconds_per_tick)
-		if(amount_grown >= 100)
-			new /mob/living/simple_animal/chicken/icemoon(src.loc)
-			qdel(src)
+	habitable_atmos = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
+	minimum_survivable_temperature = 0
+	maximum_survivable_temperature = 1500
+	grow_as = /mob/living/basic/chicken/icemoon

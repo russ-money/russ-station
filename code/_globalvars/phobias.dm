@@ -501,7 +501,6 @@ GLOBAL_LIST_INIT(phobia_species, list(
 	)),
 	//honk start - adds skaven to the supernatural phobia
 	"the supernatural" = typecacheof(list(
-		/datum/species/golem/runic,
 		/datum/species/skaven,
 		/datum/species/human/kitsune,
 	)),

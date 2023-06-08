@@ -308,16 +308,16 @@
 			)
 		if(63 to 93)
 			harvested_item = pick(
-				/mob/living/simple_animal/butterfly,
+				/mob/living/basic/butterfly,
 				/mob/living/basic/cockroach/glockroach,
 				/mob/living/basic/pet/dog/corgi/puppy,
 				/mob/living/basic/pet/dog/corgi,
 				/mob/living/simple_animal/crab,
 				/mob/living/basic/cow,
-				/mob/living/simple_animal/chicken,
+				/mob/living/basic/chicken,
 				/mob/living/simple_animal/hostile/retaliate/goat,
 				/mob/living/simple_animal/pet/fox,
-				/mob/living/simple_animal/hostile/lizard,
+				/mob/living/basic/lizard,
 				/mob/living/basic/mouse,
 				/mob/living/simple_animal/pet/penguin/baby,
 				/mob/living/simple_animal/pet/penguin/emperor,
@@ -333,7 +333,7 @@
 				/mob/living/basic/giant_spider/nurse,
 				/mob/living/simple_animal/hostile/illusion/escape,
 				/mob/living/simple_animal/hostile/retaliate/snake,
-				/mob/living/simple_animal/hostile/killertomato,
+				/mob/living/basic/killer_tomato,
 				/mob/living/basic/viscerator,
 				/mob/living/simple_animal/hostile/retaliate/clown/russ/goblin,
 			)
@@ -490,7 +490,7 @@
 				/obj/item/toy/plush/bubbleplush,
 				/obj/item/toy/plush/ratplush,
 				/obj/item/toy/plush/narplush,
-				/obj/item/toy/plush/space_lizard_plushie,
+				/obj/item/toy/plush/lizard_plushie/space/green,
 				/obj/item/toy/plush/snakeplushie,
 				/obj/item/toy/plush/nukeplushie,
 				/obj/item/toy/plush/slimeplushie,
