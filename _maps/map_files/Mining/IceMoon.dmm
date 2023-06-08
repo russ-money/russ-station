@@ -443,9 +443,7 @@
 "hr" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/south,
-/obj/structure/window/reinforced/tinted/frosted{
-	dir = 1
-	},
+/obj/structure/window/reinforced/tinted/frosted/spawner/directional/north,
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/mine/mechbay)
@@ -649,9 +647,7 @@
 "kV" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/window/reinforced/tinted/frosted{
-	dir = 4
-	},
+/obj/structure/window/reinforced/tinted/frosted/spawner/directional/east,
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/mine/living_quarters)
@@ -1298,9 +1294,7 @@
 "Ec" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/structure/window/reinforced/tinted/frosted{
-	dir = 8
-	},
+/obj/structure/window/reinforced/tinted/frosted/spawner/directional/west,
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/mine/living_quarters)
@@ -1363,9 +1357,7 @@
 "EB" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/structure/window/reinforced/tinted/frosted{
-	dir = 8
-	},
+/obj/structure/window/reinforced/tinted/frosted/spawner/directional/west,
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/mine/mechbay)
