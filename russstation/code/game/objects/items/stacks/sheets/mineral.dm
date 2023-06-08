@@ -54,7 +54,7 @@ GLOBAL_LIST_INIT(stone_recipes, list( \
 	icon = 'russstation/icons/obj/stack_objects.dmi'
 	icon_state = "sheet-stone"
 	inhand_icon_state = "sheet-sandstone" // close enough
-	mats_per_unit = list(/datum/material/stone = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/stone = SHEET_MATERIAL_AMOUNT)
 	sheettype = "stone"
 	merge_type = /obj/item/stack/sheet/mineral/stone
 	walltype = /turf/closed/wall/mineral/stone
