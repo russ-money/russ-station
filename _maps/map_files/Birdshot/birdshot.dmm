@@ -56802,9 +56802,7 @@
 /turf/open/floor/iron,
 /area/station/medical/chemistry)
 "tZt" = (
-/obj/machinery/light/small/broken{
-	dir = 4
-	},
+/obj/machinery/light/small/broken/directional/east,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/dresser,
 /obj/item/toy/figure/curator{
@@ -57140,9 +57138,7 @@
 /turf/closed/wall,
 /area/station/hallway/secondary/service)
 "ueo" = (
-/obj/machinery/light/small/broken{
-	dir = 4
-	},
+/obj/machinery/light/small/broken/directional/east,
 /obj/effect/mapping_helpers/broken_floor,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/dresser,
