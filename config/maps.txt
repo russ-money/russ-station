@@ -42,16 +42,16 @@ endmap
 
 map metastation
 	#minplayers 25 // honk -- we're lowpop meta
+endmap
+map birdshot
+	#default
+	maxplayers 66
 	votable
 endmap
 
 map deltastation
-	# // honk -- minplayers down to 25 from 50
-	minplayers 25
+	minplayers 50
 	votable
-endmap
-
-map kilostation
 endmap
 
 map icebox

@@ -13,4 +13,4 @@
 
 /obj/structure/spawner/lavaland/badlands/chicken
 	max_mobs = 6
-	mob_types = list(/mob/living/simple_animal/chicken/lavaland)
+	mob_types = list(/mob/living/basic/chicken/lavaland)

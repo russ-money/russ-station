@@ -239,3 +239,6 @@ define_sanity_output.txt
 
 # upstream github workflows (until we integrate them)
 /.github/workflows/*
+# ezdb
+/db/
+/config/ezdb.txt

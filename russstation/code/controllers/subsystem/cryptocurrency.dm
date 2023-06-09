@@ -151,7 +151,7 @@ SUBSYSTEM_DEF(cryptocurrency)
 		// try to do one of the random events
 		control = pickEvent()
 		if(control)
-			control.runEvent(TRUE)
+			control.run_event(TRUE)
 		// else no event, just let the market change up and down naturally
 	// finally reset processed trackers
 	mining_processed = 0

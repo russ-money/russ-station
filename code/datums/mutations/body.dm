@@ -259,7 +259,7 @@
 	locked = TRUE
 
 /datum/mutation/human/glow/anti/glow_color()
-	return COLOR_VERY_LIGHT_GRAY
+	return COLOR_BLACK
 
 /datum/mutation/human/strong
 	name = "Strength"
@@ -347,7 +347,7 @@
 		warpchance = 0
 		owner.visible_message(span_danger("[owner] appears out of nowhere!"))
 	else
-		warpchance += 0.0625 * GET_MUTATION_ENERGY(src) * seconds_per_tick
+		warpchance += 0.0625 * seconds_per_tick / GET_MUTATION_ENERGY(src)
 
 /datum/mutation/human/acidflesh
 	name = "Acidic Flesh"

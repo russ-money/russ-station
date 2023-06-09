@@ -33,7 +33,7 @@
 	singular_name = "adamantine ore chunk"
 	points = 40
 	mine_experience = 10
-	custom_materials = list(/datum/material/adamantine = MINERAL_MATERIAL_AMOUNT)
+	custom_materials = list(/datum/material/adamantine = SHEET_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sheet/mineral/adamantine
 	reagent_id = /datum/reagent/adamantine
 	merge_type = /obj/item/stack/ore/adamantine
@@ -45,7 +45,7 @@
 	icon_state = "stone"
 	inhand_icon_state = "ore"
 	singular_name = "rough stone"
-	mats_per_unit = list(/datum/material/stone = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/stone = SHEET_MATERIAL_AMOUNT)
 	// defining refined type allows ORM to suck it up and welders/fire to refine it, we don't want
 	//refined_type = /obj/item/stack/sheet/mineral/stone
 	mine_experience = 0 // not really gatherable from mining
