@@ -12253,13 +12253,11 @@
 	},
 /obj/structure/rack,
 /obj/item/key/janitor,
-/obj/machinery/airalarm/directional/north{
-	pixel_y = 23
-	},
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/purple,
+/obj/machinery/airalarm/directional/north,
 /turf/open/floor/iron,
 /area/station/service/janitor)
 "fIf" = (
@@ -19496,9 +19494,7 @@
 /turf/open/floor/iron/cafeteria,
 /area/station/service/kitchen)
 "iYF" = (
-/obj/machinery/airalarm/directional/west{
-	pixel_x = -23
-	},
+/obj/machinery/airalarm/directional/west,
 /turf/open/floor/iron,
 /area/station/command/gateway)
 "iYH" = (
@@ -20144,13 +20140,11 @@
 /obj/item/ai_module/supplied/freeform{
 	pixel_y = 10
 	},
-/obj/machinery/airalarm/directional/west{
-	pixel_x = -23
-	},
 /obj/machinery/camera/motion/directional/west{
 	c_tag = "Bridge Upload Room";
 	network = list("aiupload")
 	},
+/obj/machinery/airalarm/directional/west,
 /turf/open/floor/iron,
 /area/station/ai_monitored/turret_protected/ai_upload)
 "jpK" = (
@@ -36005,7 +35999,7 @@
 "qkw" = (
 /obj/machinery/newscaster/directional/north,
 /mob/living/basic/mothroach{
-	desc = "That's mining's pet mothroach Aemilia. Despite the name they're very kind hearted.";
+	desc = "That's mining's pet mothroach Aemilia. Affectionately known as the mini Darkheart they're quite sweet, offering weary miners reassurance after long days of carving hardened basalt and running from megafauna.";
 	name = "Aemilia"
 	},
 /turf/open/floor/iron,
