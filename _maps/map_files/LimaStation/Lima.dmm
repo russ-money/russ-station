@@ -11894,7 +11894,7 @@
 /turf/open/floor/carpet/royalblue,
 /area/station/command/heads_quarters/hop)
 "evh" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/pink,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/pink/visible,
 /obj/machinery/meter,
 /turf/open/floor/iron/dark,
 /area/station/science/ordnance/burnchamber)
@@ -38396,7 +38396,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/port)
 "ttz" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/pink,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/pink/visible,
 /turf/closed/wall/r_wall,
 /area/station/science/ordnance/burnchamber)
 "tuj" = (
@@ -38869,7 +38869,7 @@
 /obj/machinery/airlock_sensor/incinerator_ordmix{
 	pixel_x = 25
 	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/pink,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/pink/visible,
 /turf/open/floor/engine,
 /area/station/science/ordnance/burnchamber)
 "tIy" = (
