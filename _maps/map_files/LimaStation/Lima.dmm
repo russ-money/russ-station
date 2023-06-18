@@ -27487,10 +27487,7 @@
 /obj/item/reagent_containers/dropper{
 	pixel_y = 5
 	},
-/obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = 24
-	},
+/obj/machinery/firealarm/directional/east,
 /obj/structure/sign/poster/official/random/directional/south,
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/genetics)
@@ -41400,9 +41397,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/machinery/firealarm{
-	pixel_y = 24
-	},
+/obj/machinery/firealarm/directional/north,
 /turf/open/floor/iron,
 /area/station/ai_monitored/command/storage/eva)
 "vdC" = (

@@ -39243,10 +39243,7 @@
 /obj/effect/turf_decal/trimline/red/line{
 	dir = 1
 	},
-/obj/machinery/firealarm{
-	dir = 4;
-	pixel_x = -28
-	},
+/obj/machinery/firealarm/directional/west,
 /turf/open/floor/iron,
 /area/station/security/courtroom)
 "uLu" = (

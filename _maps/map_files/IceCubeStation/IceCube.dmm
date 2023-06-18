@@ -25975,11 +25975,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	dir = 9
 	},
-/obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = 28;
-	pixel_y = 5
-	},
+/obj/machinery/firealarm/directional/east,
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/tcommsat/computer)
