@@ -15321,9 +15321,7 @@
 /turf/open/floor/iron,
 /area/station/command/bridge)
 "ggV" = (
-/obj/machinery/firealarm{
-	pixel_y = 24
-	},
+/obj/machinery/firealarm/directional/north,
 /obj/item/kirbyplants/random,
 /turf/open/floor/iron,
 /area/station/hallway/primary/aft)
@@ -20376,13 +20374,6 @@
 /obj/item/weldingtool,
 /turf/open/floor/plating,
 /area/station/engineering/supermatter/room)
-"iTR" = (
-/obj/machinery/firealarm{
-	dir = 4;
-	pixel_x = -24
-	},
-/turf/open/floor/iron,
-/area/station/hallway/primary/starboard)
 "iTU" = (
 /obj/structure/table,
 /obj/effect/spawner/random/trash/garbage,
@@ -40436,10 +40427,7 @@
 /turf/open/floor/iron,
 /area/station/service/hydroponics/garden)
 "uwv" = (
-/obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = 24
-	},
+/obj/machinery/firealarm/directional/east,
 /turf/open/floor/iron,
 /area/station/hallway/primary/aft)
 "uwT" = (
@@ -87028,7 +87016,7 @@ xbT
 xbT
 xbT
 xbT
-iTR
+pCO
 xbT
 xbT
 xbT
