@@ -3005,7 +3005,7 @@
 /area/station/service/hydroponics/upper)
 "bsn" = (
 /obj/structure/bodycontainer/morgue/beeper_off{
-	dir = 2
+	dir = 1
 	},
 /turf/open/floor/iron/dark,
 /area/station/medical/morgue)
@@ -11091,7 +11091,7 @@
 /area/station/science/circuits)
 "fgW" = (
 /obj/structure/bodycontainer/morgue/beeper_off{
-	dir = 2
+	dir = 1
 	},
 /obj/structure/window/reinforced/spawner/directional/east,
 /turf/open/floor/iron/dark,
@@ -24376,9 +24376,7 @@
 "lcG" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/table,
-/obj/machinery/firealarm{
-	pixel_y = 25
-	},
+/obj/machinery/firealarm/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/command/gateway)
 "lcR" = (
@@ -25551,10 +25549,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
 	},
-/obj/machinery/firealarm/partyalarm{
-	dir = 8;
-	pixel_x = 28
-	},
+/obj/machinery/firealarm/directional/east,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/command/nuke_storage)
 "lHW" = (
@@ -26271,8 +26266,7 @@
 "lVT" = (
 /obj/machinery/door/airlock/research{
 	name = "Research Division Access";
-	unres_sensor = 1;
-	unres_sides = 8
+	unres_sensor = 1
 	},
 /obj/effect/mapping_helpers/airlock/access/all/science/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
