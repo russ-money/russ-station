@@ -36510,7 +36510,10 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
 	},
-/obj/machinery/firealarm/directional/east,
+/obj/machinery/firealarm/partyalarm{
+	dir = 4;
+	pixel_x = 28
+	},
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/command/nuke_storage)
 "tpN" = (
