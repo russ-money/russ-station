@@ -11894,7 +11894,7 @@
 /turf/open/floor/carpet/royalblue,
 /area/station/command/heads_quarters/hop)
 "evh" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/pink,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/pink/visible,
 /obj/machinery/meter,
 /turf/open/floor/iron/dark,
 /area/station/science/ordnance/burnchamber)
@@ -15321,9 +15321,7 @@
 /turf/open/floor/iron,
 /area/station/command/bridge)
 "ggV" = (
-/obj/machinery/firealarm{
-	pixel_y = 24
-	},
+/obj/machinery/firealarm/directional/north,
 /obj/item/kirbyplants/random,
 /turf/open/floor/iron,
 /area/station/hallway/primary/aft)
@@ -20376,13 +20374,6 @@
 /obj/item/weldingtool,
 /turf/open/floor/plating,
 /area/station/engineering/supermatter/room)
-"iTR" = (
-/obj/machinery/firealarm{
-	dir = 4;
-	pixel_x = -24
-	},
-/turf/open/floor/iron,
-/area/station/hallway/primary/starboard)
 "iTU" = (
 /obj/structure/table,
 /obj/effect/spawner/random/trash/garbage,
@@ -27496,10 +27487,7 @@
 /obj/item/reagent_containers/dropper{
 	pixel_y = 5
 	},
-/obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = 24
-	},
+/obj/machinery/firealarm/directional/east,
 /obj/structure/sign/poster/official/random/directional/south,
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/genetics)
@@ -38405,7 +38393,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/port)
 "ttz" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/pink,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/pink/visible,
 /turf/closed/wall/r_wall,
 /area/station/science/ordnance/burnchamber)
 "tuj" = (
@@ -38878,7 +38866,7 @@
 /obj/machinery/airlock_sensor/incinerator_ordmix{
 	pixel_x = 25
 	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/pink,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/pink/visible,
 /turf/open/floor/engine,
 /area/station/science/ordnance/burnchamber)
 "tIy" = (
@@ -40436,10 +40424,7 @@
 /turf/open/floor/iron,
 /area/station/service/hydroponics/garden)
 "uwv" = (
-/obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = 24
-	},
+/obj/machinery/firealarm/directional/east,
 /turf/open/floor/iron,
 /area/station/hallway/primary/aft)
 "uwT" = (
@@ -41412,9 +41397,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/machinery/firealarm{
-	pixel_y = 24
-	},
+/obj/machinery/firealarm/directional/north,
 /turf/open/floor/iron,
 /area/station/ai_monitored/command/storage/eva)
 "vdC" = (
@@ -87028,7 +87011,7 @@ xbT
 xbT
 xbT
 xbT
-iTR
+pCO
 xbT
 xbT
 xbT
