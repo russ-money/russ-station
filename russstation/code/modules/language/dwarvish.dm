@@ -1,5 +1,5 @@
 /datum/language/dwarvish
-	name = "dwarven"
+	name = "Dwarven"
 	icon = 'russstation/icons/misc/language.dmi'
 	desc = "The secret language of the Dwarves."
 	key = "5"
