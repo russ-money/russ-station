@@ -1,7 +1,7 @@
 /datum/language/kitsumimetic
 	name = "Kitsumimetic"
 	desc = "Similar to Nekomimetic in that it resembles Japanese, however this language is comprised mostly of kekkers and various screeches alongside broken syllables."
-	key = "k"
+	key = "w"
 	space_chance = 70
 	syllables = list(
 		"kitsu", "kekker", "mimi", "moe", "mofu", "fuwa", "kyaa", "kawaii", "poka", "munya",
