@@ -70,6 +70,7 @@
 		/datum/language/dwarvish, //honk - dwarf language
 		/datum/language/queekish, // honk - allows things to switch to it if they know it
 		/datum/language/gamer, // honk - everyone can be a gamer
+		/datum/language/kitsumimetic, // honk - fox
 		/datum/language/moffic,
 		/datum/language/sylvan,
 		/datum/language/shadowtongue,
