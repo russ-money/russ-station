@@ -667,7 +667,7 @@
 	department_color = COLOR_MEDICAL_BLUE
 	subdepartment_color = COLOR_MEDICAL_BLUE
 	sechud_icon_state = SECHUD_MEDICAL_DOCTOR
-	minimal_access = list(
+	minimal_access = list(			//honk start
 		ACCESS_MECH_MEDICAL,
 		ACCESS_MEDICAL,
 		ACCESS_MINERAL_STOREROOM,
@@ -679,7 +679,7 @@
 		ACCESS_PLUMBING,
 		ACCESS_VIROLOGY,
 		ACCESS_MORGUE_SECURE,
-		)
+		)							//honk end
 	template_access = list(
 		ACCESS_CAPTAIN,
 		ACCESS_CHANGE_IDS,
@@ -905,7 +905,7 @@
 	extra_access = list(
 		ACCESS_GENETICS,
 		ACCESS_XENOBIOLOGY,
-		ACCESS_MORGUE_SECURE,
+		ACCESS_MORGUE_SECURE, //honk
 		)
 	template_access = list(
 		ACCESS_CAPTAIN,
