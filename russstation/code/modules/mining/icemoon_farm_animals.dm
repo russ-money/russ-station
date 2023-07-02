@@ -14,6 +14,8 @@
 		/obj/item/organ/internal/eyes = 1,
 		/obj/item/stack/sheet/bone = 15,
 	)
+	minimum_survivable_temperature = 0
+	maximum_survivable_temperature = 1500
 
 /mob/living/basic/chicken/icemoon
 	name = "\improper icemoon chicken"
