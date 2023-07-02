@@ -79,7 +79,7 @@
 	icon_preview = 'russstation/icons/obj/blacksmithing.dmi'
 	icon_state_preview = "pickaxe_preview"
 	icon = 'russstation/icons/obj/blacksmithing.dmi'
-	icon_state = "pickaxe"
+	icon_state = "pickaxe_base"
 	inhand_icon_state = "spickaxe"
 
 /obj/item/pickaxe/smithed_pickaxe/Initialize()
@@ -164,7 +164,7 @@
 	name = "unobtanium warhammer"
 	desc = "A warhammer made of unobtainium, you probably shouldn't be seeing this."
 	icon = 'russstation/icons/obj/blacksmithing.dmi'
-	icon_state = "pickaxe"
+	icon_state = "pickaxe_base"
 	lefthand_file = 'russstation/icons/mob/inhands/item_lefthand.dmi'
 	righthand_file = 'russstation/icons/mob/inhands/item_righthand.dmi'
 	inhand_icon_state = "warhammer"
