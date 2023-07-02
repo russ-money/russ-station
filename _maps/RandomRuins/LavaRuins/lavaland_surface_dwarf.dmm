@@ -251,7 +251,7 @@
 /turf/open/floor/stone/russ,
 /area/lavaland/surface/dorf)
 "xu" = (
-/mob/living/simple_animal/chicken/lavaland,
+/mob/living/basic/chicken/lavaland,
 /turf/open/floor/stone/russ,
 /area/lavaland/surface/dorf)
 "yY" = (

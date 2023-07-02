@@ -421,7 +421,7 @@
 	},
 /area/icemoon/surface/dorf)
 "T" = (
-/mob/living/simple_animal/chicken/icemoon,
+/mob/living/basic/chicken/icemoon,
 /turf/open/floor/stone/russ{
 	initial_gas_mix = "ICEMOON_ATMOS"
 	},
