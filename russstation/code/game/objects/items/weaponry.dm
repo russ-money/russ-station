@@ -106,7 +106,7 @@
 	name = "unobtanium shovel"
 	desc = "A shovel made of unobtanium, you probably shouldn't be seeing this."
 	icon = 'icons/obj/mining.dmi'
-	icon_state = "shovel"
+	icon_state = "shovel_base"
 	inhand_icon_state = "shovel"
 
 /obj/item/shovel/smithed_shovel/Initialize()

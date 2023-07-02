@@ -119,7 +119,7 @@
 	name = "shovel"
 	desc = "A large tool for digging and moving dirt."
 	icon = 'icons/obj/mining.dmi'
-	icon_state = "shovel_base"
+	icon_state = "shovel"
 	inhand_icon_state = "shovel"
 	lefthand_file = 'icons/mob/inhands/equipment/mining_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/mining_righthand.dmi'
