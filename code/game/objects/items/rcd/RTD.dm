@@ -365,6 +365,44 @@
 
 	return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 
+/obj/item/construction/rtd/borg
+	name = "rapid-tiling-device (RTD)"
+	var/energyfactor = 10
+
+/obj/item/construction/rtd/borg/get_matter(mob/user)
+	if(!iscyborg(user))
+		return FALSE
+	var/mob/living/silicon/robot/borgy = user
+	if(!borgy.cell)
+		return FALSE
+	max_matter = borgy.cell.maxcharge
+	return borgy.cell.charge
+
+/obj/item/construction/rtd/borg/useResource(amount, mob/user)
+	if(!iscyborg(user))
+		return FALSE
+	var/mob/living/silicon/robot/borgy = user
+	if(!borgy.cell)
+		if(user)
+			balloon_alert(user, "no cell found!")
+		return FALSE
+	. = borgy.cell.use(amount * energyfactor) //borgs get 1.3x the use of their RCDs
+	if(!. && user)
+		balloon_alert(user, "insufficient charge!")
+	return .
+
+/obj/item/construction/rtd/borg/checkResource(amount, mob/user)
+	if(!iscyborg(user))
+		return FALSE
+	var/mob/living/silicon/robot/borgy = user
+	if(!borgy.cell)
+		if(user)
+			balloon_alert(user, "no cell found!")
+		return FALSE
+	. = borgy.cell.charge >= (amount * energyfactor)
+	if(!. && user)
+		balloon_alert(user, "insufficient charge!")
+	return .
 /obj/item/construction/rtd/loaded
 	matter = 350
 
