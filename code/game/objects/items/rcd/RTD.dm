@@ -386,7 +386,7 @@
 		if(user)
 			balloon_alert(user, "no cell found!")
 		return FALSE
-	. = borgy.cell.use(amount * energyfactor) //borgs get 1.3x the use of their RCDs
+	. = borgy.cell.use(amount * energyfactor)
 	if(!. && user)
 		balloon_alert(user, "insufficient charge!")
 	return .
