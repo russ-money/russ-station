@@ -40,6 +40,7 @@
 	limb_id = SPECIES_DIONA
 	dmg_overlay_type = null
 	burn_modifier = 1.5
+	speed_modifier = 3
 
 /obj/item/bodypart/leg/right/diona
 	icon = 'russstation/icons/mob/mutant_bodyparts.dmi'
@@ -48,3 +49,4 @@
 	limb_id = SPECIES_DIONA
 	dmg_overlay_type = null
 	burn_modifier = 1.5
+	speed_modifier = 3
