@@ -7,9 +7,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
 	},
-/obj/structure/sign/poster/random{
-	pixel_x = -32
-	},
+/obj/structure/sign/poster/random/directional/west,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "dr" = (
@@ -116,9 +114,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/structure/sign/poster/random{
-	pixel_y = 32
-	},
+/obj/structure/sign/poster/random/directional/north,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "pW" = (
@@ -223,9 +219,7 @@
 "zu" = (
 /obj/structure/table/reinforced,
 /obj/machinery/recharger,
-/obj/structure/sign/poster/random{
-	pixel_x = 32
-	},
+/obj/structure/sign/poster/random/directional/east,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape)
 "zP" = (
@@ -261,9 +255,7 @@
 /area/shuttle/escape)
 "ES" = (
 /obj/machinery/stasis,
-/obj/structure/sign/poster/random{
-	pixel_y = 32
-	},
+/obj/structure/sign/poster/random/directional/north,
 /obj/item/storage/medkit/regular,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/escape)
@@ -305,9 +297,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
 	},
-/obj/structure/sign/poster/random{
-	pixel_y = -32
-	},
+/obj/structure/sign/poster/random/directional/south,
 /turf/open/floor/mineral/titanium/tiled,
 /area/shuttle/escape)
 "IY" = (

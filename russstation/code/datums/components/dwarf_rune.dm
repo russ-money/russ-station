@@ -6,14 +6,14 @@
 	var/enchanted = FALSE // after enchantment, non-dwarves can use this item
 
 /datum/component/dwarf_rune/RegisterWithParent()
-	RegisterSignal(parent, COMSIG_PARENT_ATTACKBY, .proc/onAttackBy)
+	RegisterSignal(parent, COMSIG_ATOM_ATTACKBY, .proc/onAttackBy)
 	RegisterSignals(parent, list(COMSIG_ITEM_ATTACK, COMSIG_ITEM_ATTACK_SECONDARY), .proc/onItemAttack)
-	RegisterSignal(parent, COMSIG_ITEM_ATTACK_OBJ, .proc/onItemAttackObj)
-	RegisterSignal(parent, COMSIG_PARENT_EXAMINE, .proc/examine)
+	RegisterSignal(parent, COMSIG_ITEM_ATTACK_ATOM, .proc/onItemAttackObj)
+	RegisterSignal(parent, COMSIG_ATOM_EXAMINE, .proc/examine)
 	RegisterSignal(parent, COMSIG_TOOL_START_USE, .proc/toolStartCheck)
 
 /datum/component/dwarf_rune/UnregisterFromParent()
-	UnregisterSignal(parent, list(COMSIG_PARENT_ATTACKBY, COMSIG_ITEM_ATTACK, COMSIG_ITEM_ATTACK_SECONDARY, COMSIG_ITEM_ATTACK_OBJ, COMSIG_PARENT_EXAMINE, COMSIG_TOOL_START_USE))
+	UnregisterSignal(parent, list(COMSIG_ATOM_ATTACKBY, COMSIG_ITEM_ATTACK, COMSIG_ITEM_ATTACK_SECONDARY, COMSIG_ITEM_ATTACK_ATOM, COMSIG_ATOM_EXAMINE, COMSIG_TOOL_START_USE))
 
 /datum/component/dwarf_rune/proc/onAttackBy(datum/source, obj/item/attacker, mob/user)
 	SIGNAL_HANDLER
