@@ -1370,10 +1370,6 @@
 /mob/living/simple_animal/pet/gondola/russ/camdola,
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/cmo)
-"agJ" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/closed/wall,
-/area/station/maintenance/radshelter/sci)
 "agK" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Primary Tool Storage"
@@ -6567,7 +6563,6 @@
 /obj/machinery/door/airlock/hatch{
 	name = "Ancient Airlock"
 	},
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/mapping_helpers/airlock/abandoned,
 /turf/closed/wall,
 /area/station/service/bar)
@@ -13816,10 +13811,6 @@
 /obj/machinery/power/apc/auto_cell/directional/west,
 /turf/open/floor/iron/textured,
 /area/station/engineering/atmos)
-"gZl" = (
-/obj/effect/decal/cleanable/generic,
-/turf/closed/wall,
-/area/station/maintenance/department/crew_quarters/bar)
 "gZm" = (
 /obj/effect/landmark/event_spawn,
 /obj/machinery/holopad,
@@ -68290,7 +68281,7 @@ bKy
 bKy
 gPM
 fQT
-gZl
+bKy
 fTU
 tYN
 tve
@@ -70582,7 +70573,7 @@ nxL
 nxL
 nxL
 aDg
-agJ
+nxL
 nxL
 nxL
 alQ

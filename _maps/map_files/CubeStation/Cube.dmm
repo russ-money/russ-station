@@ -16883,11 +16883,9 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "jjs" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
+/obj/machinery/atmospherics/components/unary/passive_vent{
 	dir = 1;
-	external_pressure_bound = 140;
-	name = "server vent";
-	pressure_checks = 0
+	name = "killroom vent"
 	},
 /turf/open/floor/circuit,
 /area/station/science/xenobiology)
@@ -25519,7 +25517,6 @@
 /area/station/cargo/storage)
 "nNI" = (
 /mob/living/basic/chick{
-	access_card = "Peckie";
 	desc = "Perma's cute little mascot, who absolutely isn't in here for hard crimes...";
 	name = "Peckie"
 	},
@@ -29554,7 +29551,7 @@
 	desc = "He looks like hes up to no good...";
 	name = "Pleb";
 	real_name = "Pleb";
-	speak_emote = list("ribbit","croak","You  Gay")
+	speak_emote = list("ribbit","croak","You        Gay")
 	},
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
@@ -32483,14 +32480,6 @@
 /obj/machinery/light/directional/north,
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
-"rjK" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
-	dir = 1;
-	external_pressure_bound = 120;
-	name = "server vent"
-	},
-/turf/open/floor/circuit,
-/area/station/science/xenobiology)
 "rjS" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/machinery/door/airlock/external{
@@ -60557,7 +60546,7 @@ azD
 sXz
 jhj
 gRC
-rjK
+jjs
 uQK
 tJM
 tJM

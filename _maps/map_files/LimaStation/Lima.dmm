@@ -2768,10 +2768,6 @@
 /obj/structure/cable,
 /turf/open/floor/iron/sepia,
 /area/station/service/chapel/office)
-"aEP" = (
-/obj/effect/decal/cleanable/generic,
-/turf/closed/wall,
-/area/station/maintenance/central)
 "aER" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -6389,7 +6385,6 @@
 /obj/machinery/light/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/structure/cable/layer1,
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/tcommsat/computer)
@@ -25864,10 +25859,9 @@
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
 "mcf" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
+/obj/machinery/atmospherics/components/unary/passive_vent{
 	dir = 1;
-	external_pressure_bound = 120;
-	name = "server vent"
+	name = "killroom vent"
 	},
 /turf/open/floor/circuit/airless,
 /area/station/science/xenobiology)
@@ -32304,7 +32298,7 @@
 /area/station/engineering/main)
 "pSB" = (
 /obj/machinery/computer/atmos_control/mix_tank{
-	atmos_chambers = list("mix2"="Mix  Chamber  #2");
+	atmos_chambers = list("mix2"="Mix    Chamber    #2");
 	dir = 1;
 	name = "Gas Mix Tank #2 Control"
 	},
@@ -34242,15 +34236,6 @@
 /obj/effect/spawner/random/trash/garbage,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
-"qYd" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 1;
-	external_pressure_bound = 140;
-	name = "server vent";
-	pressure_checks = 0
-	},
-/turf/open/floor/circuit/airless,
-/area/station/science/xenobiology)
 "qYg" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
@@ -35956,10 +35941,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/command/bridge)
-"rZl" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/closed/wall/r_wall,
-/area/station/maintenance/disposal/incinerator)
 "rZn" = (
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
@@ -42264,7 +42245,7 @@
 /area/station/cargo/warehouse)
 "vGA" = (
 /obj/machinery/computer/atmos_control{
-	atmos_chambers = list("n2"="Nitrogen  Supply","o2"="Oxygen  Supply","co2"="Carbon  Dioxide  Supply","plas"="Plasma  Supply","n2o"="Nitrous  Oxide  Supply","air"="Mixed  Air  Supply","mix"="Mix  Tank","mix2"="Mix  Tank  #2","distro"="Distribution  Loop","waste"="Atmos  Waste  Loop","incinerator"="Incinerator  Chamber","ordnancelab"="Ordnance  Chamber");
+	atmos_chambers = list("n2"="Nitrogen    Supply","o2"="Oxygen    Supply","co2"="Carbon    Dioxide    Supply","plas"="Plasma    Supply","n2o"="Nitrous    Oxide    Supply","air"="Mixed    Air    Supply","mix"="Mix    Tank","mix2"="Mix    Tank    #2","distro"="Distribution    Loop","waste"="Atmos    Waste    Loop","incinerator"="Incinerator    Chamber","ordnancelab"="Ordnance    Chamber");
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -44484,7 +44465,7 @@
 	desc = "He looks like hes up to no good...";
 	name = "Pleb";
 	real_name = "Pleb";
-	speak_emote = list("ribbit","croak","You  Gay")
+	speak_emote = list("ribbit","croak","You    Gay")
 	},
 /turf/open/floor/iron/dark,
 /area/station/service/janitor)
@@ -61342,7 +61323,7 @@ qUA
 fsz
 lib
 qFH
-rZl
+rVV
 tkJ
 usa
 veN
@@ -73884,7 +73865,7 @@ qiz
 lVd
 yiA
 yiA
-aEP
+yiA
 yiA
 yiA
 oAn
@@ -91363,7 +91344,7 @@ pjP
 dZg
 ntO
 naa
-qYd
+mcf
 fwE
 hFF
 ggl

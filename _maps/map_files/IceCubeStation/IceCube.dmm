@@ -15514,7 +15514,7 @@
 /obj/machinery/elevator_control_panel/directional/east{
 	linked_elevator_id = "miningElevator";
 	pixel_x = 24;
-	preset_destination_names = list("2"="Mining  Office","3"="Mining  Dock")
+	preset_destination_names = list("2"="Mining    Office","3"="Mining    Dock")
 	},
 /obj/machinery/lift_indicator/directional/east{
 	linked_elevator_id = "miningElevator";
@@ -26003,7 +26003,9 @@
 /turf/open/floor/iron/white,
 /area/station/command/heads_quarters/captain/private)
 "lRy" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on,
+/obj/machinery/atmospherics/components/unary/passive_vent{
+	name = "killroom vent"
+	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/station/science/xenobiology)
 "lRE" = (
@@ -28642,7 +28644,7 @@
 	desc = "He looks like hes up to no good...";
 	name = "Pleb";
 	real_name = "Pleb";
-	speak_emote = list("ribbit","croak","You  Gay")
+	speak_emote = list("ribbit","croak","You    Gay")
 	},
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
@@ -29925,7 +29927,7 @@
 /area/station/engineering/main)
 "nyR" = (
 /obj/machinery/computer/atmos_control/ordnancemix{
-	atmos_chambers = list("ordnancelab2"="Ordnance  Chamber  2")
+	atmos_chambers = list("ordnancelab2"="Ordnance    Chamber    2")
 	},
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/ordnance)
@@ -40564,12 +40566,6 @@
 "sip" = (
 /turf/open/floor/iron,
 /area/station/medical/medbay)
-"sir" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
-	external_pressure_bound = 120
-	},
-/turf/open/floor/plating/snowed/icemoon,
-/area/station/science/xenobiology)
 "siA" = (
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/rd)
@@ -49726,7 +49722,6 @@
 /area/station/service/kitchen)
 "wlH" = (
 /mob/living/basic/chick{
-	access_card = "Peckie";
 	desc = "Perma's cute little mascot, who absolutely isn't in here for hard crimes...";
 	name = "Peckie"
 	},
@@ -140801,7 +140796,7 @@ uQf
 hFB
 taQ
 xZy
-sir
+lRy
 udE
 jRs
 bhr

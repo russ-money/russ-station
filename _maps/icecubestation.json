@@ -14,7 +14,7 @@
     },
 	"traits": [
 		{
-			"Up": 1,
+			"Up": true,
 			"Baseturf": "/turf/open/misc/asteroid/snow",
 			"Linkage": null,
 			"Mining": true,
@@ -22,7 +22,7 @@
 			"No Parallax": true
 		},
 		{
-			"Down": -1,
+			"Down": true,
 			"Baseturf": "/turf/open/openspace/icemoon/keep_below",
 			"Linkage": null,
 			"Mining": true,
