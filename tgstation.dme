@@ -5567,6 +5567,7 @@
 #include "russstation\code\modules\surgery\organs\internal\lungs.dm"
 #include "russstation\code\modules\surgery\organs\internal\tongue.dm"
 #include "russstation\code\modules\surgery\species_parts\diona_bodyparts.dm"
+#include "russstation\code\modules\surgery\species_parts\dwarf_bodyparts.dm"
 #include "russstation\code\modules\surgery\species_parts\skaven_bodyparts.dm"
 #include "russstation\code\modules\uplink\uplink_items.dm"
 #include "russstation\code\modules\vehicles\scooter.dm"

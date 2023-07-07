@@ -14,12 +14,20 @@
 	mutanttongue = /obj/item/organ/internal/tongue/dwarf
 	species_cookie = /obj/item/reagent_containers/cup/glass/bottle/ale
 	skinned_type = /obj/item/stack/sheet/animalhide/human
-	//brutemod = 1.15 //they would have to use dwarven limbs instead of humans for this to work
 	coldmod = 1.15
 	//punchdamagehigh = 11 //fist fighting with dorfs is very dangerous
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_PRIDE | MIRROR_MAGIC | RACE_SWAP | ERT_SPAWN | SLIME_EXTRACT
 	species_language_holder = /datum/language_holder/dwarf
 	examine_limb_id = SPECIES_DWARF
+
+	bodypart_overrides = list(
+		BODY_ZONE_HEAD = /obj/item/bodypart/head/dwarf,
+		BODY_ZONE_CHEST = /obj/item/bodypart/chest/dwarf,
+		BODY_ZONE_L_ARM = /obj/item/bodypart/arm/left/dwarf,
+		BODY_ZONE_R_ARM = /obj/item/bodypart/arm/right/dwarf,
+		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/dwarf,
+		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/dwarf,
+	)
 
 /// Returns the species's scream sound. (human screams)
 /datum/species/dwarf/get_scream_sound(mob/living/carbon/human/human)
