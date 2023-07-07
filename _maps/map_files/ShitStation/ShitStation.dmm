@@ -3926,6 +3926,7 @@
 /obj/machinery/power/energy_accumulator/tesla_coil/anchored,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
+/obj/machinery/incident_display/delam/directional/north,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "asc" = (
@@ -3995,6 +3996,7 @@
 /area/station/cargo/warehouse)
 "asp" = (
 /obj/machinery/recharge_station,
+/obj/machinery/digital_clock/directional/north,
 /turf/open/floor/iron/white,
 /area/station/medical/treatment_center)
 "asr" = (
@@ -7349,6 +7351,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/digital_clock/directional/north,
 /turf/open/floor/iron,
 /area/station/commons/storage/primary)
 "aGF" = (
@@ -9332,6 +9335,11 @@
 /obj/structure/cable,
 /turf/open/floor/mineral/bananium,
 /area/station/command/bridge)
+"cxF" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/obj/machinery/digital_clock/directional/north,
+/turf/open/floor/iron/white,
+/area/station/medical/medbay/lobby)
 "cxW" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -11788,7 +11796,6 @@
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
-/obj/machinery/incident_display/delam/directional/west,
 /turf/open/floor/plating,
 /area/station/engineering/supermatter/room)
 "fed" = (
@@ -25675,6 +25682,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/machinery/digital_clock/directional/north,
 /turf/open/floor/wood,
 /area/station/service/bar)
 "sCt" = (
@@ -26440,6 +26448,14 @@
 "ttz" = (
 /turf/closed/wall/r_wall,
 /area/station/hallway/secondary/exit/departure_lounge)
+"ttG" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/obj/machinery/digital_clock/directional/north,
+/turf/open/floor/iron/white,
+/area/station/medical/medbay/lobby)
 "ttH" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -63377,7 +63393,7 @@ awV
 oMd
 fUK
 tTS
-ciS
+cxF
 azy
 auC
 nQg
@@ -64919,7 +64935,7 @@ oMd
 tUv
 fUK
 tTS
-tpV
+ttG
 azy
 rQZ
 oAn

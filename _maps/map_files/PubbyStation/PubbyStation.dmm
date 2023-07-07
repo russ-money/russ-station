@@ -2244,9 +2244,7 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/research{
-	name = "Research Division Access";
-	unres_sensor = 1;
-	unres_sides = 4
+	name = "Research Division Access"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/science/general,
 /obj/structure/disposalpipe/segment{
@@ -5528,6 +5526,7 @@
 	},
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/machinery/digital_clock/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
 "atQ" = (
@@ -9659,6 +9658,7 @@
 	layer = 2.9
 	},
 /obj/effect/turf_decal/delivery,
+/obj/machinery/digital_clock/directional/east,
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
 "aGz" = (
@@ -13603,6 +13603,7 @@
 	pixel_x = -10;
 	pixel_y = 15
 	},
+/obj/machinery/digital_clock/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/service/bar)
 "aVj" = (
@@ -15513,6 +15514,7 @@
 	},
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
 /obj/machinery/portable_atmospherics/canister,
+/obj/machinery/incident_display/delam/directional/north,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "bbr" = (
@@ -21086,9 +21088,7 @@
 	dir = 8
 	},
 /obj/machinery/door/airlock/research{
-	name = "Research Division Access";
-	unres_sensor = 1;
-	unres_sides = 4
+	name = "Research Division Access"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/science/general,
 /obj/structure/disposalpipe/segment{
@@ -37674,7 +37674,6 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/machinery/incident_display/delam/directional/west,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "iqc" = (
@@ -42738,6 +42737,13 @@
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/fore)
+"pLE" = (
+/obj/structure/closet/emcloset,
+/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/landmark/start/hangover/closet,
+/obj/machinery/digital_clock/directional/east,
+/turf/open/floor/iron/dark,
+/area/station/hallway/secondary/exit/departure_lounge)
 "pMg" = (
 /obj/effect/spawner/structure/window,
 /obj/structure/disposalpipe/segment,
@@ -44735,6 +44741,7 @@
 	},
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
 /obj/effect/spawner/atmos_canister/nitrogen,
+/obj/machinery/digital_clock/directional/north,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "sJp" = (
@@ -44891,6 +44898,10 @@
 /obj/effect/spawner/random/trash/mess,
 /turf/open/floor/plating,
 /area/station/maintenance/department/security/brig)
+"sYL" = (
+/obj/machinery/digital_clock/directional/south,
+/turf/open/floor/wood,
+/area/station/service/lawoffice)
 "sZh" = (
 /obj/machinery/conveyor{
 	dir = 4;
@@ -46780,6 +46791,13 @@
 	},
 /turf/open/floor/carpet/purple,
 /area/station/medical/psychology)
+"vsv" = (
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 1
+	},
+/obj/machinery/digital_clock/directional/north,
+/turf/open/floor/iron/white,
+/area/station/medical/medbay/central)
 "vsw" = (
 /obj/effect/turf_decal/trimline/brown/filled/line{
 	dir = 1
@@ -47497,6 +47515,7 @@
 /area/station/engineering/supermatter)
 "wzJ" = (
 /obj/machinery/light/small/directional/east,
+/obj/machinery/digital_clock/directional/east,
 /turf/open/floor/iron/dark,
 /area/station/service/library)
 "wAC" = (
@@ -68745,7 +68764,7 @@ xJy
 sJr
 sJr
 sJr
-sJr
+sYL
 aiu
 jhk
 aiu
@@ -69527,7 +69546,7 @@ nDx
 gLF
 aHz
 eLt
-aRB
+pLE
 aRB
 aOs
 fUA
@@ -75978,7 +75997,7 @@ tqO
 nwW
 uwj
 bjc
-abd
+vsv
 bGT
 cqm
 bsA

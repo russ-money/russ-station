@@ -15181,6 +15181,11 @@
 /obj/effect/mapping_helpers/burnt_floor,
 /turf/open/floor/plating,
 /area/station/maintenance/aft)
+"gbw" = (
+/obj/effect/turf_decal/bot,
+/obj/machinery/digital_clock/directional/north,
+/turf/open/floor/iron,
+/area/station/command/heads_quarters/hop)
 "gbK" = (
 /obj/structure/rack,
 /obj/effect/spawner/random/techstorage/rnd_secure_all,
@@ -18314,9 +18319,7 @@
 /area/station/maintenance/aft)
 "hJb" = (
 /obj/machinery/door/airlock/research{
-	name = "Research Division Access";
-	unres_sensor = 1;
-	unres_sides = 4
+	name = "Research Division Access"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/science/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
@@ -20430,6 +20433,7 @@
 /obj/structure/window/spawner/directional/east,
 /obj/structure/flora/bush,
 /obj/structure/flora/bush/jungle/c/style_random,
+/obj/machinery/digital_clock/directional/west,
 /turf/open/floor/grass,
 /area/station/service/hydroponics)
 "iWm" = (
@@ -22482,9 +22486,7 @@
 /area/station/service/bar)
 "kbp" = (
 /obj/machinery/door/airlock/research{
-	name = "Research Division Access";
-	unres_sensor = 1;
-	unres_sides = 4
+	name = "Research Division Access"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/science/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
@@ -26340,9 +26342,7 @@
 /area/station/engineering/atmos/upper)
 "mnD" = (
 /obj/machinery/door/airlock/research{
-	name = "Research Division Access";
-	unres_sensor = 1;
-	unres_sides = 4
+	name = "Research Division Access"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/science/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
@@ -31590,9 +31590,7 @@
 /area/station/medical/exam_room)
 "pxZ" = (
 /obj/machinery/door/airlock/research{
-	name = "Research Division Access";
-	unres_sensor = 1;
-	unres_sides = 4
+	name = "Research Division Access"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/science/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
@@ -34610,6 +34608,10 @@
 	},
 /turf/open/floor/plating,
 /area/station/security/prison/safe)
+"rlu" = (
+/obj/machinery/digital_clock/directional/north,
+/turf/open/floor/iron,
+/area/station/command/bridge)
 "rlM" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
 	dir = 4
@@ -39718,6 +39720,13 @@
 	},
 /turf/open/floor/iron,
 /area/station/command/bridge)
+"udH" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/digital_clock/directional/south,
+/turf/open/floor/iron/showroomfloor,
+/area/station/science/xenobiology)
 "udI" = (
 /turf/open/floor/iron,
 /area/station/commons/dorms)
@@ -81312,7 +81321,7 @@ wxE
 cWL
 xgI
 deL
-anF
+gbw
 yjB
 ezk
 eTl
@@ -84387,7 +84396,7 @@ xxk
 lGF
 trZ
 ahA
-cNn
+rlu
 pUq
 czw
 nmM
@@ -93151,7 +93160,7 @@ uYd
 uYd
 nbS
 bzI
-aRN
+udH
 eCm
 eIU
 nJV

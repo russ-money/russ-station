@@ -12342,6 +12342,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
+/obj/machinery/digital_clock/directional/north,
 /turf/open/floor/iron,
 /area/station/security/brig)
 "gHF" = (
@@ -20220,6 +20221,7 @@
 	dir = 4
 	},
 /obj/machinery/light/directional/north,
+/obj/machinery/incident_display/delam/directional/north,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "lcc" = (
@@ -20705,6 +20707,10 @@
 	},
 /turf/open/floor/plating,
 /area/station/security/brig)
+"lpR" = (
+/obj/machinery/digital_clock/directional/north,
+/turf/open/floor/carpet/royalblue,
+/area/station/command/heads_quarters/captain)
 "lpV" = (
 /turf/closed/wall/r_wall,
 /area/station/science/ordnance/burnchamber)
@@ -21062,7 +21068,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/central)
 "lAr" = (
-/obj/effect/overlay/palmtree_l,
+/obj/structure/flora/tree/palm,
 /turf/open/floor/holofloor/beach,
 /area/station/hallway/secondary/exit)
 "lAx" = (
@@ -21284,6 +21290,7 @@
 /area/station/commons/vacant_room/office)
 "lIH" = (
 /obj/machinery/camera/autoname/directional/west,
+/obj/machinery/digital_clock/directional/west,
 /turf/open/floor/wood,
 /area/station/service/bar)
 "lIL" = (
@@ -22882,6 +22889,7 @@
 	dir = 4
 	},
 /obj/machinery/light/directional/north,
+/obj/machinery/digital_clock/directional/north,
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/xenobiology)
 "myk" = (
@@ -26721,6 +26729,7 @@
 	},
 /obj/structure/cable,
 /obj/machinery/light/directional/north,
+/obj/machinery/digital_clock/directional/north,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "ove" = (
@@ -29217,6 +29226,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
+/obj/machinery/digital_clock/directional/north,
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
 "pKC" = (
@@ -29544,7 +29554,7 @@
 	desc = "He looks like hes up to no good...";
 	name = "Pleb";
 	real_name = "Pleb";
-	speak_emote = list("ribbit","croak","You Gay")
+	speak_emote = list("ribbit","croak","You  Gay")
 	},
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
@@ -30494,7 +30504,6 @@
 /obj/machinery/atmospherics/components/binary/pump{
 	name = "Gas to Chamber"
 	},
-/obj/machinery/incident_display/delam/directional/west,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "qsQ" = (
@@ -34370,6 +34379,7 @@
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
 	},
+/obj/machinery/digital_clock/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
 "sfC" = (
@@ -34766,6 +34776,7 @@
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 8
 	},
+/obj/machinery/digital_clock/directional/west,
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/central)
 "sqQ" = (
@@ -40273,6 +40284,7 @@
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 8
 	},
+/obj/machinery/digital_clock/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/science/ordnance)
 "vkQ" = (
@@ -43896,6 +43908,12 @@
 /obj/machinery/door/poddoor,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
+"wVu" = (
+/obj/effect/turf_decal/bot,
+/obj/effect/landmark/start/hangover,
+/obj/machinery/digital_clock/directional/north,
+/turf/open/floor/iron,
+/area/station/hallway/primary/central)
 "wVw" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
@@ -45695,6 +45713,7 @@
 /area/station/engineering/engine_smes)
 "xPc" = (
 /obj/machinery/light/dim/directional/north,
+/obj/machinery/digital_clock/directional/north,
 /turf/open/floor/wood,
 /area/station/service/library)
 "xPh" = (
@@ -69160,7 +69179,7 @@ dBM
 dBM
 nrY
 nqq
-kck
+wVu
 kck
 kck
 uIi
@@ -74824,7 +74843,7 @@ vBH
 omk
 vBH
 eJZ
-fLP
+lpR
 qmh
 kTX
 fLP

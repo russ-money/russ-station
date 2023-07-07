@@ -11192,7 +11192,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/port)
 "geP" = (
-/obj/effect/decal/cleanable/ash/crematorium,
+/obj/effect/decal/cleanable/ash,
 /turf/open/floor/iron/dark,
 /area/station/service/chapel/office)
 "gfp" = (
