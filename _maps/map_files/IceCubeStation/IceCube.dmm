@@ -10213,7 +10213,6 @@
 "eKb" = (
 /obj/item/kirbyplants/random,
 /obj/effect/turf_decal/tile/yellow/full,
-/obj/machinery/incident_display/delam/directional/west,
 /turf/open/floor/iron,
 /area/station/engineering/lobby)
 "eKr" = (
@@ -35324,6 +35323,7 @@
 /obj/item/electronics/firelock,
 /obj/item/electronics/firelock,
 /obj/effect/turf_decal/tile/yellow/full,
+/obj/machinery/incident_display/delam/directional/south,
 /turf/open/floor/iron,
 /area/station/engineering/lobby)
 "pRT" = (
@@ -36113,6 +36113,7 @@
 	},
 /obj/machinery/light/directional/south,
 /obj/machinery/portable_atmospherics/pump,
+/obj/machinery/incident_display/delam/directional/south,
 /turf/open/floor/iron,
 /area/station/engineering/lobby)
 "qmW" = (
