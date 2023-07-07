@@ -8260,6 +8260,7 @@
 	dir = 1
 	},
 /obj/machinery/portable_atmospherics/scrubber,
+/obj/machinery/incident_display/delam/directional/south,
 /turf/open/floor/iron,
 /area/station/hallway/primary/port)
 "cKY" = (
@@ -8336,13 +8337,10 @@
 /turf/open/floor/iron,
 /area/station/command/bridge)
 "cNw" = (
-/obj/machinery/door/poddoor/preopen{
-	id = "atmos";
-	name = "Atmospherics Blast Door"
-	},
-/obj/machinery/incident_display/delam/directional/south,
+/obj/machinery/atmospherics/components/unary/portables_connector/visible,
+/obj/machinery/incident_display/delam/directional/north,
 /turf/open/floor/iron/dark,
-/area/station/engineering/main)
+/area/station/engineering/supermatter/room)
 "cNI" = (
 /obj/structure/table,
 /obj/item/assembly/igniter,
@@ -21729,7 +21727,6 @@
 /obj/machinery/light/small/directional/north,
 /obj/structure/bed/roller,
 /obj/machinery/iv_drip,
-/obj/machinery/digital_clock/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/medical/morgue)
 "jKa" = (
@@ -32298,7 +32295,7 @@
 /area/station/engineering/main)
 "pSB" = (
 /obj/machinery/computer/atmos_control/mix_tank{
-	atmos_chambers = list("mix2"="Mix    Chamber    #2");
+	atmos_chambers = list("mix2"="Mix                Chamber                #2");
 	dir = 1;
 	name = "Gas Mix Tank #2 Control"
 	},
@@ -42245,7 +42242,7 @@
 /area/station/cargo/warehouse)
 "vGA" = (
 /obj/machinery/computer/atmos_control{
-	atmos_chambers = list("n2"="Nitrogen    Supply","o2"="Oxygen    Supply","co2"="Carbon    Dioxide    Supply","plas"="Plasma    Supply","n2o"="Nitrous    Oxide    Supply","air"="Mixed    Air    Supply","mix"="Mix    Tank","mix2"="Mix    Tank    #2","distro"="Distribution    Loop","waste"="Atmos    Waste    Loop","incinerator"="Incinerator    Chamber","ordnancelab"="Ordnance    Chamber");
+	atmos_chambers = list("n2"="Nitrogen                Supply","o2"="Oxygen                Supply","co2"="Carbon                Dioxide                Supply","plas"="Plasma                Supply","n2o"="Nitrous                Oxide                Supply","air"="Mixed                Air                Supply","mix"="Mix                Tank","mix2"="Mix                Tank                #2","distro"="Distribution                Loop","waste"="Atmos                Waste                Loop","incinerator"="Incinerator                Chamber","ordnancelab"="Ordnance                Chamber");
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -44465,7 +44462,7 @@
 	desc = "He looks like hes up to no good...";
 	name = "Pleb";
 	real_name = "Pleb";
-	speak_emote = list("ribbit","croak","You    Gay")
+	speak_emote = list("ribbit","croak","You                Gay")
 	},
 /turf/open/floor/iron/dark,
 /area/station/service/janitor)
@@ -60767,7 +60764,7 @@ aUf
 bJr
 afo
 xEh
-agW
+cNw
 aiO
 dwG
 xUo
@@ -67468,7 +67465,7 @@ xyK
 kVH
 xGe
 gvm
-cNw
+xqz
 xEh
 uNr
 mKw

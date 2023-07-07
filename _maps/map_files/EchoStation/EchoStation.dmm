@@ -18517,6 +18517,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/machinery/incident_display/delam/directional/north,
 /turf/open/floor/iron,
 /area/station/engineering/main)
 "kfb" = (
@@ -19571,7 +19572,6 @@
 /area/station/security/courtroom)
 "kGq" = (
 /obj/machinery/rnd/production/circuit_imprinter,
-/obj/machinery/incident_display/delam/directional/east,
 /turf/open/floor/iron/showroomfloor,
 /area/station/engineering/break_room)
 "kHn" = (
@@ -33324,7 +33324,6 @@
 	name = "Mix Bypass"
 	},
 /obj/structure/cable,
-/obj/machinery/incident_display/delam/directional/west,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "rSP" = (
@@ -37884,6 +37883,12 @@
 	},
 /turf/open/floor/iron,
 /area/station/science/ordnance)
+"umX" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/structure/cable,
+/obj/machinery/incident_display/delam/directional/south,
+/turf/open/floor/engine,
+/area/station/engineering/supermatter/room)
 "unF" = (
 /obj/machinery/light/directional/north,
 /obj/effect/decal/cleanable/dirt,
@@ -85973,7 +85978,7 @@ rBP
 wse
 wse
 odP
-kUb
+umX
 gMl
 jjW
 qah
