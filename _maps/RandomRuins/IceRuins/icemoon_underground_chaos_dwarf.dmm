@@ -291,10 +291,6 @@
 /area/icemoon/surface/dorf_chaos)
 "Q" = (
 /obj/machinery/anvil,
-/obj/item/book/granter/crafting_recipe/dwarf{
-	pixel_x = -6;
-	pixel_y = 3
-	},
 /turf/open/floor/cult{
 	initial_gas_mix = "ICEMOON_ATMOS"
 	},

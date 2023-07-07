@@ -300,10 +300,6 @@
 /area/lavaland/surface/dorf_chaos)
 "O" = (
 /obj/machinery/anvil,
-/obj/item/book/granter/crafting_recipe/dwarf{
-	pixel_x = -6;
-	pixel_y = 3
-	},
 /turf/open/floor/cult{
 	initial_gas_mix = "LAVALAND_ATMOS"
 	},
