@@ -36,9 +36,12 @@
 	var/skin_tone = "caucasian1" //Skin tone
 
 	var/lip_style = null //no lipstick by default- arguably misleading, as it could be used for general makeup
-	var/lip_color = "white"
+	var/lip_color = COLOR_WHITE
 
 	var/age = 30 //Player's age
+
+	/// Which body type to use
+	var/physique = MALE
 
 	//consider updating /mob/living/carbon/human/copy_clothing_prefs() if adding more of these
 	var/underwear = "Nude" //Which underwear the player wants
@@ -63,7 +66,7 @@
 
 	var/datum/physiology/physiology
 
-	var/list/datum/bioware = list()
+	var/list/datum/bioware/biowares
 
 	/// What types of mobs are allowed to ride/buckle to this mob
 	var/static/list/can_ride_typecache = typecacheof(list(/mob/living/carbon/human, /mob/living/simple_animal/slime, /mob/living/simple_animal/parrot))
@@ -71,8 +74,6 @@
 	var/account_id
 
 	var/hardcore_survival_score = 0
-	/// Which body type to use
-	var/physique = MALE
 
 	/// How many "units of blood" we have on our hands
 	var/blood_in_hands = 0
