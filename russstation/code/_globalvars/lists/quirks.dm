@@ -1,8 +1,1 @@
-GLOBAL_LIST_INIT(multilingual_languages, list(
-	"uncommon",
-	"draconic",
-	"moffic",
-	"nekomimetic",
-	"queekish",
-	"kitsumimetic",
-))
+// There used to be a quirk here... now there is nothing... how about you add one!

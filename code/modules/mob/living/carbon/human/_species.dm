@@ -221,6 +221,9 @@ GLOBAL_LIST_EMPTY(features_by_species)
 /proc/generate_selectable_species_and_languages()
 	var/list/selectable_species = list()
 
+	GLOB.roundstart_languages += /datum/language/nekomimetic // honk - languages for disabled species
+	GLOB.roundstart_languages += /datum/language/kitsumimetic // honk - languages for disabled species
+
 	for(var/species_type in subtypesof(/datum/species))
 		var/datum/species/species = new species_type
 		if(species.check_roundstart_eligible())
