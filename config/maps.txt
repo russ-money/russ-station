@@ -39,10 +39,6 @@ map pubbystation
 endmap
 # // honk end
 
-
-map metastation
-	#minplayers 25 // honk -- we're lowpop meta
-endmap
 map birdshot
 	#default
 	maxplayers 66
@@ -60,7 +56,7 @@ map icebox
 endmap
 
 map metastation
-	minplayers 25
+	#minplayers 25 // honk -- we're lowpop meta
 	#voteweight 0.5
 	votable
 endmap
