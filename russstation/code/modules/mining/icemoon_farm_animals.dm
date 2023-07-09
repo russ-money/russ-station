@@ -14,6 +14,8 @@
 		/obj/item/organ/internal/eyes = 1,
 		/obj/item/stack/sheet/bone = 15,
 	)
+	minimum_survivable_temperature = 150
+	maximum_survivable_temperature = 280
 
 /mob/living/basic/chicken/icemoon
 	name = "\improper icemoon chicken"
@@ -29,8 +31,8 @@
 		/obj/item/food/egg/iceegg = 1
 	)
 	habitable_atmos = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
-	minimum_survivable_temperature = 0
-	maximum_survivable_temperature = 1500
+	minimum_survivable_temperature = 150
+	maximum_survivable_temperature = 280
 
 /mob/living/basic/chicken/icemoon/Initialize(mapload)
 	. = ..()
@@ -58,6 +60,6 @@
 		/obj/item/stack/sheet/bone = 1,
 	)
 	habitable_atmos = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
-	minimum_survivable_temperature = 0
-	maximum_survivable_temperature = 1500
+	minimum_survivable_temperature = 150
+	maximum_survivable_temperature = 280
 	grow_as = /mob/living/basic/chicken/icemoon

@@ -25,3 +25,7 @@
 			else
 				. += "<p>According to \the [src.name], you are now in <b>\"[html_encode(A.name)]\"</b>.</p>"
 			. += "<p><a href='?src=[REF(src)];create_area=1'>Create or modify an existing area</a></p>"
+	var/datum/browser/popup = new(user, "blueprints", "[src]", 700, 500)
+	popup.set_content(.)
+	popup.open()
+	onclose(user, "blueprints")
