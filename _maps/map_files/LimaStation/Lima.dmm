@@ -27322,7 +27322,7 @@
 /area/station/security/brig)
 "mTj" = (
 /obj/machinery/smartfridge/organ,
-/turf/closed/wall,
+/turf/open/floor/iron,
 /area/station/medical/surgery)
 "mTq" = (
 /obj/effect/gibspawner/larva,
@@ -32295,7 +32295,7 @@
 /area/station/engineering/main)
 "pSB" = (
 /obj/machinery/computer/atmos_control/mix_tank{
-	atmos_chambers = list("mix2"="Mix                Chamber                #2");
+	atmos_chambers = list("mix2"="Mix                                Chamber                                #2");
 	dir = 1;
 	name = "Gas Mix Tank #2 Control"
 	},
@@ -37455,7 +37455,11 @@
 /area/station/hallway/primary/aft)
 "sWt" = (
 /obj/machinery/smartfridge/chemistry/preloaded,
-/turf/closed/wall,
+/obj/effect/turf_decal/tile/yellow/half/contrasted,
+/obj/effect/turf_decal/tile/blue/half{
+	dir = 1
+	},
+/turf/open/floor/iron/showroomfloor,
 /area/station/medical/pharmacy)
 "sWE" = (
 /obj/machinery/firealarm/directional/west,
@@ -42242,7 +42246,7 @@
 /area/station/cargo/warehouse)
 "vGA" = (
 /obj/machinery/computer/atmos_control{
-	atmos_chambers = list("n2"="Nitrogen                Supply","o2"="Oxygen                Supply","co2"="Carbon                Dioxide                Supply","plas"="Plasma                Supply","n2o"="Nitrous                Oxide                Supply","air"="Mixed                Air                Supply","mix"="Mix                Tank","mix2"="Mix                Tank                #2","distro"="Distribution                Loop","waste"="Atmos                Waste                Loop","incinerator"="Incinerator                Chamber","ordnancelab"="Ordnance                Chamber");
+	atmos_chambers = list("n2"="Nitrogen                                Supply","o2"="Oxygen                                Supply","co2"="Carbon                                Dioxide                                Supply","plas"="Plasma                                Supply","n2o"="Nitrous                                Oxide                                Supply","air"="Mixed                                Air                                Supply","mix"="Mix                                Tank","mix2"="Mix                                Tank                                #2","distro"="Distribution                                Loop","waste"="Atmos                                Waste                                Loop","incinerator"="Incinerator                                Chamber","ordnancelab"="Ordnance                                Chamber");
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -42344,8 +42348,7 @@
 /turf/open/floor/iron,
 /area/station/maintenance/disposal/incinerator)
 "vKj" = (
-/obj/structure/grille,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/station/maintenance/central)
 "vKn" = (
@@ -42940,6 +42943,11 @@
 	},
 /turf/open/floor/iron,
 /area/station/cargo/storage)
+"wds" = (
+/obj/machinery/smartfridge/chemistry/preloaded,
+/obj/effect/turf_decal/tile/yellow/fourcorners,
+/turf/open/floor/iron/white,
+/area/station/medical/pharmacy)
 "wec" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
 	dir = 4
@@ -44462,7 +44470,7 @@
 	desc = "He looks like hes up to no good...";
 	name = "Pleb";
 	real_name = "Pleb";
-	speak_emote = list("ribbit","croak","You                Gay")
+	speak_emote = list("ribbit","croak","You                                Gay")
 	},
 /turf/open/floor/iron/dark,
 /area/station/service/janitor)
@@ -81068,7 +81076,7 @@ onk
 muH
 pww
 vbc
-sWt
+wds
 usR
 lbU
 rmE
