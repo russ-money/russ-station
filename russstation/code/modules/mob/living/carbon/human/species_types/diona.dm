@@ -4,10 +4,8 @@
 	plural_form = "Dionae"
 	id = SPECIES_DIONA
 	sexes = FALSE
-	species_traits = list(
-		NOEYESPRITES,
-		NO_UNDERWEAR)
 	inherent_traits = list(
+		TRAIT_NO_UNDERWEAR,
 		TRAIT_ADVANCEDTOOLUSER,
 		TRAIT_CAN_STRIP,
 		TRAIT_NOBREATH,
@@ -20,16 +18,11 @@
 	external_organs = list(
 		/obj/item/organ/external/diona_hair = "None",
 	)
+	mutanttongue = /obj/item/organ/internal/tongue/pod // basically the same thing
 	inherent_biotypes = MOB_ORGANIC | MOB_PLANT // are we a human? If so add `| MOB_HUMANOID`
 	inherent_factions = list("plants", "vines")
-	burnmod = 1.5 // take more damage from lasers
 	heatmod = 2 // take more damage from fire
-	speedmod = 5 // very slow
 	meat = /obj/item/food/meat/slab/human/mutant/plant
-	// PodPeople bleed water, we don't
-	// exotic_blood = /datum/reagent/water
-	disliked_food = MEAT | DAIRY
-	liked_food = VEGETABLES | FRUIT | GRAIN
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | RACE_SWAP | ERT_SPAWN
 
 	bodypart_overrides = list(
@@ -49,7 +42,7 @@
 		randname += " [lastname]"
 	return randname
 
-/datum/species/skaven/randomize_features(mob/living/carbon/human/human_mob)
+/datum/species/diona/randomize_features(mob/living/carbon/human/human_mob)
 	. = ..()
 	human_mob.dna.features["diona_hair"] = GLOB.diona_hair_list[pick(GLOB.diona_hair_list)]
 	randomize_external_organs(human_mob)
@@ -81,12 +74,13 @@
 		H.take_overall_damage(2 * seconds_per_tick, 0)
 	..()
 
-/datum/species/diona/handle_chemicals(datum/reagent/chem, mob/living/carbon/human/H, seconds_per_tick, times_fired)
+/datum/species/diona/handle_chemical(datum/reagent/chem, mob/living/carbon/human/affected, seconds_per_tick, times_fired)
+	. = ..()
+	if(. & COMSIG_MOB_STOP_REAGENT_CHECK)
+		return
 	if(chem.type == /datum/reagent/toxin/plantbgone)
-		H.adjustToxLoss(3 * REAGENTS_EFFECT_MULTIPLIER * seconds_per_tick)
-		H.reagents.remove_reagent(chem.type, REAGENTS_METABOLISM * seconds_per_tick)
-		return TRUE
-	return ..()
+		affected.adjustToxLoss(3 * REAGENTS_EFFECT_MULTIPLIER * seconds_per_tick)
+		affected.reagents.remove_reagent(chem.type, REAGENTS_METABOLISM * seconds_per_tick)
 
 /datum/species/diona/randomize_main_appearance_element(mob/living/carbon/human/human_mob)
 	var/hairstyle = pick(GLOB.diona_hair_list)

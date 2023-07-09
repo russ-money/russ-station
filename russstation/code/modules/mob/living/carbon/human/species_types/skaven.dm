@@ -1,11 +1,10 @@
 /datum/species/skaven
 	name = "\improper Skaven"
 	id = SPECIES_SKAVEN
-	species_traits = list(
-		DYNCOLORS,
-		AGENDER,
-		EYECOLOR,
-		LIPS,
+	inherent_traits = list(
+		TRAIT_AGENDER,
+		TRAIT_MUTANT_COLORS,
+		TRAIT_FIXED_MUTANT_COLORS,
 	)
 	external_organs = list(
 		/obj/item/organ/external/horns = "None",
@@ -21,8 +20,6 @@
 	species_cookie = /obj/item/food/meat/slab
 	meat = /obj/item/food/meat/slab/human/mutant/skaven
 	skinned_type = /obj/item/stack/sheet/animalhide/skaven
-	disliked_food = NONE
-	liked_food = GROSS | MEAT | BUGS | RAW
 	outfit_important_for_life = /datum/outfit/skaven
 	species_language_holder = /datum/language_holder/skaven
 	sexes = FALSE //ever heard of female skaven? didnt think so

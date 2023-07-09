@@ -2,12 +2,8 @@
 	name = "\improper Kobold"
 	plural_form = "Kobolds"
 	id = SPECIES_KOBOLD
-	species_traits = list(
-		MUTCOLORS,
-		EYECOLOR,
-		LIPS
-	)
 	inherent_traits = list(
+		TRAIT_MUTANT_COLORS,
 		TRAIT_ADVANCEDTOOLUSER,
 		TRAIT_CAN_STRIP,
 		TRAIT_CAN_USE_FLIGHT_POTION,
@@ -31,8 +27,6 @@
 	meat = /obj/item/food/meat/slab/human/mutant/kobold
 	skinned_type = /obj/item/stack/sheet/animalhide/kobold
 	exotic_bloodtype = "L"
-	disliked_food = DAIRY
-	liked_food = GROSS | MEAT | SEAFOOD | NUTS | BUGS | RAW
 	inert_mutation = /datum/mutation/human/firebreath
 	death_sound = 'sound/voice/lizard/deathsound.ogg'
 	wing_types = list(/obj/item/organ/external/wings/functional/dragon)

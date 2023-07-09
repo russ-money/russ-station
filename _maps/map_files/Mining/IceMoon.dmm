@@ -132,9 +132,7 @@
 	},
 /obj/effect/turf_decal/tile/bar,
 /obj/structure/sink/directional/east,
-/obj/structure/sign/poster/official/random{
-	pixel_y = 32
-	},
+/obj/structure/sign/poster/official/random/directional/north,
 /turf/open/floor/plastic,
 /area/mine/living_quarters)
 "dd" = (
@@ -348,15 +346,10 @@
 /turf/open/floor/plastic,
 /area/mine/living_quarters)
 "gj" = (
-/obj/structure/sign/poster/official/no_erp{
+/obj/structure/sign/poster/official/no_erp/directional/west,
+/obj/structure/sign/poster/official/no_erp/directional/south,
+/obj/structure/sign/poster/official/no_erp/directional/south{
 	pixel_x = -32
-	},
-/obj/structure/sign/poster/official/no_erp{
-	pixel_y = -32
-	},
-/obj/structure/sign/poster/official/no_erp{
-	pixel_x = -32;
-	pixel_y = -32
 	},
 /obj/effect/spawner/random/exotic/snow_gear,
 /turf/open/floor/wood/cold,
@@ -516,16 +509,11 @@
 /turf/open/floor/iron/dark/textured,
 /area/mine/eva)
 "ja" = (
-/obj/structure/sign/poster/official/no_erp{
-	pixel_x = 32;
-	pixel_y = -32
-	},
-/obj/structure/sign/poster/official/no_erp{
-	pixel_y = -32
-	},
-/obj/structure/sign/poster/official/no_erp{
+/obj/structure/sign/poster/official/no_erp/directional/south{
 	pixel_x = 32
 	},
+/obj/structure/sign/poster/official/no_erp/directional/south,
+/obj/structure/sign/poster/official/no_erp/directional/east,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/wood/cold,
 /area/station/maintenance/space_hut/cabin)
@@ -558,9 +546,7 @@
 	pixel_x = 7;
 	pixel_y = 6
 	},
-/obj/structure/sign/poster/official/no_erp{
-	pixel_x = 32
-	},
+/obj/structure/sign/poster/official/no_erp/directional/east,
 /turf/open/floor/wood/cold,
 /area/station/maintenance/space_hut/cabin)
 "jD" = (
@@ -593,9 +579,7 @@
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
 	},
-/obj/structure/sign/poster/official/random{
-	pixel_x = 32
-	},
+/obj/structure/sign/poster/official/random/directional/east,
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/iron,
 /area/mine/living_quarters)
@@ -631,9 +615,7 @@
 "kS" = (
 /obj/structure/bed,
 /obj/item/bedsheet/random,
-/obj/structure/sign/poster/contraband/random{
-	pixel_y = 32
-	},
+/obj/structure/sign/poster/contraband/random/directional/north,
 /obj/structure/cable,
 /turf/open/floor/carpet,
 /area/mine/living_quarters)
@@ -814,9 +796,7 @@
 /area/mine/living_quarters)
 "po" = (
 /obj/structure/bed,
-/obj/structure/sign/poster/random{
-	pixel_y = 32
-	},
+/obj/structure/sign/poster/random/directional/north,
 /obj/item/bedsheet/random,
 /obj/structure/cable,
 /turf/open/floor/carpet,
@@ -833,9 +813,7 @@
 "qt" = (
 /obj/structure/table,
 /obj/machinery/light/small/directional/north,
-/obj/structure/sign/poster/official/random{
-	pixel_y = 32
-	},
+/obj/structure/sign/poster/official/random/directional/north,
 /obj/item/roller,
 /turf/open/floor/iron/white,
 /area/mine/living_quarters)
@@ -1027,9 +1005,7 @@
 "vY" = (
 /obj/structure/bed,
 /obj/item/bedsheet/brown,
-/obj/structure/sign/poster/random{
-	pixel_y = 32
-	},
+/obj/structure/sign/poster/random/directional/north,
 /obj/structure/cable,
 /turf/open/floor/carpet,
 /area/mine/living_quarters)
@@ -1056,9 +1032,7 @@
 /turf/open/floor/iron/textured,
 /area/mine/eva)
 "xz" = (
-/obj/structure/sign/poster/official/no_erp{
-	pixel_x = -32
-	},
+/obj/structure/sign/poster/official/no_erp/directional/west,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/wood/cold,
 /area/station/maintenance/space_hut/cabin)
@@ -1238,15 +1212,10 @@
 /turf/open/floor/iron,
 /area/mine/living_quarters)
 "Cs" = (
-/obj/structure/sign/poster/official/no_erp{
-	pixel_y = 32
-	},
-/obj/structure/sign/poster/official/no_erp{
+/obj/structure/sign/poster/official/no_erp/directional/north,
+/obj/structure/sign/poster/official/no_erp/directional/west,
+/obj/structure/sign/poster/official/no_erp/directional/north{
 	pixel_x = -32
-	},
-/obj/structure/sign/poster/official/no_erp{
-	pixel_x = -32;
-	pixel_y = 32
 	},
 /obj/effect/spawner/random/exotic/antag_gear_weak,
 /turf/open/floor/wood/cold,
@@ -1656,9 +1625,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/spawner/random/trash/garbage,
-/obj/structure/sign/poster/contraband/random{
-	pixel_y = -32
-	},
+/obj/structure/sign/poster/contraband/random/directional/south,
 /turf/open/floor/plating,
 /area/mine/maintenance)
 "MV" = (
@@ -1936,16 +1903,11 @@
 /area/mine/maintenance)
 "UY" = (
 /obj/structure/bookcase/random/adult,
-/obj/structure/sign/poster/official/no_erp{
-	pixel_y = 32
-	},
-/obj/structure/sign/poster/official/no_erp{
-	pixel_x = 32;
-	pixel_y = 32
-	},
-/obj/structure/sign/poster/official/no_erp{
+/obj/structure/sign/poster/official/no_erp/directional/north,
+/obj/structure/sign/poster/official/no_erp/directional/north{
 	pixel_x = 32
 	},
+/obj/structure/sign/poster/official/no_erp/directional/east,
 /turf/open/floor/wood/cold,
 /area/station/maintenance/space_hut/cabin)
 "Vb" = (
@@ -2102,9 +2064,7 @@
 /turf/open/floor/iron,
 /area/mine/lobby)
 "Yc" = (
-/obj/structure/sign/poster/official/random{
-	pixel_y = -32
-	},
+/obj/structure/sign/poster/official/random/directional/south,
 /obj/effect/turf_decal/siding/brown,
 /turf/open/floor/iron/dark/textured,
 /area/mine/eva)

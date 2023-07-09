@@ -4,9 +4,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/stripes/corner,
-/obj/structure/sign/poster/official/random{
-	pixel_x = 32
-	},
+/obj/structure/sign/poster/official/random/directional/east,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/arrival)
 "aG" = (
@@ -16,9 +14,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
 	},
-/obj/structure/sign/poster/official/random{
-	pixel_x = -32
-	},
+/obj/structure/sign/poster/official/random/directional/west,
 /obj/machinery/light/directional/west,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/arrival)
@@ -43,9 +39,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/obj/structure/sign/poster/official/random{
-	pixel_y = -32
-	},
+/obj/structure/sign/poster/official/random/directional/south,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/arrival)
 "gy" = (
@@ -129,9 +123,7 @@
 	},
 /area/shuttle/arrival)
 "up" = (
-/obj/item/kirbyplants{
-	icon_state = "plant-21"
-	},
+/obj/item/kirbyplants/organic/plant21,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
@@ -201,9 +193,7 @@
 /turf/open/floor/plating/airless,
 /area/shuttle/arrival)
 "CT" = (
-/obj/item/kirbyplants{
-	icon_state = "plant-21"
-	},
+/obj/item/kirbyplants/organic/plant21,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
@@ -253,9 +243,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/obj/structure/sign/poster/official/random{
-	pixel_y = -32
-	},
+/obj/structure/sign/poster/official/random/directional/south,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/arrival)
 "JX" = (

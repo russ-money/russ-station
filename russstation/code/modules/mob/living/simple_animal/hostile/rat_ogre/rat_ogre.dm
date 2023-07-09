@@ -207,12 +207,12 @@
 	// Delete existing
 	if(blade_effect)
 		stack_trace("[type] had an existing blade effect in on_activation. This might be an exploit, and should be investigated.")
-		UnregisterSignal(blade_effect, COMSIG_PARENT_QDELETING)
+		UnregisterSignal(blade_effect, COMSIG_QDELETING)
 		QDEL_NULL(blade_effect)
 
 	var/mob/living/living_user = on_who
 	blade_effect = living_user.apply_status_effect(/datum/status_effect/warpstone_blade, null, projectile_amount, 25, 0.66 SECONDS)
-	RegisterSignal(blade_effect, COMSIG_PARENT_QDELETING, .proc/on_status_effect_deleted)
+	RegisterSignal(blade_effect, COMSIG_QDELETING, .proc/on_status_effect_deleted)
 
 /datum/action/cooldown/spell/pointed/projectile/warpstone_blade/on_deactivation(mob/on_who, refund_cooldown = TRUE)
 	. = ..()
@@ -294,7 +294,7 @@
 	var/obj/effect/warpstone_dagger/blade = new(get_turf(owner))
 	warpstone_blades += blade
 	blade.orbit(owner, blade_orbit_radius)
-	RegisterSignal(blade, COMSIG_PARENT_QDELETING, .proc/remove_warpstone_blade)
+	RegisterSignal(blade, COMSIG_QDELETING, .proc/remove_warpstone_blade)
 	playsound(get_turf(owner), 'sound/items/unsheath.ogg', 33, TRUE)
 
 /datum/status_effect/warpstone_blade/proc/on_warpstone_shield_reaction(

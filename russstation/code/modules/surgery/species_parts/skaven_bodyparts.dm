@@ -5,6 +5,7 @@
 	icon_state = "skaven_head"
 	limb_id = SPECIES_SKAVEN
 	is_dimorphic = FALSE
+	head_flags = HEAD_LIPS|HEAD_EYESPRITES|HEAD_EYEHOLES|HEAD_DEBRAIN
 
 /obj/item/bodypart/chest/skaven
 	icon = 'russstation/icons/mob/human_parts_greyscale.dmi'

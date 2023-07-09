@@ -39,10 +39,6 @@ map pubbystation
 endmap
 # // honk end
 
-
-map metastation
-	#minplayers 25 // honk -- we're lowpop meta
-endmap
 map birdshot
 	#default
 	maxplayers 66
@@ -59,8 +55,9 @@ map icebox
 	#votable // honk -- icecube is better
 endmap
 
-map tramstation
-	minplayers 35
+map metastation
+	#minplayers 25 // honk -- we're lowpop meta
+	#voteweight 0.5
 	votable
 endmap
 
@@ -69,9 +66,18 @@ map northstar
 	votable
 endmap
 
+map tramstation
+	minplayers 35
+	votable
+endmap
 
-map runtimestation
+# Debug-only maps.
+
+map gateway_test
 endmap
 
 map multiz_debug
+endmap
+
+map runtimestation
 endmap

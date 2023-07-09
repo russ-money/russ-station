@@ -3,29 +3,31 @@
 	name = "\improper Dwarf"
 	plural_form = "Dwarves"
 	id = SPECIES_DWARF
-	species_traits = list(
-		EYECOLOR,
-		HAIR,
-		FACEHAIR,
-		LIPS)
 	inherent_traits = list(
+		TRAIT_USES_SKINTONES,
 		TRAIT_ADVANCEDTOOLUSER,
 		TRAIT_CAN_STRIP,
 		TRAIT_CAN_USE_FLIGHT_POTION,
 		TRAIT_LITERATE,
 	)
 	mutant_bodyparts = list("wings" = "None")
+	mutanttongue = /obj/item/organ/internal/tongue/dwarf
 	species_cookie = /obj/item/reagent_containers/cup/glass/bottle/ale
-	use_skintones = 1
 	skinned_type = /obj/item/stack/sheet/animalhide/human
-	brutemod = 1.15
 	coldmod = 1.15
 	//punchdamagehigh = 11 //fist fighting with dorfs is very dangerous
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_PRIDE | MIRROR_MAGIC | RACE_SWAP | ERT_SPAWN | SLIME_EXTRACT
 	species_language_holder = /datum/language_holder/dwarf
-	disliked_food = GROSS | RAW | CLOTH | BUGS
-	liked_food = ALCOHOL
 	examine_limb_id = SPECIES_DWARF
+
+	bodypart_overrides = list(
+		BODY_ZONE_HEAD = /obj/item/bodypart/head/dwarf,
+		BODY_ZONE_CHEST = /obj/item/bodypart/chest/dwarf,
+		BODY_ZONE_L_ARM = /obj/item/bodypart/arm/left/dwarf,
+		BODY_ZONE_R_ARM = /obj/item/bodypart/arm/right/dwarf,
+		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/dwarf,
+		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/dwarf,
+	)
 
 /// Returns the species's scream sound. (human screams)
 /datum/species/dwarf/get_scream_sound(mob/living/carbon/human/human)
@@ -143,7 +145,7 @@
 	)
 	coldmod = 0.5
 	heatmod = 1.5 //youch
-	brutemod = 0.4
+	//brutemod = 0.4
 	//punchdamagelow = 5 //Mountain dwarfs pack a meaner punch cause of the local wild life
 	species_language_holder = /datum/language_holder/dwarf/lavaland
 	mutanteyes = /obj/item/organ/internal/eyes/night_vision/dwarf
@@ -169,8 +171,7 @@
 	coldmod = 0.9
 	heatmod = 0.9
 	//punchdamagelow = 3 //Pissed off that they are alive
-	disliked_food = NONE
-	liked_food = BUGS | ALCOHOL | RAW | CLOTH | NUTS | VEGETABLES | SEAFOOD | MEAT
+	mutanttongue = /obj/item/organ/internal/tongue/dwarf
 	species_language_holder = /datum/language_holder/dwarf/lavaland
 	mutanteyes = /obj/item/organ/internal/eyes/night_vision/dwarf
 	death_sound = 'sound/machines/clockcult/ark_deathrattle.ogg' //spooky
