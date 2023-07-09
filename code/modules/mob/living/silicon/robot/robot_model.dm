@@ -371,6 +371,7 @@
 		/obj/item/borg/apparatus/sheet_manipulator,
 		/obj/item/stack/rods/cyborg,
 		/obj/item/stack/tile/iron/base/cyborg,
+		/obj/item/construction/rtd/borg,
 		/obj/item/stack/cable_coil,
 	)
 	radio_channels = list(RADIO_CHANNEL_ENGINEERING)
