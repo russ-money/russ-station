@@ -12,6 +12,7 @@
 	)
 	mutant_bodyparts = list("wings" = "None")
 	mutanttongue = /obj/item/organ/internal/tongue/dwarf
+	mutantliver = /obj/item/organ/internal/liver/dwarf
 	species_cookie = /obj/item/reagent_containers/cup/glass/bottle/ale
 	skinned_type = /obj/item/stack/sheet/animalhide/human
 	coldmod = 1.15

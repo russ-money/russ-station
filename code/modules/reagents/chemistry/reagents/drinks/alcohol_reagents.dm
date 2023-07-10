@@ -755,7 +755,7 @@
 /datum/reagent/consumable/ethanol/manly_dorf/on_mob_metabolize(mob/living/drinker)
 	if(ishuman(drinker))
 		var/mob/living/carbon/human/potential_dwarf = drinker
-		if(HAS_TRAIT(potential_dwarf, TRAIT_DWARF))
+		if(HAS_TRAIT(potential_dwarf, TRAIT_DWARF) || HAS_TRAIT(potential_dwarf, TRAIT_LESSER_DWARFISM)) //HONK - Added Lesser Dwarf
 			to_chat(potential_dwarf, span_notice("Now THAT is MANLY!"))
 			boozepwr = 50 // will still smash but not as much.
 			dorf_mode = TRUE
