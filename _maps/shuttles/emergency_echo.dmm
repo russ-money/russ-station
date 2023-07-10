@@ -338,9 +338,7 @@
 	name = "Escape Shuttle Airlock"
 	},
 /obj/docking_port/mobile/emergency{
-	dwidth = 4;
-	height = 20;
-	width = 9
+	name = "Echo emergency shuttle"
 	},
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)

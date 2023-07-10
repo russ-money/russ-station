@@ -31,10 +31,7 @@
 /obj/machinery/power/shuttle_engine/propulsion/burst/right{
 	dir = 4
 	},
-/obj/docking_port/mobile/arrivals{
-	height = 6;
-	width = 5
-	},
+/obj/docking_port/mobile/arrivals,
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle/arrival)
 "aD" = (
