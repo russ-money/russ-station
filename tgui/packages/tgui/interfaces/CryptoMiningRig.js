@@ -4,13 +4,8 @@ import { Window } from '../layouts';
 
 export const CryptoMiningRig = (props, context) => {
   const { act, data } = useBackend(context);
-  const {
-    on,
-    max_overclock,
-    overclock_amount,
-    max_coolant,
-    coolant_amount,
-  } = data;
+  const { on, max_overclock, overclock_amount, max_coolant, coolant_amount } =
+    data;
 
   return (
     <Window width={335} height={135}>
@@ -29,8 +24,8 @@ export const CryptoMiningRig = (props, context) => {
               {coolant_amount}U / {max_coolant}U
               <Button
                 ml={1}
-                icon='tint'
-                content='Purge'
+                icon="tint"
+                content="Purge"
                 onClick={() => act('purge')}
               />
             </LabeledList.Item>
