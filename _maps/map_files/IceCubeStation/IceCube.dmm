@@ -15501,7 +15501,7 @@
 /obj/machinery/elevator_control_panel/directional/east{
 	linked_elevator_id = "miningElevator";
 	pixel_x = 24;
-	preset_destination_names = list("2"="Mining        Office","3"="Mining        Dock")
+	preset_destination_names = list("2"="Mining                Office","3"="Mining                Dock")
 	},
 /obj/machinery/lift_indicator/directional/east{
 	linked_elevator_id = "miningElevator";
@@ -28634,7 +28634,7 @@
 	desc = "He looks like hes up to no good...";
 	name = "Pleb";
 	real_name = "Pleb";
-	speak_emote = list("ribbit","croak","You        Gay")
+	speak_emote = list("ribbit","croak","You                Gay")
 	},
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
@@ -29915,7 +29915,7 @@
 /area/station/engineering/main)
 "nyR" = (
 /obj/machinery/computer/atmos_control/ordnancemix{
-	atmos_chambers = list("ordnancelab2"="Ordnance        Chamber        2")
+	atmos_chambers = list("ordnancelab2"="Ordnance                Chamber                2")
 	},
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/ordnance)

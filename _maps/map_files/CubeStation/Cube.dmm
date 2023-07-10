@@ -3982,16 +3982,13 @@
 /area/station/hallway/primary/port)
 "chD" = (
 /obj/structure/sign/poster/official/no_erp/directional/south,
-/obj/structure/sign/poster/official/no_erp/directional/south{
-	pixel_x = -32
-	},
 /obj/structure/sign/poster/official/no_erp/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
 "cil" = (
 /obj/machinery/smartfridge/organ,
-/turf/closed/wall,
+/turf/open/floor/iron/white,
 /area/station/medical/surgery)
 "ciC" = (
 /obj/machinery/power/apc/auto_name/directional/north{
@@ -10058,9 +10055,6 @@
 /obj/structure/sign/poster/official/no_erp/directional/east,
 /obj/structure/sign/poster/official/no_erp/directional/south,
 /obj/structure/sign/poster/official/no_erp/directional/south,
-/obj/structure/sign/poster/official/no_erp/directional/south{
-	pixel_x = 32
-	},
 /obj/item/flashlight/flare/candle,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/language_manual{
@@ -25789,7 +25783,7 @@
 /area/station/engineering/atmos)
 "nXd" = (
 /obj/machinery/smartfridge/chemistry/preloaded,
-/turf/closed/wall,
+/turf/open/floor/iron/white,
 /area/station/medical/pharmacy)
 "nXg" = (
 /obj/effect/turf_decal/bot,
@@ -29544,7 +29538,7 @@
 	desc = "He looks like hes up to no good...";
 	name = "Pleb";
 	real_name = "Pleb";
-	speak_emote = list("ribbit","croak","You                Gay")
+	speak_emote = list("ribbit","croak","You                                Gay")
 	},
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
@@ -35251,9 +35245,6 @@
 /obj/structure/bookcase/random/adult,
 /obj/structure/sign/poster/official/no_erp/directional/east,
 /obj/structure/sign/poster/official/no_erp/directional/north,
-/obj/structure/sign/poster/official/no_erp/directional/north{
-	pixel_x = 32
-	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
@@ -44498,7 +44489,6 @@
 	dir = 4
 	},
 /obj/structure/table,
-/obj/structure/table,
 /obj/structure/bedsheetbin/empty,
 /obj/effect/turf_decal/stripes/corner,
 /turf/open/floor/iron/cafeteria,
@@ -44995,6 +44985,11 @@
 /obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/medical/exam_room)
+"xxV" = (
+/obj/machinery/smartfridge/chemistry/preloaded,
+/obj/effect/turf_decal/tile/yellow/fourcorners,
+/turf/open/floor/iron/white,
+/area/station/medical/pharmacy)
 "xyq" = (
 /obj/structure/table,
 /obj/effect/turf_decal/tile/purple{
@@ -78678,7 +78673,7 @@ wHB
 lZm
 jDM
 tXj
-nXd
+xxV
 lNa
 bFz
 huo

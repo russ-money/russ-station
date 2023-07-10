@@ -4230,7 +4230,7 @@
 /area/station/maintenance/department/engine)
 "atC" = (
 /obj/machinery/smartfridge/extract,
-/turf/closed/wall,
+/turf/open/floor/iron/showroomfloor,
 /area/station/science/xenobiology)
 "atE" = (
 /obj/machinery/hypertorus/corner{
@@ -10472,10 +10472,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
 /turf/open/floor/iron/dark,
 /area/station/medical/morgue)
-"dMa" = (
-/obj/machinery/camera/autoname/directional/south,
-/turf/open/floor/iron/showroomfloor,
-/area/station/science/xenobiology)
 "dNd" = (
 /obj/structure/sign/poster/contraband/random/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
@@ -23112,6 +23108,7 @@
 "qsd" = (
 /obj/machinery/processor/slime,
 /obj/structure/extinguisher_cabinet/directional/south,
+/obj/machinery/camera/autoname/directional/south,
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/xenobiology)
 "qss" = (
@@ -74651,7 +74648,7 @@ mpc
 dya
 axE
 aix
-dMa
+aix
 atC
 sDD
 gUX
