@@ -12781,9 +12781,7 @@
 /area/station/maintenance/department/crew_quarters/bar)
 "aSc" = (
 /obj/structure/extinguisher_cabinet/directional/west,
-/obj/machinery/modular_computer/preset/cargochat/service{
-	dir = 4
-	},
+/obj/structure/table,
 /turf/open/floor/iron/dark,
 /area/station/hallway/secondary/service)
 "aSd" = (
@@ -13825,13 +13823,7 @@
 	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/table,
-/obj/item/paper_bin{
-	layer = 2.9
-	},
-/obj/item/pen{
-	layer = 4
-	},
+/obj/machinery/modular_computer/preset/cargochat/service,
 /turf/open/floor/iron/dark,
 /area/station/hallway/secondary/service)
 "aWi" = (

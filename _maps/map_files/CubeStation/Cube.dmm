@@ -7086,6 +7086,7 @@
 	},
 /obj/effect/decal/cleanable/food/pie_smudge,
 /obj/structure/cable,
+/obj/effect/spawner/random/trash/grille_or_waste,
 /turf/open/floor/iron,
 /area/station/maintenance/starboard/aft)
 "dVa" = (
@@ -13539,17 +13540,9 @@
 /turf/open/floor/plating,
 /area/station/construction/mining/aux_base)
 "hra" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
-	dir = 4
-	},
-/obj/effect/spawner/random/trash/grille_or_waste,
-/obj/structure/cable,
-/obj/machinery/light/small/directional/south,
-/turf/open/floor/iron,
-/area/station/maintenance/starboard/aft)
+/obj/structure/table,
+/turf/open/floor/iron/freezer,
+/area/station/service/kitchen)
 "hrb" = (
 /obj/structure/closet/crate{
 	name = "Art Crate"
@@ -29551,7 +29544,7 @@
 	desc = "He looks like hes up to no good...";
 	name = "Pleb";
 	real_name = "Pleb";
-	speak_emote = list("ribbit","croak","You        Gay")
+	speak_emote = list("ribbit","croak","You                Gay")
 	},
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
@@ -32462,8 +32455,8 @@
 /area/station/engineering/atmos)
 "rjB" = (
 /obj/item/paper,
-/obj/machinery/light/small/broken/directional/north,
 /obj/structure/cable,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/service)
 "rjG" = (
@@ -80075,7 +80068,7 @@ iwz
 pYE
 sLT
 acu
-hra
+xzz
 hVG
 rjB
 oPe
@@ -80523,7 +80516,7 @@ sXV
 pRy
 xpn
 wgg
-jXB
+hra
 eXs
 gYY
 mYj
@@ -80750,7 +80743,7 @@ udt
 pRy
 qQo
 wgg
-hNC
+jXB
 hNC
 hNC
 vxf
