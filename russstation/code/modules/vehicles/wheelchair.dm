@@ -1,5 +1,6 @@
 /obj/vehicle/ridden/wheelchair/russ
 	icon = 'russstation/icons/obj/vehicles.dmi' // redirect icon to our section
+	icon_state = null
 
 /obj/vehicle/ridden/wheelchair/russ/hotrod
 	name = "The Hotrod"

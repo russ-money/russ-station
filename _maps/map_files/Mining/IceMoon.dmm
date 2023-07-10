@@ -22,10 +22,9 @@
 /turf/open/misc/asteroid/snow/icemoon,
 /area/icemoon/underground/explored)
 "aN" = (
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/mine/living_quarters)
 "aP" = (
@@ -38,19 +37,17 @@
 /turf/open/floor/plastic,
 /area/mine/living_quarters)
 "aQ" = (
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/mine/lobby)
 "aY" = (
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/mine/living_quarters)
 "bc" = (
@@ -348,9 +345,6 @@
 "gj" = (
 /obj/structure/sign/poster/official/no_erp/directional/west,
 /obj/structure/sign/poster/official/no_erp/directional/south,
-/obj/structure/sign/poster/official/no_erp/directional/south{
-	pixel_x = -32
-	},
 /obj/effect/spawner/random/exotic/snow_gear,
 /turf/open/floor/wood/cold,
 /area/station/maintenance/space_hut/cabin)
@@ -434,10 +428,9 @@
 /turf/open/floor/iron/freezer,
 /area/mine/living_quarters)
 "hr" = (
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/tinted/frosted/spawner/directional/north,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/mine/mechbay)
 "hM" = (
@@ -509,9 +502,6 @@
 /turf/open/floor/iron/dark/textured,
 /area/mine/eva)
 "ja" = (
-/obj/structure/sign/poster/official/no_erp/directional/south{
-	pixel_x = 32
-	},
 /obj/structure/sign/poster/official/no_erp/directional/south,
 /obj/structure/sign/poster/official/no_erp/directional/east,
 /obj/effect/mapping_helpers/broken_floor,
@@ -562,11 +552,10 @@
 /area/mine/living_quarters)
 "jO" = (
 /obj/structure/sign/warning/docking,
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/mine/living_quarters)
 "jQ" = (
@@ -627,10 +616,9 @@
 /turf/open/floor/iron,
 /area/mine/living_quarters)
 "kV" = (
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/structure/window/reinforced/tinted/frosted/spawner/directional/east,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/mine/living_quarters)
 "lm" = (
@@ -688,9 +676,8 @@
 /area/mine/living_quarters)
 "mm" = (
 /obj/structure/window/reinforced/spawner/directional/south,
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/north,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/mine/eva)
 "mu" = (
@@ -745,10 +732,9 @@
 /turf/open/floor/wood,
 /area/mine/living_quarters)
 "nS" = (
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/mine/living_quarters)
 "oa" = (
@@ -965,10 +951,9 @@
 /turf/open/floor/iron/white,
 /area/mine/living_quarters)
 "vj" = (
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/spawner/directional/south,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/mine/living_quarters)
 "vq" = (
@@ -1011,9 +996,8 @@
 /area/mine/living_quarters)
 "wd" = (
 /obj/structure/window/reinforced/spawner/directional/south,
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/north,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/west,
 /turf/open/floor/plating,
 /area/mine/eva)
@@ -1067,10 +1051,9 @@
 /turf/open/misc/asteroid/snow/icemoon,
 /area/icemoon/underground/explored)
 "yB" = (
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/mine/living_quarters)
 "yG" = (
@@ -1098,9 +1081,8 @@
 /area/mine/living_quarters)
 "zr" = (
 /obj/structure/window/reinforced/spawner/directional/south,
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/north,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/east,
 /turf/open/floor/plating,
 /area/mine/eva)
@@ -1126,10 +1108,9 @@
 /area/mine/living_quarters)
 "zK" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/mine/living_quarters)
 "zP" = (
@@ -1168,11 +1149,10 @@
 /area/mine/eva)
 "AM" = (
 /obj/structure/sign/warning/docking,
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/mine/lobby)
 "AP" = (
@@ -1184,10 +1164,9 @@
 /turf/open/floor/iron,
 /area/mine/lobby)
 "BN" = (
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/mine/lobby)
 "Cj" = (
@@ -1214,9 +1193,6 @@
 "Cs" = (
 /obj/structure/sign/poster/official/no_erp/directional/north,
 /obj/structure/sign/poster/official/no_erp/directional/west,
-/obj/structure/sign/poster/official/no_erp/directional/north{
-	pixel_x = -32
-	},
 /obj/effect/spawner/random/exotic/antag_gear_weak,
 /turf/open/floor/wood/cold,
 /area/station/maintenance/space_hut/cabin)
@@ -1261,10 +1237,9 @@
 /turf/open/floor/iron,
 /area/mine/living_quarters)
 "Ec" = (
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/tinted/frosted/spawner/directional/west,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/mine/living_quarters)
 "Ei" = (
@@ -1324,10 +1299,9 @@
 /turf/open/floor/iron,
 /area/mine/mechbay)
 "EB" = (
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/tinted/frosted/spawner/directional/west,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/mine/mechbay)
 "EL" = (
@@ -1547,11 +1521,10 @@
 /turf/open/floor/iron/dark/textured,
 /area/mine/eva)
 "KN" = (
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/mine/lobby)
 "KQ" = (
@@ -1630,19 +1603,17 @@
 /area/mine/maintenance)
 "MV" = (
 /obj/structure/sign/warning/docking,
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/mine/lobby)
 "MZ" = (
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/mine/living_quarters)
 "Nu" = (
@@ -1657,11 +1628,10 @@
 /area/mine/lobby)
 "Of" = (
 /obj/structure/sign/warning/docking,
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/mine/living_quarters)
 "Oi" = (
@@ -1904,9 +1874,6 @@
 "UY" = (
 /obj/structure/bookcase/random/adult,
 /obj/structure/sign/poster/official/no_erp/directional/north,
-/obj/structure/sign/poster/official/no_erp/directional/north{
-	pixel_x = 32
-	},
 /obj/structure/sign/poster/official/no_erp/directional/east,
 /turf/open/floor/wood/cold,
 /area/station/maintenance/space_hut/cabin)
@@ -1931,9 +1898,8 @@
 /area/mine/maintenance)
 "Vh" = (
 /obj/structure/window/reinforced/spawner/directional/south,
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/north,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/mine/living_quarters)
 "Vj" = (
@@ -1958,10 +1924,9 @@
 /turf/open/floor/iron/dark/textured,
 /area/mine/eva)
 "VP" = (
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/south,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/mine/living_quarters)
 "VV" = (

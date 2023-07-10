@@ -7698,7 +7698,8 @@
 /area/station/hallway/primary/central)
 "aAL" = (
 /obj/machinery/smartfridge/organ,
-/turf/closed/wall,
+/obj/effect/turf_decal/tile/blue/fourcorners,
+/turf/open/floor/iron/white,
 /area/station/medical/surgery)
 "aAM" = (
 /obj/structure/chair,
@@ -12661,7 +12662,6 @@
 /area/station/hallway/primary/central)
 "aRJ" = (
 /obj/structure/table,
-/obj/structure/table,
 /obj/item/storage/box/beakers{
 	pixel_x = 4;
 	pixel_y = 4
@@ -12781,9 +12781,7 @@
 /area/station/maintenance/department/crew_quarters/bar)
 "aSc" = (
 /obj/structure/extinguisher_cabinet/directional/west,
-/obj/machinery/modular_computer/preset/cargochat/service{
-	dir = 4
-	},
+/obj/structure/table,
 /turf/open/floor/iron/dark,
 /area/station/hallway/secondary/service)
 "aSd" = (
@@ -13825,13 +13823,7 @@
 	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/table,
-/obj/item/paper_bin{
-	layer = 2.9
-	},
-/obj/item/pen{
-	layer = 4
-	},
+/obj/machinery/modular_computer/preset/cargochat/service,
 /turf/open/floor/iron/dark,
 /area/station/hallway/secondary/service)
 "aWi" = (
@@ -15104,7 +15096,7 @@
 /area/station/service/hydroponics)
 "aZZ" = (
 /obj/machinery/smartfridge,
-/turf/closed/wall,
+/turf/open/floor/iron,
 /area/station/service/kitchen)
 "baa" = (
 /obj/structure/disposalpipe/segment,
@@ -15538,8 +15530,7 @@
 /turf/open/floor/iron/dark,
 /area/station/service/bar)
 "bbu" = (
-/obj/structure/grille,
-/obj/structure/window/fulltile,
+/obj/effect/spawner/structure/window,
 /turf/open/floor/plating,
 /area/station/service/bar)
 "bbv" = (
@@ -19176,7 +19167,8 @@
 /area/station/medical/medbay/central)
 "bpX" = (
 /obj/machinery/smartfridge/chemistry/preloaded,
-/turf/closed/wall,
+/obj/effect/turf_decal/tile/yellow/fourcorners,
+/turf/open/floor/iron/white,
 /area/station/medical/chemistry)
 "bpY" = (
 /turf/closed/wall,
@@ -23788,6 +23780,7 @@
 /obj/effect/turf_decal/tile/purple/half/contrasted{
 	dir = 1
 	},
+/obj/machinery/incident_display/delam/directional/north,
 /turf/open/floor/iron,
 /area/station/hallway/primary/aft)
 "bHk" = (
@@ -34391,9 +34384,7 @@
 /obj/effect/decal/cleanable/blood/drip,
 /obj/item/restraints/handcuffs,
 /obj/item/clothing/mask/muzzle,
-/obj/structure/sign/poster/official/no_erp{
-	pixel_x = 29
-	},
+/obj/structure/sign/poster/official/no_erp/directional/east,
 /turf/open/floor/iron/dark,
 /area/station/medical/abandoned)
 "dus" = (
@@ -37690,7 +37681,6 @@
 	start_active = 1
 	},
 /obj/item/kirbyplants/organic/plant2,
-/obj/machinery/incident_display/delam/directional/south,
 /turf/open/floor/iron,
 /area/station/engineering/lobby)
 "iqW" = (
@@ -38301,6 +38291,12 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/medical/virology)
+"jqb" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/tile/yellow/half/contrasted,
+/obj/machinery/incident_display/delam/directional/south,
+/turf/open/floor/iron,
+/area/station/engineering/main)
 "jqA" = (
 /obj/effect/turf_decal/tile/blue/half/contrasted{
 	dir = 1
@@ -44866,9 +44862,7 @@
 /area/station/maintenance/department/chapel/monastery)
 "sXx" = (
 /obj/effect/spawner/atmos_canister/air,
-/obj/structure/sign/poster/traitor/random{
-	pixel_x = 32
-	},
+/obj/structure/sign/poster/random/directional/east,
 /turf/open/floor/plating,
 /area/station/security/prison)
 "sXR" = (
@@ -47373,7 +47367,8 @@
 /obj/machinery/smartfridge/chemistry/preloaded,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/closed/wall,
+/obj/effect/turf_decal/tile/yellow/fourcorners,
+/turf/open/floor/iron/white,
 /area/station/medical/chemistry)
 "wnJ" = (
 /obj/structure/sign/warning,
@@ -47746,8 +47741,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/crew_quarters/dorms)
 "wMM" = (
-/obj/structure/grille,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/station/maintenance/department/engine)
 "wNm" = (
@@ -82457,7 +82451,7 @@ cbW
 cbp
 jeS
 cam
-cdI
+jqb
 jbG
 yjs
 qrw

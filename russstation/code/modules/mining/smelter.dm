@@ -256,7 +256,7 @@
 	name = "molten blob"
 	desc = "A hardened blob of ore. You shouldn't be seeing this..."
 	icon = 'russstation/icons/obj/blacksmithing.dmi'
-	icon_state = "blob_base"
+	icon_state = "error"
 	inhand_icon_state = "sheet-metal" // yeah whatever
 	w_class = WEIGHT_CLASS_NORMAL
 	var/material_type = "unobtanium"

@@ -75,10 +75,7 @@
 	},
 /obj/effect/mapping_helpers/airlock/access/all/supply/general,
 /obj/docking_port/mobile/supply{
-	anchored = 5;
-	dwidth = 4;
-	height = 6;
-	width = 10
+	anchored = 5
 	},
 /turf/open/floor/plating,
 /area/shuttle/supply)

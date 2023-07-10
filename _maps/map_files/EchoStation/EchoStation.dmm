@@ -486,9 +486,6 @@
 /obj/structure/bookcase/random/adult,
 /obj/structure/sign/poster/official/no_erp/directional/east,
 /obj/structure/sign/poster/official/no_erp/directional/north,
-/obj/structure/sign/poster/official/no_erp/directional/north{
-	pixel_x = 32
-	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
@@ -664,7 +661,7 @@
 /obj/machinery/smartfridge{
 	name = "Vegetable Storage"
 	},
-/turf/closed/wall,
+/turf/open/floor/iron,
 /area/station/service/hydroponics)
 "arW" = (
 /obj/machinery/door/airlock/public/glass{
@@ -7710,7 +7707,7 @@
 	desc = "He looks like hes up to no good...";
 	name = "Pleb";
 	real_name = "Pleb";
-	speak_emote = list("ribbit","croak","You  Gay")
+	speak_emote = list("ribbit","croak","You    Gay")
 	},
 /turf/open/floor/iron/dark,
 /area/station/service/janitor)
@@ -13547,6 +13544,7 @@
 /area/station/science/robotics/mechbay)
 "hzv" = (
 /obj/item/kitchen/rollingpin,
+/obj/effect/decal/cleanable/blood/innards,
 /turf/open/floor/iron/freezer,
 /area/station/service/kitchen)
 "hzN" = (
@@ -21897,7 +21895,7 @@
 /area/station/hallway/primary/starboard)
 "lVB" = (
 /obj/machinery/smartfridge/organ,
-/turf/closed/wall,
+/turf/open/floor/iron/white,
 /area/station/medical/surgery)
 "lVE" = (
 /obj/effect/decal/cleanable/dirt,
@@ -27165,7 +27163,7 @@
 /area/station/hallway/primary/port)
 "oHz" = (
 /obj/machinery/smartfridge/organ,
-/turf/closed/wall,
+/turf/open/floor/iron/white,
 /area/station/medical/surgery/aft)
 "oIb" = (
 /obj/effect/turf_decal/tile/blue{
@@ -29464,7 +29462,7 @@
 /area/station/engineering/atmos)
 "pUN" = (
 /obj/machinery/smartfridge/chemistry,
-/turf/closed/wall,
+/turf/open/floor/iron/showroomfloor,
 /area/station/medical/pharmacy)
 "pVn" = (
 /obj/effect/turf_decal/stripes/corner,
@@ -29772,9 +29770,6 @@
 /area/station/science/ordnance/storage)
 "qbo" = (
 /obj/structure/sign/poster/official/no_erp/directional/south,
-/obj/structure/sign/poster/official/no_erp/directional/south{
-	pixel_x = -32
-	},
 /obj/structure/sign/poster/official/no_erp/directional/west,
 /obj/item/reagent_containers/cup/rag,
 /obj/effect/decal/cleanable/dirt,
@@ -31125,7 +31120,7 @@
 /obj/machinery/smartfridge/food{
 	name = "Food Storage"
 	},
-/turf/closed/wall,
+/turf/open/floor/iron/cafeteria,
 /area/station/maintenance/starboard/central)
 "qKD" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
@@ -34247,9 +34242,6 @@
 /obj/structure/sign/poster/official/no_erp/directional/east,
 /obj/structure/sign/poster/official/no_erp/directional/south,
 /obj/structure/sign/poster/official/no_erp/directional/south,
-/obj/structure/sign/poster/official/no_erp/directional/south{
-	pixel_x = 32
-	},
 /obj/item/flashlight/flare/candle,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
@@ -34588,10 +34580,10 @@
 /turf/open/floor/plating,
 /area/station/maintenance/port/fore)
 "sGC" = (
-/obj/effect/decal/cleanable/blood/innards,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/machinery/vending/dinnerware,
 /turf/open/floor/iron/freezer,
 /area/station/service/kitchen)
 "sGO" = (
@@ -38414,8 +38406,8 @@
 /area/station/service/chapel)
 "uCx" = (
 /obj/effect/turf_decal/stripes/line,
-/obj/machinery/vending/dinnerware,
 /obj/machinery/light/directional/east,
+/obj/structure/table,
 /turf/open/floor/iron/cafeteria,
 /area/station/service/kitchen)
 "uCA" = (
@@ -40159,7 +40151,7 @@
 /area/station/hallway/primary/central)
 "vut" = (
 /obj/machinery/smartfridge/chemistry/preloaded,
-/turf/closed/wall,
+/turf/open/floor/iron/showroomfloor,
 /area/station/medical/pharmacy)
 "vuB" = (
 /obj/effect/decal/cleanable/dirt,
@@ -42338,7 +42330,7 @@
 /obj/machinery/smartfridge{
 	name = "Vegetable Storage"
 	},
-/turf/closed/wall,
+/turf/open/floor/iron,
 /area/station/service/kitchen)
 "wtK" = (
 /obj/effect/turf_decal/tile/blue{

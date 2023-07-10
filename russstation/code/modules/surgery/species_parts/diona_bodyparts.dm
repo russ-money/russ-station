@@ -2,6 +2,7 @@
 	icon = 'russstation/icons/mob/mutant_bodyparts.dmi'
 	icon_static = 'russstation/icons/mob/mutant_bodyparts.dmi'
 	icon_greyscale = 'russstation/icons/mob/mutant_bodyparts.dmi'
+	icon_state = "diona_head"
 	limb_id = SPECIES_DIONA
 	is_dimorphic = FALSE
 	dmg_overlay_type = null // dionas don't have blood
@@ -12,6 +13,7 @@
 	icon = 'russstation/icons/mob/mutant_bodyparts.dmi'
 	icon_static = 'russstation/icons/mob/mutant_bodyparts.dmi'
 	icon_greyscale = 'russstation/icons/mob/mutant_bodyparts.dmi'
+	icon_state = "diona_chest"
 	limb_id = SPECIES_DIONA
 	is_dimorphic = FALSE
 	dmg_overlay_type = null
@@ -21,6 +23,7 @@
 	icon = 'russstation/icons/mob/mutant_bodyparts.dmi'
 	icon_static = 'russstation/icons/mob/mutant_bodyparts.dmi'
 	icon_greyscale = 'russstation/icons/mob/mutant_bodyparts.dmi'
+	icon_state = "diona_l_arm"
 	limb_id = SPECIES_DIONA
 	dmg_overlay_type = null
 	burn_modifier = 1.5
@@ -29,6 +32,7 @@
 	icon = 'russstation/icons/mob/mutant_bodyparts.dmi'
 	icon_static = 'russstation/icons/mob/mutant_bodyparts.dmi'
 	icon_greyscale = 'russstation/icons/mob/mutant_bodyparts.dmi'
+	icon_state = "diona_r_arm"
 	limb_id = SPECIES_DIONA
 	dmg_overlay_type = null
 	burn_modifier = 1.5
@@ -37,6 +41,7 @@
 	icon = 'russstation/icons/mob/mutant_bodyparts.dmi'
 	icon_static = 'russstation/icons/mob/mutant_bodyparts.dmi'
 	icon_greyscale = 'russstation/icons/mob/mutant_bodyparts.dmi'
+	icon_state = "diona_l_leg"
 	limb_id = SPECIES_DIONA
 	dmg_overlay_type = null
 	burn_modifier = 1.5
@@ -46,6 +51,7 @@
 	icon = 'russstation/icons/mob/mutant_bodyparts.dmi'
 	icon_static = 'russstation/icons/mob/mutant_bodyparts.dmi'
 	icon_greyscale = 'russstation/icons/mob/mutant_bodyparts.dmi'
+	icon_state = "diona_r_leg"
 	limb_id = SPECIES_DIONA
 	dmg_overlay_type = null
 	burn_modifier = 1.5

@@ -469,10 +469,9 @@
 /turf/open/floor/iron/dark,
 /area/station/security/checkpoint/medical)
 "ajP" = (
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/station/hallway/secondary/entry)
 "ajR" = (
@@ -596,10 +595,9 @@
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
 "alH" = (
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/north,
-/obj/structure/grille,
 /turf/open/floor/plating,
 /area/station/science/research)
 "alJ" = (
@@ -1214,11 +1212,10 @@
 /turf/open/floor/iron,
 /area/station/security/prison)
 "aCv" = (
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/station/hallway/secondary/entry)
 "aCC" = (
@@ -1298,8 +1295,7 @@
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/grille,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/station/hallway/secondary/exit/departure_lounge)
 "aFA" = (
@@ -1741,10 +1737,9 @@
 /turf/open/floor/iron/dark,
 /area/station/service/hydroponics/upper)
 "aPW" = (
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/south,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/station/hallway/secondary/entry)
 "aPX" = (
@@ -2695,8 +2690,7 @@
 /turf/open/floor/iron,
 /area/station/command/heads_quarters/qm)
 "bjN" = (
-/obj/structure/cable,
-/obj/structure/grille,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/west,
 /turf/open/floor/plating,
@@ -3243,8 +3237,7 @@
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/grille,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/station/hallway/secondary/exit/departure_lounge)
 "bzw" = (
@@ -4092,8 +4085,7 @@
 /turf/open/floor/iron,
 /area/station/maintenance/port/aft)
 "bUp" = (
-/obj/structure/cable,
-/obj/structure/grille,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/structure/window/reinforced/spawner/directional/east,
 /turf/open/floor/plating,
@@ -4312,10 +4304,9 @@
 /turf/open/floor/iron/white/textured,
 /area/station/medical/virology)
 "cbC" = (
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/north,
-/obj/structure/grille,
 /turf/open/floor/plating,
 /area/station/hallway/secondary/entry)
 "cbG" = (
@@ -5250,8 +5241,7 @@
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "cBt" = (
-/obj/structure/cable,
-/obj/structure/grille,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/structure/window/reinforced/spawner/directional/east,
 /turf/open/floor/plating,
@@ -5346,11 +5336,10 @@
 /turf/open/floor/plating,
 /area/station/maintenance/port/central)
 "cDQ" = (
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/station/hallway/secondary/entry)
 "cEh" = (
@@ -6693,10 +6682,9 @@
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
 "dkP" = (
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/station/service/hydroponics/upper)
 "dkQ" = (
@@ -7832,8 +7820,7 @@
 /turf/open/floor/iron/dark,
 /area/station/service/hydroponics/upper)
 "dMi" = (
-/obj/structure/cable,
-/obj/structure/grille,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/spawner/directional/west,
@@ -9242,10 +9229,9 @@
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "enL" = (
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/station/hallway/secondary/entry)
 "enT" = (
@@ -11001,7 +10987,7 @@
 /area/station/security/courtroom)
 "fen" = (
 /obj/machinery/smartfridge/organ,
-/turf/closed/wall,
+/turf/open/floor/iron/white,
 /area/station/medical/surgery)
 "feE" = (
 /obj/structure/chair/sofa/bench/right{
@@ -11423,8 +11409,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
 "fpb" = (
-/obj/structure/cable,
-/obj/structure/grille,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/structure/window/reinforced/spawner/directional/east,
@@ -14592,8 +14577,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/port/fore)
 "gOY" = (
-/obj/structure/cable,
-/obj/structure/grille,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/structure/window/reinforced/spawner/directional/east,
@@ -15221,6 +15205,10 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
+"hgR" = (
+/obj/machinery/smartfridge/chemistry/preloaded,
+/turf/open/floor/iron/white,
+/area/station/medical/pharmacy)
 "hhm" = (
 /obj/machinery/computer/department_orders/engineering{
 	dir = 1
@@ -15513,7 +15501,7 @@
 /obj/machinery/elevator_control_panel/directional/east{
 	linked_elevator_id = "miningElevator";
 	pixel_x = 24;
-	preset_destination_names = list("2"="Mining    Office","3"="Mining    Dock")
+	preset_destination_names = list("2"="Mining                                Office","3"="Mining                                Dock")
 	},
 /obj/machinery/lift_indicator/directional/east{
 	linked_elevator_id = "miningElevator";
@@ -15740,8 +15728,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/upper)
 "hqM" = (
-/obj/structure/cable,
-/obj/structure/grille,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/structure/window/reinforced/spawner/directional/south,
@@ -17918,11 +17905,10 @@
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "ioq" = (
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/north,
-/obj/structure/grille,
 /turf/open/floor/plating,
 /area/station/hallway/secondary/exit/departure_lounge)
 "iot" = (
@@ -19038,8 +19024,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
 "iOg" = (
-/obj/structure/cable,
-/obj/structure/grille,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/machinery/door/poddoor/shutters{
@@ -19205,7 +19190,7 @@
 /area/station/security/prison/rec)
 "iSo" = (
 /obj/machinery/smartfridge/chemistry/preloaded,
-/turf/closed/wall,
+/turf/open/floor/plating,
 /area/station/medical/pharmacy)
 "iSq" = (
 /obj/structure/chair/comfy/brown{
@@ -19807,8 +19792,7 @@
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/research/abandoned)
 "jfE" = (
-/obj/structure/cable,
-/obj/structure/grille,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/east,
@@ -20278,10 +20262,9 @@
 	id = "botany-shutters";
 	name = "Wildlife Protection Shutters"
 	},
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/north,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/station/service/hydroponics/upper)
 "jsv" = (
@@ -21574,10 +21557,9 @@
 /turf/open/floor/iron/dark,
 /area/station/engineering/atmos)
 "jTb" = (
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/east,
 /turf/open/floor/plating,
 /area/station/hallway/secondary/entry)
@@ -23754,9 +23736,8 @@
 /turf/open/floor/iron,
 /area/station/ai_monitored/security/armory)
 "kNq" = (
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/station/hallway/secondary/entry)
 "kOR" = (
@@ -23893,10 +23874,9 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/starboard)
 "kRA" = (
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/north,
-/obj/structure/grille,
 /turf/open/floor/plating,
 /area/station/hallway/secondary/exit/departure_lounge)
 "kRM" = (
@@ -24164,8 +24144,7 @@
 /turf/open/floor/iron/dark,
 /area/station/engineering/main)
 "kYe" = (
-/obj/structure/cable,
-/obj/structure/grille,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/east,
 /turf/open/floor/plating,
@@ -24468,6 +24447,12 @@
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/disposal)
+"lfg" = (
+/obj/structure/window/reinforced/spawner/directional/south,
+/obj/structure/window/reinforced/spawner/directional/west,
+/obj/structure/window/reinforced/spawner/directional/east,
+/obj/effect/spawner/structure/electrified_grille,
+/area/station/hallway/secondary/entry)
 "lfj" = (
 /obj/machinery/door/airlock/external{
 	name = "Maintenance External Access"
@@ -25711,6 +25696,13 @@
 	dir = 8
 	},
 /area/station/security/brig)
+"lMc" = (
+/obj/structure/window/reinforced/spawner/directional/south,
+/obj/structure/window/reinforced/spawner/directional/west,
+/obj/structure/window/reinforced/spawner/directional/east,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/station/hallway/secondary/entry)
 "lMe" = (
 /obj/machinery/door/airlock/research/glass/incinerator/ordmix_interior,
 /obj/machinery/airlock_controller/incinerator_ordmix{
@@ -25786,8 +25778,7 @@
 /turf/open/floor/plating/snowed/icemoon,
 /area/station/science/ordnance/burnchamber)
 "lNP" = (
-/obj/structure/cable,
-/obj/structure/grille,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/south,
 /turf/open/floor/plating,
@@ -28643,7 +28634,7 @@
 	desc = "He looks like hes up to no good...";
 	name = "Pleb";
 	real_name = "Pleb";
-	speak_emote = list("ribbit","croak","You    Gay")
+	speak_emote = list("ribbit","croak","You                                Gay")
 	},
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
@@ -29105,10 +29096,9 @@
 /turf/open/floor/carpet/red,
 /area/station/command/heads_quarters/hos)
 "ngX" = (
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/south,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/upper)
 "nhf" = (
@@ -29638,10 +29628,9 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/aft)
 "nsI" = (
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/station/hallway/secondary/entry)
 "nsK" = (
@@ -29926,7 +29915,7 @@
 /area/station/engineering/main)
 "nyR" = (
 /obj/machinery/computer/atmos_control/ordnancemix{
-	atmos_chambers = list("ordnancelab2"="Ordnance    Chamber    2")
+	atmos_chambers = list("ordnancelab2"="Ordnance                                Chamber                                2")
 	},
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/ordnance)
@@ -30021,10 +30010,9 @@
 /turf/open/floor/wood/parquet,
 /area/station/command/heads_quarters/hos)
 "nBf" = (
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/station/hallway/secondary/entry)
 "nBt" = (
@@ -30056,8 +30044,7 @@
 /turf/open/floor/iron/dark,
 /area/station/engineering/supermatter/room)
 "nBX" = (
-/obj/structure/cable,
-/obj/structure/grille,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/structure/window/reinforced/spawner/directional/east,
 /turf/open/floor/plating,
@@ -32366,8 +32353,7 @@
 /turf/open/floor/iron,
 /area/station/command/bridge)
 "oBY" = (
-/obj/structure/cable,
-/obj/structure/grille,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/structure/window/reinforced/spawner/directional/east,
 /turf/open/floor/plating,
@@ -35331,10 +35317,9 @@
 	id = "botany-shutters";
 	name = "Wildlife Protection Shutters"
 	},
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/station/service/hydroponics/upper)
 "pRV" = (
@@ -35517,8 +35502,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/science/xenobiology)
 "pVb" = (
-/obj/structure/cable,
-/obj/structure/grille,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/west,
@@ -37267,11 +37251,10 @@
 /turf/open/floor/iron,
 /area/station/hallway/secondary/entry)
 "qNj" = (
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/structure/grille,
 /turf/open/floor/plating,
 /area/station/hallway/secondary/exit/departure_lounge)
 "qNk" = (
@@ -44812,8 +44795,7 @@
 /turf/open/floor/iron/white,
 /area/station/medical/medbay)
 "ufh" = (
-/obj/structure/grille,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/station/maintenance/port/central)
 "ufm" = (
@@ -46615,10 +46597,9 @@
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/rd)
 "uQG" = (
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/north,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/station/service/bar/atrium)
 "uQP" = (
@@ -47001,8 +46982,7 @@
 /turf/open/floor/iron/dark,
 /area/station/command/heads_quarters/rd)
 "vao" = (
-/obj/structure/cable,
-/obj/structure/grille,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/spawner/directional/west,
 /turf/open/floor/plating,
@@ -47334,8 +47314,7 @@
 /turf/open/floor/plating,
 /area/station/engineering/supermatter/room)
 "vjb" = (
-/obj/structure/cable,
-/obj/structure/grille,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/south,
 /turf/open/floor/plating,
@@ -47749,8 +47728,7 @@
 /turf/open/floor/iron/white/textured,
 /area/station/medical/exam_room)
 "vsi" = (
-/obj/structure/cable,
-/obj/structure/grille,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/east,
@@ -47865,8 +47843,8 @@
 /turf/open/floor/iron,
 /area/station/commons/storage/mining)
 "vvU" = (
-/obj/machinery/vending/coffee,
 /obj/effect/turf_decal/siding/white,
+/obj/structure/table/reinforced,
 /turf/open/floor/iron/freezer,
 /area/station/service/kitchen/coldroom)
 "vwd" = (
@@ -48216,8 +48194,7 @@
 /turf/open/floor/wood,
 /area/station/medical/psychology)
 "vDi" = (
-/obj/structure/cable,
-/obj/structure/grille,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/south,
 /turf/open/floor/plating,
@@ -49227,8 +49204,7 @@
 "wbD" = (
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/grille,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/station/hallway/secondary/exit/departure_lounge)
 "wbK" = (
@@ -49516,10 +49492,9 @@
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/lobby)
 "whe" = (
-/obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/structure/cable,
+/obj/effect/spawner/structure/electrified_grille,
 /turf/open/floor/plating,
 /area/station/hallway/secondary/entry)
 "whk" = (
@@ -50166,8 +50141,7 @@
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "wwf" = (
-/obj/structure/cable,
-/obj/structure/grille,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/east,
@@ -50623,8 +50597,7 @@
 /turf/open/floor/iron,
 /area/station/commons/dorms)
 "wGt" = (
-/obj/structure/cable,
-/obj/structure/grille,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/south,
 /turf/open/floor/plating,
@@ -50976,8 +50949,7 @@
 /turf/open/floor/grass,
 /area/station/service/hydroponics/garden)
 "wNJ" = (
-/obj/structure/cable,
-/obj/structure/grille,
+/obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/south,
 /turf/open/floor/plating,
@@ -73458,8 +73430,8 @@ aHe
 jSq
 lbD
 maG
-ufh
-ufh
+uGh
+uGh
 klz
 ufh
 aHe
@@ -95280,7 +95252,7 @@ lOI
 tRf
 uLi
 tRf
-iSo
+hgR
 fwX
 qPI
 xlQ
@@ -99934,7 +99906,7 @@ mwb
 mwb
 pdl
 pdl
-rPA
+pdl
 xLF
 kTL
 bWz
@@ -139231,7 +139203,7 @@ sBO
 lki
 ajP
 nBf
-aCv
+lMc
 biJ
 yaM
 iXY
@@ -140516,7 +140488,7 @@ oLX
 sBO
 nsI
 nBf
-aCv
+lfg
 ldV
 vHL
 cbC

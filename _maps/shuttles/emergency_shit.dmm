@@ -22,10 +22,9 @@
 	},
 /obj/docking_port/mobile/emergency{
 	dir = 2;
-	height = 5;
 	port_direction = 1;
 	preferred_direction = 2;
-	width = 13
+	name = "Shit emergency shuttle"
 	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/escape)
