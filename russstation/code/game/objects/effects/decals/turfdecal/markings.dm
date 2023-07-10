@@ -1,5 +1,6 @@
 /obj/effect/turf_decal/russ
 	icon = 'russstation/icons/turf/decals.dmi'
+	icon_state = null
 
 /obj/effect/turf_decal/russ/please_take
 	icon_state = "please_take"

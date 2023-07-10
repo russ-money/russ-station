@@ -1,6 +1,7 @@
 /obj/item/clothing/accessory/medal/russ
 	icon = 'russstation/icons/obj/clothing/accessories.dmi'
 	worn_icon = 'russstation/icons/mob/clothing/accessories.dmi'
+	icon_state = null
 
 /obj/item/clothing/accessory/medal/russ/deputy
 	name = "deputy star"
