@@ -3,7 +3,7 @@
 /obj/item/organ/internal/liver/dwarf
 	name = "dwarf liver"
 	desc = "A liver evolved for alcohol processing."
-	maxHealth = STANDARD_ORGAN_THRESHOLD*0.65
+	maxHealth = STANDARD_ORGAN_THRESHOLD
 	toxTolerance = 2
 
 /obj/item/organ/internal/liver/dwarf/handle_chemical(mob/living/carbon/organ_owner, datum/reagent/chem, seconds_per_tick, times_fired)
