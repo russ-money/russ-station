@@ -23871,13 +23871,9 @@
 /area/station/science/ordnance/storage)
 "bHv" = (
 /obj/effect/turf_decal/tile/purple/half/contrasted,
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for watching the test chamber.";
+/obj/machinery/computer/security/telescreen/ordnance{
 	dir = 4;
-	layer = 4;
-	name = "Test Chamber Telescreen";
-	network = list("toxins");
-	pixel_x = -32
+	pixel_x = -27
 	},
 /obj/structure/closet/crate,
 /obj/item/storage/bag/ore,
