@@ -6,7 +6,7 @@
 /obj/item/pinpointer/nuke/examine(mob/user)
 	. = ..()
 	. += "Its tracking indicator reads \"nuclear disk pinpointer\"."
-	for(var/obj/machinery/nuclearbomb/bomb in GLOB.machines)
+	for(var/obj/machinery/nuclearbomb/bomb  as anything in SSmachines.get_machines_by_type_and_subtypes(/obj/machinery/nuclearbomb))
 		if(bomb.timing)
 			. += "Extreme danger. Arming signal detected. Time remaining: [bomb.get_time_left()]."
 
@@ -27,7 +27,7 @@
 /obj/item/pinpointer/nuke/pinpointer_pinpointer/examine(mob/user)
 	. = ..()
 	. += "Its tracking indicator reads \"nuclear disk pinpointer pinpointer\"."
-	for(var/obj/machinery/nuclearbomb/bomb in GLOB.machines)
+	for(var/obj/machinery/nuclearbomb/bomb as anything in SSmachines.get_machines_by_type_and_subtypes(/obj/machinery/nuclearbomb))
 		if(bomb.timing)
 			. += "Extreme danger. Arming signal detected. Time remaining: [bomb.get_time_left()]."
 

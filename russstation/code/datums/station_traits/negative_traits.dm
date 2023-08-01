@@ -54,7 +54,7 @@
 	// other machines and bots speak through internal radios that don't get caught by the intercom check,
 	// only need to correct those that speak over common freq.
 	// update bank machine so crew is helplessly aware of vault siphons
-	for(var/obj/machinery/computer/bank_machine/M in GLOB.machines)
+	for(var/obj/machinery/computer/bank_machine/M as anything in SSmachines.get_machines_by_type_and_subtypes(/obj/machinery/computer/bank_machine))
 		if(istype(M) && M.radio_channel == last_frequency)
 			M.radio_channel = new_frequency
 	last_frequency = new_frequency
