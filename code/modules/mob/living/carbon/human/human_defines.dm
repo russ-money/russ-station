@@ -13,6 +13,7 @@
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	can_be_shoved_into = TRUE
 	fart = new /datum/fart/human() // honk -- human farts
+	initial_language_holder = /datum/language_holder/empty // We get stuff from our species
 
 	//Hair colour and style
 	var/hair_color = "#000000"
@@ -61,8 +62,6 @@
 	var/obj/item/s_store = null
 
 	var/special_voice = "" // For changing our voice. Used by a symptom.
-
-	var/name_override //For temporary visible name changes
 
 	var/datum/physiology/physiology
 
