@@ -491,6 +491,8 @@ GLOBAL_LIST_INIT(prototype_language_holders, init_language_holder_prototypes())
 		/datum/language/calcic = list(LANGUAGE_ATOM),
 		/datum/language/voltaic = list(LANGUAGE_ATOM),
 		/datum/language/nekomimetic = list(LANGUAGE_ATOM),
+		/datum/language/dwarvish = list(LANGUAGE_ATOM), // honk fox
+		/datum/language/kitsumimetic = list(LANGUAGE_ATOM), // honk dwarf
 	)
 	spoken_languages = list(
 		/datum/language/common = list(LANGUAGE_ATOM),
@@ -501,6 +503,8 @@ GLOBAL_LIST_INIT(prototype_language_holders, init_language_holder_prototypes())
 		/datum/language/calcic = list(LANGUAGE_ATOM),
 		/datum/language/voltaic = list(LANGUAGE_ATOM),
 		/datum/language/nekomimetic = list(LANGUAGE_ATOM),
+		/datum/language/dwarvish = list(LANGUAGE_ATOM), // honk fox
+		/datum/language/kitsumimetic = list(LANGUAGE_ATOM), // honk dwarf
 	)
 
 /datum/language_holder/empty
