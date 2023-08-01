@@ -20,24 +20,6 @@
 	initial_gas_mix = "ICEMOON_ATMOS"
 	},
 /area/icemoon/underground/unexplored)
-"g" = (
-/obj/item/bodypart/head/golem/cult,
-/obj/item/bodypart/arm/left/golem/cult{
-	pixel_x = 7;
-	pixel_y = -3
-	},
-/obj/effect/decal/cleanable/blood/old,
-/turf/open/misc/asteroid/snow/icemoon,
-/area/icemoon/underground/unexplored)
-"h" = (
-/obj/item/bodypart/chest/golem/cult{
-	pixel_x = -7;
-	pixel_y = 6
-	},
-/obj/item/bodypart/leg/left/golem/cult,
-/obj/effect/decal/cleanable/blood/old,
-/turf/open/misc/asteroid/snow/icemoon,
-/area/icemoon/underground/unexplored)
 "i" = (
 /obj/structure/flora/bush/snow/style_random,
 /turf/open/misc/asteroid/snow/icemoon,
@@ -309,10 +291,6 @@
 /area/icemoon/surface/dorf_chaos)
 "Q" = (
 /obj/machinery/anvil,
-/obj/item/book/granter/crafting_recipe/dwarf{
-	pixel_x = -6;
-	pixel_y = 3
-	},
 /turf/open/floor/cult{
 	initial_gas_mix = "ICEMOON_ATMOS"
 	},
@@ -874,7 +852,7 @@ b
 b
 b
 b
-g
+m
 k
 c
 q
@@ -912,7 +890,7 @@ b
 b
 c
 c
-h
+m
 l
 o
 q

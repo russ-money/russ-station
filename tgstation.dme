@@ -5466,7 +5466,6 @@
 #include "russstation\code\game\objects\items\food\egg.dm"
 #include "russstation\code\game\objects\items\food\meat.dm"
 #include "russstation\code\game\objects\items\food\misc.dm"
-#include "russstation\code\game\objects\items\granters\crafting\dwarf_craft.dm"
 #include "russstation\code\game\objects\items\grenades\chem_grenade.dm"
 #include "russstation\code\game\objects\items\grenades\clusterbuster.dm"
 #include "russstation\code\game\objects\items\stacks\sheets\leather.dm"

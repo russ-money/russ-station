@@ -23,6 +23,20 @@
 	new_spawn.facial_hair_color = random_color
 	new_spawn.hair_color = random_color
 
+	new_spawn.mind.teach_crafting_recipe(list(
+		/datum/crafting_recipe/broadsword,
+		/datum/crafting_recipe/pickaxe,
+		/datum/crafting_recipe/shovel,
+		/datum/crafting_recipe/knife,
+		/datum/crafting_recipe/war_hammer,
+		/datum/crafting_recipe/smithed_armour,
+		/datum/crafting_recipe/smithed_helmet,
+		/datum/crafting_recipe/dwarf_rune,
+		/datum/crafting_recipe/smith_hammer,
+		/datum/crafting_recipe/dwarf_tool,
+		/datum/crafting_recipe/stone_chisel,
+	))
+
 	//Looking good urist!
 	new_spawn.facial_hairstyle = pick(list("Beard (Moonshiner)","Beard (Abraham Lincoln)","Beard (Dwarf)", "Beard (Very Long)", "Beard (Full)","Beard (Broken Man)"))
 

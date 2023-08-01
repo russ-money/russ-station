@@ -80,6 +80,7 @@
 	icon_state_preview = "pickaxe_preview"
 	icon = 'russstation/icons/obj/blacksmithing.dmi'
 	icon_state = "pickaxe_base"
+	worn_icon = 'icons/mob/clothing/back.dmi' 
 	worn_icon_state = "spickaxe"
 	inhand_icon_state = "spickaxe"
 
@@ -107,7 +108,7 @@
 	name = "unobtanium shovel"
 	desc = "A shovel made of unobtanium, you probably shouldn't be seeing this."
 	icon = 'icons/obj/mining.dmi'
-	icon_state = "shovel"
+	icon_state = "shovel_base"
 	inhand_icon_state = "shovel"
 
 /obj/item/shovel/smithed_shovel/Initialize()

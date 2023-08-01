@@ -5,7 +5,7 @@
 
 /area/lavaland/surface/dorf
 	name = "Lavaland Dorf Ruins"
-	icon_state = "red"
+	icon_state = "yellow"
 	outdoors = FALSE
 	ambientsounds = DWARF_AMBIENCE
 

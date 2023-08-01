@@ -14,6 +14,8 @@
 		/obj/item/organ/internal/eyes = 1,
 		/obj/item/stack/sheet/bone = 15,
 	)
+	minimum_survivable_temperature = 255
+	maximum_survivable_temperature = 360
 
 /mob/living/basic/chicken/lavaland
 	name = "\improper lavaland chicken"
@@ -29,8 +31,8 @@
 		/obj/item/food/egg/lavaegg = 1
 	)
 	habitable_atmos = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
-	minimum_survivable_temperature = 0
-	maximum_survivable_temperature = 0
+	minimum_survivable_temperature = 255
+	maximum_survivable_temperature = 360
 
 /mob/living/basic/chicken/lavaland/Initialize(mapload)
 	. = ..()
@@ -57,6 +59,6 @@
 		/obj/item/stack/sheet/bone = 1,
 	)
 	habitable_atmos = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
-	minimum_survivable_temperature = 0
-	maximum_survivable_temperature = 0
+	minimum_survivable_temperature = 255
+	maximum_survivable_temperature = 360
 	grow_as = /mob/living/basic/chicken/lavaland
