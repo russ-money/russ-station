@@ -21724,7 +21724,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
 "lWC" = (
-/mob/living/simple_animal/crab/coffee,
+/mob/living/basic/crab/coffee,
 /turf/open/floor/holofloor/beach,
 /area/station/hallway/secondary/exit)
 "lWG" = (
@@ -42722,7 +42722,7 @@
 /area/station/medical/chemistry)
 "wsw" = (
 /obj/structure/bed/dogbed/renault,
-/mob/living/simple_animal/pet/fox/renault,
+/mob/living/basic/pet/fox/renault,
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/captain)
 "wsA" = (

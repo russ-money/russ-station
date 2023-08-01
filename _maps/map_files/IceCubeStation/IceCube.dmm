@@ -28362,7 +28362,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
 "mQW" = (
-/mob/living/simple_animal/crab/coffee,
+/mob/living/basic/crab/coffee,
 /turf/open/floor/holofloor/beach,
 /area/station/hallway/secondary/exit/departure_lounge)
 "mRp" = (
@@ -35867,7 +35867,7 @@
 /area/station/hallway/secondary/entry)
 "qhv" = (
 /obj/structure/bed/dogbed/renault,
-/mob/living/simple_animal/pet/fox/renault,
+/mob/living/basic/pet/fox/renault,
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/captain)
 "qhy" = (
