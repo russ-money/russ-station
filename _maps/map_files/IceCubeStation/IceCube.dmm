@@ -14649,14 +14649,9 @@
 	pixel_x = 25;
 	pixel_y = 8
 	},
-/obj/machinery/computer/pod/old{
-	density = 0;
-	icon = 'icons/obj/airlock_machines.dmi';
-	icon_state = "airlock_control_standby";
-	id = "chapelgun";
-	name = "Mass Driver Controller";
-	pixel_x = 27;
-	pixel_y = -6
+/obj/machinery/computer/pod/old/mass_driver_controller/chapelgun{
+	pixel_y = -5;
+	pixel_x = 26
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
