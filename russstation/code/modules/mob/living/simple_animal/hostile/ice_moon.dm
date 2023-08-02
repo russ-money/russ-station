@@ -17,5 +17,5 @@
 /mob/living/simple_animal/hostile/asteroid/wolf
 	environment_smash = ENVIRONMENT_SMASH_STRUCTURES
 
-/mob/living/simple_animal/hostile/asteroid/lobstrosity
+/mob/living/basic/mining/lobstrosity
 	environment_smash = ENVIRONMENT_SMASH_STRUCTURES
