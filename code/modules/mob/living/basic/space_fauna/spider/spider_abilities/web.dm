@@ -34,6 +34,10 @@
 		if (feedback)
 			owner.balloon_alert(owner, "invalid location!")
 		return FALSE
+	if(HAS_TRAIT(owner.loc, TRAIT_SPINNING_WEB_TURF))
+		if (feedback)
+			owner.balloon_alert(owner, "already being webbed!")
+		return FALSE
 	if(obstructed_by_other_web())
 		if (feedback)
 			owner.balloon_alert(owner, "already webbed!")
@@ -52,11 +56,12 @@
 		owner.balloon_alert_to_viewers("sealing web...")
 	else
 		owner.balloon_alert_to_viewers("spinning web...")
-
+	ADD_TRAIT(spider_turf, TRAIT_SPINNING_WEB_TURF, REF(src))
 	if(do_after(owner, webbing_time, target = spider_turf, interaction_key = DOAFTER_SOURCE_SPIDER) && owner.loc == spider_turf)
 		plant_web(spider_turf, web)
 	else
 		owner?.balloon_alert(owner, "interrupted!") // Null check because we might have been interrupted via being disintegrated
+	REMOVE_TRAIT(spider_turf, TRAIT_SPINNING_WEB_TURF, REF(src))
 	build_all_button_icons()
 
 /// Creates a web in the current turf
@@ -148,6 +153,7 @@
 	background_icon_state = "bg_alien"
 	overlay_icon_state = "bg_alien_border"
 	cooldown_time = 60 SECONDS
+	melee_cooldown_time = 0
 
 /datum/action/cooldown/web_effigy/IsAvailable(feedback = FALSE)
 	. = ..()
@@ -161,3 +167,4 @@
 
 /datum/action/cooldown/web_effigy/Activate()
 	new /obj/structure/spider/effigy(get_turf(owner))
+	return ..()

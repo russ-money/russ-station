@@ -1189,7 +1189,7 @@
 /area/station/command/heads_quarters/captain)
 "ajW" = (
 /obj/structure/bed/dogbed/renault,
-/mob/living/simple_animal/pet/fox/renault,
+/mob/living/basic/pet/fox/renault,
 /turf/open/floor/wood/parquet,
 /area/station/command/heads_quarters/captain)
 "ajY" = (
@@ -35617,7 +35617,7 @@
 /turf/open/floor/iron,
 /area/station/cargo/storage)
 "rPn" = (
-/mob/living/simple_animal/crab/coffee,
+/mob/living/basic/crab/coffee,
 /turf/open/misc/beach/sand,
 /area/station/hallway/secondary/exit)
 "rPs" = (
@@ -43816,10 +43816,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/security/execution/education)
-"wEw" = (
-/turf/closed/wall,
-/turf/open/floor/plating,
-/area/station/hallway/secondary/entry)
 "wEF" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	dir = 8
@@ -76903,7 +76899,7 @@ gfQ
 pKR
 aaK
 pKR
-wEw
+pKR
 qsO
 xEN
 wnZ

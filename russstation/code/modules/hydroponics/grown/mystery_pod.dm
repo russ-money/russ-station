@@ -312,16 +312,16 @@
 				/mob/living/basic/cockroach/glockroach,
 				/mob/living/basic/pet/dog/corgi/puppy,
 				/mob/living/basic/pet/dog/corgi,
-				/mob/living/simple_animal/crab,
+				/mob/living/basic/crab,
 				/mob/living/basic/cow,
 				/mob/living/basic/chicken,
 				/mob/living/simple_animal/hostile/retaliate/goat,
-				/mob/living/simple_animal/pet/fox,
+				/mob/living/basic/pet/fox,
 				/mob/living/basic/lizard,
 				/mob/living/basic/mouse,
-				/mob/living/simple_animal/pet/penguin/baby,
-				/mob/living/simple_animal/pet/penguin/emperor,
-				/mob/living/simple_animal/pet/penguin/emperor/shamebrero,
+				/mob/living/basic/pet/penguin/baby,
+				/mob/living/basic/pet/penguin/emperor,
+				/mob/living/basic/pet/penguin/emperor/shamebrero,
 				/mob/living/simple_animal/sloth,
 				/mob/living/basic/pet/dog/pug,
 			)
@@ -341,13 +341,13 @@
 			harvested_item = pick(
 				/mob/living/basic/carp/mega,
 				/mob/living/basic/faithless,
-				/mob/living/simple_animal/hostile/bear,
+				/mob/living/basic/bear,
 				/mob/living/basic/giant_spider,
 				/mob/living/simple_animal/hostile/hivebot/range,
 				/mob/living/simple_animal/hostile/mimic/copy,
 				/mob/living/simple_animal/hostile/retaliate/clown/russ/goblin,
 				/mob/living/simple_animal/hostile/venus_human_trap,
-				/mob/living/simple_animal/hostile/bear/snow,
+				/mob/living/basic/bear/snow,
 			)
 		if(110 to 120)
 			harvested_item = /obj/item/storage/pill_bottle/maintenance_pill/full

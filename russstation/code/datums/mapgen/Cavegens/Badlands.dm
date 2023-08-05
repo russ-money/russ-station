@@ -12,7 +12,7 @@
 		/mob/living/basic/carp/mega = 8, \
 		/mob/living/simple_animal/hostile/space_dragon = 2, \
 		/mob/living/basic/carp/magic/chaos = 1, \
-		/mob/living/simple_animal/hostile/bear = 18, \
+		/mob/living/basic/bear = 18, \
 		/mob/living/simple_animal/hostile/skeleton = 15, \
 		/obj/structure/spawner/lavaland/badlands/carp = 3, \
 		/obj/structure/spawner/lavaland/badlands/bear = 3, \

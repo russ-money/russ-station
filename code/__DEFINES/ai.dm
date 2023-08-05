@@ -231,6 +231,9 @@
 ///Blackboard key for a whitelist typecache of "things we can target while trying to move"
 #define BB_OBSTACLE_TARGETTING_WHITELIST "BB_targetting_whitelist"
 
+/// Generic key for if we only have one action so we don't need to make a million subtypes with different keys
+#define BB_TARGETTED_ACTION "BB_targetted_action"
+
 ///Targetting keys for something to run away from, if you need to store this separately from current target
 #define BB_BASIC_MOB_FLEE_TARGET "BB_basic_flee_target"
 #define BB_BASIC_MOB_FLEE_TARGET_HIDING_LOCATION "BB_basic_flee_target_hiding_location"
@@ -284,6 +287,14 @@
 ///Current partner target
 #define BB_BABIES_TARGET "BB_babies_target"
 
+///Finding adult mob
+///key holds the adult we found
+#define BB_FOUND_MOM "BB_found_mom"
+///list of types of mobs we will look for
+#define BB_FIND_MOM_TYPES "BB_find_mom_types"
+///list of types of mobs we must ignore
+#define BB_IGNORE_MOM_TYPES "BB_ignore_mom_types"
+
 // Bileworm AI keys
 
 #define BB_BILEWORM_SPEW_BILE "BB_bileworm_spew_bile"
@@ -309,3 +320,36 @@
 //Festivus AI keys
 /// Key where we store the charging apc ability
 #define BB_FESTIVE_APC "BB_festive_apc"
+
+//Paperwizard AI keys
+/// Key where we store the summon minions ability
+#define BB_WIZARD_SUMMON_MINIONS "BB_summon_minions"
+/// Key where we store the mimics ability
+#define BB_WIZARD_MIMICS "BB_summon_mimics"
+/// Key where we store the paper target
+#define BB_FOUND_PAPER "BB_found_paper"
+/// Key where we store the list of things we can write on a paper
+#define BB_WRITING_LIST "BB_writing_list"
+/// Key where we store the tentacleing ability
+#define BB_GOLIATH_TENTACLES "BB_goliath_tentacles"
+/// Key where goliath stores a hole it wants to get into
+#define BB_GOLIATH_HOLE_TARGET "BB_goliath_hole"
+
+///bee keys
+///the bee hive we live inside
+#define BB_CURRENT_HOME "BB_current_home"
+///the hydro we will pollinate
+#define BB_TARGET_HYDRO "BB_target_hydro"
+
+///bear keys
+///the hive with honey that we will steal from
+#define BB_FOUND_HONEY "BB_found_honey"
+///the tree that we will climb
+#define BB_CLIMBED_TREE "BB_climbed_tree"
+
+/// Lobstrosities will only attack people with one of these traits
+#define BB_LOBSTROSITY_EXPLOIT_TRAITS "BB_lobstrosity_exploit_traits"
+/// Key where we store some tasty fingers
+#define BB_LOBSTROSITY_TARGET_LIMB "BB_lobstrosity_target_limb"
+/// We increment this counter every time we try to move while dragging an arm and if we go too long we'll give up trying to get out of line of sight and just eat the fingers
+#define BB_LOBSTROSITY_FINGER_LUST "BB_lobstrosity_finger_lust"

@@ -32388,7 +32388,7 @@
 /area/station/hallway/primary/aft)
 "cqy" = (
 /obj/structure/rack{
-	icon = 'icons/obj/stationobjs.dmi';
+	icon = 'icons/obj/fluff/general.dmi';
 	icon_state = "minibar";
 	name = "skeletal minibar"
 	},
@@ -39244,7 +39244,7 @@
 /area/station/medical/exam_room)
 "kHO" = (
 /obj/structure/bed/dogbed/renault,
-/mob/living/simple_animal/pet/fox/renault,
+/mob/living/basic/pet/fox/renault,
 /turf/open/floor/iron/dark,
 /area/station/command/heads_quarters/captain)
 "kHP" = (

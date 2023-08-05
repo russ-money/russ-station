@@ -2,7 +2,7 @@
 /obj/item/gas_miner_beacon
 	name = "gas miner beacon"
 	desc = "N.T. approved gas miner beacon, toss it down and you will have a complementary atmospherics gas miner delivered to you."
-	icon = 'icons/obj/objects.dmi'
+	icon = 'icons/obj/machines/floor.dmi'
 	icon_state = "floor_beacon"
 	var/used
 	// which miner to spawn

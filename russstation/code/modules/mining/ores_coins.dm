@@ -56,7 +56,7 @@
 /obj/item/stack/ore/stone/attackby(obj/item/I, mob/user, params)
 	. = ..()
 	if(istype(I, /obj/item/dwarf_tool) || istype(I, /obj/item/melee/smith_hammer))
-		if(I.use_tool(src, user, 1 SECONDS, volume=50))
+		while(amount > 0 && do_after(user, 1 SECONDS, target = src))
 			new /obj/item/stack/sheet/mineral/stone(drop_location())
 			use(1)
 

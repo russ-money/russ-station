@@ -9608,6 +9608,12 @@
 	},
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/lab)
+"fjQ" = (
+/obj/machinery/computer/pod/old/mass_driver_controller/chapelgun{
+	pixel_x = 5
+	},
+/turf/closed/wall,
+/area/station/maintenance/port/fore)
 "fkc" = (
 /obj/machinery/door/airlock/research{
 	name = "Research Division Access"
@@ -18117,15 +18123,6 @@
 	pixel_x = -8;
 	pixel_y = 30
 	},
-/obj/machinery/computer/pod/old{
-	density = 0;
-	icon = 'icons/obj/airlock_machines.dmi';
-	icon_state = "airlock_control_standby";
-	id = "chapelgun";
-	name = "Mass Driver Controller";
-	pixel_x = 4;
-	pixel_y = 30
-	},
 /turf/open/floor/iron/sepia,
 /area/station/service/chapel)
 "jTu" = (
@@ -21724,7 +21721,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
 "lWC" = (
-/mob/living/simple_animal/crab/coffee,
+/mob/living/basic/crab/coffee,
 /turf/open/floor/holofloor/beach,
 /area/station/hallway/secondary/exit)
 "lWG" = (
@@ -42722,7 +42719,7 @@
 /area/station/medical/chemistry)
 "wsw" = (
 /obj/structure/bed/dogbed/renault,
-/mob/living/simple_animal/pet/fox/renault,
+/mob/living/basic/pet/fox/renault,
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/captain)
 "wsA" = (
@@ -62307,7 +62304,7 @@ bXj
 bwb
 vXx
 qYw
-qYw
+fjQ
 jSG
 dMs
 lIl

@@ -5,7 +5,7 @@
 
 /obj/structure/spawner/lavaland/badlands/bear
 	max_mobs = 4
-	mob_types = list(/mob/living/simple_animal/hostile/bear, /mob/living/simple_animal/hostile/bear/russian)
+	mob_types = list(/mob/living/basic/bear, /mob/living/basic/bear/russian)
 
 /obj/structure/spawner/lavaland/badlands/skeleton
 	max_mobs = 4
