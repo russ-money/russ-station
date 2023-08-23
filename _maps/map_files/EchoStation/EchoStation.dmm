@@ -3081,13 +3081,9 @@
 /turf/open/floor/iron/dark,
 /area/station/security/prison)
 "bIs" = (
-/obj/structure/flora/bush/flowers_pp/style_random,
-/obj/item/paper/crumpled,
-/obj/effect/turf_decal/weather/dirt{
-	dir = 4
-	},
-/turf/open/floor/grass,
-/area/station/science/genetics)
+/obj/machinery/suit_storage_unit/rd,
+/turf/open/floor/iron/dark,
+/area/station/command/heads_quarters/rd)
 "bIT" = (
 /obj/structure/table_frame/wood,
 /obj/item/stack/sheet/mineral/wood,
@@ -11562,6 +11558,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
+/obj/structure/flora/bush/large/style_random,
 /turf/open/floor/grass,
 /area/station/science/genetics)
 "gqD" = (
@@ -19932,9 +19929,6 @@
 /area/station/maintenance/disposal/incinerator)
 "kRD" = (
 /obj/structure/flora/grass/jungle,
-/mob/living/carbon/human/species/monkey{
-	name = "Fuck Face"
-	},
 /turf/open/floor/grass,
 /area/station/science/genetics)
 "kRG" = (
@@ -20098,9 +20092,8 @@
 /turf/open/floor/plating,
 /area/station/service/hydroponics)
 "kYa" = (
-/obj/structure/flora/bush/large/style_random,
-/obj/effect/turf_decal/weather/dirt{
-	dir = 4
+/mob/living/carbon/human/species/monkey{
+	name = "Fuck Face"
 	},
 /turf/open/floor/grass,
 /area/station/science/genetics)
@@ -23565,6 +23558,9 @@
 /area/station/maintenance/port)
 "mUI" = (
 /obj/effect/landmark/blobstart,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
 /turf/open/floor/grass,
 /area/station/science/genetics)
 "mVg" = (
@@ -30851,6 +30847,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
+/obj/item/food/grown/banana,
 /turf/open/floor/grass,
 /area/station/science/genetics)
 "qEi" = (
@@ -31358,6 +31355,9 @@
 /area/station/service/chapel)
 "qTw" = (
 /obj/structure/flora/bush/large/style_random,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
 /turf/open/floor/grass,
 /area/station/science/genetics)
 "qTN" = (
@@ -35293,8 +35293,10 @@
 "tdk" = (
 /obj/machinery/light/directional/north,
 /obj/effect/turf_decal/weather/dirt{
-	dir = 1
+	dir = 5
 	},
+/obj/structure/frame/machine,
+/obj/item/circuitboard/machine/vending/monkey,
 /turf/open/floor/grass,
 /area/station/science/genetics)
 "tds" = (
@@ -36645,6 +36647,9 @@
 "tJq" = (
 /obj/structure/flora/grass/jungle,
 /obj/effect/landmark/start/geneticist,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
 /turf/open/floor/grass,
 /area/station/science/genetics)
 "tJC" = (
@@ -38672,6 +38677,7 @@
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/genetics)
 "uJm" = (
+/obj/item/paper/crumpled,
 /turf/open/floor/grass,
 /area/station/science/genetics)
 "uJp" = (
@@ -38853,10 +38859,7 @@
 /turf/open/floor/iron/checker,
 /area/station/command/heads_quarters/cmo)
 "uNu" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 4
-	},
-/turf/open/floor/grass,
+/turf/open/water/beach,
 /area/station/science/genetics)
 "uNP" = (
 /obj/machinery/atmospherics/pipe/smart/simple/cyan/visible{
@@ -39178,12 +39181,10 @@
 /turf/open/floor/plating,
 /area/station/hallway/primary/central)
 "uUO" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 5
-	},
-/obj/item/food/grown/banana,
-/turf/open/floor/grass,
-/area/station/science/genetics)
+/obj/effect/mapping_helpers/broken_floor,
+/obj/item/pai_card,
+/turf/open/floor/wood,
+/area/station/service/library)
 "uUP" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
 	dir = 4
@@ -39704,17 +39705,11 @@
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/effect/turf_decal/weather/dirt,
-/obj/item/food/grown/banana,
 /turf/open/floor/grass,
 /area/station/science/genetics)
 "viz" = (
 /obj/structure/window/reinforced/spawner/directional/south,
-/obj/effect/turf_decal/weather/dirt{
-	dir = 6
-	},
-/obj/structure/frame/machine,
-/obj/item/circuitboard/machine/vending/monkey,
-/turf/open/floor/grass,
+/turf/open/water/beach,
 /area/station/science/genetics)
 "viO" = (
 /obj/effect/turf_decal/stripes/line{
@@ -39769,6 +39764,10 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	dir = 8
+	},
+/obj/item/pai_card{
+	pixel_x = 8;
+	pixel_y = 17
 	},
 /turf/open/floor/iron,
 /area/station/command/heads_quarters/rd)
@@ -41147,6 +41146,10 @@
 "vRi" = (
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/effect/turf_decal/weather/dirt,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/item/food/grown/banana,
 /turf/open/floor/grass,
 /area/station/science/genetics)
 "vRx" = (
@@ -70243,7 +70246,7 @@ fDm
 tdh
 uJm
 kRD
-uJm
+kYa
 vig
 vIw
 rSl
@@ -70754,9 +70757,9 @@ cgK
 wln
 heS
 fDm
-uUO
-kYa
-bIs
+sqM
+sqM
+sqM
 uNu
 viz
 vJy
@@ -71011,8 +71014,8 @@ cgK
 vTM
 heS
 fDm
-yka
-yka
+bIs
+tMe
 yka
 yka
 yka
@@ -88509,7 +88512,7 @@ mmZ
 uhP
 nsw
 aun
-uXu
+uUO
 oLa
 rss
 tSH
