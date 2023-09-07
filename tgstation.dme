@@ -5622,7 +5622,6 @@
 #include "russstation\code\controllers\configuration\entries\russstation_config.dm"
 #include "russstation\code\controllers\subsystem\cryptocurrency.dm"
 #include "russstation\code\controllers\subsystem\vote.dm"
-#include "russstation\code\datums\action.dm"
 #include "russstation\code\datums\cinematic.dm"
 #include "russstation\code\datums\dog_fashion.dm"
 #include "russstation\code\datums\ert.dm"

@@ -1,13 +1,11 @@
 //Default Clowns
 
 /mob/living/simple_animal/hostile/retaliate/clown
-	var/small_sprite_type
+
 
 /mob/living/simple_animal/hostile/retaliate/clown/Initialize(mapload)
 	. = ..()
-	if(small_sprite_type)
-		var/datum/action/small_sprite/small_action = new small_sprite_type()
-		small_action.Grant(src)
+	AddComponent(/datum/component/seethrough_mob)
 
 
 //Clown Hulk
@@ -15,7 +13,6 @@
 	harm_intent_damage = 20
 	melee_damage_lower = 20
 	melee_damage_upper = 25
-	small_sprite_type = /datum/action/small_sprite/clown/hulk
 
 /mob/living/simple_animal/hostile/retaliate/clown/clownhulk/proc/target_bodyparts(atom/the_target)
 	var/list/parts = list()
@@ -51,7 +48,7 @@
 
 //Chlown
 /mob/living/simple_animal/hostile/retaliate/clown/clownhulk/chlown
-	small_sprite_type = /datum/action/small_sprite/clown/chlown
+
 
 //Honcmunculus
 /mob/living/simple_animal/hostile/retaliate/clown/clownhulk/honcmunculus
@@ -59,11 +56,11 @@
 	melee_damage_lower = 10
 	melee_damage_upper = 15
 	environment_smash = ENVIRONMENT_SMASH_WALLS
-	small_sprite_type = /datum/action/small_sprite/clown/honcmunculus
+
 
 //The Destroyer
 /mob/living/simple_animal/hostile/retaliate/clown/clownhulk/destroyer
-	small_sprite_type = /datum/action/small_sprite/clown/destroyer
+
 
 //Russ Station Clowns
 

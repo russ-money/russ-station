@@ -15649,7 +15649,7 @@
 /area/station/security/prison)
 "grR" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/backpack/duffelbag/med/surgery,
+/obj/item/surgery_tray,
 /turf/open/floor/iron/dark,
 /area/station/medical/morgue)
 "gsb" = (
@@ -21590,7 +21590,7 @@
 /area/station/science/circuits)
 "jJS" = (
 /obj/machinery/light/small/directional/north,
-/obj/structure/bed/roller,
+/obj/structure/bed/medical/emergency,
 /obj/machinery/iv_drip,
 /turf/open/floor/iron/dark,
 /area/station/medical/morgue)
@@ -26797,9 +26797,6 @@
 	dir = 8
 	},
 /obj/structure/rack,
-/obj/item/computer_disk/atmos,
-/obj/item/computer_disk/atmos,
-/obj/item/computer_disk/atmos,
 /turf/open/floor/iron/checker,
 /area/station/command/heads_quarters/ce)
 "mHo" = (
@@ -27570,14 +27567,14 @@
 /turf/closed/wall,
 /area/station/medical/exam_room)
 "ndK" = (
-/obj/structure/bed/roller,
+/obj/structure/bed/medical/emergency,
 /obj/effect/landmark/start/hangover,
 /obj/machinery/iv_drip,
 /obj/effect/turf_decal/siding/blue,
 /turf/open/floor/iron/dark,
 /area/station/medical/exam_room)
 "ndS" = (
-/obj/structure/bed/roller,
+/obj/structure/bed/medical/emergency,
 /obj/machinery/iv_drip,
 /obj/effect/landmark/start/hangover,
 /obj/effect/turf_decal/siding/blue,
@@ -27956,7 +27953,7 @@
 /obj/effect/turf_decal/siding/blue{
 	dir = 9
 	},
-/obj/item/storage/backpack/duffelbag/med/surgery,
+/obj/item/surgery_tray,
 /turf/open/floor/iron/dark,
 /area/station/medical/exam_room)
 "npZ" = (
@@ -34132,7 +34129,7 @@
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 6
 	},
-/obj/structure/bed/roller,
+/obj/structure/bed/medical/emergency,
 /obj/machinery/firealarm/directional/south,
 /turf/open/floor/iron/white/textured,
 /area/station/security/brig)
@@ -38998,7 +38995,7 @@
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 10
 	},
-/obj/structure/bed/roller,
+/obj/structure/bed/medical/emergency,
 /turf/open/floor/iron/white/textured,
 /area/station/security/brig)
 "tPt" = (

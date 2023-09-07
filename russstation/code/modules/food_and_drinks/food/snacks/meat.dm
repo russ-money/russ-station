@@ -6,6 +6,6 @@
 	food_reagents = list(
 		/datum/reagent/consumable/nutriment = 3,
 		/datum/reagent/russ/therapy = 1,
-		/datum/reagent/consumable/cooking_oil = 3,
+		/datum/reagent/consumable/nutriment/fat/oil = 3,
 	)
 	tastes = list("meat" = 1, "therapy" = 1)

@@ -3792,7 +3792,7 @@
 /turf/open/floor/iron/white,
 /area/station/medical/chemistry)
 "ans" = (
-/obj/structure/bed/roller,
+/obj/structure/bed/medical/emergency,
 /obj/machinery/iv_drip,
 /obj/effect/turf_decal/tile/blue/half/contrasted{
 	dir = 8
@@ -4564,7 +4564,7 @@
 /turf/open/floor/iron/white,
 /area/station/security/medical)
 "aqz" = (
-/obj/structure/bed/roller,
+/obj/structure/bed/medical/emergency,
 /turf/open/floor/iron/white,
 /area/station/security/medical)
 "aqA" = (
@@ -6632,7 +6632,7 @@
 	c_tag = "Medbay Paramedic Dispatch";
 	network = list("ss13","medbay")
 	},
-/obj/structure/bed/roller,
+/obj/structure/bed/medical/emergency,
 /obj/structure/sign/poster/official/cleanliness/directional/west,
 /turf/open/floor/iron/white,
 /area/station/medical/paramedic)
@@ -18601,7 +18601,7 @@
 "bnB" = (
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/west,
-/obj/structure/bed/roller,
+/obj/structure/bed/medical/emergency,
 /turf/open/floor/iron/white,
 /area/station/medical/paramedic)
 "bnC" = (
@@ -21836,7 +21836,7 @@
 /area/station/security/interrogation)
 "bAg" = (
 /obj/machinery/firealarm/directional/south,
-/obj/structure/bed/roller,
+/obj/structure/bed/medical/emergency,
 /obj/machinery/iv_drip,
 /obj/effect/turf_decal/tile/blue/anticorner/contrasted{
 	dir = 8
@@ -27759,9 +27759,6 @@
 	pixel_x = -6;
 	pixel_y = 5
 	},
-/obj/item/computer_disk/atmos{
-	pixel_x = -7
-	},
 /obj/item/pen,
 /turf/open/floor/iron,
 /area/station/command/heads_quarters/ce)
@@ -28577,7 +28574,7 @@
 /obj/machinery/light_switch/directional/north{
 	pixel_x = 11
 	},
-/obj/structure/bed/roller,
+/obj/structure/bed/medical/emergency,
 /turf/open/floor/iron/white,
 /area/station/medical/exam_room)
 "bYu" = (
@@ -43864,7 +43861,7 @@
 /turf/open/floor/grass,
 /area/station/security/prison)
 "rtk" = (
-/mob/living/basic/giant_spider/sgt_araneus,
+/mob/living/basic/spider/giant/sgt_araneus,
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 1
 	},
@@ -44515,7 +44512,7 @@
 /area/station/maintenance/department/engine)
 "spo" = (
 /obj/structure/table/optable,
-/obj/item/storage/backpack/duffelbag/med/surgery,
+/obj/item/surgery_tray,
 /obj/item/radio/intercom/directional/west,
 /turf/open/floor/iron/dark,
 /area/station/medical/morgue)
@@ -45582,7 +45579,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/engine)
 "tSd" = (
-/obj/structure/bed/roller,
+/obj/structure/bed/medical/emergency,
 /turf/open/floor/iron/white,
 /area/station/medical/exam_room)
 "tSK" = (
@@ -48608,7 +48605,7 @@
 /area/station/medical/exam_room)
 "xQO" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/bed/roller,
+/obj/structure/bed/medical/emergency,
 /obj/machinery/iv_drip,
 /obj/structure/disposalpipe/segment{
 	dir = 4

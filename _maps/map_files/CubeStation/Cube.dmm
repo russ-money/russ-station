@@ -3210,7 +3210,7 @@
 "bMs" = (
 /obj/structure/sign/clock/directional/west,
 /obj/structure/table,
-/obj/item/storage/backpack/duffelbag/med/surgery,
+/obj/item/surgery_tray,
 /turf/open/floor/iron/dark,
 /area/station/medical/morgue)
 "bMt" = (
@@ -12898,7 +12898,7 @@
 /area/station/medical/pharmacy)
 "gXE" = (
 /obj/structure/disposalpipe/segment,
-/obj/structure/bed/roller,
+/obj/structure/bed/medical/emergency,
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 4
 	},
@@ -16520,7 +16520,6 @@
 	pixel_x = -6;
 	pixel_y = 26
 	},
-/obj/item/computer_disk/atmos,
 /obj/item/computer_disk/engineering,
 /obj/item/computer_disk/engineering,
 /obj/item/computer_disk/engineering,
@@ -17748,7 +17747,7 @@
 /area/station/science/server)
 "jIo" = (
 /obj/structure/table,
-/obj/item/storage/backpack/duffelbag/med/surgery,
+/obj/item/surgery_tray,
 /obj/structure/cable,
 /turf/open/floor/iron/white,
 /area/station/medical/surgery/aft)
@@ -33462,7 +33461,7 @@
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 8
 	},
-/obj/item/storage/backpack/duffelbag/med/surgery,
+/obj/item/surgery_tray,
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/structure/cable,
 /turf/open/floor/iron/white,
@@ -35287,7 +35286,7 @@
 /area/station/engineering/supermatter/room)
 "sHF" = (
 /obj/structure/cable,
-/obj/structure/bed/roller,
+/obj/structure/bed/medical/emergency,
 /obj/machinery/iv_drip,
 /obj/machinery/power/apc/auto_name/directional/east,
 /turf/open/floor/iron/dark,

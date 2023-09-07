@@ -23,7 +23,7 @@
 	name = "white"
 	desc = "It's a very sweet fruit. The color white was named after the fruit of this tree."
 	icon_state = "white"
-	juice_results = list(/datum/reagent/consumable/whitejuice = 0)
+	juice_typepath = /datum/reagent/consumable/whitejuice
 	filling_color = "#FFFFFF"
 
 //Gnorange
@@ -101,5 +101,5 @@
 	desc = "A sticky and transparent lime, made of slime!."
 	icon_state = "slimelime"
 	filling_color = "#00FF00"
-	juice_results = list(/datum/reagent/consumable/limejuice = 0)
+	juice_typepath = /datum/reagent/consumable/limejuice
 	distill_reagent = /datum/reagent/consumable/ethanol/booger
