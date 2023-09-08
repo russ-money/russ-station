@@ -69,7 +69,7 @@
 	if(!GLOB.tails_list_skaven.len)
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/tails/skaven, GLOB.tails_list_skaven, add_blank = TRUE)
 	if(!GLOB.tails_list_kitsune.len)
-		init_sprite_accessory_subtypes(/datum/sprite_accessory/tails/kitsune, GLOB.tails_list_kitsune, add_blank = TRUE)
+		init_sprite_accessory_subtypes(/datum/sprite_accessory/tails/kitsune, GLOB.tails_list_kitsune)
 	if(!GLOB.diona_hair_list.len)
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/diona_hair, GLOB.diona_hair_list)
 	//honk end

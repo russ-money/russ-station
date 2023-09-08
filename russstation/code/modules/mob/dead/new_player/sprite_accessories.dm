@@ -71,10 +71,6 @@
 	icon = 'russstation/icons/mob/mutant_bodyparts.dmi'
 	color_src = HAIR_COLOR
 
-/datum/sprite_accessory/tails/kitsune/none
-	name = "None"
-	icon_state = "none"
-
 /datum/sprite_accessory/tails/kitsune/normal
 	name = "Kitsune"
 	icon_state = "default"
