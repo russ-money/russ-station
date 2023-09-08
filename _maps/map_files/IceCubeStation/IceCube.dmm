@@ -551,7 +551,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/central/fore)
 "alh" = (
-/obj/machinery/door/airlock/glass_large{
+/obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "Cafeteria"
 	},
 /turf/open/floor/iron,
@@ -8980,7 +8980,7 @@
 /turf/closed/wall/r_wall,
 /area/station/engineering/engine_smes)
 "ejo" = (
-/obj/machinery/door/airlock/glass_large{
+/obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "Recreation"
 	},
 /turf/open/floor/iron,
@@ -15090,7 +15090,7 @@
 /turf/open/floor/iron,
 /area/station/engineering/break_room)
 "hdJ" = (
-/obj/machinery/door/airlock/glass_large{
+/obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "Bar"
 	},
 /obj/machinery/door/firedoor,
@@ -19663,7 +19663,7 @@
 /turf/open/floor/iron/cafeteria,
 /area/station/service/bar/atrium)
 "jce" = (
-/obj/machinery/door/airlock/glass_large{
+/obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "Mining Operations"
 	},
 /turf/open/floor/iron,

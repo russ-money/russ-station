@@ -21600,7 +21600,7 @@
 /area/station/hallway/secondary/service)
 "lLP" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/glass_large{
+/obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "Hallway"
 	},
 /turf/open/floor/iron,
@@ -24131,7 +24131,7 @@
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/central)
 "nkl" = (
-/obj/machinery/door/airlock/glass_large{
+/obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "Hallway"
 	},
 /obj/machinery/door/firedoor,
@@ -36269,7 +36269,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/fore)
 "tAL" = (
-/obj/machinery/door/airlock/glass_large{
+/obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "Offices"
 	},
 /obj/machinery/door/firedoor,
@@ -36702,7 +36702,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
 	},
-/obj/machinery/door/airlock/glass_large{
+/obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "Hallway"
 	},
 /obj/machinery/door/firedoor,
@@ -45372,7 +45372,7 @@
 /turf/open/floor/iron/showroomfloor,
 /area/station/engineering/break_room)
 "xMd" = (
-/obj/machinery/door/airlock/glass_large{
+/obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "Gravity Generator"
 	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/engine_equipment,

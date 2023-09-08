@@ -65,7 +65,7 @@
 /area/station/service/chapel)
 "aaD" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/glass_large,
+/obj/machinery/door/airlock/multi_tile/public/glass,
 /turf/open/floor/iron,
 /area/station/service/chapel)
 "aaE" = (
@@ -4078,7 +4078,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/airlock/glass_large,
+/obj/machinery/door/airlock/multi_tile/public/glass,
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/service/chapel)
@@ -37311,7 +37311,7 @@
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
 "sVQ" = (
-/obj/machinery/door/airlock/glass_large{
+/obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "Dormitories"
 	},
 /obj/structure/disposalpipe/segment,
