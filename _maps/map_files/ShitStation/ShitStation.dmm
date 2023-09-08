@@ -8705,6 +8705,12 @@
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/plating,
 /area/station/maintenance/radshelter/sci)
+"bSE" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
+/obj/structure/chair/office,
+/turf/open/floor/wood,
+/area/station/command/heads_quarters/hop)
 "bSS" = (
 /obj/structure/disposaloutlet,
 /obj/structure/disposalpipe/trunk{
@@ -13138,6 +13144,7 @@
 	icon = 'russstation/icons/turf/decals.dmi';
 	icon_state = "shit-logo9"
 	},
+/mob/living/simple_animal/bot/hygienebot,
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/lobby)
 "grR" = (
@@ -13395,6 +13402,7 @@
 	dir = 8
 	},
 /obj/structure/extinguisher_cabinet/directional/west,
+/mob/living/simple_animal/bot/medbot,
 /turf/open/floor/iron/white,
 /area/station/hallway/primary/central)
 "gDd" = (
@@ -22414,11 +22422,13 @@
 /turf/open/floor/iron,
 /area/station/security/lockers)
 "pLW" = (
-/obj/structure/chair/office,
 /obj/item/radio/intercom{
 	pixel_x = -30
 	},
 /obj/structure/cable,
+/obj/machinery/computer/accounting{
+	dir = 4
+	},
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/hop)
 "pMd" = (
@@ -30866,6 +30876,7 @@
 	icon = 'russstation/icons/turf/decals.dmi';
 	icon_state = "shit-logo14"
 	},
+/mob/living/simple_animal/bot/hygienebot,
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/lobby)
 "xIM" = (
@@ -61910,7 +61921,7 @@ aeq
 aic
 kCY
 eyP
-gXt
+bSE
 aoz
 pIi
 uyn

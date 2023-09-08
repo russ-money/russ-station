@@ -8465,6 +8465,17 @@
 /obj/structure/table,
 /turf/open/floor/iron,
 /area/station/security)
+"eEf" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/mob/living/simple_animal/bot/medbot,
+/turf/open/floor/iron/white,
+/area/station/medical/exam_room)
 "eEk" = (
 /turf/closed/wall,
 /area/station/service/chapel/office)
@@ -10604,6 +10615,7 @@
 	amount = 5
 	},
 /obj/item/wrench,
+/obj/item/pipe_dispenser,
 /turf/open/floor/iron/dark,
 /area/station/engineering/supermatter/room)
 "fOS" = (
@@ -24549,6 +24561,7 @@
 /turf/open/floor/iron/sepia,
 /area/station/service/chapel)
 "nog" = (
+/obj/machinery/computer/accounting,
 /turf/open/floor/carpet/red,
 /area/station/command/heads_quarters/hop)
 "noh" = (
@@ -24788,7 +24801,6 @@
 /turf/open/floor/iron/white,
 /area/station/command/heads_quarters/captain)
 "ntH" = (
-/obj/machinery/light/small/directional/east,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
 	},
@@ -29812,6 +29824,7 @@
 	pixel_y = 24;
 	req_access = list("robotics")
 	},
+/mob/living/simple_animal/bot/cleanbot,
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/robotics/lab)
 "qaa" = (
@@ -35904,6 +35917,10 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/iron/dark,
 /area/station/cargo/sorting)
+"taS" = (
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/iron/dark,
+/area/station/medical/morgue)
 "taX" = (
 /obj/machinery/button/door{
 	id = "Dorm1";
@@ -75959,7 +75976,7 @@ rkF
 qWg
 cta
 sHF
-opp
+taS
 dkF
 wXG
 nhc
@@ -78687,7 +78704,7 @@ wHB
 wHB
 wHB
 wGa
-wHB
+eEf
 wHB
 lZm
 jDM

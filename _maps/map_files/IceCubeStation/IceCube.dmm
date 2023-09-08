@@ -2423,6 +2423,9 @@
 /area/station/hallway/secondary/exit/departure_lounge)
 "beZ" = (
 /obj/structure/cable,
+/obj/machinery/computer/accounting{
+	dir = 8
+	},
 /turf/open/floor/wood/parquet,
 /area/station/command/heads_quarters/hop)
 "bfb" = (
@@ -19141,6 +19144,11 @@
 /obj/machinery/airalarm/directional/south,
 /turf/open/floor/carpet/blue,
 /area/station/service/lawoffice)
+"iPU" = (
+/obj/effect/turf_decal/tile/blue/full,
+/mob/living/simple_animal/bot/medbot,
+/turf/open/floor/iron/white/smooth_large,
+/area/station/medical/medbay/lobby)
 "iQh" = (
 /obj/machinery/camera/directional/south{
 	c_tag = "Law Office"
@@ -23002,6 +23010,10 @@
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
+"kAs" = (
+/mob/living/simple_animal/bot/cleanbot,
+/turf/open/floor/iron/showroomfloor,
+/area/station/science/lab)
 "kAz" = (
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/wood,
@@ -81282,7 +81294,7 @@ cnO
 wgI
 hxk
 hxk
-hxk
+kAs
 hxk
 mia
 err
@@ -93339,7 +93351,7 @@ nXW
 aLM
 nag
 ciD
-xoS
+iPU
 nep
 iep
 kLB

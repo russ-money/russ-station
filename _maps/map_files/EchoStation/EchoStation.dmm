@@ -7609,6 +7609,13 @@
 /obj/effect/decal/cleanable/ash,
 /turf/open/floor/iron/dark,
 /area/station/security/prison)
+"egA" = (
+/obj/machinery/atmospherics/pipe/smart/simple/green/visible{
+	dir = 4
+	},
+/mob/living/simple_animal/bot/firebot,
+/turf/open/floor/iron,
+/area/station/engineering/atmos)
 "egC" = (
 /obj/machinery/door/window/left/directional/west{
 	dir = 2;
@@ -11593,6 +11600,11 @@
 /obj/effect/mapping_helpers/airlock/access/all/supply/general,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/fore)
+"grk" = (
+/obj/effect/turf_decal/stripes/line,
+/mob/living/simple_animal/bot/cleanbot,
+/turf/open/floor/iron/dark,
+/area/station/engineering/storage/tech)
 "gsp" = (
 /obj/effect/turf_decal/loading_area{
 	dir = 4
@@ -26878,6 +26890,11 @@
 /obj/structure/girder,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
+"oAD" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/bot/medbot,
+/turf/open/floor/iron/showroomfloor,
+/area/station/medical/medbay/central)
 "oAG" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	dir = 8
@@ -28537,6 +28554,9 @@
 /obj/machinery/light/directional/south,
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/structure/cable,
+/obj/machinery/computer/accounting{
+	dir = 1
+	},
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/hop)
 "pvX" = (
@@ -35932,6 +35952,7 @@
 /area/station/cargo/miningdock)
 "tsX" = (
 /obj/effect/turf_decal/delivery,
+/mob/living/simple_animal/bot/floorbot,
 /turf/open/floor/iron/dark,
 /area/station/science/robotics/lab)
 "tta" = (
@@ -74869,7 +74890,7 @@ oLQ
 mXA
 qRS
 oAd
-kYA
+oAD
 tXc
 uOk
 wlx
@@ -75958,7 +75979,7 @@ srK
 qMu
 vkb
 sWS
-wGo
+egA
 eZL
 nUM
 xZl
@@ -78503,7 +78524,7 @@ lTA
 nQf
 vBS
 pSW
-xqj
+grk
 mnT
 lTA
 rnd

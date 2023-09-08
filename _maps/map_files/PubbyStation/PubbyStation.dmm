@@ -8783,6 +8783,7 @@
 "aDY" = (
 /obj/machinery/power/apc/auto_name/directional/east,
 /obj/structure/cable,
+/obj/item/kirbyplants/organic/plant24,
 /turf/open/floor/carpet,
 /area/station/command/heads_quarters/hop)
 "aDZ" = (
@@ -9093,8 +9094,10 @@
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/hop)
 "aEM" = (
-/obj/item/kirbyplants/organic/plant24,
 /obj/structure/cable,
+/obj/machinery/computer/accounting{
+	dir = 1
+	},
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/hop)
 "aEN" = (
@@ -47004,6 +47007,7 @@
 /area/station/engineering/supermatter/room)
 "vLM" = (
 /obj/effect/turf_decal/tile/blue/half/contrasted,
+/mob/living/simple_animal/bot/medbot,
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/lobby)
 "vMx" = (
