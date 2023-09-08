@@ -21413,7 +21413,7 @@
 /turf/open/floor/carpet/red,
 /area/station/commons/vacant_room/office)
 "oTj" = (
-/mob/living/simple_animal/hostile/regalrat/controlled,
+/mob/living/basic/regal_rat/controlled,
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
 "oTq" = (
