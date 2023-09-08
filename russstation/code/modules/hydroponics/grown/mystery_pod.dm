@@ -343,7 +343,7 @@
 				/mob/living/basic/faithless,
 				/mob/living/basic/bear,
 				/mob/living/basic/spider/giant,
-				/mob/living/basic/hivebot//range,
+				/mob/living/basic/hivebot/range,
 				/mob/living/simple_animal/hostile/mimic/copy,
 				/mob/living/simple_animal/hostile/retaliate/clown/russ/goblin,
 				/mob/living/simple_animal/hostile/venus_human_trap,

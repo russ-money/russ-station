@@ -1,13 +1,13 @@
 
-/obj/item/pen/laughter/attack(mob/living/M, mob/user)
-	if(!istype(M))
+/obj/item/pen/laughter/attack(mob/living/M, mob/user, params)
+	. = ..()
+	if(!.)
 		return
-	if(!..())
+	if(!reagents.total_volume)
 		return
-
-	if(reagents.total_volume)
-		if(M.reagents)
-			reagents.trans_to(M, reagents.total_volume, transfered_by = user, methods = INJECT)
+	if(!M.reagents)
+		return
+	reagents.trans_to(M, reagents.total_volume, transferred_by = user, methods = INJECT)
 
 
 /obj/item/pen/laughter/Initialize()
