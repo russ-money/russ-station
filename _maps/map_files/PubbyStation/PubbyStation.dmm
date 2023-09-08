@@ -7699,6 +7699,7 @@
 "aAL" = (
 /obj/machinery/smartfridge/organ,
 /obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/machinery/door/firedoor,
 /turf/open/floor/iron/white,
 /area/station/medical/surgery)
 "aAM" = (
@@ -19168,6 +19169,7 @@
 "bpX" = (
 /obj/machinery/smartfridge/chemistry/preloaded,
 /obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/machinery/door/firedoor,
 /turf/open/floor/iron/white,
 /area/station/medical/chemistry)
 "bpY" = (
@@ -20841,6 +20843,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/unres{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -35550,6 +35555,9 @@
 /area/station/hallway/secondary/exit/departure_lounge)
 "fno" = (
 /obj/effect/turf_decal/tile/yellow/half/contrasted,
+/obj/machinery/atmospherics/components/tank/air{
+	dir = 8
+	},
 /turf/open/floor/iron/dark,
 /area/station/maintenance/disposal/incinerator)
 "fnq" = (
@@ -37789,7 +37797,9 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/components/binary/pump/off/supply/hidden/layer4{
+	dir = 1
+	},
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/station/science/ordnance)
@@ -38687,6 +38697,7 @@
 	name = "Chemistry Maintenance"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/medical/chemistry,
+/obj/machinery/door/firedoor,
 /turf/open/floor/plating,
 /area/station/maintenance/department/medical)
 "jTh" = (
@@ -43990,6 +44001,7 @@
 	name = "Chemistry Maintenance"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/medical/pharmacy,
+/obj/machinery/door/firedoor,
 /turf/open/floor/plating,
 /area/station/maintenance/department/medical/morgue)
 "rzp" = (
@@ -45066,6 +45078,12 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/iron/dark,
 /area/station/medical/morgue)
+"tgL" = (
+/obj/machinery/atmospherics/components/tank/air{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/station/science/ordnance/burnchamber)
 "thT" = (
 /obj/structure/sign/poster/contraband/random/directional/south,
 /obj/machinery/light/small/directional/south,
@@ -47361,6 +47379,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/machinery/door/firedoor,
 /turf/open/floor/iron/white,
 /area/station/medical/chemistry)
 "wnJ" = (
@@ -47720,6 +47739,7 @@
 /obj/machinery/atmospherics/components/binary/pump/layer4{
 	dir = 8
 	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /turf/open/floor/iron/dark,
 /area/station/maintenance/disposal/incinerator)
 "wMn" = (
@@ -87326,12 +87346,12 @@ bYu
 bZg
 nnf
 amk
-oMk
-oMk
-oMk
+aPb
+aPb
+aPb
 wLq
-oMk
-oMk
+aPb
+aPb
 fno
 bYw
 aaa
@@ -91923,7 +91943,7 @@ bvT
 bvT
 aMv
 sci
-iUX
+tgL
 eXo
 bGw
 aTB

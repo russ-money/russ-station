@@ -8329,6 +8329,7 @@
 	areastring = "/area/station/maintenance/disposal/incinerator"
 	},
 /obj/structure/cable,
+/obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plating,
 /area/station/engineering/atmos)
 "eAy" = (
@@ -19894,7 +19895,7 @@
 /turf/open/floor/iron,
 /area/station/service/hydroponics)
 "kQz" = (
-/obj/structure/reagent_dispensers/watertank,
+/obj/machinery/atmospherics/components/tank/air,
 /turf/open/floor/plating,
 /area/station/engineering/atmos)
 "kQE" = (
@@ -27395,11 +27396,11 @@
 /turf/open/floor/iron/showroomfloor,
 /area/station/engineering/break_room)
 "oNO" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
+/obj/machinery/atmospherics/components/binary/pump/on/supply/hidden/layer4{
 	dir = 4
 	},
 /obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/plating,
+/turf/open/floor/iron/dark,
 /area/station/maintenance/disposal/incinerator)
 "oNS" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -29458,6 +29459,11 @@
 /area/station/engineering/atmos)
 "pUN" = (
 /obj/machinery/smartfridge/chemistry,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "pharmecyshutters";
+	name = "Pharmecy Shutters"
+	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/iron/showroomfloor,
 /area/station/medical/pharmacy)
 "pVn" = (
@@ -32898,7 +32904,10 @@
 /turf/open/floor/carpet/red,
 /area/station/service/lawoffice)
 "rHE" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/components/tank/air,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
+	dir = 1
+	},
 /turf/open/floor/plating,
 /area/station/maintenance/port)
 "rHJ" = (
@@ -40150,6 +40159,11 @@
 /area/station/hallway/primary/central)
 "vut" = (
 /obj/machinery/smartfridge/chemistry/preloaded,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "pharmecyshutters";
+	name = "Pharmecy Shutters"
+	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/iron/showroomfloor,
 /area/station/medical/pharmacy)
 "vuB" = (
@@ -41344,7 +41358,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/aft)
 "vWx" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/components/binary/pump/on/supply/hidden/layer4,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},

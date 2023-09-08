@@ -3456,6 +3456,7 @@
 	},
 /obj/structure/disposalpipe/segment,
 /obj/structure/window/spawner/directional/north,
+/obj/machinery/door/firedoor,
 /turf/open/floor/iron/showroomfloor,
 /area/station/medical/pharmacy)
 "aQG" = (
@@ -7995,6 +7996,7 @@
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "pharmecyshutters"
 	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/iron/showroomfloor,
 /area/station/medical/pharmacy)
 "cFO" = (
@@ -19271,6 +19273,7 @@
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "pharmecyshutters"
 	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/iron/showroomfloor,
 /area/station/medical/pharmacy)
 "ium" = (
@@ -19914,7 +19917,7 @@
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
 "iKm" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/components/binary/pump/on/supply/hidden/layer4,
 /obj/structure/closet,
 /obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
@@ -21324,6 +21327,10 @@
 	},
 /turf/open/floor/iron,
 /area/station/cargo/storage)
+"jAL" = (
+/obj/machinery/atmospherics/components/tank/air,
+/turf/open/floor/plating,
+/area/station/maintenance/starboard/aft)
 "jAT" = (
 /obj/effect/spawner/random/trash/mess,
 /turf/open/floor/plating,
@@ -23596,6 +23603,15 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/security/checkpoint/science)
+"kMW" = (
+/obj/machinery/smartfridge/chemistry/preloaded,
+/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "pharmecyshutters"
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/showroomfloor,
+/area/station/medical/pharmacy)
 "kNM" = (
 /obj/machinery/light/small/directional/east,
 /obj/machinery/camera/directional/east{
@@ -25539,6 +25555,7 @@
 	pixel_y = 4
 	},
 /obj/structure/table/reinforced,
+/obj/machinery/door/firedoor,
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/lobby)
 "lSU" = (
@@ -26152,7 +26169,9 @@
 /area/station/science/research)
 "mlz" = (
 /obj/machinery/smartfridge/organ,
-/turf/closed/wall,
+/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/dark,
 /area/station/medical/surgery)
 "mlA" = (
 /obj/effect/turf_decal/tile/yellow{
@@ -33105,7 +33124,6 @@
 /turf/open/floor/iron,
 /area/station/science/robotics/lab)
 "quT" = (
-/obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
 	dir = 4
@@ -33114,6 +33132,7 @@
 	name = "Pharmacy"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/medical/pharmacy,
+/obj/machinery/door/firedoor,
 /turf/open/floor/iron/showroomfloor,
 /area/station/medical/pharmacy)
 "quX" = (
@@ -42488,9 +42507,7 @@
 /obj/effect/landmark/event_spawn,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/blobstart,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/binary/pump/on/supply/hidden/layer4,
 /turf/open/floor/iron,
 /area/station/maintenance/disposal/incinerator)
 "vTL" = (
@@ -42711,6 +42728,10 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
 /obj/machinery/light/directional/east,
+/obj/machinery/atmospherics/components/tank/air{
+	piping_layer = 4;
+	dir = 8
+	},
 /turf/open/floor/iron,
 /area/station/maintenance/disposal/incinerator)
 "waV" = (
@@ -42824,7 +42845,9 @@
 /area/station/cargo/storage)
 "wds" = (
 /obj/machinery/smartfridge/chemistry/preloaded,
-/turf/closed/wall,
+/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/white,
 /area/station/medical/pharmacy)
 "wec" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
@@ -68445,7 +68468,7 @@ xhb
 vZW
 iVE
 vkA
-gbl
+dnE
 gbl
 qdf
 kxa
@@ -68702,7 +68725,7 @@ xhb
 tju
 gbl
 gbl
-gbl
+dnE
 mnl
 kwK
 xhb
@@ -79703,7 +79726,7 @@ nIu
 qXp
 oNI
 kTF
-wds
+kMW
 qtV
 usH
 ruR
@@ -89236,8 +89259,8 @@ tRP
 dnG
 vEl
 mqZ
-tfi
-tRP
+jAL
+hkr
 ttz
 acK
 swz
