@@ -213,9 +213,14 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	if(!lighting_text)
 		return ..()
 
+	var/mob/living/carbon/carbuser = user
+
+	if(!istype(carbuser))
+		carbuser = null
+
 	if(!reagents.has_reagent(/datum/reagent/oxygen)) //cigarettes need oxygen
 		var/datum/gas_mixture/air = return_air()
-		if(!air || !air.has_gas(/datum/gas/oxygen, 1)) //or oxygen on a tile to burn
+		if(!air || !air.has_gas(/datum/gas/oxygen, 1) || !carbuser?.can_breathe_helmet()) //or oxygen on a tile to burn
 			to_chat(user, span_notice("Your [name] needs a source of oxygen to burn."))
 			return ..()
 
@@ -231,7 +236,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	if(!istype(glass)) //you can dip cigarettes into beakers
 		return
 
-	if(glass.reagents.trans_to(src, chem_volume, transfered_by = user)) //if reagents were transfered, show the message
+	if(glass.reagents.trans_to(src, chem_volume, transferred_by = user)) //if reagents were transferred, show the message
 		to_chat(user, span_notice("You dip \the [src] into \the [glass]."))
 	//if not, either the beaker was empty, or the cigarette was full
 	else if(!glass.reagents.total_volume)
@@ -322,9 +327,20 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 		return
 	var/to_smoke = smoke_all ? (reagents.total_volume * (dragtime / smoketime)) : REAGENTS_METABOLISM
 	var/mob/living/carbon/smoker = loc
-	if(!istype(smoker) || src != smoker.wear_mask)
-		reagents.remove_any(to_smoke)
-		return
+	// These checks are a bit messy but at least they're fairly readable
+	// Check if the smoker is a carbon mob, since it needs to have wear_mask
+	if(!istype(smoker))
+		// If not, check if it's a gas mask
+		if(!istype(smoker, /obj/item/clothing/mask/gas))
+			reagents.remove_any(to_smoke)
+			return
+
+		smoker = smoker.loc
+
+		// If it is, check if that mask is on a carbon mob
+		if(!istype(smoker) || smoker.get_item_by_slot(ITEM_SLOT_MASK) != loc)
+			reagents.remove_any(to_smoke)
+			return
 
 	reagents.expose(smoker, INGEST, min(to_smoke / reagents.total_volume, 1))
 	var/obj/item/organ/internal/lungs/lungs = smoker.get_organ_slot(ORGAN_SLOT_LUNGS)
@@ -337,9 +353,17 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 /obj/item/clothing/mask/cigarette/process(seconds_per_tick)
 	var/mob/living/user = isliving(loc) ? loc : null
 	user?.ignite_mob()
+
+	var/mob/living/carbon/carbuser
+	if(user)
+		carbuser = user
+
+	if(carbuser && !istype(carbuser))
+		carbuser = null
+
 	if(!reagents.has_reagent(/datum/reagent/oxygen)) //cigarettes need oxygen
 		var/datum/gas_mixture/air = return_air()
-		if(!air || !air.has_gas(/datum/gas/oxygen, 1)) //or oxygen on a tile to burn
+		if(!air || !air.has_gas(/datum/gas/oxygen, 1) || !carbuser?.can_breathe_helmet())  //or oxygen on a tile to burn
 			extinguish()
 			return
 
@@ -659,7 +683,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	packeditem = to_smoke.name
 	update_name()
 	if(to_smoke.reagents)
-		to_smoke.reagents.trans_to(src, to_smoke.reagents.total_volume, transfered_by = user)
+		to_smoke.reagents.trans_to(src, to_smoke.reagents.total_volume, transferred_by = user)
 	qdel(to_smoke)
 
 

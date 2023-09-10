@@ -12,7 +12,7 @@
 	resistance_flags = FIRE_PROOF
 	max_integrity = 100
 	integrity_failure = 0.35
-	buildstacktype = /obj/item/stack/sheet/mineral/stone
+	build_stack_type = /obj/item/stack/sheet/mineral/stone
 
 /obj/structure/bed/stone/examine(mob/user)
 	. = ..()
@@ -80,7 +80,7 @@
 
 /obj/structure/table/stone/attackby(obj/item/I, mob/living/user, params)
 	var/list/modifiers = params2list(params)
-	if(LAZYACCESS(modifiers, RIGHT_CLICK)) 
+	if(LAZYACCESS(modifiers, RIGHT_CLICK))
 		if (I.tool_behaviour == TOOL_DWARF)
 			to_chat(user, span_notice("You start deconstructing [src]..."))
 			I.play_tool_sound(src)

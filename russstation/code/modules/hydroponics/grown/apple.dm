@@ -22,7 +22,7 @@
 	desc = "Smells horrendous. Give it to the clown."
 	icon_state = "bungapple"
 	filling_color = "#C300FF"
-	juice_results = list(/datum/reagent/consumable/bungwater = 0)
+	juice_typepath = /datum/reagent/consumable/bungwater
 	wine_power = 0.4;
 	wine_flavor = "miasma"
 

@@ -345,7 +345,7 @@ ROUNDSTART_RACES human
 ## Remember to add the // honk races when merging
 #ROUNDSTART_RACES lizard
 #ROUNDSTART_RACES fly
-#ROUNDSTART_RACES moth
+ROUNDSTART_RACES moth
 #ROUNDSTART_RACES plasmaman
 #ROUNDSTART_RACES felinid
 #ROUNDSTART_RACES kitsune

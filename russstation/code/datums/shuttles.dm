@@ -3,6 +3,7 @@
 	name = "Lima Station emergency shuttle"
 	credit_cost = 2000
 	description = "TBD"
+	occupancy_limit = "45"
 
 /datum/map_template/shuttle/cargo/lima
 	suffix = "lima"
@@ -27,6 +28,7 @@
 	admin_notes = "A lot of people will die from getting spaced. Very funny."
 	emag_only = TRUE
 	credit_cost = CARGO_CRATE_VALUE * 50
+	occupancy_limit = "2?"
 
 /datum/map_template/shuttle/cargo/shit
 	suffix = "shit"
@@ -36,6 +38,7 @@
 	suffix = "echo"
 	name = "Echo Station emergency shuttle"
 	description = "Compact and Cramped."
+	occupancy_limit = "25"
 
 /datum/map_template/shuttle/mining/echo
 	suffix = "echo"

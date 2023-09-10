@@ -49,8 +49,7 @@
 	warpstone_blade = new /datum/action/cooldown/spell/pointed/projectile/warpstone_blade()
 	warpstone_blade.Grant(src)
 
-	var/datum/action/small_sprite/rat_ogre/smallsprite = new(src)
-	smallsprite.Grant(src)
+	AddComponent(/datum/component/seethrough_mob)
 
 	var/datum/action/adjust_vision/rat_ogre/adjust_vision = new(src)
 	adjust_vision.Grant(src)
@@ -128,15 +127,6 @@
 /mob/living/simple_animal/hostile/rat_ogre/can_use_guns(obj/item/G)
 	to_chat(src, span_warning("Your meaty finger is much too large for the trigger guard!"))
 	return FALSE
-
-//Small sprite mode (only controller can see change in sprite)
-/datum/action/small_sprite/rat_ogre
-	small_icon = 'icons/mob/simple/animal.dmi'
-	small_icon_state = "mouse_gray"
-	background_icon = 'russstation/icons/mob/actions/backgrounds.dmi'
-	background_icon_state = "bg_skaven"
-	button_icon = 'russstation/icons/mob/actions/actions_skaven.dmi'
-	button_icon_state = "rat"
 
 //Warpstone Daggers Spell
 /datum/action/cooldown/spell/pointed/projectile/warpstone_blade
