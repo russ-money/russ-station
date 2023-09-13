@@ -1,3 +1,6 @@
+#define SMOKER_ORGAN_HEALTH (STANDARD_ORGAN_THRESHOLD * 0.75)
+#define SMOKER_LUNG_HEALING (STANDARD_ORGAN_HEALING * 0.75)
+
 /obj/item/organ/internal/lungs/skaven
 	name = "skaven lungs"
 	desc = "A putrid pile of squishy flesh that somewhat resemble lungs."
@@ -14,3 +17,6 @@
 
 	maxHealth = SMOKER_ORGAN_HEALTH
 	healing_factor = SMOKER_LUNG_HEALING
+
+#undef SMOKER_ORGAN_HEALTH
+#undef SMOKER_LUNG_HEALING
