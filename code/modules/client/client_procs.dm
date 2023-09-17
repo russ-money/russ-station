@@ -445,6 +445,12 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 			deadchat_broadcast(" has reconnected.", "<b>[mob][mob.get_realname_string()]</b>", follow_target = mob, turf_target = get_turf(mob), message_type = DEADCHAT_LOGIN_LOGOUT, admin_only=!announce_leave)
 	add_verbs_from_config()
 
+	// honk start - band-aid fix for reviving broken clients
+	view_size = new(src, getScreenSize(prefs.read_preference(/datum/preference/toggle/widescreen)))
+	view_size.resetFormat()
+	view_size.setZoomMode()
+	// honk end
+
 	// This needs to be before the client age from db is updated as it'll be updated by then.
 	var/datum/db_query/query_last_connected = SSdbcore.NewQuery(
 		"SELECT lastseen FROM [format_table_name("player")] WHERE ckey = :ckey",
@@ -524,9 +530,11 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 	if (!interviewee)
 		initialize_menus()
 
+	/* honk start -- bandaid for broken clients: until TG changes this or dbcore let's try running this before the account_age select
 	view_size = new(src, getScreenSize(prefs.read_preference(/datum/preference/toggle/widescreen)))
 	view_size.resetFormat()
 	view_size.setZoomMode()
+	honk end */
 	Master.UpdateTickRate()
 	SEND_GLOBAL_SIGNAL(COMSIG_GLOB_CLIENT_CONNECT, src)
 	fully_created = TRUE
