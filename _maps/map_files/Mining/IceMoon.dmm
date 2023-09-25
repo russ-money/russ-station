@@ -137,7 +137,7 @@
 /area/mine/living_quarters)
 "di" = (
 /obj/structure/sign/warning/gas_mask/directional/south,
-/turf/open/floor/plating/snowed/icemoon,
+/turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/underground/explored)
 "ds" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -921,7 +921,7 @@
 /area/mine/living_quarters)
 "tA" = (
 /obj/structure/sign/warning/cold_temp/directional/south,
-/turf/open/floor/plating/snowed/icemoon,
+/turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/underground/explored)
 "tT" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -1128,6 +1128,13 @@
 /obj/structure/cable,
 /turf/open/floor/iron/textured,
 /area/mine/eva)
+"Ae" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/machinery/mining_weather_monitor/directional/south,
+/turf/open/floor/iron,
+/area/mine/living_quarters)
 "Ap" = (
 /obj/machinery/door/airlock/glass{
 	name = "Mining Station Bridge"
@@ -1278,7 +1285,7 @@
 	c_tag = "Mining Eva";
 	network = list("mine")
 	},
-/obj/structure/extinguisher_cabinet/directional/east,
+/obj/machinery/mining_weather_monitor/directional/east,
 /turf/open/floor/iron/dark/textured,
 /area/mine/eva)
 "Ey" = (
@@ -1802,6 +1809,7 @@
 /obj/effect/turf_decal/siding/brown{
 	dir = 9
 	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/iron/dark/textured,
 /area/mine/eva)
 "TW" = (
@@ -60922,7 +60930,7 @@ kj
 kj
 kj
 ei
-zP
+ei
 xp
 Io
 Io
@@ -62471,7 +62479,7 @@ Fa
 VP
 It
 LU
-Rm
+Ae
 Xp
 Vy
 Vy
