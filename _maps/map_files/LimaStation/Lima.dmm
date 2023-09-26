@@ -15651,7 +15651,7 @@
 /area/station/security/prison)
 "grR" = (
 /obj/structure/table/reinforced,
-/obj/item/surgery_tray,
+/obj/item/surgery_tray/full,
 /turf/open/floor/iron/dark,
 /area/station/medical/morgue)
 "gsb" = (
@@ -16854,7 +16854,6 @@
 /turf/open/floor/carpet/red,
 /area/station/command/bridge)
 "gZg" = (
-/obj/machinery/lapvend,
 /obj/effect/turf_decal/trimline/purple/filled/line{
 	dir = 10
 	},
@@ -17651,7 +17650,9 @@
 /turf/open/floor/iron,
 /area/station/command/heads_quarters/qm)
 "hxt" = (
-/obj/machinery/recycler,
+/obj/machinery/recycler{
+	dir = 8
+	},
 /obj/machinery/conveyor{
 	dir = 4;
 	id = "garbage"
@@ -27972,7 +27973,7 @@
 /obj/effect/turf_decal/siding/blue{
 	dir = 9
 	},
-/obj/item/surgery_tray,
+/obj/item/surgery_tray/full,
 /turf/open/floor/iron/dark,
 /area/station/medical/exam_room)
 "npZ" = (

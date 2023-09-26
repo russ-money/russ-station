@@ -2131,7 +2131,7 @@
 /area/space/nearstation)
 "akC" = (
 /obj/structure/sink/directional/south,
-/obj/item/surgery_tray,
+/obj/item/surgery_tray/full,
 /obj/structure/table/glass,
 /turf/open/floor/iron/white,
 /area/station/medical/surgery)
@@ -9894,7 +9894,7 @@
 /area/station/maintenance/department/crew_quarters/dorms)
 "ddm" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/retaliate/clown/clownhulk,
+/mob/living/basic/clown/clownhulk,
 /turf/open/floor/plating,
 /area/station/maintenance/department/crew_quarters/bar)
 "dei" = (
@@ -10856,7 +10856,7 @@
 /turf/open/floor/iron/checker,
 /area/station/medical/storage)
 "efp" = (
-/mob/living/simple_animal/hostile/retaliate/clown/longface,
+/mob/living/basic/clown/longface,
 /turf/open/floor/plating,
 /area/station/maintenance/department/science)
 "efT" = (
@@ -15582,7 +15582,7 @@
 "iNo" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/optable,
-/obj/item/surgery_tray,
+/obj/item/surgery_tray/full,
 /turf/open/floor/iron/dark,
 /area/station/medical/morgue)
 "iNL" = (
@@ -17516,7 +17516,7 @@
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/lab)
 "kMq" = (
-/obj/item/surgery_tray,
+/obj/item/surgery_tray/full,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
 /turf/open/floor/iron/smooth,
 /area/station/science/robotics)
@@ -17641,7 +17641,6 @@
 /area/station/hallway/primary/starboard)
 "kSV" = (
 /obj/structure/cable,
-/obj/machinery/lapvend,
 /obj/structure/sign/departments/medbay/alt/directional/east,
 /obj/machinery/light/directional/east,
 /obj/effect/turf_decal/tile/blue/half/contrasted{
@@ -22473,7 +22472,7 @@
 /turf/open/floor/iron/dark,
 /area/station/cargo/miningdock)
 "pKU" = (
-/mob/living/simple_animal/hostile/retaliate/clown/russ/goblin,
+/mob/living/basic/clown/russ/goblin,
 /turf/open/floor/carpet/royalblue/airless,
 /area/station/maintenance/department/crew_quarters/dorms)
 "pKV" = (
