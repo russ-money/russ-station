@@ -43,12 +43,12 @@
 	timeout = 3 MINUTES
 
 /datum/mood_event/delam //SM delamination
-	description = "Ever since that supermatter delamination, my head has been killing me..."
+	description = "Those goddamn engineers can't do anything right..."
 	mood_change = -2
 	timeout = 4 MINUTES
 
 /datum/mood_event/cascade // Big boi delamination
-	description = "I never thought I'd see a resonance cascade, let alone be near one..."
+	description = "I never thought I'd see a resonance cascade, let alone experience one..."
 	mood_change = -8
 	timeout = 5 MINUTES
 
@@ -312,6 +312,11 @@
 /datum/mood_event/bald
 	description = "I need something to cover my head..."
 	mood_change = -3
+
+/datum/mood_event/bald_reminder
+	description = "I was reminded that I can't grow my hair back at all! This is awful!"
+	mood_change = -5
+	timeout = 4 MINUTES
 
 /datum/mood_event/bad_touch
 	description = "I don't like when people touch me."

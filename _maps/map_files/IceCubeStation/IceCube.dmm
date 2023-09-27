@@ -6513,7 +6513,7 @@
 /area/station/ai_monitored/security/armory)
 "dbW" = (
 /obj/structure/table,
-/obj/item/surgery_tray,
+/obj/item/surgery_tray/full,
 /obj/structure/sign/clock/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/medical/morgue)
@@ -6580,7 +6580,7 @@
 /area/station/science/circuits)
 "ddK" = (
 /obj/structure/table,
-/obj/item/surgery_tray,
+/obj/item/surgery_tray/full,
 /obj/effect/turf_decal/tile/blue/anticorner,
 /turf/open/floor/iron/white/smooth_corner{
 	dir = 1
@@ -13832,7 +13832,7 @@
 /obj/item/mmi{
 	pixel_y = -2
 	},
-/obj/item/surgery_tray{
+/obj/item/surgery_tray/full{
 	pixel_y = 6
 	},
 /turf/open/floor/iron/dark,
@@ -36520,7 +36520,8 @@
 	id = "garbage"
 	},
 /obj/machinery/recycler{
-	name = "Garbage Eater"
+	name = "Garbage Eater";
+	dir = 8
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/disposal)
@@ -40576,7 +40577,7 @@
 /obj/effect/turf_decal/tile/blue/half{
 	dir = 8
 	},
-/obj/item/surgery_tray,
+/obj/item/surgery_tray/full,
 /obj/machinery/light/directional/west,
 /turf/open/floor/iron/white/smooth_edge{
 	dir = 8

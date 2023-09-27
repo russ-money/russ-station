@@ -7638,7 +7638,9 @@
 	dir = 4;
 	id = "garbage"
 	},
-/obj/machinery/recycler,
+/obj/machinery/recycler{
+	dir = 8
+	},
 /turf/open/floor/plating,
 /area/station/maintenance/disposal)
 "ehD" = (
@@ -18306,7 +18308,7 @@
 /turf/open/floor/carpet/cyan,
 /area/station/medical/psychology)
 "jWk" = (
-/mob/living/simple_animal/hostile/retaliate/clown/honkling,
+/mob/living/basic/clown/honkling,
 /obj/effect/decal/cleanable/food/pie_smudge,
 /turf/open/floor/mineral/bananium,
 /area/station/maintenance/starboard/central)
@@ -19881,11 +19883,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/iron,
 /area/station/hallway/primary/port)
-"kPC" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/lapvend,
-/turf/open/floor/iron,
-/area/station/commons/storage/primary)
 "kQd" = (
 /obj/structure/sign/poster/official/no_erp/directional/south,
 /turf/open/floor/carpet/royalblue,
@@ -22547,7 +22544,7 @@
 "msC" = (
 /obj/structure/table/optable,
 /obj/item/radio/intercom/directional/south,
-/obj/item/surgery_tray,
+/obj/item/surgery_tray/full,
 /turf/open/floor/iron/dark,
 /area/station/medical/morgue)
 "msM" = (
@@ -80787,7 +80784,7 @@ ftm
 ggY
 gIU
 hEY
-kPC
+ryB
 ryB
 jvK
 kpB

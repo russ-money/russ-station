@@ -3210,7 +3210,7 @@
 "bMs" = (
 /obj/structure/sign/clock/directional/west,
 /obj/structure/table,
-/obj/item/surgery_tray,
+/obj/item/surgery_tray/full,
 /turf/open/floor/iron/dark,
 /area/station/medical/morgue)
 "bMt" = (
@@ -17763,7 +17763,7 @@
 /area/station/science/server)
 "jIo" = (
 /obj/structure/table,
-/obj/item/surgery_tray,
+/obj/item/surgery_tray/full,
 /obj/structure/cable,
 /turf/open/floor/iron/white,
 /area/station/medical/surgery/aft)
@@ -27318,7 +27318,8 @@
 	id = "garbage"
 	},
 /obj/machinery/recycler{
-	name = "Garbage Eater"
+	name = "Garbage Eater";
+	dir = 8
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/disposal)
@@ -33486,7 +33487,7 @@
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 8
 	},
-/obj/item/surgery_tray,
+/obj/item/surgery_tray/full,
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/structure/cable,
 /turf/open/floor/iron/white,
@@ -34860,10 +34861,6 @@
 /obj/item/folder/red,
 /turf/open/floor/iron,
 /area/station/security)
-"srZ" = (
-/obj/machinery/lapvend,
-/turf/open/floor/iron,
-/area/station/commons/dorms)
 "ssg" = (
 /obj/machinery/atmospherics/components/binary/pump/on{
 	name = "External to Filter"
@@ -60548,7 +60545,7 @@ knk
 uSS
 qbQ
 teQ
-srZ
+tsp
 tsp
 tsp
 tsp

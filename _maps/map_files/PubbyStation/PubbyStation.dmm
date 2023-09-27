@@ -17860,7 +17860,6 @@
 /turf/open/floor/iron/dark,
 /area/station/hallway/primary/aft)
 "bkr" = (
-/obj/machinery/lapvend,
 /turf/open/floor/iron/dark,
 /area/station/hallway/primary/aft)
 "bks" = (
@@ -34020,7 +34019,9 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/line,
-/obj/machinery/recycler,
+/obj/machinery/recycler{
+	dir = 8
+	},
 /turf/open/floor/plating,
 /area/station/maintenance/disposal)
 "cMJ" = (
@@ -44527,7 +44528,7 @@
 /area/station/maintenance/department/engine)
 "spo" = (
 /obj/structure/table/optable,
-/obj/item/surgery_tray,
+/obj/item/surgery_tray/full,
 /obj/item/radio/intercom/directional/west,
 /turf/open/floor/iron/dark,
 /area/station/medical/morgue)
