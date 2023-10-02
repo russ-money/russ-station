@@ -19,11 +19,20 @@
 /area/shuttle/supply)
 "g" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/button/door/directional/west{
-	id = "cargoload";
-	name = "Loading Doors"
+/obj/machinery/conveyor/inverted{
+	dir = 10;
+	id = "ShuttleLoad"
 	},
 /turf/open/floor/iron/dark,
+/area/shuttle/supply)
+"i" = (
+/obj/machinery/button/door/directional/west{
+	id = "cargounload";
+	name = "Loading Doors"
+	},
+/turf/open/floor/iron/chapel{
+	dir = 8
+	},
 /area/shuttle/supply)
 "j" = (
 /obj/effect/decal/cleanable/dirt,
@@ -53,14 +62,18 @@
 "s" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/oil,
+/obj/machinery/button/door/directional/west{
+	id = "cargoload";
+	name = "Loading Doors"
+	},
 /turf/open/floor/iron/chapel{
 	dir = 1
 	},
 /area/shuttle/supply)
 "t" = (
-/obj/machinery/button/door/directional/west{
-	id = "cargounload";
-	name = "Loading Doors"
+/obj/machinery/conveyor/inverted{
+	dir = 6;
+	id = "ShuttleUnload"
 	},
 /turf/open/floor/iron/dark,
 /area/shuttle/supply)
@@ -116,7 +129,7 @@
 "I" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/conveyor{
-	dir = 4;
+	dir = 5;
 	id = "ShuttleLoad"
 	},
 /obj/machinery/light/small/directional/north,
@@ -153,7 +166,7 @@
 "T" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/conveyor{
-	dir = 8;
+	dir = 9;
 	id = "ShuttleUnload"
 	},
 /obj/machinery/light/small/directional/south,
@@ -170,15 +183,15 @@
 
 (1,1,1) = {"
 a
-k
 a
+k
 a
 a
 R
 a
 a
-a
 J
+a
 a
 B
 "}
@@ -190,7 +203,7 @@ s
 X
 w
 K
-X
+i
 t
 T
 a
