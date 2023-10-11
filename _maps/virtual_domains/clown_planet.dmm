@@ -127,6 +127,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 5
 	},
+/obj/effect/baseturf_helper/virtual_domain,
 /turf/open/floor/plating,
 /area/virtual_domain/powered)
 "gH" = (

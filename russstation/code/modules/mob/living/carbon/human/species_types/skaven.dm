@@ -72,11 +72,11 @@
 		randname += " [lastname]"
 	return randname
 
-/datum/species/skaven/randomize_features(mob/living/carbon/human/human_mob)
-	. = ..()
-	human_mob.dna.features["tail_skaven"] = pick(GLOB.tails_list_skaven)
-	human_mob.dna.features["skaven_color"] = GLOB.color_list_skaven[pick(GLOB.color_list_skaven)]
-	randomize_external_organs(human_mob)
+/datum/species/skaven/randomize_features()
+	var/list/features = ..()
+	features["tail_skaven"] = pick(GLOB.tails_list_skaven)
+	features["skaven_color"] = GLOB.color_list_skaven[pick(GLOB.color_list_skaven)]
+	return features
 
 /datum/species/skaven/on_species_gain(mob/living/carbon/carbon_being, datum/species/old_species, pref_load)
 

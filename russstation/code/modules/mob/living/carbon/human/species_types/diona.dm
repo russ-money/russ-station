@@ -42,10 +42,10 @@
 		randname += " [lastname]"
 	return randname
 
-/datum/species/diona/randomize_features(mob/living/carbon/human/human_mob)
-	. = ..()
-	human_mob.dna.features["diona_hair"] = GLOB.diona_hair_list[pick(GLOB.diona_hair_list)]
-	randomize_external_organs(human_mob)
+/datum/species/diona/randomize_features()
+	var/list/features = ..()
+	features["diona_hair"] = GLOB.diona_hair_list[pick(GLOB.diona_hair_list)]
+	return features
 
 // Similar to podpeople.dm
 /datum/species/diona/spec_life(mob/living/carbon/human/H, seconds_per_tick, times_fired)
