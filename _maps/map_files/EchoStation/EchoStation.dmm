@@ -24671,7 +24671,7 @@
 /area/station/engineering/main)
 "nte" = (
 /obj/effect/turf_decal/bot,
-/mob/living/simple_animal/sloth/paperwork{
+/mob/living/basic/sloth/paperwork{
 	name = "Excell"
 	},
 /turf/open/floor/iron,
@@ -28537,7 +28537,7 @@
 /turf/open/floor/iron/showroomfloor,
 /area/station/medical/exam_room)
 "prp" = (
-/obj/machinery/atmospherics/components/unary/cryo_cell{
+/obj/machinery/cryo_cell{
 	dir = 8
 	},
 /turf/open/floor/iron/white,

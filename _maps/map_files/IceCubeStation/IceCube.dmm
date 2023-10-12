@@ -6126,7 +6126,7 @@
 /obj/effect/turf_decal/stripes/end{
 	dir = 8
 	},
-/obj/machinery/atmospherics/components/unary/cryo_cell,
+/obj/machinery/cryo_cell,
 /turf/open/floor/iron/dark,
 /area/station/medical/exam_room)
 "cUN" = (
@@ -11836,7 +11836,7 @@
 /turf/open/floor/iron/white,
 /area/station/medical/medbay)
 "frD" = (
-/mob/living/simple_animal/sloth/paperwork,
+/mob/living/basic/sloth/paperwork,
 /obj/effect/turf_decal/tile/brown/half{
 	dir = 1
 	},
@@ -20295,7 +20295,7 @@
 /obj/effect/turf_decal/stripes/end{
 	dir = 4
 	},
-/obj/machinery/atmospherics/components/unary/cryo_cell,
+/obj/machinery/cryo_cell,
 /turf/open/floor/iron/dark,
 /area/station/medical/exam_room)
 "jfq" = (
@@ -54535,7 +54535,7 @@
 /turf/open/floor/iron,
 /area/station/commons/dorms)
 "xOG" = (
-/mob/living/simple_animal/hostile/retaliate/goat{
+/mob/living/basic/goat/pete{
 	desc = "The chefs most 'trusted' pet Goat. Just don't stare at him too long.";
 	name = "Pete"
 	},

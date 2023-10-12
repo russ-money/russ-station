@@ -68,7 +68,7 @@
 
 /// Returns the kind of legion we make out of the target
 /mob/living/basic/legion_brood/proc/get_legion_type(mob/living/target)
-	if (HAS_TRAIT(H, TRAIT_DWARF) || islavalanddwarf(H)) //HONK - Added dwarfs to legion conversion
+	if (HAS_TRAIT(target, TRAIT_DWARF) || islavalanddwarf(target)) //HONK - Added dwarfs to legion conversion
 		return /mob/living/basic/mining/legion/dwarf
 	return /mob/living/basic/mining/legion
 

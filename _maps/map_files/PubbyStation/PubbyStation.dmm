@@ -21064,7 +21064,7 @@
 /turf/open/floor/iron/white,
 /area/station/medical/exam_room)
 "byp" = (
-/obj/machinery/atmospherics/components/unary/cryo_cell,
+/obj/machinery/cryo_cell,
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/station/medical/exam_room)
@@ -36155,7 +36155,7 @@
 /area/station/hallway/secondary/exit/departure_lounge)
 "gvi" = (
 /obj/effect/turf_decal/bot,
-/mob/living/simple_animal/sloth/paperwork{
+/mob/living/basic/sloth/paperwork{
 	name = "Taxes"
 	},
 /obj/effect/turf_decal/trimline/brown/filled/line{
@@ -41849,7 +41849,7 @@
 /turf/open/floor/iron,
 /area/station/maintenance/department/engine)
 "oGc" = (
-/mob/living/simple_animal/hostile/retaliate/goat{
+/mob/living/basic/goat/pete{
 	name = "Pete"
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -47204,7 +47204,7 @@
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
 "wfO" = (
-/mob/living/simple_animal/hostile/retaliate/snake,
+/mob/living/basic/snake,
 /turf/open/floor/plating,
 /area/station/maintenance/department/engine)
 "wgM" = (
