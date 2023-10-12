@@ -375,9 +375,9 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 		if(DNA_DIONA_HAIR_BLOCK)
 			set_uni_feature_block(blocknumber, construct_block(GLOB.diona_hair_list.Find(features["diona_hair"]), GLOB.diona_hair_list.len))
 		if(DNA_SKAVEN_TAIL_BLOCK)
-			set_uni_feature_block(blocknumber, construct_block(GLOB.tails_list.Find(features["tail_skaven"]), GLOB.tails_list.len))
+			set_uni_feature_block(blocknumber, construct_block(GLOB.tails_list_skaven.Find(features["tail_skaven"]), GLOB.tails_list_skaven.len))
 		if(DNA_KITSUNE_TAIL_BLOCK)
-			set_uni_feature_block(blocknumber, construct_block(GLOB.tails_list.Find(features["tail_kitsune"]), GLOB.tails_list.len))
+			set_uni_feature_block(blocknumber, construct_block(GLOB.tails_list_kitsune.Find(features["tail_kitsune"]), GLOB.tails_list_kitsune.len))
 		// honk end
 
 //Please use add_mutation or activate_mutation instead

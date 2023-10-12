@@ -335,7 +335,7 @@
 				/mob/living/basic/snake,
 				/mob/living/basic/killer_tomato,
 				/mob/living/basic/viscerator,
-				/mob/living/simple_animal/hostile/retaliate/clown/russ/goblin,
+				/mob/living/basic/clown/russ/goblin,
 			)
 		if(103 to 109)
 			harvested_item = pick(
@@ -345,7 +345,7 @@
 				/mob/living/basic/spider/giant,
 				/mob/living/basic/hivebot/range,
 				/mob/living/simple_animal/hostile/mimic/copy,
-				/mob/living/simple_animal/hostile/retaliate/clown/russ/goblin,
+				/mob/living/basic/clown/russ/goblin,
 				/mob/living/simple_animal/hostile/venus_human_trap,
 				/mob/living/basic/bear/snow,
 			)

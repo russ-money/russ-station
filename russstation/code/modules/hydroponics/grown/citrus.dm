@@ -66,11 +66,10 @@
 
 	spawn(30)
 		if(!QDELETED(src))
-			var/mob/living/simple_animal/hostile/retaliate/clown/russ/goblin/lessergoblin/G = new /mob/living/simple_animal/hostile/retaliate/clown/russ/goblin/lessergoblin(get_turf(loc))
+			var/mob/living/basic/clown/russ/goblin/lessergoblin/G = new /mob/living/basic/clown/russ/goblin/lessergoblin(get_turf(loc))
 			G.maxHealth += round(seed.endurance / 4)
 			G.melee_damage_lower += round(seed.potency / 15)
 			G.melee_damage_upper += round(seed.potency / 15)
-			G.move_to_delay -= round(seed.production / 35)
 			G.health = G.maxHealth
 			G.visible_message(
 				span_notice("The goblin starts shaking it's feet viciously as it opens it's eyes."),
