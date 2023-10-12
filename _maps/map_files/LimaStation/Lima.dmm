@@ -15709,7 +15709,7 @@
 /area/station/security/prison)
 "grR" = (
 /obj/structure/table/reinforced,
-/obj/item/surgery_tray/full,
+/obj/item/surgery_tray/full/morgue,
 /turf/open/floor/iron/dark,
 /area/station/medical/morgue)
 "gsb" = (
@@ -18594,7 +18594,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/bitrunning/station_reward_spawn,
+/obj/machinery/byteforge,
 /turf/open/floor/iron,
 /area/station/bitrunning/den)
 "hUk" = (
@@ -18614,7 +18614,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/bitrunning/station_reward_spawn,
+/obj/machinery/byteforge,
 /turf/open/floor/iron,
 /area/station/bitrunning/den)
 "hVh" = (

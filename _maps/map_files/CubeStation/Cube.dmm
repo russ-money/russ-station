@@ -3123,7 +3123,6 @@
 /turf/open/floor/iron/white,
 /area/station/security/brig)
 "bHX" = (
-/obj/effect/landmark/bitrunning/station_reward_spawn,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/airalarm/directional/south,
 /turf/open/floor/iron/dark/textured_large,
@@ -4563,7 +4562,7 @@
 /turf/open/floor/iron,
 /area/station/science/ordnance/storage)
 "cxM" = (
-/obj/effect/landmark/bitrunning/station_reward_spawn,
+/obj/machinery/byteforge,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera/directional/south,
 /turf/open/floor/plating,
@@ -11872,6 +11871,7 @@
 /area/station/command/heads_quarters/cmo)
 "gtl" = (
 /obj/effect/turf_decal/trimline/blue/filled/line,
+/obj/structure/closet/crate/freezer/surplus_limbs,
 /turf/open/floor/iron/white,
 /area/station/medical/storage)
 "gtx" = (

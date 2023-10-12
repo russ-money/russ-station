@@ -6517,7 +6517,7 @@
 /area/station/ai_monitored/security/armory)
 "dbW" = (
 /obj/structure/table,
-/obj/item/surgery_tray/full,
+/obj/item/surgery_tray/full/morgue,
 /obj/structure/sign/clock/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/medical/morgue)
@@ -6904,7 +6904,7 @@
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "dmg" = (
-/obj/effect/landmark/bitrunning/station_reward_spawn,
+/obj/machinery/byteforge,
 /obj/effect/turf_decal/box,
 /obj/machinery/firealarm/directional/south,
 /turf/open/floor/iron/dark,
@@ -41110,7 +41110,7 @@
 /turf/open/floor/iron/cafeteria,
 /area/station/service/cafeteria)
 "rYf" = (
-/obj/effect/landmark/bitrunning/station_reward_spawn,
+/obj/machinery/byteforge,
 /obj/effect/turf_decal/box,
 /turf/open/floor/iron/dark,
 /area/station/bitrunning/den)
