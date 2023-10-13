@@ -346,7 +346,7 @@
 				/mob/living/basic/hivebot/range,
 				/mob/living/simple_animal/hostile/mimic/copy,
 				/mob/living/basic/clown/russ/goblin,
-				/mob/living/simple_animal/hostile/venus_human_trap,
+				/mob/living/basic/venus_human_trap,
 				/mob/living/basic/bear/snow,
 			)
 		if(110 to 120)
