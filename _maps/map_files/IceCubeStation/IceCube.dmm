@@ -1902,6 +1902,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
 	cycle_id = "xeno-passthrough"
 	},
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/maintenance/department/science/xenobiology)
 "aSP" = (
@@ -24136,6 +24137,7 @@
 /area/station/maintenance/port/central)
 "kKd" = (
 /obj/effect/spawner/random/trash/mess,
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/maintenance/fore/upper)
 "kKf" = (
@@ -25034,6 +25036,11 @@
 /obj/structure/closet/l3closet/scientist,
 /turf/open/floor/iron/dark,
 /area/station/command/gateway)
+"ldN" = (
+/obj/effect/spawner/random/trash/garbage,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/station/maintenance/department/science/xenobiology)
 "ldV" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
@@ -27582,6 +27589,7 @@
 /area/station/maintenance/starboard/fore)
 "mjQ" = (
 /obj/structure/sign/poster/contraband/random/directional/east,
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/maintenance/fore/upper)
 "mjR" = (
@@ -28612,6 +28620,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/iron/smooth,
 /area/station/science/xenobiology)
 "mGX" = (
@@ -30860,6 +30869,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
 	},
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/bitrunning/den)
 "nDS" = (
@@ -31022,6 +31032,7 @@
 /area/station/cargo/office)
 "nHK" = (
 /obj/effect/spawner/random/trash/food_packaging,
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/maintenance/fore/upper)
 "nHL" = (
@@ -40230,6 +40241,7 @@
 	dir = 4
 	},
 /obj/effect/spawner/random/trash/botanical_waste,
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/upper)
 "rHO" = (
@@ -41894,6 +41906,13 @@
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
+"srs" = (
+/obj/machinery/door/airlock/maintenance{
+	name = "Xenobiology Maintenance"
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/station/maintenance/department/science/xenobiology)
 "sru" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -43351,6 +43370,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/upper)
 "taA" = (
@@ -138457,7 +138477,7 @@ iJE
 xRu
 xYf
 jgg
-jgg
+iKL
 xYf
 uKo
 xYf
@@ -138971,21 +138991,21 @@ fTp
 utR
 xYf
 jgg
-jgg
-jgg
-jgg
-jgg
-jgg
-jgg
+iKL
+iKL
+iKL
+iKL
+iKL
+iKL
 nHK
 mjQ
 nHK
-jgg
-jgg
-jgg
-jgg
-bMy
-exR
+iKL
+iKL
+iKL
+iKL
+srs
+nJo
 exR
 hFB
 hFB
@@ -139242,7 +139262,7 @@ jgg
 cbL
 jgg
 iBh
-exR
+nJo
 nzQ
 hFB
 iwE
@@ -139499,7 +139519,7 @@ hFB
 hFB
 hFB
 hFB
-exR
+nJo
 exR
 hFB
 iwE
@@ -139756,7 +139776,7 @@ jVh
 xkc
 bhG
 hFB
-gLP
+ldN
 exR
 hFB
 iwE
@@ -140013,7 +140033,7 @@ fob
 usb
 hiB
 hFB
-exR
+nJo
 dOE
 hFB
 nrl
@@ -168790,7 +168810,7 @@ lzz
 lmK
 lmK
 lmK
-mMe
+nFu
 cmw
 xpu
 qHs
@@ -169817,8 +169837,8 @@ oLX
 oLX
 oLX
 ngX
-mMe
-tJa
+nFu
+qQU
 ngX
 oLX
 oLX
