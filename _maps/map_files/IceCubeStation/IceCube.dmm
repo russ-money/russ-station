@@ -2827,6 +2827,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/stripes/line,
+/obj/machinery/power/apc/auto_name/directional/south,
 /turf/open/floor/iron/dark,
 /area/station/medical/exam_room)
 "bma" = (
@@ -25231,7 +25232,6 @@
 /obj/machinery/stasis{
 	dir = 4
 	},
-/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/medical/exam_room)
@@ -38950,7 +38950,6 @@
 /area/station/service/hydroponics)
 "reU" = (
 /obj/item/kirbyplants/random,
-/obj/machinery/newscaster/directional/north,
 /turf/open/floor/iron/white,
 /area/station/medical/medbay)
 "reW" = (
@@ -95784,7 +95783,7 @@ tVP
 uRp
 qtA
 kGE
-tRf
+sRJ
 qfO
 baD
 nYV
