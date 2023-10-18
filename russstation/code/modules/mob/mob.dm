@@ -1,4 +1,3 @@
-
 //Start Reason: fuck you, used for bung apples
 
 //Fake Vomit
@@ -21,7 +20,7 @@
 				span_warning("[src] pukes all over [p_them()]self!"),
 				span_warning("You puke all over yourself!"),
 			)
-		location.add_vomit_floor(src, 1)
+		location.add_vomit_floor(src, vomit_flags = VOMIT_CATEGORY_DEFAULT)
 
 	playsound(location, 'sound/effects/splat.ogg', 50, 1)
 

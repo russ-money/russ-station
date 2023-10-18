@@ -11881,8 +11881,8 @@
 /area/station/cargo/storage)
 "aPf" = (
 /obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
 "aPh" = (
@@ -13560,6 +13560,22 @@
 /area/station/hallway/primary/central)
 "aVr" = (
 /obj/machinery/airalarm/directional/north,
+/obj/structure/table,
+/obj/item/stock_parts/micro_laser{
+	pixel_x = 6;
+	pixel_y = -2
+	},
+/obj/item/stock_parts/micro_laser{
+	pixel_x = 2
+	},
+/obj/item/stock_parts/micro_laser{
+	pixel_x = -2;
+	pixel_y = 2
+	},
+/obj/item/stock_parts/micro_laser{
+	pixel_x = -6;
+	pixel_y = 4
+	},
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
 "aVw" = (
@@ -21064,7 +21080,7 @@
 /turf/open/floor/iron/white,
 /area/station/medical/exam_room)
 "byp" = (
-/obj/machinery/atmospherics/components/unary/cryo_cell,
+/obj/machinery/cryo_cell,
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/station/medical/exam_room)
@@ -35299,7 +35315,7 @@
 /turf/open/floor/iron,
 /area/station/security/checkpoint/medical)
 "fgv" = (
-/obj/effect/landmark/bitrunning/station_reward_spawn,
+/obj/machinery/byteforge,
 /obj/effect/turf_decal/box,
 /obj/item/radio/intercom/directional/south,
 /turf/open/floor/iron/dark,
@@ -36155,7 +36171,7 @@
 /area/station/hallway/secondary/exit/departure_lounge)
 "gvi" = (
 /obj/effect/turf_decal/bot,
-/mob/living/simple_animal/sloth/paperwork{
+/mob/living/basic/sloth/paperwork{
 	name = "Taxes"
 	},
 /obj/effect/turf_decal/trimline/brown/filled/line{
@@ -38773,9 +38789,9 @@
 /obj/item/stock_parts/scanning_module{
 	pixel_x = 5
 	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/item/radio/intercom/directional/south,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
 "knt" = (
@@ -40079,7 +40095,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/solars/starboard)
 "mri" = (
-/obj/effect/landmark/bitrunning/station_reward_spawn,
+/obj/machinery/byteforge,
 /obj/effect/turf_decal/box,
 /turf/open/floor/iron/dark,
 /area/station/bitrunning/den)
@@ -41689,8 +41705,8 @@
 /turf/open/floor/iron/dark,
 /area/station/service/library/artgallery)
 "oxL" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
 "oya" = (
@@ -41849,7 +41865,7 @@
 /turf/open/floor/iron,
 /area/station/maintenance/department/engine)
 "oGc" = (
-/mob/living/simple_animal/hostile/retaliate/goat{
+/mob/living/basic/goat/pete{
 	name = "Pete"
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -44429,7 +44445,7 @@
 /area/station/maintenance/department/engine)
 "spo" = (
 /obj/structure/table/optable,
-/obj/item/surgery_tray/full,
+/obj/item/surgery_tray/full/morgue,
 /obj/item/radio/intercom/directional/west,
 /turf/open/floor/iron/dark,
 /area/station/medical/morgue)
@@ -45825,25 +45841,9 @@
 /turf/open/floor/iron,
 /area/station/commons/storage/primary)
 "ulR" = (
-/obj/structure/table,
-/obj/item/stock_parts/micro_laser{
-	pixel_x = -6;
-	pixel_y = 4
-	},
-/obj/item/stock_parts/micro_laser{
-	pixel_x = -2;
-	pixel_y = 2
-	},
-/obj/item/stock_parts/micro_laser{
-	pixel_x = 2
-	},
-/obj/item/stock_parts/micro_laser{
-	pixel_x = 6;
-	pixel_y = -2
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/light_switch/directional/south,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
 "ulV" = (
@@ -47204,7 +47204,7 @@
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
 "wfO" = (
-/mob/living/simple_animal/hostile/retaliate/snake,
+/mob/living/basic/snake,
 /turf/open/floor/plating,
 /area/station/maintenance/department/engine)
 "wgM" = (
