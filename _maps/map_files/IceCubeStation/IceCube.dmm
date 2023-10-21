@@ -32,6 +32,10 @@
 /obj/effect/spawner/random/trash/grille_or_waste,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/fore)
+"aaJ" = (
+/obj/structure/cable,
+/turf/open/floor/iron/dark,
+/area/station/command/bridge)
 "aaK" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
 	dir = 4
@@ -364,6 +368,7 @@
 	pixel_y = 5;
 	req_access = list("brig_entrance")
 	},
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/security/brig)
 "ago" = (
@@ -1248,6 +1253,7 @@
 	},
 /obj/effect/turf_decal/delivery/red,
 /obj/structure/disposalpipe/segment,
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/security/brig)
 "aDm" = (
@@ -2829,6 +2835,7 @@
 	},
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/power/apc/auto_name/directional/south,
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/medical/exam_room)
 "bma" = (
@@ -17029,6 +17036,19 @@
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/fore)
+"hJW" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
+	dir = 6
+	},
+/obj/effect/turf_decal/siding/blue{
+	dir = 4
+	},
+/obj/structure/cable,
+/turf/open/floor/iron/white,
+/area/station/medical/exam_room)
 "hKe" = (
 /obj/effect/turf_decal/siding/green,
 /turf/open/floor/iron/white/textured,
@@ -18032,12 +18052,9 @@
 /turf/open/floor/iron/dark,
 /area/station/security/brig)
 "ihe" = (
-/obj/effect/turf_decal/siding/blue{
-	dir = 8
-	},
 /obj/structure/cable,
-/turf/open/floor/iron/white,
-/area/station/medical/exam_room)
+/turf/open/floor/iron,
+/area/station/command/bridge)
 "ihg" = (
 /obj/structure/table/reinforced/rglass,
 /obj/item/stack/sheet/glass/fifty{
@@ -18129,6 +18146,7 @@
 /area/station/hallway/secondary/exit/departure_lounge)
 "iip" = (
 /obj/machinery/newscaster/directional/west,
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/cargo/storage)
 "iis" = (
@@ -20912,7 +20930,6 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/cable,
 /obj/machinery/firealarm/directional/north,
 /turf/open/floor/iron/edge{
 	dir = 1
@@ -24745,7 +24762,6 @@
 "kXR" = (
 /obj/structure/table,
 /obj/item/storage/box/prisoner,
-/obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/security/prison/visit)
 "kXZ" = (
@@ -25001,7 +25017,6 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/security/brig)
 "lcV" = (
@@ -25241,7 +25256,6 @@
 /obj/machinery/stasis{
 	dir = 4
 	},
-/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/medical/exam_room)
 "ljV" = (
@@ -25712,6 +25726,7 @@
 "lvW" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/disposalpipe/segment,
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/security/brig)
 "lwc" = (
@@ -28037,6 +28052,7 @@
 "muO" = (
 /obj/structure/sink/directional/north,
 /obj/machinery/firealarm/directional/south,
+/obj/structure/cable,
 /turf/open/floor/iron/white/textured,
 /area/station/medical/exam_room)
 "mva" = (
@@ -28750,7 +28766,6 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/cable,
 /obj/machinery/status_display/evac/directional/north,
 /turf/open/floor/iron/edge{
 	dir = 1
@@ -38817,7 +38832,6 @@
 /obj/effect/turf_decal/siding/blue/corner{
 	dir = 8
 	},
-/obj/structure/cable,
 /turf/open/floor/iron/white,
 /area/station/medical/exam_room)
 "rav" = (
@@ -41033,7 +41047,6 @@
 "rWl" = (
 /obj/machinery/light/directional/north,
 /obj/structure/table/glass,
-/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/medical/exam_room)
 "rWm" = (
@@ -49780,6 +49793,7 @@
 /area/station/command/heads_quarters/rd)
 "vOk" = (
 /obj/structure/tank_dispenser/oxygen,
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/security/lockers)
 "vOm" = (
@@ -53625,6 +53639,7 @@
 	},
 /obj/effect/spawner/atmos_canister/anesthetic_mix,
 /obj/structure/sign/poster/official/cleanliness/directional/south,
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/medical/exam_room)
 "xwi" = (
@@ -54138,6 +54153,7 @@
 	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/any/command/general,
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
 "xGc" = (
@@ -54203,6 +54219,7 @@
 	name = "Bridge Blast Door"
 	},
 /obj/effect/turf_decal/delivery/red,
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
 "xHn" = (
@@ -54246,12 +54263,14 @@
 	dir = 8
 	},
 /obj/effect/mapping_helpers/airlock/access/any/command/general,
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
 "xIm" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/command/bridge)
 "xIn" = (
@@ -54557,8 +54576,7 @@
 /area/station/commons/dorms)
 "xOG" = (
 /mob/living/basic/goat/pete{
-	desc = "The chefs most 'trusted' pet Goat. Just don't stare at him too long.";
-	name = "Pete"
+	desc = "The chefs most 'trusted' pet Goat. Just don't stare at him too long."
 	},
 /obj/effect/turf_decal/siding/white{
 	dir = 1
@@ -54689,6 +54707,7 @@
 /obj/effect/turf_decal/siding/blue/corner{
 	dir = 4
 	},
+/obj/structure/cable,
 /turf/open/floor/iron/white,
 /area/station/medical/exam_room)
 "xRh" = (
@@ -85788,7 +85807,7 @@ oLX
 oLX
 eUY
 xbB
-xbB
+aaJ
 gFV
 eUY
 kUe
@@ -86816,7 +86835,7 @@ oLX
 eUY
 wof
 oBV
-oBV
+ihe
 oBV
 oBV
 pFK
@@ -88836,7 +88855,7 @@ fWA
 gJR
 nKM
 wbS
-qWM
+ddb
 jTy
 fzh
 fZp
@@ -88915,8 +88934,8 @@ qbs
 oYE
 oYE
 oYE
-oYE
-oYE
+vwd
+vwd
 qTp
 kTs
 doS
@@ -96311,7 +96330,7 @@ uLi
 uLi
 kMi
 ran
-ihe
+qIO
 xos
 vwe
 wKs
@@ -96831,9 +96850,9 @@ xtQ
 bML
 rbY
 rbY
-rbY
+hJW
 xRg
-uLi
+hLr
 lEa
 kHs
 nZD
