@@ -5265,7 +5265,7 @@
 "czl" = (
 /obj/structure/table/glass,
 /obj/effect/turf_decal/tile/green/full,
-/obj/item/circuitboard/machine/chem_dispenser,
+/obj/item/circuitboard/machine/chem_master/condi,
 /turf/open/floor/iron/dark,
 /area/station/service/hydroponics/upper)
 "czA" = (
@@ -22422,6 +22422,8 @@
 /obj/item/watertank,
 /obj/item/reagent_containers/cup/bucket,
 /obj/item/reagent_containers/cup/bucket,
+/obj/item/wrench,
+/obj/item/shovel/spade,
 /turf/open/floor/iron,
 /area/station/service/hydroponics)
 "kac" = (
