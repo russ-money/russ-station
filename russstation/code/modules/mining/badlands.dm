@@ -9,7 +9,7 @@
 
 /obj/structure/spawner/lavaland/badlands/skeleton
 	max_mobs = 4
-	mob_types = list(/mob/living/simple_animal/hostile/skeleton, /mob/living/simple_animal/hostile/skeleton/eskimo, /mob/living/simple_animal/hostile/skeleton/templar, /mob/living/simple_animal/hostile/skeleton/plasmaminer)
+	mob_types = list(/mob/living/basic/skeleton, /mob/living/basic/skeleton/settler, /mob/living/basic/skeleton/templar, /mob/living/basic/skeleton/plasmaminer)
 
 /obj/structure/spawner/lavaland/badlands/chicken
 	max_mobs = 6
