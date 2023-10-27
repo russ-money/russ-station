@@ -121,7 +121,7 @@
 	return TRUE
 
 /datum/action/changeling/sting/transformation/sting_action(mob/living/user, mob/living/target)
-	var/final_duration = sting_duration
+	var/final_duration = INFINITY // honk -- changed final duration to infinity, to make transform sting permanent.
 	var/final_message = span_notice("We transform [target] into [selected_dna.dna.real_name].")
 	if(ismonkey(target))
 		final_duration = INFINITY
