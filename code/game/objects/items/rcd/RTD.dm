@@ -365,6 +365,7 @@
 
 	return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 
+//Honk start
 /obj/item/construction/rtd/borg
 	name = "rapid-tiling-device (RTD)"
 	var/energyfactor = 10
@@ -403,6 +404,7 @@
 	if(!. && user)
 		balloon_alert(user, "insufficient charge!")
 	return .
+//Honk end
 /obj/item/construction/rtd/loaded
 	matter = 350
 
