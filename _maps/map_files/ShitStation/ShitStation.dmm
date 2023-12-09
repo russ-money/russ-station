@@ -2684,7 +2684,7 @@
 /turf/open/floor/iron,
 /area/station/commons/dorms)
 "alH" = (
-/obj/item/a_gift/anything,
+/obj/item/gift/anything,
 /obj/structure/grille/broken,
 /turf/open/floor/plating,
 /area/station/maintenance/department/crew_quarters/dorms)
@@ -23023,7 +23023,7 @@
 /area/station/engineering/lobby)
 "qbf" = (
 /obj/machinery/shower/directional/south,
-/obj/item/a_gift/anything,
+/obj/item/gift/anything,
 /turf/open/floor/iron/grimy,
 /area/station/commons/toilet/restrooms)
 "qbk" = (

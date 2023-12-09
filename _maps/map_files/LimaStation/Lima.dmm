@@ -7433,7 +7433,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/fore)
 "cpN" = (
-/obj/item/a_gift/anything,
+/obj/item/gift/anything,
 /turf/open/floor/plating,
 /area/station/maintenance/port/fore)
 "cpO" = (
@@ -8519,7 +8519,7 @@
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
 "cUJ" = (
-/obj/item/a_gift/anything,
+/obj/item/gift/anything,
 /turf/open/floor/plating,
 /area/station/maintenance/aft)
 "cUR" = (
@@ -30292,7 +30292,7 @@
 /turf/open/floor/iron,
 /area/station/medical/surgery)
 "oHu" = (
-/obj/item/a_gift/anything,
+/obj/item/gift/anything,
 /turf/open/floor/plating,
 /area/station/maintenance/fore)
 "oHv" = (

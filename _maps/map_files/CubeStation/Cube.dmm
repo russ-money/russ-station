@@ -7163,7 +7163,7 @@
 /turf/open/floor/grass,
 /area/station/command/heads_quarters/rd)
 "dVr" = (
-/obj/item/a_gift/anything,
+/obj/item/gift/anything,
 /turf/open/floor/plating,
 /area/station/science/xenobiology)
 "dVt" = (
@@ -35692,7 +35692,7 @@
 /area/station/maintenance/port)
 "sLn" = (
 /obj/structure/closet,
-/obj/item/a_gift/anything,
+/obj/item/gift/anything,
 /turf/open/space/basic,
 /area/station/maintenance/aft)
 "sLB" = (
