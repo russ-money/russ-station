@@ -29681,7 +29681,6 @@
 "wiX" = (
 /obj/machinery/light/directional/north,
 /obj/structure/cable,
-/obj/structure/closet/ammunitionlocker,
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/security/armory)

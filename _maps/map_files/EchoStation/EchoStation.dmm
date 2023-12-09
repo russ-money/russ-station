@@ -5008,6 +5008,10 @@
 /obj/item/radio/intercom/directional/north,
 /turf/open/floor/iron,
 /area/station/security/brig)
+"cLZ" = (
+/obj/effect/mapping_helpers/airalarm/tlv_no_checks,
+/turf/open/space/basic,
+/area/space)
 "cMd" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -14473,6 +14477,10 @@
 /obj/machinery/light/directional/west,
 /obj/machinery/airalarm/directional/west,
 /obj/effect/mapping_helpers/airalarm/engine_access,
+/obj/effect/mapping_helpers/airalarm/tlv_no_checks,
+/obj/effect/mapping_helpers/airalarm/link{
+	chamber_id = "engine"
+	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "hVg" = (
@@ -20337,6 +20345,10 @@
 /obj/effect/mapping_helpers/airalarm/mixingchamber_access,
 /obj/machinery/computer/atmos_control/ordnancemix{
 	dir = 4
+	},
+/obj/effect/mapping_helpers/airalarm/tlv_no_checks,
+/obj/effect/mapping_helpers/airalarm/link{
+	chamber_id = "ordnanceburn"
 	},
 /turf/open/floor/iron,
 /area/station/science/ordnance/burnchamber)
@@ -40396,6 +40408,14 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/iron/showroomfloor,
 /area/station/medical/exam_room)
+"vtt" = (
+/obj/machinery/air_sensor/engine_chamber,
+/obj/effect/decal/remains/human{
+	desc = "The remains of some poor soul, flung into the SM by what we assume to be a rabbid clown.";
+	name = "Byproduct of the Clown"
+	},
+/turf/open/floor/engine,
+/area/station/engineering/supermatter)
 "vtD" = (
 /obj/machinery/atmospherics/components/binary/pump/on{
 	dir = 8;
@@ -52690,7 +52710,7 @@ jjW
 jjW
 jjW
 jjW
-jjW
+cLZ
 jjW
 jjW
 jjW
@@ -85268,7 +85288,7 @@ mME
 whk
 rpO
 fCZ
-uZS
+vtt
 erT
 tmZ
 whk
