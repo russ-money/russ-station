@@ -51,7 +51,7 @@
 	. = ..()
 	var/area/A = get_area(src)
 	if(A)
-		notify_ghosts("A dwarven dorm was made and ready to use in \the [A.name].", source = src, flashwindow = FALSE, ignore_key = POLL_IGNORE_DWARF)
+		notify_ghosts("A dwarven dorm was made and ready to use in \the [A.name].", source = src, ignore_key = POLL_IGNORE_DWARF)
 
 /obj/effect/mob_spawn/ghost_role/human/dwarf_dorm/icemoon
 	name = "dwarven dorm"
