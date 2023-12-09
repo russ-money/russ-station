@@ -220,7 +220,7 @@
 				span_notice("You finish the stone wall."),
 				span_hear("You hear stones piling up."))
 			var/turf/T = get_turf(src)
-			T.PlaceOnTop(/turf/closed/wall/mineral/stone)
+			T.place_on_top(/turf/closed/wall/mineral/stone)
 			qdel(src)
 		return
 	else if(I.tool_behaviour == TOOL_DWARF)

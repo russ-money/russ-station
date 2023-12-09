@@ -14,7 +14,7 @@
 	addtimer(CALLBACK(src, /atom/.proc/update_icon), 2)
 	var/threat = 5
 	C.Paralyze(100)
-	threat = C.assess_threat(judgement_criteria, weaponcheck=CALLBACK(src, .proc/check_for_weapons))
+	threatlevel = C.assess_threat(judgement_criteria)
 
 	log_combat(src,C,"tackled")
 	if(security_mode_flags & SECBOT_DECLARE_ARRESTS)
@@ -35,21 +35,17 @@
 		if((C.name == oldtarget_name) && (world.time < last_found + 100))
 			continue
 
-		threatlevel = C.assess_threat(judgement_criteria, weaponcheck=CALLBACK(src, .proc/check_for_weapons))
+		threatlevel = C.assess_threat(judgement_criteria)
 
-		if(!threatlevel)
+		if (threatlevel < THREAT_ASSESS_DANGEROUS)
 			continue
-
-		else if(threatlevel >= 4)
-			target = C
-			oldtarget_name = C.name
-			playsound(loc, 'russstation/sound/effects/bearhuuu.ogg', 75, FALSE)
-			visible_message("<b>[src]</b> growls at [C.name]!")
-			mode = BOT_HUNT
-			INVOKE_ASYNC(src, .proc/handle_automated_action)
-			break
-		else
-			continue
+		target = C
+		oldtarget_name = C.name
+		playsound(loc, 'russstation/sound/effects/bearhuuu.ogg', 75, FALSE)
+		visible_message("<b>[src]</b> growls at [C.name]!")
+		mode = BOT_HUNT
+		INVOKE_ASYNC(src, .proc/handle_automated_action)
+		break
 
 /mob/living/simple_animal/bot/secbot/bearsky/explode()
 	walk_to(src,0)

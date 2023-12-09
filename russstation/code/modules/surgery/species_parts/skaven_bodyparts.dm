@@ -14,6 +14,7 @@
 	icon_state = "skaven_chest"
 	limb_id = SPECIES_SKAVEN
 	is_dimorphic = FALSE
+	wing_types = NONE
 
 /obj/item/bodypart/arm/left/skaven
 	icon = 'russstation/icons/mob/human_parts_greyscale.dmi'

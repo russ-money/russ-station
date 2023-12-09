@@ -1,5 +1,5 @@
 /obj/effect/spawner/docking_port
-	icon = 'icons/obj/device.dmi'
+	icon =  'icons/obj/devices/tracker.dmi'
 	icon_state = "pinonfar"
 	name = "docking port randomized spawner"
 	var/list/static/spawners = list()

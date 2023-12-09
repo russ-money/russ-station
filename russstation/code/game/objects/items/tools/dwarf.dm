@@ -11,7 +11,7 @@
 	inhand_icon_state = "dwarf_tool"
 	worn_icon = 'russstation/icons/mob/clothing/belt.dmi'
 	worn_icon_state = "dwarf_tool_PLACEHOLDER" // I'm no artist
-	flags_1 = CONDUCT_1
+	obj_flags = CONDUCTS_ELECTRICITY
 	slot_flags = ITEM_SLOT_BELT
 	force = 5
 	throwforce = 7

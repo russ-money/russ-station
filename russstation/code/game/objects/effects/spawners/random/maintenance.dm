@@ -14,5 +14,5 @@
 	spawn_loot_count = 3
 
 /obj/effect/spawner/random/maintenance/crate/Initialize(mapload)
-	new /obj/effect/spawner/random/structure/crate_empty(loc)
+	new /obj/effect/spawner/random/structure/closet_empty/crate(loc)
 	. = ..()

@@ -7,7 +7,6 @@
 	volume = 500
 	armor_type = /datum/armor/compost_bin
 	max_integrity = 100
-	canister_overlay_file = null //no overlay
 	gas_type = /datum/gas/miasma
 	filled = 0
 
@@ -66,3 +65,7 @@
 	else if(reagents.total_volume / reagents.maximum_volume > 0.80)
 		icon_state = "compost-full"
 	return ..()
+
+/obj/machinery/portable_atmospherics/canister/update_overlays()
+	// don't do anything
+	update_window()
