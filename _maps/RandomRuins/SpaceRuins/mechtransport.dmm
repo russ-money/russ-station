@@ -12,7 +12,9 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/powered/mechtransport)
 "dB" = (
-/obj/machinery/light/broken/directional/north,
+/obj/machinery/light/broken{
+	dir = 1
+	},
 /turf/open/floor/iron/smooth_large/airless,
 /area/ruin/space/has_grav/powered/mechtransport)
 "dW" = (
@@ -135,7 +137,9 @@
 /turf/open/floor/iron/smooth_large/airless,
 /area/ruin/space/has_grav/powered/mechtransport)
 "sv" = (
-/obj/machinery/light/broken/directional/north,
+/obj/machinery/light/broken{
+	dir = 1
+	},
 /obj/effect/decal/cleanable/shreds,
 /turf/open/floor/iron/smooth_large/airless,
 /area/ruin/space/has_grav/powered/mechtransport)
@@ -192,7 +196,9 @@
 	dir = 4;
 	name = "Broken Computer"
 	},
-/obj/machinery/light/broken/directional/west,
+/obj/machinery/light/broken{
+	dir = 8
+	},
 /turf/open/floor/iron/smooth_large/airless,
 /area/ruin/space/has_grav/powered/mechtransport)
 "Ch" = (

@@ -16052,7 +16052,7 @@
 "efr" = (
 /obj/structure/table,
 /obj/item/gun/ballistic/revolver/russian,
-/obj/machinery/light/dim/directional/south,
+/obj/machinery/light/dim,
 /turf/open/floor/pod/light,
 /area/station/maintenance/floor1/starboard)
 "efz" = (
