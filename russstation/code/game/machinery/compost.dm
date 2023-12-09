@@ -66,6 +66,6 @@
 		icon_state = "compost-full"
 	return ..()
 
-/obj/machinery/portable_atmospherics/canister/update_overlays()
-	// don't do anything
+/obj/machinery/portable_atmospherics/canister/compost_bin/update_overlays()
+	SHOULD_CALL_PARENT(FALSE) // no
 	update_window()
