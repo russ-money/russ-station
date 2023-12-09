@@ -76,7 +76,7 @@
 /area/icemoon/surface/dorf_chaos)
 "w" = (
 /obj/item/flashlight/lantern{
-	on = 1
+	start_on = 1
 	},
 /turf/open/floor/cult{
 	initial_gas_mix = "ICEMOON_ATMOS"
@@ -223,7 +223,7 @@
 /area/icemoon/surface/dorf_chaos)
 "K" = (
 /obj/item/flashlight/lantern{
-	on = 1
+	start_on = 1
 	},
 /turf/open/misc/asteroid/snow/icemoon,
 /area/icemoon/surface/dorf_chaos)
@@ -332,7 +332,7 @@
 	pixel_y = 1
 	},
 /obj/item/flashlight/lantern{
-	on = 1
+	start_on = 1
 	},
 /turf/open/floor/cult{
 	initial_gas_mix = "ICEMOON_ATMOS"

@@ -57,7 +57,7 @@
 /area/lavaland/surface/dorf_chaos)
 "t" = (
 /obj/item/flashlight/lantern{
-	on = 1
+	start_on = 1
 	},
 /turf/open/floor/cult{
 	initial_gas_mix = "LAVALAND_ATMOS"
@@ -204,7 +204,7 @@
 /area/lavaland/surface/dorf_chaos)
 "H" = (
 /obj/item/flashlight/lantern{
-	on = 1
+	start_on = 1
 	},
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/dorf_chaos)
@@ -337,7 +337,7 @@
 	pixel_y = 1
 	},
 /obj/item/flashlight/lantern{
-	on = 1
+	start_on = 1
 	},
 /turf/open/floor/cult{
 	initial_gas_mix = "LAVALAND_ATMOS"

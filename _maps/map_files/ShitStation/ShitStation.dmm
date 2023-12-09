@@ -121,7 +121,7 @@
 /obj/item/food/cracker,
 /obj/item/food/cracker,
 /obj/item/food/cracker,
-/mob/living/simple_animal/parrot,
+/mob/living/basic/parrot,
 /turf/open/floor/wood,
 /area/station/tcommsat/server)
 "aau" = (
@@ -134,7 +134,7 @@
 	pixel_y = 25
 	},
 /obj/effect/landmark/start/hangover,
-/mob/living/simple_animal/parrot,
+/mob/living/basic/parrot,
 /turf/open/floor/wood,
 /area/station/tcommsat/server)
 "aav" = (
@@ -143,7 +143,7 @@
 /obj/item/food/cracker,
 /obj/item/food/cracker,
 /obj/effect/landmark/event_spawn,
-/mob/living/simple_animal/parrot,
+/mob/living/basic/parrot,
 /turf/open/floor/wood,
 /area/station/tcommsat/server)
 "aaw" = (
@@ -540,7 +540,7 @@
 "abG" = (
 /obj/machinery/airalarm/directional/north,
 /obj/structure/disposalpipe/segment,
-/mob/living/simple_animal/parrot/poly,
+/mob/living/basic/parrot/poly,
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/hos)
 "abH" = (
@@ -1011,7 +1011,7 @@
 /turf/open/floor/iron/checker,
 /area/station/medical/storage)
 "adv" = (
-/obj/item/storage/secure/safe/caps_spare{
+/obj/structure/secure_safe/caps_spare{
 	pixel_x = 6;
 	pixel_y = -27
 	},
@@ -7353,7 +7353,7 @@
 "aFq" = (
 /obj/structure/bed/dogbed/runtime,
 /obj/structure/disposalpipe/segment,
-/mob/living/simple_animal/pet/cat/runtime,
+/mob/living/basic/pet/cat/runtime,
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/cmo)
 "aFr" = (
@@ -7872,7 +7872,7 @@
 /obj/structure/filingcabinet/employment,
 /obj/machinery/light/directional/east,
 /obj/structure/cable,
-/obj/item/storage/secure/safe{
+/obj/structure/secure_safe{
 	pixel_x = 32
 	},
 /turf/open/floor/iron/grimy,
@@ -8936,7 +8936,7 @@
 	},
 /obj/effect/mapping_helpers/airlock/access/any/supply/bit_den,
 /turf/open/floor/plating,
-/area/station/bitrunning/den)
+/area/station/cargo/bitrunning/den)
 "bRA" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
@@ -9950,7 +9950,7 @@
 "cPl" = (
 /obj/machinery/quantum_server,
 /turf/open/floor/plating,
-/area/station/bitrunning/den)
+/area/station/cargo/bitrunning/den)
 "cPr" = (
 /obj/machinery/atmospherics/pipe/layer_manifold/cyan/visible,
 /turf/open/floor/iron/textured,
@@ -10739,7 +10739,7 @@
 /area/station/engineering/engine_smes)
 "dKq" = (
 /turf/closed/wall,
-/area/station/bitrunning/den)
+/area/station/cargo/bitrunning/den)
 "dKx" = (
 /obj/structure/grille/broken,
 /obj/effect/spawner/random/trash/food_packaging,
@@ -11209,7 +11209,7 @@
 "eko" = (
 /obj/machinery/computer/order_console/bitrunning,
 /turf/open/floor/plating,
-/area/station/bitrunning/den)
+/area/station/cargo/bitrunning/den)
 "ekv" = (
 /obj/item/bouquet/poppy,
 /obj/structure/cable,
@@ -13669,7 +13669,7 @@
 	dir = 8
 	},
 /obj/structure/extinguisher_cabinet/directional/west,
-/mob/living/simple_animal/bot/medbot,
+/mob/living/basic/bot/medbot,
 /turf/open/floor/iron/white,
 /area/station/hallway/primary/central)
 "gDd" = (
@@ -15640,7 +15640,7 @@
 "iEC" = (
 /obj/effect/landmark/start/bitrunner,
 /turf/open/floor/plating,
-/area/station/bitrunning/den)
+/area/station/cargo/bitrunning/den)
 "iEK" = (
 /obj/machinery/door/airlock/medical{
 	name = "Warm Bodies"
@@ -16066,7 +16066,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/station/bitrunning/den)
+/area/station/cargo/bitrunning/den)
 "jcJ" = (
 /obj/structure/chair/office/light{
 	dir = 4
@@ -24945,7 +24945,7 @@
 /obj/structure/bed,
 /obj/item/bedsheet/black,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/storage/secure/safe{
+/obj/structure/secure_safe{
 	pixel_x = 35;
 	pixel_y = 5
 	},
@@ -25555,7 +25555,7 @@
 "sgL" = (
 /obj/machinery/netpod,
 /turf/open/floor/plating,
-/area/station/bitrunning/den)
+/area/station/cargo/bitrunning/den)
 "shf" = (
 /obj/structure/lattice/catwalk,
 /obj/machinery/atmospherics/pipe/heat_exchanging/manifold4w,
@@ -28819,7 +28819,7 @@
 	pixel_x = 3;
 	pixel_y = 5
 	},
-/obj/item/storage/secure/briefcase{
+/obj/item/storage/briefcase/secure{
 	pixel_x = -2;
 	pixel_y = -2
 	},
@@ -29587,7 +29587,7 @@
 /obj/effect/landmark/start/bitrunner,
 /obj/machinery/byteforge,
 /turf/open/floor/plating,
-/area/station/bitrunning/den)
+/area/station/cargo/bitrunning/den)
 "wee" = (
 /obj/machinery/light/directional/west,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
