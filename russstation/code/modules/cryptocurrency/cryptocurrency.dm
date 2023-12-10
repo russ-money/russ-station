@@ -439,7 +439,7 @@
 /datum/computer_file/program/cryptocurrency
 	filename = "cryptoass" // hehe ass
 	filedesc = "Crypto Assistant"
-	downloader_category = PROGRAM_CATEGORY_EQUIPMENT 
+	downloader_category = PROGRAM_CATEGORY_EQUIPMENT
 	program_open_overlay = "generic"
 	extended_desc = "This program monitors cryptocurrency markets and mining activity."
 	size = 2

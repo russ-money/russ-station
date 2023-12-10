@@ -1,6 +1,14 @@
 import { Window } from '../layouts';
 import { useBackend } from '../backend';
-import { Box, Button, Chart, LabeledList, ProgressBar, Section, Stack } from '../components';
+import {
+  Box,
+  Button,
+  Chart,
+  LabeledList,
+  ProgressBar,
+  Section,
+  Stack,
+} from '../components';
 
 export const Cryptocurrency = () => {
   return (
@@ -14,8 +22,8 @@ export const Cryptocurrency = () => {
   );
 };
 
-export const CryptocurrencyDetails = (props, context) => {
-  const { act, data } = useBackend(context);
+export const CryptocurrencyDetails = (props) => {
+  const { act, data } = useBackend();
   const {
     authenticated,
     coin_name,
@@ -36,7 +44,8 @@ export const CryptocurrencyDetails = (props, context) => {
           disabled={!authenticated || wallet === 0}
           onClick={() => act('PRG_exchange')}
         />
-      }>
+      }
+    >
       <Stack vertical>
         <Stack.Item>
           <LabeledList>
@@ -69,8 +78,8 @@ export const CryptocurrencyDetails = (props, context) => {
     </Section>
   );
 };
-export const CryptocurrencyHistory = (props, context) => {
-  const { act, data } = useBackend(context);
+export const CryptocurrencyHistory = (props) => {
+  const { act, data } = useBackend();
   const {
     exchange_rate_limit,
     mining_history,
@@ -87,7 +96,7 @@ export const CryptocurrencyHistory = (props, context) => {
   const payout_max = Math.max(...payout_history);
   const exchange_rate_max = Math.max(
     exchange_rate_limit,
-    ...exchange_rate_history
+    ...exchange_rate_history,
   );
   return (
     <Section title="Cryptocurrency History">
@@ -128,7 +137,8 @@ export const CryptocurrencyHistory = (props, context) => {
             value={1}
             minValue={0}
             maxValue={1}
-            color="rgba(204, 60, 0, 1)">
+            color="rgba(204, 60, 0, 1)"
+          >
             Mining (max {mining_max})
           </ProgressBar>
         </LabeledList.Item>
@@ -137,7 +147,8 @@ export const CryptocurrencyHistory = (props, context) => {
             value={1}
             minValue={0}
             maxValue={1}
-            color="rgba(57, 224, 57, 1)">
+            color="rgba(57, 224, 57, 1)"
+          >
             Payouts (max {payout_max})
           </ProgressBar>
         </LabeledList.Item>
@@ -146,7 +157,8 @@ export const CryptocurrencyHistory = (props, context) => {
             value={1}
             minValue={0}
             maxValue={1}
-            color="rgba(150,150,150,1)">
+            color="rgba(150,150,150,1)"
+          >
             Exchange Rate (max {exchange_rate_max})
           </ProgressBar>
         </LabeledList.Item>
@@ -155,8 +167,8 @@ export const CryptocurrencyHistory = (props, context) => {
   );
 };
 
-export const CryptocurrencyMachineList = (props, context) => {
-  const { act, data } = useBackend(context);
+export const CryptocurrencyMachineList = (props) => {
+  const { act, data } = useBackend();
   const { machines } = data;
   return (
     <Section title="Mining Rigs">
@@ -173,7 +185,7 @@ export const CryptocurrencyMachineList = (props, context) => {
   );
 };
 
-export const CryptocurrencyMachineDetails = (props, context) => {
+export const CryptocurrencyMachineDetails = (props) => {
   const { rig } = props;
   return (
     <LabeledList.Item label={rig.name}>{rig.progress} Units</LabeledList.Item>

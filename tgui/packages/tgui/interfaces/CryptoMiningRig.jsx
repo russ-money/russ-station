@@ -2,8 +2,8 @@ import { useBackend } from '../backend';
 import { Button, LabeledList, NumberInput, Section } from '../components';
 import { Window } from '../layouts';
 
-export const CryptoMiningRig = (props, context) => {
-  const { act, data } = useBackend(context);
+export const CryptoMiningRig = (props) => {
+  const { act, data } = useBackend();
   const { on, max_overclock, overclock_amount, max_coolant, coolant_amount } =
     data;
 
