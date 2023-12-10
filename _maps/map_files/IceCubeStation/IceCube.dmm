@@ -49004,7 +49004,6 @@
 	elevator_mode = 1;
 	name = "Dumbwaiter";
 	req_access = list("kitchen");
-	 = None;
 	transport_linked_id = "dumbwaiter_lift"
 	},
 /obj/machinery/elevator_control_panel/directional/north{
@@ -53934,7 +53933,6 @@
 	elevator_mode = 1;
 	name = "Dumbwaiter";
 	req_access = list("hydroponics");
-	 = None;
 	transport_linked_id = "dumbwaiter_lift"
 	},
 /turf/open/floor/iron,
