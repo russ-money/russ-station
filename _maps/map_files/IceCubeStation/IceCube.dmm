@@ -10629,8 +10629,7 @@
 	elevator_mode = 1;
 	name = "Dumbwaiter";
 	req_access = list("hydroponics");
-	 = None;
-	transport_linked_id = "dumbwaiter_lift"
+	transport_linked_id = "dumbwaiter_lift";
 	},
 /turf/open/floor/iron/dark,
 /area/station/service/hydroponics/upper)

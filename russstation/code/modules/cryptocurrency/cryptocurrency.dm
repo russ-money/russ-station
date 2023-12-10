@@ -19,7 +19,7 @@
 	desc = "Allows for the construction of circuit boards used to build a crypto mining rig."
 	id = "crypto_mining_rig"
 	build_type = IMPRINTER
-	materials = list(/datum/material/glass = 1000, /datum/material/gold = 2000, /datum/material/diamond = 1000)
+	materials = list(/datum/material/glass = HALF_SHEET_MATERIAL_AMOUNT*2.5, /datum/material/gold = HALF_SHEET_MATERIAL_AMOUNT, /datum/material/diamond = HALF_SHEET_MATERIAL_AMOUNT*2)
 	build_path = /obj/item/circuitboard/machine/crypto_mining_rig
 	category = list ("Engineering Machinery")
 	departmental_flags = DEPARTMENT_BITFLAG_ENGINEERING
