@@ -1738,7 +1738,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
 "aOL" = (
-/mob/living/simple_animal/pet/cat/_proc,
+/mob/living/basic/pet/cat/_proc,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -1853,7 +1853,7 @@
 /turf/open/floor/wood/parquet,
 /area/station/command/heads_quarters/hos)
 "aRD" = (
-/obj/item/storage/secure/safe/hos{
+/obj/structure/secure_safe/hos{
 	pixel_y = -26
 	},
 /obj/structure/closet/secure_closet/hos,
@@ -3857,7 +3857,7 @@
 /turf/open/floor/iron/grimy,
 /area/station/security/prison/safe)
 "bMp" = (
-/obj/item/storage/secure/safe/directional/east,
+/obj/structure/secure_safe/directional/east,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
 	},
@@ -6629,7 +6629,7 @@
 /obj/structure/sign/poster/contraband/pwr_game/directional/north,
 /obj/machinery/quantum_server,
 /turf/open/floor/iron/dark,
-/area/station/bitrunning/den)
+/area/station/cargo/bitrunning/den)
 "dez" = (
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/carpet/red,
@@ -6917,7 +6917,7 @@
 /obj/effect/turf_decal/box,
 /obj/machinery/firealarm/directional/south,
 /turf/open/floor/iron/dark,
-/area/station/bitrunning/den)
+/area/station/cargo/bitrunning/den)
 "dmi" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	dir = 4
@@ -10629,8 +10629,7 @@
 	elevator_mode = 1;
 	name = "Dumbwaiter";
 	req_access = list("hydroponics");
-	 = None;
-	transport_linked_id = "dumbwaiter_lift"
+	transport_linked_id = "dumbwaiter_lift";
 	},
 /turf/open/floor/iron/dark,
 /area/station/service/hydroponics/upper)
@@ -12347,7 +12346,7 @@
 /turf/open/floor/iron/dark,
 /area/station/command/heads_quarters/hop)
 "fEe" = (
-/obj/item/storage/secure/safe/directional/west,
+/obj/structure/secure_safe/directional/west,
 /turf/open/floor/iron/grimy,
 /area/station/security/detectives_office)
 "fEj" = (
@@ -13411,7 +13410,7 @@
 /obj/machinery/airalarm/directional/north,
 /obj/machinery/computer/quantum_console,
 /turf/open/floor/iron/dark,
-/area/station/bitrunning/den)
+/area/station/cargo/bitrunning/den)
 "gdO" = (
 /obj/effect/turf_decal/loading_area/white,
 /obj/effect/turf_decal/stripes/corner{
@@ -13939,7 +13938,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/mob/living/simple_animal/parrot/poly,
+/mob/living/basic/parrot/poly,
 /obj/machinery/light/directional/south,
 /obj/effect/turf_decal/siding/yellow{
 	dir = 1
@@ -15149,7 +15148,7 @@
 /area/ruin/unpowered)
 "gUD" = (
 /obj/structure/table/wood,
-/obj/item/storage/secure/briefcase,
+/obj/item/storage/briefcase/secure,
 /turf/open/floor/wood/large,
 /area/station/command/meeting_room)
 "gUH" = (
@@ -15393,7 +15392,7 @@
 	},
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
-/area/station/bitrunning/den)
+/area/station/cargo/bitrunning/den)
 "hbZ" = (
 /obj/effect/gibspawner/human,
 /turf/open/floor/wood,
@@ -15648,7 +15647,7 @@
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
-/area/station/bitrunning/den)
+/area/station/cargo/bitrunning/den)
 "hiA" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/orange,
@@ -16418,7 +16417,7 @@
 /area/station/command/heads_quarters/rd)
 "hvp" = (
 /obj/structure/table/wood,
-/obj/item/storage/secure/briefcase,
+/obj/item/storage/briefcase/secure,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /turf/open/floor/wood,
@@ -16912,6 +16911,10 @@
 /obj/structure/bookcase/random/adult,
 /turf/open/floor/iron/dark,
 /area/station/service/library)
+"hGC" = (
+/obj/machinery/air_sensor/engine_chamber,
+/turf/open/floor/engine,
+/area/station/engineering/supermatter)
 "hGV" = (
 /obj/structure/urinal/directional/north,
 /obj/effect/spawner/random/trash/mess,
@@ -19341,7 +19344,7 @@
 /area/station/maintenance/port/central)
 "iLC" = (
 /obj/structure/closet/secure_closet/personal,
-/obj/item/storage/secure/briefcase,
+/obj/item/storage/briefcase/secure,
 /obj/machinery/camera/directional/east{
 	c_tag = "Commissary"
 	},
@@ -19642,7 +19645,7 @@
 /area/station/service/lawoffice)
 "iPU" = (
 /obj/effect/turf_decal/tile/blue/full,
-/mob/living/simple_animal/bot/medbot,
+/mob/living/basic/bot/medbot,
 /turf/open/floor/iron/white/smooth_large,
 /area/station/medical/medbay/lobby)
 "iQh" = (
@@ -20249,7 +20252,7 @@
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/iron/dark,
-/area/station/bitrunning/den)
+/area/station/cargo/bitrunning/den)
 "jdK" = (
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron,
@@ -23614,7 +23617,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
 "kAs" = (
-/mob/living/simple_animal/bot/cleanbot,
+/mob/living/basic/bot/cleanbot,
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/lab)
 "kAz" = (
@@ -23762,6 +23765,10 @@
 /obj/effect/mapping_helpers/airalarm/mixingchamber_access,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/dark/visible,
 /obj/machinery/meter,
+/obj/effect/mapping_helpers/airalarm/tlv_no_checks,
+/obj/effect/mapping_helpers/airalarm/link{
+	chamber_id = "ordnancelab2"
+	},
 /turf/open/floor/iron/dark,
 /area/station/science/ordnance/burnchamber)
 "kDP" = (
@@ -24427,7 +24434,7 @@
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
-/area/station/bitrunning/den)
+/area/station/cargo/bitrunning/den)
 "kPN" = (
 /obj/structure/cable,
 /turf/open/floor/iron/checker,
@@ -26211,9 +26218,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp/green{
-	on = 0;
 	pixel_x = -3;
-	pixel_y = 8
+	pixel_y = 8;
+	start_on = 0
 	},
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/captain)
@@ -27409,7 +27416,7 @@
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
-/area/station/bitrunning/den)
+/area/station/cargo/bitrunning/den)
 "meV" = (
 /obj/machinery/holopad,
 /obj/structure/disposalpipe/segment{
@@ -29540,6 +29547,17 @@
 /obj/effect/turf_decal/tile/blue/full,
 /turf/open/floor/iron/white/smooth_large,
 /area/station/medical/medbay/lobby)
+"nap" = (
+/obj/machinery/airalarm/directional/east,
+/obj/effect/mapping_helpers/airalarm/mixingchamber_access,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/dark/visible,
+/obj/machinery/meter,
+/obj/effect/mapping_helpers/airalarm/tlv_no_checks,
+/obj/effect/mapping_helpers/airalarm/link{
+	chamber_id = "ordnanceburn"
+	},
+/turf/open/floor/iron/dark,
+/area/station/science/ordnance/burnchamber)
 "nax" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -30926,7 +30944,7 @@
 	},
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
-/area/station/bitrunning/den)
+/area/station/cargo/bitrunning/den)
 "nDS" = (
 /obj/machinery/disposal/bin,
 /obj/effect/turf_decal/stripes/box,
@@ -31358,7 +31376,7 @@
 /turf/open/floor/iron/dark,
 /area/station/science/ordnance)
 "nMD" = (
-/obj/item/storage/secure/safe/caps_spare/directional/south{
+/obj/structure/secure_safe/caps_spare/directional/south{
 	pixel_x = 5
 	},
 /turf/open/floor/iron,
@@ -32145,6 +32163,10 @@
 /obj/machinery/light/small/directional/east,
 /obj/effect/turf_decal/stripes/red/end{
 	dir = 1
+	},
+/obj/effect/mapping_helpers/airalarm/tlv_no_checks,
+/obj/effect/mapping_helpers/airalarm/link{
+	chamber_id = "engine"
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
@@ -34682,9 +34704,9 @@
 	},
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp/green{
-	on = 0;
 	pixel_x = -3;
-	pixel_y = 3
+	pixel_y = 3;
+	start_on = 0
 	},
 /turf/open/floor/wood/parquet,
 /area/station/command/heads_quarters/hos)
@@ -35683,7 +35705,7 @@
 /obj/item/radio/intercom/directional/west,
 /obj/structure/sign/poster/contraband/shamblers_juice/directional/north,
 /turf/open/floor/iron/dark,
-/area/station/bitrunning/den)
+/area/station/cargo/bitrunning/den)
 "pHP" = (
 /obj/structure/table/wood,
 /obj/item/stack/sheet/cardboard/fifty,
@@ -39539,7 +39561,7 @@
 /obj/structure/cable,
 /obj/machinery/light_switch/directional/north,
 /turf/open/floor/iron/dark,
-/area/station/bitrunning/den)
+/area/station/cargo/bitrunning/den)
 "rqw" = (
 /obj/machinery/door/airlock/external/glass{
 	name = "Public Mining Access"
@@ -41176,7 +41198,7 @@
 /obj/machinery/byteforge,
 /obj/effect/turf_decal/box,
 /turf/open/floor/iron/dark,
-/area/station/bitrunning/den)
+/area/station/cargo/bitrunning/den)
 "rYp" = (
 /obj/structure/cable,
 /turf/open/floor/engine,
@@ -41264,7 +41286,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/science/xenobiology)
 "saq" = (
-/obj/item/a_gift/anything,
+/obj/item/gift/anything,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/fore)
 "sav" = (
@@ -41816,7 +41838,7 @@
 /area/station/service/hydroponics/garden)
 "sne" = (
 /turf/closed/wall,
-/area/station/bitrunning/den)
+/area/station/cargo/bitrunning/den)
 "snF" = (
 /obj/structure/extinguisher_cabinet/directional/south,
 /turf/open/floor/iron,
@@ -44139,7 +44161,7 @@
 /area/station/science/robotics/mechbay)
 "ttg" = (
 /mob/living/simple_animal/slime/pet{
-	colour = "purple";
+	slime_type = /datum/slime_type/purple;
 	desc = "The Science Divisions pet slime. Isn't it adorable when it bobbles around?";
 	name = "Bobbernaut"
 	},
@@ -46641,7 +46663,7 @@
 /turf/open/floor/iron/white,
 /area/station/medical/paramedic)
 "utz" = (
-/obj/item/storage/secure/safe/directional/north,
+/obj/structure/secure_safe/directional/north,
 /obj/structure/table/reinforced,
 /obj/item/storage/fancy/donut_box,
 /obj/item/storage/box/rubbershot,
@@ -48769,7 +48791,7 @@
 	network = list("ss13","qm")
 	},
 /turf/open/floor/iron/dark,
-/area/station/bitrunning/den)
+/area/station/cargo/bitrunning/den)
 "vps" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -48982,7 +49004,6 @@
 	elevator_mode = 1;
 	name = "Dumbwaiter";
 	req_access = list("kitchen");
-	 = None;
 	transport_linked_id = "dumbwaiter_lift"
 	},
 /obj/machinery/elevator_control_panel/directional/north{
@@ -49731,7 +49752,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/secondary/entry)
 "vMA" = (
-/obj/item/storage/secure/safe/directional/south,
+/obj/structure/secure_safe/directional/south,
 /obj/machinery/camera/directional/south{
 	c_tag = "Research Director's Quarters";
 	network = list("ss13","rd")
@@ -53912,7 +53933,6 @@
 	elevator_mode = 1;
 	name = "Dumbwaiter";
 	req_access = list("hydroponics");
-	 = None;
 	transport_linked_id = "dumbwaiter_lift"
 	},
 /turf/open/floor/iron,
@@ -54201,7 +54221,7 @@
 /obj/effect/landmark/start/bitrunner,
 /obj/machinery/light/dim/directional/north,
 /turf/open/floor/iron/dark,
-/area/station/bitrunning/den)
+/area/station/cargo/bitrunning/den)
 "xGi" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -55105,7 +55125,7 @@
 	},
 /obj/effect/spawner/random/trash/food_packaging,
 /turf/open/floor/iron/dark,
-/area/station/bitrunning/den)
+/area/station/cargo/bitrunning/den)
 "xYe" = (
 /obj/structure/table/glass,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -92605,7 +92625,7 @@ xgh
 tCH
 kRM
 mIq
-tCH
+hGC
 dmd
 dHo
 tCH
@@ -150643,7 +150663,7 @@ hFB
 feU
 mYc
 vEm
-kDO
+nap
 nbq
 hbn
 jya

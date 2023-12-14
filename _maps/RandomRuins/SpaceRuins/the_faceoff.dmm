@@ -87,7 +87,7 @@
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space)
 "ch" = (
-/obj/machinery/light/small/broken/directional/south,
+/obj/machinery/light/small/broken,
 /turf/open/floor/mineral/plastitanium/airless,
 /area/ruin/space)
 "ck" = (
@@ -471,7 +471,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
 	},
-/obj/effect/spawner/random/structure/crate_empty,
+/obj/effect/spawner/random/structure/closet_empty/crate,
 /turf/open/misc/asteroid/basalt/airless,
 /area/ruin/space)
 "so" = (
@@ -860,7 +860,9 @@
 /area/ruin/space)
 "Jh" = (
 /obj/structure/cable,
-/obj/machinery/light/dim/directional/north,
+/obj/machinery/light/dim{
+	dir = 1
+	},
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space)
 "Jl" = (
@@ -1177,13 +1179,13 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
-/obj/effect/spawner/random/structure/crate_empty,
+/obj/effect/spawner/random/structure/closet_empty/crate,
 /turf/open/misc/asteroid/basalt/airless,
 /area/ruin/space)
 "YE" = (
 /obj/effect/mapping_helpers/broken_floor,
 /obj/effect/mapping_helpers/burnt_floor,
-/obj/machinery/light/small/broken/directional/south,
+/obj/machinery/light/small/broken,
 /turf/open/floor/mineral/plastitanium/red/airless,
 /area/ruin/space)
 "YI" = (

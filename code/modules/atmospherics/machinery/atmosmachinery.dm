@@ -466,7 +466,7 @@
  * Called by wrench_act(), create a pipe fitting and remove the pipe
  */
 /obj/machinery/atmospherics/deconstruct(disassembled = TRUE)
-	if(!(flags_1 & NODECONSTRUCT_1))
+	if(!(obj_flags & NO_DECONSTRUCTION))
 		if(can_unwrench)
 			var/obj/item/pipe/stored = new construction_type(loc, null, dir, src, pipe_color)
 			stored.set_piping_layer(piping_layer)
@@ -613,12 +613,16 @@
 	return
 
 /**
- * Called by the RPD.dm pre_attack(), overriden by pipes.dm
+ * Called by the RPD.dm pre_attack()
  * Arguments:
  * * paint_color - color that the pipe will be painted in (colors in hex like #4f4f4f)
  */
 /obj/machinery/atmospherics/proc/paint(paint_color)
-	return FALSE
+	if(paintable)
+		add_atom_colour(paint_color, FIXED_COLOUR_PRIORITY)
+		set_pipe_color(paint_color)
+		update_node_icon()
+	return paintable
 
 /// Setter for pipe color, so we can ensure it's all uniform and save cpu time
 /obj/machinery/atmospherics/proc/set_pipe_color(pipe_colour)

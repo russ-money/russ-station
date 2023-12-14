@@ -28,7 +28,6 @@
 	attack_verb_continuous = "gores"
 	attack_verb_simple = "gore"
 	attack_sound = 'sound/weapons/punch1.ogg'
-	dextrous = TRUE //Oh shit
 	held_items = list(null, null)
 	faction = list(FACTION_RAT, "hostile")
 	robust_searching = TRUE
@@ -57,6 +56,11 @@
 	var/datum/atom_hud/medsensor = GLOB.huds[DATA_HUD_MEDICAL_ADVANCED]
 	medsensor.show_to(src)
 
+	// Dextrous was removed and I don't wanna make this mob basic
+	AddElement(/datum/element/dextrous, hud_type = hud_type)
+	AddComponent(/datum/component/personal_crafting)
+	add_traits(list(TRAIT_ADVANCEDTOOLUSER, TRAIT_CAN_STRIP), ROUNDSTART_TRAIT)
+	
 /mob/living/simple_animal/hostile/rat_ogre/Destroy()
 	QDEL_NULL(warpstone_blade)
 	return ..()
@@ -261,7 +265,7 @@
 	return ..()
 
 /datum/status_effect/warpstone_blade/on_apply()
-	RegisterSignal(owner, COMSIG_HUMAN_CHECK_SHIELDS, .proc/on_warpstone_shield_reaction)
+	RegisterSignal(owner, COMSIG_LIVING_CHECK_BLOCK, .proc/on_warpstone_shield_reaction)
 	for(var/blade_num in 1 to max_num_blades)
 		var/time_until_created = (blade_num - 1) * time_between_initial_blades
 		if(time_until_created <= 0)
@@ -272,7 +276,7 @@
 	return TRUE
 
 /datum/status_effect/warpstone_blade/on_remove()
-	UnregisterSignal(owner, COMSIG_HUMAN_CHECK_SHIELDS)
+	UnregisterSignal(owner, COMSIG_LIVING_CHECK_BLOCK)
 	QDEL_LIST(warpstone_blades)
 
 	return ..()
@@ -318,7 +322,7 @@
 
 	addtimer(TRAIT_CALLBACK_REMOVE(source, TRAIT_BEING_BLADE_SHIELDED, type), 1)
 
-	return SHIELD_BLOCK
+	return SUCCESSFUL_BLOCK
 
 /datum/status_effect/warpstone_blade/proc/remove_warpstone_blade(obj/effect/warpstone_dagger/to_remove)
 	SIGNAL_HANDLER

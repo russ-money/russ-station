@@ -19,7 +19,7 @@
 	desc = "Allows for the construction of circuit boards used to build a crypto mining rig."
 	id = "crypto_mining_rig"
 	build_type = IMPRINTER
-	materials = list(/datum/material/glass = 1000, /datum/material/gold = 2000, /datum/material/diamond = 1000)
+	materials = list(/datum/material/glass = HALF_SHEET_MATERIAL_AMOUNT*2.5, /datum/material/gold = HALF_SHEET_MATERIAL_AMOUNT, /datum/material/diamond = HALF_SHEET_MATERIAL_AMOUNT*2)
 	build_path = /obj/item/circuitboard/machine/crypto_mining_rig
 	category = list ("Engineering Machinery")
 	departmental_flags = DEPARTMENT_BITFLAG_ENGINEERING
@@ -171,12 +171,12 @@
 /obj/machinery/crypto_mining_rig/analyzer_act(mob/living/user, obj/item/tool)
 	// get temp and atmos related info
 	to_chat(user, span_notice("The temperature of \the [src] reads [temperature]K. Its coolant factor is [coolant_factor] and temperature bonus is [temperature_index]."))
-	return TOOL_ACT_TOOLTYPE_SUCCESS
+	return ITEM_INTERACT_SUCCESS
 
 /obj/machinery/crypto_mining_rig/multitool_act(mob/living/user, obj/item/tool)
 	// display other info about the machine
 	to_chat(user, span_notice("The power usage of \the [src] reads [power_consumed]W. It is contributing [progress] work units per cycle."))
-	return TOOL_ACT_TOOLTYPE_SUCCESS
+	return ITEM_INTERACT_SUCCESS
 
 /obj/machinery/crypto_mining_rig/crowbar_act(mob/living/user, obj/item/tool)
 	if(on)
@@ -184,7 +184,7 @@
 	else
 		tool.play_tool_sound(src, 50)
 		deconstruct(TRUE)
-	return TOOL_ACT_TOOLTYPE_SUCCESS
+	return ITEM_INTERACT_SUCCESS
 
 /obj/machinery/crypto_mining_rig/screwdriver_act(mob/living/user, obj/item/tool)
 	if(on)
@@ -202,7 +202,7 @@
 		tool.play_tool_sound(src, 50)
 		update_appearance()
 		RefreshParts()
-	return TOOL_ACT_TOOLTYPE_SUCCESS
+	return ITEM_INTERACT_SUCCESS
 
 /obj/machinery/crypto_mining_rig/attack_ghost(mob/user)
 	. = ..()
@@ -225,7 +225,7 @@
 			"[user] detaches \the [src] from the floor.", \
 			span_notice("You unbolt \the [src] from the floor."),
 			span_hear("You hear something stupid being wrenched."))
-	return TOOL_ACT_TOOLTYPE_SUCCESS
+	return ITEM_INTERACT_SUCCESS
 
 // drain power from the connected powernet and get money
 /obj/machinery/crypto_mining_rig/process(seconds_per_tick)
@@ -439,12 +439,11 @@
 /datum/computer_file/program/cryptocurrency
 	filename = "cryptoass" // hehe ass
 	filedesc = "Crypto Assistant"
-	category = PROGRAM_CATEGORY_MISC
-	program_icon_state = "generic"
+	downloader_category = PROGRAM_CATEGORY_EQUIPMENT
+	program_open_overlay = "generic"
 	extended_desc = "This program monitors cryptocurrency markets and mining activity."
 	size = 2
-	requires_ntnet = TRUE
-	available_on_ntnet = TRUE
+	program_flags = PROGRAM_ON_NTNET_STORE | PROGRAM_REQUIRES_NTNET
 	tgui_id = "NtosCryptocurrency"
 	program_icon = "coins"
 

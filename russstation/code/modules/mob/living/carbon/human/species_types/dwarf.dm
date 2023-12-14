@@ -7,7 +7,6 @@
 		TRAIT_USES_SKINTONES,
 		TRAIT_ADVANCEDTOOLUSER,
 		TRAIT_CAN_STRIP,
-		TRAIT_CAN_USE_FLIGHT_POTION,
 		TRAIT_LITERATE,
 	)
 	mutant_bodyparts = list("wings" = "None")

@@ -34,7 +34,7 @@
   */
 /datum/fart/proc/soft_fail(mob/living/user)
 	if(prob(fail_chance))
-		user.apply_damage_type(damage = fail_damage, damagetype = fail_damage_type)
+		user.apply_damage(damage = fail_damage, damagetype = fail_damage_type)
 		if(soft_fail_message)
 			to_chat(user, span_notice(soft_fail_message))
 
@@ -42,7 +42,7 @@
   * Gets called when the user goes under the hard cooldown
   */
 /datum/fart/proc/hard_fail(mob/living/user)
-	user.apply_damage_type(damage = fail_damage, damagetype = fail_damage_type)
+	user.apply_damage(damage = fail_damage, damagetype = fail_damage_type)
 	user.Stun(1 SECONDS)
 	if(hard_fail_message)
 		to_chat(user, span_notice(hard_fail_message))

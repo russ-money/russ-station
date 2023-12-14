@@ -33,9 +33,12 @@
 	/// How much we add to flesh_healing for burn wounds on application
 	var/flesh_regeneration
 
-/obj/item/stack/medical/attack(mob/living/patient, mob/user)
-	. = ..()
-	try_heal(patient, user)
+/obj/item/stack/medical/interact_with_atom(atom/interacting_with, mob/living/user)
+	if(!isliving(interacting_with))
+		return NONE
+
+	try_heal(interacting_with, user)
+	return ITEM_INTERACT_SUCCESS
 
 /obj/item/stack/medical/apply_fantasy_bonuses(bonus)
 	. = ..()
@@ -93,7 +96,7 @@
 			patient.balloon_alert(user, "not hurt!")
 			return FALSE
 		user.visible_message("<span class='infoplain'><span class='green'>[user] applies [src] on [patient].</span></span>", "<span class='infoplain'><span class='green'>You apply [src] on [patient].</span></span>")
-		patient.heal_bodypart_damage((heal_brute * 0.5))
+		patient.heal_bodypart_damage((heal_brute * patient.maxHealth/100))
 		return TRUE
 	if(iscarbon(patient))
 		return heal_carbon(patient, user, heal_brute, heal_burn)

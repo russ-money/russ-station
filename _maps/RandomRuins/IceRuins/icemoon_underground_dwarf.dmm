@@ -27,7 +27,7 @@
 	pixel_y = 7
 	},
 /obj/item/flashlight/lantern{
-	on = 1
+	start_on = 1
 	},
 /obj/structure/table/stone,
 /turf/open/floor/grass{
@@ -107,7 +107,7 @@
 /area/icemoon/surface/dorf)
 "n" = (
 /obj/item/flashlight/lantern{
-	on = 1
+	start_on = 1
 	},
 /turf/open/floor/stone/russ{
 	initial_gas_mix = "ICEMOON_ATMOS"
@@ -182,7 +182,7 @@
 /area/icemoon/surface/dorf)
 "w" = (
 /obj/item/flashlight/lantern{
-	on = 1
+	start_on = 1
 	},
 /obj/structure/table/stone,
 /turf/open/floor/stone/russ{

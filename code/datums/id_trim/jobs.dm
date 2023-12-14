@@ -440,6 +440,7 @@
 	extra_access = list(
 		ACCESS_PSYCHOLOGY,
 		ACCESS_PHARMACY,
+		ACCESS_VIROLOGY,
 	)
 	template_access = list(
 		ACCESS_CAPTAIN,
@@ -693,19 +694,19 @@
 	department_color = COLOR_MEDICAL_BLUE
 	subdepartment_color = COLOR_MEDICAL_BLUE
 	sechud_icon_state = SECHUD_MEDICAL_DOCTOR
-	minimal_access = list(			//honk start
+	extra_access = list(
+		ACCESS_PLUMBING,
+		ACCESS_MORGUE_SECURE, // honk
+		)
+	minimal_access = list(
 		ACCESS_MECH_MEDICAL,
 		ACCESS_MEDICAL,
 		ACCESS_MINERAL_STOREROOM,
 		ACCESS_MORGUE,
 		ACCESS_PHARMACY,
 		ACCESS_SURGERY,
-		)
-	extra_access = list(
-		ACCESS_PLUMBING,
 		ACCESS_VIROLOGY,
-		ACCESS_MORGUE_SECURE,
-		)							//honk end
+		)
 	template_access = list(
 		ACCESS_CAPTAIN,
 		ACCESS_CHANGE_IDS,
@@ -755,6 +756,7 @@
 		)
 	extra_access = list(
 		ACCESS_SURGERY,
+		ACCESS_VIROLOGY,
 		)
 	template_access = list(
 		ACCESS_CAPTAIN,
@@ -776,6 +778,7 @@
 		ACCESS_HOS,
 		)
 	job = /datum/job/prisoner
+	threat_modifier = 1 // I'm watching you
 
 /datum/id_trim/job/prisoner/one
 	trim_state = "trim_prisoner_1"
@@ -1168,6 +1171,7 @@
 		ACCESS_MEDICAL,
 		ACCESS_MINERAL_STOREROOM,
 		ACCESS_VIROLOGY,
+		ACCESS_PHARMACY,
 		)
 	extra_access = list(
 		ACCESS_PLUMBING,

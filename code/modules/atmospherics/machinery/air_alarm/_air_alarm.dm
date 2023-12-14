@@ -194,10 +194,10 @@ GLOBAL_LIST_EMPTY_TYPED(air_alarms, /obj/machinery/airalarm)
 	if(istype(multi_tool.buffer, /obj/machinery/air_sensor))
 		if(!allow_link_change)
 			balloon_alert(user, "linking disabled")
-			return TOOL_ACT_SIGNAL_BLOCKING
+			return ITEM_INTERACT_BLOCKING
 		connect_sensor(multi_tool.buffer)
 		balloon_alert(user, "connected sensor")
-		return TOOL_ACT_TOOLTYPE_SUCCESS
+		return ITEM_INTERACT_SUCCESS
 
 /obj/machinery/airalarm/ui_interact(mob/user, datum/tgui/ui)
 	ui = SStgui.try_update_ui(user, src, ui)
@@ -362,7 +362,7 @@ GLOBAL_LIST_EMPTY_TYPED(air_alarms, /obj/machinery/airalarm)
 		if("overclock")
 			if(isnull(vent))
 				return TRUE
-			vent.toggle_overclock()
+			vent.toggle_overclock(source = key_name(user))
 			vent.update_appearance(UPDATE_ICON)
 			return TRUE
 
