@@ -61,7 +61,7 @@ const GeneCycler = (props) => {
 
         return;
       }}
-      onContextmenu={(e) => {
+      onContextMenu={(e) => {
         e.preventDefault();
 
         act('pulse_gene', {
