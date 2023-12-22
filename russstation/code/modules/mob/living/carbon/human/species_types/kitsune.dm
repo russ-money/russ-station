@@ -48,7 +48,7 @@
 				target_human.dna.features["ears"] = "Kitsune"
 		if(target_human.dna.features["ears"] == "Kitsune")
 			var/obj/item/organ/internal/ears/kitsune/ears = new
-			ears.Insert(target_human, drop_if_replaced = FALSE)
+			ears.Insert(target_human, movement_flags = DELETE_IF_REPLACED)
 	return ..()
 
 /datum/species/human/kitsune/randomize_main_appearance_element(mob/living/carbon/human/human_mob)
