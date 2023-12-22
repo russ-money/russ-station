@@ -60,7 +60,7 @@
 	AddElement(/datum/element/dextrous, hud_type = hud_type)
 	AddComponent(/datum/component/personal_crafting)
 	add_traits(list(TRAIT_ADVANCEDTOOLUSER, TRAIT_CAN_STRIP), ROUNDSTART_TRAIT)
-	
+
 /mob/living/simple_animal/hostile/rat_ogre/Destroy()
 	QDEL_NULL(warpstone_blade)
 	return ..()
@@ -343,7 +343,7 @@
 	name = "warpstone dagger"
 	icon = 'russstation/icons/obj/skaven.dmi'
 	icon_state = "skaven_dagger"
-	plane = GAME_PLANE_FOV_HIDDEN
+	layer = LOW_MOB_LAYER
 	var/glow_color = "#a7ffc4"
 
 /obj/effect/warpstone_dagger/Initialize(mapload)
