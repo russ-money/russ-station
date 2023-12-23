@@ -164,7 +164,7 @@
 	add_gas_reaction(/datum/gas/zauker, while_present = PROC_REF(too_much_zauker))
 
 ///Simply exists so that you don't keep any alerts from your previous lack of lungs.
-/obj/item/organ/internal/lungs/Insert(mob/living/carbon/receiver, special = FALSE, drop_if_replaced = TRUE)
+/obj/item/organ/internal/lungs/Insert(mob/living/carbon/receiver, special = FALSE, movement_flags)
 	. = ..()
 	if(!.)
 		return .
@@ -175,7 +175,7 @@
 	receiver.clear_alert(ALERT_NOT_ENOUGH_N2O)
 	receiver.clear_alert(ALERT_NOT_ENOUGH_MIASMA) // honk - dismisses the alert for skavens
 
-/obj/item/organ/internal/lungs/Remove(mob/living/carbon/organ_owner, special)
+/obj/item/organ/internal/lungs/Remove(mob/living/carbon/organ_owner, special, movement_flags)
 	. = ..()
 	// This is very "manual" I realize, but it's useful to ensure cleanup for gases we're removing happens
 	// Avoids stuck alerts and such

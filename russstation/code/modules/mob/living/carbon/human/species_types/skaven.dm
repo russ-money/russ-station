@@ -12,9 +12,9 @@
 		/obj/item/organ/external/tail/skaven = "Skaven",
 	)
 	inherent_respiration_type = RESPIRATION_MIASMA
-	mutantears = /obj/item/organ/internal/ears/skaven
 	mutantlungs = /obj/item/organ/internal/lungs/skaven
 	mutanttongue = /obj/item/organ/internal/tongue/skaven
+	mutantears = /obj/item/organ/internal/ears/skaven
 	payday_modifier = 0.25 //Might as well be a slave
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_PRIDE | MIRROR_MAGIC | RACE_SWAP | ERT_SPAWN | SLIME_EXTRACT
 	species_cookie = /obj/item/food/meat/slab
@@ -75,6 +75,7 @@
 /datum/species/skaven/randomize_features()
 	var/list/features = ..()
 	features["tail_skaven"] = pick(GLOB.tails_list_skaven)
+	features["ears"] = pick("None", "Skaven")
 	features["skaven_color"] = GLOB.color_list_skaven[pick(GLOB.color_list_skaven)]
 	return features
 
@@ -92,7 +93,7 @@
 				target_human.dna.features["ears"] = "Skaven"
 		if(target_human.dna.features["ears"] == "Skaven")
 			var/obj/item/organ/internal/ears/skaven/ears = new
-			ears.Insert(target_human, drop_if_replaced = FALSE)
+			ears.Insert(target_human, movement_flags = DELETE_IF_REPLACED)
 		// ensure our mcolor (used for bodyparts) is set to our skaven's color
 		target_human.dna.features["mcolor"] = target_human.dna.features["skaven_color"]
 	return ..()
