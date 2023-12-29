@@ -2223,13 +2223,9 @@
 /turf/open/floor/iron/sepia,
 /area/station/service/chapel/office)
 "ayb" = (
-/obj/effect/turf_decal/tile/yellow{
-	dir = 8
-	},
-/obj/structure/cable,
-/obj/machinery/light/directional/south,
-/turf/open/floor/iron/checker,
-/area/station/command/heads_quarters/ce)
+/obj/machinery/mass_driver,
+/turf/open/space/basic,
+/area/space)
 "aye" = (
 /obj/effect/landmark/event_spawn,
 /obj/structure/disposalpipe/segment,
@@ -18720,11 +18716,11 @@
 /turf/open/floor/iron,
 /area/station/cargo/sorting)
 "hYu" = (
+/obj/effect/spawner/random/trash/garbage,
+/obj/effect/mapping_helpers/broken_floor,
 /obj/structure/disposalpipe/segment,
-/obj/effect/turf_decal/tile/blue,
-/obj/machinery/light/directional/east,
-/turf/open/floor/iron,
-/area/station/hallway/primary/central)
+/turf/open/floor/plating,
+/area/station/maintenance/port)
 "hYB" = (
 /obj/structure/table,
 /obj/item/reagent_containers/blood,
@@ -32815,11 +32811,9 @@
 /turf/open/floor/iron/checker,
 /area/station/service/theater)
 "qiu" = (
-/obj/effect/spawner/random/trash/garbage,
-/obj/effect/mapping_helpers/broken_floor,
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plating,
-/area/station/maintenance/port)
+/obj/machinery/light/directional/east,
+/turf/open/floor/engine,
+/area/station/engineering/supermatter/room)
 "qix" = (
 /obj/machinery/door/airlock/maintenance{
 	name = "Science Maintenance"
@@ -34010,9 +34004,11 @@
 /turf/open/floor/iron/dark,
 /area/station/service/janitor)
 "qQD" = (
+/obj/structure/disposalpipe/segment,
+/obj/effect/turf_decal/tile/blue,
 /obj/machinery/light/directional/east,
-/turf/open/floor/engine,
-/area/station/engineering/supermatter/room)
+/turf/open/floor/iron,
+/area/station/hallway/primary/central)
 "qQH" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
@@ -37323,9 +37319,10 @@
 /turf/open/floor/iron/dark,
 /area/station/medical/virology)
 "sQb" = (
-/obj/structure/disposalpipe/junction,
-/turf/closed/wall/r_wall,
-/area/station/engineering/storage/tech)
+/obj/effect/spawner/random/trash/garbage,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plating,
+/area/station/maintenance/port)
 "sQg" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -42083,9 +42080,9 @@
 /turf/open/floor/plating,
 /area/station/maintenance/aft)
 "vDs" = (
-/obj/machinery/mass_driver,
-/turf/open/space/basic,
-/area/space)
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plating,
+/area/station/maintenance/port)
 "vDI" = (
 /obj/effect/landmark/start/scientist,
 /turf/open/floor/iron/showroomfloor,
@@ -43868,9 +43865,9 @@
 /turf/open/floor/plating,
 /area/station/science/robotics/mechbay)
 "wGb" = (
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plating,
-/area/station/maintenance/port)
+/obj/structure/disposalpipe/junction,
+/turf/closed/wall/r_wall,
+/area/station/engineering/storage/tech)
 "wGe" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
@@ -44252,6 +44249,7 @@
 "wQP" = (
 /obj/item/kirbyplants/random,
 /obj/effect/turf_decal/tile/blue,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
 "wQQ" = (
@@ -44348,18 +44346,13 @@
 /turf/open/floor/wood/large,
 /area/station/service/bar)
 "wTA" = (
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
 /obj/structure/cable,
-/obj/machinery/door/airlock/engineering{
-	name = "Tech Storage"
-	},
-/obj/effect/mapping_helpers/airlock/access/all/engineering/tech_storage,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/iron,
-/area/station/engineering/storage/tech)
+/obj/machinery/light/directional/south,
+/turf/open/floor/iron/checker,
+/area/station/command/heads_quarters/ce)
 "wTE" = (
 /obj/structure/table,
 /obj/item/circular_saw,
@@ -44590,10 +44583,18 @@
 /turf/open/floor/iron,
 /area/station/ai_monitored/command/storage/eva)
 "xaY" = (
-/obj/effect/spawner/random/trash/garbage,
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plating,
-/area/station/maintenance/port)
+/obj/structure/cable,
+/obj/machinery/door/airlock/engineering{
+	name = "Tech Storage"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/engineering/tech_storage,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/station/engineering/storage/tech)
 "xbl" = (
 /turf/closed/wall,
 /area/station/maintenance/port)
@@ -61878,7 +61879,7 @@ xUo
 xUo
 gPm
 xUo
-qQD
+qiu
 xUo
 xUo
 oMv
@@ -62658,7 +62659,7 @@ yjw
 yjw
 kje
 era
-ayb
+wTA
 yjw
 yjw
 mUF
@@ -65218,7 +65219,7 @@ xwj
 xwj
 xwj
 rMb
-sQb
+wGb
 xwj
 xwj
 jxd
@@ -66234,11 +66235,11 @@ mDc
 cjh
 cYo
 cYo
-wGb
+vDs
 mEy
-qiu
-xaY
-wGb
+hYu
+sQb
+vDs
 pug
 euL
 eQC
@@ -67016,7 +67017,7 @@ gfQ
 xwj
 xwj
 xwj
-wTA
+xaY
 xwj
 xwj
 xwj
@@ -70401,7 +70402,7 @@ jXz
 klq
 kSt
 kiv
-vDs
+ayb
 gfQ
 gfQ
 gfQ
@@ -78812,7 +78813,7 @@ bvt
 fRT
 mzW
 gKI
-hYu
+qQD
 hrh
 qKv
 wXp
@@ -87547,7 +87548,7 @@ tle
 heq
 blp
 tin
-wqb
+kuF
 wqb
 wqb
 wqb
