@@ -9384,10 +9384,6 @@
 	name = "Containment Pen #1";
 	req_access = list("xenobiology")
 	},
-/obj/machinery/door/window/left/directional/west{
-	name = "Containment Pen #1";
-	req_access = list("xenobiology")
-	},
 /obj/machinery/door/poddoor/preopen{
 	id = "xenobio1";
 	name = "Containment Blast Door"
@@ -14223,10 +14219,6 @@
 /turf/open/floor/plating,
 /area/station/maintenance/starboard)
 "fEA" = (
-/obj/machinery/door/window/left/directional/west{
-	name = "Containment Pen #6";
-	req_access = list("xenobiology")
-	},
 /obj/machinery/door/window/left/directional/west{
 	name = "Containment Pen #6";
 	req_access = list("xenobiology")
@@ -25065,10 +25057,6 @@
 	name = "Containment Pen #2";
 	req_access = list("xenobiology")
 	},
-/obj/machinery/door/window/left/directional/west{
-	name = "Containment Pen #2";
-	req_access = list("xenobiology")
-	},
 /obj/machinery/door/poddoor/preopen{
 	id = "xenobio2";
 	name = "Containment Blast Door"
@@ -32960,10 +32948,6 @@
 	name = "Containment Pen #4";
 	req_access = list("xenobiology")
 	},
-/obj/machinery/door/window/left/directional/west{
-	name = "Containment Pen #4";
-	req_access = list("xenobiology")
-	},
 /obj/machinery/door/poddoor/preopen{
 	id = "xenobio4";
 	name = "Containment Blast Door"
@@ -36902,10 +36886,6 @@
 	name = "Containment Pen #5";
 	req_access = list("xenobiology")
 	},
-/obj/machinery/door/window/left/directional/west{
-	name = "Containment Pen #5";
-	req_access = list("xenobiology")
-	},
 /obj/machinery/door/poddoor/preopen{
 	id = "xenobio5";
 	name = "Containment Blast Door"
@@ -40173,10 +40153,6 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
 "usq" = (
-/obj/machinery/door/window/left/directional/west{
-	name = "Containment Pen #3";
-	req_access = list("xenobiology")
-	},
 /obj/machinery/door/window/left/directional/west{
 	name = "Containment Pen #3";
 	req_access = list("xenobiology")
@@ -44692,7 +44668,7 @@
 /obj/machinery/computer/security/telescreen{
 	name = "Test Chamber Monitor";
 	network = list("xeno");
-	pixel_y = 2
+		pixel_y = 2
 	},
 /obj/machinery/button/door{
 	id = "misclab";

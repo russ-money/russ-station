@@ -9223,10 +9223,6 @@
 	name = "Containment Pen #6";
 	req_access = list("xenobiology")
 	},
-/obj/machinery/door/window/left/directional/west{
-	name = "Containment Pen #6";
-	req_access = list("xenobiology")
-	},
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
 "eXs" = (
@@ -12377,10 +12373,7 @@
 	name = "Containment Pen #2";
 	req_access = list("xenobiology")
 	},
-/obj/machinery/door/window/left/directional/west{
-	name = "Containment Pen #2";
-	req_access = list("xenobiology")
-	},
+
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
 "gGh" = (
@@ -18951,10 +18944,6 @@
 	name = "Containment Pen #1";
 	req_access = list("xenobiology")
 	},
-/obj/machinery/door/window/left/directional/west{
-	name = "Containment Pen #1";
-	req_access = list("xenobiology")
-	},
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
 "koo" = (
@@ -19030,10 +19019,6 @@
 /turf/open/floor/iron/dark,
 /area/station/engineering/gravity_generator)
 "kqF" = (
-/obj/machinery/door/window/left/directional/west{
-	name = "Containment Pen #3";
-	req_access = list("xenobiology")
-	},
 /obj/machinery/door/window/left/directional/west{
 	name = "Containment Pen #3";
 	req_access = list("xenobiology")
@@ -30853,10 +30838,6 @@
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/lesser)
 "qwD" = (
-/obj/machinery/door/window/left/directional/west{
-	name = "Containment Pen #4";
-	req_access = list("xenobiology")
-	},
 /obj/machinery/door/window/left/directional/west{
 	name = "Containment Pen #4";
 	req_access = list("xenobiology")
@@ -44684,10 +44665,6 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/fore)
 "xlh" = (
-/obj/machinery/door/window/left/directional/west{
-	name = "Containment Pen #5";
-	req_access = list("xenobiology")
-	},
 /obj/machinery/door/window/left/directional/west{
 	name = "Containment Pen #5";
 	req_access = list("xenobiology")

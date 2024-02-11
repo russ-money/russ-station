@@ -11566,10 +11566,6 @@
 	name = "Containment Pen #1";
 	req_access = list("xenobiology")
 	},
-/obj/machinery/door/window/left/directional/west{
-	name = "Containment Pen #1";
-	req_access = list("xenobiology")
-	},
 /obj/machinery/door/poddoor/preopen{
 	id = "containdeez1";
 	name = "Xenobiology Containment Blast Door"
@@ -18953,10 +18949,6 @@
 "fFu" = (
 /obj/effect/turf_decal/delivery,
 /obj/machinery/door/window/left/directional/east{
-	name = "Containment Pen #2";
-	req_access = list("xenobiology")
-	},
-/obj/machinery/door/window/left/directional/west{
 	name = "Containment Pen #2";
 	req_access = list("xenobiology")
 	},
@@ -29801,10 +29793,6 @@
 	name = "Containment Pen #5";
 	req_access = list("xenobiology")
 	},
-/obj/machinery/door/window/left/directional/west{
-	name = "Containment Pen #5";
-	req_access = list("xenobiology")
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 5
 	},
@@ -38247,10 +38235,6 @@
 "muf" = (
 /obj/effect/turf_decal/delivery,
 /obj/machinery/door/window/left/directional/east{
-	name = "Containment Pen #3";
-	req_access = list("xenobiology")
-	},
-/obj/machinery/door/window/left/directional/west{
 	name = "Containment Pen #3";
 	req_access = list("xenobiology")
 	},
@@ -59451,10 +59435,6 @@
 	name = "Containment Pen #6";
 	req_access = list("xenobiology")
 	},
-/obj/machinery/door/window/left/directional/west{
-	name = "Containment Pen #6";
-	req_access = list("xenobiology")
-	},
 /obj/machinery/door/poddoor/preopen{
 	id = "containdeez6";
 	name = "Xenobiology Containment Blast Door"
@@ -62046,10 +62026,6 @@
 "uLX" = (
 /obj/effect/turf_decal/delivery,
 /obj/machinery/door/window/left/directional/east{
-	name = "Containment Pen #7";
-	req_access = list("xenobiology")
-	},
-/obj/machinery/door/window/left/directional/west{
 	name = "Containment Pen #7";
 	req_access = list("xenobiology")
 	},

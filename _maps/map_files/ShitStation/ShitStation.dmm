@@ -1200,9 +1200,6 @@
 /obj/machinery/door/window/left/directional/east{
 	req_access = list("xenobiology")
 	},
-/obj/machinery/door/window/left/directional/west{
-	req_access = list("xenobiology")
-	},
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
 "aeo" = (
