@@ -28772,6 +28772,9 @@
 "caw" = (
 /obj/structure/table,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/item/pipe_dispenser,
+/obj/item/pipe_dispenser,
+/obj/item/pipe_dispenser,
 /turf/open/floor/iron,
 /area/station/engineering/main)
 "cax" = (
@@ -38240,6 +38243,13 @@
 /obj/structure/tank_holder/extinguisher,
 /turf/open/floor/iron,
 /area/station/cargo/office)
+"jzX" = (
+/obj/item/stack/cable_coil{
+	pixel_x = 3;
+	pixel_y = -7
+	},
+/turf/open/floor/plating/airless,
+/area/space/nearstation)
 "jAy" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -76984,7 +76994,7 @@ tue
 tue
 tue
 tue
-mVM
+jzX
 mVM
 mVM
 mVM
