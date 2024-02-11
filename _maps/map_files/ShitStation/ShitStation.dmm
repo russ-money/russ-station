@@ -13390,7 +13390,7 @@
 	icon = 'russstation/icons/turf/decals.dmi';
 	icon_state = "shit-logo9"
 	},
-/mob/living/simple_animal/bot/hygienebot,
+/mob/living/basic/bot/hygienebot,
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/lobby)
 "grR" = (
@@ -31062,7 +31062,7 @@
 	icon = 'russstation/icons/turf/decals.dmi';
 	icon_state = "shit-logo14"
 	},
-/mob/living/simple_animal/bot/hygienebot,
+/mob/living/basic/bot/hygienebot,
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/lobby)
 "xIM" = (

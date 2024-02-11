@@ -27181,7 +27181,6 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/window/right/directional/west{
 	base_state = "left";
-	icon_state = "left";
 	name = "Robotics Desk";
 	req_access = list("robotics")
 	},
@@ -29032,8 +29031,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/window/right/directional/west{
-	icon_state = "left";
-	name = "Research and Development Desk";
+		name = "Research and Development Desk";
 	req_access = list("science")
 	},
 /turf/open/floor/plating,
@@ -42368,7 +42366,6 @@
 /obj/structure/plasticflaps/opaque,
 /obj/machinery/door/window/right/directional/south{
 	base_state = "left";
-	icon_state = "left";
 	name = "Research Division Delivery";
 	req_access = list("research")
 	},

@@ -15519,7 +15519,6 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/window/right/directional/north{
 	base_state = "left";
-	icon_state = "left";
 	name = "Hydroponics Desk";
 	req_access = list("hydroponics")
 	},
@@ -17333,7 +17332,6 @@
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/right/directional/south{
 	base_state = "left";
-	icon_state = "left";
 	name = "Robotics Desk";
 	req_access = list("robotics")
 	},
@@ -20867,7 +20865,6 @@
 "bxL" = (
 /obj/machinery/door/window/right/directional/west{
 	base_state = "left";
-	icon_state = "left";
 	name = "Research Division Delivery";
 	req_access = list("research")
 	},
@@ -24129,7 +24126,6 @@
 "bKh" = (
 /obj/machinery/door/window/right/directional/west{
 	base_state = "left";
-	icon_state = "left";
 	name = "Arena"
 	},
 /obj/structure/window/reinforced/spawner/directional/north,
@@ -24954,7 +24950,6 @@
 "bNJ" = (
 /obj/machinery/door/window/right/directional/east{
 	base_state = "left";
-	icon_state = "left";
 	name = "Arena"
 	},
 /obj/structure/window/reinforced/spawner/directional/south,
@@ -32899,7 +32894,6 @@
 /obj/machinery/light/small/directional/west,
 /obj/machinery/door/window/right/directional/south{
 	base_state = "left";
-	icon_state = "left";
 	name = "Curator Desk Door";
 	req_access = list("library")
 	},
@@ -33778,7 +33772,6 @@
 /obj/effect/turf_decal/delivery,
 /obj/machinery/door/window/right/directional/east{
 	base_state = "left";
-	icon_state = "left";
 	name = "Research Division Delivery";
 	req_access = list("research")
 	},
@@ -34401,7 +34394,6 @@
 	},
 /obj/machinery/door/window/right/directional/north{
 	base_state = "left";
-	icon_state = "left";
 	name = "Danger: Conveyor Access";
 	req_access = list("maint_tunnels")
 	},
@@ -37374,7 +37366,6 @@
 "iiJ" = (
 /obj/machinery/door/window/right/directional/north{
 	base_state = "left";
-	icon_state = "left";
 	name = "Secure Art Exhibit";
 	req_access = list("library")
 	},

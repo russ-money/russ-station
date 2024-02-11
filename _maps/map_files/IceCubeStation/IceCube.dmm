@@ -10620,7 +10620,6 @@
 	name = "Dumbwaiter";
 	req_access = list("hydroponics");
 	transport_linked_id = "dumbwaiter_lift";
-	
 	},
 /turf/open/floor/iron/dark,
 /area/station/service/hydroponics/upper)
@@ -20550,7 +20549,6 @@
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/right/directional/west{
 	base_state = "left";
-	icon_state = "left";
 	name = "Robotics Desk";
 	req_access = list("robotics")
 	},
@@ -39892,8 +39890,7 @@
 "ryD" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/right/directional/south{
-	icon_state = "left";
-	name = "Cargo Desk";
+		name = "Cargo Desk";
 	req_access = list("shipping")
 	},
 /obj/machinery/door/firedoor,

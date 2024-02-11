@@ -1354,7 +1354,6 @@
 /obj/effect/turf_decal/delivery,
 /obj/machinery/door/window/right/directional/west{
 	base_state = "left";
-	icon_state = "left";
 	name = "Security Delivery";
 	req_access = list("security")
 	},
@@ -3755,7 +3754,6 @@
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/right/directional/north{
 	base_state = "left";
-	icon_state = "left";
 	name = "Robotics Desk";
 	req_access = list("robotics")
 	},
@@ -28747,7 +28745,6 @@
 	},
 /obj/machinery/door/window/right/directional/west{
 	base_state = "left";
-	icon_state = "left";
 	name = "Robotics Desk";
 	req_access = list("robotics")
 	},
@@ -33951,7 +33948,6 @@
 "rMJ" = (
 /obj/machinery/door/window/right/directional/east{
 	base_state = "left";
-	icon_state = "left";
 	name = "Research Division Delivery";
 	req_access = list("research")
 	},
@@ -41254,7 +41250,6 @@
 /obj/machinery/door/firedoor/heavy,
 /obj/machinery/door/window/right/directional/north{
 	base_state = "left";
-	icon_state = "left";
 	name = "Xenobiology Desk";
 	req_access = list("xenobiology")
 	},
@@ -41322,7 +41317,6 @@
 "vDz" = (
 /obj/machinery/iv_drip,
 /obj/effect/turf_decal/trimline/blue/filled/line,
-/obj/machinery/iv_drip,
 /turf/open/floor/iron/white,
 /area/station/medical/storage)
 "vDG" = (
