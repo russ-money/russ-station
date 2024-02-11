@@ -12373,7 +12373,6 @@
 	name = "Containment Pen #2";
 	req_access = list("xenobiology")
 	},
-
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
 "gGh" = (
