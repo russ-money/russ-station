@@ -2771,8 +2771,6 @@
 	dir = 10
 	},
 /obj/machinery/door/window/left/directional/west{
-	base_state = "right";
-	icon_state = "right";
 	name = "Execution Gas";
 	pixel_x = -4;
 	req_access = list("brig")
@@ -16373,8 +16371,7 @@
 /area/station/security/courtroom)
 "iQc" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/left/directional/south{
-	icon_state = "right";
+/obj/machinery/door/window/left/directional/west{
 	name = "Checkpoint Reception";
 	req_access = list("security")
 	},
@@ -18916,7 +18913,6 @@
 "kld" = (
 /obj/structure/window/spawner/directional/south,
 /obj/machinery/door/window/left/directional/west{
-	icon_state = "right";
 	name = "Incoming Mail";
 	req_access = list("shipping")
 	},
@@ -21710,9 +21706,7 @@
 /turf/open/floor/iron/showroomfloor,
 /area/station/medical/chemistry)
 "lKJ" = (
-/obj/machinery/door/window/left/directional/north{
-	base_state = "right";
-	icon_state = "right";
+/obj/machinery/door/window/left/directional/west{
 	name = "Captain's Desk Door";
 	req_access = list("captain")
 	},
@@ -24499,8 +24493,7 @@
 "nnK" = (
 /obj/structure/table,
 /obj/machinery/door/firedoor,
-/obj/machinery/door/window/left/directional/north{
-	icon_state = "right";
+/obj/machinery/door/window/left/directional/west{
 	name = "Delivery Desk";
 	req_access = list("shipping")
 	},
@@ -26547,8 +26540,7 @@
 "ooA" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor,
-/obj/machinery/door/window/left/directional/south{
-	icon_state = "right";
+/obj/machinery/door/window/left/directional/west{
 	name = "Atmospherics Desk";
 	req_one_access = list("atmospherics","engineering")
 	},
@@ -27179,8 +27171,7 @@
 	name = "Robotics Counter"
 	},
 /obj/machinery/door/firedoor,
-/obj/machinery/door/window/right/directional/west{
-	base_state = "left";
+/obj/machinery/door/window/right/directional/east{
 	name = "Robotics Desk";
 	req_access = list("robotics")
 	},
@@ -40682,8 +40673,7 @@
 	id = "pharmecyshutters";
 	name = "Pharmecy Shutters"
 	},
-/obj/machinery/door/window/left/directional/south{
-	icon_state = "right";
+/obj/machinery/door/window/left/directional/west{
 	name = "Pharmacy Desk";
 	req_access = list("pharmacy")
 	},
@@ -41934,9 +41924,7 @@
 "wex" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/left/directional/north{
-	base_state = "right";
-	icon_state = "right";
+/obj/machinery/door/window/left/directional/west{
 	name = "Core Modules";
 	req_access = list("captain")
 	},
@@ -42364,8 +42352,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/firedoor,
 /obj/structure/plasticflaps/opaque,
-/obj/machinery/door/window/right/directional/south{
-	base_state = "left";
+/obj/machinery/door/window/right/directional/east{
 	name = "Research Division Delivery";
 	req_access = list("research")
 	},
