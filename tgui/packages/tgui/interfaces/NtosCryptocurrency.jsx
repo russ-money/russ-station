@@ -1,5 +1,9 @@
 import { NtosWindow } from '../layouts';
-import { CryptocurrencyDetails, CryptocurrencyHistory, CryptocurrencyMachineList } from './Cryptocurrency';
+import {
+  CryptocurrencyDetails,
+  CryptocurrencyHistory,
+  CryptocurrencyMachineList,
+} from './Cryptocurrency';
 
 export const NtosCryptocurrency = () => {
   return (
