@@ -207,7 +207,7 @@
 		return FALSE
 
 	return TRUE
-
+	
 /// Marks the tutorial as completed.
 /// Call `/datum/tutorial/proc/complete()` instead.
 /datum/tutorial_manager/proc/complete(mob/user)
