@@ -16904,6 +16904,10 @@
 	dir = 9
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/conveyor_switch/oneway{
+	id = "mining";
+	dir = 1
+	},
 /turf/open/floor/iron,
 /area/station/cargo/miningdock)
 "bht" = (
@@ -34535,8 +34539,8 @@
 "efJ" = (
 /obj/machinery/brm,
 /obj/machinery/conveyor{
-	id = "mining";
-	dir = 8
+	dir = 8;
+	id = "mining"
 	},
 /turf/open/floor/iron,
 /area/station/cargo/miningdock)
@@ -39762,8 +39766,8 @@
 "lTB" = (
 /obj/machinery/bouldertech/refinery,
 /obj/machinery/conveyor{
-	id = "mining";
-	dir = 8
+	dir = 8;
+	id = "mining"
 	},
 /turf/open/floor/iron,
 /area/station/cargo/miningdock)
@@ -47886,8 +47890,8 @@
 "xae" = (
 /obj/machinery/bouldertech/refinery/smelter,
 /obj/machinery/conveyor{
-	id = "mining";
-	dir = 8
+	dir = 8;
+	id = "mining"
 	},
 /turf/open/floor/iron,
 /area/station/cargo/miningdock)

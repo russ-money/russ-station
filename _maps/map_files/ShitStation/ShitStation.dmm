@@ -17062,6 +17062,13 @@
 /obj/structure/falsewall,
 /turf/open/floor/plating,
 /area/station/maintenance/department/crew_quarters/bar)
+"kct" = (
+/obj/machinery/conveyor_switch/oneway{
+	id = "mining";
+	dir = 1
+	},
+/turf/open/floor/iron/dark,
+/area/station/cargo/miningdock)
 "kcw" = (
 /obj/effect/mapping_helpers/airlock/access/all/science/genetics,
 /obj/machinery/door/airlock/maintenance{
@@ -17633,6 +17640,11 @@
 "kJN" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
 /obj/machinery/firealarm/directional/north,
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "mining"
+	},
+/obj/machinery/bouldertech/refinery/smelter,
 /turf/open/floor/iron/dark,
 /area/station/cargo/miningdock)
 "kKl" = (
@@ -24983,6 +24995,11 @@
 "rLd" = (
 /obj/machinery/airalarm/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "mining"
+	},
+/obj/machinery/brm,
 /turf/open/floor/iron/dark,
 /area/station/cargo/miningdock)
 "rLN" = (
@@ -29377,6 +29394,11 @@
 "vQx" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
 /obj/machinery/camera/autoname/directional/north,
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "mining"
+	},
+/obj/machinery/bouldertech/refinery,
 /turf/open/floor/iron/dark,
 /area/station/cargo/miningdock)
 "vRI" = (
@@ -66731,7 +66753,7 @@ hbR
 yiY
 mBn
 jSa
-uWN
+kct
 uHp
 yiY
 nue

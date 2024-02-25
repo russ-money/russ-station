@@ -27422,8 +27422,8 @@
 "mgj" = (
 /obj/machinery/brm,
 /obj/machinery/conveyor{
-	id = "mining";
-	dir = 8
+	dir = 8;
+	id = "mining"
 	},
 /turf/open/floor/iron,
 /area/station/cargo/miningoffice)
@@ -31516,8 +31516,8 @@
 "nQI" = (
 /obj/machinery/bouldertech/refinery/smelter,
 /obj/machinery/conveyor{
-	id = "mining";
-	dir = 8
+	dir = 8;
+	id = "mining"
 	},
 /turf/open/floor/iron,
 /area/station/cargo/miningoffice)
@@ -32827,8 +32827,8 @@
 "ora" = (
 /obj/machinery/bouldertech/refinery,
 /obj/machinery/conveyor{
-	id = "mining";
-	dir = 8
+	dir = 8;
+	id = "mining"
 	},
 /turf/open/floor/iron,
 /area/station/cargo/miningoffice)
@@ -41738,6 +41738,13 @@
 /obj/item/stack/package_wrap,
 /turf/open/floor/iron/grimy,
 /area/station/security/prison/rec)
+"smF" = (
+/obj/machinery/conveyor_switch/oneway{
+	id = "mining";
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/station/cargo/miningoffice)
 "smH" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
@@ -106358,7 +106365,7 @@ eaK
 sFl
 oeT
 oaQ
-oaQ
+smF
 aYL
 flj
 elj

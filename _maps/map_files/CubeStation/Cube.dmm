@@ -5933,8 +5933,8 @@
 /obj/machinery/light/directional/south,
 /obj/machinery/bouldertech/refinery/smelter,
 /obj/machinery/conveyor{
-	id = "mining";
-	dir = 9
+	dir = 9;
+	id = "mining"
 	},
 /turf/open/floor/iron,
 /area/station/cargo/miningdock)
@@ -30357,8 +30357,8 @@
 	dir = 4
 	},
 /obj/machinery/conveyor{
-	id = "mining";
-	dir = 8
+	dir = 8;
+	id = "mining"
 	},
 /obj/machinery/brm,
 /turf/open/floor/iron,
@@ -33924,6 +33924,16 @@
 /obj/machinery/airalarm/directional/west,
 /turf/open/floor/iron,
 /area/station/command/bridge)
+"rNB" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/obj/machinery/conveyor_switch/oneway{
+	id = "mining";
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/station/cargo/miningdock)
 "rNG" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -36953,8 +36963,8 @@
 /obj/structure/sign/warning/vacuum/directional/south,
 /obj/machinery/bouldertech/refinery,
 /obj/machinery/conveyor{
-	id = "mining";
-	dir = 8
+	dir = 8;
+	id = "mining"
 	},
 /turf/open/floor/iron,
 /area/station/cargo/miningdock)
@@ -86428,7 +86438,7 @@ nlX
 diW
 diW
 hnW
-kfh
+rNB
 txB
 auj
 auj

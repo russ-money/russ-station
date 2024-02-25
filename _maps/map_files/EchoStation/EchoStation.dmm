@@ -39505,8 +39505,8 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/machinery/bouldertech/refinery/smelter,
 /obj/machinery/conveyor{
-	id = "mining";
-	dir = 8
+	dir = 8;
+	id = "mining"
 	},
 /turf/open/floor/iron,
 /area/station/cargo/miningdock)
@@ -39549,8 +39549,8 @@
 	},
 /obj/machinery/bouldertech/refinery,
 /obj/machinery/conveyor{
-	id = "mining";
-	dir = 8
+	dir = 8;
+	id = "mining"
 	},
 /turf/open/floor/iron,
 /area/station/cargo/miningdock)
@@ -39653,8 +39653,8 @@
 /obj/effect/landmark/event_spawn,
 /obj/machinery/brm,
 /obj/machinery/conveyor{
-	id = "mining";
-	dir = 8
+	dir = 8;
+	id = "mining"
 	},
 /turf/open/floor/iron,
 /area/station/cargo/miningdock)
@@ -39712,6 +39712,10 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
 	dir = 5
+	},
+/obj/machinery/conveyor_switch/oneway{
+	id = "mining";
+	dir = 1
 	},
 /turf/open/floor/iron,
 /area/station/cargo/miningdock)
