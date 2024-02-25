@@ -603,7 +603,7 @@
 /area/mine/living_quarters)
 "kS" = (
 /obj/structure/bed,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet/any,
 /obj/structure/sign/poster/contraband/random/directional/north,
 /obj/structure/cable,
 /turf/open/floor/carpet,
@@ -783,7 +783,7 @@
 "po" = (
 /obj/structure/bed,
 /obj/structure/sign/poster/random/directional/north,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet/any,
 /obj/structure/cable,
 /turf/open/floor/carpet,
 /area/mine/living_quarters)

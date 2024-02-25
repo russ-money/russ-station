@@ -1002,7 +1002,7 @@
 "aAu" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/structure/bed,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet/any,
 /turf/open/floor/iron/grimy,
 /area/station/security/prison)
 "aBc" = (
@@ -2599,7 +2599,7 @@
 /area/station/command/heads_quarters/hop)
 "btA" = (
 /obj/structure/bed,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet/any,
 /obj/effect/landmark/start/prisoner,
 /turf/open/floor/plating,
 /area/station/security/prison)
@@ -6781,6 +6781,10 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/engineering/supermatter/room)
+"dJM" = (
+/obj/item/stack/sheet/sinew,
+/turf/open/floor/iron,
+/area/station/cargo/miningdock)
 "dJV" = (
 /obj/machinery/door/morgue{
 	name = "Private Study";
@@ -8919,7 +8923,7 @@
 /obj/effect/spawner/random/trash/garbage,
 /obj/effect/landmark/start/hangover,
 /obj/structure/bed,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet/any,
 /turf/open/floor/iron/grimy,
 /area/station/commons/dorms)
 "eNO" = (
@@ -13921,7 +13925,7 @@
 /area/station/security/brig)
 "hFR" = (
 /obj/structure/bed,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet/any,
 /obj/machinery/button/door{
 	id = "Dorm2";
 	name = "Dorm Bolt Control";
@@ -29022,7 +29026,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/window/right/directional/west{
-		name = "Research and Development Desk";
+	name = "Research and Development Desk";
 	req_access = list("science")
 	},
 /turf/open/floor/plating,
@@ -39451,6 +39455,8 @@
 	desc = "That's mining's pet mothroach Aemilia. Affectionately known as the mini Darkheart they're quite sweet, offering weary miners reassurance after long days of carving hardened basalt and running from megafauna.";
 	name = "Aemilia"
 	},
+/obj/effect/turf_decal/delivery,
+/obj/effect/decal/cleanable/rubble,
 /turf/open/floor/plating,
 /area/station/cargo/miningdock)
 "uVA" = (
@@ -39497,7 +39503,11 @@
 /area/station/engineering/atmos)
 "uWp" = (
 /obj/effect/decal/cleanable/blood/splatter,
-/obj/item/stack/sheet/sinew,
+/obj/machinery/bouldertech/refinery/smelter,
+/obj/machinery/conveyor{
+	id = "mining";
+	dir = 8
+	},
 /turf/open/floor/iron,
 /area/station/cargo/miningdock)
 "uWB" = (
@@ -39536,6 +39546,11 @@
 "uXh" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
+	},
+/obj/machinery/bouldertech/refinery,
+/obj/machinery/conveyor{
+	id = "mining";
+	dir = 8
 	},
 /turf/open/floor/iron,
 /area/station/cargo/miningdock)
@@ -39636,6 +39651,11 @@
 	dir = 8
 	},
 /obj/effect/landmark/event_spawn,
+/obj/machinery/brm,
+/obj/machinery/conveyor{
+	id = "mining";
+	dir = 8
+	},
 /turf/open/floor/iron,
 /area/station/cargo/miningdock)
 "vbQ" = (
@@ -40018,7 +40038,7 @@
 /area/station/command/heads_quarters/rd)
 "vjQ" = (
 /obj/structure/bed,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet/any,
 /obj/effect/landmark/start/hangover,
 /turf/open/floor/iron/grimy,
 /area/station/commons/dorms)
@@ -93140,7 +93160,7 @@ rrS
 saJ
 vVu
 uWp
-tqf
+dJM
 fqk
 nMd
 mRL

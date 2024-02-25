@@ -9120,7 +9120,7 @@
 /area/station/service/cafeteria)
 "egO" = (
 /obj/structure/bed,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet/any,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/start/prisoner,
 /obj/structure/cable,
@@ -10027,7 +10027,7 @@
 /area/station/security/execution)
 "eAO" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/left/directional/west{
+/obj/machinery/door/window/left/directional/south{
 	name = "Hydroponics Desk";
 	req_access = list("hydroponics")
 	},
@@ -10616,7 +10616,7 @@
 	elevator_mode = 1;
 	name = "Dumbwaiter";
 	req_access = list("hydroponics");
-	transport_linked_id = "dumbwaiter_lift";
+	transport_linked_id = "dumbwaiter_lift"
 	},
 /turf/open/floor/iron/dark,
 /area/station/service/hydroponics/upper)
@@ -18579,7 +18579,8 @@
 "ist" = (
 /obj/machinery/door/window/left/directional/west{
 	name = "Containment Pen #1";
-	req_access = list("xenobiology")
+	req_access = list("xenobiology");
+	dir = 2
 	},
 /obj/machinery/door/poddoor/preopen{
 	id = "xenobio1";
@@ -20202,7 +20203,7 @@
 /area/station/security/brig)
 "jcN" = (
 /obj/structure/bed,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet/any,
 /turf/open/floor/iron/white/textured,
 /area/station/medical/virology)
 "jdj" = (
@@ -27419,6 +27420,14 @@
 /obj/structure/window/spawner/directional/west,
 /turf/open/floor/iron/dark,
 /area/station/command/gateway)
+"mgj" = (
+/obj/machinery/brm,
+/obj/machinery/conveyor{
+	id = "mining";
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/station/cargo/miningoffice)
 "mgo" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1
@@ -31505,6 +31514,14 @@
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/commons/toilet/auxiliary)
+"nQI" = (
+/obj/machinery/bouldertech/refinery/smelter,
+/obj/machinery/conveyor{
+	id = "mining";
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/station/cargo/miningoffice)
 "nQJ" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
@@ -32808,6 +32825,14 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/security/brig)
+"ora" = (
+/obj/machinery/bouldertech/refinery,
+/obj/machinery/conveyor{
+	id = "mining";
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/station/cargo/miningoffice)
 "osn" = (
 /obj/effect/turf_decal/tile/brown/half,
 /obj/structure/disposalpipe/segment{
@@ -34535,7 +34560,7 @@
 /area/station/ai_monitored/command/storage/eva)
 "phH" = (
 /obj/structure/bed,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet/any,
 /obj/effect/landmark/start/prisoner,
 /obj/structure/cable,
 /turf/open/floor/iron/grimy,
@@ -36178,7 +36203,8 @@
 "pRV" = (
 /obj/machinery/door/window/left/directional/west{
 	name = "Containment Pen #3";
-	req_access = list("xenobiology")
+	req_access = list("xenobiology");
+	dir = 2
 	},
 /obj/machinery/door/poddoor/preopen{
 	id = "xenobio3";
@@ -39198,7 +39224,7 @@
 /obj/machinery/light/directional/east,
 /obj/structure/extinguisher_cabinet/directional/east,
 /obj/structure/bed,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet/any,
 /turf/open/floor/iron/white,
 /area/station/medical/paramedic)
 "rme" = (
@@ -39848,7 +39874,7 @@
 "ryD" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/right/directional/south{
-		name = "Cargo Desk";
+	name = "Cargo Desk";
 	req_access = list("shipping")
 	},
 /obj/machinery/door/firedoor,
@@ -40851,7 +40877,8 @@
 "rSF" = (
 /obj/machinery/door/window/left/directional/west{
 	name = "Containment Pen #2";
-	req_access = list("xenobiology")
+	req_access = list("xenobiology");
+	dir = 2
 	},
 /obj/machinery/door/poddoor/preopen{
 	id = "xenobio2";
@@ -44675,6 +44702,11 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
+"tFB" = (
+/obj/effect/turf_decal/delivery,
+/obj/effect/decal/cleanable/rubble,
+/turf/open/floor/iron,
+/area/station/cargo/miningoffice)
 "tFM" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -49892,7 +49924,7 @@
 /area/station/engineering/storage_shared)
 "vQR" = (
 /obj/structure/bed,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet/any,
 /turf/open/floor/carpet/royalblack,
 /area/station/commons/dorms)
 "vQT" = (
@@ -105302,7 +105334,7 @@ sFl
 tUA
 mqW
 oaQ
-oaQ
+tFB
 pAY
 fBb
 pwQ
@@ -105559,7 +105591,7 @@ sFl
 oaU
 eCN
 oJJ
-oaQ
+nQI
 eUk
 elj
 elj
@@ -105816,7 +105848,7 @@ ebs
 eiI
 eDA
 eJl
-oaQ
+ora
 eVD
 pwQ
 izx
@@ -106073,7 +106105,7 @@ sFl
 emW
 eEK
 eJQ
-oaQ
+mgj
 fjB
 pxz
 foD

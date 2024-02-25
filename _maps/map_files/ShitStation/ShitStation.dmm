@@ -2570,7 +2570,7 @@
 /obj/item/canvas,
 /obj/item/canvas,
 /obj/item/organ/internal/eyes,
-/obj/item/valentine{
+/obj/item/paper/valentine{
 	pixel_x = -5
 	},
 /obj/machinery/light/directional/east,
@@ -15869,7 +15869,7 @@
 /area/station/service/cafeteria)
 "iRp" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/carpet,
 /area/station/commons/dorms)
@@ -20363,7 +20363,7 @@
 /area/station/service/library/lounge)
 "nIm" = (
 /obj/structure/table/optable,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet/any,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/white,
 /area/station/maintenance/tram/right)
@@ -23752,7 +23752,7 @@
 /area/station/engineering/supermatter/room)
 "qIH" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /turf/open/floor/carpet,
 /area/station/commons/dorms)
 "qJV" = (
@@ -24562,7 +24562,7 @@
 "rpD" = (
 /obj/effect/landmark/event_spawn,
 /obj/structure/bed,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet/any,
 /turf/open/floor/iron/dark,
 /area/station/security/brig)
 "rqO" = (
@@ -28031,7 +28031,7 @@
 /area/station/command/heads_quarters/hos)
 "uJT" = (
 /obj/structure/bed,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet/any,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/station/security/brig)
@@ -30414,7 +30414,7 @@
 "wXk" = (
 /obj/machinery/airalarm/directional/south,
 /obj/structure/bed,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet/any,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/station/security/brig)
@@ -30741,7 +30741,7 @@
 /area/station/maintenance/tram/right)
 "xvs" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet,
 /area/station/commons/dorms)
