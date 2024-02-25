@@ -18577,10 +18577,9 @@
 /turf/open/floor/wood,
 /area/station/security/office)
 "ist" = (
-/obj/machinery/door/window/left/directional/west{
+/obj/machinery/door/window/left/directional/south{
 	name = "Containment Pen #1";
-	req_access = list("xenobiology");
-	dir = 2
+	req_access = list("xenobiology")
 	},
 /obj/machinery/door/poddoor/preopen{
 	id = "xenobio1";
@@ -36201,10 +36200,9 @@
 /turf/open/floor/plating,
 /area/station/service/hydroponics/upper)
 "pRV" = (
-/obj/machinery/door/window/left/directional/west{
+/obj/machinery/door/window/left/directional/south{
 	name = "Containment Pen #3";
-	req_access = list("xenobiology");
-	dir = 2
+	req_access = list("xenobiology")
 	},
 /obj/machinery/door/poddoor/preopen{
 	id = "xenobio3";
@@ -40875,10 +40873,9 @@
 /turf/open/floor/plating,
 /area/station/engineering/main)
 "rSF" = (
-/obj/machinery/door/window/left/directional/west{
+/obj/machinery/door/window/left/directional/south{
 	name = "Containment Pen #2";
-	req_access = list("xenobiology");
-	dir = 2
+	req_access = list("xenobiology")
 	},
 /obj/machinery/door/poddoor/preopen{
 	id = "xenobio2";
