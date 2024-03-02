@@ -206,7 +206,7 @@
 	if (!isnull(grandfather_date) && player_join_date < grandfather_date)
 		return FALSE
 
-	return TRUE // honk -- set to false to stop them
+	return TRUE
 
 /// Marks the tutorial as completed.
 /// Call `/datum/tutorial/proc/complete()` instead.

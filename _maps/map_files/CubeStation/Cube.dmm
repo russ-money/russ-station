@@ -1797,7 +1797,7 @@
 /area/station/engineering/atmos)
 "aWP" = (
 /obj/structure/bed,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet/any,
 /turf/open/floor/iron/grimy,
 /area/station/security/prison)
 "aXO" = (
@@ -3749,7 +3749,7 @@
 	name = "Robotics Lab Shutters"
 	},
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/right/directional/east{
+/obj/machinery/door/window/right/directional/south{
 	name = "Robotics Desk";
 	req_access = list("robotics")
 	},
@@ -5931,6 +5931,11 @@
 "doe" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/light/directional/south,
+/obj/machinery/bouldertech/refinery/smelter,
+/obj/machinery/conveyor{
+	dir = 9;
+	id = "mining"
+	},
 /turf/open/floor/iron,
 /area/station/cargo/miningdock)
 "dog" = (
@@ -8553,7 +8558,7 @@
 "eEB" = (
 /obj/structure/bed,
 /obj/item/soap/nanotrasen,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet/any,
 /turf/open/floor/iron/grimy,
 /area/station/security/prison)
 "eFj" = (
@@ -9409,7 +9414,7 @@
 /area/station/engineering/break_room)
 "fdN" = (
 /obj/structure/bed,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet/any,
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
 	dir = 8
@@ -9741,7 +9746,7 @@
 /area/station/maintenance/starboard/aft)
 "flR" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /turf/open/floor/carpet/royalblack,
 /area/station/commons/dorms)
 "flU" = (
@@ -10081,8 +10086,8 @@
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "pharmecyshutters"
 	},
-/obj/machinery/door/window/left/directional/west{
-	name = "Pharmacy Window";
+/obj/machinery/door/window/left/directional/south{
+	name = "Pharmacy Desk";
 	req_access = list("pharmacy")
 	},
 /obj/machinery/door/firedoor,
@@ -18093,7 +18098,7 @@
 "jPY" = (
 /obj/structure/bed,
 /obj/machinery/light/small/broken/directional/east,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet/any,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/fore)
 "jQb" = (
@@ -21627,7 +21632,7 @@
 /area/station/command/heads_quarters/ce)
 "lQT" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/sign/poster/official/random/directional/east,
 /obj/effect/landmark/start/hangover,
 /turf/open/floor/carpet/royalblack,
@@ -23088,7 +23093,7 @@
 /area/station/medical/medbay/aft)
 "mAX" = (
 /obj/structure/bed,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet/any,
 /obj/structure/sign/poster/random/directional/east,
 /turf/open/floor/iron/grimy,
 /area/station/security/prison)
@@ -25506,7 +25511,7 @@
 /area/station/science/lab)
 "nMb" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/left/directional/west{
+/obj/machinery/door/window/left/directional/east{
 	name = "Pharmacy Window";
 	req_access = list("pharmacy")
 	},
@@ -25514,6 +25519,11 @@
 	id = "pharmacyshutters"
 	},
 /obj/machinery/door/firedoor,
+/obj/item/paper_bin{
+	pixel_x = -2;
+	pixel_y = 6
+	},
+/obj/item/pen,
 /turf/open/floor/plating,
 /area/station/medical/pharmacy)
 "nMe" = (
@@ -30346,7 +30356,11 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
-/obj/structure/closet/wardrobe/miner,
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "mining"
+	},
+/obj/machinery/brm,
 /turf/open/floor/iron,
 /area/station/cargo/miningdock)
 "qkQ" = (
@@ -31342,6 +31356,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
+/obj/structure/closet/wardrobe/miner,
 /turf/open/floor/iron,
 /area/station/cargo/miningdock)
 "qHW" = (
@@ -33909,6 +33924,16 @@
 /obj/machinery/airalarm/directional/west,
 /turf/open/floor/iron,
 /area/station/command/bridge)
+"rNB" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/obj/machinery/conveyor_switch/oneway{
+	id = "mining";
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/station/cargo/miningdock)
 "rNG" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -36936,6 +36961,11 @@
 	dir = 8
 	},
 /obj/structure/sign/warning/vacuum/directional/south,
+/obj/machinery/bouldertech/refinery,
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "mining"
+	},
 /turf/open/floor/iron,
 /area/station/cargo/miningdock)
 "txC" = (
@@ -40029,7 +40059,7 @@
 /area/station/hallway/primary/central)
 "uZw" = (
 /obj/structure/bed,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet/any,
 /obj/effect/turf_decal/tile/green{
 	dir = 1
 	},
@@ -41569,6 +41599,11 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/medical/chemistry)
+"vKA" = (
+/obj/effect/decal/cleanable/rubble,
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/iron,
+/area/station/cargo/miningdock)
 "vKV" = (
 /obj/effect/turf_decal/trimline/blue/filled/line,
 /obj/machinery/newscaster/directional/south,
@@ -77990,9 +78025,9 @@ iWu
 esT
 cMl
 xce
-nJu
-nXd
 nMb
+nXd
+nJu
 xce
 vTd
 lEx
@@ -86176,7 +86211,7 @@ fXi
 tzx
 tQb
 tQb
-tQb
+vKA
 doe
 fXi
 qOv
@@ -86403,7 +86438,7 @@ nlX
 diW
 diW
 hnW
-kfh
+rNB
 txB
 auj
 auj

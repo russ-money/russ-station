@@ -362,13 +362,6 @@
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/port/fore)
-"adg" = (
-/obj/structure/table,
-/obj/machinery/door/window/left/directional/west{
-	name = "Kitchen"
-	},
-/turf/open/floor/plating,
-/area/station/security/prison)
 "adj" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer,
 /turf/open/floor/iron/dark,
@@ -3475,8 +3468,11 @@
 	id = "pharmecyshutters"
 	},
 /obj/structure/disposalpipe/segment,
-/obj/structure/window/spawner/directional/north,
 /obj/machinery/door/firedoor,
+/obj/machinery/door/window/left/directional/south{
+	name = "Pharmacy Desk";
+	req_access = list("pharmacy")
+	},
 /turf/open/floor/iron/showroomfloor,
 /area/station/medical/pharmacy)
 "aQG" = (
@@ -4714,6 +4710,14 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/iron,
 /area/station/tcommsat/computer)
+"bgZ" = (
+/obj/machinery/door/window/right/directional/south{
+	req_access = list("xenobiology");
+	name = "Containment Pen #4"
+	},
+/obj/structure/window/reinforced/spawner/directional/south,
+/turf/open/floor/engine,
+/area/station/science/xenobiology)
 "bhb" = (
 /obj/machinery/computer/records/security{
 	dir = 8
@@ -8022,15 +8026,15 @@
 /turf/open/floor/plating,
 /area/station/maintenance/starboard)
 "cFF" = (
-/obj/machinery/door/window/left/directional/west{
-	name = "Pharmacy Desk";
-	req_access = list("pharmacy")
-	},
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "pharmecyshutters"
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/window/left/directional/south{
+	name = "Pharmacy Desk";
+	req_access = list("pharmacy")
+	},
 /turf/open/floor/iron/showroomfloor,
 /area/station/medical/pharmacy)
 "cFO" = (
@@ -9045,10 +9049,6 @@
 /area/station/engineering/atmos/office)
 "dgH" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/brigdoor/left/directional/east{
-	name = "Head of Personnel's Desk";
-	req_access = list("hop")
-	},
 /obj/machinery/door/window/left/directional/south{
 	name = "Reception Window"
 	},
@@ -9057,6 +9057,10 @@
 	name = "Privacy Shutters"
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/window/brigdoor/right/directional/north{
+	name = "Head of Personnel's Desk";
+	req_access = list("hop")
+	},
 /turf/open/floor/plating,
 /area/station/command/heads_quarters/hop)
 "dgI" = (
@@ -9380,9 +9384,9 @@
 /turf/open/floor/iron,
 /area/station/tcommsat/computer)
 "doQ" = (
-/obj/machinery/door/window/left/directional/west{
+/obj/machinery/door/window/right/directional/south{
 	name = "Containment Pen #1";
-	req_access = list("xenobiology")
+	req_access = list("xenobiology")s)
 	},
 /obj/machinery/door/poddoor/preopen{
 	id = "xenobio1";
@@ -13100,14 +13104,14 @@
 /area/station/service/library)
 "eZQ" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/right/directional/east{
-	name = "Robotics Desk";
-	req_access = list("robotics")
-	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "robotics";
 	name = "Robotics Lab Shutters"
+	},
+/obj/machinery/door/window/right/directional/west{
+	name = "Robotics Desk";
+	req_access = list("robotics")
 	},
 /turf/open/floor/plating,
 /area/station/science/robotics/lab)
@@ -13701,7 +13705,7 @@
 /area/station/science/ordnance)
 "fpI" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/right/directional/east{
+/obj/machinery/door/window/right/directional/south{
 	name = "Robotics Desk";
 	req_access = list("robotics")
 	},
@@ -14695,7 +14699,7 @@
 /area/station/engineering/supermatter/room)
 "fRz" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/right/directional/east{
+/obj/machinery/door/window/right/directional/south{
 	name = "Robotics Desk";
 	req_access = list("robotics")
 	},
@@ -14773,6 +14777,8 @@
 	dir = 4
 	},
 /obj/structure/cable,
+/obj/effect/turf_decal/delivery,
+/obj/effect/decal/cleanable/rubble,
 /turf/open/floor/iron,
 /area/station/cargo/miningoffice)
 "fTw" = (
@@ -14916,10 +14922,11 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/aft)
 "fXA" = (
-/obj/structure/chair{
-	dir = 4
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "mining"
 	},
-/obj/effect/landmark/start/shaft_miner,
+/obj/machinery/bouldertech/refinery,
 /turf/open/floor/iron,
 /area/station/cargo/miningoffice)
 "fYl" = (
@@ -14970,9 +14977,13 @@
 /turf/open/floor/iron/dark,
 /area/station/security/brig)
 "gab" = (
-/obj/structure/table,
 /obj/structure/cable,
 /obj/machinery/newscaster/directional/east,
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "mining"
+	},
+/obj/machinery/brm,
 /turf/open/floor/iron,
 /area/station/cargo/miningoffice)
 "gai" = (
@@ -17844,7 +17855,7 @@
 /mob/living/simple_animal/bot/secbot/beepsky{
 	name = "Officer Beepsky"
 	},
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet/any,
 /turf/open/floor/plating,
 /area/station/maintenance/port/fore)
 "hCa" = (
@@ -19299,7 +19310,7 @@
 /turf/open/floor/iron,
 /area/station/ai_monitored/command/storage/eva)
 "itX" = (
-/obj/machinery/door/window/left/directional/north{
+/obj/machinery/door/window/left/directional/south{
 	name = "Pharmacy Desk";
 	req_access = list("pharmacy")
 	},
@@ -20810,10 +20821,6 @@
 	},
 /turf/open/floor/plating,
 /area/station/hallway/secondary/exit)
-"jnq" = (
-/obj/effect/decal/cleanable/generic,
-/turf/closed/wall,
-/area/station/cargo/drone_bay)
 "jnr" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -24601,6 +24608,16 @@
 /obj/effect/turf_decal/stripes/box,
 /turf/open/floor/iron,
 /area/station/security/warden)
+"lnY" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/conveyor{
+	dir = 9;
+	id = "mining"
+	},
+/obj/machinery/bouldertech/refinery/smelter,
+/turf/open/floor/iron,
+/area/station/cargo/miningoffice)
 "loa" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	dir = 4
@@ -25053,7 +25070,7 @@
 /turf/open/floor/iron/sepia,
 /area/station/service/chapel)
 "lDe" = (
-/obj/machinery/door/window/left/directional/west{
+/obj/machinery/door/window/right/directional/south{
 	name = "Containment Pen #2";
 	req_access = list("xenobiology")
 	},
@@ -26272,6 +26289,10 @@
 	},
 /turf/open/floor/iron,
 /area/station/security/brig)
+"moe" = (
+/obj/effect/landmark/start/shaft_miner,
+/turf/open/floor/iron,
+/area/station/cargo/miningoffice)
 "moq" = (
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment{
@@ -26362,6 +26383,13 @@
 /obj/machinery/duct,
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/lab)
+"mqP" = (
+/obj/machinery/door/window/right/directional/south{
+	name = "Containment Pen #1";
+	req_access = list("xenobiology")
+	},
+/turf/open/floor/engine,
+/area/station/science/xenobiology)
 "mqR" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
@@ -29096,6 +29124,13 @@
 /obj/item/relic,
 /turf/open/floor/plating,
 /area/station/maintenance/port)
+"nWC" = (
+/obj/machinery/door/window/left/directional/west{
+	name = "Containment Pen #5";
+	req_access = list("xenobiology")
+	},
+/turf/open/floor/engine,
+/area/station/science/xenobiology)
 "nWF" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
@@ -30025,6 +30060,13 @@
 /obj/effect/turf_decal/siding/purple,
 /turf/open/floor/iron/dark,
 /area/station/command/heads_quarters/rd)
+"oBx" = (
+/obj/machinery/door/window/left/directional/west{
+	name = "Containment Pen #6";
+	req_access = list("xenobiology")
+	},
+/turf/open/floor/engine,
+/area/station/science/xenobiology)
 "oBA" = (
 /obj/effect/turf_decal/trimline/brown/filled/line,
 /obj/effect/turf_decal/trimline/red/filled/line{
@@ -30754,6 +30796,18 @@
 	},
 /turf/open/floor/iron,
 /area/station/tcommsat/computer)
+"paV" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/machinery/conveyor_switch/oneway{
+	id = "mining";
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/station/cargo/miningoffice)
 "pbb" = (
 /obj/structure/cable,
 /obj/effect/landmark/event_spawn,
@@ -32944,9 +32998,9 @@
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/research)
 "qpV" = (
-/obj/machinery/door/window/left/directional/west{
-	name = "Containment Pen #4";
-	req_access = list("xenobiology")
+/obj/machinery/door/window/right/directional/south{
+	req_access = list("xenobiology");
+	name = "Containment Pen #4"
 	},
 /obj/machinery/door/poddoor/preopen{
 	id = "xenobio4";
@@ -33964,7 +34018,7 @@
 /area/station/security/detectives_office)
 "qRq" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/left/directional/west{
+/obj/machinery/door/window/right/directional/east{
 	name = "Xenobio Counter";
 	req_access = list("xenobiology")
 	},
@@ -33986,9 +34040,9 @@
 "qRQ" = (
 /obj/effect/turf_decal/delivery,
 /obj/machinery/door/firedoor/heavy,
-/obj/machinery/door/window/right/directional/east{
-	name = "Research Division Delivery";
-	req_access = list("research")
+/obj/machinery/door/window/left/directional/north{
+	name = "MuleBot Access";
+	req_access = list("shipping")
 	},
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/iron/showroomfloor,
@@ -34592,6 +34646,10 @@
 	},
 /turf/open/floor/iron/white/textured,
 /area/station/security/brig)
+"rpa" = (
+/obj/structure/window/reinforced/spawner/directional/west,
+/turf/open/floor/engine,
+/area/station/science/xenobiology)
 "rpi" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /obj/effect/turf_decal/tile/brown{
@@ -34922,7 +34980,10 @@
 /turf/open/floor/plating,
 /area/station/maintenance/central/lesser)
 "rwV" = (
-/obj/structure/table,
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "mining"
+	},
 /turf/open/floor/iron,
 /area/station/cargo/miningoffice)
 "rxt" = (
@@ -36299,6 +36360,7 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
+/obj/machinery/power/apc/auto_name/directional/south,
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/lab)
 "snW" = (
@@ -37066,7 +37128,7 @@
 /area/station/holodeck/rec_center)
 "sJO" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/machinery/button/door{
 	id = "Dorm1";
 	name = "Dorm Bolt Control";
@@ -37126,6 +37188,14 @@
 /obj/effect/landmark/start/hangover,
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/genetics)
+"sLS" = (
+/obj/machinery/door/window/right/directional/south{
+	name = "Containment Pen #2";
+	req_access = list("xenobiology")
+	},
+/obj/structure/window/reinforced/spawner/directional/south,
+/turf/open/floor/engine,
+/area/station/science/xenobiology)
 "sLX" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -37317,6 +37387,15 @@
 /obj/item/retractor,
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
+"sVK" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "mining"
+	},
+/turf/open/floor/iron,
+/area/station/cargo/miningoffice)
 "sVQ" = (
 /obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "Dormitories"
@@ -39299,7 +39378,7 @@
 /area/station/maintenance/fore)
 "tWe" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/machinery/button/door{
 	id = "Dorm2";
 	name = "Dorm Bolt Control";
@@ -39365,7 +39444,7 @@
 /area/station/engineering/atmos)
 "tWS" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/machinery/button/door{
 	id = "Dorm3";
 	name = "Dorm Bolt Control";
@@ -39378,7 +39457,7 @@
 /area/station/commons/dorms)
 "tXm" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/left/directional/west{
+/obj/machinery/door/window/left/directional/north{
 	name = "Research Lab Desk";
 	req_access = list("science")
 	},
@@ -40153,7 +40232,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
 "usq" = (
-/obj/machinery/door/window/left/directional/west{
+/obj/machinery/door/window/right/directional/south{
 	name = "Containment Pen #3";
 	req_access = list("xenobiology")
 	},
@@ -41513,6 +41592,10 @@
 /obj/structure/bookcase/random/fiction,
 /turf/open/floor/wood,
 /area/station/service/library)
+"vmK" = (
+/obj/structure/window/reinforced/spawner/directional/south,
+/turf/open/floor/engine,
+/area/station/science/xenobiology)
 "vmL" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
@@ -43506,6 +43589,13 @@
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/iron,
 /area/station/command/bridge)
+"wwX" = (
+/obj/machinery/door/window/right/directional/south{
+	name = "Containment Pen #3";
+	req_access = list("xenobiology")
+	},
+/turf/open/floor/engine,
+/area/station/science/xenobiology)
 "wxf" = (
 /obj/machinery/airalarm/directional/west,
 /obj/effect/turf_decal/stripes/box,
@@ -44668,7 +44758,7 @@
 /obj/machinery/computer/security/telescreen{
 	name = "Test Chamber Monitor";
 	network = list("xeno");
-		pixel_y = 2
+	pixel_y = 2
 	},
 /obj/machinery/button/door{
 	id = "misclab";
@@ -46080,7 +46170,7 @@
 /area/station/engineering/supermatter)
 "xSW" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/effect/landmark/start/hangover,
 /obj/machinery/button/door{
 	id = "Dorm4";
@@ -61436,7 +61526,7 @@ abB
 pGm
 abi
 acg
-adg
+acg
 iwD
 abi
 rPs
@@ -71293,7 +71383,7 @@ elL
 bEC
 epW
 eMY
-jnq
+eMY
 eMY
 eMY
 lvE
@@ -76417,7 +76507,7 @@ sXw
 rpZ
 fHR
 iGT
-wcv
+paV
 gbh
 gpZ
 gMm
@@ -76674,7 +76764,7 @@ lRg
 wup
 agL
 fTd
-wcv
+lnY
 gbh
 gqT
 wup
@@ -76931,7 +77021,7 @@ eXI
 hia
 fIE
 pII
-wcv
+sVK
 gcv
 gul
 wup
@@ -77189,7 +77279,7 @@ wup
 fKL
 fUg
 fXA
-gbh
+moe
 gvR
 gMA
 gXw
@@ -90500,7 +90590,7 @@ koZ
 ydJ
 eVi
 eVi
-eVi
+vmK
 cys
 uVC
 dNn
@@ -90757,7 +90847,7 @@ koZ
 ydJ
 hir
 eVi
-eVi
+mqP
 doQ
 uYd
 uYd
@@ -91014,7 +91104,7 @@ qvo
 ydJ
 eVi
 eVi
-eVi
+vmK
 cys
 aPd
 uYd
@@ -91528,7 +91618,7 @@ koZ
 ydJ
 eVi
 eVi
-eVi
+vmK
 odO
 fQH
 aPd
@@ -91785,7 +91875,7 @@ nBE
 ydJ
 hir
 lYx
-eVi
+sLS
 lDe
 uYd
 aPd
@@ -92042,7 +92132,7 @@ tjs
 nmU
 eVi
 eVi
-eVi
+vmK
 odO
 uYd
 aPd
@@ -92556,7 +92646,7 @@ tjs
 nmU
 eVi
 eVi
-eVi
+vmK
 lub
 qJh
 aPd
@@ -92813,7 +92903,7 @@ tBU
 nmU
 hir
 eVi
-eVi
+wwX
 usq
 uYd
 aPd
@@ -93070,7 +93160,7 @@ tFr
 nmU
 gMn
 eVi
-eVi
+vmK
 lub
 uYd
 aPd
@@ -93584,19 +93674,19 @@ eOw
 nmU
 eVi
 eVi
-eVi
+vmK
 mXY
 uCj
 uYd
 aVl
 tGf
-eVi
-eVi
-eVi
+rpa
+nWC
+rpa
 hDx
-eVi
-eVi
-eVi
+rpa
+oBx
+rpa
 hDx
 fLE
 sjn
@@ -93841,7 +93931,7 @@ eOw
 nmU
 hir
 eVi
-eVi
+bgZ
 qpV
 uYd
 uYd
@@ -94098,7 +94188,7 @@ eOw
 nmU
 eVi
 eVi
-eVi
+vmK
 mXY
 uYd
 veM
