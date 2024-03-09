@@ -803,6 +803,13 @@
 /obj/item/emergency_bed,
 /turf/open/floor/iron/white,
 /area/mine/living_quarters)
+"qw" = (
+/obj/structure/ore_vent/starter_resources{
+	icon_state = "ore_vent_ice_active";
+	icon_state_tapped = "ore_vent_ice_active"
+	},
+/turf/open/misc/asteroid/snow/icemoon,
+/area/icemoon/underground/explored)
 "qJ" = (
 /obj/structure/closet/crate/freezer,
 /obj/item/reagent_containers/blood,
@@ -1010,8 +1017,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/structure/fans/tiny/invisible,
 /obj/machinery/door/airlock/external/glass{
-	name = "Mining External Airlock";
-	req_access = null
+	name = "Mining External Airlock"
 	},
 /turf/open/floor/iron/textured,
 /area/mine/eva)
@@ -1382,8 +1388,7 @@
 	dir = 1
 	},
 /obj/machinery/door/airlock/external/glass{
-	name = "Mining External Airlock";
-	req_access = null
+	name = "Mining External Airlock"
 	},
 /turf/open/floor/iron/textured,
 /area/mine/eva)
@@ -59382,7 +59387,7 @@ kj
 kj
 kj
 kj
-kj
+Xz
 kj
 kj
 kj
@@ -60150,8 +60155,8 @@ kj
 kj
 kj
 kj
+qw
 kj
-Xz
 kj
 kj
 kj
