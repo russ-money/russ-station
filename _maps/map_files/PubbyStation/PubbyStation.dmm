@@ -4278,7 +4278,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
-/obj/effect/mapping_helpers/airlock/access/all/security/general,
+/obj/effect/mapping_helpers/airlock/access/all/engineering/external,
 /turf/open/floor/plating,
 /area/station/maintenance/fore)
 "apR" = (
@@ -18173,6 +18173,11 @@
 	c_tag = "Medbay Psychology Office";
 	network = list("ss13","medbay")
 	},
+/obj/machinery/button/door/directional/west{
+	id = "psychology";
+	name = "Privacy Shutters";
+	req_access = list("psychology")
+	},
 /turf/open/floor/carpet/purple,
 /area/station/medical/psychology)
 "bnP" = (
@@ -25546,6 +25551,10 @@
 /area/station/maintenance/department/engine)
 "bSs" = (
 /obj/effect/spawner/structure/window,
+/obj/machinery/door/poddoor/preopen{
+	id = "psychology";
+	name = "Psychology Privacy"
+	},
 /turf/open/floor/plating,
 /area/station/medical/psychology)
 "bSt" = (
@@ -33443,8 +33452,8 @@
 /obj/machinery/door/airlock/maintenance{
 	name = "Medbay Maintenance"
 	},
-/obj/effect/mapping_helpers/airlock/access/all/medical/general,
 /obj/structure/cable,
+/obj/effect/mapping_helpers/airlock/access/all/medical/surgery,
 /turf/open/floor/plating,
 /area/station/maintenance/department/engine)
 "dOs" = (
@@ -37596,8 +37605,9 @@
 /obj/machinery/door/airlock/maintenance{
 	name = "Chemistry Maintenance"
 	},
-/obj/effect/mapping_helpers/airlock/access/all/medical/chemistry,
 /obj/machinery/door/firedoor,
+/obj/effect/mapping_helpers/airlock/access/any/medical/pharmacy,
+/obj/effect/mapping_helpers/airlock/access/any/medical/chemistry,
 /turf/open/floor/plating,
 /area/station/maintenance/department/medical)
 "jTh" = (
@@ -38296,7 +38306,6 @@
 /turf/open/floor/iron/freezer,
 /area/station/medical/virology)
 "kVN" = (
-/obj/effect/mapping_helpers/airlock/access/all/medical/pharmacy,
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -38308,6 +38317,8 @@
 	name = "Chemistry";
 	req_access = list("pharmacy")
 	},
+/obj/effect/mapping_helpers/airlock/access/any/medical/pharmacy,
+/obj/effect/mapping_helpers/airlock/access/any/medical/chemistry,
 /turf/open/floor/iron/white,
 /area/station/medical/chemistry)
 "kVO" = (
@@ -41728,6 +41739,7 @@
 	name = "Ordnance Storage"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/engineering/atmos,
+/obj/machinery/door/firedoor/heavy,
 /turf/open/floor/iron/dark,
 /area/station/engineering/atmos/hfr_room)
 "pIy" = (
@@ -43061,8 +43073,9 @@
 /obj/machinery/door/airlock/maintenance{
 	name = "Chemistry Maintenance"
 	},
-/obj/effect/mapping_helpers/airlock/access/all/medical/pharmacy,
 /obj/machinery/door/firedoor,
+/obj/effect/mapping_helpers/airlock/access/any/medical/chemistry,
+/obj/effect/mapping_helpers/airlock/access/any/medical/pharmacy,
 /turf/open/floor/plating,
 /area/station/maintenance/department/medical/morgue)
 "rzp" = (
@@ -44293,7 +44306,7 @@
 /obj/machinery/door/airlock/external{
 	name = "Security External Airlock"
 	},
-/obj/effect/mapping_helpers/airlock/access/all/security/general,
+/obj/effect/mapping_helpers/airlock/access/all/engineering/external,
 /turf/open/floor/plating,
 /area/station/maintenance/fore)
 "tqC" = (
