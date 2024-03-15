@@ -1,3 +1,12 @@
+// funny botany shenanigans
+/datum/map_template/ruin/icemoon/mystery_pods
+	name = "Mystery Pod"
+	id = "mysterypods"
+	description = "A mystery pod seed bag hidden in the snow. Praise the miners."
+	suffix = "icemoon_surface_mystery_pods.dmm"
+	cost = 1
+	allow_duplicates = FALSE
+
 // ensure free golems always available for ghost roles
 /datum/map_template/ruin/icemoon/underground/free_golem
 	always_place = TRUE
