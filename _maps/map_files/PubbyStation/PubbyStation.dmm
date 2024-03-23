@@ -27847,6 +27847,7 @@
 	dir = 1;
 	mapping_id = "main_turbine"
 	},
+/obj/structure/cable,
 /turf/open/floor/engine,
 /area/station/maintenance/disposal/incinerator)
 "bZY" = (
@@ -28060,6 +28061,7 @@
 /obj/machinery/power/turbine/inlet_compressor{
 	dir = 1
 	},
+/obj/structure/cable,
 /turf/open/floor/engine,
 /area/station/maintenance/disposal/incinerator)
 "caQ" = (
@@ -35169,10 +35171,10 @@
 /area/station/science/ordnance)
 "glM" = (
 /obj/structure/cable,
-/obj/machinery/door/airlock/maintenance{
-	name = "Cargo Bay Warehouse Maintenance"
-	},
 /obj/effect/mapping_helpers/airlock/access/all/supply/general,
+/obj/machinery/door/airlock/maintenance{
+	name = "Cargo Bay Maintenance"
+	},
 /turf/open/floor/iron,
 /area/station/maintenance/department/cargo)
 "gmO" = (
@@ -36493,8 +36495,8 @@
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
 "iha" = (
-/obj/structure/reagent_dispensers/water_cooler,
 /obj/structure/sign/poster/official/work_for_a_future/directional/south,
+/obj/structure/filingcabinet/filingcabinet,
 /turf/open/floor/carpet/purple,
 /area/station/medical/psychology)
 "ihj" = (
@@ -39300,9 +39302,9 @@
 /turf/open/floor/iron/cafeteria,
 /area/station/security/prison)
 "mzp" = (
-/obj/structure/filingcabinet/filingcabinet,
 /obj/machinery/light_switch/directional/west,
 /obj/machinery/firealarm/directional/south,
+/obj/structure/closet/secure_closet/psychology,
 /turf/open/floor/carpet/purple,
 /area/station/medical/psychology)
 "mAi" = (
@@ -39510,6 +39512,7 @@
 /obj/machinery/power/turbine/turbine_outlet{
 	dir = 1
 	},
+/obj/structure/cable,
 /turf/open/floor/engine,
 /area/station/maintenance/disposal/incinerator)
 "mSc" = (
@@ -40617,6 +40620,11 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/turret_protected/ai)
+"oqP" = (
+/obj/structure/cable,
+/obj/structure/reagent_dispensers/water_cooler,
+/turf/open/floor/carpet/purple,
+/area/station/medical/psychology)
 "oqY" = (
 /obj/machinery/door/airlock/maintenance,
 /obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
@@ -79595,7 +79603,7 @@ bSs
 khJ
 kEb
 cqG
-cIe
+oqP
 cIe
 cIe
 cIe

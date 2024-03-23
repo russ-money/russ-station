@@ -18518,6 +18518,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/cargo/storage)
 "hSg" = (
@@ -18565,12 +18566,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/wood,
 /area/station/medical/psychology)
-"hUc" = (
-/obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/iron,
-/area/station/cargo/storage)
 "hUk" = (
 /obj/structure/rack,
 /obj/item/circuitboard/machine/exoscanner{
@@ -18657,7 +18652,6 @@
 /obj/effect/mapping_helpers/airlock/access/all/supply/qm,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/structure/cable,
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/iron,
@@ -19272,6 +19266,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/cargo/storage)
 "isC" = (
@@ -31316,6 +31311,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/light/directional/south,
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/cargo/storage)
 "prI" = (
@@ -33928,10 +33924,6 @@
 /obj/effect/turf_decal/tile/purple/opposingcorners,
 /turf/open/floor/iron/dark,
 /area/station/service/janitor)
-"qQD" = (
-/obj/machinery/mass_driver,
-/turf/open/space/basic,
-/area/space)
 "qQH" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
@@ -42866,6 +42858,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/cargo/storage)
 "wds" = (
@@ -70330,7 +70323,7 @@ jXz
 klq
 kSt
 kiv
-qQD
+gfQ
 gfQ
 gfQ
 gfQ
@@ -72883,9 +72876,9 @@ vuF
 ghd
 vuF
 wcZ
-hUc
-hUc
-hUc
+jWb
+jWb
+jWb
 isg
 isg
 jWb

@@ -2,6 +2,12 @@
 "a" = (
 /turf/template_noop,
 /area/template_noop)
+"b" = (
+/obj/effect/turf_decal/tile/neutral/opposingcorners{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium/blue,
+/area/shuttle/supply)
 "c" = (
 /obj/machinery/power/shuttle_engine/propulsion/burst/left,
 /turf/open/floor/plating/airless,
@@ -31,26 +37,38 @@
 /turf/open/floor/plating/airless,
 /area/shuttle/supply)
 "k" = (
-/obj/machinery/conveyor{
-	dir = 4;
-	id = "Cargo Belt"
-	},
 /obj/machinery/door/poddoor{
 	id = "QMLoaddoor";
 	name = "Supply Dock Loading Door"
 	},
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "CargoUnload"
+	},
 /turf/open/floor/plating,
 /area/shuttle/supply)
-"n" = (
-/obj/machinery/conveyor{
-	dir = 8;
-	id = "cargodelivery2"
+"l" = (
+/obj/effect/turf_decal/tile/neutral/anticorner{
+	dir = 8
 	},
+/turf/open/floor/mineral/titanium/blue,
+/area/shuttle/supply)
+"n" = (
 /obj/machinery/door/poddoor{
 	id = "QMLoaddoor2";
 	name = "Supply Dock Loading Door"
 	},
+/obj/machinery/conveyor{
+	id = "CargoLoad";
+	dir = 8
+	},
 /turf/open/floor/plating,
+/area/shuttle/supply)
+"o" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/supply)
 "p" = (
 /obj/machinery/door/airlock/titanium{
@@ -61,7 +79,7 @@
 /turf/open/floor/plating,
 /area/shuttle/supply)
 "s" = (
-/obj/effect/turf_decal/tile/neutral/half,
+/obj/effect/turf_decal/tile/neutral/anticorner,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/supply)
 "v" = (
@@ -76,7 +94,7 @@
 /area/shuttle/supply)
 "x" = (
 /obj/machinery/light/directional/west,
-/obj/effect/turf_decal/tile/neutral/full,
+/obj/effect/turf_decal/tile/neutral/opposingcorners,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/supply)
 "z" = (
@@ -84,9 +102,24 @@
 /obj/effect/turf_decal/tile/dark/full,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/supply)
+"A" = (
+/obj/effect/turf_decal/tile/neutral/anticorner{
+	dir = 4
+	},
+/turf/open/floor/mineral/titanium/blue,
+/area/shuttle/supply)
 "B" = (
-/obj/effect/turf_decal/tile/neutral/half{
+/obj/effect/turf_decal/tile/neutral/anticorner{
 	dir = 1
+	},
+/turf/open/floor/mineral/titanium/blue,
+/area/shuttle/supply)
+"C" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
 	},
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/supply)
@@ -112,7 +145,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/neutral/full,
+/obj/effect/turf_decal/tile/neutral/opposingcorners,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/supply)
 "J" = (
@@ -142,9 +175,22 @@
 "U" = (
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/supply)
+"V" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium/blue,
+/area/shuttle/supply)
 "W" = (
 /obj/structure/sign/nanotrasen,
 /turf/closed/wall/mineral/titanium,
+/area/shuttle/supply)
+"Y" = (
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/supply)
 
 (1,1,1) = {"
@@ -165,11 +211,11 @@ a
 L
 R
 J
-U
+Y
 U
 x
 U
-U
+o
 J
 R
 d
@@ -180,7 +226,7 @@ d
 J
 N
 U
-s
+l
 T
 B
 U
@@ -193,11 +239,11 @@ i
 d
 v
 U
-U
-T
-T
+b
 T
 U
+T
+b
 U
 J
 w
@@ -210,7 +256,7 @@ N
 U
 s
 T
-B
+A
 U
 P
 J
@@ -221,11 +267,11 @@ i
 L
 R
 z
-e
+C
 e
 F
 e
-e
+V
 f
 R
 d
