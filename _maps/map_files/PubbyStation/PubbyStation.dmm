@@ -3772,6 +3772,9 @@
 	req_access = list("shipping")
 	},
 /obj/machinery/door/firedoor,
+/obj/structure/desk_bell{
+	pixel_x = -7
+	},
 /turf/open/floor/iron,
 /area/station/cargo/sorting)
 "anR" = (
@@ -14478,7 +14481,8 @@
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "kitchenshutters";
-	name = "Kitchen Shutters"
+	name = "Kitchen Shutters";
+	dir = 4
 	},
 /obj/machinery/computer/security/telescreen/entertainment{
 	pixel_y = 32
@@ -14823,14 +14827,15 @@
 /area/station/service/kitchen)
 "bad" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "kitchenshutters";
-	name = "Kitchen Shutters"
-	},
 /obj/item/storage/fancy/donut_box,
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 8
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenshutters";
+	name = "Kitchen Shutters";
+	dir = 4
 	},
 /turf/open/floor/iron/dark,
 /area/station/service/kitchen)
@@ -15132,13 +15137,14 @@
 /area/station/service/kitchen)
 "bbl" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "kitchenshutters";
-	name = "Kitchen Shutters"
-	},
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 8
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenshutters";
+	name = "Kitchen Shutters";
+	dir = 4
 	},
 /turf/open/floor/iron/dark,
 /area/station/service/kitchen)
@@ -15683,6 +15689,9 @@
 /obj/machinery/door/poddoor/preopen{
 	id = "atmos";
 	name = "Atmospherics Security Door"
+	},
+/obj/structure/desk_bell{
+	pixel_y = 8
 	},
 /turf/open/floor/iron/dark,
 /area/station/engineering/lobby)
@@ -23342,9 +23351,6 @@
 /turf/open/floor/iron/dark,
 /area/station/security/prison)
 "bJH" = (
-/obj/machinery/camera/directional/south{
-	c_tag = "Research Division Entrance"
-	},
 /obj/machinery/light/directional/south,
 /obj/machinery/firealarm/directional/south,
 /obj/effect/turf_decal/tile/green/half/contrasted,
@@ -24152,16 +24158,13 @@
 /area/station/engineering/atmos/office)
 "bNb" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
-	dir = 1
-	},
 /obj/machinery/door/firedoor/heavy,
 /obj/effect/mapping_helpers/airlock/access/all/engineering/atmos,
 /obj/machinery/door/airlock/atmos/glass{
 	name = "Atmospherics Monitoring"
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/iron,
+/turf/open/floor/iron/dark,
 /area/station/engineering/atmos/hfr_room)
 "bNc" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
@@ -24430,7 +24433,7 @@
 	name = "Atmospherics Monitoring"
 	},
 /obj/structure/cable,
-/turf/open/floor/iron,
+/turf/open/floor/iron/dark,
 /area/station/engineering/atmos/hfr_room)
 "bOl" = (
 /obj/machinery/atmospherics/components/binary/pump{
@@ -31226,6 +31229,9 @@
 "cqE" = (
 /obj/effect/turf_decal/tile/green/anticorner/contrasted,
 /obj/structure/sign/poster/random/directional/south,
+/obj/machinery/camera/directional/south{
+	c_tag = "Research Division Entrance"
+	},
 /turf/open/floor/iron,
 /area/station/hallway/primary/aft)
 "cqG" = (
@@ -34057,6 +34063,9 @@
 "eEz" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/turf_decal/tile/yellow/half/contrasted{
+	dir = 1
+	},
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "eEJ" = (
@@ -37425,9 +37434,21 @@
 /turf/open/floor/iron,
 /area/station/engineering/lobby)
 "jIr" = (
-/obj/machinery/firealarm/directional/east,
-/turf/closed/wall/r_wall,
-/area/station/engineering/atmos/hfr_room)
+/obj/structure/table/reinforced,
+/obj/machinery/door/firedoor,
+/obj/effect/turf_decal/tile/red/half/contrasted{
+	dir = 8
+	},
+/obj/structure/desk_bell{
+	pixel_y = 12
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenshutters";
+	name = "Kitchen Shutters";
+	dir = 4
+	},
+/turf/open/floor/iron/dark,
+/area/station/service/kitchen)
 "jIA" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -43458,16 +43479,17 @@
 /area/station/maintenance/department/crew_quarters/dorms)
 "sbI" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "kitchenshutters";
-	name = "Kitchen Shutters"
-	},
 /obj/machinery/door/firedoor,
 /obj/structure/displaycase/forsale/kitchen,
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 8
 	},
 /obj/item/radio/intercom/directional/south,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenshutters";
+	name = "Kitchen Shutters";
+	dir = 4
+	},
 /turf/open/floor/iron/dark,
 /area/station/service/kitchen)
 "sbY" = (
@@ -45323,6 +45345,7 @@
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer{
 	dir = 4
 	},
+/obj/machinery/airalarm/directional/west,
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "uHd" = (
@@ -46107,6 +46130,7 @@
 /area/station/maintenance/department/science/xenobiology)
 "vRk" = (
 /obj/machinery/light/directional/south,
+/obj/machinery/firealarm/directional/south,
 /turf/open/floor/engine,
 /area/station/science/ordnance/storage)
 "vRm" = (
@@ -78299,7 +78323,7 @@ aZe
 aRN
 aYX
 bad
-bbl
+jIr
 bbl
 bbl
 sbI
@@ -86296,7 +86320,7 @@ bLv
 bDP
 qtA
 rvO
-jIr
+bST
 rEd
 bFk
 xFG
@@ -87071,7 +87095,7 @@ amp
 aaa
 aht
 aph
-bNh
+bKT
 bNh
 bPW
 bPe
