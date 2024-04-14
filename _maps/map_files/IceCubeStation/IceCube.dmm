@@ -13233,11 +13233,11 @@
 /turf/open/floor/wood,
 /area/station/service/bar)
 "gbQ" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/light/dim/directional/west,
-/turf/open/floor/iron/dark,
-/area/station/service/hydroponics)
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/turf/open/floor/iron/smooth,
+/area/station/science/xenobiology)
 "gbU" = (
 /obj/effect/spawner/structure/window,
 /turf/open/floor/plating,
@@ -21492,6 +21492,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/firealarm/directional/north,
+/obj/machinery/light/dim/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/service/hydroponics)
 "jWB" = (
@@ -27749,6 +27750,7 @@
 /area/station/maintenance/starboard/upper)
 "mMo" = (
 /obj/machinery/vending/cigarette,
+/obj/machinery/firealarm/directional/east,
 /turf/open/floor/stone,
 /area/station/service/bar)
 "mMy" = (
@@ -95152,7 +95154,7 @@ dGq
 dzs
 jWy
 pqd
-gbQ
+pqd
 fQB
 xGi
 noD
@@ -137580,7 +137582,7 @@ dgx
 dgx
 ezs
 nnQ
-eue
+gbQ
 wAt
 nnQ
 xef
