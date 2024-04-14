@@ -15645,6 +15645,12 @@
 	},
 /turf/open/floor/iron,
 /area/station/tcommsat/computer)
+"hnD" = (
+/obj/structure/closet/l3closet/scientist,
+/obj/item/extinguisher,
+/obj/structure/sign/xenobio_guide/directional/north,
+/turf/open/floor/iron/smooth,
+/area/station/science/xenobiology)
 "hnI" = (
 /obj/machinery/duct,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
@@ -140138,7 +140144,7 @@ hFB
 hFB
 hFB
 hFB
-jUC
+hnD
 jUC
 kJb
 rIO
