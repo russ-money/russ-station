@@ -17284,7 +17284,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/secondary/dock)
 "iaJ" = (
-/mob/living/simple_animal/slime,
+/mob/living/basic/slime,
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
 "iaL" = (
@@ -41553,7 +41553,7 @@
 /turf/open/floor/circuit/green,
 /area/station/science/robotics/mechbay)
 "ttg" = (
-/mob/living/simple_animal/slime/pet{
+/mob/living/basic/slime/pet{
 	slime_type = /datum/slime_type/purple;
 	desc = "The Science Divisions pet slime. Isn't it adorable when it bobbles around?";
 	name = "Bobbernaut"

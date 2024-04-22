@@ -25663,7 +25663,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
 "lYx" = (
-/mob/living/simple_animal/slime,
+/mob/living/basic/slime,
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
 "lYD" = (
@@ -32497,7 +32497,7 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
-/mob/living/simple_animal/slime/pet{
+/mob/living/basic/slime/pet{
 	slime_type = /datum/slime_type/purple;
 	desc = "The Science Divisions pet slime. Isn't it adorable when it bobbles around?";
 	name = "Bobbernaut"

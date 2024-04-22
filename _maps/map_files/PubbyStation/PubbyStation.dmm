@@ -21662,7 +21662,7 @@
 /turf/open/floor/iron/white,
 /area/station/ai_monitored/turret_protected/ai)
 "bBU" = (
-/mob/living/simple_animal/slime,
+/mob/living/basic/slime,
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
 "bBV" = (
