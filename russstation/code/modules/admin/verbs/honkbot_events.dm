@@ -1,8 +1,4 @@
-/client/proc/twitchmeteor(msg as text)
-	set category = "Server"
-	set desc = "Twitch Sent a Meteor"
-	set name = "Twitch Meteor"
-
+ADMIN_VERB(show_tip, R_ADMIN, "Twich Meteors", "Twitch sends a meteor.", ADMIN_CATEGORY_EVENTS)
 	if(!check_rights(R_ADMIN) || !check_rights(R_FUN))
 		log_admin("[key_name(usr)] attempted to use Twitch Meteor, but doesnt have rights to.")
 		message_admins("[key_name_admin(usr)] attempted to use Twitch Meteor, but doesnt have rights to.")
@@ -52,11 +48,7 @@
 	message_admins("[key_name_admin(usr)] sent a [msg] meteor to the station.")
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Twitch Meteor")
 
-/client/proc/twitch_command_announcement(msg as text)
-	set category = "Server"
-	set name = "Tsay" //Twitch say
-	set hidden = TRUE
-
+ADMIN_VERB(show_tip, R_ADMIN, "Twitch say", "Twitch sends a message.", ADMIN_CATEGORY_EVENTS)
 	if(!msg)
 		log_admin("[key_name(usr)] attempted to use Twitch Announcement, but didnt write anything.")
 		message_admins("[key_name_admin(usr)] attempted to use Twitch Announcement, but didnt write anything.")
