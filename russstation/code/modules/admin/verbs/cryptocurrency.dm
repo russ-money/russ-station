@@ -1,6 +1,6 @@
 // Admin panel for viewing the Cryptocurrency app
 // yoinked from newscaster admin button
-ADMIN_VERB(show_tip, R_ADMIN, "Manage Cryptocurrency", "Allows you to view and manage the active cryptocurrency.", ADMIN_CATEGORY_EVEMTS)
+ADMIN_VERB(manage_cryptocurrency, R_ADMIN, "Manage Cryptocurrency", "Allows you to view and manage the active cryptocurrency.", ADMIN_CATEGORY_EVENTS)
 	if (!istype(src, /datum/admins))
 		src = usr.client.holder
 	if (!istype(src, /datum/admins))

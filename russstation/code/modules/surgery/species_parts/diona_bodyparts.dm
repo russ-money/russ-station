@@ -19,6 +19,9 @@
 	dmg_overlay_type = null
 	burn_modifier = 1.5
 
+/obj/item/bodypart/chest/dwarf/get_butt_sprite()
+	return BUTT_SPRITE_FLOWERPOT
+
 /obj/item/bodypart/arm/left/diona
 	icon = 'russstation/icons/mob/mutant_bodyparts.dmi'
 	icon_static = 'russstation/icons/mob/mutant_bodyparts.dmi'

@@ -529,7 +529,6 @@
 				/obj/item/toy/figure/scientist,
 				/obj/item/toy/figure/syndie,
 				/obj/item/toy/figure/secofficer,
-				/obj/item/toy/figure/virologist,
 				/obj/item/toy/figure/warden,
 			)
 		if(186 to 206)

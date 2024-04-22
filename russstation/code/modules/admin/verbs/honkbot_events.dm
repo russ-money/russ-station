@@ -1,9 +1,4 @@
-ADMIN_VERB(show_tip, R_ADMIN, "Twich Meteors", "Twitch sends a meteor.", ADMIN_CATEGORY_EVENTS)
-	if(!check_rights(R_ADMIN) || !check_rights(R_FUN))
-		log_admin("[key_name(usr)] attempted to use Twitch Meteor, but doesnt have rights to.")
-		message_admins("[key_name_admin(usr)] attempted to use Twitch Meteor, but doesnt have rights to.")
-		return
-
+ADMIN_VERB(twitch_meteor, R_ADMIN, "Twitch Meteor", "Twitch sends a meteor.", ADMIN_CATEGORY_EVENTS, msg as text)
 	if(!msg)
 		log_admin("[key_name(usr)] attempted to use Twitch Meteor, but didnt write anything.")
 		message_admins("[key_name_admin(usr)] attempted to use Twitch Meteor, but didnt write anything.")
@@ -48,7 +43,7 @@ ADMIN_VERB(show_tip, R_ADMIN, "Twich Meteors", "Twitch sends a meteor.", ADMIN_C
 	message_admins("[key_name_admin(usr)] sent a [msg] meteor to the station.")
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Twitch Meteor")
 
-ADMIN_VERB(show_tip, R_ADMIN, "Twitch say", "Twitch sends a message.", ADMIN_CATEGORY_EVENTS)
+ADMIN_VERB(twitch_say, R_ADMIN, "Twitch say", "Twitch sends a message.", ADMIN_CATEGORY_EVENTS, msg as text)
 	if(!msg)
 		log_admin("[key_name(usr)] attempted to use Twitch Announcement, but didnt write anything.")
 		message_admins("[key_name_admin(usr)] attempted to use Twitch Announcement, but didnt write anything.")
