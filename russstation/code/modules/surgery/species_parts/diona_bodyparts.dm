@@ -19,7 +19,7 @@
 	dmg_overlay_type = null
 	burn_modifier = 1.5
 
-/obj/item/bodypart/chest/dwarf/get_butt_sprite()
+/obj/item/bodypart/chest/diona/get_butt_sprite()
 	return BUTT_SPRITE_FLOWERPOT
 
 /obj/item/bodypart/arm/left/diona

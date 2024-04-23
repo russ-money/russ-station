@@ -16,7 +16,7 @@
 	is_dimorphic = FALSE
 	wing_types = NONE
 
-/obj/item/bodypart/chest/dwarf/get_butt_sprite()
+/obj/item/bodypart/chest/skaven/get_butt_sprite()
 	return BUTT_SPRITE_CAT
 
 /obj/item/bodypart/arm/left/skaven

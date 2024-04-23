@@ -1,6 +1,5 @@
-ADMIN_VERB(honk_smite, R_ADMIN, "Honk", "Honk Smite.", ADMIN_CATEGORY_FUN, client/user, mob/living/target as mob)
+ADMIN_VERB(honk_smite, R_ADMIN, "Honk Smite", "Smite, but funny.", ADMIN_CATEGORY_FUN, mob/living/target as mob)
 	var/list/punishment_list = list(ADMIN_PUNISHMENT_SHAMEBRERO, ADMIN_PUNISHMENT_PONCHOSHAME)
-
 	var/punishment = input("Choose a punishment", "BIG GOOFS") as null|anything in punishment_list
 
 	if(QDELETED(target) || !punishment)
