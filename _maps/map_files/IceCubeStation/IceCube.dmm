@@ -12063,7 +12063,6 @@
 /area/station/maintenance/disposal/incinerator)
 "fAK" = (
 /obj/machinery/modular_computer/preset/cargochat/medical{
-	department_delivery_areas = list(/area/station/medical/storage)
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -41655,9 +41654,7 @@
 /area/station/security/brig)
 "twl" = (
 /obj/machinery/light/small/directional/north,
-/obj/machinery/modular_computer/preset/cargochat/science{
-	department_delivery_areas = list(/area/station/science)
-	},
+/obj/machinery/modular_computer/preset/cargochat/science
 /turf/open/floor/iron/dark,
 /area/station/science)
 "twv" = (

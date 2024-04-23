@@ -9100,9 +9100,7 @@
 /area/station/ai_monitored/command/storage/eva)
 "bXq" = (
 /obj/structure/sign/poster/random/directional/north,
-/obj/machinery/modular_computer/preset/cargochat/engineering{
-	department_delivery_areas = list(/area/station/engineering/lobby)
-	},
+/obj/machinery/modular_computer/preset/cargochat/engineering,
 /turf/open/floor/iron,
 /area/station/engineering/lobby)
 "bYs" = (
