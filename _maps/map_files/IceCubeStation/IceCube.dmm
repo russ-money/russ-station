@@ -32095,10 +32095,6 @@
 	dir = 8
 	},
 /obj/structure/closet/crate,
-/obj/machinery/conveyor{
-	id = "CargoLoad";
-	dir = 8
-	},
 /turf/open/floor/plating,
 /area/station/cargo/warehouse)
 "oLO" = (

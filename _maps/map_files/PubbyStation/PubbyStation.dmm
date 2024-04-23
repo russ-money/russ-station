@@ -3423,7 +3423,6 @@
 /area/station/security/execution/education)
 "amo" = (
 /obj/machinery/smartfridge/organ,
-/turf/closed/wall,
 /area/station/medical/surgery)
 "amp" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -7013,7 +7012,6 @@
 	name = "Genetics Lab"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/science/genetics,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/white,
 /area/station/science/genetics)
 "ayN" = (
