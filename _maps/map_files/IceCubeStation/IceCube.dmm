@@ -12063,7 +12063,7 @@
 /area/station/maintenance/disposal/incinerator)
 "fAK" = (
 /obj/machinery/modular_computer/preset/cargochat/medical{
-	department_delivery_areas = list(/area/station/medical/storage);
+	department_delivery_areas = list(/area/station/medical/storage)
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
