@@ -41654,7 +41654,7 @@
 /area/station/security/brig)
 "twl" = (
 /obj/machinery/light/small/directional/north,
-/obj/machinery/modular_computer/preset/cargochat/science
+/obj/machinery/modular_computer/preset/cargochat/science,
 /turf/open/floor/iron/dark,
 /area/station/science)
 "twv" = (
