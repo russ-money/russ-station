@@ -334,7 +334,7 @@
 	pixel_x = 2;
 	pixel_y = -1
 	},
-/obj/item/areaeditor/dwarf{
+/obj/item/blueprints/dwarf{
 	pixel_x = 2;
 	pixel_y = -2
 	},
