@@ -3854,7 +3854,7 @@
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/hop)
 "cbm" = (
-/obj/machinery/computer/department_orders/service{
+/obj/machinery/modular_computer/preset/cargochat/service{
 	dir = 4
 	},
 /turf/open/floor/iron,
@@ -14268,7 +14268,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
 	dir = 4
 	},
-/obj/effect/landmark/start/virologist,
 /obj/effect/turf_decal/tile/green{
 	dir = 4
 	},
@@ -15524,7 +15523,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/computer/department_orders/security{
+/obj/machinery/modular_computer/preset/cargochat/security{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -25312,7 +25311,7 @@
 /area/station/cargo/storage)
 "nEY" = (
 /obj/machinery/light/directional/north,
-/obj/machinery/computer/department_orders/science,
+/obj/machinery/modular_computer/preset/cargochat/science,
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/research)
 "nEZ" = (
@@ -37891,7 +37890,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/fore)
 "tVM" = (
-/obj/machinery/computer/department_orders/medical{
+/obj/machinery/modular_computer/preset/cargochat/medical{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -42895,7 +42894,7 @@
 /area/station/security/execution/transfer)
 "wrq" = (
 /obj/machinery/camera/autoname/directional/east,
-/obj/machinery/computer/department_orders/engineering{
+/obj/machinery/modular_computer/preset/cargochat/engineering{
 	dir = 8
 	},
 /turf/open/floor/iron,

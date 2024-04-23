@@ -9100,7 +9100,7 @@
 /area/station/ai_monitored/command/storage/eva)
 "bXq" = (
 /obj/structure/sign/poster/random/directional/north,
-/obj/machinery/computer/department_orders/engineering{
+/obj/machinery/modular_computer/preset/cargochat/engineering{
 	department_delivery_areas = list(/area/station/engineering/lobby)
 	},
 /turf/open/floor/iron,
@@ -15919,7 +15919,7 @@
 	dir = 4
 	},
 /obj/machinery/camera/autoname/directional/east,
-/obj/machinery/computer/department_orders/security{
+/obj/machinery/modular_computer/preset/cargochat/security{
 	dir = 8
 	},
 /turf/open/floor/iron,
@@ -20793,7 +20793,7 @@
 "ocm" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
-/obj/machinery/computer/department_orders/science{
+/obj/machinery/modular_computer/preset/cargochat/science{
 	department_delivery_areas = list(/area/station/science/lab)
 	},
 /turf/open/floor/iron/showroomfloor,
@@ -22350,7 +22350,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
-/obj/machinery/computer/department_orders/service{
+/obj/machinery/modular_computer/preset/cargochat/service{
 	department_delivery_areas = list(/area/station/service/bar)
 	},
 /turf/open/floor/wood,
@@ -24906,7 +24906,7 @@
 /area/station/engineering/atmos)
 "rFZ" = (
 /obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/machinery/computer/department_orders/medical{
+/obj/machinery/modular_computer/preset/cargochat/medical{
 	dir = 4
 	},
 /obj/machinery/requests_console/auto_name/directional/west,
