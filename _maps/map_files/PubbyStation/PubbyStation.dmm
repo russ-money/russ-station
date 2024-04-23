@@ -5438,7 +5438,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/yellow/fourcorners,
-/obj/structure/secure_safe/caps_spare/directional/east,
+/obj/structure/secure_safe/caps_spare,
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
 "atY" = (
