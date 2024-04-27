@@ -28952,14 +28952,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/science/robotics/lab)
-"nSq" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/cable,
-/turf/open/floor/iron/showroomfloor,
-/area/station/medical/virology)
 "nSr" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
 	dir = 4
@@ -30695,12 +30687,6 @@
 /obj/structure/closet/emcloset,
 /turf/open/floor/plating,
 /area/station/maintenance/aft)
-"oXv" = (
-/obj/machinery/modular_computer/preset/cargochat/security{
-	dir = 8
-	},
-/turf/open/floor/iron/dark,
-/area/station/security/brig)
 "oXx" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
@@ -64595,7 +64581,7 @@ btn
 btn
 btn
 btn
-oXv
+ibb
 ibb
 sZC
 btn
@@ -84156,7 +84142,7 @@ wNO
 xFb
 jiL
 stp
-nSq
+nRg
 vRJ
 wsE
 xCt

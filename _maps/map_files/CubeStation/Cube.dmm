@@ -28130,21 +28130,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/cargo/sorting)
-"ped" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/green{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/green{
-	dir = 1
-	},
-/turf/open/floor/iron/white,
-/area/station/medical/virology)
 "peh" = (
 /obj/structure/table,
 /obj/machinery/light/directional/east,
@@ -37889,12 +37874,6 @@
 /obj/structure/sign/poster/contraband/random/directional/south,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/fore)
-"tVM" = (
-/obj/machinery/modular_computer/preset/cargochat/medical{
-	dir = 1
-	},
-/turf/open/floor/iron/dark,
-/area/station/medical/medbay/central)
 "tVN" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -80054,7 +80033,7 @@ fNl
 xmF
 mgo
 rdk
-tVM
+lot
 xJE
 enz
 wnS
@@ -81883,7 +81862,7 @@ eSD
 wLG
 lOu
 wLG
-ped
+hGR
 wLG
 uvK
 fAd
@@ -82337,7 +82316,7 @@ qDU
 wLG
 rgI
 wLG
-ped
+hGR
 rqD
 scf
 fAd

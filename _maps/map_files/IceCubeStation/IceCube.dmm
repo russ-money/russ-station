@@ -15386,12 +15386,6 @@
 	dir = 1
 	},
 /area/station/medical/chemistry)
-"hhm" = (
-/obj/machinery/modular_computer/preset/cargochat/engineering{
-	dir = 1
-	},
-/turf/open/floor/iron/dark,
-/area/station/engineering/break_room)
 "hhn" = (
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/engine,
@@ -28757,13 +28751,6 @@
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
-"nip" = (
-/obj/effect/turf_decal/tile/green{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/green,
-/turf/open/floor/iron/white,
-/area/station/medical/virology)
 "nix" = (
 /obj/structure/table,
 /obj/item/storage/toolbox/electrical{
@@ -84402,7 +84389,7 @@ kbV
 dst
 hFt
 cNg
-hhm
+dNF
 mEH
 aap
 elp
@@ -97168,7 +97155,7 @@ hkW
 hkW
 hkW
 fQU
-nip
+iiV
 jae
 gYe
 iLt
