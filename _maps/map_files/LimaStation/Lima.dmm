@@ -9777,7 +9777,6 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/machinery/modular_computer/preset/cargochat/science,
 /turf/open/floor/iron/dark,
 /area/station/science/research)
 "dyY" = (
@@ -21972,11 +21971,8 @@
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit)
 "jSa" = (
-/obj/machinery/modular_computer/preset/cargochat/medical{
-	dir = 8
-	},
 /turf/open/floor/iron/dark,
-/area/station/medical/storage)
+/area/station/security/brig)
 "jSj" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
@@ -35603,7 +35599,6 @@
 	},
 /obj/effect/mapping_helpers/requests_console/supplies,
 /obj/effect/mapping_helpers/requests_console/assistance,
-/obj/machinery/modular_computer/preset/cargochat/engineering,
 /obj/effect/turf_decal/siding/yellow,
 /turf/open/floor/iron/dark,
 /area/station/engineering/break_room)
@@ -35870,9 +35865,6 @@
 /area/station/engineering/atmos)
 "sbY" = (
 /obj/machinery/light/small/directional/east,
-/obj/machinery/modular_computer/preset/cargochat/service{
-	dir = 8
-	},
 /turf/open/floor/iron,
 /area/station/hallway/secondary/service)
 "scd" = (
@@ -64581,7 +64573,7 @@ btn
 btn
 btn
 btn
-ibb
+jSa
 ibb
 sZC
 btn
@@ -86434,7 +86426,7 @@ goG
 gTM
 hLr
 evM
-jSa
+kvd
 kZx
 wPB
 gML

@@ -474,9 +474,6 @@
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 4
 	},
-/obj/machinery/modular_computer/preset/cargochat/security{
-	dir = 8
-	},
 /turf/open/floor/iron,
 /area/station/security/lockers)
 "abw" = (
@@ -9100,7 +9097,6 @@
 /area/station/ai_monitored/command/storage/eva)
 "bXq" = (
 /obj/structure/sign/poster/random/directional/north,
-/obj/machinery/modular_computer/preset/cargochat/engineering,
 /turf/open/floor/iron,
 /area/station/engineering/lobby)
 "bYs" = (
@@ -20788,12 +20784,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
-"ocm" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
-/obj/machinery/modular_computer/preset/cargochat/science,
-/turf/open/floor/iron/showroomfloor,
-/area/station/science/lab)
 "ocn" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
@@ -24900,9 +24890,6 @@
 /area/station/engineering/atmos)
 "rFZ" = (
 /obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/machinery/modular_computer/preset/cargochat/medical{
-	dir = 4
-	},
 /obj/machinery/requests_console/auto_name/directional/west,
 /turf/open/floor/iron/checker,
 /area/station/medical/storage)
@@ -27151,7 +27138,6 @@
 	dir = 4
 	},
 /obj/structure/sign/poster/contraband/random/directional/north,
-/obj/machinery/modular_computer/preset/cargochat/service,
 /turf/open/floor/wood,
 /area/station/service/bar)
 "tRX" = (
@@ -72595,7 +72581,7 @@ act
 act
 xgZ
 ajW
-ocm
+nvc
 kwr
 wNI
 qCF

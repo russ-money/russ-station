@@ -3422,8 +3422,8 @@
 /turf/closed/wall,
 /area/station/security/execution/education)
 "amo" = (
-/turf/open/floor/plating,
 /obj/machinery/smartfridge/organ,
+/turf/open/floor/plating,
 /area/station/medical/surgery)
 "amp" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -13585,7 +13585,6 @@
 	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/modular_computer/preset/cargochat/service,
 /turf/open/floor/iron/dark,
 /area/station/hallway/secondary/service)
 "aWi" = (
@@ -33216,9 +33215,6 @@
 /turf/open/space/basic,
 /area/station/service/chapel/asteroid/monastery)
 "duF" = (
-/obj/machinery/modular_computer/preset/cargochat/science{
-	dir = 4
-	},
 /obj/structure/window/reinforced/spawner/directional/north{
 	pixel_y = 2
 	},
@@ -43053,6 +43049,9 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/engine,
 /area/station/science/ordnance/storage)
+"rvX" = (
+/turf/open/floor/iron/dark,
+/area/station/security)
 "rxa" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable,
@@ -47123,9 +47122,6 @@
 	},
 /area/station/hallway/secondary/exit/departure_lounge)
 "xhT" = (
-/obj/machinery/modular_computer/preset/cargochat/medical{
-	dir = 8
-	},
 /obj/effect/turf_decal/tile/blue/half/contrasted{
 	dir = 4
 	},
@@ -66955,7 +66951,7 @@ ahl
 ahC
 ahX
 agP
-ajb
+rvX
 ajb
 akz
 alo
@@ -81959,7 +81955,7 @@ bZc
 bZJ
 hsx
 cZF
-aey
+cam
 aey
 ory
 jbG

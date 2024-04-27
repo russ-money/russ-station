@@ -3853,12 +3853,6 @@
 /obj/machinery/pdapainter,
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/hop)
-"cbm" = (
-/obj/machinery/modular_computer/preset/cargochat/service{
-	dir = 4
-	},
-/turf/open/floor/iron,
-/area/station/hallway/secondary/service)
 "cbx" = (
 /obj/effect/spawner/structure/window,
 /turf/open/floor/plating,
@@ -30775,9 +30769,8 @@
 /turf/open/floor/plating,
 /area/station/maintenance/port/fore)
 "qvJ" = (
-/obj/machinery/modular_computer/preset/cargochat/science,
-/turf/open/floor/iron/showroomfloor,
-/area/station/science/research)
+/turf/open/floor/iron/dark,
+/area/station/medical/medbay/central)
 "qwk" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -35509,9 +35502,6 @@
 	dir = 9
 	},
 /obj/structure/sign/poster/official/random/directional/south,
-/obj/machinery/modular_computer/preset/cargochat/security{
-	dir = 1
-	},
 /turf/open/floor/iron,
 /area/station/security)
 "sJp" = (
@@ -42873,9 +42863,6 @@
 /area/station/security/execution/transfer)
 "wrq" = (
 /obj/machinery/camera/autoname/directional/east,
-/obj/machinery/modular_computer/preset/cargochat/engineering{
-	dir = 8
-	},
 /turf/open/floor/iron,
 /area/station/engineering/break_room)
 "wrr" = (
@@ -63035,7 +63022,7 @@ mMt
 qWI
 lGe
 mcY
-qvJ
+vFY
 qup
 iyc
 fMY
@@ -80033,7 +80020,7 @@ fNl
 xmF
 mgo
 rdk
-lot
+qvJ
 xJE
 enz
 wnS
@@ -80077,7 +80064,7 @@ hVG
 muZ
 fWp
 bHN
-cbm
+lMw
 rsT
 ewG
 ewG
