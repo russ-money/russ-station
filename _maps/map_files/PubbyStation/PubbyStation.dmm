@@ -2349,7 +2349,7 @@
 /turf/open/floor/plating,
 /area/station/medical/chemistry)
 "ajb" = (
-/obj/machinery/computer/department_orders/security{
+/obj/machinery/modular_computer/preset/cargochat/security{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -3423,7 +3423,7 @@
 /area/station/security/execution/education)
 "amo" = (
 /obj/machinery/smartfridge/organ,
-/turf/closed/wall,
+/turf/open/floor/plating,
 /area/station/medical/surgery)
 "amp" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -3446,12 +3446,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/security/execution/transfer)
-"ams" = (
-/obj/machinery/modular_computer/preset/cargochat/security{
-	dir = 4
-	},
-/turf/open/floor/iron/dark,
-/area/station/security)
 "amt" = (
 /obj/effect/turf_decal/tile/blue/anticorner/contrasted,
 /turf/open/floor/iron/white,
@@ -5438,7 +5432,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/yellow/fourcorners,
-/obj/structure/secure_safe/caps_spare/directional/east,
+/obj/structure/secure_safe/caps_spare,
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
 "atY" = (
@@ -7013,7 +7007,6 @@
 	name = "Genetics Lab"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/science/genetics,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/white,
 /area/station/science/genetics)
 "ayN" = (
@@ -13592,7 +13585,6 @@
 	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/modular_computer/preset/cargochat/service,
 /turf/open/floor/iron/dark,
 /area/station/hallway/secondary/service)
 "aWi" = (
@@ -20313,7 +20305,7 @@
 /turf/open/floor/carpet/purple,
 /area/station/medical/psychology)
 "bxa" = (
-/obj/machinery/computer/department_orders/science{
+/obj/machinery/modular_computer/preset/cargochat/science{
 	dir = 4
 	},
 /obj/structure/extinguisher_cabinet{
@@ -21662,7 +21654,7 @@
 /turf/open/floor/iron/white,
 /area/station/ai_monitored/turret_protected/ai)
 "bBU" = (
-/mob/living/simple_animal/slime,
+/mob/living/basic/slime,
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
 "bBV" = (
@@ -23442,7 +23434,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/disposal)
 "bJV" = (
-/obj/machinery/computer/department_orders/service{
+/obj/machinery/modular_computer/preset/cargochat/service{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -33223,9 +33215,6 @@
 /turf/open/space/basic,
 /area/station/service/chapel/asteroid/monastery)
 "duF" = (
-/obj/machinery/modular_computer/preset/cargochat/science{
-	dir = 4
-	},
 /obj/structure/window/reinforced/spawner/directional/north{
 	pixel_y = 2
 	},
@@ -40436,7 +40425,6 @@
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "oat" = (
-/obj/effect/landmark/start/virologist,
 /obj/structure/chair/office/light{
 	dir = 1
 	},
@@ -42993,12 +42981,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/hallway/primary/aft)
-"rtE" = (
-/obj/machinery/computer/department_orders/engineering{
-	dir = 8
-	},
-/turf/open/floor/iron,
-/area/station/engineering/main)
 "rtG" = (
 /obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
@@ -43067,6 +43049,9 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/engine,
 /area/station/science/ordnance/storage)
+"rvX" = (
+/turf/open/floor/iron/dark,
+/area/station/security)
 "rxa" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable,
@@ -47137,9 +47122,6 @@
 	},
 /area/station/hallway/secondary/exit/departure_lounge)
 "xhT" = (
-/obj/machinery/computer/department_orders/medical{
-	dir = 8
-	},
 /obj/effect/turf_decal/tile/blue/half/contrasted{
 	dir = 4
 	},
@@ -66969,8 +66951,8 @@ ahl
 ahC
 ahX
 agP
+rvX
 ajb
-ams
 akz
 alo
 alY
@@ -81973,7 +81955,7 @@ bZc
 bZJ
 hsx
 cZF
-rtE
+cam
 aey
 ory
 jbG

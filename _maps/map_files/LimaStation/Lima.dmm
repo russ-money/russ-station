@@ -9777,7 +9777,6 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/machinery/modular_computer/preset/cargochat/science,
 /turf/open/floor/iron/dark,
 /area/station/science/research)
 "dyY" = (
@@ -18753,7 +18752,7 @@
 /turf/open/floor/iron/dark,
 /area/station/engineering/atmos)
 "ibb" = (
-/obj/machinery/computer/department_orders/security{
+/obj/machinery/modular_computer/preset/cargochat/security{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -21972,11 +21971,8 @@
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit)
 "jSa" = (
-/obj/machinery/computer/department_orders/medical{
-	dir = 8
-	},
 /turf/open/floor/iron/dark,
-/area/station/medical/storage)
+/area/station/security/brig)
 "jSj" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
@@ -25663,7 +25659,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
 "lYx" = (
-/mob/living/simple_animal/slime,
+/mob/living/basic/slime,
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
 "lYD" = (
@@ -26049,7 +26045,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/central)
 "mii" = (
-/obj/machinery/computer/department_orders/science,
+/obj/machinery/modular_computer/preset/cargochat/science,
 /turf/open/floor/iron/dark,
 /area/station/science/research)
 "miz" = (
@@ -28952,15 +28948,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/science/robotics/lab)
-"nSq" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
-	dir = 4
-	},
-/obj/effect/landmark/start/virologist,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/cable,
-/turf/open/floor/iron/showroomfloor,
-/area/station/medical/virology)
 "nSr" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
 	dir = 4
@@ -30696,12 +30683,6 @@
 /obj/structure/closet/emcloset,
 /turf/open/floor/plating,
 /area/station/maintenance/aft)
-"oXv" = (
-/obj/machinery/modular_computer/preset/cargochat/security{
-	dir = 8
-	},
-/turf/open/floor/iron/dark,
-/area/station/security/brig)
 "oXx" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
@@ -32497,7 +32478,7 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
-/mob/living/simple_animal/slime/pet{
+/mob/living/basic/slime/pet{
 	slime_type = /datum/slime_type/purple;
 	desc = "The Science Divisions pet slime. Isn't it adorable when it bobbles around?";
 	name = "Bobbernaut"
@@ -35618,7 +35599,6 @@
 	},
 /obj/effect/mapping_helpers/requests_console/supplies,
 /obj/effect/mapping_helpers/requests_console/assistance,
-/obj/machinery/computer/department_orders/engineering,
 /obj/effect/turf_decal/siding/yellow,
 /turf/open/floor/iron/dark,
 /area/station/engineering/break_room)
@@ -35885,9 +35865,6 @@
 /area/station/engineering/atmos)
 "sbY" = (
 /obj/machinery/light/small/directional/east,
-/obj/machinery/modular_computer/preset/cargochat/service{
-	dir = 8
-	},
 /turf/open/floor/iron,
 /area/station/hallway/secondary/service)
 "scd" = (
@@ -36431,7 +36408,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/aft)
 "ssf" = (
-/obj/machinery/computer/department_orders/service{
+/obj/machinery/modular_computer/preset/cargochat/service{
 	dir = 8
 	},
 /turf/open/floor/iron,
@@ -42388,7 +42365,6 @@
 /area/station/science/lab)
 "vPb" = (
 /obj/structure/chair/office/light,
-/obj/effect/landmark/start/virologist,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -64597,7 +64573,7 @@ btn
 btn
 btn
 btn
-oXv
+jSa
 ibb
 sZC
 btn
@@ -84158,7 +84134,7 @@ wNO
 xFb
 jiL
 stp
-nSq
+nRg
 vRJ
 wsE
 xCt
@@ -86450,7 +86426,7 @@ goG
 gTM
 hLr
 evM
-jSa
+kvd
 kZx
 wPB
 gML

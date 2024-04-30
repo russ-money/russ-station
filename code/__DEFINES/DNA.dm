@@ -40,9 +40,6 @@
 
 #define DNA_UNI_IDENTITY_BLOCKS 8
 
-/// This number needs to equal the total number of DNA blocks
-#define DNA_FEATURE_BLOCKS 18 // honk -- 3 more than TG to hold Diona Hair (was 15); !!! update "code/__DEFINES/~russ_defines/DNA.dm" as well if changed !!!
-
 #define DNA_MUTANT_COLOR_BLOCK 1
 #define DNA_ETHEREAL_COLOR_BLOCK 2
 #define DNA_LIZARD_MARKINGS_BLOCK 3
@@ -58,6 +55,10 @@
 #define DNA_MOTH_MARKINGS_BLOCK 13
 #define DNA_MUSHROOM_CAPS_BLOCK 14
 #define DNA_POD_HAIR_BLOCK 15
+#define DNA_MONKEY_TAIL_BLOCK 16
+
+/// This number needs to equal the total number of DNA blocks
+#define DNA_FEATURE_BLOCKS 18 // honk -- 3 more than TG to hold Diona Hair (was 15); !!! update "code/__DEFINES/~russ_defines/DNA.dm" as well if changed !!!
 
 #define DNA_SEQUENCE_LENGTH 4
 #define DNA_MUTATION_BLOCKS 8
@@ -96,7 +97,6 @@
 #define ORGAN_SLOT_EXTERNAL_HORNS "horns"
 #define ORGAN_SLOT_EXTERNAL_WINGS "wings"
 #define ORGAN_SLOT_EXTERNAL_ANTENNAE "antennae"
-#define ORGAN_SLOT_EXTERNAL_BODYMARKINGS "bodymarkings"
 #define ORGAN_SLOT_EXTERNAL_POD_HAIR "pod_hair"
 
 /// Xenomorph organ slots

@@ -1,11 +1,11 @@
-/obj/item/areaeditor/dwarf
+/obj/item/blueprints/dwarf
 	name = "embarkment claim"
 	desc = "A land grant from the nobles for claiming Dwarven land."
 	color = "#aa7c5a"
 	fluffnotice = "For dwarves only. Use to embark further into this strange land. Strike the earth!"
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF // it's like station blueprints, important
 
-/obj/item/areaeditor/dwarf/attack_self(mob/user)
+/obj/item/blueprints/dwarf/attack_self(mob/user)
 	add_fingerprint(user)
 	// only lavaland dwarves can use them
 	if(!islavalanddwarf(usr))

@@ -285,7 +285,7 @@
 			change_on(FALSE)
 			return
 	else
-		use_power(power_consumed)
+		use_energy(power_consumed)
 
 	// progress is how much power was used and not penalized
 	var/raw_progress = power_consumed / overclock_penalty

@@ -3853,12 +3853,6 @@
 /obj/machinery/pdapainter,
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/hop)
-"cbm" = (
-/obj/machinery/computer/department_orders/service{
-	dir = 4
-	},
-/turf/open/floor/iron,
-/area/station/hallway/secondary/service)
 "cbx" = (
 /obj/effect/spawner/structure/window,
 /turf/open/floor/plating,
@@ -14268,7 +14262,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
 	dir = 4
 	},
-/obj/effect/landmark/start/virologist,
 /obj/effect/turf_decal/tile/green{
 	dir = 4
 	},
@@ -15524,7 +15517,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/computer/department_orders/security{
+/obj/machinery/modular_computer/preset/cargochat/security{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -25312,7 +25305,7 @@
 /area/station/cargo/storage)
 "nEY" = (
 /obj/machinery/light/directional/north,
-/obj/machinery/computer/department_orders/science,
+/obj/machinery/modular_computer/preset/cargochat/science,
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/research)
 "nEZ" = (
@@ -27297,7 +27290,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},
-/mob/living/simple_animal/slime/pet{
+/mob/living/basic/slime/pet{
 	slime_type = /datum/slime_type/purple;
 	desc = "The Science Divisions pet slime. Isn't it adorable when it bobbles around?";
 	name = "Bobbernaut"
@@ -27956,7 +27949,7 @@
 /obj/machinery/light/floor{
 	brightness = 10
 	},
-/mob/living/simple_animal/slime,
+/mob/living/basic/slime,
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
 "oZT" = (
@@ -28131,21 +28124,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/cargo/sorting)
-"ped" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/green{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/green{
-	dir = 1
-	},
-/turf/open/floor/iron/white,
-/area/station/medical/virology)
 "peh" = (
 /obj/structure/table,
 /obj/machinery/light/directional/east,
@@ -30791,9 +30769,8 @@
 /turf/open/floor/plating,
 /area/station/maintenance/port/fore)
 "qvJ" = (
-/obj/machinery/modular_computer/preset/cargochat/science,
-/turf/open/floor/iron/showroomfloor,
-/area/station/science/research)
+/turf/open/floor/iron/dark,
+/area/station/medical/medbay/central)
 "qwk" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -35525,9 +35502,6 @@
 	dir = 9
 	},
 /obj/structure/sign/poster/official/random/directional/south,
-/obj/machinery/modular_computer/preset/cargochat/security{
-	dir = 1
-	},
 /turf/open/floor/iron,
 /area/station/security)
 "sJp" = (
@@ -37890,12 +37864,6 @@
 /obj/structure/sign/poster/contraband/random/directional/south,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/fore)
-"tVM" = (
-/obj/machinery/computer/department_orders/medical{
-	dir = 1
-	},
-/turf/open/floor/iron/dark,
-/area/station/medical/medbay/central)
 "tVN" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -42895,9 +42863,6 @@
 /area/station/security/execution/transfer)
 "wrq" = (
 /obj/machinery/camera/autoname/directional/east,
-/obj/machinery/computer/department_orders/engineering{
-	dir = 8
-	},
 /turf/open/floor/iron,
 /area/station/engineering/break_room)
 "wrr" = (
@@ -63057,7 +63022,7 @@ mMt
 qWI
 lGe
 mcY
-qvJ
+vFY
 qup
 iyc
 fMY
@@ -80055,7 +80020,7 @@ fNl
 xmF
 mgo
 rdk
-tVM
+qvJ
 xJE
 enz
 wnS
@@ -80099,7 +80064,7 @@ hVG
 muZ
 fWp
 bHN
-cbm
+lMw
 rsT
 ewG
 ewG
@@ -81884,7 +81849,7 @@ eSD
 wLG
 lOu
 wLG
-ped
+hGR
 wLG
 uvK
 fAd
@@ -82338,7 +82303,7 @@ qDU
 wLG
 rgI
 wLG
-ped
+hGR
 rqD
 scf
 fAd

@@ -126,13 +126,16 @@
 	UnregisterSignal(organ_owner, COMSIG_LIVING_DEATH)
 	return succeeded
 
+/obj/item/organ/external/tail/proc/get_butt_sprite()
+	return null
+
 ///Tail parent type, with wagging functionality
 /datum/bodypart_overlay/mutant/tail
 	layers = EXTERNAL_FRONT|EXTERNAL_BEHIND
 	var/wagging = FALSE
 
 /datum/bodypart_overlay/mutant/tail/get_base_icon_state()
-	return (wagging ? "wagging_" : "") + sprite_datum.icon_state //add the wagging tag if we be wagging
+	return "[wagging ? "wagging_" : ""][sprite_datum.icon_state]" //add the wagging tag if we be wagging
 
 /datum/bodypart_overlay/mutant/tail/can_draw_on_bodypart(mob/living/carbon/human/human)
 	if(human.wear_suit && (human.wear_suit.flags_inv & HIDEJUMPSUIT))
@@ -147,16 +150,24 @@
 
 	wag_flags = WAG_ABLE
 
+/datum/bodypart_overlay/mutant/tail/get_global_feature_list()
+	return GLOB.tails_list_human
+
+/obj/item/organ/external/tail/cat/get_butt_sprite()
+	return BUTT_SPRITE_CAT
+
 ///Cat tail bodypart overlay
 /datum/bodypart_overlay/mutant/tail/cat
 	feature_key = "tail_cat"
 	color_source = ORGAN_COLOR_HAIR
 
-/datum/bodypart_overlay/mutant/tail/cat/get_global_feature_list()
-	return GLOB.tails_list_human
-
 /obj/item/organ/external/tail/monkey
+	name = "monkey tail"
+	preference = "feature_monkey_tail"
+
 	bodypart_overlay = /datum/bodypart_overlay/mutant/tail/monkey
+
+	dna_block = DNA_MONKEY_TAIL_BLOCK
 
 ///Monkey tail bodypart overlay
 /datum/bodypart_overlay/mutant/tail/monkey

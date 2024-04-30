@@ -1,11 +1,5 @@
-/client/proc/honk_smite(mob/living/target as mob)
-	set name = "Honk"
-	set category = "Admin.Fun"
-	if(!check_rights(R_ADMIN) || !check_rights(R_FUN))
-		return
-
+ADMIN_VERB(honk_smite, R_ADMIN, "Honk Smite", "Smite, but funny.", ADMIN_CATEGORY_FUN, mob/living/target as mob)
 	var/list/punishment_list = list(ADMIN_PUNISHMENT_SHAMEBRERO, ADMIN_PUNISHMENT_PONCHOSHAME)
-
 	var/punishment = input("Choose a punishment", "BIG GOOFS") as null|anything in punishment_list
 
 	if(QDELETED(target) || !punishment)
@@ -33,11 +27,9 @@
 				var/obj/item/clothing/suit/costume/poncho/ponchoshame/S = new /obj/item/clothing/suit/costume/poncho/ponchoshame(H.loc)
 				H.equip_to_slot_or_del(S, ITEM_SLOT_OCLOTHING)
 
-	punish_log(target, punishment)
+	user.punish_log(target, punishment)
 
-/client/proc/admin_force_cancel_shuttle()
-	set category = "Admin"
-	set name = "Force Cancel Shuttle"
+ADMIN_VERB(fcancel_shuttle, R_ADMIN, "Force Cancel Shuttle", "Forcefully cancels shuttle.", ADMIN_CATEGORY_MAIN)
 	if(!check_rights(0))
 		return
 	if(alert(src, "You sure?", "Confirm", "Yes", "No") != "Yes")

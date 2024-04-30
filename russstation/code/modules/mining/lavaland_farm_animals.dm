@@ -3,7 +3,7 @@
 	desc = "Milk em or tip em. We don't judge here."
 	color = "#CC9900"
 	mob_biotypes = MOB_BEAST
-	habitable_atmos = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
+	habitable_atmos = null
 	butcher_results = list(
 		/obj/item/food/meat/slab = 6,
 		/obj/item/stack/sheet/animalhide/generic = 8,
@@ -30,7 +30,7 @@
 		/obj/item/stack/sheet/bone = 2,
 		/obj/item/food/egg/lavaegg = 1
 	)
-	habitable_atmos = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
+	habitable_atmos = null
 	minimum_survivable_temperature = 255
 	maximum_survivable_temperature = 360
 
@@ -58,7 +58,7 @@
 		/obj/item/food/meat/slab/chicken = 1,
 		/obj/item/stack/sheet/bone = 1,
 	)
-	habitable_atmos = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
+	habitable_atmos = null
 	minimum_survivable_temperature = 255
 	maximum_survivable_temperature = 360
 	grow_as = /mob/living/basic/chicken/lavaland

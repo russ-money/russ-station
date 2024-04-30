@@ -16,6 +16,9 @@
 	is_dimorphic = FALSE
 	wing_types = NONE
 
+/obj/item/bodypart/chest/skaven/get_butt_sprite()
+	return BUTT_SPRITE_CAT
+
 /obj/item/bodypart/arm/left/skaven
 	icon = 'russstation/icons/mob/human_parts_greyscale.dmi'
 	icon_static = 'russstation/icons/mob/human_parts_greyscale.dmi'
