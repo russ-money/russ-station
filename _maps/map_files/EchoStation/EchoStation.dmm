@@ -4998,9 +4998,10 @@
 /turf/open/floor/iron,
 /area/station/security/brig)
 "cLZ" = (
-/obj/effect/mapping_helpers/airalarm/tlv_no_checks,
-/turf/open/space/basic,
-/area/space)
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/secure_safe/caps_spare,
+/turf/open/floor/iron/dark,
+/area/station/command/bridge)
 "cMd" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -22500,6 +22501,7 @@
 	dir = 1
 	},
 /obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/south,
 /turf/open/floor/plating,
 /area/station/engineering/supermatter/room)
 "mmP" = (
@@ -37512,9 +37514,6 @@
 /obj/machinery/camera/directional/west{
 	c_tag = "Bridge West";
 	name = "Bridge West"
-	},
-/obj/structure/secure_safe/caps_spare{
-	pixel_x = -27
 	},
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
@@ -52655,7 +52654,7 @@ jjW
 jjW
 jjW
 jjW
-cLZ
+jjW
 jjW
 jjW
 jjW
@@ -81062,7 +81061,7 @@ wCP
 jjW
 jjW
 xst
-oKc
+cLZ
 uej
 xIZ
 wvH

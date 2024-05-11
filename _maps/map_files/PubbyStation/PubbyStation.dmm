@@ -5432,7 +5432,6 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/yellow/fourcorners,
-/obj/structure/secure_safe/caps_spare,
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
 "atY" = (
@@ -42030,6 +42029,11 @@
 /obj/structure/extinguisher_cabinet,
 /turf/closed/wall/r_wall,
 /area/station/science/xenobiology)
+"qdd" = (
+/obj/structure/cable,
+/obj/structure/secure_safe/caps_spare,
+/turf/open/floor/iron/dark,
+/area/station/command/bridge)
 "qdg" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -79305,7 +79309,7 @@ asS
 asS
 asS
 aya
-oQp
+qdd
 aAB
 aBs
 aCM

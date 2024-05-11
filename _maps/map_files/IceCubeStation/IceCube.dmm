@@ -24993,8 +24993,8 @@
 /turf/open/floor/iron/white,
 /area/station/medical/medbay)
 "lEt" = (
-/obj/structure/closet/crate/bin,
 /obj/structure/extinguisher_cabinet/directional/south,
+/obj/structure/secure_safe/caps_spare,
 /turf/open/floor/iron,
 /area/station/command/bridge)
 "lEG" = (
@@ -30040,9 +30040,7 @@
 /turf/open/floor/iron,
 /area/station/maintenance/port/aft)
 "nMD" = (
-/obj/structure/secure_safe/caps_spare{
-	pixel_x = 5
-	},
+/obj/structure/closet/crate/bin,
 /turf/open/floor/iron,
 /area/station/command/bridge)
 "nMM" = (
@@ -46774,7 +46772,6 @@
 "vNW" = (
 /obj/machinery/computer/security/telescreen/rd{
 	dir = 4;
-	network = list("rd","aicore","aiupload","minisat","xeno","test","ordnance");
 	pixel_x = -26
 	},
 /obj/effect/turf_decal/trimline/blue/filled/line{
