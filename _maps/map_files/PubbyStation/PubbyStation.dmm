@@ -72,19 +72,20 @@
 "aam" = (
 /obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk,
-/turf/open/floor/iron/white,
+/turf/open/floor/iron/dark,
 /area/station/science/genetics)
 "aap" = (
 /obj/structure/disposalpipe/segment{
 	dir = 5
 	},
 /obj/machinery/airalarm/directional/west,
+/obj/effect/turf_decal/siding/purple,
 /turf/open/floor/iron/white,
 /area/station/science/genetics)
 "aas" = (
 /obj/machinery/computer/scan_consolenew,
 /obj/item/radio/intercom/directional/north,
-/turf/open/floor/iron/white,
+/turf/open/floor/iron/dark,
 /area/station/science/genetics)
 "aat" = (
 /obj/effect/landmark/start/atmospheric_technician,
@@ -100,10 +101,13 @@
 	c_tag = "Genetics";
 	network = list("ss13","rd")
 	},
-/turf/open/floor/iron/white,
+/turf/open/floor/iron/dark,
 /area/station/science/genetics)
 "aav" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/obj/effect/turf_decal/siding/purple{
+	dir = 1
+	},
 /turf/open/floor/iron/white,
 /area/station/science/genetics)
 "aax" = (
@@ -114,13 +118,13 @@
 /area/space/nearstation)
 "aay" = (
 /obj/machinery/dna_scannernew,
-/turf/open/floor/iron/white,
+/turf/open/floor/iron/dark,
 /area/station/science/genetics)
 "aaz" = (
 /obj/machinery/computer/scan_consolenew{
 	dir = 1
 	},
-/turf/open/floor/iron/white,
+/turf/open/floor/iron/dark,
 /area/station/science/genetics)
 "aaB" = (
 /obj/structure/disposalpipe/segment{
@@ -160,7 +164,7 @@
 	pixel_y = 12
 	},
 /obj/structure/sign/poster/official/science/directional/south,
-/turf/open/floor/iron/white,
+/turf/open/floor/iron/dark,
 /area/station/science/genetics)
 "aaH" = (
 /obj/machinery/power/apc/auto_name/directional/west,
@@ -1209,6 +1213,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/turf_decal/siding/purple,
 /turf/open/floor/iron/white,
 /area/station/science/genetics)
 "aeT" = (
@@ -2938,7 +2943,7 @@
 /obj/structure/window/reinforced/spawner/directional/west,
 /mob/living/carbon/human/species/monkey,
 /obj/structure/flora/bush/flowers_br/style_random,
-/obj/structure/sign/poster/random/directional/north,
+/obj/machinery/light/directional/north,
 /turf/open/floor/grass,
 /area/station/science/genetics)
 "akD" = (
@@ -13089,6 +13094,9 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
 	},
+/obj/effect/turf_decal/siding/purple{
+	dir = 4
+	},
 /turf/open/floor/iron/white,
 /area/station/science/genetics)
 "aUw" = (
@@ -14062,6 +14070,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
+/obj/effect/turf_decal/siding/purple{
+	dir = 8
+	},
 /turf/open/floor/iron/white,
 /area/station/science/genetics)
 "aXC" = (
@@ -20137,6 +20148,10 @@
 /area/station/science/robotics/lab)
 "bvS" = (
 /obj/structure/sink/directional/south,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/siding/purple{
+	dir = 1
+	},
 /turf/open/floor/iron/white,
 /area/station/science/genetics)
 "bvT" = (
@@ -20988,6 +21003,7 @@
 /area/station/maintenance/department/engine)
 "bzj" = (
 /obj/structure/water_source/puddle,
+/obj/structure/sign/poster/random/directional/north,
 /turf/open/floor/grass,
 /area/station/science/genetics)
 "bzk" = (
@@ -22800,6 +22816,9 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "bGK" = (
+/obj/effect/turf_decal/siding/purple{
+	dir = 1
+	},
 /turf/open/floor/iron/white,
 /area/station/science/genetics)
 "bGL" = (
@@ -23056,6 +23075,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/disposalpipe/sorting/mail/flip{
 	dir = 1
+	},
+/obj/effect/turf_decal/siding/purple/corner{
+	dir = 8
 	},
 /turf/open/floor/iron/white,
 /area/station/science/genetics)
@@ -23645,7 +23667,7 @@
 /obj/machinery/dna_infuser,
 /obj/item/infuser_book,
 /obj/machinery/firealarm/directional/south,
-/turf/open/floor/iron/white,
+/turf/open/floor/iron/dark,
 /area/station/science/genetics)
 "bKV" = (
 /obj/structure/disposalpipe/segment{
@@ -24387,7 +24409,7 @@
 	pixel_y = -4;
 	pixel_x = -5
 	},
-/turf/open/floor/iron/white,
+/turf/open/floor/iron/dark,
 /area/station/science/genetics)
 "bOe" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
@@ -30219,6 +30241,9 @@
 /area/station/tcommsat/computer)
 "cme" = (
 /obj/structure/disposalpipe/segment,
+/obj/effect/turf_decal/siding/purple{
+	dir = 1
+	},
 /turf/open/floor/iron/white,
 /area/station/science/genetics)
 "cmf" = (
@@ -34444,6 +34469,9 @@
 "feS" = (
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/structure/cable,
+/obj/effect/turf_decal/siding/purple{
+	dir = 4
+	},
 /turf/open/floor/iron/white,
 /area/station/science/genetics)
 "feU" = (
@@ -35861,6 +35889,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/office,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/turf_decal/siding/purple,
 /turf/open/floor/iron/white,
 /area/station/science/genetics)
 "hnt" = (
@@ -36648,8 +36677,15 @@
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/central)
 "iyy" = (
-/obj/machinery/light/directional/north,
-/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet{
+	name = "Supplies"
+	},
+/obj/item/vending_refill/custom,
+/obj/item/circuitboard/machine/vendor,
+/obj/item/sales_tagger,
+/obj/effect/turf_decal/siding/purple{
+	dir = 5
+	},
 /turf/open/floor/iron/white,
 /area/station/science/genetics)
 "iyJ" = (
@@ -38239,7 +38275,7 @@
 /area/station/maintenance/department/science/xenobiology)
 "kQy" = (
 /obj/machinery/vending/wardrobe/gene_wardrobe,
-/turf/open/floor/iron/white,
+/turf/open/floor/iron/dark,
 /area/station/science/genetics)
 "kQZ" = (
 /obj/structure/closet,
@@ -38597,6 +38633,9 @@
 "lqC" = (
 /obj/machinery/light/directional/west,
 /obj/structure/disposalpipe/segment,
+/obj/effect/turf_decal/siding/purple{
+	dir = 1
+	},
 /turf/open/floor/iron/white,
 /area/station/science/genetics)
 "lqE" = (
@@ -41098,7 +41137,7 @@
 	pixel_x = 10;
 	pixel_y = 3
 	},
-/turf/open/floor/iron/white,
+/turf/open/floor/iron/dark,
 /area/station/science/genetics)
 "oMN" = (
 /turf/open/floor/iron/stairs/left,
@@ -41544,6 +41583,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/effect/turf_decal/siding/purple,
 /turf/open/floor/iron/white,
 /area/station/science/genetics)
 "ptV" = (
@@ -47291,6 +47331,9 @@
 /area/station/medical/medbay/lobby)
 "xts" = (
 /obj/structure/chair/office{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/purple{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
