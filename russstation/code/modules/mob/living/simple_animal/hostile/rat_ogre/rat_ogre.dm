@@ -31,6 +31,11 @@
 	held_items = list(null, null)
 	faction = list(FACTION_RAT, "hostile")
 	robust_searching = TRUE
+	mob_size = MOB_SIZE_LARGE
+	layer = LARGE_MOB_LAYER
+	hud_type = /datum/hud/dextrous/health_doll
+	death_sound = 'russstation/sound/creatures/rat_ogre/scream3.ogg'
+	death_message = "red foam gurgles out of the ogres mouth as it breathes one last time..."
 	stat_attack = HARD_CRIT
 	minbodytemp = 150
 	maxbodytemp = 456
@@ -49,8 +54,9 @@
 	warpstone_blade.Grant(src)
 
 	AddComponent(/datum/component/seethrough_mob)
+	AddElement(/datum/element/door_pryer, pry_time = 4 SECONDS)
 
-	var/datum/action/adjust_vision/rat_ogre/adjust_vision = new(src)
+	var/datum/action/adjust_vision/skaven/adjust_vision = new(src)
 	adjust_vision.Grant(src)
 
 	var/datum/atom_hud/medsensor = GLOB.huds[DATA_HUD_MEDICAL_ADVANCED]
@@ -64,6 +70,14 @@
 /mob/living/simple_animal/hostile/rat_ogre/Destroy()
 	QDEL_NULL(warpstone_blade)
 	return ..()
+
+/mob/living/simple_animal/hostile/rat_ogre/death(gibbed)
+	for(var/datum/action/action as anything in src.actions)
+		if(istype(action, /datum/action/cooldown/spell/pointed/projectile/throw_vending_machine))
+			var/datum/action/cooldown/spell/pointed/projectile/throw_vending_machine/M = action
+			M.on_deactivation(src)
+
+	..(gibbed)
 
 //Dismember unconcious mobs
 /mob/living/simple_animal/hostile/rat_ogre/proc/get_target_bodyparts(atom/hit_target)
