@@ -3026,6 +3026,7 @@
 /area/station/maintenance/starboard/fore)
 "bug" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/aisat)
 "bup" = (
@@ -9275,6 +9276,7 @@
 /obj/machinery/camera/directional/north{
 	c_tag = "AI Chamber North"
 	},
+/obj/machinery/airalarm/directional/east,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/aisat)
 "emO" = (
@@ -12927,7 +12929,6 @@
 	},
 /area/station/medical/chemistry)
 "fUK" = (
-/obj/structure/cable,
 /obj/machinery/holopad/secure,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
@@ -12937,6 +12938,7 @@
 	id = "AI"
 	},
 /obj/machinery/light/directional/north,
+/obj/structure/cable,
 /turf/open/floor/circuit,
 /area/station/ai_monitored/aisat)
 "fUU" = (
@@ -14190,6 +14192,8 @@
 /area/station/security/prison/visit)
 "gBa" = (
 /obj/machinery/porta_turret/ai,
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/aisat)
 "gBk" = (
@@ -17592,14 +17596,9 @@
 /turf/open/floor/iron,
 /area/station/command/bridge)
 "ihg" = (
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "ai_core";
-	name = "AI Emergency Shutters"
-	},
-/obj/machinery/power/apc/auto_name/directional/west,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
-/obj/effect/turf_decal/delivery/red,
-/turf/open/floor/iron/dark,
+/turf/open/floor/circuit,
 /area/station/ai_monitored/aisat)
 "iho" = (
 /obj/machinery/door/firedoor,
@@ -17992,10 +17991,8 @@
 /area/station/hallway/secondary/exit/departure_lounge)
 "iqt" = (
 /obj/structure/cable,
-/obj/machinery/power/smes{
-	charge = 5e+006
-	},
 /obj/machinery/light/directional/west,
+/obj/machinery/power/smes/full,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/aisat)
 "iqw" = (
@@ -19036,6 +19033,10 @@
 /obj/structure/sign/directions/security{
 	dir = 8;
 	pixel_y = 40
+	},
+/obj/structure/sign/directions/dorms/directional/north{
+	pixel_y = 24;
+	dir = 8
 	},
 /turf/open/floor/iron/dark/side{
 	dir = 1
@@ -22422,7 +22423,7 @@
 "kuV" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/airalarm/directional/south,
+/obj/machinery/newscaster/directional/south,
 /turf/open/floor/circuit,
 /area/station/ai_monitored/aisat)
 "kuY" = (
@@ -39288,6 +39289,14 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	dir = 4
 	},
+/obj/machinery/requests_console{
+	department = "AI";
+	name = "AI RC";
+	pixel_y = -30
+	},
+/obj/effect/mapping_helpers/requests_console/announcement,
+/obj/effect/mapping_helpers/requests_console/assistance,
+/obj/effect/mapping_helpers/requests_console/information,
 /turf/open/floor/circuit,
 /area/station/ai_monitored/aisat)
 "skz" = (
@@ -39862,6 +39871,19 @@
 /obj/effect/turf_decal/tile/green/full,
 /turf/open/floor/iron/dark,
 /area/station/service/hydroponics)
+"syg" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "ai_core";
+	name = "AI Emergency Shutters"
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
+	dir = 4
+	},
+/obj/effect/turf_decal/caution/stand_clear/red,
+/obj/structure/cable,
+/turf/open/floor/iron/dark,
+/area/station/ai_monitored/aisat)
 "syi" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp/bananalamp{
@@ -47066,6 +47088,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	dir = 4
 	},
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/aisat)
 "vSZ" = (
@@ -85361,8 +85384,8 @@ ofc
 toV
 toV
 sIQ
-ihg
-grM
+uSC
+toV
 vFq
 iqt
 nue
@@ -85618,7 +85641,7 @@ bcW
 mxc
 toV
 fUK
-pWa
+syg
 lXs
 vSS
 nax
@@ -85871,12 +85894,12 @@ oLX
 oLX
 uNM
 hOG
-qAk
+ihg
 toV
 toV
 qAk
 uSC
-grM
+toV
 sPg
 vrN
 uSC

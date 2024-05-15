@@ -19718,6 +19718,7 @@
 	name = "Private Channel";
 	pixel_y = -40
 	},
+/obj/effect/mapping_helpers/requests_console/announcement,
 /turf/open/floor/circuit,
 /area/station/ai_monitored/turret_protected/ai)
 "btZ" = (
@@ -37692,6 +37693,11 @@
 /obj/item/wrench,
 /turf/open/floor/plating,
 /area/station/maintenance/department/cargo)
+"kak" = (
+/obj/structure/cable,
+/obj/structure/secure_safe/caps_spare,
+/turf/open/floor/iron/dark,
+/area/station/command/bridge)
 "kat" = (
 /obj/machinery/camera/motion/directional/south{
 	c_tag = "Prison Exterior";
@@ -42029,11 +42035,6 @@
 /obj/structure/extinguisher_cabinet,
 /turf/closed/wall/r_wall,
 /area/station/science/xenobiology)
-"qdd" = (
-/obj/structure/cable,
-/obj/structure/secure_safe/caps_spare,
-/turf/open/floor/iron/dark,
-/area/station/command/bridge)
 "qdg" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -43329,10 +43330,8 @@
 /turf/open/floor/plating,
 /area/station/cargo/sorting)
 "rMV" = (
-/obj/machinery/power/smes{
-	charge = 5e+006
-	},
 /obj/structure/cable,
+/obj/machinery/power/smes/super/full,
 /turf/open/floor/iron/white,
 /area/station/ai_monitored/turret_protected/ai)
 "rMZ" = (
@@ -79309,7 +79308,7 @@ asS
 asS
 asS
 aya
-qdd
+kak
 aAB
 aBs
 aCM
