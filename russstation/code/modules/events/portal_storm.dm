@@ -16,3 +16,17 @@
 	hostile_types = list(
 		/mob/living/basic/clown/russ/goblin/lessergoblin = 6,
 	)
+
+/datum/round_event_control/rat_ogre_invasion
+	name = "Portal Storm: Rat Ogres"
+	typepath = /datum/round_event/portal_storm/rat_ogre_invasion
+	weight = 3
+	min_players = 20
+	earliest_start = 20 MINUTES
+	category = EVENT_CATEGORY_ENTITIES
+	description = "Rat Ogres!"
+
+/datum/round_event/portal_storm/rat_ogre_invasion
+	hostile_types = list(
+		/mob/living/simple_animal/hostile/rat_ogre = 2
+	)
