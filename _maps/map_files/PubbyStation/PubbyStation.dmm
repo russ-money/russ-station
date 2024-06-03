@@ -9,7 +9,8 @@
 "aac" = (
 /obj/effect/turf_decal/bot,
 /obj/machinery/atmospherics/components/tank/plasma{
-	dir = 4
+	dir = 4;
+	piping_layer = 4
 	},
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
 	dir = 8
