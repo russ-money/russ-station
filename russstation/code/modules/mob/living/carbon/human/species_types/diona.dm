@@ -34,14 +34,6 @@
 		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/diona,
 	)
 
-/datum/species/diona/random_name(gender,unique,lastname)
-	if(unique)
-		return random_unique_diona_name()
-	var/randname = diona_name()
-	if(lastname)
-		randname += " [lastname]"
-	return randname
-
 // Similar to podpeople.dm
 /datum/species/diona/spec_life(mob/living/carbon/human/H, seconds_per_tick, times_fired)
 	if(H.stat == DEAD)

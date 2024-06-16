@@ -21,13 +21,7 @@
 	meat = /obj/item/food/meat/slab/human/mutant/kitsune
 	skinned_type = /obj/item/stack/sheet/animalhide/kitsune
 
-/datum/species/human/kitsune/random_name(gender, unique, lastname)
-	if(unique)
-		return random_unique_kitsune_name()
-	var/randname = kitsune_name()
-	if(lastname)
-		randname += " [lastname]"
-	return randname
+
 
 /datum/species/human/kitsune/prepare_human_for_preview(mob/living/carbon/human/human)
 	human.hairstyle = "Long Bedhead"

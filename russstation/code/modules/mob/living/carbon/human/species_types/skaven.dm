@@ -108,14 +108,6 @@
 	equipping.equipOutfit(/datum/outfit/skaven, visuals_only)
 	equipping.internal = equipping.get_item_for_held_index(2)
 
-/datum/species/skaven/random_name(gender, unique, lastname)
-	if(unique)
-		return random_unique_skaven_name()
-	var/randname = skaven_name()
-	if(lastname)
-		randname += " [lastname]"
-	return randname
-
 /datum/species/skaven/randomize_features()
 	var/list/features = ..()
 	features["tail_skaven"] = pick(GLOB.tails_list_skaven)
