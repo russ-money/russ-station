@@ -234,14 +234,14 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 	if(features["caps"])
 		L[DNA_MUSHROOM_CAPS_BLOCK] = construct_block(SSaccessories.caps_list.Find(features["caps"]), length(SSaccessories.caps_list))
 	if(features["pod_hair"])
-		L[DNA_POD_HAIR_BLOCK] = construct_block(SSaccessories.pod_hair_list.Find(features["pod_hair"]), SSaccessories.pod_hair_list.len)
+		L[DNA_POD_HAIR_BLOCK] = construct_block(SSaccessories.pod_hair_list.Find(features["pod_hair"]), length(SSaccessories.pod_hair_list))
 	// honk start -- diona hair & skaven tail
 	if(features["diona_hair"])
-		L[DNA_DIONA_HAIR_BLOCK] = construct_block(SSaccessories.diona_hair_list.Find(features["diona_hair"]), SSaccessories.diona_hair_list.len)
+		L[DNA_DIONA_HAIR_BLOCK] = construct_block(SSaccessories.diona_hair_list.Find(features["diona_hair"]), length(SSaccessories.diona_hair_list))
 	if(features["tail_skaven"])
-		L[DNA_SKAVEN_TAIL_BLOCK] = construct_block(SSaccessories.tails_list_skaven.Find(features["tail_skaven"]), SSaccessories.tails_list_skaven.len)
+		L[DNA_SKAVEN_TAIL_BLOCK] = construct_block(SSaccessories.tails_list_skaven.Find(features["tail_skaven"]), length(SSaccessories.tails_list_skaven))
 	if(features["tail_kitsune"])
-		L[DNA_KITSUNE_TAIL_BLOCK] = construct_block(SSaccessories.tails_list_kitsune.Find(features["tail_kitsune"]), SSaccessories.tails_list_kitsune.len)
+		L[DNA_KITSUNE_TAIL_BLOCK] = construct_block(SSaccessories.tails_list_kitsune.Find(features["tail_kitsune"]), length(SSaccessories.tails_list_kitsune))
 	// honk end
 
 	for(var/blocknum in 1 to DNA_FEATURE_BLOCKS)
@@ -388,14 +388,14 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 		if(DNA_MUSHROOM_CAPS_BLOCK)
 			set_uni_feature_block(blocknumber, construct_block(SSaccessories.caps_list.Find(features["caps"]), length(SSaccessories.caps_list)))
 		if(DNA_POD_HAIR_BLOCK)
-			set_uni_feature_block(blocknumber, construct_block(SSaccessories.pod_hair_list.Find(features["pod_hair"]), SSaccessories.pod_hair_list.len))
+			set_uni_feature_block(blocknumber, construct_block(SSaccessories.pod_hair_list.Find(features["pod_hair"]), length(SSaccessories.pod_hair_list)))
 		// honk start -- diona hair
 		if(DNA_DIONA_HAIR_BLOCK)
-			set_uni_feature_block(blocknumber, construct_block(SSaccessories.diona_hair_list.Find(features["diona_hair"]), SSaccessories.diona_hair_list.len))
+			set_uni_feature_block(blocknumber, construct_block(SSaccessories.diona_hair_list.Find(features["diona_hair"]), length(SSaccessories.diona_hair_list)))
 		if(DNA_SKAVEN_TAIL_BLOCK)
-			set_uni_feature_block(blocknumber, construct_block(SSaccessories.tails_list_skaven.Find(features["tail_skaven"]), SSaccessories.tails_list_skaven.len))
+			set_uni_feature_block(blocknumber, construct_block(SSaccessories.tails_list_skaven.Find(features["tail_skaven"]), length(SSaccessories.tails_list_skaven)))
 		if(DNA_KITSUNE_TAIL_BLOCK)
-			set_uni_feature_block(blocknumber, construct_block(SSaccessories.tails_list_kitsune.Find(features["tail_kitsune"]), SSaccessories.tails_list_kitsune.len))
+			set_uni_feature_block(blocknumber, construct_block(SSaccessories.tails_list_kitsune.Find(features["tail_kitsune"]), length(SSaccessories.tails_list_kitsune)))
 		// honk end
 
 //Please use add_mutation or activate_mutation instead
@@ -696,14 +696,14 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 	if(dna.features["caps"])
 		dna.features["caps"] = SSaccessories.caps_list[deconstruct_block(get_uni_feature_block(features, DNA_MUSHROOM_CAPS_BLOCK), length(SSaccessories.caps_list))]
 	if(dna.features["pod_hair"])
-		dna.features["pod_hair"] = SSaccessories.pod_hair_list[deconstruct_block(get_uni_feature_block(features, DNA_POD_HAIR_BLOCK), SSaccessories.pod_hair_list.len)]
+		dna.features["pod_hair"] = SSaccessories.pod_hair_list[deconstruct_block(get_uni_feature_block(features, DNA_POD_HAIR_BLOCK), length(SSaccessories.pod_hair_list))]
 	// honk start -- diona hair & skaven
 	if(dna.features["diona_hair"])
-		dna.features["diona_hair"] = SSaccessories.diona_hair_list[deconstruct_block(get_uni_feature_block(features, DNA_DIONA_HAIR_BLOCK), SSaccessories.diona_hair_list.len)]
+		dna.features["diona_hair"] = SSaccessories.diona_hair_list[deconstruct_block(get_uni_feature_block(features, DNA_DIONA_HAIR_BLOCK), length(SSaccessories.diona_hair_list))]
 	if(dna.features["tail_skaven"])
-		dna.features["tail_skaven"] = SSaccessories.tails_list_skaven[deconstruct_block(get_uni_feature_block(features, DNA_SKAVEN_TAIL_BLOCK), SSaccessories.tails_list_skaven.len)]
+		dna.features["tail_skaven"] = SSaccessories.tails_list_skaven[deconstruct_block(get_uni_feature_block(features, DNA_SKAVEN_TAIL_BLOCK), length(SSaccessories.tails_list_skaven))]
 	if(dna.features["tail_kitsune"])
-		dna.features["tail_kitsune"] = SSaccessories.tails_list_kitsune[deconstruct_block(get_uni_feature_block(features, DNA_KITSUNE_TAIL_BLOCK), SSaccessories.tails_list_kitsune.len)]
+		dna.features["tail_kitsune"] = SSaccessories.tails_list_kitsune[deconstruct_block(get_uni_feature_block(features, DNA_KITSUNE_TAIL_BLOCK), length(SSaccessories.tails_list_kitsune))]
 	// honk end
 
 	for(var/obj/item/organ/external/external_organ in organs)

@@ -25,4 +25,4 @@
 	return FALSE
 
 /datum/bodypart_overlay/mutant/diona_hair/get_global_feature_list()
-	return GLOB.diona_hair_list
+	return SSaccessories.diona_hair_list

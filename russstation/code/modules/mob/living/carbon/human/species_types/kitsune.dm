@@ -46,7 +46,7 @@
 	return ..()
 
 /datum/species/human/kitsune/randomize_main_appearance_element(mob/living/carbon/human/human_mob)
-	var/tail = pick(GLOB.tails_list_kitsune)
+	var/tail = pick(SSaccessories.tails_list_kitsune)
 	human_mob.dna.features["tail_kitsune"] = tail
 	mutant_bodyparts["tail_kitsune"] = tail
 	human_mob.update_body()

@@ -61,8 +61,14 @@
 #define DNA_POD_HAIR_BLOCK 15
 #define DNA_MONKEY_TAIL_BLOCK 16
 
+//honk start - our blocks
+#define DNA_SKAVEN_TAIL_BLOCK 17
+#define DNA_DIONA_HAIR_BLOCK 18
+#define DNA_KITSUNE_TAIL_BLOCK 19
+//honk end
+
 /// This number needs to equal the total number of DNA blocks
-#define DNA_FEATURE_BLOCKS 18 // honk -- 3 more than TG to hold Diona Hair (was 15); !!! update "code/__DEFINES/~russ_defines/DNA.dm" as well if changed !!!
+#define DNA_FEATURE_BLOCKS 19 // honk -- 3 more than TG to hold Diona Hair (was 16);
 
 #define DNA_SEQUENCE_LENGTH 4
 #define DNA_MUTATION_BLOCKS 8

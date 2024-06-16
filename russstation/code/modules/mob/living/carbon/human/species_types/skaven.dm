@@ -110,7 +110,7 @@
 
 /datum/species/skaven/randomize_features()
 	var/list/features = ..()
-	features["tail_skaven"] = pick(GLOB.tails_list_skaven)
+	features["tail_skaven"] = pick(SSaccessories.tails_list_skaven)
 	features["ears"] = pick("None", "Skaven")
 	features["skaven_color"] = GLOB.color_list_skaven[pick(GLOB.color_list_skaven)]
 	return features
@@ -135,7 +135,7 @@
 	return ..()
 
 /datum/species/skaven/randomize_main_appearance_element(mob/living/carbon/human/human_mob)
-	var/tail = pick(GLOB.tails_list_skaven)
+	var/tail = pick(SSaccessories.tails_list_skaven)
 	human_mob.dna.features["tail_skaven"] = tail
 	mutant_bodyparts["tail_skaven"] = tail
 	human_mob.update_body()

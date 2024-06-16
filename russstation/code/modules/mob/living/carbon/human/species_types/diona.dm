@@ -70,7 +70,7 @@
 		affected.reagents.remove_reagent(chem.type, REAGENTS_METABOLISM * seconds_per_tick)
 
 /datum/species/diona/randomize_main_appearance_element(mob/living/carbon/human/human_mob)
-	var/hairstyle = pick(GLOB.diona_hair_list)
+	var/hairstyle = pick(SSaccessories.diona_hair_list)
 	human_mob.dna.features["diona_hair"] = hairstyle
 	mutant_bodyparts["diona_hair"] = hairstyle
 	human_mob.update_body()
