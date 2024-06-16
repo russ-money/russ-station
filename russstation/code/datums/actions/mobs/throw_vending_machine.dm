@@ -1,7 +1,5 @@
-/obj/machinery/vending/MouseDrop(over_object, src_location, over_location)
-	. = ..()
+/obj/structure/chair/mouse_drop_dragged(atom/over_object, mob/user, src_location, over_location, params)
 	if(over_object == usr && Adjacent(usr) && ((usr.type == /mob/living/simple_animal/hostile/rat_ogre)))
-
 		//is the ogres hands empty?
 		for(var/obj/item/held_item as anything in usr.held_items)
 			if(isnull(held_item) || held_item.item_flags & HAND_ITEM)

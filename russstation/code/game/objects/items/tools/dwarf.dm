@@ -44,7 +44,7 @@
 	reqs = list(/obj/item/stack/sheet/mineral/gold = 2)
 	time = 5 SECONDS
 	category = CAT_DWARF
-	always_available = FALSE
+	crafting_flags = CRAFT_MUST_BE_LEARNED
 
 // let dorfs carve! works same as normal chisel
 /obj/item/chisel/stone
@@ -60,4 +60,4 @@
 	reqs = list(/obj/item/stack/sheet/mineral/stone = 1)
 	time = 1 SECONDS
 	category = CAT_DWARF
-	always_available = FALSE
+	crafting_flags = CRAFT_MUST_BE_LEARNED

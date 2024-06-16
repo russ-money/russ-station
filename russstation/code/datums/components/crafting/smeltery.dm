@@ -8,7 +8,7 @@
 	parts = list(/obj/item/mold_result/blade = 1)
 	time = 40
 	category = CAT_DWARF
-	always_available = FALSE
+	crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_MUST_BE_LEARNED
 
 /datum/crafting_recipe/pickaxe
 	name = "Forged Pickaxe"
@@ -18,7 +18,7 @@
 	parts = list(/obj/item/mold_result/pickaxe_head = 1)
 	time = 40
 	category = CAT_DWARF
-	always_available = FALSE
+	crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_MUST_BE_LEARNED
 
 /datum/crafting_recipe/shovel
 	name = "Forged Shovel"
@@ -28,7 +28,7 @@
 	parts = list(/obj/item/mold_result/shovel_head = 1)
 	time = 40
 	category = CAT_DWARF
-	always_available = FALSE
+	crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_MUST_BE_LEARNED
 
 /datum/crafting_recipe/knife
 	name = "Forged Knife"
@@ -38,7 +38,7 @@
 	parts = list(/obj/item/mold_result/knife_head = 1)
 	time = 40
 	category = CAT_DWARF
-	always_available = FALSE
+	crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_MUST_BE_LEARNED
 
 /datum/crafting_recipe/war_hammer
 	name = "Forged War Hammer"
@@ -48,7 +48,7 @@
 	parts = list(/obj/item/mold_result/war_hammer_head = 1)
 	time = 40
 	category = CAT_DWARF
-	always_available = FALSE
+	crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_MUST_BE_LEARNED
 
 /datum/crafting_recipe/smithed_armour
 	name = "Forged Armour"
@@ -58,7 +58,7 @@
 	parts = list(/obj/item/mold_result/armour_plating = 1)
 	time = 40
 	category = CAT_DWARF
-	always_available = FALSE
+	crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_MUST_BE_LEARNED
 
 /datum/crafting_recipe/smithed_helmet
 	name = "Forged Helmet"
@@ -68,4 +68,4 @@
 	parts = list(/obj/item/mold_result/helmet_plating = 1)
 	time = 40
 	category = CAT_DWARF
-	always_available = FALSE
+	crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_MUST_BE_LEARNED

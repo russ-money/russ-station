@@ -25,7 +25,7 @@
 	icon_greyscale = 'russstation/icons/mob/human_parts_greyscale.dmi'
 	icon_state = "skaven_l_arm"
 	limb_id = SPECIES_SKAVEN
-	unarmed_attack_verb = "claw"
+	unarmed_attack_verbs = list("claw")
 	unarmed_attack_effect = ATTACK_EFFECT_CLAW
 	unarmed_attack_sound = 'sound/weapons/slash.ogg'
 	unarmed_miss_sound = 'sound/weapons/slashmiss.ogg'
@@ -36,7 +36,7 @@
 	icon_greyscale = 'russstation/icons/mob/human_parts_greyscale.dmi'
 	icon_state = "skaven_r_arm"
 	limb_id = SPECIES_SKAVEN
-	unarmed_attack_verb = "claw"
+	unarmed_attack_verbs = list("claw")
 	unarmed_attack_effect = ATTACK_EFFECT_CLAW
 	unarmed_attack_sound = 'sound/weapons/slash.ogg'
 	unarmed_miss_sound = 'sound/weapons/slashmiss.ogg'
