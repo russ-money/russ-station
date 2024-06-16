@@ -13,6 +13,7 @@
 		#include "map_files\Mining\Lavaland.dmm"
 		#include "map_files\NorthStar\north_star.dmm"
 		#include "map_files\tramstation\tramstation.dmm"
+		#include "map_files\wawastation\wawastation.dmm"
 		// honk start -- our maps
 		#include "map_files\CubeStation\Cube.dmm"
 		#include "map_files\EchoStation\EchoStation.dmm"

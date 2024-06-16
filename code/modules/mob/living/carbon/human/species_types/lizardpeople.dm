@@ -47,21 +47,9 @@
 /datum/species/lizard/body_temperature_core(mob/living/carbon/human/humi, seconds_per_tick, times_fired)
 	return
 
-/datum/species/lizard/random_name(gender,unique,lastname)
-	if(unique)
-		return random_unique_lizard_name(gender)
-
-	var/randname = lizard_name(gender)
-
-	if(lastname)
-		randname += " [lastname]"
-
-	return randname
-
-
 /datum/species/lizard/randomize_features()
 	var/list/features = ..()
-	features["body_markings"] = pick(GLOB.body_markings_list)
+	features["body_markings"] = pick(SSaccessories.body_markings_list)
 	return features
 
 /datum/species/lizard/get_scream_sound(mob/living/carbon/human/lizard)
@@ -72,7 +60,7 @@
 	)
 
 /datum/species/lizard/get_cough_sound(mob/living/carbon/human/lizard)
-	if(lizard.gender == FEMALE)
+	if(lizard.physique == FEMALE)
 		return pick(
 			'sound/voice/human/female_cough1.ogg',
 			'sound/voice/human/female_cough2.ogg',
@@ -92,7 +80,7 @@
 
 
 /datum/species/lizard/get_cry_sound(mob/living/carbon/human/lizard)
-	if(lizard.gender == FEMALE)
+	if(lizard.physique == FEMALE)
 		return pick(
 			'sound/voice/human/female_cry1.ogg',
 			'sound/voice/human/female_cry2.ogg',
@@ -105,13 +93,11 @@
 
 
 /datum/species/lizard/get_sneeze_sound(mob/living/carbon/human/lizard)
-	if(lizard.gender == FEMALE)
+	if(lizard.physique == FEMALE)
 		return 'sound/voice/human/female_sneeze1.ogg'
 	return 'sound/voice/human/male_sneeze1.ogg'
 
-/datum/species/lizard/get_laugh_sound(mob/living/carbon/human)
-	if(!istype(human))
-		return
+/datum/species/lizard/get_laugh_sound(mob/living/carbon/human/lizard)
 	return 'sound/voice/lizard/lizard_laugh1.ogg'
 
 /datum/species/lizard/get_physical_attributes()
