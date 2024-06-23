@@ -6269,8 +6269,6 @@
 #include "interface\fonts\spess_font.dm"
 #include "interface\fonts\tiny_unicode.dm"
 #include "interface\fonts\vcr_osd_mono.dm"
-#include "russstation\code\__HELPERS\mobs.dm"
-#include "russstation\code\__HELPERS\names.dm"
 #include "russstation\code\_globalvars\lists\drinking_glass_icons.dm"
 #include "russstation\code\_globalvars\lists\flavor_misc.dm"
 #include "russstation\code\_globalvars\lists\intercoms.dm"
