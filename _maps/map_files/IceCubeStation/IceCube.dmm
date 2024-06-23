@@ -49293,7 +49293,7 @@
 /area/station/service/kitchen)
 "wPb" = (
 /obj/structure/chair/office/light,
-/mob/living/simple_animal/pet/gondola/russ/camdola,
+/mob/living/basic/pet/gondola/russ/camdola,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	dir = 6

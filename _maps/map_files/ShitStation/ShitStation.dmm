@@ -1668,7 +1668,7 @@
 /obj/machinery/airalarm/directional/south,
 /obj/structure/bed,
 /obj/item/bedsheet/cmo,
-/mob/living/simple_animal/pet/gondola/russ/camdola,
+/mob/living/basic/pet/gondola/russ/camdola,
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/cmo)
 "agK" = (

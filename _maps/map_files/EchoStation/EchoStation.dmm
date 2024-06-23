@@ -23667,7 +23667,7 @@
 	dir = 10
 	},
 /obj/structure/cable,
-/mob/living/simple_animal/pet/gondola/russ/camdola,
+/mob/living/basic/pet/gondola/russ/camdola,
 /turf/open/floor/iron/checker,
 /area/station/command/heads_quarters/cmo)
 "mTP" = (

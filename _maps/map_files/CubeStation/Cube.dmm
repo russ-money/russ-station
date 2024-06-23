@@ -27944,7 +27944,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/blue,
-/mob/living/simple_animal/pet/gondola/russ/camdola,
+/mob/living/basic/pet/gondola/russ/camdola,
 /obj/structure/bed/dogbed,
 /turf/open/floor/iron/showroomfloor,
 /area/station/command/heads_quarters/cmo)
