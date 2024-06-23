@@ -40,7 +40,6 @@
 	//Looking good urist!
 	new_spawn.facial_hairstyle = pick(list("Beard (Moonshiner)","Beard (Abraham Lincoln)","Beard (Dwarf)", "Beard (Very Long)", "Beard (Full)","Beard (Broken Man)"))
 
-	new_spawn.fully_replace_character_name(null,dwarf_name())
 	new_spawn.gender = pick(list(MALE, FEMALE))
 
 	new_spawn.update_body(is_creating = TRUE)
@@ -95,7 +94,6 @@
 	new_spawn.facial_hairstyle = "Shaved"
 	new_spawn.hairstyle = "Bald"
 
-	new_spawn.fully_replace_character_name(null,dwarf_name())
 	new_spawn.gender = pick(list(MALE, FEMALE))
 
 	new_spawn.update_body(is_creating = TRUE)
