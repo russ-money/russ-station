@@ -411,6 +411,7 @@
 "adI" = (
 /obj/structure/sign/poster/official/random/directional/north,
 /obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/iron/cafeteria,
 /area/station/security/prison)
 "adJ" = (
@@ -5765,6 +5766,9 @@
 /obj/machinery/status_display/evac{
 	pixel_y = -32
 	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
 /turf/open/floor/iron,
 /area/station/security/warden)
 "bBc" = (
@@ -10444,6 +10448,9 @@
 /area/station/engineering/atmos)
 "dQK" = (
 /obj/machinery/light/directional/south,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
 /turf/open/floor/carpet/black,
 /area/station/security/prison)
 "dRc" = (
@@ -11122,6 +11129,11 @@
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/showroomfloor,
 /area/station/maintenance/aft)
+"efQ" = (
+/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/machinery/airalarm/directional/north,
+/turf/open/floor/iron/cafeteria,
+/area/station/security/prison)
 "egC" = (
 /obj/effect/turf_decal/tile/brown/anticorner/contrasted{
 	dir = 8
@@ -11337,7 +11349,6 @@
 /turf/open/floor/iron,
 /area/station/security/brig)
 "emX" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /obj/machinery/computer/records/security,
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/iron/dark,
@@ -14893,7 +14904,7 @@
 /turf/open/floor/iron/dark,
 /area/station/security/interrogation)
 "fVp" = (
-/obj/machinery/door/window/left/directional/west{
+/obj/machinery/door/window/left/directional/south{
 	name = "Captain's Desk Door";
 	req_access = list("captain")
 	},
@@ -15899,7 +15910,7 @@
 	id_tag = "prisonereducation";
 	name = "Prisoner Education Chamber"
 	},
-/obj/effect/mapping_helpers/airlock/access/all/security/armory,
+/obj/effect/mapping_helpers/airlock/access/all/security/brig,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
 	dir = 4
@@ -20833,6 +20844,13 @@
 	},
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
+"jkW" = (
+/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/iron/cafeteria,
+/area/station/security/prison)
 "jkZ" = (
 /obj/structure/table/wood,
 /obj/item/melee/chainofcommand{
@@ -22521,6 +22539,9 @@
 /area/station/security/warden)
 "kcr" = (
 /obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
+	dir = 4
+	},
 /turf/open/floor/iron/dark,
 /area/station/security/execution/education)
 "kcw" = (
@@ -25372,6 +25393,16 @@
 	},
 /turf/open/floor/iron,
 /area/station/engineering/main)
+"lIF" = (
+/obj/structure/chair/stool/directional/west,
+/obj/effect/turf_decal/tile/red/half/contrasted{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
+/turf/open/floor/iron/dark,
+/area/station/hallway/primary/port)
 "lIQ" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector{
 	dir = 1
@@ -29975,9 +30006,6 @@
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/security/armory)
 "oui" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 1
-	},
 /obj/effect/turf_decal/trimline/blue/filled/line,
 /obj/structure/table/glass,
 /obj/machinery/computer/records/medical/laptop{
@@ -30449,6 +30477,9 @@
 	},
 /obj/structure/chair/office{
 	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 8
 	},
 /turf/open/floor/iron/dark,
 /area/station/security/brig)
@@ -32055,11 +32086,12 @@
 /turf/open/floor/iron/dark,
 /area/station/medical/morgue)
 "pGe" = (
+/obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 4
+	dir = 1
 	},
-/turf/open/floor/iron/white/textured,
-/area/station/security/brig)
+/turf/open/floor/iron/dark,
+/area/station/security/execution/education)
 "pGm" = (
 /obj/structure/cable,
 /obj/machinery/door/airlock/public/glass{
@@ -33212,6 +33244,9 @@
 "qsf" = (
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
 	},
 /turf/open/floor/iron/white/textured,
 /area/station/security/brig)
@@ -38771,7 +38806,6 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/port)
 "tCW" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/structure/table,
 /obj/item/storage/backpack/duffelbag/sec/surgery{
 	pixel_y = 5
@@ -46080,6 +46114,7 @@
 "xHS" = (
 /obj/machinery/iv_drip,
 /obj/item/reagent_containers/blood/universal,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/iron/white/textured,
 /area/station/security/brig)
 "xIg" = (
@@ -61252,7 +61287,7 @@ acc
 mDD
 mDD
 abi
-pnk
+efQ
 adM
 phw
 tZn
@@ -61768,7 +61803,7 @@ iwD
 abi
 rPs
 phw
-pnk
+jkW
 abi
 rOc
 rOc
@@ -63332,7 +63367,7 @@ tCW
 cwC
 kcr
 kcr
-kcr
+pGe
 fiG
 gVl
 tWj
@@ -63571,7 +63606,7 @@ vxP
 gKa
 abB
 jFw
-pGe
+nIY
 nIY
 ror
 oui
@@ -69244,7 +69279,7 @@ gpa
 kBP
 qMQ
 cqR
-kBP
+lIF
 qMQ
 ada
 mPM
