@@ -8367,7 +8367,7 @@
 /obj/machinery/cell_charger{
 	pixel_y = 13
 	},
-/obj/item/stock_parts/cell/high,
+/obj/item/stock_parts/power_store/cell/high,
 /turf/open/floor/iron,
 /area/station/ai_monitored/command/storage/eva)
 "exD" = (
@@ -8991,7 +8991,7 @@
 "eQL" = (
 /obj/structure/rack,
 /obj/structure/cable,
-/obj/item/stock_parts/cell/high,
+/obj/item/stock_parts/power_store/cell/high,
 /obj/item/stack/rods/fifty,
 /obj/item/stack/sheet/mineral/plasma{
 	amount = 10
@@ -9743,7 +9743,7 @@
 /area/station/medical/chemistry)
 "fjL" = (
 /obj/structure/table,
-/obj/item/stock_parts/cell/high,
+/obj/item/stock_parts/power_store/cell/high,
 /obj/machinery/cell_charger{
 	pixel_y = 13
 	},
@@ -23178,8 +23178,8 @@
 /obj/machinery/cell_charger{
 	pixel_y = 13
 	},
-/obj/item/stock_parts/cell/high,
-/obj/item/stock_parts/cell/high{
+/obj/item/stock_parts/power_store/cell/high,
+/obj/item/stock_parts/power_store/cell/high{
 	pixel_y = 10
 	},
 /turf/open/floor/iron/checker,
@@ -33274,7 +33274,7 @@
 /area/station/commons/storage/primary)
 "ruL" = (
 /obj/structure/table/wood/poker,
-/obj/item/clothing/mask/cigarette/cigar,
+/obj/item/cigarette/cigar,
 /turf/open/floor/wood,
 /area/station/service/bar)
 "ruP" = (
@@ -36155,7 +36155,7 @@
 	pixel_x = -8;
 	pixel_y = 10
 	},
-/obj/item/clothing/mask/cigarette/cigar,
+/obj/item/cigarette/cigar,
 /turf/open/floor/carpet/royalblue,
 /area/station/command/heads_quarters/captain)
 "sXz" = (
@@ -36714,7 +36714,7 @@
 "tli" = (
 /obj/structure/table,
 /obj/machinery/cell_charger,
-/obj/item/stock_parts/cell/high,
+/obj/item/stock_parts/power_store/cell/high,
 /obj/item/stack/package_wrap{
 	pixel_y = 10
 	},
@@ -40906,10 +40906,9 @@
 /obj/structure/table,
 /obj/item/ai_module/core/full/asimov,
 /obj/item/ai_module/core/freeformcore,
-/obj/machinery/door/window/left/directional/west{
+/obj/machinery/door/window/left/directional/east{
 	name = "Core Modules";
-	req_access = list("captain");
-	dir = 4
+	req_access = list("captain")
 	},
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/effect/spawner/random/aimodule/harmless,
@@ -41092,7 +41091,7 @@
 "vvH" = (
 /obj/structure/table,
 /obj/machinery/cell_charger,
-/obj/item/stock_parts/cell/high,
+/obj/item/stock_parts/power_store/cell/high,
 /obj/item/storage/toolbox/electrical{
 	pixel_y = 11
 	},
@@ -42902,7 +42901,7 @@
 "wnp" = (
 /obj/structure/table,
 /obj/machinery/cell_charger,
-/obj/item/stock_parts/cell/high,
+/obj/item/stock_parts/power_store/cell/high,
 /obj/machinery/newscaster/directional/south,
 /turf/open/floor/iron/dark,
 /area/station/science/robotics/lab)
@@ -44065,7 +44064,7 @@
 /obj/item/computer_disk/engineering,
 /obj/item/computer_disk/engineering,
 /obj/item/computer_disk/engineering,
-/obj/item/stock_parts/cell/high,
+/obj/item/stock_parts/power_store/cell/high,
 /obj/item/clothing/glasses/meson{
 	pixel_y = 4
 	},
@@ -46214,7 +46213,7 @@
 "xQG" = (
 /obj/structure/table,
 /obj/machinery/cell_charger,
-/obj/item/stock_parts/cell/potato{
+/obj/item/stock_parts/power_store/cell/potato{
 	name = "\improper Beepsky's emergency battery"
 	},
 /turf/open/floor/plating,

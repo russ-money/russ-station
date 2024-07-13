@@ -7651,7 +7651,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible{
 	dir = 4
 	},
-/mob/living/simple_animal/bot/firebot,
+/mob/living/basic/bot/firebot,
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "egC" = (
@@ -7794,7 +7794,7 @@
 "ejv" = (
 /obj/structure/table,
 /obj/machinery/cell_charger,
-/obj/item/stock_parts/cell/high,
+/obj/item/stock_parts/power_store/cell/high,
 /obj/machinery/airalarm/directional/south,
 /obj/item/storage/toolbox/electrical{
 	pixel_y = 11
@@ -14232,7 +14232,7 @@
 /obj/item/grenade/chem_grenade/smart_metal_foam{
 	pixel_y = 4
 	},
-/obj/item/stock_parts/cell/high,
+/obj/item/stock_parts/power_store/cell/high,
 /obj/item/stack/cable_coil,
 /turf/open/floor/plating,
 /area/station/ai_monitored/command/storage/eva)
@@ -41033,8 +41033,8 @@
 /obj/machinery/cell_charger{
 	pixel_y = 8
 	},
-/obj/item/stock_parts/cell,
-/obj/item/stock_parts/cell/high,
+/obj/item/stock_parts/power_store/cell,
+/obj/item/stock_parts/power_store/cell/high,
 /turf/open/floor/iron,
 /area/station/engineering/storage/tech)
 "vIn" = (

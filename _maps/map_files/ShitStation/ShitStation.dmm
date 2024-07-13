@@ -8237,11 +8237,11 @@
 /turf/open/floor/grass,
 /area/station/science/genetics)
 "bhX" = (
-/obj/item/stock_parts/cell{
+/obj/item/stock_parts/power_store/cell{
 	pixel_x = 1;
 	pixel_y = -7
 	},
-/obj/item/stock_parts/cell{
+/obj/item/stock_parts/power_store/cell{
 	pixel_x = -3;
 	pixel_y = 12
 	},
@@ -9206,7 +9206,7 @@
 "cdn" = (
 /obj/machinery/firealarm/directional/east,
 /obj/machinery/cell_charger,
-/obj/item/stock_parts/cell,
+/obj/item/stock_parts/power_store/cell,
 /turf/open/floor/iron/smooth,
 /area/station/science/robotics)
 "cdp" = (
@@ -17079,7 +17079,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/science)
 "kcS" = (
-/obj/item/clothing/mask/cigarette/cigar/havana,
+/obj/item/cigarette/cigar/havana,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/red,
 /area/station/commons/vacant_room/office)
@@ -17425,7 +17425,7 @@
 "kvy" = (
 /obj/structure/table/reinforced,
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/item/stock_parts/cell/lead{
+/obj/item/stock_parts/power_store/cell/lead{
 	pixel_y = 5
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
@@ -18085,7 +18085,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/tram/right)
 "lkH" = (
-/obj/item/clothing/mask/cigarette/pipe{
+/obj/item/cigarette/pipe{
 	pixel_x = 2
 	},
 /obj/structure/table/wood/fancy/orange,
@@ -20187,8 +20187,8 @@
 "nxj" = (
 /obj/structure/closet/crate/science,
 /obj/item/radio/intercom/directional/west,
-/obj/item/stock_parts/cell/high,
-/obj/item/stock_parts/cell/high/empty,
+/obj/item/stock_parts/power_store/cell/high,
+/obj/item/stock_parts/power_store/cell/high/empty,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/lab)
@@ -21302,7 +21302,7 @@
 "oCZ" = (
 /obj/structure/table,
 /obj/machinery/cell_charger,
-/obj/item/stock_parts/cell/crap,
+/obj/item/stock_parts/power_store/cell/crap,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/desk_bell{
 	pixel_x = 7;
