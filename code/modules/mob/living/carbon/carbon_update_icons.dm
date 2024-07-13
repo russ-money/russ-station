@@ -529,7 +529,6 @@
 	if(is_invisible)
 		. += "-invisible"
 	for(var/datum/bodypart_overlay/overlay as anything in bodypart_overlays)
-		to_chat(GLOB.admins, span_big(span_green("owner key is [owner]."))) // debugaaa
 		if(!overlay.can_draw_on_bodypart(owner))
 			continue
 		. += "-[jointext(overlay.generate_icon_cache(), "-")]"
