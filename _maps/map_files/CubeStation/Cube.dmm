@@ -945,7 +945,7 @@
 /area/space)
 "axy" = (
 /obj/machinery/light/directional/south,
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/explab)
 "aye" = (
 /obj/structure/chair/comfy/black{
@@ -2890,7 +2890,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
 "bDo" = (
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/explab)
 "bDs" = (
 /obj/effect/turf_decal/stripes/line{
@@ -10070,6 +10070,7 @@
 /area/station/maintenance/fore/lesser)
 "fvt" = (
 /obj/machinery/light/directional/south,
+/obj/machinery/vatgrower,
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/cytology)
 "fvE" = (
@@ -10931,7 +10932,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/explab)
 "fTa" = (
 /obj/structure/lattice,
@@ -15843,6 +15844,9 @@
 "iBu" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/light/directional/west,
+/obj/structure/extinguisher_cabinet{
+	pixel_x = -27
+	},
 /turf/open/floor/iron,
 /area/station/cargo/office)
 "iBD" = (
@@ -24298,6 +24302,11 @@
 /obj/item/experi_scanner,
 /obj/item/experi_scanner,
 /obj/item/experi_scanner,
+/obj/item/flatpack{
+	board = /obj/item/circuitboard/machine/flatpacker;
+	pixel_x = -6;
+	pixel_y = 5
+	},
 /turf/open/floor/iron/dark,
 /area/station/science/lab)
 "ncs" = (
@@ -30720,7 +30729,7 @@
 /area/station/security)
 "qpT" = (
 /obj/effect/landmark/start/hangover,
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/explab)
 "qpZ" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
@@ -35784,7 +35793,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/explab)
 "sMN" = (
 /obj/structure/closet/secure_closet/security/sec,
@@ -36917,9 +36926,7 @@
 /area/station/security/brig)
 "trn" = (
 /obj/structure/disposalpipe/segment,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -27
-	},
+/obj/structure/sign/departments/exodrone/directional/west,
 /turf/open/floor/iron,
 /area/station/cargo/office)
 "try" = (
@@ -36932,7 +36939,7 @@
 /obj/machinery/camera/autoname/directional/south{
 	network = list("ss13","rd","test")
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/explab)
 "tsi" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
@@ -37356,6 +37363,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
 	dir = 10
 	},
+/obj/machinery/portable_atmospherics/pipe_scrubber,
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "tDQ" = (
@@ -37925,7 +37933,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/explab)
 "tTo" = (
 /obj/structure/cable,
@@ -42132,7 +42140,7 @@
 /obj/structure/bed/dogbed{
 	name = "Rabbit Bed"
 	},
-/mob/living/simple_animal/pet/rabbit/caerby,
+/mob/living/basic/pet/rabbit/caerby,
 /turf/open/floor/grass,
 /area/station/command/heads_quarters/hos)
 "vVv" = (
@@ -43232,7 +43240,7 @@
 /area/station/security/prison)
 "wuZ" = (
 /obj/machinery/rnd/experimentor,
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/explab)
 "wvj" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{

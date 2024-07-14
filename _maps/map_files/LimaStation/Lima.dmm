@@ -376,7 +376,7 @@
 /obj/structure/bed/dogbed{
 	name = "Rabbit Bed"
 	},
-/mob/living/simple_animal/hostile/retaliate/caerby,
+/mob/living/basic/hostile/retaliate/caerby,
 /turf/open/floor/grass,
 /area/station/command/heads_quarters/hos)
 "adt" = (
@@ -6247,7 +6247,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "bMM" = (
 /obj/effect/turf_decal/siding/yellow{
@@ -6338,7 +6338,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "bOq" = (
 /obj/machinery/computer/records/medical{
@@ -7512,7 +7512,7 @@
 "csP" = (
 /obj/effect/spawner/random/medical/two_percent_xeno_egg_spawner,
 /obj/effect/landmark/event_spawn,
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "csU" = (
 /obj/machinery/modular_computer/preset/id{
@@ -9677,6 +9677,10 @@
 /obj/machinery/telecomms/processor/preset_two,
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/station/tcommsat/server)
+"dwZ" = (
+/obj/machinery/portable_atmospherics/pipe_scrubber,
+/turf/open/floor/iron,
+/area/station/engineering/atmos)
 "dxo" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/holopad,
@@ -13229,7 +13233,7 @@
 /obj/structure/table,
 /obj/item/scalpel,
 /obj/item/hemostat,
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "fcM" = (
 /obj/effect/turf_decal/bot,
@@ -13681,7 +13685,7 @@
 /area/station/engineering/supermatter/room)
 "fpa" = (
 /obj/machinery/light/directional/south,
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "fpn" = (
 /obj/machinery/status_display/evac/directional/north,
@@ -18489,7 +18493,7 @@
 /obj/structure/table,
 /obj/item/clothing/gloves/latex,
 /obj/item/clothing/mask/surgical,
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "hOF" = (
 /turf/open/floor/iron,
@@ -22791,7 +22795,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "klq" = (
 /obj/effect/landmark/event_spawn,
@@ -24362,7 +24366,7 @@
 "lcd" = (
 /obj/structure/table,
 /obj/item/clothing/suit/apron/surgical,
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "lcr" = (
 /obj/effect/landmark/navigate_destination/dockescpod1,
@@ -25266,6 +25270,7 @@
 "lEZ" = (
 /obj/machinery/light/small/directional/south,
 /obj/effect/spawner/random/entertainment/drugs,
+/obj/structure/sign/departments/exodrone/directional/south,
 /turf/open/floor/iron,
 /area/station/maintenance/port/aft)
 "lFb" = (
@@ -25407,7 +25412,7 @@
 /obj/machinery/atmospherics/components/unary/outlet_injector{
 	dir = 1
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "lJr" = (
 /obj/structure/window/spawner/directional/north,
@@ -28908,7 +28913,7 @@
 	},
 /obj/structure/table,
 /obj/item/surgical_drapes,
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "nLr" = (
 /obj/machinery/medical_kiosk,
@@ -29760,6 +29765,11 @@
 /area/station/service/theater)
 "one" = (
 /obj/structure/table/reinforced,
+/obj/item/flatpack{
+	board = /obj/item/circuitboard/machine/flatpacker;
+	pixel_x = -6;
+	pixel_y = 5
+	},
 /turf/open/floor/iron/dark,
 /area/station/science/lab)
 "oni" = (
@@ -33432,6 +33442,10 @@
 	},
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit)
+"qwI" = (
+/obj/machinery/vatgrower,
+/turf/open/floor/iron/showroomfloor,
+/area/station/science/cytology)
 "qxp" = (
 /obj/machinery/telecomms/processor/preset_four,
 /turf/open/floor/circuit/telecomms/mainframe,
@@ -35395,7 +35409,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "rFc" = (
 /obj/structure/disposalpipe/segment{
@@ -37574,7 +37588,7 @@
 "sVF" = (
 /obj/structure/table,
 /obj/item/retractor,
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "sVK" = (
 /obj/effect/turf_decal/loading_area{
@@ -39228,7 +39242,7 @@
 /obj/item/stack/sheet/mineral/plasma{
 	pixel_y = 4
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "tOF" = (
 /obj/structure/reagent_dispensers/watertank,
@@ -40288,9 +40302,9 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/machinery/portable_atmospherics/scrubber/huge,
 /obj/effect/turf_decal/bot,
 /obj/machinery/airalarm/directional/north,
+/obj/machinery/portable_atmospherics/pipe_scrubber,
 /turf/open/floor/iron,
 /area/station/science/ordnance/storage)
 "unC" = (
@@ -43650,7 +43664,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "wrp" = (
 /turf/closed/wall/r_wall,
@@ -45519,6 +45533,9 @@
 	},
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
+"xsC" = (
+/turf/open/floor/engine/xenobio,
+/area/station/science/xenobiology)
 "xsI" = (
 /turf/closed/wall/r_wall,
 /area/station/tcommsat/computer)
@@ -45871,7 +45888,7 @@
 /obj/machinery/camera/directional/south{
 	network = list("ss13","xeno")
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "xCC" = (
 /obj/structure/displaycase/captain,
@@ -64437,7 +64454,7 @@ ryH
 ryH
 ryH
 eoa
-ycG
+dwZ
 ycG
 ycG
 ycG
@@ -92935,7 +92952,7 @@ kLY
 hdZ
 hDx
 sjD
-sjD
+qwI
 jCv
 gYz
 ugL
@@ -95241,8 +95258,8 @@ yjR
 rDW
 rDW
 bOn
-eVi
-eVi
+xsC
+xsC
 nmU
 nmU
 nyk
@@ -95498,9 +95515,9 @@ cEE
 rDW
 klm
 rEX
-eVi
-eVi
-eVi
+xsC
+xsC
+xsC
 nmU
 nyk
 nmU
@@ -95754,9 +95771,9 @@ cUr
 qGR
 rDW
 bOn
-eVi
-eVi
-eVi
+xsC
+xsC
+xsC
 fpa
 nmU
 vPo
@@ -96011,9 +96028,9 @@ oGy
 uff
 sNu
 bOn
-eVi
+xsC
 csP
-eVi
+xsC
 xCw
 nmU
 vYI
@@ -96268,9 +96285,9 @@ cUr
 qGR
 rDW
 bOn
-eVi
-eVi
-eVi
+xsC
+xsC
+xsC
 fpa
 nmU
 vPo
@@ -96527,8 +96544,8 @@ dmd
 wrl
 bMG
 lIQ
-eVi
-eVi
+xsC
+xsC
 nmU
 fnM
 eOw
@@ -96783,8 +96800,8 @@ yjR
 rDW
 rDW
 bOn
-eVi
-eVi
+xsC
+xsC
 nmU
 nmU
 fnM

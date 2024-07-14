@@ -1802,7 +1802,7 @@
 "aWK" = (
 /obj/effect/spawner/random/medical/two_percent_xeno_egg_spawner,
 /obj/machinery/light/directional/west,
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "aWR" = (
 /turf/closed/wall,
@@ -3768,6 +3768,7 @@
 /obj/item/pen{
 	pixel_x = -4
 	},
+/obj/machinery/vatgrower,
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/xenobiology)
 "caC" = (
@@ -5766,7 +5767,7 @@
 /turf/open/floor/iron,
 /area/station/security/brig)
 "dgR" = (
-/mob/living/simple_animal/pet/rabbit/caerby,
+/mob/living/basic/pet/rabbit/caerby,
 /obj/machinery/light/small/directional/east,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
@@ -6672,7 +6673,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/visible{
 	dir = 4
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "dGz" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/on{
@@ -13207,6 +13208,14 @@
 /obj/machinery/light/directional/north,
 /turf/open/floor/iron,
 /area/station/security/courtroom)
+"hka" = (
+/obj/effect/spawner/random/trash/garbage,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
+	dir = 9
+	},
+/obj/structure/sign/departments/exodrone/directional/east,
+/turf/open/floor/plating,
+/area/station/maintenance/starboard/fore)
 "hkg" = (
 /obj/machinery/light/directional/east,
 /obj/effect/turf_decal/tile/yellow,
@@ -13728,6 +13737,10 @@
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible,
 /turf/open/floor/plating,
 /area/station/engineering/atmos)
+"hBH" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/engine/xenobio,
+/area/station/science/xenobiology)
 "hBJ" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4
@@ -14514,6 +14527,11 @@
 	},
 /obj/item/radio/headset/headset_sci{
 	pixel_x = -7
+	},
+/obj/item/flatpack{
+	board = /obj/item/circuitboard/machine/flatpacker;
+	pixel_x = -6;
+	pixel_y = 5
 	},
 /turf/open/floor/iron/dark,
 /area/station/science/explab)
@@ -15341,7 +15359,7 @@
 	network = list("ss13","rd","xeno");
 	view_range = 6
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "imU" = (
 /obj/effect/turf_decal/tile/green{
@@ -16663,7 +16681,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/visible{
 	dir = 4
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "iZh" = (
 /obj/effect/turf_decal/tile/red,
@@ -18758,7 +18776,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/slime_extract,
 /obj/effect/landmark/event_spawn,
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "khG" = (
 /obj/effect/decal/cleanable/dirt,
@@ -21852,7 +21870,7 @@
 "lPP" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/xenoblood/xgibs/larva,
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "lPR" = (
 /obj/item/paper/crumpled,
@@ -22246,7 +22264,7 @@
 /area/station/service/hydroponics)
 "meh" = (
 /obj/machinery/light/directional/west,
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "mev" = (
 /obj/effect/decal/cleanable/dirt,
@@ -26179,6 +26197,9 @@
 /obj/structure/cable,
 /turf/open/floor/iron/solarpanel/airless,
 /area/station/solars/starboard/fore)
+"oeY" = (
+/turf/open/floor/engine/xenobio,
+/area/station/science/xenobiology)
 "ofe" = (
 /obj/structure/chair/stool/bar/directional/south,
 /turf/open/floor/stone,
@@ -29805,7 +29826,7 @@
 "pYD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/gibspawner/xeno,
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "pYH" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -30856,7 +30877,7 @@
 /area/station/command/bridge)
 "qAM" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/on,
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "qBr" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
@@ -33698,6 +33719,11 @@
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/central)
+"rYN" = (
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
+/obj/machinery/portable_atmospherics/pipe_scrubber,
+/turf/open/floor/iron,
+/area/station/engineering/atmos)
 "rYX" = (
 /obj/machinery/door/airlock/grunge{
 	name = "Maintenance"
@@ -34407,7 +34433,7 @@
 	network = list("ss13","rd","xeno");
 	view_range = 6
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "suK" = (
 /obj/effect/turf_decal/tile/blue{
@@ -40893,6 +40919,7 @@
 /area/station/science/ordnance)
 "vEw" = (
 /obj/structure/window/spawner/directional/north,
+/obj/machinery/portable_atmospherics/pipe_scrubber,
 /turf/open/floor/iron/white,
 /area/station/science/ordnance)
 "vEy" = (
@@ -65413,10 +65440,10 @@ vAS
 kvx
 kvx
 aWK
-vDg
-xpg
-xpg
-vDg
+oeY
+hBH
+hBH
+oeY
 meh
 kvx
 kvx
@@ -65669,13 +65696,13 @@ ylq
 cWb
 kvx
 suc
-vDg
-xpg
+oeY
+hBH
 pYD
 khB
 lPP
-vDg
-vDg
+oeY
+oeY
 kvx
 teQ
 aci
@@ -65925,10 +65952,10 @@ lTA
 wAR
 fAk
 kvx
-xpg
-vDg
-xpg
-vDg
+hBH
+oeY
+hBH
+oeY
 qAM
 iYE
 dGv
@@ -66185,8 +66212,8 @@ kvx
 kvx
 gBV
 gBV
-xpg
-xpg
+hBH
+hBH
 gBV
 eoI
 kvx
@@ -76996,7 +77023,7 @@ lTA
 vAE
 ooU
 qpK
-xlq
+rYN
 aml
 aUo
 aGm
@@ -98521,7 +98548,7 @@ eWA
 esP
 fGp
 kEr
-kEr
+hka
 ohp
 iPJ
 tIa

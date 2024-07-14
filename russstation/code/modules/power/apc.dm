@@ -1,4 +1,4 @@
-// too lazy to set the right cell sizes, let's automate it
+/* too lazy to set the right cell sizes, let's automate it
 /obj/machinery/power/apc/auto_cell
 	auto_name = TRUE
 
@@ -35,3 +35,4 @@
 	. = ..()
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/power/apc/auto_cell, APC_PIXEL_OFFSET)
+*/

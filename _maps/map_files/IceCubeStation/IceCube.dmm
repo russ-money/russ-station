@@ -6588,7 +6588,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "dgJ" = (
 /obj/structure/table,
@@ -8555,6 +8555,9 @@
 /obj/structure/flora/bush/reed/style_random,
 /turf/open/floor/grass,
 /area/station/hallway/secondary/exit/departure_lounge)
+"dXY" = (
+/turf/open/floor/engine/xenobio,
+/area/station/science/xenobiology)
 "dXZ" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
@@ -11477,7 +11480,7 @@
 /obj/structure/table,
 /obj/item/surgical_drapes,
 /obj/item/clothing/mask/surgical,
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "fnq" = (
 /obj/item/kirbyplants/random,
@@ -13553,7 +13556,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "gkn" = (
 /obj/effect/landmark/start/botanist,
@@ -14007,7 +14010,7 @@
 /area/station/service/cafeteria)
 "gvu" = (
 /obj/machinery/light/directional/south,
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "gvC" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
@@ -18415,6 +18418,13 @@
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/plating,
 /area/station/cargo/drone_bay)
+"izG" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/sign/departments/exodrone/directional/north,
+/turf/open/floor/plating,
+/area/station/maintenance/department/cargo)
 "izH" = (
 /obj/effect/turf_decal/tile/green{
 	dir = 1
@@ -21626,7 +21636,7 @@
 /area/station/hallway/primary/central/fore)
 "jZV" = (
 /obj/effect/spawner/random/contraband/cannabis,
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "kaa" = (
 /obj/structure/chair/stool/directional/north,
@@ -22643,7 +22653,7 @@
 	c_tag = "Xenobiology Pens Observation - Secure";
 	network = list("ss13","rd")
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "kzz" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -24248,7 +24258,7 @@
 /turf/open/floor/iron/dark,
 /area/station/command/heads_quarters/ce)
 "ljW" = (
-/mob/living/simple_animal/pet/rabbit/caerby,
+/mob/living/basic/pet/rabbit/caerby,
 /obj/structure/bed/dogbed{
 	name = "Rabbit Bed"
 	},
@@ -26458,6 +26468,7 @@
 /area/station/command/gateway)
 "mhV" = (
 /obj/machinery/firealarm/directional/south,
+/obj/machinery/portable_atmospherics/pipe_scrubber,
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "mia" = (
@@ -29400,6 +29411,7 @@
 /area/station/hallway/primary/central/fore)
 "nyC" = (
 /obj/machinery/light/directional/north,
+/obj/machinery/portable_atmospherics/pipe_scrubber,
 /turf/open/floor/iron,
 /area/station/engineering/atmos/project)
 "nyF" = (
@@ -31078,7 +31090,7 @@
 /obj/machinery/atmospherics/components/unary/outlet_injector{
 	dir = 1
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "ojG" = (
 /obj/structure/cable,
@@ -31792,7 +31804,7 @@
 /obj/structure/table,
 /obj/item/hemostat,
 /obj/item/scalpel,
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "oDA" = (
 /obj/machinery/telecomms/server/presets/science,
@@ -31849,6 +31861,7 @@
 /area/station/science/lab)
 "oEu" = (
 /obj/machinery/airalarm/directional/north,
+/obj/machinery/portable_atmospherics/pipe_scrubber,
 /turf/open/floor/iron/white,
 /area/station/science/ordnance)
 "oEv" = (
@@ -31988,7 +32001,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "oIB" = (
 /obj/item/radio/intercom/directional/west,
@@ -34599,7 +34612,7 @@
 /area/station/ai_monitored/aisat)
 "pWI" = (
 /obj/effect/spawner/random/medical/two_percent_xeno_egg_spawner,
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "pWL" = (
 /obj/structure/chair/sofa/bench/left{
@@ -40067,6 +40080,11 @@
 /obj/item/stock_parts/micro_laser{
 	pixel_x = 2
 	},
+/obj/item/flatpack{
+	board = /obj/item/circuitboard/machine/flatpacker;
+	pixel_x = -6;
+	pixel_y = 5
+	},
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/lab)
 "sBO" = (
@@ -41617,6 +41635,10 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/maintenance/port/fore)
+"ttM" = (
+/obj/machinery/vatgrower,
+/turf/open/floor/iron/white,
+/area/station/science/xenobiology)
 "ttN" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -46430,7 +46452,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "vBP" = (
 /obj/structure/flora/bush/grassy/style_random,
@@ -47724,7 +47746,7 @@
 "wgN" = (
 /obj/structure/table,
 /obj/item/retractor,
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "wgR" = (
 /obj/structure/cable,
@@ -50773,7 +50795,7 @@
 /obj/structure/table,
 /obj/item/clothing/gloves/latex,
 /obj/item/clothing/suit/apron/surgical,
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "xzp" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -51565,7 +51587,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "xQW" = (
 /obj/structure/closet/emcloset,
@@ -51620,7 +51642,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "xRO" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -136880,7 +136902,7 @@ cix
 nFQ
 gRt
 eQd
-iwE
+dXY
 xzl
 fnm
 eQd
@@ -137138,7 +137160,7 @@ ikY
 bbg
 xRC
 ojx
-iwE
+dXY
 gvu
 eQd
 qNk
@@ -137394,9 +137416,9 @@ igf
 gRt
 oIA
 dgE
-iwE
-iwE
-iwE
+dXY
+dXY
+dXY
 eQd
 qNk
 qNk
@@ -137650,8 +137672,8 @@ nnQ
 xef
 nRl
 xQS
-iwE
-iwE
+dXY
+dXY
 pWI
 kzt
 eQd
@@ -137909,8 +137931,8 @@ gRt
 vBB
 gki
 jZV
-iwE
-iwE
+dXY
+dXY
 eQd
 qNk
 qNk
@@ -138165,8 +138187,8 @@ fTn
 hFi
 gRt
 xQS
-iwE
-iwE
+dXY
+dXY
 gvu
 eQd
 qNk
@@ -138422,7 +138444,7 @@ qAA
 vHp
 gRt
 eQd
-iwE
+dXY
 oDw
 wgN
 eQd
@@ -138925,7 +138947,7 @@ cYm
 nrl
 slm
 sCc
-slm
+ttM
 hFB
 kEs
 exR
@@ -159949,7 +159971,7 @@ ikv
 egG
 uHV
 pvG
-rjD
+izG
 xMg
 xzD
 eUa

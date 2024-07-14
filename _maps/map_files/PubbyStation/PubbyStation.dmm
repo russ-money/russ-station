@@ -19833,6 +19833,11 @@
 	layer = 3.1
 	},
 /obj/structure/disposalpipe/segment,
+/obj/item/flatpack{
+	board = /obj/item/circuitboard/machine/flatpacker;
+	pixel_x = -6;
+	pixel_y = 5
+	},
 /turf/open/floor/iron,
 /area/station/science/research)
 "bur" = (
@@ -34219,7 +34224,7 @@
 /area/station/medical/surgery)
 "eQR" = (
 /obj/effect/spawner/random/medical/two_percent_xeno_egg_spawner,
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "eQZ" = (
 /obj/structure/disposalpipe/segment,
@@ -34271,6 +34276,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/duct,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/sign/departments/exodrone/directional/south,
 /turf/open/floor/plating,
 /area/station/maintenance/department/cargo)
 "eUA" = (
@@ -34757,6 +34763,7 @@
 	name = "Waste to Space"
 	},
 /obj/structure/extinguisher_cabinet/directional/west,
+/obj/machinery/portable_atmospherics/pipe_scrubber,
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "fBt" = (
@@ -36938,7 +36945,7 @@
 	id = "xenoigniter";
 	luminosity = 2
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "iPU" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -38977,11 +38984,7 @@
 /obj/item/radio/intercom{
 	pixel_x = -28
 	},
-/obj/structure/rack,
-/obj/item/clothing/shoes/winterboots,
-/obj/item/clothing/shoes/winterboots,
-/obj/item/clothing/suit/hooded/wintercoat/science,
-/obj/item/clothing/suit/hooded/wintercoat/science,
+/obj/machinery/vatgrower,
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
 "lXc" = (
@@ -39640,7 +39643,7 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 8
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "nbt" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
@@ -41335,6 +41338,9 @@
 /obj/structure/lattice,
 /turf/open/space/basic,
 /area/space/nearstation)
+"paU" = (
+/turf/open/floor/engine/xenobio,
+/area/station/science/xenobiology)
 "pbm" = (
 /obj/machinery/door/airlock/external{
 	name = "Pod Docking Bay"
@@ -41348,7 +41354,7 @@
 /obj/machinery/atmospherics/components/unary/outlet_injector/on{
 	dir = 8
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "pbX" = (
 /obj/machinery/door/firedoor,
@@ -43353,7 +43359,6 @@
 	name = "shutters control";
 	pixel_x = 28
 	},
-/obj/item/ammo_casing/shotgun/improvised,
 /turf/open/floor/plating,
 /area/station/maintenance/department/security/brig)
 "rLU" = (
@@ -44229,7 +44234,7 @@
 /area/station/maintenance/department/cargo)
 "tfP" = (
 /obj/item/beacon,
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "tfS" = (
 /obj/effect/turf_decal/tile/neutral,
@@ -44441,7 +44446,7 @@
 	network = list("xeno","rd")
 	},
 /obj/machinery/light/directional/east,
-/turf/open/floor/engine,
+/turf/open/floor/engine/xenobio,
 /area/station/science/xenobiology)
 "tuL" = (
 /obj/structure/disposalpipe/segment{
@@ -45306,6 +45311,7 @@
 /area/station/medical/medbay/lobby)
 "uAx" = (
 /obj/machinery/light/directional/south,
+/obj/machinery/portable_atmospherics/pipe_scrubber,
 /turf/open/floor/iron/dark,
 /area/station/science/ordnance)
 "uAU" = (
@@ -99443,7 +99449,7 @@ bkF
 bkF
 bkF
 pbR
-blX
+paU
 naq
 bkF
 bkF
@@ -99697,13 +99703,13 @@ abI
 aby
 aaa
 bkF
-blX
-blX
-blX
-blX
-blX
-blX
-blX
+paU
+paU
+paU
+paU
+paU
+paU
+paU
 bkF
 aaa
 aby
@@ -99954,13 +99960,13 @@ aaa
 aby
 aaa
 xKc
-blX
-blX
+paU
+paU
 iPj
 tfP
 iPj
-blX
-blX
+paU
+paU
 xKc
 aaa
 aby
@@ -100211,12 +100217,12 @@ aaa
 aed
 aaa
 bkF
-blX
-blX
-blX
+paU
+paU
+paU
 tuy
-blX
-blX
+paU
+paU
 eQR
 bkF
 aaa
