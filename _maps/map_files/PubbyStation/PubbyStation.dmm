@@ -22383,7 +22383,7 @@
 /area/station/command/heads_quarters/rd)
 "bEU" = (
 /obj/structure/table/glass,
-/obj/machinery/computer/security,/telescreen/rd/directional/north,
+/obj/machinery/computer/security/telescreen/rd/directional/north,
 /obj/item/stamp/head/rd{
 	pixel_x = -8;
 	pixel_y = 14

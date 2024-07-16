@@ -15534,7 +15534,7 @@
 /obj/effect/mapping_helpers/requests_console/announcement,
 /obj/effect/mapping_helpers/requests_console/information,
 /obj/effect/mapping_helpers/requests_console/assistance,
-/obj/machinery/computer/security/telescreen/vault,
+/obj/machinery/computer/security/telescreen/vault/directional/north,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/hop)
@@ -18825,9 +18825,7 @@
 /area/station/maintenance/starboard/central)
 "kia" = (
 /obj/structure/table,
-/obj/machinery/computer/security/telescreen/engine{
-	dir = 4
-	},
+/obj/machinery/computer/security/telescreen/engine/directional/east,
 /obj/machinery/light/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
@@ -25068,10 +25066,7 @@
 	},
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/table/glass,
-/obj/machinery/computer/security/telescreen/cmo{
-	dir = 4;
-	pixel_x = -27
-	},
+/obj/machinery/computer/security/telescreen/cmo/directional/east,
 /obj/structure/cable,
 /obj/machinery/fax{
 	fax_name = "Chief Medical Officer's Office";
@@ -26554,10 +26549,9 @@
 	mapping_id = "main_turbine"
 	},
 /obj/structure/cable,
-/obj/machinery/computer/security/telescreen{
+/obj/machinery/computer/security/telescreen/directional/north{
 	desc = "Used for watching the turbine vent.";
-	name = "turbine vent monitor";
-	network = list("turbine");
+	name = "turbine vent monitor"
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/disposal/incinerator)
@@ -26731,11 +26725,9 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
 	},
-/obj/machinery/computer/security/telescreen{
+/obj/machinery/computer/security/telescreen/directional/north{
 	desc = "Used for the Auxiliary Mining Base.";
-	name = "Auxiliary Base Monitor";
-	network = list("auxbase");
-	pixel_y = 28
+	name = "Auxiliary Base Monitor"
 	},
 /turf/open/floor/iron,
 /area/station/construction/mining/aux_base)
@@ -33687,7 +33679,7 @@
 /turf/open/floor/grass,
 /area/station/medical/chemistry)
 "rYJ" = (
-/obj/machinery/computer/security/telescreen/entertainment,
+/obj/machinery/computer/security/telescreen/entertainment/directional/north,
 /turf/closed/wall,
 /area/station/commons/locker)
 "rYK" = (
@@ -40271,10 +40263,7 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
-/obj/machinery/computer/security/telescreen/ce{
-	dir = 4;
-	pixel_x = -28
-	},
+/obj/machinery/computer/security/telescreen/ce/directional/east,
 /turf/open/floor/iron/checker,
 /area/station/command/heads_quarters/ce)
 "vrj" = (
@@ -41930,9 +41919,7 @@
 "wee" = (
 /obj/structure/table,
 /obj/item/reagent_containers/cup/rag,
-/obj/machinery/computer/security/telescreen/entertainment{
-	pixel_y = -32
-	},
+/obj/machinery/computer/security/telescreen/entertainment/directional/north,
 /obj/item/holosign_creator/robot_seat/bar,
 /turf/open/floor/wood,
 /area/station/service/bar)
@@ -41982,10 +41969,8 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/machinery/computer/security/telescreen{
-	name = "Test Chamber Monitor";
-	network = list("xeno");
-	pixel_y = 28
+/obj/machinery/computer/security/telescreen/directional/north{
+	name = "Test Chamber Monitor"
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
@@ -45036,10 +45021,7 @@
 /turf/open/floor/plating,
 /area/station/medical/storage)
 "xyo" = (
-/obj/machinery/computer/security/telescreen/ordnance{
-	dir = 4;
-	pixel_x = -28
-	},
+/obj/machinery/computer/security/telescreen/ordnance/directional/east,
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},

@@ -36145,8 +36145,7 @@
 	},
 /obj/structure/cable,
 /obj/machinery/computer/security/telescreen/interrogation/directional/north{
-	name = "isolation room monitor";
-	network = list("isolation")
+	name = "isolation room monitor"
 	},
 /obj/effect/turf_decal/tile/red/opposingcorners,
 /turf/open/floor/iron,

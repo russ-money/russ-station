@@ -2177,9 +2177,7 @@
 	},
 /obj/effect/landmark/start/warden,
 /obj/effect/turf_decal/tile/red/opposingcorners,
-/obj/machinery/computer/security/telescreen/prison{
-	pixel_y = 30
-	},
+/obj/machinery/computer/security/telescreen/prison/directional/north,
 /turf/open/floor/iron,
 /area/station/security/warden)
 "aZo" = (
@@ -3500,9 +3498,7 @@
 /turf/open/floor/wood,
 /area/station/service/library/abandoned)
 "bGh" = (
-/obj/machinery/computer/security/telescreen/ce{
-	pixel_y = 28
-	},
+/obj/machinery/computer/security/telescreen/ce/directional/north,
 /obj/machinery/modular_computer/preset/id,
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 1
@@ -8336,9 +8332,7 @@
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/security/armory)
 "dSo" = (
-/obj/machinery/computer/security/telescreen/prison{
-	pixel_y = 30
-	},
+/obj/machinery/computer/security/telescreen/prison/directional/north,
 /obj/effect/turf_decal/tile/red/half{
 	dir = 1
 	},
@@ -11495,7 +11489,6 @@
 	pixel_y = 5
 	},
 /obj/item/reagent_containers/condiment/enzyme{
-	layer = 5;
 	pixel_y = 5
 	},
 /obj/item/reagent_containers/cup/beaker{
@@ -15424,10 +15417,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/upper)
 "hhF" = (
-/obj/machinery/computer/security/telescreen/interrogation{
-	dir = 1;
-	pixel_y = -32
-	},
+/obj/machinery/computer/security/telescreen/interrogation/directional/north,
 /obj/effect/turf_decal/tile/red/half,
 /turf/open/floor/iron/edge,
 /area/station/security/brig)
@@ -15713,10 +15703,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
 	},
-/obj/machinery/computer/security/telescreen/prison{
-	dir = 1;
-	pixel_y = -27
-	},
+/obj/machinery/computer/security/telescreen/prison/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
@@ -22021,10 +22008,8 @@
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 8
 	},
-/obj/machinery/computer/security/telescreen/cmo{
-	dir = 4;
-	name = "\improper Medbay telescreen";
-	pixel_x = -30
+/obj/machinery/computer/security/telescreen/cmo/directional/east{
+	name = "\improper Medbay telescreen"
 	},
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/dark,
@@ -23142,15 +23127,11 @@
 	pixel_y = -3
 	},
 /obj/item/clothing/head/helmet{
-	layer = 3.00001;
 	pixel_x = -3;
 	pixel_y = 3
 	},
+/obj/item/clothing/head/helmet,
 /obj/item/clothing/head/helmet{
-	layer = 3.00001
-	},
-/obj/item/clothing/head/helmet{
-	layer = 3.00001;
 	pixel_x = 3;
 	pixel_y = -3
 	},
@@ -23387,10 +23368,8 @@
 /area/station/service/kitchen)
 "kNs" = (
 /obj/structure/table,
-/obj/machinery/computer/security/telescreen{
-	name = "Test Chamber Monitor";
-	network = list("xeno");
-	pixel_y = 2
+/obj/machinery/computer/security/telescreen/directional/east{
+	name = "Test Chamber Monitor"
 	},
 /obj/machinery/button/door{
 	id = "misclab";
@@ -25421,10 +25400,7 @@
 /obj/structure/chair/office{
 	dir = 8
 	},
-/obj/machinery/computer/security/telescreen/turbine{
-	dir = 1;
-	pixel_y = -30
-	},
+/obj/machinery/computer/security/telescreen/turbine/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/maintenance/disposal/incinerator)
 "lOl" = (
@@ -27666,10 +27642,7 @@
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
 "mJt" = (
-/obj/machinery/computer/security/telescreen/interrogation{
-	dir = 8;
-	pixel_x = 30
-	},
+/obj/machinery/computer/security/telescreen/interrogation/directional/west,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
@@ -28262,9 +28235,7 @@
 /area/station/maintenance/starboard/aft)
 "mXl" = (
 /obj/machinery/computer/records/security,
-/obj/machinery/computer/security/telescreen/research{
-	pixel_y = 27
-	},
+/obj/machinery/computer/security/telescreen/research/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/security/checkpoint/science)
 "mXs" = (
@@ -29426,9 +29397,7 @@
 /turf/open/floor/iron,
 /area/station/security/warden)
 "nyJ" = (
-/obj/machinery/atmospherics/components/unary/thermomachine/freezer{
-	piping_layer = 2
-	},
+/obj/machinery/atmospherics/components/unary/thermomachine/freezer,
 /turf/open/floor/iron,
 /area/station/science/ordnance)
 "nyO" = (
@@ -33950,9 +33919,7 @@
 	desc = "Looks like a knock-off chem-master. Perhaps useful for separating liquids when mixing drinks precisely. Also dispenses condiments.";
 	name = "HoochMaster Deluxe"
 	},
-/obj/machinery/computer/security/telescreen/bar{
-	pixel_y = 30
-	},
+/obj/machinery/computer/security/telescreen/bar/directional/north,
 /obj/machinery/light/dim/directional/north,
 /turf/open/floor/wood,
 /area/station/service/bar/backroom)
@@ -35081,10 +35048,7 @@
 /turf/open/floor/plating,
 /area/station/engineering/main)
 "qlw" = (
-/obj/machinery/computer/security/telescreen/ordnance{
-	dir = 1;
-	pixel_y = -30
-	},
+/obj/machinery/computer/security/telescreen/ordnance/directional/north,
 /obj/structure/chair/stool/directional/south,
 /obj/item/radio/intercom/directional/east,
 /turf/open/floor/iron,
@@ -39356,10 +39320,8 @@
 /area/station/ai_monitored/aisat)
 "skz" = (
 /obj/structure/table,
-/obj/machinery/computer/security/telescreen{
-	name = "Test Chamber Monitor";
-	network = list("test");
-	pixel_y = 6
+/obj/machinery/computer/security/telescreen/directional/north{
+	name = "Test Chamber Monitor"
 	},
 /obj/machinery/button/door{
 	id = "testlab";
@@ -43577,9 +43539,7 @@
 	dir = 1
 	},
 /obj/machinery/computer/records/medical,
-/obj/machinery/computer/security/telescreen/cmo{
-	pixel_y = 27
-	},
+/obj/machinery/computer/security/telescreen/cmo/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/command/heads_quarters/cmo)
 "ulR" = (
@@ -45513,7 +45473,6 @@
 	pixel_y = 5
 	},
 /obj/item/reagent_containers/condiment/enzyme{
-	layer = 5;
 	pixel_x = 11;
 	pixel_y = 5
 	},
@@ -51105,8 +51064,7 @@
 /area/station/security/lockers)
 "xGz" = (
 /obj/machinery/atmospherics/components/tank/air{
-	dir = 4;
-	piping_layer = 4
+	dir = 4
 	},
 /turf/open/floor/iron/dark,
 /area/station/maintenance/disposal/incinerator)

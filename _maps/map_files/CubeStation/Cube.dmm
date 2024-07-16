@@ -4297,7 +4297,7 @@
 /turf/open/floor/iron/white,
 /area/station/medical/surgery)
 "cnY" = (
-/obj/machinery/computer/security/telescreen/vault,
+/obj/machinery/computer/security/telescreen/vault/directional/north,
 /obj/structure/cable,
 /obj/machinery/camera/autoname/directional/east,
 /turf/open/floor/wood,
@@ -10754,9 +10754,7 @@
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/research)
 "fOM" = (
-/obj/machinery/computer/security/telescreen/entertainment{
-	pixel_x = -31
-	},
+/obj/machinery/computer/security/telescreen/entertainment/directional/north,
 /obj/machinery/light/directional/west,
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 1
@@ -16640,9 +16638,7 @@
 /area/station/medical/medbay/central)
 "iXc" = (
 /obj/structure/table/wood,
-/obj/machinery/computer/security/telescreen/entertainment{
-	pixel_x = -31
-	},
+/obj/machinery/computer/security/telescreen/entertainment/directional/north,
 /obj/machinery/fax{
 	fax_name = "Captain's Office";
 	name = "Captain's Fax Machine"
@@ -17468,10 +17464,8 @@
 /turf/open/floor/iron/grimy,
 /area/station/security/detectives_office)
 "juD" = (
-/obj/machinery/computer/security/telescreen{
-	name = "Test Chamber Monitor";
-	network = list("test");
-	pixel_y = 28
+/obj/machinery/computer/security/telescreen/directional/north{
+	name = "Test Chamber Monitor"
 	},
 /turf/open/floor/iron,
 /area/station/science/explab)
@@ -17558,10 +17552,8 @@
 "jxb" = (
 /obj/machinery/light/directional/east,
 /obj/structure/cable,
-/obj/machinery/computer/security/telescreen{
-	name = "Test Chamber Monitor";
-	network = list("xeno");
-	pixel_y = 32
+/obj/machinery/computer/security/telescreen/directional/north{
+	name = "Test Chamber Monitor"
 	},
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/xenobiology)
@@ -19683,10 +19675,7 @@
 /turf/closed/wall/r_wall,
 /area/station/maintenance/disposal/incinerator)
 "kGC" = (
-/obj/machinery/computer/security/telescreen/ordnance{
-	dir = 4;
-	pixel_x = -27
-	},
+/obj/machinery/computer/security/telescreen/ordnance/directional/east,
 /turf/open/floor/iron/dark,
 /area/station/science/ordnance)
 "kGG" = (
@@ -25996,10 +25985,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/starboard)
 "nVq" = (
-/obj/machinery/computer/security/telescreen/rd{
-	pixel_x = 3;
-	pixel_y = 25
-	},
+/obj/machinery/computer/security/telescreen/rd/directional/north,
 /obj/effect/turf_decal/siding/purple{
 	dir = 8
 	},
@@ -27186,10 +27172,7 @@
 /obj/structure/chair/office/light{
 	dir = 4
 	},
-/obj/machinery/computer/security/telescreen/cmo{
-	dir = 1;
-	pixel_y = -28
-	},
+/obj/machinery/computer/security/telescreen/cmo/directional/north,
 /turf/open/floor/iron/showroomfloor,
 /area/station/command/heads_quarters/cmo)
 "ozK" = (
@@ -34330,10 +34313,7 @@
 /obj/machinery/computer/camera_advanced/base_construction/aux{
 	dir = 8
 	},
-/obj/machinery/computer/security/telescreen/auxbase{
-	dir = 8;
-	pixel_x = 30
-	},
+/obj/machinery/computer/security/telescreen/auxbase/directional/west,
 /turf/open/floor/iron,
 /area/station/construction/mining/aux_base)
 "rUt" = (
@@ -35026,9 +35006,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
-/obj/machinery/computer/security/telescreen/interrogation{
-	pixel_x = 30
-	},
+/obj/machinery/computer/security/telescreen/interrogation/directional/north,
 /turf/open/floor/iron,
 /area/station/security/brig)
 "spK" = (
@@ -40577,10 +40555,7 @@
 /obj/machinery/computer/warrant{
 	dir = 1
 	},
-/obj/machinery/computer/security/telescreen/prison{
-	dir = 1;
-	pixel_y = -27
-	},
+/obj/machinery/computer/security/telescreen/prison/directional/north,
 /turf/open/floor/carpet/red,
 /area/station/service/lawoffice)
 "vjG" = (
@@ -45072,9 +45047,7 @@
 /turf/open/floor/plating,
 /area/station/commons/storage/tools)
 "xoV" = (
-/obj/machinery/computer/security/telescreen/ce{
-	pixel_y = 28
-	},
+/obj/machinery/computer/security/telescreen/ce/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/command/heads_quarters/ce)
 "xpn" = (
@@ -45569,9 +45542,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	dir = 4
 	},
-/obj/machinery/atmospherics/components/tank/air{
-	piping_layer = 4
-	},
+/obj/machinery/atmospherics/components/tank/air,
 /turf/open/floor/iron,
 /area/station/maintenance/disposal/incinerator)
 "xBX" = (
