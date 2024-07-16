@@ -12385,10 +12385,7 @@
 	pixel_y = 9
 	},
 /obj/structure/table/wood,
-/obj/machinery/computer/security/telescreen/vault{
-	dir = 8;
-	pixel_x = 26
-	},
+/obj/machinery/computer/security/telescreen/vault/directional/west,
 /turf/open/floor/wood/parquet,
 /area/station/command/heads_quarters/hop)
 "fHW" = (
@@ -40721,15 +40718,12 @@
 "sWB" = (
 /obj/structure/rack,
 /obj/item/clothing/head/helmet/alt{
-	layer = 3.00001;
 	pixel_x = -3;
 	pixel_y = 3
 	},
 /obj/item/clothing/head/helmet/alt{
-	layer = 3.00001
 	},
 /obj/item/clothing/head/helmet/alt{
-	layer = 3.00001;
 	pixel_x = 3;
 	pixel_y = -3
 	},
@@ -41159,7 +41153,6 @@
 /obj/machinery/computer/cargo,
 /obj/machinery/button/door{
 	id = "QMLoaddoor";
-	layer = 4;
 	name = "Loading Doors 2";
 	pixel_x = 8;
 	pixel_y = 24;
@@ -41167,7 +41160,6 @@
 	},
 /obj/machinery/button/door{
 	id = "QMLoaddoor2";
-	layer = 4;
 	name = "Loading Doors";
 	pixel_x = -8;
 	pixel_y = 24;
@@ -46868,10 +46860,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/secondary/dock)
 "vNW" = (
-/obj/machinery/computer/security/telescreen/rd{
-	dir = 4;
-	pixel_x = -26
-	},
+/obj/machinery/computer/security/telescreen/rd/directional/east,
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 8
 	},

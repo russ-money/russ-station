@@ -2513,7 +2513,6 @@
 	},
 /obj/machinery/button/door{
 	id = "QMLoaddoor";
-	layer = 4;
 	name = "Loading Doors";
 	pixel_x = -27;
 	req_access = list("cargo")
@@ -7957,8 +7956,7 @@
 "aOr" = (
 /obj/structure/lattice/catwalk,
 /obj/machinery/atmospherics/components/unary/passive_vent{
-	dir = 4;
-	piping_layer = 1
+	dir = 4
 	},
 /turf/open/space/basic,
 /area/station/engineering/supermatter)
@@ -9440,7 +9438,6 @@
 	},
 /obj/machinery/button/door{
 	id = "QMLoaddoor2";
-	layer = 4;
 	name = "Loading Doors";
 	pixel_x = 27;
 	req_access = list("cargo")
@@ -9528,9 +9525,7 @@
 /turf/open/floor/plating,
 /area/station/hallway/primary/central)
 "cvx" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/manifold4w{
-	piping_layer = 4
-	},
+/obj/machinery/atmospherics/pipe/heat_exchanging/manifold4w,
 /obj/structure/lattice/catwalk,
 /obj/machinery/atmospherics/pipe/heat_exchanging/manifold4w/layer2,
 /turf/open/space/basic,
@@ -11648,9 +11643,7 @@
 /turf/open/floor/iron,
 /area/station/science/ordnance/storage)
 "eDQ" = (
-/obj/machinery/atmospherics/components/unary/passive_vent{
-	piping_layer = 1
-	},
+/obj/machinery/atmospherics/components/unary/passive_vent,
 /obj/machinery/atmospherics/pipe/heat_exchanging/manifold4w,
 /obj/machinery/atmospherics/pipe/heat_exchanging/manifold4w/layer2,
 /obj/machinery/atmospherics/pipe/heat_exchanging/manifold4w/layer4,
@@ -13020,8 +13013,7 @@
 /area/station/service/janitor)
 "fYY" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer{
-	dir = 8;
-	piping_layer = 2
+	dir = 8
 	},
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/south,
@@ -15737,7 +15729,6 @@
 /obj/structure/lattice/catwalk,
 /obj/machinery/atmospherics/components/trinary/filter/flipped/critical{
 	dir = 4;
-	piping_layer = 1;
 	name = "Nitrogen + Plasma filter";
 	filter_type = list(/datum/gas/nitrogen,/datum/gas/plasma)
 	},
@@ -19648,7 +19639,6 @@
 "mTh" = (
 /obj/structure/lattice/catwalk,
 /obj/machinery/atmospherics/components/trinary/filter/flipped/critical{
-	piping_layer = 1;
 	name = "Nitrogen filter";
 	filter_type = list(/datum/gas/nitrogen);
 	transfer_rate = 50
@@ -19831,9 +19821,7 @@
 /turf/open/floor/iron,
 /area/station/engineering/atmos/storage)
 "ncO" = (
-/obj/machinery/atmospherics/components/tank/air{
-	piping_layer = 2
-	},
+/obj/machinery/atmospherics/components/tank/air,
 /turf/open/floor/plating,
 /area/station/maintenance/department/science)
 "ncX" = (
@@ -20096,8 +20084,7 @@
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/hos)
 "nqr" = (
-/obj/machinery/computer/security/telescreen/ordnance{
-	dir = 8;
+/obj/machinery/computer/security/telescreen/ordnance/directional/west{
 	pixel_x = 30
 	},
 /obj/machinery/light/directional/east,

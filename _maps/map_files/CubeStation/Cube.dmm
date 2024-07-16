@@ -4297,9 +4297,7 @@
 /turf/open/floor/iron/white,
 /area/station/medical/surgery)
 "cnY" = (
-/obj/machinery/computer/security/telescreen/vault{
-	pixel_x = 30
-	},
+/obj/machinery/computer/security/telescreen/vault,
 /obj/structure/cable,
 /obj/machinery/camera/autoname/directional/east,
 /turf/open/floor/wood,
@@ -5114,9 +5112,7 @@
 /area/station/command/bridge)
 "cOG" = (
 /obj/structure/rack,
-/obj/structure/window/reinforced/spawner/directional/north{
-	layer = 2.9
-	},
+/obj/structure/window/reinforced/spawner/directional/north,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
@@ -10823,7 +10819,6 @@
 /obj/machinery/computer/cargo,
 /obj/machinery/button/door{
 	id = "QMLoaddoor";
-	layer = 4;
 	name = "Loading Doors 2";
 	pixel_x = 8;
 	pixel_y = 24;
@@ -10831,7 +10826,6 @@
 	},
 /obj/machinery/button/door{
 	id = "QMLoaddoor2";
-	layer = 4;
 	name = "Loading Doors";
 	pixel_x = -8;
 	pixel_y = 24;
@@ -24516,9 +24510,7 @@
 /area/station/service/hydroponics/garden)
 "nhv" = (
 /obj/structure/rack,
-/obj/structure/window/reinforced/spawner/directional/north{
-	layer = 2.9
-	},
+/obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
@@ -30332,9 +30324,7 @@
 /obj/structure/window/reinforced/spawner/directional/east{
 	pixel_x = 3
 	},
-/obj/structure/window/reinforced/spawner/directional/north{
-	layer = 2.9
-	},
+/obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/chair{
 	dir = 4;
 	name = "Defense"
@@ -35017,9 +35007,7 @@
 /area/station/science/ordnance/burnchamber)
 "spy" = (
 /obj/structure/rack,
-/obj/structure/window/reinforced/spawner/directional/north{
-	layer = 2.9
-	},
+/obj/structure/window/reinforced/spawner/directional/north,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
@@ -41214,9 +41202,7 @@
 /area/station/maintenance/aft)
 "vxV" = (
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/structure/window/reinforced/spawner/directional/north{
-	layer = 2.9
-	},
+/obj/structure/window/reinforced/spawner/directional/north,
 /obj/effect/spawner/atmos_canister/nitrous_oxide,
 /turf/open/floor/plating,
 /area/station/security/execution/transfer)
@@ -42880,9 +42866,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/solars/starboard/aft)
 "wmF" = (
-/obj/structure/window/reinforced/spawner/directional/north{
-	layer = 2.9
-	},
+/obj/structure/window/reinforced/spawner/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/security/courtroom)
 "wmI" = (
@@ -43412,13 +43396,11 @@
 	pixel_y = -3
 	},
 /obj/item/clothing/head/helmet/alt{
-	layer = 3.00001;
 	pixel_x = -3;
 	pixel_y = 3
 	},
 /obj/item/clothing/head/helmet/alt,
 /obj/item/clothing/head/helmet/alt{
-	layer = 3.00001;
 	pixel_x = 3;
 	pixel_y = -3
 	},
@@ -43555,9 +43537,7 @@
 /area/station/medical/chemistry)
 "wBV" = (
 /obj/structure/rack,
-/obj/structure/window/reinforced/spawner/directional/north{
-	layer = 2.9
-	},
+/obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
