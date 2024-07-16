@@ -26549,7 +26549,7 @@
 	mapping_id = "main_turbine"
 	},
 /obj/structure/cable,
-/obj/machinery/computer/security/telescreen/directional/north{
+/obj/machinery/computer/security/telescreen{
 	desc = "Used for watching the turbine vent.";
 	name = "turbine vent monitor"
 	},
@@ -26725,7 +26725,7 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
 	},
-/obj/machinery/computer/security/telescreen/directional/north{
+/obj/machinery/computer/security/telescreen{
 	desc = "Used for the Auxiliary Mining Base.";
 	name = "Auxiliary Base Monitor"
 	},
@@ -41969,7 +41969,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/machinery/computer/security/telescreen/directional/north{
+/obj/machinery/computer/security/telescreen{
 	name = "Test Chamber Monitor"
 	},
 /obj/effect/decal/cleanable/dirt,

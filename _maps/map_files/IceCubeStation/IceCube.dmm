@@ -39320,7 +39320,7 @@
 /area/station/ai_monitored/aisat)
 "skz" = (
 /obj/structure/table,
-/obj/machinery/computer/security/telescreen/directional/north{
+/obj/machinery/computer/security/telescreen{
 	name = "Test Chamber Monitor"
 	},
 /obj/machinery/button/door{

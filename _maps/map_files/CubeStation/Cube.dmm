@@ -12793,9 +12793,7 @@
 /obj/machinery/conveyor{
 	id = "garbage"
 	},
-/obj/machinery/door/window/left/directional/west{
-	layer = 3
-	},
+/obj/machinery/door/window/left/directional/west,
 /obj/effect/landmark/generic_maintenance_landmark,
 /turf/open/floor/plating,
 /area/station/maintenance/disposal)
@@ -17464,7 +17462,7 @@
 /turf/open/floor/iron/grimy,
 /area/station/security/detectives_office)
 "juD" = (
-/obj/machinery/computer/security/telescreen/directional/north{
+/obj/machinery/computer/security/telescreen{
 	name = "Test Chamber Monitor"
 	},
 /turf/open/floor/iron,
@@ -17552,7 +17550,7 @@
 "jxb" = (
 /obj/machinery/light/directional/east,
 /obj/structure/cable,
-/obj/machinery/computer/security/telescreen/directional/north{
+/obj/machinery/computer/security/telescreen{
 	name = "Test Chamber Monitor"
 	},
 /turf/open/floor/iron/showroomfloor,
@@ -19536,7 +19534,6 @@
 /area/station/engineering/gravity_generator)
 "kCn" = (
 /obj/machinery/status_display/evac{
-	layer = 4;
 	pixel_y = 32
 	},
 /turf/open/floor/iron/showroomfloor,
@@ -38770,7 +38767,6 @@
 "upa" = (
 /obj/structure/table,
 /obj/item/reagent_containers/condiment/enzyme{
-	layer = 5;
 	pixel_y = 3
 	},
 /obj/item/reagent_containers/cup/beaker{

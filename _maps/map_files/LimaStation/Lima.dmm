@@ -3247,7 +3247,7 @@
 /turf/open/floor/iron,
 /area/station/engineering/gravity_generator)
 "aOh" = (
-/obj/machinery/computer/security/telescreen/directional/north{
+/obj/machinery/computer/security/telescreen{
 	name = "Test Chamber Monitor"
 	},
 /obj/machinery/button/door{
@@ -23020,7 +23020,7 @@
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 9
 	},
-/obj/machinery/computer/security/telescreen/directional/north{
+/obj/machinery/computer/security/telescreen{
 	desc = "Used for monitoring medbay to ensure patient safety.";
 	name = "Medbay Monitor"
 	},
@@ -44997,7 +44997,7 @@
 /area/station/maintenance/fore)
 "xgl" = (
 /obj/structure/table,
-/obj/machinery/computer/security/telescreen/directional/north{
+/obj/machinery/computer/security/telescreen{
 	name = "Test Chamber Monitor"
 	},
 /obj/machinery/button/door{
