@@ -23368,9 +23368,7 @@
 /area/station/service/kitchen)
 "kNs" = (
 /obj/structure/table,
-/obj/machinery/computer/security/telescreen/directional/east{
-	name = "Test Chamber Monitor"
-	},
+/obj/machinery/computer/security/telescreen/test_chamber/directional/east,
 /obj/machinery/button/door{
 	id = "misclab";
 	pixel_y = 25
@@ -25400,7 +25398,7 @@
 /obj/structure/chair/office{
 	dir = 8
 	},
-/obj/machinery/computer/security/telescreen/turbine/directional/north,
+/obj/machinery/computer/security/telescreen/turbine/directional/south,
 /turf/open/floor/iron/dark,
 /area/station/maintenance/disposal/incinerator)
 "lOl" = (

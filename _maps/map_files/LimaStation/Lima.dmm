@@ -9367,7 +9367,7 @@
 "doQ" = (
 /obj/machinery/door/window/right/directional/south{
 	name = "Containment Pen #1";
-	req_access = list("xenobiology")s)
+	req_access = list("xenobiology")
 	},
 /obj/machinery/door/poddoor/preopen{
 	id = "xenobio1";
@@ -14950,7 +14950,7 @@
 /turf/open/space/basic,
 /area/space)
 "fWy" = (
-/obj/machinery/computer/security/telescreen/ordnance/directional/west,
+/obj/machinery/computer/security/telescreen/ordnance/directional/east,
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/ordnance)
 "fWJ" = (
@@ -23166,7 +23166,7 @@
 /obj/structure/chair/office{
 	dir = 4
 	},
-/obj/machinery/computer/security/telescreen/turbine/directional/north,
+/obj/machinery/computer/security/telescreen/turbine/directional/south,
 /turf/open/floor/iron,
 /area/station/maintenance/disposal/incinerator)
 "kwM" = (

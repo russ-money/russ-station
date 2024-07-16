@@ -26549,10 +26549,7 @@
 	mapping_id = "main_turbine"
 	},
 /obj/structure/cable,
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for watching the turbine vent.";
-	name = "turbine vent monitor"
-	},
+/obj/machinery/computer/security/telescreen/turbine/directional/east,
 /turf/open/floor/plating,
 /area/station/maintenance/disposal/incinerator)
 "ooU" = (
@@ -42213,6 +42210,7 @@
 /obj/item/computer_disk,
 /obj/item/computer_disk,
 /obj/structure/table,
+/obj/machinery/computer/security/telescreen/ordnance/directional/south,
 /turf/open/floor/plating,
 /area/station/science/ordnance)
 "wkB" = (
@@ -45021,7 +45019,6 @@
 /turf/open/floor/plating,
 /area/station/medical/storage)
 "xyo" = (
-/obj/machinery/computer/security/telescreen/ordnance/directional/east,
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},

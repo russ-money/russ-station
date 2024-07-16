@@ -18987,7 +18987,7 @@
 /obj/structure/closet/crate,
 /obj/item/storage/bag/ore,
 /obj/item/pickaxe,
-/obj/machinery/computer/security/telescreen/ordnance/directional/east,
+/obj/machinery/computer/security/telescreen/ordnance/directional/west,
 /turf/open/floor/iron,
 /area/station/science/ordnance/testlab)
 "brl" = (
@@ -23797,10 +23797,7 @@
 /area/station/engineering/lobby)
 "bLV" = (
 /obj/machinery/light/directional/west,
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for watching the turbine vent.";
-	name = "turbine vent monitor"
-	},
+/obj/machinery/computer/security/telescreen/turbine/directional/west,
 /obj/structure/table/glass,
 /obj/item/paper_bin,
 /obj/item/pen,
