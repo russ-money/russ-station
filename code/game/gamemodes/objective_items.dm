@@ -500,6 +500,7 @@
 	return GLOB.main_supermatter_engine != null
 
 // Doesn't need item_owner = (JOB_AI) because this handily functions as a murder objective if there isn't one
+/* // Honk start - No AI for us
 /datum/objective_item/steal/functionalai
 	name = "a functional AI"
 	targetitem = /obj/item/aicard
@@ -527,7 +528,7 @@
 	if(isAI(being) && being.stat != DEAD)
 		return TRUE
 
-	return FALSE
+	return FALSE */ // Honk end - No AI for us
 
 /datum/objective_item/steal/blueprints
 	name = "the station blueprints"
