@@ -30,4 +30,4 @@
 	tool_paths = list(/obj/item/melee/smith_hammer)
 	time = 100
 	category = CAT_DWARF
-	always_available = FALSE
+	crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_MUST_BE_LEARNED

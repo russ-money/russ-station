@@ -37,8 +37,12 @@
 #define DNA_HAIR_COLOR_BLOCK 6
 #define DNA_FACIAL_HAIRSTYLE_BLOCK 7
 #define DNA_FACIAL_HAIR_COLOR_BLOCK 8
+#define DNA_HAIRSTYLE_GRADIENT_BLOCK 9
+#define DNA_HAIR_COLOR_GRADIENT_BLOCK 10
+#define DNA_FACIAL_HAIRSTYLE_GRADIENT_BLOCK 11
+#define DNA_FACIAL_HAIR_COLOR_GRADIENT_BLOCK 12
 
-#define DNA_UNI_IDENTITY_BLOCKS 8
+#define DNA_UNI_IDENTITY_BLOCKS 12
 
 #define DNA_MUTANT_COLOR_BLOCK 1
 #define DNA_ETHEREAL_COLOR_BLOCK 2
@@ -57,8 +61,14 @@
 #define DNA_POD_HAIR_BLOCK 15
 #define DNA_MONKEY_TAIL_BLOCK 16
 
+//honk start - our blocks
+#define DNA_SKAVEN_TAIL_BLOCK 17
+#define DNA_DIONA_HAIR_BLOCK 18
+#define DNA_KITSUNE_TAIL_BLOCK 19
+//honk end
+
 /// This number needs to equal the total number of DNA blocks
-#define DNA_FEATURE_BLOCKS 18 // honk -- 3 more than TG to hold Diona Hair (was 15); !!! update "code/__DEFINES/~russ_defines/DNA.dm" as well if changed !!!
+#define DNA_FEATURE_BLOCKS 19 // honk -- 3 more than TG to hold Diona Hair (was 16);
 
 #define DNA_SEQUENCE_LENGTH 4
 #define DNA_MUTATION_BLOCKS 8
@@ -82,6 +92,7 @@
 #define ORGAN_SLOT_MONSTER_CORE "monstercore"
 #define ORGAN_SLOT_RIGHT_ARM_AUG "r_arm_device"
 #define ORGAN_SLOT_LEFT_ARM_AUG "l_arm_device" //This one ignores alphabetical order cause the arms should be together
+#define ORGAN_SLOT_SPINE "spine"
 #define ORGAN_SLOT_STOMACH "stomach"
 #define ORGAN_SLOT_STOMACH_AID "stomach_aid"
 #define ORGAN_SLOT_THRUSTERS "thrusters"

@@ -40,9 +40,9 @@
 	//Looking good urist!
 	new_spawn.facial_hairstyle = pick(list("Beard (Moonshiner)","Beard (Abraham Lincoln)","Beard (Dwarf)", "Beard (Very Long)", "Beard (Full)","Beard (Broken Man)"))
 
-	new_spawn.fully_replace_character_name(null,dwarf_name())
 	new_spawn.gender = pick(list(MALE, FEMALE))
-
+	new_spawn.fully_replace_character_name(null,"[pick(GLOB.dwarf_first)] [pick(GLOB.dwarf_last)]")
+	
 	new_spawn.update_body(is_creating = TRUE)
 
 	to_chat(new_spawn, span_notice("<b>Claim these lands to the dwarven race and purge the hostile creatures of these lands, all the while encouraging migrants with dorm rooms!</b>"))
@@ -95,7 +95,7 @@
 	new_spawn.facial_hairstyle = "Shaved"
 	new_spawn.hairstyle = "Bald"
 
-	new_spawn.fully_replace_character_name(null,dwarf_name())
 	new_spawn.gender = pick(list(MALE, FEMALE))
+	new_spawn.fully_replace_character_name(null,"[pick(GLOB.dwarf_first)] [pick(GLOB.dwarf_last)]")
 
 	new_spawn.update_body(is_creating = TRUE)

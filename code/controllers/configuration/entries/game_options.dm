@@ -347,6 +347,16 @@
 	min_val = 0
 	integer = FALSE
 
+/datum/config_entry/number/events_frequency_lower
+	default = 2.5 MINUTES
+	min_val = 0
+	protection = CONFIG_ENTRY_LOCKED
+
+/datum/config_entry/number/events_frequency_upper
+	default = 7 MINUTES
+	min_val = 0
+	protection = CONFIG_ENTRY_LOCKED
+
 /datum/config_entry/number/mice_roundstart
 	default = 10
 	min_val = 0
@@ -454,3 +464,13 @@
 /datum/config_entry/number/max_positive_quirks
 	default = 6
 	min_val = -1
+
+/**
+ * A config that skews with the random spawners weights
+ * If the value is lower than 1, it'll tend to even out the odds
+ * If higher than 1, it'll lean toward common spawns even more.
+ */
+/datum/config_entry/number/random_loot_weight_modifier
+	integer = FALSE
+	default = 1
+	min_val = 0.05

@@ -2,7 +2,6 @@
 	key = "fart"
 	key_third_person = "farts"
 	message = "farts."
-	muzzle_ignore = TRUE
 	emote_type = EMOTE_AUDIBLE
 	vary = TRUE
 	cooldown = 0.1 SECONDS // the absolute limit of farting

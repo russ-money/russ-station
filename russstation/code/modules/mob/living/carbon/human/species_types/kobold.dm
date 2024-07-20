@@ -64,19 +64,8 @@
 /datum/species/kobold/body_temperature_core(mob/living/carbon/human/humi, seconds_per_tick, times_fired)
 	return
 
-/datum/species/kobold/random_name(gender,unique,lastname)
-	if(unique)
-		return random_unique_lizard_name(gender)
-
-	var/randname = lizard_name(gender)
-
-	if(lastname)
-		randname += " [lastname]"
-
-	return randname
-
 /datum/species/kobold/randomize_main_appearance_element(mob/living/carbon/human/human_mob)
-	var/tail = pick(GLOB.tails_list_lizard)
+	var/tail = pick(SSaccessories.tails_list_lizard)
 	human_mob.dna.features["tail_lizard"] = tail
 	mutant_bodyparts["tail_lizard"] = tail
 	human_mob.update_body()

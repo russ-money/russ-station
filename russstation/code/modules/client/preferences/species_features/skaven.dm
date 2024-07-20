@@ -41,7 +41,7 @@
 	relevant_external_organ = /obj/item/organ/external/tail/skaven
 
 /datum/preference/choiced/skaven_tail/init_possible_values()
-	return assoc_to_keys(GLOB.tails_list_skaven)
+	return assoc_to_keys(SSaccessories.tails_list_skaven)
 
 /datum/preference/choiced/skaven_tail/apply_to_human(mob/living/carbon/human/target, value)
 	target.dna.features["tail_skaven"] = value

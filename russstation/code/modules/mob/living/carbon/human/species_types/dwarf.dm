@@ -112,9 +112,6 @@
 	C.bubble_icon = initial(C.bubble_icon)
 	. = ..()
 
-/datum/species/dwarf/random_name(gender, unique, lastname)
-	return dwarf_name()
-
 /datum/species/dwarf/get_species_description()
 	return "Short and sturdy creatures fond \
 	of industry and drink."

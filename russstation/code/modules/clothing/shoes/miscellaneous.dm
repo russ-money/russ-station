@@ -31,7 +31,7 @@
 	if(user.mind && user.mind.assigned_role == "Clown")
 		user.clear_mood_event("clownboy boots")
 
-/obj/item/clothing/shoes/cowboy/clown/CtrlClick(mob/living/user)
+/obj/item/clothing/shoes/cowboy/clown/item_ctrl_click(mob/living/user)
 	if(!isliving(user))
 		return
 	if(user.get_active_held_item() != src)

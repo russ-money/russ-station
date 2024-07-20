@@ -7,10 +7,10 @@
 	should_generate_icons = TRUE
 
 /datum/preference/choiced/diona_hair/init_possible_values()
-	return assoc_to_keys_features(GLOB.diona_hair_list)
+	return assoc_to_keys_features(SSaccessories.diona_hair_list)
 
 /datum/preference/choiced/diona_hair/icon_for(value)
-	var/datum/sprite_accessory/diona_hair = GLOB.diona_hair_list[value]
+	var/datum/sprite_accessory/diona_hair = SSaccessories.diona_hair_list[value]
 
 	var/icon/icon_with_hair = icon('icons/mob/human/bodyparts_greyscale.dmi', "pod_head_m")
 
@@ -22,7 +22,7 @@
 	return icon_with_hair
 
 /datum/preference/choiced/diona_hair/create_default_value()
-	return pick(GLOB.diona_hair_list)
+	return pick(SSaccessories.diona_hair_list)
 
 /datum/preference/choiced/diona_hair/apply_to_human(mob/living/carbon/human/target, value)
 	target.dna.features["diona_hair"] = value

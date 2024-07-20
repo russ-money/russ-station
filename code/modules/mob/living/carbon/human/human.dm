@@ -56,7 +56,7 @@
 	ADD_TRAIT(src, TRAIT_AGEUSIA, NO_TONGUE_TRAIT)
 
 /mob/living/carbon/human/proc/setup_human_dna()
-	randomize_human(src, randomize_mutations = TRUE)
+	randomize_human_normie(src, randomize_mutations = TRUE)
 
 /mob/living/carbon/human/Destroy()
 	QDEL_NULL(physiology)
@@ -815,7 +815,7 @@
 	if(href_list[VV_HK_SET_SPECIES])
 		if(!check_rights(R_SPAWN))
 			return
-		var/result = input(usr, "Please choose a new species","Species") as null|anything in GLOB.species_list
+		var/result = input(usr, "Please choose a new species","Species") as null|anything in sortTim(GLOB.species_list, GLOBAL_PROC_REF(cmp_text_asc))
 		if(result)
 			var/newtype = GLOB.species_list[result]
 			admin_ticket_log("[key_name_admin(usr)] has modified the bodyparts of [src] to [result]")
@@ -915,7 +915,7 @@
 
 	var/carrydelay = 5 SECONDS //if you have latex you are faster at grabbing
 	var/skills_space
-	var/fitness_level = mind.get_skill_level(/datum/skill/athletics) - 1
+	var/fitness_level = mind?.get_skill_level(/datum/skill/athletics) - 1
 	if(HAS_TRAIT(src, TRAIT_QUICKER_CARRY))
 		carrydelay -= 2 SECONDS
 	else if(HAS_TRAIT(src, TRAIT_QUICK_CARRY))
@@ -923,6 +923,10 @@
 
 	// can remove up to 2 seconds at legendary
 	carrydelay -= fitness_level * (1/3) SECONDS
+
+	var/obj/item/organ/internal/cyberimp/chest/spine/potential_spine = get_organ_slot(ORGAN_SLOT_SPINE)
+	if(istype(potential_spine))
+		carrydelay *= potential_spine.athletics_boost_multiplier
 
 	if(carrydelay <= 3 SECONDS)
 		skills_space = " very quickly"
@@ -1019,7 +1023,7 @@
 /mob/living/carbon/human/species/set_species(datum/species/mrace, icon_update, pref_load)
 	. = ..()
 	if(use_random_name)
-		fully_replace_character_name(real_name, dna.species.random_name())
+		fully_replace_character_name(real_name, generate_random_mob_name())
 
 /mob/living/carbon/human/species/abductor
 	race = /datum/species/abductor

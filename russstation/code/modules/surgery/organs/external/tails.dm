@@ -18,11 +18,11 @@
 	feature_key = "tail_skaven"
 
 /datum/bodypart_overlay/mutant/tail/skaven/get_global_feature_list()
-	return GLOB.tails_list_skaven
+	return SSaccessories.tails_list_skaven
 
 /datum/bodypart_overlay/mutant/tail/kitsune
 	color_source = ORGAN_COLOR_HAIR
 	feature_key = "tail_kitsune"
 
 /datum/bodypart_overlay/mutant/tail/kitsune/get_global_feature_list()
-	return GLOB.tails_list_kitsune
+	return SSaccessories.tails_list_kitsune

@@ -6,7 +6,7 @@
 	relevant_mutant_bodypart = /obj/item/organ/external/tail/kitsune
 
 /datum/preference/choiced/tail_kitsune/init_possible_values()
-	return assoc_to_keys(GLOB.tails_list_kitsune)
+	return assoc_to_keys(SSaccessories.tails_list_kitsune)
 
 /datum/preference/choiced/tail_kitsune/apply_to_human(mob/living/carbon/human/target, value)
 	target.dna.features["tail_kitsune"] = value

@@ -8,9 +8,8 @@
 	hardness = 45 // between iron walls and wood walls
 	explosive_resistance  = 0
 	smoothing_flags = SMOOTH_BITMASK
-	smoothing_groups = SMOOTH_GROUP_CLOSED_TURFS + SMOOTH_GROUP_WALLS + SMOOTH_GROUP_SANDSTONE_WALLS
+	smoothing_groups = SMOOTH_GROUP_SANDSTONE_WALLS + SMOOTH_GROUP_WALLS + SMOOTH_GROUP_CLOSED_TURFS
 	canSmoothWith = SMOOTH_GROUP_SANDSTONE_WALLS // pretty much the same thing aesthetically
-	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
 	custom_materials = list(/datum/material/stone = 4000)
 	girder_type = /obj/structure/girder/stone
 	decon_type = /turf/open/floor/stone/russ

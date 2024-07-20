@@ -1,10 +1,3 @@
-// List with all possible diona hair
-GLOBAL_LIST_EMPTY(diona_hair_list)
-//Skaven defines
-GLOBAL_LIST_EMPTY(tails_list_skaven)
-// Kitsune defines
-GLOBAL_LIST_EMPTY(tails_list_kitsune)
-
 //The colors skaven can be
 GLOBAL_LIST_INIT(color_list_skaven, list(
 	"Dark Red" = "#2e1515",

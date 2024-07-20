@@ -38,7 +38,7 @@
 	reqs = list(/obj/item/stack/sheet/iron = 1)
 	time = 2 SECONDS
 	category = CAT_DWARF
-	always_available = FALSE
+	crafting_flags = CRAFT_MUST_BE_LEARNED
 
 //Forged Broadsword
 /obj/item/melee/smithed_sword

@@ -19,6 +19,7 @@
 		/obj/item/organ/external/diona_hair = "None",
 	)
 	mutanttongue = /obj/item/organ/internal/tongue/pod // basically the same thing
+	species_language_holder = /datum/language_holder/plant
 	inherent_biotypes = MOB_ORGANIC | MOB_PLANT // are we a human? If so add `| MOB_HUMANOID`
 	inherent_factions = list("plants", "vines")
 	heatmod = 2 // take more damage from fire
@@ -33,14 +34,6 @@
 		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/diona,
 		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/diona,
 	)
-
-/datum/species/diona/random_name(gender,unique,lastname)
-	if(unique)
-		return random_unique_diona_name()
-	var/randname = diona_name()
-	if(lastname)
-		randname += " [lastname]"
-	return randname
 
 // Similar to podpeople.dm
 /datum/species/diona/spec_life(mob/living/carbon/human/H, seconds_per_tick, times_fired)
@@ -78,7 +71,7 @@
 		affected.reagents.remove_reagent(chem.type, REAGENTS_METABOLISM * seconds_per_tick)
 
 /datum/species/diona/randomize_main_appearance_element(mob/living/carbon/human/human_mob)
-	var/hairstyle = pick(GLOB.diona_hair_list)
+	var/hairstyle = pick(SSaccessories.diona_hair_list)
 	human_mob.dna.features["diona_hair"] = hairstyle
 	mutant_bodyparts["diona_hair"] = hairstyle
 	human_mob.update_body()
