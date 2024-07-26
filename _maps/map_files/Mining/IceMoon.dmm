@@ -93,6 +93,11 @@
 	dir = 4
 	},
 /obj/machinery/light/directional/south,
+/obj/item/shovel/spade,
+/obj/item/cultivator{
+	pixel_y = 3;
+	pixel_x = 4
+	},
 /turf/open/misc/grass/jungle,
 /area/mine/hydroponics)
 "bz" = (
@@ -168,6 +173,7 @@
 /area/mine/lobby)
 "cA" = (
 /obj/structure/table,
+/obj/item/reagent_containers/cup/bucket,
 /turf/open/misc/grass/jungle,
 /area/mine/hydroponics)
 "cE" = (
@@ -279,6 +285,10 @@
 /obj/item/clothing/head/beanie/yellow,
 /turf/open/floor/wood,
 /area/mine/lounge)
+"eP" = (
+/obj/item/flashlight/lantern/on,
+/turf/open/misc/hay/icemoon,
+/area/icemoon/underground/explored)
 "eQ" = (
 /obj/structure/table,
 /obj/item/gps/mining,
@@ -503,6 +513,11 @@
 "iE" = (
 /turf/open/floor/iron/freezer,
 /area/mine/lobby)
+"iL" = (
+/obj/structure/table/wood,
+/obj/effect/spawner/random/food_or_drink/any_snack_or_beverage,
+/turf/open/floor/wood,
+/area/mine/lobby)
 "iN" = (
 /obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plating,
@@ -611,6 +626,14 @@
 	},
 /turf/open/floor/iron,
 /area/mine/lobby)
+"ke" = (
+/obj/structure/ore_container/food_trough/raptor_trough,
+/turf/open/misc/hay/icemoon,
+/area/icemoon/underground/explored)
+"kg" = (
+/obj/effect/spawner/random/lavaland_mob/raptor,
+/turf/open/misc/asteroid/snow/icemoon,
+/area/icemoon/underground/explored)
 "kj" = (
 /obj/structure/dresser,
 /turf/open/floor/carpet/purple,
@@ -668,6 +691,11 @@
 /obj/effect/spawner/random/trash/garbage,
 /turf/open/floor/plating,
 /area/mine/maintenance)
+"lz" = (
+/obj/structure/table/wood,
+/obj/item/paper_bin,
+/turf/open/floor/wood,
+/area/mine/lounge)
 "lP" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -751,6 +779,12 @@
 "mK" = (
 /turf/open/lava/plasma/ice_moon,
 /area/icemoon/underground/explored)
+"mP" = (
+/obj/structure/railing/wooden_fence{
+	dir = 9
+	},
+/turf/open/misc/asteroid/snow/icemoon,
+/area/icemoon/underground/explored)
 "mQ" = (
 /obj/structure/table/wood,
 /turf/open/floor/wood,
@@ -760,6 +794,10 @@
 /obj/machinery/light_switch/directional/south,
 /turf/open/floor/iron,
 /area/mine/mechbay)
+"mU" = (
+/obj/structure/railing/wooden_fence,
+/turf/open/misc/hay/icemoon,
+/area/icemoon/underground/explored)
 "mV" = (
 /obj/structure/railing/corner{
 	dir = 4
@@ -828,6 +866,12 @@
 /obj/structure/ladder,
 /turf/open/floor/iron/dark/textured,
 /area/mine/eva)
+"oz" = (
+/obj/structure/railing/wooden_fence{
+	dir = 9
+	},
+/turf/open/misc/hay/icemoon,
+/area/icemoon/underground/explored)
 "oW" = (
 /turf/open/floor/iron/white,
 /area/mine/medical)
@@ -851,6 +895,9 @@
 /obj/structure/marker_beacon/purple,
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/underground/explored)
+"pV" = (
+/turf/open/floor/plating/snowed/smoothed/icemoon,
+/area/icemoon/underground/explored)
 "qw" = (
 /obj/item/kirbyplants/random,
 /turf/open/floor/iron,
@@ -870,6 +917,12 @@
 "qO" = (
 /turf/open/genturf,
 /area/icemoon/underground/unexplored/rivers/deep)
+"qV" = (
+/obj/structure/railing/wooden_fence{
+	dir = 8
+	},
+/turf/open/misc/asteroid/snow/icemoon,
+/area/icemoon/underground/explored)
 "qW" = (
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -931,6 +984,9 @@
 /obj/machinery/telecomms/relay/preset/mining,
 /turf/open/floor/circuit,
 /area/mine/maintenance)
+"sN" = (
+/turf/open/misc/hay/icemoon,
+/area/icemoon/underground/explored)
 "sR" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -1004,6 +1060,17 @@
 /obj/machinery/light/directional/south,
 /turf/open/floor/iron/freezer,
 /area/mine/lobby)
+"ud" = (
+/obj/structure/table/wood,
+/obj/item/soap/deluxe{
+	pixel_y = 11
+	},
+/obj/item/soap/deluxe{
+	pixel_y = 6
+	},
+/obj/item/soap/deluxe,
+/turf/open/misc/hay/icemoon,
+/area/icemoon/underground/explored)
 "ug" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /obj/structure/cable,
@@ -1339,6 +1406,12 @@
 	},
 /turf/open/floor/iron,
 /area/mine/lobby)
+"Ca" = (
+/obj/structure/railing/wooden_fence{
+	dir = 10
+	},
+/turf/open/misc/asteroid/snow/icemoon,
+/area/icemoon/underground/explored)
 "Cj" = (
 /obj/structure/cable,
 /turf/open/floor/iron/white,
@@ -1550,6 +1623,10 @@
 "Fy" = (
 /turf/open/floor/iron/dark/textured,
 /area/mine/eva)
+"FM" = (
+/obj/structure/railing/wooden_fence,
+/turf/open/misc/asteroid/snow/icemoon,
+/area/icemoon/underground/explored)
 "FP" = (
 /obj/machinery/vending/snack,
 /turf/open/floor/iron,
@@ -1561,6 +1638,17 @@
 /obj/machinery/digital_clock/directional/west,
 /turf/open/floor/iron,
 /area/mine/lobby)
+"Gb" = (
+/obj/structure/table/wood,
+/obj/item/raptor_dex{
+	pixel_y = 13
+	},
+/obj/item/raptor_dex{
+	pixel_y = 7
+	},
+/obj/item/raptor_dex,
+/turf/open/misc/hay/icemoon,
+/area/icemoon/underground/explored)
 "Gm" = (
 /obj/structure/fake_stairs/directional/east,
 /obj/structure/railing{
@@ -1572,6 +1660,10 @@
 /obj/item/kirbyplants/random,
 /turf/open/floor/wood,
 /area/mine/lounge)
+"Gx" = (
+/obj/structure/flora/bush/lavendergrass/style_random,
+/turf/open/misc/grass/jungle,
+/area/mine/hydroponics)
 "GA" = (
 /obj/effect/spawner/random/trash/soap,
 /turf/open/floor/iron/freezer,
@@ -1627,6 +1719,9 @@
 /obj/structure/sink/directional/west,
 /turf/open/floor/plastic,
 /area/mine/cafeteria)
+"HR" = (
+/turf/closed/wall/mineral/wood/nonmetal,
+/area/icemoon/underground/explored)
 "HS" = (
 /obj/structure/chair/stool/directional/west,
 /obj/machinery/light/directional/north,
@@ -1731,6 +1826,12 @@
 /obj/machinery/light/small/red/directional/south,
 /turf/open/openspace/icemoon/keep_below,
 /area/icemoon/underground/explored)
+"Kd" = (
+/obj/structure/railing/wooden_fence{
+	dir = 1
+	},
+/turf/open/misc/asteroid/snow/icemoon,
+/area/icemoon/underground/explored)
 "Kf" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /obj/structure/cable,
@@ -1799,6 +1900,12 @@
 /obj/item/bedsheet/brown,
 /turf/open/floor/carpet/purple,
 /area/mine/living_quarters)
+"Lx" = (
+/obj/structure/railing/wooden_fence{
+	dir = 10
+	},
+/turf/open/misc/hay/icemoon,
+/area/icemoon/underground/explored)
 "LC" = (
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/south,
@@ -1861,6 +1968,10 @@
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/freezer,
 /area/mine/lobby)
+"NY" = (
+/obj/structure/flora/bush/flowers_yw/style_random,
+/turf/open/misc/grass/jungle,
+/area/mine/hydroponics)
 "Of" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -2051,6 +2162,11 @@
 /obj/structure/fans/tiny,
 /turf/open/floor/iron,
 /area/mine/lobby)
+"Sv" = (
+/obj/structure/table/wood,
+/obj/item/storage/dice,
+/turf/open/floor/wood,
+/area/mine/lounge)
 "SM" = (
 /obj/item/kirbyplants/random,
 /turf/open/floor/wood,
@@ -2157,6 +2273,13 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/wood,
 /area/mine/lobby)
+"Uu" = (
+/obj/structure/railing/wooden_fence{
+	dir = 8
+	},
+/obj/item/flashlight/lantern/on,
+/turf/open/misc/asteroid/snow/icemoon,
+/area/icemoon/underground/explored)
 "Uw" = (
 /obj/effect/spawner/structure/electrified_grille,
 /obj/structure/window/reinforced/spawner/directional/south,
@@ -2170,6 +2293,12 @@
 	},
 /turf/open/floor/wood,
 /area/mine/lobby)
+"Uz" = (
+/obj/structure/railing/wooden_fence{
+	dir = 1
+	},
+/turf/open/misc/hay/icemoon,
+/area/icemoon/underground/explored)
 "UI" = (
 /obj/structure/railing{
 	dir = 10
@@ -2185,6 +2314,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/carpet/purple,
 /area/mine/living_quarters)
+"UX" = (
+/obj/structure/railing/wooden_fence{
+	dir = 8
+	},
+/turf/open/misc/hay/icemoon,
+/area/icemoon/underground/explored)
 "Vb" = (
 /obj/structure/cable,
 /turf/open/floor/iron/dark/textured,
@@ -2415,6 +2550,11 @@
 /area/mine/maintenance)
 "ZD" = (
 /turf/open/openspace/icemoon/keep_below,
+/area/icemoon/underground/explored)
+"ZE" = (
+/obj/structure/table/wood,
+/obj/item/flashlight/lantern/on,
+/turf/open/misc/hay/icemoon,
 /area/icemoon/underground/explored)
 "ZH" = (
 /obj/item/emergency_bed,
@@ -9013,10 +9153,10 @@ Xs
 aL
 Uf
 gW
+NY
 gW
 gW
-gW
-gW
+Gx
 gW
 cA
 aL
@@ -13126,8 +13266,8 @@ lS
 rF
 to
 di
-mQ
-mQ
+Sv
+lz
 hd
 DD
 ma
@@ -76638,7 +76778,7 @@ DH
 DH
 DH
 DH
-fj
+DH
 fj
 fj
 fj
@@ -76895,7 +77035,7 @@ DH
 DH
 DH
 DH
-fj
+DH
 fj
 fj
 fj
@@ -77153,7 +77293,7 @@ DH
 DH
 DH
 DH
-fj
+DH
 fj
 fj
 fj
@@ -77373,7 +77513,7 @@ eE
 GA
 MZ
 eE
-Th
+iL
 Ap
 aQ
 gD
@@ -77410,8 +77550,8 @@ DH
 DH
 DH
 DH
-fj
-fj
+DH
+DH
 fj
 fj
 fj
@@ -77668,7 +77808,7 @@ DH
 DH
 DH
 DH
-fj
+DH
 fj
 fj
 fj
@@ -77925,8 +78065,8 @@ DH
 DH
 DH
 DH
-fj
-fj
+DH
+DH
 fj
 fj
 fj
@@ -78182,8 +78322,8 @@ DH
 DH
 DH
 DH
-fj
-fj
+DH
+DH
 fj
 fj
 fj
@@ -78439,9 +78579,9 @@ DH
 DH
 DH
 DH
-fj
-fj
-fj
+DH
+DH
+DH
 fj
 fj
 fj
@@ -78697,8 +78837,8 @@ DH
 DH
 DH
 DH
-fj
-fj
+DH
+DH
 fj
 fj
 fj
@@ -78954,8 +79094,8 @@ DH
 DH
 DH
 DH
-fj
-fj
+DH
+DH
 fj
 fj
 fj
@@ -79159,12 +79299,12 @@ Xs
 Xs
 Xs
 Xs
-Ew
-Ew
-Ew
-Ew
-Ew
-Ew
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
 Uw
 hH
 Uw
@@ -79190,13 +79330,13 @@ hH
 Uw
 hH
 Uw
-Ew
-Ew
-Ew
-Ew
-Ew
-Ew
-Ew
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
+eZ
 Xs
 Xs
 Xs
@@ -79211,8 +79351,8 @@ DH
 DH
 DH
 DH
-fj
-fj
+DH
+DH
 fj
 fj
 fj
@@ -79455,7 +79595,7 @@ Um
 Ew
 Ew
 Xs
-Xs
+pV
 Xs
 Xs
 Xs
@@ -79468,8 +79608,8 @@ DH
 DH
 DH
 DH
-fj
-fj
+DH
+DH
 fj
 fj
 fj
@@ -79673,12 +79813,12 @@ mq
 Xs
 Xs
 Xs
-Ew
-Ew
-Ew
-Ew
-Ew
-Ew
+mD
+mD
+mD
+mD
+mD
+mD
 Px
 zo
 Px
@@ -79704,16 +79844,16 @@ OW
 Px
 zo
 Px
-Ew
-Ew
-Ew
-Ew
-Ew
-Ew
-Ew
+mD
+mD
+mD
+mD
+mD
+mD
+mD
 Xs
-Xs
-Xs
+pV
+pV
 Xs
 Xs
 Xs
@@ -79725,8 +79865,8 @@ DH
 DH
 DH
 DH
-fj
-fj
+DH
+DH
 fj
 fj
 fj
@@ -79970,7 +80110,7 @@ Xs
 Xs
 Xs
 Xs
-Xs
+pV
 Xs
 Xs
 Xs
@@ -79982,8 +80122,8 @@ Xs
 DH
 DH
 DH
-fj
-fj
+DH
+DH
 fj
 fj
 fj
@@ -80227,11 +80367,11 @@ Xs
 Xs
 Xs
 Xs
+pV
 Xs
 Xs
 Xs
 Xs
-aE
 Xs
 Xs
 Xs
@@ -80239,8 +80379,8 @@ Xs
 DH
 DH
 DH
-fj
-fj
+DH
+DH
 fj
 fj
 fj
@@ -80484,11 +80624,10 @@ Xs
 Xs
 Xs
 Xs
+pV
 Xs
 Xs
-Xs
-Xs
-Xs
+bE
 Xs
 Xs
 Xs
@@ -80496,8 +80635,9 @@ Xs
 Xs
 DH
 DH
-fj
-fj
+DH
+DH
+DH
 fj
 fj
 fj
@@ -80741,20 +80881,20 @@ Xs
 QH
 Xs
 Xs
+pV
 Xs
 Xs
 Xs
 Xs
 Xs
 Xs
-Xs
-Xs
-Xs
+QH
 Xs
 DH
 DH
-fj
-fj
+DH
+DH
+DH
 fj
 fj
 fj
@@ -80998,7 +81138,7 @@ Xs
 Xs
 Xs
 Xs
-Xs
+pV
 Xs
 Xs
 Xs
@@ -81010,8 +81150,8 @@ Xs
 DH
 DH
 DH
-fj
-fj
+DH
+DH
 fj
 fj
 fj
@@ -81255,6 +81395,9 @@ Xs
 Xs
 Xs
 Xs
+pV
+Xs
+Xs
 Xs
 Xs
 Xs
@@ -81266,9 +81409,6 @@ DH
 DH
 DH
 DH
-DH
-fj
-fj
 fj
 fj
 fj
@@ -81505,27 +81645,27 @@ ZD
 ZD
 ZD
 ZD
-DH
-DH
 Xs
 Xs
 Xs
 Xs
 Xs
 Xs
-bE
+Xs
+pV
 Xs
 Xs
 Xs
+Xs
+Xs
+Xs
+Xs
 DH
 DH
 DH
 DH
 DH
 DH
-DH
-fj
-fj
 fj
 fj
 fj
@@ -81762,10 +81902,6 @@ ZD
 ZD
 ZD
 ZD
-DH
-DH
-DH
-DH
 Xs
 Xs
 Xs
@@ -81773,6 +81909,12 @@ Xs
 Xs
 Xs
 Xs
+pV
+Xs
+Xs
+Xs
+Xs
+aE
 Xs
 DH
 DH
@@ -81780,9 +81922,7 @@ DH
 DH
 DH
 DH
-fj
-fj
-fj
+DH
 fj
 fj
 fj
@@ -82018,12 +82158,6 @@ ZD
 ZD
 ZD
 ZD
-ZD
-DH
-DH
-DH
-DH
-DH
 Xs
 Xs
 Xs
@@ -82032,14 +82166,20 @@ Xs
 Xs
 Xs
 Xs
+pV
+Xs
+Xs
+Xs
+Xs
+Xs
+Xs
 DH
 DH
 DH
 DH
 DH
-fj
-fj
-fj
+DH
+DH
 fj
 fj
 fj
@@ -82274,14 +82414,6 @@ ZD
 ZD
 ZD
 ZD
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
 Xs
 Xs
 Xs
@@ -82289,14 +82421,22 @@ Xs
 Xs
 Xs
 Xs
+Xs
+Xs
+Xs
+Xs
+Xs
+Xs
+Xs
+Xs
+Xs
 DH
 DH
 DH
 DH
-fj
-fj
-fj
-fj
+DH
+DH
+DH
 fj
 fj
 fj
@@ -82531,29 +82671,29 @@ ZD
 ZD
 ZD
 DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
+Xs
+QH
 Xs
 Xs
+mP
+qV
+qV
+qV
+Uu
 Xs
-Xs
-Xs
+Uu
+qV
+qV
+qV
+Ca
 Xs
 DH
 DH
 DH
 DH
-fj
-fj
-fj
-fj
-fj
+DH
+DH
+DH
 fj
 fj
 fj
@@ -82788,28 +82928,28 @@ ZD
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
 Xs
 Xs
 Xs
 Xs
+Kd
+Xs
+Xs
+Xs
+Xs
+Xs
+Xs
+Xs
+Xs
+Xs
+FM
+Xs
 DH
 DH
 DH
 DH
-fj
-fj
-fj
-fj
-fj
+DH
+DH
 fj
 fj
 fj
@@ -83045,28 +83185,28 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
 Xs
 Xs
 Xs
+Xs
+Kd
+Xs
+kg
+Xs
+Xs
+Xs
+Xs
+Xs
+Xs
+kg
+FM
+Xs
 DH
 DH
 DH
 DH
-fj
-fj
-fj
-fj
-fj
-fj
+DH
+DH
 fj
 fj
 fj
@@ -83303,26 +83443,26 @@ DH
 DH
 DH
 DH
+Xs
+Xs
+Xs
+Kd
+Xs
+Xs
+Xs
+Xs
+Xs
+Xs
+Xs
+Xs
+Xs
+FM
 DH
 DH
 DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-fj
-fj
-fj
-fj
-fj
-fj
 fj
 fj
 fj
@@ -83562,24 +83702,24 @@ DH
 DH
 DH
 DH
+Xs
+Kd
+Xs
+mq
+Xs
+Xs
+kg
+Xs
+Xs
+Xs
+Xs
+FM
 DH
 DH
 DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
 fj
 fj
 fj
@@ -83820,22 +83960,22 @@ DH
 DH
 DH
 DH
+Kd
+Xs
+Xs
+Xs
+Xs
+Xs
+Xs
+Xs
+Xs
+Xs
+FM
 DH
 DH
 DH
 DH
 DH
-DH
-DH
-DH
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
 fj
 fj
 fj
@@ -84077,22 +84217,22 @@ DH
 DH
 DH
 DH
+HR
+UX
+UX
+Lx
+sN
+sN
+sN
+oz
+UX
+UX
+HR
 DH
 DH
 DH
 DH
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
+DH
 fj
 fj
 fj
@@ -84334,22 +84474,22 @@ DH
 DH
 DH
 DH
+HR
+sN
+sN
+sN
+sN
+sN
+sN
+sN
+sN
+sN
+HR
 DH
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
+DH
+DH
+DH
+DH
 fj
 fj
 fj
@@ -84589,23 +84729,23 @@ DH
 DH
 DH
 DH
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
+DH
+DH
+HR
+sN
+sN
+sN
+sN
+ZE
+sN
+sN
+sN
+sN
+HR
+DH
+DH
+DH
+DH
 fj
 fj
 fj
@@ -84845,24 +84985,24 @@ DH
 DH
 DH
 DH
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
+DH
+DH
+DH
+HR
+ke
+eP
+mU
+sN
+Gb
+sN
+Uz
+eP
+ke
+HR
+DH
+DH
+DH
+DH
 fj
 fj
 fj
@@ -85100,25 +85240,25 @@ DH
 DH
 DH
 DH
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
+DH
+DH
+DH
+DH
+DH
+HR
+UX
+UX
+Lx
+sN
+sN
+sN
+oz
+UX
+UX
+HR
+DH
+DH
+DH
 fj
 fj
 fj
@@ -85355,26 +85495,26 @@ DH
 DH
 DH
 DH
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
+DH
+DH
+DH
+DH
+DH
+DH
+DH
+HR
+sN
+sN
+sN
+sN
+sN
+sN
+sN
+sN
+sN
+HR
+DH
+DH
 fj
 fj
 fj
@@ -85611,25 +85751,25 @@ DH
 DH
 DH
 DH
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
+DH
+DH
+DH
+DH
+DH
+DH
+DH
+DH
+HR
+sN
+sN
+sN
+sN
+ZE
+sN
+sN
+sN
+sN
+HR
 fj
 fj
 fj
@@ -85867,26 +86007,26 @@ DH
 DH
 DH
 DH
+DH
+DH
+DH
+DH
 fj
 fj
 fj
 fj
 fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
+HR
+ke
+eP
+mU
+sN
+ud
+sN
+Uz
+eP
+ke
+HR
 fj
 fj
 fj
@@ -86123,6 +86263,8 @@ DH
 DH
 DH
 DH
+DH
+DH
 fj
 fj
 fj
@@ -86131,19 +86273,17 @@ fj
 fj
 fj
 fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
-fj
+HR
+HR
+HR
+HR
+HR
+HR
+HR
+HR
+HR
+HR
+HR
 fj
 fj
 fj
@@ -86379,7 +86519,7 @@ DH
 DH
 DH
 DH
-fj
+DH
 fj
 fj
 fj
