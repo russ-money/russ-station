@@ -249,3 +249,6 @@ define_sanity_output.txt
 
 # Running OpenDream locally
 tgstation.json
+
+# yt-dlp
+tools/request_internet_sounds/yt-dlp.exe
