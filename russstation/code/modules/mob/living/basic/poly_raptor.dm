@@ -2,7 +2,7 @@
 
 /mob/living/basic/poly_raptor
 	name = "Poly Raptor"
-	desc = "Poly the...RAPTOR! An expert on quantum bone-cracker theory. It seems he ate his headset."
+	desc = "Poly the...RAPTOR! An expert on quantum bone-cracker theory. It seems he ate his headset. Fiercely loyal to the Chief-Engineer"
 	icon = 'russstation/icons/mob/poly_raptor.dmi'
 	speed = 0.5
 	icon_state = "poly_raptor"
