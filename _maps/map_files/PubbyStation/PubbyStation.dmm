@@ -1626,11 +1626,11 @@
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "agj" = (
-/obj/machinery/computer/security/telescreen/interrogation/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/red/half/contrasted,
+/obj/machinery/computer/security/telescreen/interrogation/directional/south,
 /turf/open/floor/iron,
 /area/station/security/brig)
 "agl" = (
@@ -5863,10 +5863,6 @@
 	c_tag = "Dormitories Fore"
 	},
 /obj/machinery/light/directional/north,
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for watching the monastery.";
-	name = "Monastery Monitor"
-	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
 	},
@@ -7767,10 +7763,6 @@
 /area/station/command/heads_quarters/hop)
 "aBC" = (
 /obj/structure/closet/secure_closet/hop,
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for watching the monastery.";
-	name = "Monastery Monitor"
-	},
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/hop)
 "aBD" = (
@@ -12112,6 +12104,7 @@
 /obj/machinery/vending/cigarette,
 /obj/machinery/light/directional/north,
 /obj/effect/mapping_helpers/broken_floor,
+/obj/machinery/computer/security/telescreen/bar/directional/north,
 /turf/open/floor/wood,
 /area/station/service/bar)
 "aQU" = (
@@ -21014,14 +21007,6 @@
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/iron/dark,
 /area/station/hallway/secondary/entry)
-"bzB" = (
-/obj/effect/turf_decal/stripes/line,
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for watching the monastery.";
-	name = "Monastery Monitor"
-	},
-/turf/open/floor/iron/dark,
-/area/station/hallway/secondary/entry)
 "bzC" = (
 /obj/structure/table,
 /obj/effect/spawner/random/maintenance/two,
@@ -26885,13 +26870,10 @@
 /area/station/engineering/engine_smes)
 "bWA" = (
 /obj/structure/filingcabinet,
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for watching the engine containment area.";
-	name = "Engine Monitor"
-	},
 /obj/effect/turf_decal/tile/red/anticorner/contrasted{
 	dir = 8
 	},
+/obj/machinery/computer/security/telescreen/engine/directional/west,
 /turf/open/floor/iron,
 /area/station/security/checkpoint/engineering)
 "bWB" = (
@@ -28803,16 +28785,13 @@
 /turf/open/floor/plating,
 /area/station/engineering/main)
 "ceU" = (
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for watching telecomms.";
-	name = "Telecomms Telescreen"
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
 	},
+/obj/machinery/computer/security/telescreen/tcomms/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/engineering/main)
 "ceV" = (
@@ -40348,10 +40327,7 @@
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
 	dir = 4
 	},
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for watching the engine containment area.";
-	name = "Engine Monitor"
-	},
+/obj/machinery/computer/security/telescreen/engine/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/engineering/engine_smes)
 "ogX" = (
@@ -40831,9 +40807,6 @@
 /turf/open/floor/plating,
 /area/station/engineering/supermatter)
 "oEW" = (
-/obj/machinery/computer/security/telescreen{
-	name = "Test Chamber Monitor"
-	},
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/tile/green/half/contrasted{
 	dir = 4
@@ -47612,10 +47585,6 @@
 	},
 /obj/effect/turf_decal/tile/red/anticorner/contrasted,
 /obj/machinery/firealarm/directional/east,
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for monitoring medbay to ensure patient safety.";
-	name = "Medbay Monitor"
-	},
 /obj/machinery/light/directional/south,
 /turf/open/floor/iron,
 /area/station/security/checkpoint/medical)
@@ -69429,7 +69398,7 @@ btN
 biI
 bwr
 bya
-bzB
+bzA
 bAL
 bSl
 eUe
@@ -79474,9 +79443,9 @@ bSK
 bTB
 bQr
 bUT
-bVN
-bWz
 ogz
+bWz
+bVN
 bYf
 bYU
 bZF
