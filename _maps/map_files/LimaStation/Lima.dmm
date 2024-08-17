@@ -10411,7 +10411,7 @@
 /area/station/science/research)
 "dPJ" = (
 /obj/structure/table/wood,
-/obj/machinery/keycard_auth/directional/north,
+/obj/machinery/keycard_auth/wall_mounted/directional/north,
 /obj/machinery/light_switch/directional/east{
 	pixel_y = -5
 	},
@@ -30212,7 +30212,7 @@
 /obj/machinery/computer/robotics{
 	dir = 8
 	},
-/obj/machinery/keycard_auth/directional/east{
+/obj/machinery/keycard_auth/wall_mounted/directional/east{
 	pixel_y = 8
 	},
 /obj/effect/turf_decal/siding/purple,
@@ -35921,7 +35921,7 @@
 	network = list("ss13","qm");
 	c_tag = "Quartermaster's Office"
 	},
-/obj/machinery/keycard_auth/directional/east{
+/obj/machinery/keycard_auth/wall_mounted/directional/east{
 	pixel_y = 8
 	},
 /turf/open/floor/iron/showroomfloor,
