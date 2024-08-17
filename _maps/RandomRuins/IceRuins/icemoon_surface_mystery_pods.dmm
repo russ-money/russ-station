@@ -3,8 +3,11 @@
 /obj/item/seeds/russ/mystery,
 /obj/structure/closet/body_bag/bluespace,
 /obj/item/flashlight/lantern/on,
-/mob/living/basic/viscerator,
-/mob/living/basic/viscerator,
+/obj/item/soap,
+/mob/living/basic/bot/honkbot{
+	faction = list("silicon","turret", "syndicate", "mining", "ashwalker")
+	},
+/mob/living/simple_animal/hostile/asteroid/polarbear,
 /turf/open/misc/asteroid/snow/icemoon,
 /area/icemoon/surface/outdoors/nospawn)
 
