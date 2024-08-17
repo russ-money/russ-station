@@ -66,6 +66,7 @@
 // You ONLY need DNA blocks if you intend to allow players to change it via GENETICS!
 // (Which means having a DNA block for a feature tied to a mob without DNA is entirely pointless.)
 
+
 //honk start - our blocks
 #define DNA_SKAVEN_TAIL_BLOCK 17
 #define DNA_DIONA_HAIR_BLOCK 18
