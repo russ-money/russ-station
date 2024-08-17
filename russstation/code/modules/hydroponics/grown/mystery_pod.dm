@@ -336,7 +336,7 @@
 				/mob/living/basic/killer_tomato,
 				/mob/living/basic/viscerator,
 				/mob/living/basic/clown/russ/goblin,
-				/mob/living/basic/poly_raptor
+				/mob/living/basic/poly_raptor,
 			)
 		if(103 to 109)
 			harvested_item = pick(
