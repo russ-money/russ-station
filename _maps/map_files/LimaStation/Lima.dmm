@@ -29561,6 +29561,7 @@
 	cycle_id = "brig-entrence"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/entrance,
+/obj/machinery/scanner_gate/preset_guns,
 /turf/open/floor/iron,
 /area/station/security/brig)
 "oiN" = (

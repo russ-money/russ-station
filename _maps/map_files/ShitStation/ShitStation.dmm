@@ -495,6 +495,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
+/obj/machinery/scanner_gate/preset_guns,
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/lobby)
 "abz" = (
@@ -3620,6 +3621,7 @@
 /obj/effect/turf_decal/tile/purple/half/contrasted{
 	dir = 8
 	},
+/obj/machinery/scanner_gate/preset_guns,
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/lobby)
 "apD" = (
@@ -7767,6 +7769,7 @@
 /obj/effect/turf_decal/tile/blue/half/contrasted{
 	dir = 8
 	},
+/obj/machinery/scanner_gate/preset_guns,
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/lobby)
 "aHk" = (
@@ -20355,6 +20358,7 @@
 /obj/effect/turf_decal/tile/blue/half/contrasted{
 	dir = 4
 	},
+/obj/machinery/scanner_gate/preset_guns,
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/lobby)
 "nHY" = (
@@ -23822,6 +23826,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/machinery/scanner_gate/preset_guns,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit/departure_lounge)
 "qOe" = (
@@ -25316,6 +25321,7 @@
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
 	dir = 4
 	},
+/obj/machinery/scanner_gate/preset_guns,
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/lobby)
 "rZM" = (
@@ -29009,6 +29015,7 @@
 	cycle_id = "brigentrance"
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
+/obj/machinery/scanner_gate/preset_guns,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit/departure_lounge)
 "vue" = (
