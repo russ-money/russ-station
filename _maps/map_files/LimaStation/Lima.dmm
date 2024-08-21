@@ -6272,6 +6272,13 @@
 	planetary_atmos = 0
 	},
 /area/station/service/hydroponics/garden)
+"bNg" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/obj/machinery/computer/security/telescreen/entertainment/directional/north,
+/turf/open/floor/wood/large,
+/area/station/service/bar)
 "bNj" = (
 /obj/machinery/vending/games,
 /turf/open/floor/iron,
@@ -12555,16 +12562,20 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/cargo/storage)
+"eMs" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable,
+/obj/machinery/computer/security/telescreen{
+	desc = "Used for monitoring medbay to ensure patient safety.";
+	name = "Medbay Monitor"
+	},
+/turf/open/floor/plating,
+/area/station/security/checkpoint/medical)
 "eMv" = (
 /obj/structure/sign/poster/official/random/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/brown/visible,
 /turf/open/floor/iron/dark,
 /area/station/science/ordnance)
-"eML" = (
-/obj/effect/turf_decal/siding/white,
-/obj/machinery/computer/security/telescreen/auxbase/directional/east,
-/turf/open/floor/iron,
-/area/station/hallway/secondary/exit)
 "eMR" = (
 /obj/effect/turf_decal/loading_area{
 	dir = 1
@@ -16486,13 +16497,6 @@
 	},
 /turf/open/floor/iron/cafeteria,
 /area/station/command/heads_quarters/cmo)
-"gMd" = (
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for monitoring medbay to ensure patient safety.";
-	name = "Medbay Monitor"
-	},
-/turf/closed/wall/r_wall,
-/area/station/maintenance/starboard/fore)
 "gMm" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
@@ -17753,6 +17757,13 @@
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/iron,
 /area/station/medical/surgery)
+"hwR" = (
+/obj/machinery/computer/security/telescreen{
+	desc = "Used for monitoring medbay to ensure patient safety.";
+	name = "Medbay Monitor"
+	},
+/turf/closed/wall/r_wall,
+/area/station/maintenance/fore)
 "hxa" = (
 /obj/machinery/firealarm/directional/north,
 /obj/item/radio/intercom/directional/west,
@@ -30012,6 +30023,13 @@
 /obj/effect/landmark/start/clown,
 /turf/open/floor/carpet/orange,
 /area/station/service/theater)
+"ouA" = (
+/obj/machinery/computer/security/telescreen{
+	desc = "Used for monitoring medbay to ensure patient safety.";
+	name = "Medbay Monitor"
+	},
+/turf/closed/wall/r_wall,
+/area/station/maintenance/starboard/fore)
 "ouG" = (
 /obj/structure/urinal{
 	pixel_y = 32
@@ -33850,13 +33868,6 @@
 /obj/effect/landmark/navigate_destination/bridge,
 /turf/open/floor/carpet/red,
 /area/station/command/bridge)
-"qHZ" = (
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for monitoring medbay to ensure patient safety.";
-	name = "Medbay Monitor"
-	},
-/turf/closed/wall/r_wall,
-/area/station/maintenance/fore)
 "qId" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/green/visible,
 /obj/effect/turf_decal/siding/dark{
@@ -33983,7 +33994,6 @@
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 1
 	},
-/obj/machinery/computer/security/telescreen/entertainment/directional/west,
 /obj/effect/landmark/start/hangover,
 /turf/open/floor/wood/large,
 /area/station/service/bar)
@@ -36240,6 +36250,11 @@
 /obj/effect/turf_decal/trimline/green/filled/line,
 /turf/open/floor/iron,
 /area/station/hallway/primary/fore)
+"sfQ" = (
+/obj/effect/turf_decal/siding/white,
+/obj/machinery/computer/security/telescreen/auxbase/directional/east,
+/turf/open/floor/iron,
+/area/station/hallway/secondary/exit)
 "sgv" = (
 /turf/open/floor/iron,
 /area/station/engineering/main)
@@ -43311,15 +43326,6 @@
 /obj/effect/turf_decal/tile/purple/opposingcorners,
 /turf/open/floor/iron/dark,
 /area/station/service/janitor)
-"wiI" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/cable,
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for monitoring medbay to ensure patient safety.";
-	name = "Medbay Monitor"
-	},
-/turf/open/floor/plating,
-/area/station/security/checkpoint/medical)
 "wjf" = (
 /obj/machinery/disposal/bin,
 /obj/machinery/light_switch/directional/east{
@@ -77291,7 +77297,7 @@ epW
 sau
 xZq
 kGa
-eML
+sfQ
 kgx
 tfS
 oim
@@ -80352,7 +80358,7 @@ nGX
 ogW
 gTv
 vVO
-eLy
+bNg
 gRG
 gRG
 rSg
@@ -82371,7 +82377,7 @@ lVT
 fuo
 ptv
 tIy
-wiI
+eMs
 ktL
 kQm
 mbb
@@ -89815,7 +89821,7 @@ yeH
 xII
 tYk
 ydJ
-qHZ
+hwR
 aOh
 amM
 mCe
@@ -95983,7 +95989,7 @@ eGL
 aHJ
 eOw
 eOw
-gMd
+ouA
 hcS
 hOF
 jGS
