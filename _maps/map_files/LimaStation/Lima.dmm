@@ -3419,12 +3419,10 @@
 /turf/open/floor/wood/parquet,
 /area/station/command/heads_quarters/captain)
 "aPL" = (
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for monitoring medbay to ensure patient safety.";
-	name = "Medbay Monitor"
-	},
-/turf/closed/wall/r_wall,
-/area/station/maintenance/fore)
+/obj/effect/turf_decal/siding/white,
+/obj/machinery/computer/security/telescreen/auxbase/directional/east,
+/turf/open/floor/iron,
+/area/station/hallway/secondary/exit)
 "aPS" = (
 /obj/structure/table/reinforced,
 /obj/effect/spawner/random/aimodule/harmful,
@@ -8946,12 +8944,6 @@
 /obj/machinery/telecomms/broadcaster/preset_right,
 /turf/open/floor/iron/white/telecomms,
 /area/station/tcommsat/server)
-"deA" = (
-/obj/structure/cable,
-/obj/effect/spawner/random/trash/garbage,
-/obj/machinery/computer/security/telescreen/interrogation/directional/north,
-/turf/open/floor/plating,
-/area/station/maintenance/port)
 "deL" = (
 /turf/closed/wall/r_wall,
 /area/station/command/heads_quarters/hop)
@@ -16009,6 +16001,13 @@
 /obj/effect/turf_decal/tile/blue/opposingcorners,
 /turf/open/floor/iron/cafeteria,
 /area/station/security/prison)
+"gxS" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/obj/machinery/computer/security/telescreen/entertainment/directional/north,
+/turf/open/floor/wood/large,
+/area/station/service/bar)
 "gxW" = (
 /obj/machinery/air_sensor/mix_tank{
 	chamber_id = "mix2";
@@ -16025,13 +16024,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/iron,
 /area/station/command/bridge)
-"gyS" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/obj/machinery/computer/security/telescreen/entertainment/directional/north,
-/turf/open/floor/wood/large,
-/area/station/service/bar)
 "gze" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -16618,6 +16610,12 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/cargo/bitrunning/den)
+"gON" = (
+/obj/structure/cable,
+/obj/effect/spawner/random/trash/garbage,
+/obj/machinery/computer/security/telescreen/interrogation/directional/north,
+/turf/open/floor/plating,
+/area/station/maintenance/port)
 "gOO" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/stripes/line,
@@ -23735,6 +23733,10 @@
 	dir = 8
 	},
 /obj/machinery/computer/security/telescreen/research/directional/south,
+/obj/machinery/light_switch/directional/west{
+	pixel_x = -24;
+	pixel_y = 12
+	},
 /turf/open/floor/iron/dark,
 /area/station/security/checkpoint/science)
 "kMW" = (
@@ -25277,9 +25279,6 @@
 /obj/effect/turf_decal/tile/purple/half/contrasted{
 	dir = 8
 	},
-/obj/machinery/light_switch/directional/south{
-	pixel_x = 8
-	},
 /turf/open/floor/iron/dark,
 /area/station/security/checkpoint/science)
 "lGt" = (
@@ -26128,6 +26127,15 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/engineering/atmos)
+"mgp" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable,
+/obj/machinery/computer/security/telescreen{
+	desc = "Used for monitoring medbay to ensure patient safety.";
+	name = "Medbay Monitor"
+	},
+/turf/open/floor/plating,
+/area/station/security/checkpoint/medical)
 "mgu" = (
 /obj/effect/spawner/random/trash/mess,
 /turf/open/floor/plating,
@@ -26701,6 +26709,13 @@
 /obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/fore)
+"mxi" = (
+/obj/machinery/computer/security/telescreen{
+	desc = "Used for monitoring medbay to ensure patient safety.";
+	name = "Medbay Monitor"
+	},
+/turf/closed/wall/r_wall,
+/area/station/maintenance/fore)
 "mxL" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/monitored/plasma_input{
 	dir = 4
@@ -26940,15 +26955,6 @@
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/iron/showroomfloor,
 /area/station/cargo/office)
-"mFf" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/cable,
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for monitoring medbay to ensure patient safety.";
-	name = "Medbay Monitor"
-	},
-/turf/open/floor/plating,
-/area/station/security/checkpoint/medical)
 "mFo" = (
 /obj/machinery/light/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
@@ -30402,11 +30408,6 @@
 /obj/effect/landmark/start/scientist,
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
-"oGC" = (
-/obj/effect/turf_decal/siding/white,
-/obj/machinery/computer/security/telescreen/auxbase/directional/east,
-/turf/open/floor/iron,
-/area/station/hallway/secondary/exit)
 "oGW" = (
 /obj/machinery/door/airlock/external/glass{
 	name = "Mix Tank Access"
@@ -38988,13 +38989,6 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron,
 /area/station/commons/dorms)
-"tHw" = (
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for monitoring medbay to ensure patient safety.";
-	name = "Medbay Monitor"
-	},
-/turf/closed/wall/r_wall,
-/area/station/maintenance/starboard/fore)
 "tIg" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/preopen{
@@ -40861,6 +40855,13 @@
 /obj/structure/closet/crate/bin,
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
+"uFP" = (
+/obj/machinery/computer/security/telescreen{
+	desc = "Used for monitoring medbay to ensure patient safety.";
+	name = "Medbay Monitor"
+	},
+/turf/closed/wall/r_wall,
+/area/station/maintenance/starboard/fore)
 "uFX" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
@@ -62075,7 +62076,7 @@ dBi
 gfQ
 uWh
 oyM
-deA
+gON
 mgu
 xbl
 xbl
@@ -77297,7 +77298,7 @@ epW
 sau
 xZq
 kGa
-oGC
+aPL
 kgx
 tfS
 oim
@@ -80358,7 +80359,7 @@ nGX
 ogW
 gTv
 vVO
-gyS
+gxS
 gRG
 gRG
 rSg
@@ -82377,7 +82378,7 @@ lVT
 fuo
 ptv
 tIy
-mFf
+mgp
 ktL
 kQm
 mbb
@@ -89821,7 +89822,7 @@ yeH
 xII
 tYk
 ydJ
-aPL
+mxi
 aOh
 amM
 mCe
@@ -95989,7 +95990,7 @@ eGL
 aHJ
 eOw
 eOw
-tHw
+uFP
 hcS
 hOF
 jGS
