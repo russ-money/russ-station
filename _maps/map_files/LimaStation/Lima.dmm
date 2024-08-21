@@ -26240,9 +26240,8 @@
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/command/storage/eva)
 "mjJ" = (
-/obj/effect/spawner/structure/window/reinforced,
 /obj/structure/sign/warning/vacuum/external,
-/turf/open/floor/plating,
+/turf/closed/wall,
 /area/station/cargo/storage)
 "mjK" = (
 /obj/machinery/seed_extractor,
@@ -71603,7 +71602,7 @@ gfQ
 xfU
 fVy
 oYO
-xfU
+xEy
 oYO
 hhE
 xfU
@@ -72117,7 +72116,7 @@ xfU
 xfU
 fVy
 gFQ
-xfU
+xEy
 gFQ
 hhE
 xfU
