@@ -3247,9 +3247,6 @@
 /turf/open/floor/iron,
 /area/station/engineering/gravity_generator)
 "aOh" = (
-/obj/machinery/computer/security/telescreen{
-	name = "Test Chamber Monitor"
-	},
 /obj/machinery/button/door{
 	id = "testlab";
 	name = "Test Chamber Blast Doors";
@@ -11180,6 +11177,13 @@
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/maintenance/port/aft)
+"eie" = (
+/obj/machinery/computer/security/telescreen{
+	desc = "Used for monitoring medbay to ensure patient safety.";
+	name = "Medbay Monitor"
+	},
+/turf/closed/wall/r_wall,
+/area/station/maintenance/fore)
 "eii" = (
 /obj/structure/closet/emcloset/anchored,
 /obj/effect/landmark/start/hangover/closet,
@@ -14150,12 +14154,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/cargo/storage)
-"fBv" = (
-/obj/structure/cable,
-/obj/effect/spawner/random/trash/garbage,
-/obj/machinery/computer/security/telescreen/interrogation/directional/north,
-/turf/open/floor/plating,
-/area/station/maintenance/port)
 "fBz" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
@@ -14820,6 +14818,15 @@
 /obj/structure/curtain,
 /turf/open/floor/iron/freezer,
 /area/station/security/prison)
+"fSw" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable,
+/obj/machinery/computer/security/telescreen{
+	desc = "Used for monitoring medbay to ensure patient safety.";
+	name = "Medbay Monitor"
+	},
+/turf/open/floor/plating,
+/area/station/security/checkpoint/medical)
 "fSF" = (
 /obj/machinery/camera/autoname/directional/south,
 /turf/open/floor/iron,
@@ -23026,10 +23033,6 @@
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 9
 	},
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for monitoring medbay to ensure patient safety.";
-	name = "Medbay Monitor"
-	},
 /turf/open/floor/iron/dark,
 /area/station/security/checkpoint/medical)
 "ktR" = (
@@ -30146,6 +30149,13 @@
 /obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/station/maintenance/central)
+"oAq" = (
+/obj/machinery/computer/security/telescreen{
+	desc = "Used for monitoring medbay to ensure patient safety.";
+	name = "Medbay Monitor"
+	},
+/turf/closed/wall/r_wall,
+/area/station/maintenance/starboard/fore)
 "oAs" = (
 /obj/structure/window/reinforced/spawner/directional/south,
 /turf/open/floor/iron/showroomfloor,
@@ -38977,6 +38987,12 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/command/heads_quarters/hos)
+"tIm" = (
+/obj/structure/cable,
+/obj/effect/spawner/random/trash/garbage,
+/obj/machinery/computer/security/telescreen/interrogation/directional/north,
+/turf/open/floor/plating,
+/area/station/maintenance/port)
 "tIw" = (
 /obj/machinery/airlock_sensor/incinerator_ordmix{
 	pixel_x = 25
@@ -45002,9 +45018,6 @@
 /area/station/maintenance/fore)
 "xgl" = (
 /obj/structure/table,
-/obj/machinery/computer/security/telescreen{
-	name = "Test Chamber Monitor"
-	},
 /obj/machinery/button/door{
 	id = "misclab";
 	pixel_y = 25
@@ -62054,7 +62067,7 @@ dBi
 gfQ
 uWh
 oyM
-fBv
+tIm
 mgu
 xbl
 xbl
@@ -82356,7 +82369,7 @@ lVT
 fuo
 ptv
 tIy
-mbb
+fSw
 ktL
 kQm
 mbb
@@ -89800,7 +89813,7 @@ yeH
 xII
 tYk
 ydJ
-ydJ
+eie
 aOh
 amM
 mCe
@@ -95968,7 +95981,7 @@ eGL
 aHJ
 eOw
 eOw
-nmU
+oAq
 hcS
 hOF
 jGS
