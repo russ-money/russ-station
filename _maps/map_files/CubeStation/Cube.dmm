@@ -4297,9 +4297,9 @@
 /turf/open/floor/iron/white,
 /area/station/medical/surgery)
 "cnY" = (
-/obj/machinery/computer/security/telescreen/vault/directional/north,
 /obj/structure/cable,
 /obj/machinery/camera/autoname/directional/east,
+/obj/machinery/computer/security/telescreen/vault/directional/east,
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/hop)
 "cod" = (
@@ -10754,7 +10754,6 @@
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/research)
 "fOM" = (
-/obj/machinery/computer/security/telescreen/entertainment/directional/north,
 /obj/machinery/light/directional/west,
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 1
@@ -13644,6 +13643,7 @@
 	dir = 4
 	},
 /obj/structure/sign/poster/official/random/directional/west,
+/obj/machinery/computer/security/telescreen/entertainment/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/service/bar)
 "hpq" = (
@@ -16636,7 +16636,6 @@
 /area/station/medical/medbay/central)
 "iXc" = (
 /obj/structure/table/wood,
-/obj/machinery/computer/security/telescreen/entertainment/directional/north,
 /obj/machinery/fax{
 	fax_name = "Captain's Office";
 	name = "Captain's Fax Machine"
@@ -17461,12 +17460,6 @@
 	},
 /turf/open/floor/iron/grimy,
 /area/station/security/detectives_office)
-"juD" = (
-/obj/machinery/computer/security/telescreen{
-	name = "Test Chamber Monitor"
-	},
-/turf/open/floor/iron,
-/area/station/science/explab)
 "juF" = (
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/central)
@@ -17550,9 +17543,6 @@
 "jxb" = (
 /obj/machinery/light/directional/east,
 /obj/structure/cable,
-/obj/machinery/computer/security/telescreen{
-	name = "Test Chamber Monitor"
-	},
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/xenobiology)
 "jxi" = (
@@ -20665,6 +20655,7 @@
 /area/station/engineering/main)
 "ljJ" = (
 /obj/structure/disposalpipe/segment,
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/science/robotics/lab)
 "ljK" = (
@@ -22764,6 +22755,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /obj/structure/chair/stool/directional/north,
 /obj/machinery/computer/security/telescreen/turbine/directional/south,
+/turf/open/floor/iron,
 /area/station/maintenance/disposal/incinerator)
 "mqb" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
@@ -23607,6 +23599,7 @@
 /area/station/maintenance/port/aft)
 "mMI" = (
 /obj/structure/dresser,
+/obj/machinery/computer/security/telescreen/entertainment/directional/north,
 /turf/open/floor/carpet/royalblue,
 /area/station/command/heads_quarters/captain)
 "mMN" = (
@@ -27169,7 +27162,6 @@
 /obj/structure/chair/office/light{
 	dir = 4
 	},
-/obj/machinery/computer/security/telescreen/cmo/directional/north,
 /turf/open/floor/iron/showroomfloor,
 /area/station/command/heads_quarters/cmo)
 "ozK" = (
@@ -29106,11 +29098,8 @@
 /turf/open/floor/iron/cafeteria,
 /area/station/command/heads_quarters/rd)
 "pAt" = (
-/obj/machinery/door/window/left/directional/west{
-	name = "Armory";
-	req_access = list("brig")
-	},
 /obj/effect/spawner/atmos_canister/carbon_dioxide,
+/obj/machinery/door/window/left/directional/north,
 /turf/open/floor/plating,
 /area/station/security/execution/transfer)
 "pAv" = (
@@ -31730,6 +31719,7 @@
 /obj/structure/closet/secure_closet/chief_medical,
 /obj/item/computer_disk/medical,
 /obj/item/computer_disk/medical,
+/obj/machinery/computer/security/telescreen/cmo/directional/north,
 /turf/open/floor/iron/showroomfloor,
 /area/station/command/heads_quarters/cmo)
 "qMl" = (
@@ -32976,6 +32966,7 @@
 /obj/effect/turf_decal/siding/purple{
 	dir = 1
 	},
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/science/robotics/lab)
 "roE" = (
@@ -33437,6 +33428,7 @@
 /area/station/medical/morgue)
 "rxY" = (
 /obj/structure/table,
+/obj/machinery/computer/security/telescreen/test_chamber/directional/north,
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/xenobiology)
 "rxZ" = (
@@ -35003,7 +34995,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
-/obj/machinery/computer/security/telescreen/interrogation/directional/north,
+/obj/machinery/computer/security/telescreen/interrogation/directional/east,
 /turf/open/floor/iron,
 /area/station/security/brig)
 "spK" = (
@@ -44412,13 +44404,6 @@
 "wYi" = (
 /turf/closed/wall,
 /area/station/cargo/warehouse)
-"wZs" = (
-/obj/machinery/light_switch{
-	pixel_x = -5;
-	pixel_y = 26
-	},
-/turf/open/floor/wood,
-/area/station/service/bar)
 "wZA" = (
 /obj/structure/cable,
 /obj/machinery/door/airlock/external{
@@ -45130,10 +45115,12 @@
 /turf/open/floor/iron/white,
 /area/station/medical/chemistry)
 "xqZ" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/sign/warning/vacuum/external,
-/turf/open/floor/plating,
-/area/station/cargo/storage)
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/disposalpipe/segment,
+/obj/machinery/light_switch/directional/west,
+/turf/open/floor/wood,
+/area/station/service/bar)
 "xrf" = (
 /obj/structure/rack,
 /obj/item/storage/wallet/random,
@@ -65498,7 +65485,7 @@ mmO
 gqV
 ftR
 afL
-juD
+rvA
 fgC
 oKu
 gdG
@@ -79114,7 +79101,7 @@ oIp
 oIp
 oIp
 aJH
-oIp
+xqZ
 wNc
 ycQ
 oII
@@ -79341,7 +79328,7 @@ rtk
 pAc
 iZk
 mms
-wZs
+pAc
 pAc
 mqb
 pAc
@@ -86115,9 +86102,9 @@ bXj
 bXj
 bXj
 bXj
-xqZ
-aWw
-aWw
+qwM
+qwM
+qwM
 fQG
 gNr
 ntI
