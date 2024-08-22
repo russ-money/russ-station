@@ -7996,7 +7996,7 @@
 	id = "pharmecyshutters"
 	},
 /obj/machinery/door/firedoor,
-/obj/machinery/door/window/left/directional/south{
+/obj/machinery/door/window/right/directional/south{
 	name = "Pharmacy Desk";
 	req_access = list("pharmacy")
 	},
