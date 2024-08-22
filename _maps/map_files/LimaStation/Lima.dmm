@@ -19462,7 +19462,9 @@
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/xenobiology)
 "iwm" = (
-/obj/machinery/light_switch/directional/east,
+/obj/machinery/light_switch/directional/east{
+	pixel_x = 22
+	},
 /obj/structure/table,
 /obj/item/stack/cable_coil{
 	pixel_x = -3;
