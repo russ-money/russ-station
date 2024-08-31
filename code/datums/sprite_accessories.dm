@@ -2420,6 +2420,154 @@
 	name = "Witch Wing"
 	icon_state = "witchwing"
 
+/*
+	BIG ASS HONK IN HOPES THIS FORCES A CONFLICT
+*/
+
 /datum/sprite_accessory/moth_markings/lightbearer
 	name = "Lightbearer"
 	icon_state = "lightbearer"
+
+
+/*
+	BIG ASS HONK IN HOPES THIS FORCES A CONFLICT
+	SOME WINGS OF OUR WINGS MIGHT BE ADD TO UPSTREAM AND WE NEED TO REMOVE THEM FROM OUR FOLDER
+*/
+
+
+// honk start - marks
+/datum/sprite_accessory/moth_markings/poly
+    name = "Poly"
+    icon_state = "poly"
+
+/datum/sprite_accessory/moth_markings/lunar
+    name = "Lunar"
+    icon_state = "lunar"
+
+/datum/sprite_accessory/moth_markings/banana
+    name = "Banana"
+    icon_state = "banana"
+
+/datum/sprite_accessory/moth_markings/hornet
+    name = "Hornet"
+    icon_state = "hornet"
+
+// honk end - marks
+// honk start - antennae
+/datum/sprite_accessory/moth_antennae/poly
+    name = "Poly"
+    icon_state = "poly"
+
+/datum/sprite_accessory/moth_antennae/hornet
+    name = "Hornet"
+    icon_state = "hornet"
+
+/datum/sprite_accessory/moth_antennae/lunardot
+    name = "Lunardot"
+    icon_state = "lunardot"
+
+/datum/sprite_accessory/moth_antennae/banana
+    name = "Banana"
+    icon_state = "banana"
+
+/datum/sprite_accessory/moth_antennae/leaf
+    name = "Leaf"
+    icon_state = "leaf"
+
+/datum/sprite_accessory/moth_antennae/arge
+    name = "Arge"
+    icon_state = "arge"
+
+/datum/sprite_accessory/moth_antennae/carriola
+    name = "Carriola"
+    icon_state = "carriola"
+
+/datum/sprite_accessory/moth_antennae/pompelon
+    name = "Pompelon"
+    icon_state = "pompelon"
+
+/datum/sprite_accessory/moth_antennae/scarletwasp
+    name = "Scarletwasp"
+    icon_state = "scarletwasp"
+
+/datum/sprite_accessory/moth_antennae/balla
+    name = "Balla"
+    icon_state = "balla"
+
+/datum/sprite_accessory/moth_antennae/bella
+    name = "Bella"
+    icon_state = "bella"
+
+/datum/sprite_accessory/moth_antennae/spanishmoon
+    name = "Spanishmoon"
+    icon_state = "spanishmoon"
+
+/datum/sprite_accessory/moth_antennae/spanish
+    name = "Spanish"
+    icon_state = "spanish"
+
+/datum/sprite_accessory/moth_antennae/tiger
+    name = "Tiger"
+    icon_state = "tiger"
+
+/datum/sprite_accessory/moth_antennae/lunar
+    name = "Lunar"
+    icon_state = "lunar"
+// honk end - antennae
+// honk start - wings
+/datum/sprite_accessory/moth_wings/tiger
+    name = "Tiger"
+    icon_state = "tiger"
+
+/datum/sprite_accessory/moth_wings/lunar
+    name = "Lunar"
+    icon_state = "lunar"
+
+/datum/sprite_accessory/moth_wings/lunardot
+    name = "Lunardot"
+    icon_state = "lunardot"
+
+/datum/sprite_accessory/moth_wings/spanish
+    name = "Spanish"
+    icon_state = "spanish"
+
+/datum/sprite_accessory/moth_wings/spanishmoon
+    name = "Spanishmoon"
+    icon_state = "spanishmoon"
+
+/datum/sprite_accessory/moth_wings/bella
+    name = "Bella"
+    icon_state = "bella"
+
+/datum/sprite_accessory/moth_wings/scarletwasp
+    name = "Scarletwasp"
+    icon_state = "scarletwasp"
+
+/datum/sprite_accessory/moth_wings/hornet
+    name = "Hornet"
+    icon_state = "hornet"
+
+/datum/sprite_accessory/moth_wings/poly
+    name = "Poly"
+    icon_state = "poly"
+
+/datum/sprite_accessory/moth_wings/banana
+    name = "Banana"
+    icon_state = "banana"
+
+/datum/sprite_accessory/moth_wings/leaf
+    name = "Leaf"
+    icon_state = "leaf"
+
+/datum/sprite_accessory/moth_wings/arge
+    name = "Arge"
+    icon_state = "arge"
+
+/datum/sprite_accessory/moth_wings/carriola
+    name = "Carriola"
+    icon_state = "carriola"
+
+/datum/sprite_accessory/moth_wings/pompelon
+    name = "Pompelon"
+    icon_state = "pompelon"
+
