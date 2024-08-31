@@ -7222,7 +7222,7 @@
 	pixel_y = 25
 	},
 /obj/machinery/light_switch{
-	pixel_x = -10;
+	pixel_x = -14;
 	pixel_y = 22
 	},
 /turf/open/floor/iron,
@@ -7996,7 +7996,7 @@
 	id = "pharmecyshutters"
 	},
 /obj/machinery/door/firedoor,
-/obj/machinery/door/window/left/directional/south{
+/obj/machinery/door/window/right/directional/south{
 	name = "Pharmacy Desk";
 	req_access = list("pharmacy")
 	},
@@ -19462,7 +19462,9 @@
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/xenobiology)
 "iwm" = (
-/obj/machinery/light_switch/directional/east,
+/obj/machinery/light_switch/directional/east{
+	pixel_x = 22
+	},
 /obj/structure/table,
 /obj/item/stack/cable_coil{
 	pixel_x = -3;
@@ -26090,16 +26092,16 @@
 /area/station/maintenance/port)
 "mge" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/left/directional/north{
-	name = "Research Lab Desk";
-	req_access = list("science")
-	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "rnd";
 	name = "Research Lab Shutters"
 	},
 /obj/machinery/door/firedoor/heavy,
 /obj/item/pen,
+/obj/machinery/door/window/left/directional/south{
+	name = "Research Lab Desk";
+	req_access = list("science")
+	},
 /turf/open/floor/plating,
 /area/station/science/lab)
 "mgg" = (
@@ -39652,10 +39654,6 @@
 /area/station/commons/dorms)
 "tXm" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/left/directional/north{
-	name = "Research Lab Desk";
-	req_access = list("science")
-	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "rnd";
 	name = "Research Lab Shutters"
@@ -39664,6 +39662,10 @@
 /obj/item/paper_bin{
 	pixel_x = -3;
 	pixel_y = 7
+	},
+/obj/machinery/door/window/right/directional/south{
+	req_access = list("science");
+	name = "Research Lab Desk"
 	},
 /turf/open/floor/plating,
 /area/station/science/lab)
@@ -43284,7 +43286,7 @@
 	},
 /obj/item/key/janitor,
 /obj/machinery/light_switch{
-	pixel_x = -10;
+	pixel_x = -14;
 	pixel_y = 22
 	},
 /obj/effect/turf_decal/tile/purple/opposingcorners,
