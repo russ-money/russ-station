@@ -2945,7 +2945,7 @@
 /obj/machinery/computer/security/hos{
 	dir = 4
 	},
-/obj/machinery/keycard_auth/directional/west,
+/obj/machinery/keycard_auth/wall_mounted/directional/west,
 /turf/open/floor/carpet,
 /area/station/command/heads_quarters/hos)
 "akK" = (
@@ -6368,6 +6368,7 @@
 	dir = 8
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/entrance,
+/obj/machinery/scanner_gate/preset_guns,
 /turf/open/floor/iron,
 /area/station/security/brig)
 "awN" = (
@@ -6386,6 +6387,7 @@
 	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/entrance,
+/obj/machinery/scanner_gate/preset_guns,
 /turf/open/floor/iron,
 /area/station/security/brig)
 "awO" = (
@@ -33337,7 +33339,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/obj/machinery/keycard_auth/directional/west,
+/obj/machinery/keycard_auth/wall_mounted/directional/west,
 /obj/machinery/button/door{
 	id = "cmoprivacy";
 	name = "CMO Shutter Control";
@@ -34325,7 +34327,7 @@
 	c_tag = "Cargo Quartermaster's Office"
 	},
 /obj/machinery/disposal/bin,
-/obj/machinery/keycard_auth/directional/east,
+/obj/machinery/keycard_auth/wall_mounted/directional/east,
 /obj/structure/disposalpipe/trunk,
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/qm)

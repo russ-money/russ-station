@@ -336,6 +336,7 @@
 				/mob/living/basic/killer_tomato,
 				/mob/living/basic/viscerator,
 				/mob/living/basic/clown/russ/goblin,
+				/mob/living/basic/poly_raptor,
 			)
 		if(103 to 109)
 			harvested_item = pick(
@@ -350,7 +351,11 @@
 				/mob/living/basic/bear/snow,
 			)
 		if(110 to 120)
-			harvested_item = /obj/item/storage/pill_bottle/maintenance_pill/full
+			harvested_item = pick(
+					/obj/item/storage/pill_bottle/maintenance_pill/full,
+					/obj/item/lipstick/random,
+					/obj/item/lipstick/black/death,
+					)
 		if(121 to 148)
 			harvested_item = pick(
 				/obj/item/reagent_containers/cup/glass/bottle/gin,

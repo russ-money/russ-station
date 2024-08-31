@@ -1,7 +1,14 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
 /obj/item/seeds/russ/mystery,
-/turf/closed/mineral/random/snow,
+/obj/structure/closet/body_bag/bluespace,
+/obj/item/flashlight/lantern/on,
+/obj/item/soap,
+/mob/living/basic/bot/honkbot{
+	faction = list("silicon","turret", "syndicate", "mining", "ashwalker")
+	},
+/mob/living/simple_animal/hostile/asteroid/polarbear,
+/turf/open/misc/asteroid/snow/icemoon,
 /area/icemoon/surface/outdoors/nospawn)
 
 (1,1,1) = {"
