@@ -2490,10 +2490,6 @@
     name = "Scarletwasp"
     icon_state = "scarletwasp"
 
-/datum/sprite_accessory/moth_antennae/balla
-    name = "Balla"
-    icon_state = "balla"
-
 /datum/sprite_accessory/moth_antennae/bella
     name = "Bella"
     icon_state = "bella"
