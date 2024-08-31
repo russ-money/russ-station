@@ -28,7 +28,7 @@ SERVERSQLNAME RussStationSQL
 #STATIONNAME Russ Station
 
 ## Put on byond hub: Uncomment this to put your server on the byond hub.
-#HUB
+HUB
 
 ## Lobby time: This is the amount of time between rounds that players have to setup their characters and be ready.
 LOBBY_COUNTDOWN 240
@@ -184,7 +184,7 @@ IPINTEL_REJECT_BAD
 FORUMURL https://discord.gg/honk
 
 ## Wiki address
-WIKIURL https://github.com/RussStation/RussStation/wiki
+WIKIURL https://tgstation13.org/wiki
 
 ## Rules address
 RULESURL https://honksquad.com/ss13/

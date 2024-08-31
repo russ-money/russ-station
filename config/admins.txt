@@ -5,9 +5,11 @@
 #If SQL-based admin loading is enabled, admins listed here will always be loaded first and will override any duplicate entries in the database.
 
 RussMoney = Host
-Camahoo = Goodmin
 AngryKnees = Dadmin
 Arivain13 = Goodmin
-Famenicio = Goodmin
-CCONX = Goodmin
-Maxattacker = Goodmin
+SereneLily = Goodmin
+xensky = Goodmin
+Camahoo = Goodmin
+HonkBotBadmin = Admin
+Lightrail = Goodmin
+Skeeyui = Coder
