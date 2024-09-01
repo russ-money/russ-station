@@ -36,9 +36,6 @@
 /datum/emote/living/spit/run_emote(mob/user, params, type_override, intentional)
 	. = ..()
 
-	if(!.)
-		return
-
 	var/datum/action/cooldown/spell/pointed/projectile/spit/spit_action = new(src)
 
 	if(ishuman(user))
