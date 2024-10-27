@@ -21061,7 +21061,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/central)
 "jKk" = (
-/obj/machinery/vending/boozeomat/all_access,
+/obj/machinery/vending/boozeomat,
 /turf/open/floor/wood,
 /area/station/maintenance/port/fore)
 "jLc" = (
@@ -35825,7 +35825,7 @@
 /obj/effect/turf_decal/tile/blue/opposingcorners{
 	dir = 1
 	},
-/obj/machinery/vending/autodrobe/all_access,
+/obj/machinery/vending/autodrobe,
 /turf/open/floor/iron/cafeteria,
 /area/station/commons/dorms/laundry)
 "qET" = (
@@ -48256,7 +48256,7 @@
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "wtR" = (
-/obj/machinery/vending/boozeomat/all_access{
+/obj/machinery/vending/boozeomat{
 	name = "Captains Booze Vendor"
 	},
 /turf/open/floor/wood/parquet,

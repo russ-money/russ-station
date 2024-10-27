@@ -18675,7 +18675,7 @@
 /turf/open/floor/iron/dark,
 /area/station/hallway/secondary/command)
 "lWo" = (
-/obj/machinery/vending/autodrobe/all_access,
+/obj/machinery/vending/autodrobe,
 /turf/open/floor/plating/rust,
 /area/station/maintenance/department/crew_quarters/dorms)
 "lWQ" = (

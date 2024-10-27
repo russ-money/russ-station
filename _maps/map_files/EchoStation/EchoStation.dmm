@@ -716,7 +716,7 @@
 /turf/open/floor/iron/white,
 /area/station/tcommsat/server)
 "aub" = (
-/obj/machinery/vending/autodrobe/all_access,
+/obj/machinery/vending/autodrobe,
 /turf/open/floor/iron,
 /area/station/commons/locker)
 "aud" = (
@@ -18129,7 +18129,6 @@
 	name = "Sorting Belt Door"
 	},
 /obj/item/paper/crumpled,
-/obj/item/trash/waffles,
 /obj/item/trash/can,
 /obj/item/plate,
 /obj/effect/spawner/random/trash/garbage,
