@@ -36084,6 +36084,7 @@
 /area/station/engineering/atmos)
 "sbY" = (
 /obj/machinery/light/small/directional/east,
+/obj/machinery/fishing_portal_generator,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/service)
 "scd" = (
@@ -38172,6 +38173,7 @@
 /obj/item/stack/sheet/iron/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/structure/cable,
+/obj/item/aquarium_kit,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/service)
 "tmj" = (
@@ -45788,6 +45790,7 @@
 	pixel_x = 2;
 	pixel_y = 5
 	},
+/obj/item/toy/crayon/spraycan/roboticist,
 /turf/open/floor/iron/dark,
 /area/station/science/robotics/lab)
 "xCd" = (

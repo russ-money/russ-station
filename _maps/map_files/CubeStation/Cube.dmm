@@ -22944,6 +22944,7 @@
 /obj/item/storage/toolbox/artistic,
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
+/obj/item/aquarium_kit,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/service)
 "mvd" = (
@@ -26985,6 +26986,7 @@
 /obj/item/multitool{
 	pixel_x = 3
 	},
+/obj/item/toy/crayon/spraycan/roboticist,
 /turf/open/floor/iron,
 /area/station/science/robotics/lab)
 "ovg" = (
@@ -32857,6 +32859,10 @@
 /obj/structure/chair/stool/bar/directional/west,
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
+"rlY" = (
+/obj/machinery/fishing_portal_generator,
+/turf/open/floor/iron,
+/area/station/hallway/secondary/service)
 "rlZ" = (
 /obj/machinery/power/smes{
 	charge = 5e+006
@@ -80250,7 +80256,7 @@ hVG
 muZ
 fWp
 bHN
-lMw
+rlY
 rsT
 ewG
 ewG

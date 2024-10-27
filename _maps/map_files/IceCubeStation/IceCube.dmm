@@ -32003,6 +32003,7 @@
 /area/station/cargo/storage)
 "oJK" = (
 /obj/machinery/newscaster/directional/north,
+/obj/machinery/fishing_portal_generator,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/service)
 "oJQ" = (
@@ -34149,6 +34150,7 @@
 	amount = 15
 	},
 /obj/item/radio/intercom/directional/north,
+/obj/item/toy/crayon/spraycan/roboticist,
 /turf/open/floor/iron/dark/textured,
 /area/station/science/robotics)
 "pLu" = (
@@ -46149,6 +46151,7 @@
 	name = "Service Fax Machine"
 	},
 /obj/structure/table,
+/obj/item/aquarium_kit,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/service)
 "vwl" = (
