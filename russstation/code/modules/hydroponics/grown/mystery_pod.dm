@@ -354,8 +354,7 @@
 			harvested_item = pick(
 					/obj/item/storage/pill_bottle/maintenance_pill/full,
 					/obj/item/lipstick/random,
-					/obj/item/lipstick/black/death,
-					)
+				)
 		if(121 to 148)
 			harvested_item = pick(
 				/obj/item/reagent_containers/cup/glass/bottle/gin,
