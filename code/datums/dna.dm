@@ -63,7 +63,7 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 	var/list/features = list("mcolor" = COLOR_WHITE)
 	///Stores the hashed values of the person's non-human features
 	var/unique_features
-	///Stores the real name of the person who originally got this dna datum. Used primarely for changelings,
+	///Stores the real name of the person who originally got this dna datum. Used primarily for changelings,
 	var/real_name
 	///All mutations are from now on here
 	var/list/mutations = list()
@@ -77,7 +77,7 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 	///List of the default genes from this mutation to allow DNA Scanner highlighting
 	var/default_mutation_genes[DNA_MUTATION_BLOCKS]
 	var/stability = 100
-	///Did we take something like mutagen? In that case we cant get our genes scanned to instantly cheese all the powers.
+	///Did we take something like mutagen? In that case we can't get our genes scanned to instantly cheese all the powers.
 	var/scrambled = FALSE
 	/// Weighted list of nonlethal meltdowns
 	var/static/list/nonfatal_meltdowns = list()
@@ -150,9 +150,19 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 	SEND_SIGNAL(holder, COMSIG_CARBON_GAIN_MUTATION, mutation_type, class)
 	return force_give(new mutation_type (class, time, copymut = mutation))
 
-/datum/dna/proc/remove_mutation(mutation_type)
+/datum/dna/proc/remove_mutation(datum/mutation/human/mutation_type, mutadone)
+
+	var/datum/mutation/human/actual_mutation = get_mutation(mutation_type)
+
+	if(!actual_mutation)
+		return FALSE
+
+	// Check that it exists first before trying to remove it with mutadone
+	if(actual_mutation.mutadone_proof && mutadone)
+		return FALSE
+
 	SEND_SIGNAL(holder, COMSIG_CARBON_LOSE_MUTATION, mutation_type)
-	return force_lose(get_mutation(mutation_type))
+	return force_lose(actual_mutation)
 
 /datum/dna/proc/check_mutation(mutation_type)
 	return get_mutation(mutation_type)
@@ -213,7 +223,7 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 	if(features["lizard_markings"])
 		L[DNA_LIZARD_MARKINGS_BLOCK] = construct_block(SSaccessories.lizard_markings_list.Find(features["lizard_markings"]), length(SSaccessories.lizard_markings_list))
 	if(features["tail_cat"])
-		L[DNA_TAIL_BLOCK] = construct_block(SSaccessories.tails_list_human.Find(features["tail_cat"]), length(SSaccessories.tails_list_human))
+		L[DNA_TAIL_BLOCK] = construct_block(SSaccessories.tails_list_felinid.Find(features["tail_cat"]), length(SSaccessories.tails_list_felinid))
 	if(features["tail_lizard"])
 		L[DNA_LIZARD_TAIL_BLOCK] = construct_block(SSaccessories.tails_list_lizard.Find(features["tail_lizard"]), length(SSaccessories.tails_list_lizard))
 	if(features["snout"])
@@ -236,6 +246,8 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 		L[DNA_MUSHROOM_CAPS_BLOCK] = construct_block(SSaccessories.caps_list.Find(features["caps"]), length(SSaccessories.caps_list))
 	if(features["pod_hair"])
 		L[DNA_POD_HAIR_BLOCK] = construct_block(SSaccessories.pod_hair_list.Find(features["pod_hair"]), length(SSaccessories.pod_hair_list))
+	if(features["fish_tail"])
+		L[DNA_FISH_TAIL_BLOCK] = construct_block(SSaccessories.tails_list_fish.Find(features["fish_tail"]), length(SSaccessories.tails_list_fish))
 	// honk start -- diona hair & skaven tail
 	if(features["diona_hair"])
 		L[DNA_DIONA_HAIR_BLOCK] = construct_block(SSaccessories.diona_hair_list.Find(features["diona_hair"]), length(SSaccessories.diona_hair_list))
@@ -365,7 +377,7 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 		if(DNA_LIZARD_MARKINGS_BLOCK)
 			set_uni_feature_block(blocknumber, construct_block(SSaccessories.lizard_markings_list.Find(features["lizard_markings"]), length(SSaccessories.lizard_markings_list)))
 		if(DNA_TAIL_BLOCK)
-			set_uni_feature_block(blocknumber, construct_block(SSaccessories.tails_list_human.Find(features["tail_cat"]), length(SSaccessories.tails_list_human)))
+			set_uni_feature_block(blocknumber, construct_block(SSaccessories.tails_list_felinid.Find(features["tail_cat"]), length(SSaccessories.tails_list_felinid)))
 		if(DNA_LIZARD_TAIL_BLOCK)
 			set_uni_feature_block(blocknumber, construct_block(SSaccessories.tails_list_lizard.Find(features["tail_lizard"]), length(SSaccessories.tails_list_lizard)))
 		if(DNA_SNOUT_BLOCK)
@@ -396,6 +408,8 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 		if(DNA_KITSUNE_TAIL_BLOCK)
 			set_uni_feature_block(blocknumber, construct_block(SSaccessories.tails_list_kitsune.Find(features["tail_kitsune"]), length(SSaccessories.tails_list_kitsune)))
 		// honk end
+		if(DNA_FISH_TAIL_BLOCK)
+			set_uni_feature_block(blocknumber, construct_block(SSaccessories.tails_list_fish.Find(features["fish_tail"]), length(SSaccessories.tails_list_fish)))
 
 //Please use add_mutation or activate_mutation instead
 /datum/dna/proc/force_give(datum/mutation/human/human_mutation)
@@ -495,7 +509,7 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 /datum/dna/stored/add_mutation(mutation_name) //no mutation changes on stored dna.
 	return
 
-/datum/dna/stored/remove_mutation(mutation_name)
+/datum/dna/stored/remove_mutation(mutation_name, mutadone)
 	return
 
 /datum/dna/stored/check_mutation(mutation_name)
@@ -678,7 +692,7 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 	if(dna.features["spines"])
 		dna.features["spines"] = SSaccessories.spines_list[deconstruct_block(get_uni_feature_block(features, DNA_SPINES_BLOCK), length(SSaccessories.spines_list))]
 	if(dna.features["tail_cat"])
-		dna.features["tail_cat"] = SSaccessories.tails_list_human[deconstruct_block(get_uni_feature_block(features, DNA_TAIL_BLOCK), length(SSaccessories.tails_list_human))]
+		dna.features["tail_cat"] = SSaccessories.tails_list_felinid[deconstruct_block(get_uni_feature_block(features, DNA_TAIL_BLOCK), length(SSaccessories.tails_list_felinid))]
 	if(dna.features["tail_lizard"])
 		dna.features["tail_lizard"] = SSaccessories.tails_list_lizard[deconstruct_block(get_uni_feature_block(features, DNA_LIZARD_TAIL_BLOCK), length(SSaccessories.tails_list_lizard))]
 	if(dna.features["ears"])
@@ -705,9 +719,11 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 	if(dna.features["tail_kitsune"])
 		dna.features["tail_kitsune"] = SSaccessories.tails_list_kitsune[deconstruct_block(get_uni_feature_block(features, DNA_KITSUNE_TAIL_BLOCK), length(SSaccessories.tails_list_kitsune))]
 	// honk end
+	if(dna.features["fish_tail"])
+		dna.features["fish_tail"] = SSaccessories.tails_list_fish[deconstruct_block(get_uni_feature_block(features, DNA_FISH_TAIL_BLOCK), length(SSaccessories.tails_list_fish))]
 
-	for(var/obj/item/organ/external/external_organ in organs)
-		external_organ.mutate_feature(features, src)
+	for(var/obj/item/organ/organ in organs)
+		organ.mutate_feature(features, src)
 
 	if(icon_update)
 		update_body(is_creating = mutcolor_update)
@@ -767,7 +783,7 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 	if(istype(mutation, /datum/mutation/human))
 		var/datum/mutation/human/M = mutation
 		mutation_type = M.type
-	if(!mutation_in_sequence(mutation_type)) //cant activate what we dont have, use add_mutation
+	if(!mutation_in_sequence(mutation_type)) //can't activate what we don't have, use add_mutation
 		return FALSE
 	add_mutation(mutation, MUT_NORMAL)
 	return TRUE
