@@ -13,17 +13,17 @@
 	skaven.dna.features["horns"] = "None"
 	skaven.set_species(/datum/species/skaven)
 	skaven.dna.species.pre_equip_species_outfit(/datum/outfit/job/cargo_tech, skaven, visuals_only = TRUE)
-	skaven.equipOutfit(/datum/outfit/job/cargo_tech, visualsOnly = TRUE)
+	skaven.equipOutfit(/datum/outfit/job/cargo_tech)
 	test_screenshot("[/datum/species/skaven]", get_flat_icon_for_all_directions(skaven))
 	// Dwarf
 	var/mob/living/carbon/human/dwarf = allocate(/mob/living/carbon/human/dummy/consistent)
 	dwarf.set_species(/datum/species/dwarf)
 	dwarf.facial_hairstyle = "Beard (Dwarf)"
 	dwarf.update_hair()
-	dwarf.equipOutfit(/datum/outfit/dorf, visualsOnly = TRUE)
+	dwarf.equipOutfit(/datum/outfit/dorf)
 	test_screenshot("[/datum/species/dwarf]", get_flat_icon_for_all_directions(dwarf))
 	// honk end
-	
+
 	// Test lizards as their own thing so we can get more coverage on their features
 	var/mob/living/carbon/human/lizard = allocate(/mob/living/carbon/human/dummy/consistent)
 	lizard.dna.features["mcolor"] = "#099"

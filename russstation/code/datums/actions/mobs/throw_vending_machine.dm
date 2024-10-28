@@ -16,7 +16,7 @@
 			return
 
 	user.visible_message(span_warning("[user] starts picking up [V.name]."), span_warning("You start picking up [V.name]."))
-	playsound(src, 'sound/machines/airlock_alien_prying.ogg', 100, TRUE)
+	playsound(src, 'sound/machines/airlock/airlock_alien_prying.ogg', 100, TRUE)
 	if(!do_after(user, 4 SECONDS, target = src))
 		return TRUE
 	user.visible_message(span_warning("[user] finishes picking up [V.name]."), span_warning("You finish picking up [V.name]."))

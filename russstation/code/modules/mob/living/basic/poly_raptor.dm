@@ -30,7 +30,7 @@
 	attack_verb_continuous = "chomps"
 	attack_verb_simple = "chomp"
 	attack_vis_effect = ATTACK_EFFECT_BITE
-	attack_sound = 'sound/weapons/bite.ogg'
+	attack_sound = 'sound/items/weapons/bite.ogg'
 	friendly_verb_continuous = "grooms"
 	friendly_verb_simple = "groom"
 	mob_size = MOB_SIZE_LARGE
@@ -39,7 +39,7 @@
 	var/change_offsets = TRUE
 
 	///Door Prying Test Stuff VVV
-	
+
 /mob/living/basic/poly_raptor/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, list(TRAIT_LAVA_IMMUNE, TRAIT_ASHSTORM_IMMUNE, TRAIT_SNOWSTORM_IMMUNE), INNATE_TRAIT)
@@ -48,7 +48,7 @@
 	///RegisterSignal(src, COMSIG_MOB_LOGIN, PROC_REF(on_login))
 
 	///Innate Abilities , Poly Raptor vvv
-	
+
 	var/static/list/innate_actions = list(
 		/datum/action/cooldown/spell/cone/staggered/fire_breath,
 		/datum/action/cooldown/mob_cooldown/charge/basic_charge/lobster,
@@ -57,7 +57,7 @@
 
 	grant_actions_by_list(innate_actions)
 
-	
+
 	///Innate Abilities , Poly Raptor ^^^
 
 	///Door PRying Test Stuff VVV
@@ -81,9 +81,9 @@
 		return
 	pixel_x = (direction & EAST) ? -20 : 0
 	pixel_y = (direction & NORTH) ? -5 : 0
-	
+
 	///NOT WORKING POLY TALK VVV
-	
+
 /mob/living/basic/parrot/poly/get_static_list_of_phrases() // there's only one poly, so there should only be one ongoing list of phrases. i guess
 	var/static/list/phrases_to_return = list()
 	if(length(phrases_to_return))

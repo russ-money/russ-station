@@ -18,9 +18,9 @@
 	w_class = WEIGHT_CLASS_SMALL
 	custom_materials = list(/datum/material/gold=150)
 	// yeah sounds
-	usesound = 'sound/items/ratchet.ogg'
-	drop_sound = 'sound/items/handling/crowbar_drop.ogg'
-	pickup_sound =  'sound/items/handling/weldingtool_pickup.ogg'
+	usesound = 'sound/items/tools/ratchet.ogg'
+	drop_sound = 'sound/items/handling/tools/crowbar_drop.ogg'
+	pickup_sound =  'sound/items/handling/tools/weldingtool_pickup.ogg'
 
 	// what even is this thing
 	attack_verb_continuous = list("scrapes", "hammers", "cranks", "pries", "gouges")

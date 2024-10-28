@@ -459,9 +459,9 @@ Used by the AI doomsday and the self-destruct nuke.
 	if(current_map.minetype == "lavaland")
 		LoadGroup(FailedZs, "Lavaland", "map_files/Mining", "Lavaland.dmm", default_traits = ZTRAITS_LAVALAND)
 	// honk start - IceMoon and Badlands variants
-	else if(config.minetype == "icemoon")
+	else if(current_map.minetype == "icemoon")
 		LoadGroup(FailedZs, "IceMoon", "map_files/Mining", "IceMoon.dmm", traits = ZTRAITS_ICEMOON)
-	else if(config.minetype == "badlands")
+	else if(current_map.minetype == "badlands")
 		LoadGroup(FailedZs, "Badlands", "map_files/Mining", "Badlands.dmm", default_traits = ZTRAITS_BADLANDS)
 	// honk end
 	else if (!isnull(current_map.minetype) && current_map.minetype != "none")

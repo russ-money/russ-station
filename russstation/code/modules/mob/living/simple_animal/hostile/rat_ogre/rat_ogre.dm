@@ -27,7 +27,7 @@
 	environment_smash = ENVIRONMENT_SMASH_WALLS
 	attack_verb_continuous = "gores"
 	attack_verb_simple = "gore"
-	attack_sound = 'sound/weapons/punch1.ogg'
+	attack_sound = 'sound/items/weapons/punch1.ogg'
 	held_items = list(null, null)
 	faction = list(FACTION_RAT, "hostile")
 	robust_searching = TRUE
@@ -160,7 +160,7 @@
 	button_icon_state = "warpstone_blade0"
 	base_icon_state = "warpstone_blade"
 
-	sound = 'sound/weapons/guillotine.ogg'
+	sound = 'sound/items/weapons/guillotine.ogg'
 
 	cooldown_time = 20 SECONDS
 	invocation = "Vreet'ka'rankka!"
@@ -325,7 +325,7 @@
 
 	var/obj/effect/warpstone_dagger/to_remove = warpstone_blades[1]
 
-	playsound(get_turf(source), 'sound/weapons/parry.ogg', 100, TRUE)
+	playsound(get_turf(source), 'sound/items/weapons/parry.ogg', 100, TRUE)
 	source.visible_message(
 		span_warning("[to_remove] orbiting [source] snaps in front of [attack_text], blocking it before vanishing!"),
 		span_warning("[to_remove] orbiting you snaps in front of [attack_text], blocking it before vanishing!"),
@@ -371,8 +371,8 @@
 	name = "warpstone dagger"
 	icon = 'russstation/icons/obj/skaven.dmi'
 	icon_state = "skaven_dagger"
-	hitsound = 'sound/weapons/pierce_slow.ogg'
-	hitsound_wall = 'sound/weapons/plasma_cutter.ogg'
+	hitsound = 'sound/items/weapons/pierce_slow.ogg'
+	hitsound_wall = 'sound/items/weapons/plasma_cutter.ogg'
 	speed = 2
 	damage = 20
 	armour_penetration = 75

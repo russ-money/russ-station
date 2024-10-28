@@ -67,7 +67,7 @@
 	pass_flags = PASSTABLE | PASSMOB
 	attack_verb_continuous = "bites"
 	attack_verb_simple = "bite"
-	attack_sound = 'sound/weapons/bite.ogg'
+	attack_sound = 'sound/items/weapons/bite.ogg'
 	attack_vis_effect = ATTACK_EFFECT_BITE
 	environment_smash = ENVIRONMENT_SMASH_NONE
 

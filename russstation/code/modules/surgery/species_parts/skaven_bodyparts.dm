@@ -27,8 +27,8 @@
 	limb_id = SPECIES_SKAVEN
 	unarmed_attack_verbs = list("claw")
 	unarmed_attack_effect = ATTACK_EFFECT_CLAW
-	unarmed_attack_sound = 'sound/weapons/slash.ogg'
-	unarmed_miss_sound = 'sound/weapons/slashmiss.ogg'
+	unarmed_attack_sound = 'sound/items/weapons/slash.ogg'
+	unarmed_miss_sound = 'sound/items/weapons/slashmiss.ogg'
 
 /obj/item/bodypart/arm/right/skaven
 	icon = 'russstation/icons/mob/human_parts_greyscale.dmi'
@@ -38,8 +38,8 @@
 	limb_id = SPECIES_SKAVEN
 	unarmed_attack_verbs = list("claw")
 	unarmed_attack_effect = ATTACK_EFFECT_CLAW
-	unarmed_attack_sound = 'sound/weapons/slash.ogg'
-	unarmed_miss_sound = 'sound/weapons/slashmiss.ogg'
+	unarmed_attack_sound = 'sound/items/weapons/slash.ogg'
+	unarmed_miss_sound = 'sound/items/weapons/slashmiss.ogg'
 
 /obj/item/bodypart/leg/left/skaven
 	icon = 'russstation/icons/mob/human_parts_greyscale.dmi'

@@ -86,7 +86,6 @@
 	name = "Kitsune"
 	icon = 'russstation/icons/mob/mutant_bodyparts.dmi'
 	icon_state = "kitsune"
-	hasinner = 1
 	color_src = HAIR_COLOR
 
 //More horns (the tg ones are pretty lackluster for skaven)
