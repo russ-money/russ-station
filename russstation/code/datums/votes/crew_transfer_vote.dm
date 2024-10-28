@@ -9,6 +9,8 @@
 	)
 	vote_sound = 'russstation/sound/misc/transfer_vote.ogg'
 
+	default_message = "Vote to call the shuttle. Can only be initiated after some time has passed."
+
 /datum/vote/restart_vote/toggle_votable()
 	CONFIG_SET(flag/transfer_vote, !CONFIG_GET(flag/transfer_vote))
 
@@ -52,7 +54,7 @@
 	if(EMERGENCY_IDLE_OR_RECALLED)
 		SSshuttle.emergency.request()
 		SSshuttle.emergency_no_recall = TRUE
-		message_admins("The emergency shuttle has been requested because of a successful transfer vote")
+		message_admins("The emergency shuttle has been requested because of a successful transfer vote.")
 	else
 		to_chat(world, span_boldannounce("Notice: The crew transfer vote has failed because the shuttle is unavailable"))
 
