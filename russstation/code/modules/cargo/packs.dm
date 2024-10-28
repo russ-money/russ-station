@@ -108,3 +108,9 @@
 	cost = CARGO_CRATE_VALUE * 30
 	contains = list(/obj/item/electronics/crypto_mining_card/tier4)
 	special = TRUE // must be unlocked by market activity
+
+/datum/supply_pack/engineering/rapid_lighting_device // this is a engi item why isn't it here tg
+	name = "Rapid Lighting Device (RLD) Multi-Pack"
+	desc = "Devices used to rapidly provide lighting sources to an area. Reload with iron, plasteel, glass or compressed matter cartridges."
+	cost = CARGO_CRATE_VALUE * 3.5
+	contains = list(/obj/item/construction/rld = 3)
