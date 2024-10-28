@@ -67,8 +67,6 @@
 	var/healium_euphoria = EUPHORIA_LAST_FLAG
 
 
-
-
 	var/oxy_breath_dam_min = MIN_TOXIC_GAS_DAMAGE
 	var/oxy_breath_dam_max = MAX_TOXIC_GAS_DAMAGE
 	var/oxy_damage_type = OXY

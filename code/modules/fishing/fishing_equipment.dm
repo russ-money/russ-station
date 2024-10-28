@@ -340,22 +340,6 @@
 	new /obj/item/aquarium_kit(src)
 	new /obj/item/fish_analyzer(src)
 
-/obj/item/storage/toolbox/fishing/master
-	name = "super fishing toolbox"
-	desc = "Contains EVERYTHING (almost) you need for your fishing trip."
-	icon_state = "gold"
-	inhand_icon_state = "toolbox_gold"
-
-/obj/item/storage/toolbox/fishing/master/PopulateContents()
-	new /obj/item/fishing_rod/telescopic/master(src)
-	new /obj/item/storage/box/fishing_hooks/master(src)
-	new /obj/item/storage/box/fishing_lines/master(src)
-	new /obj/item/bait_can/super_baits(src)
-	new /obj/item/fish_feed(src)
-	new /obj/item/aquarium_kit(src)
-	new /obj/item/fish_analyzer(src)
-	new /obj/item/experi_scanner(src)
-
 /obj/item/storage/box/fishing_hooks
 	name = "fishing hook set"
 	illustration = "fish"

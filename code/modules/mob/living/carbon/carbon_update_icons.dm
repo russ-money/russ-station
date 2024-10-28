@@ -470,6 +470,7 @@
 
 		var/old_key = icon_render_keys?[limb.body_zone] //Checks the mob's icon render key list for the bodypart
 		icon_render_keys[limb.body_zone] = (limb.is_husked) ? limb.generate_husk_key().Join() : limb.generate_icon_key().Join() //Generates a key for the current bodypart
+
 		if(icon_render_keys[limb.body_zone] != old_key) //If the keys match, that means the limb doesn't need to be redrawn
 			needs_update += limb
 

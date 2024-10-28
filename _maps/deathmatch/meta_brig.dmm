@@ -3557,7 +3557,7 @@
 /turf/open/floor/iron/white,
 /area/deathmatch)
 "Zj" = (
-/obj/machinery/door/window/brigdoor/security/holding/left/directional/south{
+/obj/machinery/door/window/brigdoor/security/holding{
 	id = "Holding Cell";
 	name = "Holding Cell"
 	},
