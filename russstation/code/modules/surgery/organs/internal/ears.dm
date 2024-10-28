@@ -7,12 +7,9 @@
 	bodypart_overlay = /datum/bodypart_overlay/mutant/skaven_ears
 
 /datum/bodypart_overlay/mutant/skaven_ears
-	layers = EXTERNAL_FRONT | EXTERNAL_ADJACENT
+	layers = EXTERNAL_FRONT | EXTERNAL_ADJACENT | EXTERNAL_BEHIND
 	color_source = ORGAN_COLOR_INHERIT
 	feature_key = "ears"
-
-	/// We dont color the inner part, which is the front layer
-	var/colorless_layer = EXTERNAL_FRONT
 
 /datum/bodypart_overlay/mutant/skaven_ears/get_global_feature_list()
 	return SSaccessories.ears_list
@@ -21,11 +18,6 @@
 	if((human.head?.flags_inv & HIDEHAIR) || (human.wear_mask?.flags_inv & HIDEHAIR))
 		return FALSE
 	return TRUE
-
-/datum/bodypart_overlay/mutant/skaven_ears/color_image(image/overlay, draw_layer, obj/item/bodypart/limb)
-	if(draw_layer != bitflag_to_layer(colorless_layer))
-		return ..()
-	return overlay
 
 /obj/item/organ/internal/ears/kitsune
 	name = "fox ears"
