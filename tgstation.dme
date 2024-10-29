@@ -6642,6 +6642,7 @@
 #include "russstation\code\modules\reagents\reagent_containers\cups\_glass_datum.dm"
 #include "russstation\code\modules\recycling\conveyor.dm"
 #include "russstation\code\modules\shuttle\emergency.dm"
+#include "russstation\code\modules\shuttle\shuttle_dockers.dm"
 #include "russstation\code\modules\surgery\organs\external\_external_organs.dm"
 #include "russstation\code\modules\surgery\organs\external\tails.dm"
 #include "russstation\code\modules\surgery\organs\internal\ears.dm"

@@ -29,6 +29,7 @@
 	var/designate_time = 0
 	var/turf/designating_target_loc
 	var/jammed = FALSE
+	var/essential = FALSE // honk - to skip deleting essential ports
 
 /obj/machinery/computer/camera_advanced/shuttle_docker/Initialize(mapload)
 	. = ..()
@@ -51,13 +52,14 @@
 
 /obj/machinery/computer/camera_advanced/shuttle_docker/Destroy()
 	. = ..()
-	if(my_port?.get_docked())
-		my_port.delete_after = TRUE
-		my_port.shuttle_id = null
-		my_port.name = "Old [my_port.name]"
-		my_port = null
-	else
-		QDEL_NULL(my_port)
+	if(!essential) // honk - skip deleting essential ports
+		if(my_port?.get_docked())
+			my_port.delete_after = TRUE
+			my_port.shuttle_id = null
+			my_port.name = "Old [my_port.name]"
+			my_port = null
+		else
+			QDEL_NULL(my_port)
 
 /// "Initializes" any default port ids we have, done so add_jumpable_port can be a proper setter
 /obj/machinery/computer/camera_advanced/shuttle_docker/proc/set_init_ports()
