@@ -5,6 +5,7 @@
 	visual = TRUE
 	dna_block = DNA_EARS_BLOCK
 	bodypart_overlay = /datum/bodypart_overlay/mutant/skaven_ears
+	sprite_accessory_override = /datum/sprite_accessory/ears/skaven
 
 /datum/bodypart_overlay/mutant/skaven_ears
 	layers = EXTERNAL_FRONT | EXTERNAL_ADJACENT | EXTERNAL_BEHIND
@@ -27,12 +28,12 @@
 	damage_multiplier = 2
 	dna_block = DNA_EARS_BLOCK
 	bodypart_overlay = /datum/bodypart_overlay/mutant/kitsune_ears
+	sprite_accessory_override = /datum/sprite_accessory/ears/kitsune
 
 /datum/bodypart_overlay/mutant/kitsune_ears
-	layers = EXTERNAL_FRONT | EXTERNAL_ADJACENT
+	layers = EXTERNAL_FRONT | EXTERNAL_ADJACENT | EXTERNAL_BEHIND
 	color_source = ORGAN_COLOR_HAIR
 	feature_key = "ears"
-
 	/// We dont color the inner part, which is the front layer
 	var/colorless_layer = EXTERNAL_FRONT
 

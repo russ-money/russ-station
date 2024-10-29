@@ -116,7 +116,7 @@ SUBSYSTEM_DEF(accessories) // just 'accessories' for brevity
 
 	// honk start -- our races
 	diona_hair_list = init_sprite_accessory_subtypes(/datum/sprite_accessory/diona_hair)[DEFAULT_SPRITE_LIST]
-	tails_list_skaven = init_sprite_accessory_subtypes(/datum/sprite_accessory/tails/skaven)[DEFAULT_SPRITE_LIST]
+	tails_list_skaven = init_sprite_accessory_subtypes(/datum/sprite_accessory/tails/skaven, add_blank = TRUE)[DEFAULT_SPRITE_LIST]
 	tails_list_kitsune = init_sprite_accessory_subtypes(/datum/sprite_accessory/tails/kitsune)[DEFAULT_SPRITE_LIST]
 	// honk end
 
