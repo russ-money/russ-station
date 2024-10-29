@@ -1,11 +1,15 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
 /obj/item/seeds/russ/mystery,
-/obj/structure/closet/body_bag/bluespace,
+/obj/structure/closet/body_bag/bluespace{
+	name = "mysterious bag";
+	desc = "A strange and spacious bag with an almost unsettling weight to it, as if it defies the rules of space. You might need help opening it."
+	},
 /obj/item/flashlight/lantern/on,
 /obj/item/soap,
 /mob/living/basic/bot/honkbot{
-	faction = list("silicon","turret", "syndicate", "mining", "ashwalker")
+	faction = list("silicon","turret", "syndicate", "mining", "ashwalker");
+	bot_mode_flags = 15
 	},
 /mob/living/simple_animal/hostile/asteroid/polarbear,
 /turf/open/misc/asteroid/snow/icemoon,
