@@ -122,7 +122,7 @@ Difficulty: Medium
 	crusher_loot = list()
 	gps_name = "Infinity Signal"
 	death_message = "moans as the sound of its power begins to wind down."
-	death_sound = 'sound/voice/borg_deathsound.ogg'
+	death_sound = 'sound/mobs/non-humanoids/cyborg/borg_deathsound.ogg'
 	can_special = FALSE
 	true_spawn = TRUE
 	environment_smash = ENVIRONMENT_SMASH_NONE
@@ -150,14 +150,14 @@ Difficulty: Medium
 //When the sword is touched it will spawn Sif.
 /obj/structure/sword/sif/attack_hand(mob/user)
 	icon_state = "Interact_Sword"
-	playsound(get_turf(src.loc), 'sound/effects/curse1.ogg', 100, 1)
+	playsound(get_turf(src.loc), 'sound/effects/curse/curse1.ogg', 100, 1)
 	spawn(30)
 		if(!QDELETED(src))
 			new /mob/living/simple_animal/hostile/megafauna/sif(get_turf(src.loc))
 			visible_message(
 				span_notice("The ground shakes."),
 			)
-			playsound(get_turf(src.loc), 'sound/effects/curse3.ogg', 100, 1)
+			playsound(get_turf(src.loc), 'sound/effects/curse/curse3.ogg', 100, 1)
 			playsound(get_turf(src.loc), 'sound/effects/meteorimpact.ogg', 100, 1)
 			qdel(src)
 
@@ -259,7 +259,7 @@ Difficulty: Medium
 			span_danger("[src] dodged the projectile!"),
 			span_userdanger("You dodge the projectile!"),
 		)
-		playsound(src, pick('sound/weapons/bulletflyby.ogg', 'sound/weapons/bulletflyby2.ogg', 'sound/weapons/bulletflyby3.ogg'), 300, 1)
+		playsound(src, SFX_BULLET_MISS, 300, 1)
 		return FALSE
 
 	return ..()
@@ -361,7 +361,7 @@ Difficulty: Medium
 	if(!stat && .)
 		var/obj/effect/temp_visual/hierophant/squares/HS = new(old_loc)
 		HS.setDir(movement_dir)
-		playsound(src, 'sound/mecha/mechmove04.ogg', 150, TRUE, -4)
+		playsound(src, 'sound/vehicles/mecha/mechmove04.ogg', 150, TRUE, -4)
 		if(target)
 			arena_trap(target)
 

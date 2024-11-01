@@ -716,7 +716,7 @@
 /turf/open/floor/iron/white,
 /area/station/tcommsat/server)
 "aub" = (
-/obj/machinery/vending/autodrobe/all_access,
+/obj/machinery/vending/autodrobe,
 /turf/open/floor/iron,
 /area/station/commons/locker)
 "aud" = (
@@ -7857,6 +7857,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
 	},
+/obj/item/toy/crayon/spraycan/roboticist,
 /turf/open/floor/iron,
 /area/station/science/circuits)
 "elc" = (
@@ -18129,7 +18130,6 @@
 	name = "Sorting Belt Door"
 	},
 /obj/item/paper/crumpled,
-/obj/item/trash/waffles,
 /obj/item/trash/can,
 /obj/item/plate,
 /obj/effect/spawner/random/trash/garbage,
@@ -42475,6 +42475,7 @@
 	name = "Service Fax Machine"
 	},
 /obj/structure/table,
+/obj/item/aquarium_kit,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/service)
 "wqT" = (
@@ -44004,6 +44005,10 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/command/heads_quarters/captain)
+"xbN" = (
+/obj/machinery/fishing_portal_generator,
+/turf/open/floor/iron,
+/area/station/hallway/secondary/service)
 "xbO" = (
 /obj/machinery/door/airlock/grunge{
 	name = "Maintenance"
@@ -90060,7 +90065,7 @@ ifb
 nMd
 uDX
 nMd
-oXO
+xbN
 gbZ
 xUx
 vxx

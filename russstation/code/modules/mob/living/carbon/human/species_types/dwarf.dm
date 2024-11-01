@@ -9,7 +9,6 @@
 		TRAIT_CAN_STRIP,
 		TRAIT_LITERATE,
 	)
-	mutant_bodyparts = list("wings" = "None")
 	mutanttongue = /obj/item/organ/internal/tongue/dwarf
 	mutantliver = /obj/item/organ/internal/liver/dwarf
 	species_cookie = /obj/item/reagent_containers/cup/glass/bottle/ale
@@ -33,69 +32,69 @@
 /datum/species/dwarf/get_scream_sound(mob/living/carbon/human/human)
 	if(human.gender == MALE)
 		if(prob(1))
-			return 'sound/voice/human/wilhelm_scream.ogg'
+			return 'sound/mobs/humanoids/human/scream/wilhelm_scream.ogg'
 		return pick(
-			'sound/voice/human/malescream_1.ogg',
-			'sound/voice/human/malescream_2.ogg',
-			'sound/voice/human/malescream_3.ogg',
-			'sound/voice/human/malescream_4.ogg',
-			'sound/voice/human/malescream_5.ogg',
-			'sound/voice/human/malescream_6.ogg',
+			'sound/mobs/humanoids/human/scream/malescream_1.ogg',
+			'sound/mobs/humanoids/human/scream/malescream_2.ogg',
+			'sound/mobs/humanoids/human/scream/malescream_3.ogg',
+			'sound/mobs/humanoids/human/scream/malescream_4.ogg',
+			'sound/mobs/humanoids/human/scream/malescream_5.ogg',
+			'sound/mobs/humanoids/human/scream/malescream_6.ogg',
 		)
 
 	return pick(
-		'sound/voice/human/femalescream_1.ogg',
-		'sound/voice/human/femalescream_2.ogg',
-		'sound/voice/human/femalescream_3.ogg',
-		'sound/voice/human/femalescream_4.ogg',
-		'sound/voice/human/femalescream_5.ogg',
+		'sound/mobs/humanoids/human/scream/femalescream_1.ogg',
+		'sound/mobs/humanoids/human/scream/femalescream_2.ogg',
+		'sound/mobs/humanoids/human/scream/femalescream_3.ogg',
+		'sound/mobs/humanoids/human/scream/femalescream_4.ogg',
+		'sound/mobs/humanoids/human/scream/femalescream_5.ogg',
 	)
 
 /datum/species/dwarf/get_cough_sound(mob/living/carbon/human/human)
 	if(human.physique == FEMALE)
 		return pick(
-			'sound/voice/human/female_cough1.ogg',
-			'sound/voice/human/female_cough2.ogg',
-			'sound/voice/human/female_cough3.ogg',
-			'sound/voice/human/female_cough4.ogg',
-			'sound/voice/human/female_cough5.ogg',
-			'sound/voice/human/female_cough6.ogg',
+			'sound/mobs/humanoids/human/cough/female_cough1.ogg',
+			'sound/mobs/humanoids/human/cough/female_cough2.ogg',
+			'sound/mobs/humanoids/human/cough/female_cough3.ogg',
+			'sound/mobs/humanoids/human/cough/female_cough4.ogg',
+			'sound/mobs/humanoids/human/cough/female_cough5.ogg',
+			'sound/mobs/humanoids/human/cough/female_cough6.ogg',
 		)
 	return pick(
-		'sound/voice/human/male_cough1.ogg',
-		'sound/voice/human/male_cough2.ogg',
-		'sound/voice/human/male_cough3.ogg',
-		'sound/voice/human/male_cough4.ogg',
-		'sound/voice/human/male_cough5.ogg',
-		'sound/voice/human/male_cough6.ogg',
+		'sound/mobs/humanoids/human/cough/male_cough1.ogg',
+		'sound/mobs/humanoids/human/cough/male_cough2.ogg',
+		'sound/mobs/humanoids/human/cough/male_cough3.ogg',
+		'sound/mobs/humanoids/human/cough/male_cough4.ogg',
+		'sound/mobs/humanoids/human/cough/male_cough5.ogg',
+		'sound/mobs/humanoids/human/cough/male_cough6.ogg',
 	)
 
 /datum/species/dwarf/get_cry_sound(mob/living/carbon/human/human)
 	if(human.physique == FEMALE)
 		return pick(
-			'sound/voice/human/female_cry1.ogg',
-			'sound/voice/human/female_cry2.ogg',
+			'sound/mobs/humanoids/human/cry/female_cry1.ogg',
+			'sound/mobs/humanoids/human/cry/female_cry2.ogg',
 		)
 	return pick(
-		'sound/voice/human/male_cry1.ogg',
-		'sound/voice/human/male_cry2.ogg',
-		'sound/voice/human/male_cry3.ogg',
+		'sound/mobs/humanoids/human/cry/male_cry1.ogg',
+		'sound/mobs/humanoids/human/cry/male_cry2.ogg',
+		'sound/mobs/humanoids/human/cry/male_cry3.ogg',
 	)
 
 
 /datum/species/dwarf/get_sneeze_sound(mob/living/carbon/human/human)
 	if(human.physique == FEMALE)
-		return 'sound/voice/human/female_sneeze1.ogg'
-	return 'sound/voice/human/male_sneeze1.ogg'
+		return 'sound/mobs/humanoids/human/sneeze/female_sneeze1.ogg'
+	return 'sound/mobs/humanoids/human/sneeze/male_sneeze1.ogg'
 
 /datum/species/dwarf/get_laugh_sound(mob/living/carbon/human/human)
 	if(!ishuman(human))
 		return
 	if(human.physique == FEMALE)
-		return 'sound/voice/human/womanlaugh.ogg'
+		return 'sound/mobs/humanoids/human/laugh/womanlaugh.ogg'
 	return pick(
-		'sound/voice/human/manlaugh1.ogg',
-		'sound/voice/human/manlaugh2.ogg',
+		'sound/mobs/humanoids/human/laugh/manlaugh1.ogg',
+		'sound/mobs/humanoids/human/laugh/manlaugh2.ogg',
 	)
 
 /datum/species/dwarf/on_species_gain(mob/living/carbon/human/C, datum/species/old_species, pref_load)
@@ -233,7 +232,7 @@
 	. = ..()
 	//Let out a scream of agony once in a while
 	if(!HAS_TRAIT(C, TRAIT_CRITICAL_CONDITION) && SPT_PROB(0.8, seconds_per_tick))
-		playsound(C, pick(list('sound/hallucinations/growl1.ogg','sound/hallucinations/growl2.ogg','sound/hallucinations/growl3.ogg','sound/hallucinations/veryfar_noise.ogg','sound/hallucinations/wail.ogg')), 50, TRUE, 10)
+		playsound(C, pick(list('sound/mobs/non-humanoids/dog/growl1.ogg','sound/mobs/non-humanoids/dog/growl2.ogg','sound/effects/hallucinations/growl3.ogg','sound/effects/hallucinations/veryfar_noise.ogg','sound/effects/hallucinations/wail.ogg')), 50, TRUE, 10)
 
 /datum/species/dwarf/chaos/replace_body(mob/living/carbon/target, datum/species/new_species)
 	random_head  = pick(list( /obj/item/bodypart/head/lizard,  /obj/item/bodypart/head/ethereal,  /obj/item/bodypart/head/abductor,  /obj/item/bodypart/head/alien,  /obj/item/bodypart/head/fly,  /obj/item/bodypart/head/golem, /obj/item/bodypart/head/jelly, /obj/item/bodypart/head/monkey, /obj/item/bodypart/head/moth, /obj/item/bodypart/head/mushroom, /obj/item/bodypart/head/plasmaman, /obj/item/bodypart/head/pod, /obj/item/bodypart/head/robot, /obj/item/bodypart/head/shadow, /obj/item/bodypart/head/skaven, /obj/item/bodypart/head/skeleton, /obj/item/bodypart/head/snail, /obj/item/bodypart/head/zombie))

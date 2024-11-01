@@ -15,7 +15,7 @@
 		TRAIT_NOBLOOD
 		// TRAIT_PLANT_SAFE, // maybe add this? Podpeople have it
 	)
-	external_organs = list(
+	mutant_organs = list(
 		/obj/item/organ/external/diona_hair = "None",
 	)
 	mutanttongue = /obj/item/organ/internal/tongue/pod // basically the same thing
@@ -69,12 +69,6 @@
 	if(chem.type == /datum/reagent/toxin/plantbgone)
 		affected.adjustToxLoss(3 * REAGENTS_EFFECT_MULTIPLIER * seconds_per_tick)
 		affected.reagents.remove_reagent(chem.type, REAGENTS_METABOLISM * seconds_per_tick)
-
-/datum/species/diona/randomize_main_appearance_element(mob/living/carbon/human/human_mob)
-	var/hairstyle = pick(SSaccessories.diona_hair_list)
-	human_mob.dna.features["diona_hair"] = hairstyle
-	mutant_bodyparts["diona_hair"] = hairstyle
-	human_mob.update_body()
 
 /datum/species/diona/get_species_description()
 	return "An amalgamation of a number of diona nymphs \

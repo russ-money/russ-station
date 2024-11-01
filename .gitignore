@@ -35,6 +35,7 @@
 *.lk
 *.int
 *.backup
+*.bak
 ### https://raw.github.com/github/gitignore/cc542de017c606138a87ee4880e5f06b3a306def/Global/Linux.gitignore
 
 *~
@@ -180,6 +181,10 @@ Temporary Items
 /tools/MapAtmosFixer/MapAtmosFixer/bin/*
 /tools/CreditsTool/bin/*
 /tools/CreditsTool/obj/*
+/tools/Tgstation.DiscordDiscussions/.vs/*
+/tools/Tgstation.DiscordDiscussions/bin/*
+/tools/Tgstation.DiscordDiscussions/obj/*
+/tools/Tgstation.DiscordDiscussions/Properties/launchSettings.json
 
 #GitHub Atom
 .atom-build.json
@@ -237,18 +242,16 @@ Tracy.exe
 
 # From /tools/define_sanity/check.py - potential output file that we load onto the user's machine that we don't want to have committed.
 define_sanity_output.txt
+
 # Private configs
 /config/dbconfig.txt
 /config/in_character_filter.txt
+/config/comms.txt
 
-# upstream github workflows (until we integrate them)
-/.github/workflows/*
 # ezdb
 /db/
 /config/ezdb.txt
 
 # Running OpenDream locally
 tgstation.json
-
-# yt-dlp
-tools/request_internet_sounds/yt-dlp.exe
+rust_g64.dll

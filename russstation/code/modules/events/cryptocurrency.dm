@@ -65,7 +65,7 @@ GLOBAL_LIST_INIT(crypto_reasons, world.file2list("russstation/strings/crypto_rea
 
 		to_chat(target, "<span style='font-size: 140%; font-weight: bold;' class='sans'><font color='red'>[title]</font color><BR>[message]</span><BR>")
 		if(target.client?.prefs.read_preference(/datum/preference/toggle/sound_announcements))
-			var/sound_to_play = sound_override || (alert ? 'sound/misc/notice1.ogg' : 'sound/misc/notice2.ogg')
+			var/sound_to_play = sound_override || (alert ? 'sound/announcer/notice/notice1.ogg' : 'sound/announcer/notice/notice2.ogg')
 			SEND_SOUND(target, sound(sound_to_play))
 
 // stabilize market for a while

@@ -13,6 +13,8 @@ https://github.com/tgstation/tgstation
 
 Space Station 13 is a paranoia-laden round-based roleplaying game set against the backdrop of a nonsensical, metal death trap masquerading as a space station, with charming spritework designed to represent the sci-fi setting and its dangerous undertones. Have fun, and survive!
 
+*All github inquiries (such as moderation actions) may be handled via the /tg/station discord [#coding-general](https://discord.com/channels/326822144233439242/326831214667235328). Simply ping the `@Maintainer` role, following the guide on asking questions located in the channel description, with your issue!*
+
 ## DOWNLOADING
 [Downloading](.github/guides/DOWNLOADING.md)
 
@@ -46,7 +48,7 @@ All code before [commit 333c566b88108de218d882840e61928a9b759d8f on 2014/31/12 a
 
 See LICENSE and GPLv3.txt for more details.
 
-The TGS DMAPI API is licensed as a subproject under the MIT license.
+The TGS DMAPI is licensed as a subproject under the MIT license.
 
 See the footer of [code/__DEFINES/tgs.dm](./code/__DEFINES/tgs.dm) and [code/modules/tgs/LICENSE](./code/modules/tgs/LICENSE) for the MIT license.
 

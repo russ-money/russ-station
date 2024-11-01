@@ -14,6 +14,7 @@
 		"mod_reagent_scanner",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = TECHWEB_TIER_1_POINTS)
+	announce_channels = list(RADIO_CHANNEL_MEDICAL)
 
 /datum/techweb_node/cytology
 	id = TECHWEB_NODE_CYTOLOGY
@@ -63,6 +64,7 @@
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = TECHWEB_TIER_4_POINTS)
 	discount_experiments = list(/datum/experiment/scanning/people/mutant = TECHWEB_TIER_4_POINTS)
+	announce_channels = list(RADIO_CHANNEL_SCIENCE)
 
 // Botany root node
 /datum/techweb_node/botany_equip
@@ -91,6 +93,7 @@
 		"portaseeder",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = TECHWEB_TIER_2_POINTS)
+	announce_channels = list(RADIO_CHANNEL_SERVICE)
 
 /datum/techweb_node/selection
 	id = TECHWEB_NODE_SELECTION
@@ -104,3 +107,4 @@
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = TECHWEB_TIER_3_POINTS)
 	required_experiments = list(/datum/experiment/scanning/random/plants/wild)
 	discount_experiments = list(/datum/experiment/scanning/random/plants/traits = TECHWEB_TIER_3_POINTS)
+	announce_channels = list(RADIO_CHANNEL_SERVICE)

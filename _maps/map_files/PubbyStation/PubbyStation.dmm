@@ -6320,7 +6320,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
-/obj/machinery/vending/autodrobe/all_access,
+/obj/machinery/vending/autodrobe,
 /turf/open/floor/iron/white/corner{
 	dir = 1
 	},
@@ -12458,6 +12458,7 @@
 "aSc" = (
 /obj/structure/extinguisher_cabinet/directional/west,
 /obj/structure/table,
+/obj/item/aquarium_kit,
 /turf/open/floor/iron/dark,
 /area/station/hallway/secondary/service)
 "aSd" = (
@@ -13519,6 +13520,7 @@
 	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/fishing_portal_generator,
 /turf/open/floor/iron/dark,
 /area/station/hallway/secondary/service)
 "aWi" = (
@@ -17942,6 +17944,7 @@
 	pixel_x = 27
 	},
 /obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/item/toy/crayon/spraycan/roboticist,
 /turf/open/floor/iron/dark,
 /area/station/science/robotics/lab)
 "bmS" = (

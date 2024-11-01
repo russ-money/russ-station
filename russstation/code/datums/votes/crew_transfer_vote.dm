@@ -9,36 +9,23 @@
 	)
 	vote_sound = 'russstation/sound/misc/transfer_vote.ogg'
 
-/datum/vote/crew_transfer_vote/toggle_votable(mob/toggler)
-	if(!toggler)
-		CRASH("[type] wasn't passed a \"toggler\" mob to toggle_votable.")
-	if(!check_rights_for(toggler.client, R_ADMIN))
-		return FALSE
+	default_message = "Vote to call the shuttle. Can only be initiated after some time has passed."
 
+/datum/vote/restart_vote/toggle_votable()
 	CONFIG_SET(flag/transfer_vote, !CONFIG_GET(flag/transfer_vote))
-	return TRUE
 
 /datum/vote/crew_transfer_vote/is_config_enabled()
 	return CONFIG_GET(flag/transfer_vote)
 
-/datum/vote/crew_transfer_vote/can_be_initiated(mob/by_who, forced)
+/datum/vote/crew_transfer_vote/create_vote(mob/vote_creator)
 	. = ..()
 	if(!.)
-		return FALSE
+		return
 
-	// Check if it's a forced vote
-	if(!forced)
-		// Check if the transfer vote is enabled in the config
-		if(!CONFIG_GET(flag/transfer_vote))
-			if(by_who)
-				to_chat(by_who, span_warning("Transfer voting is disabled."))
-			return FALSE
-
-	// TODO: possibly replace with SSshuttle.canEvac(by_who)
 	var/srd = CONFIG_GET(number/shuttle_refuel_delay)
 	if(world.time - SSticker.round_start_time < srd)
-		if(by_who)
-			to_chat(by_who, span_warning("Shuttle call can only initiate after [DisplayTimeText(srd - (world.time - SSticker.round_start_time))]."))
+		if(vote_creator)
+			to_chat(vote_creator, span_warning("Shuttle call can only initiate after [DisplayTimeText(srd - (world.time - SSticker.round_start_time))]."))
 		return FALSE
 
 	return TRUE
@@ -67,7 +54,7 @@
 	if(EMERGENCY_IDLE_OR_RECALLED)
 		SSshuttle.emergency.request()
 		SSshuttle.emergency_no_recall = TRUE
-		message_admins("The emergency shuttle has been requested because of a successful transfer vote")
+		message_admins("The emergency shuttle has been requested because of a successful transfer vote.")
 	else
 		to_chat(world, span_boldannounce("Notice: The crew transfer vote has failed because the shuttle is unavailable"))
 

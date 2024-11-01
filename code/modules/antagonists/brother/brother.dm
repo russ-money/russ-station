@@ -9,7 +9,7 @@
 	suicide_cry = "FOR MY BROTHER!!"
 	antag_moodlet = /datum/mood_event/focused
 	hardcore_random_bonus = TRUE
-	stinger_sound = 'sound/ambience/antag/tatoralert.ogg'
+	stinger_sound = 'sound/music/antag/traitor/tatoralert.ogg'
 	VAR_PRIVATE
 		datum/team/brother_team/team
 
@@ -221,6 +221,9 @@
 		return
 	. = ..()
 	member.remove_antag_datum(/datum/antagonist/brother)
+	if (!length(members))
+		qdel(src)
+		return
 	if (isnull(member.current))
 		return
 	for (var/datum/mind/brother_mind as anything in members)

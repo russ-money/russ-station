@@ -3,7 +3,7 @@
 	savefile_identifier = PREFERENCE_CHARACTER
 	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
 	can_randomize = TRUE
-	relevant_mutant_bodypart = /obj/item/organ/external/tail/kitsune
+	relevant_external_organ = /obj/item/organ/external/tail/kitsune
 
 /datum/preference/choiced/tail_kitsune/init_possible_values()
 	return assoc_to_keys(SSaccessories.tails_list_kitsune)

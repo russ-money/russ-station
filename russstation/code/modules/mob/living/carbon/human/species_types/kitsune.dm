@@ -7,10 +7,9 @@
 		TRAIT_LITERATE,
 		TRAIT_NATURALTACKLER,
 	)
-	mutant_bodyparts = list("wings" = "None")
 	mutanttongue = /obj/item/organ/internal/tongue/kitsune // ehhhh sure, tongue handles taste and they're both the same
 	mutantears = /obj/item/organ/internal/ears/kitsune
-	external_organs = list(
+	mutant_organs = list(
 		/obj/item/organ/external/tail/kitsune = "Kitsune",
 	)
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_PRIDE | MIRROR_MAGIC | RACE_SWAP | ERT_SPAWN | SLIME_EXTRACT
@@ -44,12 +43,6 @@
 			var/obj/item/organ/internal/ears/kitsune/ears = new
 			ears.Insert(target_human, movement_flags = DELETE_IF_REPLACED)
 	return ..()
-
-/datum/species/human/kitsune/randomize_main_appearance_element(mob/living/carbon/human/human_mob)
-	var/tail = pick(SSaccessories.tails_list_kitsune)
-	human_mob.dna.features["tail_kitsune"] = tail
-	mutant_bodyparts["tail_kitsune"] = tail
-	human_mob.update_body()
 
 /datum/species/human/kitsune/get_species_description()
 	return "Kitsune are one of the many types of genetic \

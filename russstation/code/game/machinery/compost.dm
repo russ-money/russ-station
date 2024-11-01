@@ -54,7 +54,7 @@
 	air_contents.gases[/datum/gas/miasma][MOLES] += 10
 	reagents.add_reagent(/datum/reagent/saltpetre, 5)
 	reagents.add_reagent(/datum/reagent/diethylamine, 2)
-	playsound(src, 'sound/effects/bubbles.ogg', 10, TRUE)
+	playsound(src, 'sound/effects/bubbles/bubbles.ogg', 10, TRUE)
 	update_icon_state()
 
 /obj/machinery/portable_atmospherics/canister/compost_bin/update_icon_state()

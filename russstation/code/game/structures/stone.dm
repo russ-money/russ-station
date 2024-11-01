@@ -144,8 +144,8 @@
 	icon = 'russstation/icons/obj/stone_structures.dmi'
 	icon_state = "crate"
 	delivery_icon = null
-	open_sound = 'sound/machines/crate_open.ogg'
-	close_sound = 'sound/machines/crate_close.ogg'
+	open_sound = 'sound/machines/crate/crate_open.ogg'
+	close_sound = 'sound/machines/crate/crate_close.ogg'
 	open_sound_volume = 35
 	close_sound_volume = 50
 	drag_slowdown = 1 // heavy

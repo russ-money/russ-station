@@ -23,7 +23,6 @@
 	flags_cover = MASKCOVERSEYES | MASKCOVERSMOUTH
 	layer = MOB_LAYER
 	max_integrity = 100
-	item_flags = XENOMORPH_HOLDABLE
 	slowdown = 2
 	var/stat = CONSCIOUS //UNCONSCIOUS is the idle state in this case
 
@@ -317,6 +316,7 @@
 	sterile = TRUE
 	tint = 3 //Makes it feel more authentic when it latches on
 	slowdown = 0
+	integrity_failure = 0
 
 /obj/item/clothing/mask/facehugger/toy/Die()
 	return

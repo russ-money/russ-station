@@ -9,8 +9,8 @@
 		TRAIT_LITERATE,
 	)
 	inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID|MOB_REPTILE
-	mutant_bodyparts = list("body_markings" = "None", "legs" = "Normal Legs")
-	external_organs= list(
+	body_markings = list(/datum/bodypart_overlay/simple/body_marking/lizard = "None")
+	mutant_organs = list(
 		/obj/item/organ/external/horns = "None",
 		/obj/item/organ/external/frills = "None",
 		/obj/item/organ/external/snout = "Round",
@@ -27,7 +27,7 @@
 	skinned_type = /obj/item/stack/sheet/animalhide/kobold
 	exotic_bloodtype = "L"
 	inert_mutation = /datum/mutation/human/firebreath
-	death_sound = 'sound/voice/lizard/deathsound.ogg'
+	death_sound = 'sound/mobs/humanoids/lizard/deathsound.ogg'
 	species_language_holder = /datum/language_holder/lizard
 	digitigrade_customization = DIGITIGRADE_OPTIONAL
 
@@ -64,61 +64,68 @@
 /datum/species/kobold/body_temperature_core(mob/living/carbon/human/humi, seconds_per_tick, times_fired)
 	return
 
-/datum/species/kobold/randomize_main_appearance_element(mob/living/carbon/human/human_mob)
-	var/tail = pick(SSaccessories.tails_list_lizard)
-	human_mob.dna.features["tail_lizard"] = tail
-	mutant_bodyparts["tail_lizard"] = tail
-	human_mob.update_body()
-
 /datum/species/kobold/get_scream_sound(mob/living/carbon/human/kobold)
 	return pick(
-		'sound/voice/lizard/lizard_scream_1.ogg',
-		'sound/voice/lizard/lizard_scream_2.ogg',
-		'sound/voice/lizard/lizard_scream_3.ogg',
+		'sound/mobs/humanoids/lizard/lizard_scream_1.ogg',
+		'sound/mobs/humanoids/lizard/lizard_scream_2.ogg',
+		'sound/mobs/humanoids/lizard/lizard_scream_3.ogg',
 	)
 
 /datum/species/kobold/get_cough_sound(mob/living/carbon/human/kobold)
-	if(kobold.gender == FEMALE)
+	if(kobold.physique == FEMALE)
 		return pick(
-			'sound/voice/human/female_cough1.ogg',
-			'sound/voice/human/female_cough2.ogg',
-			'sound/voice/human/female_cough3.ogg',
-			'sound/voice/human/female_cough4.ogg',
-			'sound/voice/human/female_cough5.ogg',
-			'sound/voice/human/female_cough6.ogg',
+			'sound/mobs/humanoids/human/cough/female_cough1.ogg',
+			'sound/mobs/humanoids/human/cough/female_cough2.ogg',
+			'sound/mobs/humanoids/human/cough/female_cough3.ogg',
+			'sound/mobs/humanoids/human/cough/female_cough4.ogg',
+			'sound/mobs/humanoids/human/cough/female_cough5.ogg',
+			'sound/mobs/humanoids/human/cough/female_cough6.ogg',
 		)
 	return pick(
-		'sound/voice/human/male_cough1.ogg',
-		'sound/voice/human/male_cough2.ogg',
-		'sound/voice/human/male_cough3.ogg',
-		'sound/voice/human/male_cough4.ogg',
-		'sound/voice/human/male_cough5.ogg',
-		'sound/voice/human/male_cough6.ogg',
+		'sound/mobs/humanoids/human/cough/male_cough1.ogg',
+		'sound/mobs/humanoids/human/cough/male_cough2.ogg',
+		'sound/mobs/humanoids/human/cough/male_cough3.ogg',
+		'sound/mobs/humanoids/human/cough/male_cough4.ogg',
+		'sound/mobs/humanoids/human/cough/male_cough5.ogg',
+		'sound/mobs/humanoids/human/cough/male_cough6.ogg',
 	)
 
 
 /datum/species/kobold/get_cry_sound(mob/living/carbon/human/kobold)
-	if(kobold.gender == FEMALE)
+	if(kobold.physique == FEMALE)
 		return pick(
-			'sound/voice/human/female_cry1.ogg',
-			'sound/voice/human/female_cry2.ogg',
+			'sound/mobs/humanoids/human/cry/female_cry1.ogg',
+			'sound/mobs/humanoids/human/cry/female_cry2.ogg',
 		)
 	return pick(
-		'sound/voice/human/male_cry1.ogg',
-		'sound/voice/human/male_cry2.ogg',
-		'sound/voice/human/male_cry3.ogg',
+		'sound/mobs/humanoids/human/cry/male_cry1.ogg',
+		'sound/mobs/humanoids/human/cry/male_cry2.ogg',
+		'sound/mobs/humanoids/human/cry/male_cry3.ogg',
 	)
 
 
 /datum/species/kobold/get_sneeze_sound(mob/living/carbon/human/kobold)
-	if(kobold.gender == FEMALE)
-		return 'sound/voice/human/female_sneeze1.ogg'
-	return 'sound/voice/human/male_sneeze1.ogg'
+	if(kobold.physique == FEMALE)
+		return 'sound/mobs/humanoids/human/sneeze/female_sneeze1.ogg'
+	return 'sound/mobs/humanoids/human/sneeze/male_sneeze1.ogg'
 
-/datum/species/kobold/get_laugh_sound(mob/living/carbon/human)
-	if(!istype(human))
-		return
-	return 'sound/voice/lizard/lizard_laugh1.ogg'
+/datum/species/kobold/get_laugh_sound(mob/living/carbon/human/kobold)
+	return 'sound/mobs/humanoids/lizard/lizard_laugh1.ogg'
+
+/datum/species/kobold/get_sigh_sound(mob/living/carbon/human/kobold)
+	if(kobold.physique == FEMALE)
+		return SFX_FEMALE_SIGH
+	return SFX_MALE_SIGH
+
+/datum/species/kobold/get_sniff_sound(mob/living/carbon/human/kobold)
+	if(kobold.physique == FEMALE)
+		return 'sound/mobs/humanoids/human/sniff/female_sniff.ogg'
+	return 'sound/mobs/humanoids/human/sniff/male_sniff.ogg'
+
+/datum/species/kobold/get_snore_sound(mob/living/carbon/human/kobold)
+	if(kobold.physique == FEMALE)
+		return SFX_SNORE_FEMALE
+	return SFX_SNORE_MALE
 
 /datum/species/kobold/get_species_description()
 	return "A small, squat humanoid with large pointy ears, horns and glowing eyes."

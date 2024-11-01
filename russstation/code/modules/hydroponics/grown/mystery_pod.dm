@@ -77,7 +77,7 @@
 				harvested_item = pick(
 					/obj/item/gun/ballistic/automatic/l6_saw/toy/unrestricted/riot,
 					/obj/item/gun/ballistic/automatic/c20r/toy/unrestricted/riot,
-					/obj/item/gun/ballistic/automatic/toy/unrestricted,
+					/obj/item/gun/ballistic/automatic/toy/riot,
 				)
 			if(104)
 				harvested_item = /obj/item/storage/box/syndie_kit/chemical
@@ -354,8 +354,7 @@
 			harvested_item = pick(
 					/obj/item/storage/pill_bottle/maintenance_pill/full,
 					/obj/item/lipstick/random,
-					/obj/item/lipstick/black/death,
-					)
+				)
 		if(121 to 148)
 			harvested_item = pick(
 				/obj/item/reagent_containers/cup/glass/bottle/gin,
@@ -479,8 +478,7 @@
 				/obj/item/stack/sheet/animalhide/ashdrake,
 				/obj/machinery/vending/donksofttoyvendor,
 				/obj/item/gun/ballistic/automatic/c20r/toy/unrestricted,
-				/obj/item/gun/ballistic/automatic/toy/unrestricted,
-				/obj/item/gun/ballistic/automatic/toy/unrestricted,
+				/obj/item/gun/ballistic/automatic/toy/riot,
 				/obj/item/gun/ballistic/automatic/l6_saw/toy/unrestricted,
 				/obj/item/toy/crayon/rainbow,
 				/obj/item/lighter,

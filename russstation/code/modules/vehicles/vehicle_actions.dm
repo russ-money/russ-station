@@ -25,7 +25,7 @@
 			animate(V, pixel_y = -6, time = 6)
 			L.SpinAnimation(5,5)
 			V.SpinAnimation(5,5)
-			playsound(L, 'sound/magic/ethereal_exit.ogg', 50, TRUE)
+			playsound(L, 'sound/effects/magic/ethereal_exit.ogg', 50, TRUE)
 			V.unbuckle_mob(L)
 			sleep(5)
 			V.visible_message(

@@ -12175,6 +12175,10 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/maintenance/department/engine)
+"fmz" = (
+/obj/item/toy/crayon/spraycan/roboticist,
+/turf/open/floor/iron/showroomfloor,
+/area/station/science/lab)
 "fnn" = (
 /obj/structure/sign/departments/psychology/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
@@ -12431,6 +12435,11 @@
 /obj/structure/table/glass,
 /turf/open/floor/plating,
 /area/station/maintenance/tram/right)
+"fxi" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/fishing_portal_generator,
+/turf/open/floor/plating,
+/area/station/maintenance/department/crew_quarters/dorms)
 "fxz" = (
 /obj/effect/spawner/random/maintenance/two,
 /obj/structure/closet,
@@ -18675,7 +18684,7 @@
 /turf/open/floor/iron/dark,
 /area/station/hallway/secondary/command)
 "lWo" = (
-/obj/machinery/vending/autodrobe/all_access,
+/obj/machinery/vending/autodrobe,
 /turf/open/floor/plating/rust,
 /area/station/maintenance/department/crew_quarters/dorms)
 "lWQ" = (
@@ -25345,6 +25354,7 @@
 "sam" = (
 /obj/effect/spawner/random/maintenance,
 /obj/structure/table,
+/obj/item/aquarium_kit,
 /turf/open/floor/plating,
 /area/station/maintenance/department/crew_quarters/dorms)
 "saD" = (
@@ -54604,7 +54614,7 @@ mNq
 rhs
 xUN
 mNq
-rhs
+fxi
 sam
 peD
 mNq
@@ -71576,7 +71586,7 @@ khm
 alZ
 aeB
 hAC
-ayp
+fmz
 qla
 nxL
 sMt

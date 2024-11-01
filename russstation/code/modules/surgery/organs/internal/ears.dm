@@ -3,21 +3,22 @@
 	icon = 'russstation/icons/obj/clothing/hats.dmi'
 	icon_state = "skaven"
 	visual = TRUE
+	dna_block = DNA_EARS_BLOCK
+	bodypart_overlay = /datum/bodypart_overlay/mutant/skaven_ears
+	sprite_accessory_override = /datum/sprite_accessory/ears/skaven
 
-/obj/item/organ/internal/ears/skaven/on_mob_insert(mob/living/carbon/human/ear_owner)
-	. = ..()
-	if(istype(ear_owner) && ear_owner.dna)
-		color = ear_owner.dna.features["skaven_color"]
-		ear_owner.dna.features["ears"] = ear_owner.dna.species.mutant_bodyparts["ears"] = "Skaven"
-		ear_owner.dna.update_uf_block(DNA_EARS_BLOCK)
-		ear_owner.update_body()
+/datum/bodypart_overlay/mutant/skaven_ears
+	layers = EXTERNAL_FRONT | EXTERNAL_ADJACENT | EXTERNAL_BEHIND
+	color_source = ORGAN_COLOR_INHERIT
+	feature_key = "ears"
 
-/obj/item/organ/internal/ears/skaven/on_mob_remove(mob/living/carbon/human/ear_owner)
-	. = ..()
-	if(istype(ear_owner) && ear_owner.dna)
-		color = ear_owner.hair_color
-		ear_owner.dna.species.mutant_bodyparts -= "ears"
-		ear_owner.update_body()
+/datum/bodypart_overlay/mutant/skaven_ears/get_global_feature_list()
+	return SSaccessories.ears_list
+
+/datum/bodypart_overlay/mutant/skaven_ears/can_draw_on_bodypart(mob/living/carbon/human/human)
+	if((human.head?.flags_inv & HIDEHAIR) || (human.wear_mask?.flags_inv & HIDEHAIR))
+		return FALSE
+	return TRUE
 
 /obj/item/organ/internal/ears/kitsune
 	name = "fox ears"
@@ -25,18 +26,26 @@
 	icon_state = "foxie"
 	visual = TRUE
 	damage_multiplier = 2
+	dna_block = DNA_EARS_BLOCK
+	bodypart_overlay = /datum/bodypart_overlay/mutant/kitsune_ears
+	sprite_accessory_override = /datum/sprite_accessory/ears/kitsune
 
-/obj/item/organ/internal/ears/kitsune/on_mob_insert(mob/living/carbon/human/ear_owner)
-	. = ..()
-	if(istype(ear_owner) && ear_owner.dna)
-		color = ear_owner.hair_color
-		ear_owner.dna.features["ears"] = ear_owner.dna.species.mutant_bodyparts["ears"] = "Kitsune"
-		ear_owner.dna.update_uf_block(DNA_EARS_BLOCK)
-		ear_owner.update_body()
+/datum/bodypart_overlay/mutant/kitsune_ears
+	layers = EXTERNAL_FRONT | EXTERNAL_ADJACENT | EXTERNAL_BEHIND
+	color_source = ORGAN_COLOR_HAIR
+	feature_key = "ears"
+	/// We dont color the inner part, which is the front layer
+	var/colorless_layer = EXTERNAL_FRONT
 
-/obj/item/organ/internal/ears/kitsune/on_mob_remove(mob/living/carbon/human/ear_owner)
-	. = ..()
-	if(istype(ear_owner) && ear_owner.dna)
-		color = ear_owner.hair_color
-		ear_owner.dna.species.mutant_bodyparts -= "ears"
-		ear_owner.update_body()
+/datum/bodypart_overlay/mutant/kitsune_ears/get_global_feature_list()
+	return SSaccessories.ears_list
+
+/datum/bodypart_overlay/mutant/kitsune_ears/can_draw_on_bodypart(mob/living/carbon/human/human)
+	if((human.head?.flags_inv & HIDEHAIR) || (human.wear_mask?.flags_inv & HIDEHAIR))
+		return FALSE
+	return TRUE
+
+/datum/bodypart_overlay/mutant/kitsune_ears/color_image(image/overlay, draw_layer, obj/item/bodypart/limb)
+	if(draw_layer != bitflag_to_layer(colorless_layer))
+		return ..()
+	return overlay

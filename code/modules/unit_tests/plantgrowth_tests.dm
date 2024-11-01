@@ -3,7 +3,7 @@
 // Maybe some day it would be used as unit test.
 // -------- IT IS NOW!
 /datum/unit_test/plantgrowth/Run()
-	var/list/paths = subtypesof(/obj/item/seeds) - /obj/item/seeds - /obj/item/seeds/lavaland  - /obj/item/seeds/lavaland  - /obj/item/seeds/russ // honk -- remove /obj/item/seeds/russ from paths
+	var/list/paths = subtypesof(/obj/item/seeds) - /obj/item/seeds - /obj/item/seeds/lavaland  - /obj/item/seeds/lavaland  - /obj/item/seeds/russ // honk -- remove /russ template
 
 	for(var/seedpath in paths)
 		var/obj/item/seeds/seed = new seedpath
