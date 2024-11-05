@@ -19651,7 +19651,7 @@
 /obj/structure/closet/crate/freezer/food,
 /obj/item/reagent_containers/chem_pack,
 /obj/item/reagent_containers/chem_pack,
-/obj/item/organ/internal/heart,
+/obj/item/organ/heart,
 /turf/open/floor/plating,
 /area/station/maintenance/department/medical)
 "bua" = (

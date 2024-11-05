@@ -2566,7 +2566,7 @@
 /obj/item/canvas,
 /obj/item/canvas,
 /obj/item/canvas,
-/obj/item/organ/internal/eyes,
+/obj/item/organ/eyes,
 /obj/item/paper/valentine{
 	pixel_x = -5
 	},
@@ -16197,8 +16197,8 @@
 /turf/open/floor/iron,
 /area/station/service/hydroponics)
 "jiD" = (
-/obj/item/organ/external/tail/cat,
-/obj/item/organ/internal/ears/cat,
+/obj/item/organ/tail/cat,
+/obj/item/organ/ears/cat,
 /obj/effect/mapping_helpers/broken_floor,
 /obj/structure/cable,
 /turf/open/floor/plating,
