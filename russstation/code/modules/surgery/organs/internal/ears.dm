@@ -1,4 +1,4 @@
-/obj/item/organ/internal/ears/skaven
+/obj/item/organ/ears/skaven
 	name = "skaven ears"
 	icon = 'russstation/icons/obj/clothing/hats.dmi'
 	icon_state = "skaven"
@@ -11,6 +11,7 @@
 	layers = EXTERNAL_FRONT | EXTERNAL_ADJACENT | EXTERNAL_BEHIND
 	color_source = ORGAN_COLOR_INHERIT
 	feature_key = "ears"
+	sprite_datum = /datum/sprite_accessory/ears/skaven
 
 /datum/bodypart_overlay/mutant/skaven_ears/get_global_feature_list()
 	return SSaccessories.ears_list
@@ -20,7 +21,7 @@
 		return FALSE
 	return TRUE
 
-/obj/item/organ/internal/ears/kitsune
+/obj/item/organ/ears/kitsune
 	name = "fox ears"
 	icon = 'russstation/icons/obj/clothing/hats.dmi'
 	icon_state = "foxie"

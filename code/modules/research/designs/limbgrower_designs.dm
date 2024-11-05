@@ -203,7 +203,7 @@
 	id = "skavenlungs"
 	build_type = LIMBGROWER
 	reagents_list = list(/datum/reagent/medicine/c2/synthflesh = 15, /datum/reagent/toxin/bad_food = 10)
-	build_path = /obj/item/organ/internal/lungs/skaven
+	build_path = /obj/item/organ/lungs/skaven
 	category = list(SPECIES_SKAVEN)
 
 /datum/design/skaven_tongue
@@ -211,7 +211,7 @@
 	id = "skaventongue"
 	build_type = LIMBGROWER
 	reagents_list = list(/datum/reagent/medicine/c2/synthflesh = 10, /datum/reagent/toxin/bad_food = 10)
-	build_path = /obj/item/organ/internal/tongue/skaven
+	build_path = /obj/item/organ/tongue/skaven
 	category = list(SPECIES_SKAVEN)
 
 /datum/design/skaven_ears
@@ -219,7 +219,7 @@
 	id = "skavenears"
 	build_type = LIMBGROWER
 	reagents_list = list(/datum/reagent/medicine/c2/synthflesh = 10, /datum/reagent/toxin/bad_food = 10)
-	build_path = /obj/item/organ/internal/ears/skaven
+	build_path = /obj/item/organ/ears/skaven
 	category = list(SPECIES_SKAVEN)
 
 /datum/design/skaven_tail
@@ -227,7 +227,7 @@
 	id = "skaventail"
 	build_type = LIMBGROWER
 	reagents_list = list(/datum/reagent/medicine/c2/synthflesh = 20, /datum/reagent/toxin/bad_food = 10)
-	build_path = /obj/item/organ/external/tail/skaven
+	build_path = /obj/item/organ/tail/skaven
 	category = list(SPECIES_SKAVEN)
 
 //honk end
@@ -255,7 +255,7 @@
 	id = "foxears"
 	build_type = LIMBGROWER
 	reagents_list = list(/datum/reagent/medicine/c2/synthflesh = 10)
-	build_path = /obj/item/organ/internal/ears/kitsune
+	build_path = /obj/item/organ/ears/kitsune
 	category = list(SPECIES_KITSUNE)
 
 /datum/design/fox_tail
@@ -263,7 +263,7 @@
 	id = "foxtail"
 	build_type = LIMBGROWER
 	reagents_list = list(/datum/reagent/medicine/c2/synthflesh = 15)
-	build_path = /obj/item/organ/external/tail/kitsune
+	build_path = /obj/item/organ/tail/kitsune
 	category = list(SPECIES_KITSUNE)
 // honk end
 

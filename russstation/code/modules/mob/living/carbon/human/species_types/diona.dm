@@ -16,9 +16,9 @@
 		// TRAIT_PLANT_SAFE, // maybe add this? Podpeople have it
 	)
 	mutant_organs = list(
-		/obj/item/organ/external/diona_hair = "None",
+		/obj/item/organ/diona_hair = "None",
 	)
-	mutanttongue = /obj/item/organ/internal/tongue/pod // basically the same thing
+	mutanttongue = /obj/item/organ/tongue/pod // basically the same thing
 	species_language_holder = /datum/language_holder/plant
 	inherent_biotypes = MOB_ORGANIC | MOB_PLANT // are we a human? If so add `| MOB_HUMANOID`
 	inherent_factions = list("plants", "vines")

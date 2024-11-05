@@ -1,4 +1,4 @@
-/obj/item/organ/external/tail/skaven
+/obj/item/organ/tail/skaven
 	name = "skaven tail"
 	desc = "A nasty severed skaven tail. They lose these all the time."
 	preference = "feature_skaven_tail"
@@ -6,7 +6,7 @@
 	wag_flags = WAG_ABLE
 	dna_block = DNA_SKAVEN_TAIL_BLOCK
 
-/obj/item/organ/external/tail/kitsune
+/obj/item/organ/tail/kitsune
 	name = "Fox tail"
 	desc = "A severed fox tail. are you sure this isn't cursed..?"
 	preference = "feature_kitsune_tail"

@@ -1,4 +1,4 @@
-/obj/item/organ/internal/eyes/night_vision/dwarf
+/obj/item/organ/eyes/night_vision/dwarf
 	name = "dwarf eyes"
 	desc = "Eyes adapted to wild and dark enviroments."
 
