@@ -3,7 +3,6 @@
 	icon = 'russstation/icons/obj/clothing/hats.dmi'
 	icon_state = "skaven"
 	visual = TRUE
-	dna_block = DNA_EARS_BLOCK
 	bodypart_overlay = /datum/bodypart_overlay/mutant/skaven_ears
 	sprite_accessory_override = /datum/sprite_accessory/ears/skaven
 

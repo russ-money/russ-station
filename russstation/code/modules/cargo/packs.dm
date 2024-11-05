@@ -114,3 +114,36 @@
 	desc = "Devices used to rapidly provide lighting sources to an area. Reload with iron, plasteel, glass or compressed matter cartridges."
 	cost = CARGO_CRATE_VALUE * 3.5
 	contains = list(/obj/item/construction/rld = 3)
+
+//////////////////////////////////////////////////////////////////////////////
+/////////////////////////////// Livestock ////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
+/datum/supply_pack/critter/hyena
+	name = "Hyena Crate"
+	desc = "The hyena goes HA! Comes with a collar and a squeaky chew toy! Cheeseburger still not included (she'd laugh at it anyway)."
+	cost = CARGO_CRATE_VALUE * 4 //Cats are worth as much as corgis.
+	contains = list(
+		/mob/living/basic/pet/cat/hyena,
+		/obj/item/clothing/neck/petcollar,
+		/obj/item/toy/cattoy,
+	)
+	crate_name = "cat crate"
+
+/datum/supply_pack/critter/hyena/generate()
+	. = ..()
+	var/mob/living/basic/pet/cat/hyena/del_yeen = locate() in .
+	if(!isnull(del_yeen))
+		qdel(del_yeen)
+	switch(rand(1,4))
+		if(1)
+			new /mob/living/basic/pet/cat/hyena(.)
+		if(2)
+			new /mob/living/basic/pet/cat/hyena/second(.)
+		if(3)
+			new /mob/living/basic/pet/cat/hyena/cub(.)
+		if(4)
+			if(prob(50))
+				new /mob/living/basic/pet/cat/hyena/might(.)
+			else
+				new /mob/living/basic/pet/cat/hyena/breadyeen(.)
