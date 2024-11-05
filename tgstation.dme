@@ -6574,7 +6574,6 @@
 #include "russstation\code\modules\antagonists\nukeop\equipment\pinpointer.dm"
 #include "russstation\code\modules\atmospherics\machinery\other\miner.dm"
 #include "russstation\code\modules\cargo\packs.dm"
-#include "russstation\code\modules\client\preferences\sound.dm"
 #include "russstation\code\modules\client\preferences\species_features\diona.dm"
 #include "russstation\code\modules\client\preferences\species_features\kitsune.dm"
 #include "russstation\code\modules\client\preferences\species_features\skaven.dm"
