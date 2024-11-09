@@ -45545,11 +45545,11 @@
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
 "vgR" = (
-/obj/machinery/door/airlock/external{
-	name = "Supply Dock Airlock"
-	},
 /obj/effect/mapping_helpers/airlock/access/all/supply/general,
 /obj/structure/fans/tiny,
+/obj/machinery/door/airlock/external/glass{
+	name = "Supply Dock Airlock"
+	},
 /turf/open/floor/iron,
 /area/station/cargo/storage)
 "vhb" = (

@@ -29785,11 +29785,11 @@
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/central)
 "pSL" = (
-/obj/machinery/door/airlock/external{
-	name = "Supply Dock Airlock"
-	},
 /obj/effect/mapping_helpers/airlock/access/all/supply/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/machinery/door/airlock/external/glass{
+	name = "Supply Dock Airlock"
+	},
 /turf/open/floor/plating,
 /area/station/cargo/storage)
 "pSN" = (
@@ -34606,12 +34606,12 @@
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/cytology)
 "sdw" = (
-/obj/machinery/door/airlock/external{
-	name = "Supply Dock Airlock"
-	},
 /obj/effect/mapping_helpers/airlock/access/all/supply/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
+	},
+/obj/machinery/door/airlock/external/glass{
+	name = "Supply Dock Airlock"
 	},
 /turf/open/floor/plating,
 /area/station/cargo/storage)
