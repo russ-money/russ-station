@@ -892,11 +892,11 @@
 /turf/open/floor/plating,
 /area/station/cargo/warehouse)
 "auJ" = (
-/obj/machinery/door/airlock/external{
-	name = "Supply Dock Airlock"
-	},
 /obj/effect/mapping_helpers/airlock/access/all/supply/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/machinery/door/airlock/external/glass{
+	name = "Supply Dock Airlock"
+	},
 /turf/open/floor/iron/dark,
 /area/station/cargo/storage)
 "auX" = (
@@ -32000,13 +32000,13 @@
 /turf/closed/wall/r_wall,
 /area/station/security/checkpoint/medical)
 "oJI" = (
-/obj/machinery/door/airlock/external{
-	name = "Supply Dock Airlock"
-	},
 /obj/effect/mapping_helpers/airlock/access/all/supply/general,
 /obj/structure/fans/tiny/invisible,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
+	},
+/obj/machinery/door/airlock/external/glass{
+	name = "Supply Dock Airlock"
 	},
 /turf/open/floor/iron/dark,
 /area/station/cargo/storage)
@@ -162749,9 +162749,9 @@ lki
 lki
 lki
 lki
-dzS
-dzS
-dzS
+ccV
+ccV
+ccV
 thL
 vga
 xHY

@@ -24718,6 +24718,13 @@
 	pixel_y = 8;
 	req_access = list("cargo")
 	},
+/obj/machinery/button/door{
+	id = "QMLoaddoor2";
+	name = "Loading Doors";
+	pixel_x = 24;
+	pixel_y = -8;
+	req_access = list("cargo")
+	},
 /turf/open/floor/iron/dark,
 /area/station/cargo/storage)
 "nue" = (
@@ -26595,13 +26602,6 @@
 /area/station/security/execution/transfer)
 "opF" = (
 /obj/effect/turf_decal/stripes/line,
-/obj/machinery/button/door{
-	id = "QMLoaddoor2";
-	name = "Loading Doors";
-	pixel_x = 24;
-	pixel_y = -8;
-	req_access = list("cargo")
-	},
 /obj/structure/table,
 /obj/item/clothing/gloves/cargo_gauntlet{
 	pixel_y = -3
@@ -28225,12 +28225,12 @@
 /area/station/hallway/primary/aft)
 "pgy" = (
 /obj/structure/fans/tiny,
-/obj/machinery/door/airlock/external{
-	name = "Supply Dock Airlock"
-	},
 /obj/effect/mapping_helpers/airlock/access/all/supply/general,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/fans/tiny,
+/obj/machinery/door/airlock/external/glass{
+	name = "Supply Dock Airlock"
+	},
 /turf/open/floor/iron/dark,
 /area/station/cargo/storage)
 "pgN" = (
@@ -98526,7 +98526,7 @@ kCz
 lEw
 kCz
 pgy
-kCz
+lvA
 kCz
 pgy
 kCz

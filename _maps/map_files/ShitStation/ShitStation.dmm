@@ -101,9 +101,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
 	},
-/mob/living/basic/goat/pete{
-	name = "Pete"
-	},
+/mob/living/basic/goat/pete,
 /mob/living/basic/cockroach,
 /turf/open/floor/iron/freezer,
 /area/station/service/kitchen/abandoned)
@@ -2913,7 +2911,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/closed/wall/r_wall,
+/turf/closed/wall,
 /area/station/cargo/storage)
 "amN" = (
 /obj/effect/turf_decal/stripes/box,
@@ -7801,6 +7799,7 @@
 /obj/structure/sign/painting/library{
 	pixel_y = 32
 	},
+/obj/machinery/byteforge,
 /turf/open/floor/iron/vaporwave,
 /area/station/service/library/lounge)
 "aHr" = (
@@ -10204,10 +10203,6 @@
 "diQ" = (
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
-"diZ" = (
-/obj/effect/landmark/start/bitrunner,
-/turf/open/floor/plating,
-/area/station/maintenance/tram/right)
 "djd" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
 /obj/effect/turf_decal/tile/purple/anticorner/contrasted{
@@ -11184,7 +11179,6 @@
 /turf/open/floor/plating,
 /area/station/maintenance/solars/starboard/aft)
 "eko" = (
-/obj/machinery/computer/order_console/bitrunning,
 /turf/open/floor/plating,
 /area/station/cargo/bitrunning/den)
 "ekv" = (
@@ -11934,7 +11928,9 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/warning/directional/north,
-/obj/machinery/recycler/deathtrap,
+/obj/machinery/recycler{
+	dir = 8
+	},
 /turf/open/floor/plating,
 /area/station/cargo/storage)
 "eXI" = (
@@ -15628,10 +15624,6 @@
 /obj/machinery/light/directional/south,
 /turf/open/floor/iron/smooth,
 /area/station/science/robotics)
-"iEC" = (
-/obj/effect/landmark/start/bitrunner,
-/turf/open/floor/plating,
-/area/station/cargo/bitrunning/den)
 "iEK" = (
 /obj/machinery/door/airlock/medical{
 	name = "Warm Bodies"
@@ -25349,8 +25341,9 @@
 /turf/open/floor/iron/dark,
 /area/station/engineering/storage)
 "rZW" = (
-/turf/closed/wall/r_wall,
-/area/station/cargo/storage)
+/obj/machinery/computer/order_console/bitrunning,
+/turf/open/floor/plating,
+/area/station/maintenance/tram/right)
 "sam" = (
 /obj/effect/spawner/random/maintenance,
 /obj/structure/table,
@@ -29598,8 +29591,7 @@
 /area/station/hallway/primary/starboard)
 "wdW" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/start/bitrunner,
-/obj/machinery/byteforge,
+/obj/machinery/light/dim/directional/east,
 /turf/open/floor/plating,
 /area/station/cargo/bitrunning/den)
 "wee" = (
@@ -65206,9 +65198,9 @@ adl
 adl
 adl
 amM
-rZW
+adl
 ngR
-rZW
+adl
 adl
 adl
 adl
@@ -65465,7 +65457,7 @@ eLA
 amN
 ata
 bzz
-rZW
+adl
 aCY
 gSL
 adl
@@ -65722,7 +65714,7 @@ eFs
 amR
 atP
 pvo
-rZW
+adl
 ttI
 cEa
 xRX
@@ -69595,7 +69587,7 @@ sxz
 asK
 sxz
 sxz
-xmQ
+iso
 sxE
 hQi
 hQi
@@ -69848,11 +69840,11 @@ atV
 xmU
 adm
 dKq
-dKq
+bQP
 dKq
 dKq
 mpe
-aie
+rZW
 oBK
 fwO
 ssv
@@ -70104,10 +70096,10 @@ nTa
 tWI
 abo
 adm
+sgL
 eko
-sgL
-sgL
-sgL
+cPl
+dKq
 wil
 hQi
 hQi
@@ -70361,7 +70353,7 @@ nTa
 atV
 abp
 adm
-iEC
+sgL
 wdW
 jcr
 dKq
@@ -70618,9 +70610,9 @@ doz
 atV
 lqY
 adm
-bQP
 dKq
-cPl
+dKq
+dKq
 dKq
 xmQ
 hQi
@@ -70875,7 +70867,7 @@ ibb
 xmU
 iVQ
 adm
-diZ
+oBK
 wnP
 hQi
 dDX

@@ -16243,10 +16243,10 @@
 	},
 /area/station/science/ordnance/bomb)
 "gFQ" = (
-/obj/machinery/door/airlock/external{
+/obj/effect/mapping_helpers/airlock/access/all/supply/general,
+/obj/machinery/door/airlock/external/glass{
 	name = "Supply Dock Airlock"
 	},
-/obj/effect/mapping_helpers/airlock/access/all/supply/general,
 /turf/open/floor/iron/dark,
 /area/station/cargo/storage)
 "gGz" = (
@@ -26233,9 +26233,8 @@
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/command/storage/eva)
 "mjJ" = (
-/obj/effect/spawner/structure/window/reinforced,
 /obj/structure/sign/warning/vacuum/external,
-/turf/open/floor/plating,
+/turf/closed/wall,
 /area/station/cargo/storage)
 "mjK" = (
 /obj/machinery/seed_extractor,
@@ -30903,10 +30902,10 @@
 /turf/open/floor/engine/air,
 /area/station/engineering/atmos)
 "oYO" = (
-/obj/machinery/door/airlock/external{
+/obj/effect/mapping_helpers/airlock/access/all/supply/general,
+/obj/machinery/door/airlock/external/glass{
 	name = "Supply Dock Airlock"
 	},
-/obj/effect/mapping_helpers/airlock/access/all/supply/general,
 /turf/open/floor/plating,
 /area/station/cargo/storage)
 "oYS" = (
@@ -71597,7 +71596,7 @@ gfQ
 xfU
 fVy
 oYO
-xfU
+xEy
 oYO
 hhE
 xfU
@@ -72111,7 +72110,7 @@ xfU
 xfU
 fVy
 gFQ
-xfU
+xEy
 gFQ
 hhE
 xfU
