@@ -13,7 +13,6 @@
 	examine_cursor_icon = null
 	fire_stack_decay_rate = -0.55
 	fart = new /datum/fart/silicon() // honk -- silicon farts
-	voice_filter = "afftfilt=real='hypot(re,im)*sin(0)':imag='hypot(re,im)*cos(0)':win_size=512:overlap=1,rubberband=pitch=0.8"
 	tts_silicon_voice_effect = TRUE
 	var/datum/ai_laws/laws = null//Now... THEY ALL CAN ALL HAVE LAWS
 	var/last_lawchange_announce = 0

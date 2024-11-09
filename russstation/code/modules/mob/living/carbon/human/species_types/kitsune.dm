@@ -7,10 +7,10 @@
 		TRAIT_LITERATE,
 		TRAIT_NATURALTACKLER,
 	)
-	mutanttongue = /obj/item/organ/internal/tongue/kitsune // ehhhh sure, tongue handles taste and they're both the same
-	mutantears = /obj/item/organ/internal/ears/kitsune
+	mutanttongue = /obj/item/organ/tongue/kitsune // ehhhh sure, tongue handles taste and they're both the same
+	mutantears = /obj/item/organ/ears/kitsune
 	mutant_organs = list(
-		/obj/item/organ/external/tail/kitsune = "Kitsune",
+		/obj/item/organ/tail/kitsune = "Kitsune",
 	)
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_PRIDE | MIRROR_MAGIC | RACE_SWAP | ERT_SPAWN | SLIME_EXTRACT
 	species_language_holder = /datum/language_holder/kitsune
@@ -27,7 +27,7 @@
 	human.hair_color = "#ffb004" // ORANG
 	human.update_hair()
 
-	var/obj/item/organ/internal/ears/kitsune/fox_ears = human.get_organ_by_type(/obj/item/organ/internal/ears/kitsune)
+	var/obj/item/organ/ears/kitsune/fox_ears = human.get_organ_by_type(/obj/item/organ/ears/kitsune)
 	if (fox_ears)
 		fox_ears.color = human.hair_color
 		human.update_body()
@@ -40,7 +40,7 @@
 			if(target_human.dna.features["ears"] == "None")
 				target_human.dna.features["ears"] = "Kitsune"
 		if(target_human.dna.features["ears"] == "Kitsune")
-			var/obj/item/organ/internal/ears/kitsune/ears = new
+			var/obj/item/organ/ears/kitsune/ears = new
 			ears.Insert(target_human, movement_flags = DELETE_IF_REPLACED)
 	return ..()
 

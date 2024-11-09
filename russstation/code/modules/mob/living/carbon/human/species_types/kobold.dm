@@ -11,13 +11,13 @@
 	inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID|MOB_REPTILE
 	body_markings = list(/datum/bodypart_overlay/simple/body_marking/lizard = "None")
 	mutant_organs = list(
-		/obj/item/organ/external/horns = "None",
-		/obj/item/organ/external/frills = "None",
-		/obj/item/organ/external/snout = "Round",
-		/obj/item/organ/external/spines = "None",
-		/obj/item/organ/external/tail/lizard = "Smooth",
+		/obj/item/organ/horns = "None",
+		/obj/item/organ/frills = "None",
+		/obj/item/organ/snout = "Round",
+		/obj/item/organ/spines = "None",
+		/obj/item/organ/tail/lizard = "Smooth",
 	)
-	mutanttongue = /obj/item/organ/internal/tongue/lizard
+	mutanttongue = /obj/item/organ/tongue/lizard
 	coldmod = 1.5
 	heatmod = 0.67
 	payday_modifier = 0.50

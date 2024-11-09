@@ -75,7 +75,7 @@
 		// Volume, power, and server alcohol rate effect how quickly one gets drunk
 		drinker.adjust_drunk_effect(sqrt(volume) * booze_power * ALCOHOL_RATE * REM * seconds_per_tick)
 		if(boozepwr > 0)
-			var/obj/item/organ/internal/liver/liver = drinker.get_organ_slot(ORGAN_SLOT_LIVER)
+			var/obj/item/organ/liver/liver = drinker.get_organ_slot(ORGAN_SLOT_LIVER)
 			var/heavy_drinker_multiplier = (HAS_TRAIT(drinker, TRAIT_HEAVY_DRINKER) ? 0.5 : 1)
 			if (istype(liver))
 				if(liver.apply_organ_damage(((max(sqrt(volume) * (boozepwr ** ALCOHOL_EXPONENT) * liver.alcohol_tolerance * heavy_drinker_multiplier * seconds_per_tick, 0))/150)))
@@ -255,7 +255,7 @@
 		to_chat(drinker, span_notice("[pick("You have a really bad headache.", "Your eyes hurt.", "You find it hard to stay still.", "You feel your heart practically beating out of your chest.")]"))
 
 	if(SPT_PROB(2.5, seconds_per_tick) && iscarbon(drinker))
-		var/obj/item/organ/internal/eyes/eyes = drinker.get_organ_slot(ORGAN_SLOT_EYES)
+		var/obj/item/organ/eyes/eyes = drinker.get_organ_slot(ORGAN_SLOT_EYES)
 		if(eyes && IS_ORGANIC_ORGAN(eyes)) // doesn't affect robotic eyes
 			if(drinker.is_blind())
 				eyes.Remove(drinker)
@@ -340,27 +340,6 @@
 	ph = 6.5
 	default_container = /obj/item/reagent_containers/cup/glass/bottle/rum
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
-
-/datum/reagent/consumable/ethanol/rum/aged
-	name = "Aged Rum"
-	description = "Sink me! That's some fancy rum to share with buckoos."
-	color = "#c0b675" // rgb: 192,183,117
-	boozepwr = 70
-	taste_description = "extra-spiked butterscotch"
-	default_container = /obj/item/reagent_containers/cup/glass/bottle/rum/aged
-	quality = DRINK_FANTASTIC
-	metabolized_traits = list(TRAIT_STRONG_STOMACH)
-
-/datum/reagent/consumable/ethanol/rum/aged/on_mob_metabolize(mob/living/drinker)
-	. = ..()
-	drinker.add_blocked_language(subtypesof(/datum/language) - /datum/language/piratespeak, LANGUAGE_DRINK)
-	drinker.grant_language(/datum/language/piratespeak, source = LANGUAGE_DRINK)
-
-/datum/reagent/consumable/ethanol/rum/aged/on_mob_end_metabolize(mob/living/drinker)
-	if(!QDELING(drinker))
-		drinker.remove_blocked_language(subtypesof(/datum/language), LANGUAGE_DRINK)
-		drinker.remove_language(/datum/language/piratespeak, source = LANGUAGE_DRINK)
-	return ..()
 
 /datum/reagent/consumable/ethanol/rum/aged
 	name = "Aged Rum"
@@ -683,7 +662,7 @@
 
 /datum/reagent/consumable/ethanol/screwdrivercocktail/on_mob_life(mob/living/carbon/drinker, seconds_per_tick, times_fired)
 	. = ..()
-	var/obj/item/organ/internal/liver/liver = drinker.get_organ_slot(ORGAN_SLOT_LIVER)
+	var/obj/item/organ/liver/liver = drinker.get_organ_slot(ORGAN_SLOT_LIVER)
 	if(HAS_TRAIT(liver, TRAIT_ENGINEER_METABOLISM))
 		ADD_TRAIT(drinker, TRAIT_HALT_RADIATION_EFFECTS, "[type]")
 		if (HAS_TRAIT(drinker, TRAIT_IRRADIATED))
@@ -801,7 +780,7 @@
 	if(HAS_TRAIT(drinker, TRAIT_ALCOHOL_TOLERANCE))
 		metabolization_rate = 0.8
 	// if you don't have a liver, or your liver isn't an officer's liver
-	var/obj/item/organ/internal/liver/liver = drinker.get_organ_slot(ORGAN_SLOT_LIVER)
+	var/obj/item/organ/liver/liver = drinker.get_organ_slot(ORGAN_SLOT_LIVER)
 	if(!liver || !HAS_TRAIT(liver, TRAIT_LAW_ENFORCEMENT_METABOLISM))
 		beepsky_hallucination = new()
 		drinker.gain_trauma(beepsky_hallucination, TRAUMA_RESILIENCE_ABSOLUTE)
@@ -809,7 +788,7 @@
 /datum/reagent/consumable/ethanol/beepsky_smash/on_mob_life(mob/living/carbon/drinker, seconds_per_tick, times_fired)
 	. = ..()
 	drinker.set_jitter_if_lower(4 SECONDS)
-	var/obj/item/organ/internal/liver/liver = drinker.get_organ_slot(ORGAN_SLOT_LIVER)
+	var/obj/item/organ/liver/liver = drinker.get_organ_slot(ORGAN_SLOT_LIVER)
 	// if you have a liver and that liver is an officer's liver
 	if(liver && HAS_TRAIT(liver, TRAIT_LAW_ENFORCEMENT_METABOLISM))
 		if(drinker.adjustStaminaLoss(-10 * REM * seconds_per_tick, updating_stamina = FALSE, required_biotype = affected_biotype))
@@ -826,7 +805,7 @@
 
 /datum/reagent/consumable/ethanol/beepsky_smash/overdose_start(mob/living/carbon/drinker)
 	. = ..()
-	var/obj/item/organ/internal/liver/liver = drinker.get_organ_slot(ORGAN_SLOT_LIVER)
+	var/obj/item/organ/liver/liver = drinker.get_organ_slot(ORGAN_SLOT_LIVER)
 	// if you don't have a liver, or your liver isn't an officer's liver
 	if(!liver || !HAS_TRAIT(liver, TRAIT_LAW_ENFORCEMENT_METABOLISM))
 		drinker.gain_trauma(/datum/brain_trauma/mild/phobia/security, TRAUMA_RESILIENCE_BASIC)
@@ -1317,7 +1296,7 @@
 
 /datum/reagent/consumable/ethanol/bananahonk/on_mob_life(mob/living/carbon/drinker, seconds_per_tick, times_fired)
 	. = ..()
-	var/obj/item/organ/internal/liver/liver = drinker.get_organ_slot(ORGAN_SLOT_LIVER)
+	var/obj/item/organ/liver/liver = drinker.get_organ_slot(ORGAN_SLOT_LIVER)
 	if((liver && HAS_TRAIT(liver, TRAIT_COMEDY_METABOLISM)) || is_simian(drinker))
 		if(drinker.heal_bodypart_damage(brute = 1 * REM * seconds_per_tick, burn = 1 * REM * seconds_per_tick, updating_health = FALSE))
 			return UPDATE_MOB_HEALTH
@@ -1627,7 +1606,7 @@
 /datum/reagent/consumable/ethanol/quadruple_sec/on_mob_life(mob/living/carbon/drinker, seconds_per_tick, times_fired)
 	. = ..()
 	//Securidrink in line with the Screwdriver for engineers or Nothing for mimes
-	var/obj/item/organ/internal/liver/liver = drinker.get_organ_slot(ORGAN_SLOT_LIVER)
+	var/obj/item/organ/liver/liver = drinker.get_organ_slot(ORGAN_SLOT_LIVER)
 	if(liver && HAS_TRAIT(liver, TRAIT_LAW_ENFORCEMENT_METABOLISM))
 		if(drinker.heal_bodypart_damage(brute = 1 * REM * seconds_per_tick, burn = 1 * REM * seconds_per_tick, updating_health = FALSE))
 			return UPDATE_MOB_HEALTH
@@ -1644,7 +1623,7 @@
 /datum/reagent/consumable/ethanol/quintuple_sec/on_mob_life(mob/living/carbon/drinker, seconds_per_tick, times_fired)
 	. = ..()
 	//Securidrink in line with the Screwdriver for engineers or Nothing for mimes but STRONG..
-	var/obj/item/organ/internal/liver/liver = drinker.get_organ_slot(ORGAN_SLOT_LIVER)
+	var/obj/item/organ/liver/liver = drinker.get_organ_slot(ORGAN_SLOT_LIVER)
 	if(liver && HAS_TRAIT(liver, TRAIT_LAW_ENFORCEMENT_METABOLISM))
 		var/need_mob_update
 		need_mob_update = drinker.heal_bodypart_damage(2 * REM * seconds_per_tick, 2 * REM *  seconds_per_tick, updating_health = FALSE, required_bodytype = affected_bodytype)
@@ -2674,7 +2653,7 @@
 		return
 
 	var/mob/living/carbon/exposed_carbon = exposed_mob
-	var/obj/item/organ/internal/stomach/ethereal/stomach = exposed_carbon.get_organ_slot(ORGAN_SLOT_STOMACH)
+	var/obj/item/organ/stomach/ethereal/stomach = exposed_carbon.get_organ_slot(ORGAN_SLOT_STOMACH)
 	if(istype(stomach))
 		stomach.adjust_charge(reac_volume * 0.02 * ETHEREAL_CHARGE_NORMAL)
 
@@ -2694,7 +2673,7 @@
 		return
 
 	var/mob/living/carbon/exposed_carbon = exposed_mob
-	var/obj/item/organ/internal/stomach/ethereal/stomach = exposed_carbon.get_organ_slot(ORGAN_SLOT_STOMACH)
+	var/obj/item/organ/stomach/ethereal/stomach = exposed_carbon.get_organ_slot(ORGAN_SLOT_STOMACH)
 	if(istype(stomach))
 		stomach.adjust_charge(reac_volume * 0.05 * ETHEREAL_CHARGE_NORMAL)
 
@@ -2721,7 +2700,7 @@
 		return
 
 	var/mob/living/carbon/exposed_carbon = exposed_mob
-	var/obj/item/organ/internal/stomach/ethereal/stomach = exposed_carbon.get_organ_slot(ORGAN_SLOT_STOMACH)
+	var/obj/item/organ/stomach/ethereal/stomach = exposed_carbon.get_organ_slot(ORGAN_SLOT_STOMACH)
 	if(istype(stomach))
 		stomach.adjust_charge(reac_volume * 0.1 * ETHEREAL_CHARGE_NORMAL)
 

@@ -31076,7 +31076,7 @@
 /area/station/maintenance/port)
 "qFy" = (
 /obj/structure/table/wood,
-/obj/item/organ/internal/heart{
+/obj/item/organ/heart{
 	pixel_y = -6
 	},
 /obj/effect/landmark/event_spawn,
@@ -31542,7 +31542,7 @@
 "qUh" = (
 /obj/structure/table/optable,
 /obj/effect/decal/cleanable/blood,
-/obj/item/organ/internal/appendix,
+/obj/item/organ/appendix,
 /turf/open/floor/iron/white,
 /area/station/medical/surgery)
 "qUs" = (

@@ -7,11 +7,11 @@
 	butcher_results = list(
 		/obj/item/food/meat/slab = 6,
 		/obj/item/stack/sheet/animalhide/generic = 8,
-		/obj/item/organ/internal/heart = 1,
-		/obj/item/organ/internal/brain = 1,
-		/obj/item/organ/internal/lungs = 1,
-		/obj/item/organ/internal/liver = 1,
-		/obj/item/organ/internal/eyes = 1,
+		/obj/item/organ/heart = 1,
+		/obj/item/organ/brain = 1,
+		/obj/item/organ/lungs = 1,
+		/obj/item/organ/liver = 1,
+		/obj/item/organ/eyes = 1,
 		/obj/item/stack/sheet/bone = 15,
 	)
 	minimum_survivable_temperature = 255
@@ -25,8 +25,8 @@
 	butcher_results = list(
 		/obj/item/food/meat/slab/chicken = 2,
 		/obj/item/stack/sheet/animalhide/generic = 2,
-		/obj/item/organ/internal/heart = 1,
-		/obj/item/organ/internal/eyes = 1,
+		/obj/item/organ/heart = 1,
+		/obj/item/organ/eyes = 1,
 		/obj/item/stack/sheet/bone = 2,
 		/obj/item/food/egg/lavaegg = 1
 	)

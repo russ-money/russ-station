@@ -12,7 +12,6 @@
 	maxHealth = 400
 	pass_flags = PASSTABLE
 	damage_coeff = list(BRUTE = 1.5, BURN = 0.5, TOX = 0, STAMINA = 0, OXY = 1)
-	///speech_probability_rate = 13
 
 	guaranteed_butcher_results = list(/obj/item/food/cracker = 3)
 	melee_damage_upper = 25
@@ -35,70 +34,91 @@
 	friendly_verb_simple = "groom"
 	mob_size = MOB_SIZE_LARGE
 	gold_core_spawnable = NO_SPAWN
-	ai_controller = /datum/ai_controller/basic_controller/raptor
-	var/change_offsets = TRUE
 
-	///Door Prying Test Stuff VVV
+	// Speech stuff
+	var/speech_probability_rate = 13
+	var/speech_shuffle_rate = 30
+	// For it to speak it should have a custom AI, I'll just make it a raptor child with a parroting subtree and hope it works
+	ai_controller = /datum/ai_controller/basic_controller/raptor/poly
 
 /mob/living/basic/poly_raptor/Initialize(mapload)
+	// This calls the parent's Iniatilize, in this case /mob/living/basic
 	. = ..()
+
+	// Add traits
 	ADD_TRAIT(src, list(TRAIT_LAVA_IMMUNE, TRAIT_ASHSTORM_IMMUNE, TRAIT_SNOWSTORM_IMMUNE), INNATE_TRAIT)
 
-	///RegisterSignal(src, COMSIG_HOSTILE_PRE_ATTACKINGTARGET, PROC_REF(pre_attack))
-	///RegisterSignal(src, COMSIG_MOB_LOGIN, PROC_REF(on_login))
-
-	///Innate Abilities , Poly Raptor vvv
-
+	// Gives it some powers for player controlled 'actions', must be /datum/action
 	var/static/list/innate_actions = list(
 		/datum/action/cooldown/spell/cone/staggered/fire_breath,
 		/datum/action/cooldown/mob_cooldown/charge/basic_charge/lobster,
-		/obj/item/implant/radio/antenna,
 	)
-
 	grant_actions_by_list(innate_actions)
 
-
-	///Innate Abilities , Poly Raptor ^^^
-
-	///Door PRying Test Stuff VVV
-
+	// Adds extra stuff the mob can do
 	AddElementTrait(TRAIT_WADDLING, INNATE_TRAIT, /datum/element/waddling)
 	AddElement(/datum/element/ai_retaliate)
 	AddElement(/datum/element/door_pryer, pry_time = 2.5 SECONDS, interaction_key = POLYRAPTOR_INTERACTION)
 	AddElement(/datum/element/poster_tearer, interaction_key = POLYRAPTOR_INTERACTION)
 	AddElement(/datum/element/footstep, footstep_type = FOOTSTEP_HARD_CLAW)
+	AddComponent(/datum/component/listen_and_repeat, desired_phrases = get_static_list_of_phrases(), blackboard_key = BB_PARROT_REPEAT_STRING)
+
+	// When it moves it fires this
 	RegisterSignal(src, COMSIG_ATOM_DIR_CHANGE, PROC_REF(on_dir_change))
 	adjust_offsets(dir)
 
-	///Door PRying Test Stuff ^^^
+	// Create radio and implant
+	var/obj/item/implant/radio/poly_raptor/poly_rapdio = new(src)
+	poly_rapdio.implant(src, null, TRUE, TRUE)
 
+	// Update AI with speech timers and chances
+	update_speech_blackboards()
+
+// It's own custom radio implant
+/obj/item/implant/radio/poly_raptor
+	name = "Poly Raptor's radio"
+
+// We set it's options while it initializes
+/obj/item/implant/radio/poly_raptor/Initialize(mapload)
+	. = ..()
+	radio.set_broadcasting(TRUE)
+	radio.use_command = TRUE // DINOS SHOULD BE LOUD
+	radio.should_be_broadcasting = TRUE
+	radio.should_be_listening = TRUE
+	radio.canhear_range = 1
+
+// This is so the sprite tries to keep centered
 /mob/living/basic/poly_raptor/proc/on_dir_change(datum/source, old_dir, new_dir)
 	SIGNAL_HANDLER
 	adjust_offsets(new_dir)
 
 /mob/living/basic/poly_raptor/proc/adjust_offsets(direction)
-	if(!change_offsets)
-		return
 	pixel_x = (direction & EAST) ? -20 : 0
 	pixel_y = (direction & NORTH) ? -5 : 0
 
-	///NOT WORKING POLY TALK VVV
-
-/mob/living/basic/parrot/poly/get_static_list_of_phrases() // there's only one poly, so there should only be one ongoing list of phrases. i guess
-	var/static/list/phrases_to_return = list()
-	if(length(phrases_to_return))
-		return phrases_to_return
-
-	phrases_to_return += read_memory() // must come first!!!
-	// now add some valuable lines every poly should have
-	phrases_to_return += list(
-		":e Check the crystal, you chucklefucks!",
-		":e OH GOD ITS ABOUT TO DELAMINATE CALL THE SHUTTLE",
-		":e WHO TOOK THE DAMN MODSUITS?",
-		":e Wire the solars, you lazy bums!",
-		"Poly wanna crack your skull!",
-		"Poly wanna cracker!",
+// Let's not load the poly file twice, it'll take too much time, so it'll only say these and learned phrases.
+/mob/living/basic/poly_raptor/proc/get_static_list_of_phrases()
+	var/static/list/default_phrases = list(
+		"BAWWWWK botany griffing me!",
 		"Get Fucked Gene!",
+		"Hello!",
 	)
+	return default_phrases
 
-	///NOT WORKING POLY TALK ^^^
+// Send these values to it's AI
+/mob/living/basic/poly_raptor/proc/update_speech_blackboards()
+	ai_controller.set_blackboard_key(BB_PARROT_REPEAT_PROBABILITY, speech_probability_rate)
+	ai_controller.set_blackboard_key(BB_PARROT_PHRASE_CHANGE_PROBABILITY, speech_shuffle_rate)
+
+// Return an empty list because we always say on common, might change this if we put channels into the implant
+/mob/living/basic/poly_raptor/proc/get_available_channels()
+	return list()
+
+// On var edit reload these values
+/mob/living/basic/poly_raptor/vv_edit_var(var_name, vval)
+	. = ..()
+	switch(var_name)
+		if(NAMEOF(src, speech_probability_rate))
+			update_speech_blackboards()
+		if(NAMEOF(src, speech_shuffle_rate))
+			update_speech_blackboards()

@@ -9,8 +9,8 @@
 		TRAIT_CAN_STRIP,
 		TRAIT_LITERATE,
 	)
-	mutanttongue = /obj/item/organ/internal/tongue/dwarf
-	mutantliver = /obj/item/organ/internal/liver/dwarf
+	mutanttongue = /obj/item/organ/tongue/dwarf
+	mutantliver = /obj/item/organ/liver/dwarf
 	species_cookie = /obj/item/reagent_containers/cup/glass/bottle/ale
 	skinned_type = /obj/item/stack/sheet/animalhide/human
 	coldmod = 1.15
@@ -164,8 +164,8 @@
 	heatmod = 0.5
 	species_language_holder = /datum/language_holder/dwarf/lavaland
 	// Lizard lungs (just to avoid needing no breath) are now named lavaland lungs
-	mutantlungs = /obj/item/organ/internal/lungs/lavaland
-	mutanteyes = /obj/item/organ/internal/eyes/night_vision/dwarf
+	mutantlungs = /obj/item/organ/lungs/lavaland
+	mutanteyes = /obj/item/organ/eyes/night_vision/dwarf
 	examine_limb_id = SPECIES_DWARF
 
 /datum/species/dwarf/lavaland/on_species_gain(mob/living/carbon/human/C, datum/species/old_species, pref_load)
@@ -191,7 +191,7 @@
 	//brutemod = 0.4
 	//punchdamagelow = 5 //Mountain dwarfs pack a meaner punch cause of the local wild life
 	species_language_holder = /datum/language_holder/dwarf/lavaland
-	mutanteyes = /obj/item/organ/internal/eyes/night_vision/dwarf
+	mutanteyes = /obj/item/organ/eyes/night_vision/dwarf
 
 /datum/species/dwarf/mountain/on_species_gain(mob/living/carbon/human/C, datum/species/old_species, pref_load)
 	. = ..()
@@ -214,9 +214,9 @@
 	coldmod = 0.9
 	heatmod = 0.9
 	//punchdamagelow = 3 //Pissed off that they are alive
-	mutanttongue = /obj/item/organ/internal/tongue/dwarf
+	mutanttongue = /obj/item/organ/tongue/dwarf
 	species_language_holder = /datum/language_holder/dwarf/lavaland
-	mutanteyes = /obj/item/organ/internal/eyes/night_vision/dwarf
+	mutanteyes = /obj/item/organ/eyes/night_vision/dwarf
 	death_sound = 'sound/machines/clockcult/ark_deathrattle.ogg' //spooky
 	//say_mod = "gurgles"
 

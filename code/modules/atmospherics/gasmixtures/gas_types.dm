@@ -206,10 +206,8 @@
 	gas_overlay = "miasma"
 	moles_visible = MOLES_GAS_VISIBLE * 60
 	rarity = 250
-	// honk start - allowed miasma to be purchaseable from cargo, brought down cost also
-	purchaseable = TRUE
+	purchaseable = TRUE // honk - allowed miasma to be purchaseable from cargo
 	base_value = 1
-	// honk end
 	desc = "Not necessarily a gas, miasma refers to biological pollutants found in the atmosphere."
 	primary_color = COLOR_OLIVE
 

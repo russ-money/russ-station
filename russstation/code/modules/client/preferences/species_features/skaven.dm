@@ -38,7 +38,7 @@
 	savefile_identifier = PREFERENCE_CHARACTER
 	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
 	can_randomize = FALSE
-	relevant_external_organ = /obj/item/organ/external/tail/skaven
+	relevant_external_organ = /obj/item/organ/tail/skaven
 
 /datum/preference/choiced/skaven_tail/init_possible_values()
 	return assoc_to_keys(SSaccessories.tails_list_skaven)

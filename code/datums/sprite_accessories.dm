@@ -821,9 +821,9 @@
 
 /*
 /////////////////////////////////////
-/  =---------------------------=	/
+/  =---------------------------=    /
 /  == Gradient Hair Definitions ==  /
-/  =---------------------------=	/
+/  =---------------------------=    /
 /////////////////////////////////////
 */
 
@@ -2415,14 +2415,9 @@
 	name = "Witch Wing"
 	icon_state = "witchwing"
 
-/*
-	BIG ASS HONK IN HOPES THIS FORCES A CONFLICT
-*/
-
 /datum/sprite_accessory/moth_markings/lightbearer
 	name = "Lightbearer"
 	icon_state = "lightbearer"
-
 
 /*
 	BIG ASS HONK IN HOPES THIS FORCES A CONFLICT

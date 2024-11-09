@@ -1,5 +1,5 @@
 ///Diona hair
-/obj/item/organ/external/diona_hair
+/obj/item/organ/diona_hair
 	name = "diona hair"
 	desc = "Made of hairlike vines and leaves."
 

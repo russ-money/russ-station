@@ -1,7 +1,7 @@
 #define SMOKER_ORGAN_HEALTH (STANDARD_ORGAN_THRESHOLD * 0.75)
 #define SMOKER_LUNG_HEALING (STANDARD_ORGAN_HEALING * 0.75)
 
-/obj/item/organ/internal/lungs/skaven
+/obj/item/organ/lungs/skaven
 	name = "skaven lungs"
 	desc = "A putrid pile of squishy flesh that somewhat resemble lungs."
 	icon = 'russstation/icons/obj/surgery.dmi'
@@ -10,7 +10,7 @@
 	safe_miasma_min = 10 //what skaven breath
 	suffers_miasma = FALSE
 
-/obj/item/organ/internal/lungs/skaven/skaven_smoker
+/obj/item/organ/lungs/skaven/skaven_smoker
 	name = "smoker skaven lungs"
 	desc = "A pair of putrid squishy flesh that somehow work as lungs, these also have burn scars, probably caused by inhaling hot smoke."
 
