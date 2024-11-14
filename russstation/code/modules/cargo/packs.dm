@@ -128,7 +128,7 @@
 		/obj/item/clothing/neck/petcollar,
 		/obj/item/toy/cattoy,
 	)
-	crate_name = "cat crate"
+	crate_name = "hyena crate"
 
 /datum/supply_pack/critter/hyena/generate()
 	. = ..()
