@@ -147,3 +147,27 @@
 				new /mob/living/basic/pet/cat/hyena/might(.)
 			else
 				new /mob/living/basic/pet/cat/hyena/breadyeen(.)
+
+/datum/supply_pack/critter/mothroach
+	contains = list(
+		/mob/living/basic/mothroach
+	)
+
+/datum/supply_pack/critter/mothroach/generate()
+	. = ..()
+	var/mob/living/basic/mothroach/del_mothroach = locate() in .
+	if(!isnull(del_mothroach))
+		qdel(del_mothroach)
+	switch(rand(1,6))
+		if(1)
+			new /mob/living/basic/mothroach(.)
+		if(2)
+			new /mob/living/basic/mothroach/kat/death(.)
+		if(3)
+			new /mob/living/basic/mothroach/kat/cult(.)
+		if(4)
+			new /mob/living/basic/mothroach/kat/lunar(.)
+		if(5)
+			new /mob/living/basic/mothroach/kat/warden(.)
+		if(6)
+			new /mob/living/basic/mothroach/kat/snow(.)
