@@ -6527,6 +6527,7 @@
 #include "russstation\code\datums\ruins\lavaland.dm"
 #include "russstation\code\datums\station_traits\negative_traits.dm"
 #include "russstation\code\datums\votes\crew_transfer_vote.dm"
+#include "russstation\code\datums\elements\pet_cult.dm"
 #include "russstation\code\game\area\areas\mining.dm"
 #include "russstation\code\game\area\areas\ruins\icemoon.dm"
 #include "russstation\code\game\area\areas\ruins\lavaland.dm"
