@@ -8,6 +8,11 @@
 
 /datum/element/cultist_pet/russstation/mothroach/become_cultist(mob/living/basic/source, list/invokers, datum/team)
 	. = ..()
+
+	// If we're not a cultist at this point the parent proc probably failed or returned early, so we do the same.
+	if (!(FACTION_CULT in source.faction))
+		return
+
 	source.name = "Blood mothroach"
 	source.desc = "Blood for the moff god!"
 
