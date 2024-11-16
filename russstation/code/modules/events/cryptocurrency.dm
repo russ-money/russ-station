@@ -21,7 +21,7 @@ GLOBAL_LIST_INIT(crypto_reasons, world.file2list("russstation/strings/crypto_rea
 // event base for shared crypto stuff
 /datum/round_event/cryptocurrency
 	// we don't need to hear these every time; also keeps players on their toes
-	announce_chance = 70
+	announce_chance = 75
 	// change rates to use during event period
 	var/growth_percent = 10
 	var/decline_percent = 10
@@ -44,29 +44,9 @@ GLOBAL_LIST_INIT(crypto_reasons, world.file2list("russstation/strings/crypto_rea
 			reason = player.name
 	return reason
 
-// priority_announce and minor_announce are too "loud" for this meme shit
-// copied minor_announce and edited the font, now i'm happy :)
+// standardize title, use minor
 /datum/round_event/cryptocurrency/proc/crypto_announce(message, title = "[SScryptocurrency.coin_name] Speculative Investment Report", alert, html_encode = TRUE, list/players, sound_override)
-	if(!message)
-		return
-
-	if (html_encode)
-		title = html_encode(title)
-		message = html_encode(message)
-
-	if(!players)
-		players = GLOB.player_list
-
-	for(var/mob/target in players)
-		if(isnewplayer(target))
-			continue
-		if(!target.can_hear())
-			continue
-
-		to_chat(target, "<span style='font-size: 140%; font-weight: bold;' class='sans'><font color='red'>[title]</font color><BR>[message]</span><BR>")
-		if(target.client?.prefs.read_preference(/datum/preference/toggle/sound_announcements))
-			var/sound_to_play = sound_override || (alert ? 'sound/announcer/notice/notice1.ogg' : 'sound/announcer/notice/notice2.ogg')
-			SEND_SOUND(target, sound(sound_to_play))
+	minor_announce(message, title, alert, html_encode, players, sound_override)
 
 // stabilize market for a while
 /datum/round_event_control/cryptocurrency/stable
