@@ -1,5 +1,6 @@
+import { Button, LabeledList, NumberInput, Section } from 'tgui-core/components';
+
 import { useBackend } from '../backend';
-import { Button, LabeledList, NumberInput, Section } from '../components';
 import { Window } from '../layouts';
 
 export const CryptoMiningRig = (props) => {
@@ -48,7 +49,8 @@ export const CryptoMiningRig = (props) => {
                 unit="W"
                 minValue={0}
                 maxValue={max_overclock}
-                onChange={(_, value) =>
+                step={1}
+                onChange={(value) =>
                   act('overclock', {
                     overclock: value,
                   })

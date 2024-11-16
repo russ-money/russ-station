@@ -1,2 +1,3 @@
-/turf/open/floor/tram/plate/icemoon
-	initial_gas_mix = ICEMOON_DEFAULT_ATMOS
+/turf/open/floor/tram/plate/coldroom
+	initial_gas_mix = KITCHEN_COLDROOM_ATMOS
+	slowdown = 1

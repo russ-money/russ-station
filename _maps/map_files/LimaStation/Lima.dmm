@@ -7368,6 +7368,7 @@
 "cpq" = (
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/east,
+/obj/machinery/vending/cytopro,
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/cytology)
 "cpC" = (
@@ -12166,6 +12167,10 @@
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
+"eDI" = (
+/obj/effect/spawner/random/trash/moisture_trap,
+/turf/open/floor/plating,
+/area/station/maintenance/port)
 "eDM" = (
 /obj/structure/table/reinforced,
 /obj/item/assembly/signaler{
@@ -18298,6 +18303,10 @@
 	},
 /turf/open/floor/plating,
 /area/station/engineering/atmos/pumproom)
+"hJF" = (
+/obj/effect/spawner/random/trash/moisture_trap,
+/turf/open/floor/plating,
+/area/station/maintenance/central)
 "hKj" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
@@ -22395,6 +22404,10 @@
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
 /area/station/science/research)
+"kag" = (
+/obj/effect/spawner/random/trash/moisture_trap,
+/turf/open/floor/plating,
+/area/station/maintenance/starboard/fore)
 "kai" = (
 /obj/structure/chair/stool/directional/east,
 /obj/effect/turf_decal/tile/red/opposingcorners,
@@ -25800,6 +25813,10 @@
 /obj/structure/sign/poster/official/random/directional/east,
 /turf/open/floor/iron/dark,
 /area/station/science/circuits)
+"lXf" = (
+/obj/effect/spawner/random/trash/moisture_trap,
+/turf/open/floor/plating,
+/area/station/maintenance/starboard/aft)
 "lYp" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -39048,6 +39065,10 @@
 /obj/structure/cable,
 /turf/open/floor/iron/freezer,
 /area/station/security/prison)
+"tKD" = (
+/obj/effect/spawner/random/trash/moisture_trap,
+/turf/open/floor/plating,
+/area/station/maintenance/port/fore)
 "tKF" = (
 /obj/structure/table/wood,
 /obj/effect/turf_decal/siding/wood{
@@ -65391,7 +65412,7 @@ bLJ
 lRA
 lRA
 bwR
-lRA
+eDI
 xbl
 lRA
 lRA
@@ -74349,7 +74370,7 @@ vsH
 vsH
 aIX
 auU
-xOo
+tKD
 aBz
 aEY
 wPw
@@ -74645,7 +74666,7 @@ nhP
 lVd
 buI
 lVd
-lVd
+hJF
 lVd
 coL
 urs
@@ -88547,8 +88568,8 @@ qyc
 khS
 mtc
 fid
+lXf
 mqZ
-tfi
 tRP
 npB
 npB
@@ -92352,7 +92373,7 @@ gfQ
 gfQ
 fsz
 eGL
-iVn
+kag
 tjs
 nmU
 eVi

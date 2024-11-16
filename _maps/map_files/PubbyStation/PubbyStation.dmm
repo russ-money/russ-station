@@ -32918,6 +32918,13 @@
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/science/xenobiology)
+"dgS" = (
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 1
+	},
+/obj/machinery/vending/cytopro,
+/turf/open/floor/iron/dark,
+/area/station/science/xenobiology)
 "dhz" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable,
@@ -36548,6 +36555,10 @@
 	},
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
+"iAt" = (
+/obj/effect/spawner/random/trash/moisture_trap,
+/turf/open/floor/plating,
+/area/station/maintenance/department/cargo)
 "iAx" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -39060,6 +39071,10 @@
 /obj/item/food/donut/plain,
 /turf/closed/wall,
 /area/station/maintenance/department/security/brig)
+"muu" = (
+/obj/effect/spawner/random/trash/moisture_trap,
+/turf/open/floor/plating,
+/area/station/maintenance/department/crew_quarters/bar)
 "mvB" = (
 /obj/structure/sink/directional/east,
 /obj/structure/mirror{
@@ -72971,7 +72986,7 @@ aKT
 kVO
 kVO
 aLL
-aLL
+muu
 aKT
 aUQ
 aVU
@@ -92784,7 +92799,7 @@ mQm
 ilD
 edJ
 bqF
-brW
+dgS
 btv
 axj
 bSn
@@ -93532,7 +93547,7 @@ aLi
 txZ
 aLi
 aWb
-aFi
+iAt
 pMg
 aEl
 aaa

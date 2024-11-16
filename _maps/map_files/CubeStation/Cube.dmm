@@ -11503,6 +11503,10 @@
 /obj/structure/plasticflaps/opaque,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
+"gjy" = (
+/obj/effect/spawner/random/trash/moisture_trap,
+/turf/open/floor/plating,
+/area/station/maintenance/fore/lesser)
 "gjD" = (
 /obj/machinery/ntnet_relay,
 /turf/open/floor/circuit/telecomms/mainframe,
@@ -15043,6 +15047,10 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/engineering/storage/tech)
+"iag" = (
+/obj/effect/spawner/random/trash/moisture_trap,
+/turf/open/floor/plating,
+/area/station/maintenance/port/aft)
 "iar" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -28873,6 +28881,10 @@
 	},
 /turf/open/floor/iron/cafeteria,
 /area/station/security/prison)
+"pvb" = (
+/obj/effect/spawner/random/trash/moisture_trap,
+/turf/open/floor/plating,
+/area/station/maintenance/port/fore)
 "pvf" = (
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/iron/dark,
@@ -35086,6 +35098,10 @@
 	},
 /turf/open/floor/iron,
 /area/station/security/brig)
+"sqT" = (
+/obj/effect/spawner/random/trash/moisture_trap,
+/turf/open/floor/plating,
+/area/station/maintenance/starboard/aft)
 "sqW" = (
 /obj/machinery/status_display/evac{
 	pixel_x = 32
@@ -42302,6 +42318,10 @@
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
+"wbL" = (
+/obj/machinery/vending/cytopro,
+/turf/open/floor/iron/dark,
+/area/station/science/xenobiology)
 "wbO" = (
 /obj/effect/spawner/random/trash/grille_or_waste,
 /obj/effect/mapping_helpers/broken_floor,
@@ -58462,7 +58482,7 @@ wxv
 qSq
 fSl
 fSl
-fSl
+iag
 htU
 fOn
 pRn
@@ -60679,7 +60699,7 @@ bXj
 qYw
 wSF
 qYw
-ojY
+pvb
 aFO
 lhD
 qYw
@@ -62770,7 +62790,7 @@ pEl
 ism
 hvG
 nbr
-veO
+wbL
 veO
 qwD
 qxZ
@@ -78155,7 +78175,7 @@ iSG
 vhr
 iSG
 tGa
-iSG
+gjy
 iSG
 iSG
 mUC
@@ -82754,7 +82774,7 @@ wqn
 hVG
 hVG
 hVG
-ewG
+sqT
 ewG
 jwe
 rRr
