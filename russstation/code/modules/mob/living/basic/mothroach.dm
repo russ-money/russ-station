@@ -1,3 +1,21 @@
+// It's the fearsome blood mothroach!
+/datum/element/cultist_pet/russstation/mothroach
+	pet_cult_icon_lh = 'russstation/icons/mob/inhands/mothroach_lefthand.dmi'
+	pet_cult_icon_rh = 'russstation/icons/mob/inhands/mothroach_righthand.dmi'
+	pet_cult_icon_head = 'russstation/icons/mob/clothing/head/mothroach_head.dmi'
+	pet_cult_icon_dead = "mothroach_dead_cult"
+	pet_cult_held_state = "mothroach_cult"
+
+/datum/element/cultist_pet/russstation/mothroach/become_cultist(mob/living/basic/source, list/invokers, datum/team)
+	. = ..()
+	source.name = "Blood mothroach"
+	source.desc = "Blood for the moff god!"
+
+/mob/living/basic/mothroach/Initialize(mapload)
+	. = ..()
+	AddElement(/datum/element/cultist_pet/russstation/mothroach, pet_cult_icon = 'russstation/icons/mob/mothroach.dmi', pet_cult_icon_state = "mothroach_cult")
+
+// Our custom mothroach variants
 /mob/living/basic/mothroach/kat
 	icon = 'russstation/icons/mob/mothroach.dmi'
 	held_lh = 'russstation/icons/mob/inhands/mothroach_lefthand.dmi'
@@ -35,11 +53,3 @@
 	icon_living = "mothroach_warden"
 	icon_dead = "mothroach_dead_warden"
 	held_state = "mothroach_warden"
-
-/mob/living/basic/mothroach/kat/cult
-	name = "Blood mothroach"
-	desc = "Blood for the moff god!"
-	icon_state = "mothroach_cult"
-	icon_living = "mothroach_cult"
-	icon_dead = "mothroach_dead_cult"
-	held_state = "mothroach_cult"
