@@ -108,7 +108,7 @@
 /datum/species/skaven/randomize_features()
 	var/list/features = ..()
 	features["tail_skaven"] = pick(SSaccessories.tails_list_skaven)
-	features["ears"] = pick("None", "Skaven")
+	features["ears"] = "Skaven"
 	features["skaven_color"] = GLOB.color_list_skaven[pick(GLOB.color_list_skaven)]
 	return features
 
@@ -122,10 +122,10 @@
 		var/mob/living/carbon/human/target_human = carbon_being
 		if(!pref_load)
 			target_human.dna.features["tail_skaven"] = "Skaven"
-			if(target_human.dna.features["ears"] == "None")
-				target_human.dna.features["ears"] = "Skaven"
+		if(target_human.dna.features["ears"] == "None")
+			target_human.dna.features["ears"] = "Skaven"
 		if(target_human.dna.features["ears"] == "Skaven")
-			var/obj/item/organ/ears/skaven/ears = new
+			var/obj/item/organ/ears/skaven/ears = new(FALSE, target_human.dna.features["ears"])
 			ears.Insert(target_human, movement_flags = DELETE_IF_REPLACED)
 		// ensure our mcolor (used for bodyparts) is set to our skaven's color
 		target_human.dna.features["mcolor"] = target_human.dna.features["skaven_color"]
