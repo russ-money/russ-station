@@ -6616,6 +6616,7 @@
 #include "russstation\code\modules\language\kitsumimetic.dm"
 #include "russstation\code\modules\language\language_holder.dm"
 #include "russstation\code\modules\language\queekish.dm"
+#include "russstation\code\modules\loadout\categories\pocket.dm"
 #include "russstation\code\modules\mapping\mapping_helpers.dm"
 #include "russstation\code\modules\mining\badlands.dm"
 #include "russstation\code\modules\mining\icemoon_farm_animals.dm"
