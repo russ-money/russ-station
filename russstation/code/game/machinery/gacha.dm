@@ -6,6 +6,7 @@
 	base_icon_state = "gacha_machine"
 	layer = BELOW_OBJ_LAYER // So dispensed capsules don't end up underneath the machine
 	density = TRUE
+	circuit = /obj/item/circuitboard/machine/gacha
 
 	// Health/armor is set up similar to that of a vending machine
 	max_integrity = 300
@@ -21,6 +22,10 @@
 	var/stuck_coin_chance = 10
 	var/stuck_coin_eject_chance = 25
 
+/obj/machinery/gacha/Initialize(mapload)
+	. = ..()
+	register_context()
+
 /obj/machinery/gacha/attackby(obj/item/weapon, mob/living/user, params)
 	. = ..()
 	spit_out_stuck_coin(user, (machine_stat & BROKEN))
@@ -32,6 +37,10 @@
 	// One coin = one capsule regardless of the coin's type for now.
 	if (!istype(tool, /obj/item/coin))
 		return NONE
+
+	// You can't interact with the gacha machine while the panel is open.
+	if (panel_open)
+		return ITEM_INTERACT_BLOCKING
 
 	// Broken machines can't dispense capsules
 	if (machine_stat & BROKEN)
@@ -91,6 +100,11 @@
 		icon_state += "_broken"
 	return ..()
 
+/obj/machinery/gacha/update_overlays()
+	. = ..()
+	if(panel_open)
+		. += "[base_icon_state]_panel"
+
 /obj/machinery/gacha/play_attack_sound(damage_amount, damage_type = BRUTE, damage_flag = 0)
 	switch(damage_type)
 		if(BRUTE)
@@ -101,6 +115,48 @@
 /obj/machinery/gacha/atom_break(damage_flag)
 	playsound(src, SFX_SHATTER, 50, TRUE)
 	return ..()
+
+// Code copied over from the vending machine code.
+// It enables the use of tools (screwdriver, crowbar, wrench) for gacha machines.
+/obj/machinery/gacha/crowbar_act(mob/living/user, obj/item/attack_item)
+	if(!component_parts)
+		return FALSE
+	default_deconstruction_crowbar(attack_item)
+	return TRUE
+
+/obj/machinery/gacha/wrench_act(mob/living/user, obj/item/tool)
+	. = ..()
+	if(!panel_open)
+		return FALSE
+	if(default_unfasten_wrench(user, tool, time = 6 SECONDS))
+		unbuckle_all_mobs(TRUE)
+		return ITEM_INTERACT_SUCCESS
+	return FALSE
+
+/obj/machinery/gacha/screwdriver_act(mob/living/user, obj/item/attack_item)
+	if(..())
+		return TRUE
+	if(anchored)
+		default_deconstruction_screwdriver(user, icon_state, icon_state, attack_item)
+		update_appearance()
+	else
+		to_chat(user, span_warning("You must first secure [src]."))
+	return TRUE
+
+/obj/machinery/gacha/add_context(atom/source, list/context, obj/item/held_item, mob/user)
+	if(held_item?.tool_behaviour == TOOL_SCREWDRIVER)
+		context[SCREENTIP_CONTEXT_LMB] = panel_open ? "Close panel" : "Open panel"
+		return CONTEXTUAL_SCREENTIP_SET
+
+	if(panel_open && held_item?.tool_behaviour == TOOL_WRENCH)
+		context[SCREENTIP_CONTEXT_LMB] = anchored ? "Unsecure" : "Secure"
+		return CONTEXTUAL_SCREENTIP_SET
+
+	if(panel_open && held_item?.tool_behaviour == TOOL_CROWBAR)
+		context[SCREENTIP_CONTEXT_LMB] = "Deconstruct"
+		return CONTEXTUAL_SCREENTIP_SET
+
+	return NONE
 
 // Plushies!
 /obj/machinery/gacha/plush
@@ -128,5 +184,24 @@
 		/obj/item/toy/plush/abductor/agent,
 		/obj/item/toy/plush/shark,
 		/obj/item/toy/plush/donkpocket,
-		/obj/item/toy/plush/ducky
+		/obj/item/toy/plush/russstation/ducky,
+		/obj/item/toy/plush/russstation/axolotl = 2,
+		/obj/item/toy/plush/russstation/cat_long = 2,
+		/obj/item/toy/plush/russstation/hyena = 2,
+		/obj/item/toy/plush/russstation/hyena_box = 2,
+		/obj/item/toy/plush/russstation/cat_round_black,
+		/obj/item/toy/plush/russstation/cat_round_calico,
+		/obj/item/toy/plush/russstation/cat_round_tuxedo,
+		/obj/item/toy/plush/russstation/duckling,
+		/obj/item/toy/plush/russstation/duckie,
+		/obj/item/toy/plush/russstation/scottish_cow,
+		/obj/item/toy/plush/russstation/moth_lunar,
+		/obj/item/toy/plush/russstation/moth_banana,
+		/obj/item/toy/plush/russstation/moth_poly,
+		/obj/item/toy/plush/russstation/ratking,
+		/obj/item/toy/plush/russstation/ratking_crown,
+		/obj/item/toy/plush/russstation/lizard,
+		/obj/item/toy/plush/russstation/lizard_spine,
+		/obj/item/toy/plush/russstation/lizard_frill,
+		/obj/item/toy/plush/russstation/lizard_horn
 	)

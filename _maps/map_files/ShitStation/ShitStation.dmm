@@ -25418,7 +25418,7 @@
 /area/station/security/brig)
 "sbM" = (
 /obj/effect/spawner/random/contraband/prison,
-/obj/item/toy/plush/ducky,
+/obj/item/toy/plush/russstation/ducky,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/effect/turf_decal/tile/neutral/diagonal_edge,
 /turf/open/floor/iron/dark,
