@@ -18,7 +18,7 @@
 
 	var/list/prize_pool = list()
 	var/obj/item/coin/stuck_coin = null
-	var/stuck_coin_chance = 5
+	var/stuck_coin_chance = 10
 	var/stuck_coin_eject_chance = 25
 
 /obj/machinery/gacha/attackby(obj/item/weapon, mob/living/user, params)
@@ -78,8 +78,29 @@
 	stuck_coin.forceMove(get_turf(src))
 	balloon_alert(user, "clink-clink-thunk!")
 	playsound(src, 'sound/machines/coindrop.ogg', 50, TRUE, extrarange = -3)
-	to_chat(user, span_notice("The machine spits out [stuck_coin] that was stuck."))
+	visible_message(span_notice("The machine spits out [stuck_coin] that was stuck."))
 	stuck_coin = null
+
+/obj/machinery/gacha/update_appearance(updates=ALL)
+	. = ..()
+	set_light((!(machine_stat & BROKEN) && powered()) ? MINIMUM_USEFUL_LIGHT_RANGE : 0)
+
+/obj/machinery/gacha/update_icon_state()
+	icon_state = "[base_icon_state]"
+	if(machine_stat & BROKEN)
+		icon_state += "_broken"
+	return ..()
+
+/obj/machinery/gacha/play_attack_sound(damage_amount, damage_type = BRUTE, damage_flag = 0)
+	switch(damage_type)
+		if(BRUTE)
+			playsound(src.loc, 'sound/effects/glass/glasshit.ogg', 75, TRUE)
+		if(BURN)
+			playsound(src.loc, 'sound/items/tools/welder.ogg', 100, TRUE)
+
+/obj/machinery/gacha/atom_break(damage_flag)
+	playsound(src, SFX_SHATTER, 50, TRUE)
+	return ..()
 
 // Plushies!
 /obj/machinery/gacha/plush
@@ -109,25 +130,3 @@
 		/obj/item/toy/plush/donkpocket,
 		/obj/item/toy/plush/ducky
 	)
-
-/obj/machinery/gacha/update_appearance(updates=ALL)
-	. = ..()
-
-	set_light((!(machine_stat & BROKEN) && powered()) ? MINIMUM_USEFUL_LIGHT_RANGE : 0)
-
-/obj/machinery/gacha/update_icon_state()
-	icon_state = "[base_icon_state]"
-	if(machine_stat & BROKEN)
-		icon_state += "_broken"
-	return ..()
-
-/obj/machinery/gacha/play_attack_sound(damage_amount, damage_type = BRUTE, damage_flag = 0)
-	switch(damage_type)
-		if(BRUTE)
-			playsound(src.loc, 'sound/effects/glass/glasshit.ogg', 75, TRUE)
-		if(BURN)
-			playsound(src.loc, 'sound/items/tools/welder.ogg', 100, TRUE)
-
-/obj/machinery/gacha/atom_break(damage_flag)
-	playsound(src, SFX_SHATTER, 50, TRUE)
-	return ..()
