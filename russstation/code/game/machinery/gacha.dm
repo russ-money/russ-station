@@ -4,59 +4,82 @@
 	icon = 'russstation/icons/obj/machines/gacha_machine.dmi'
 	icon_state = "gacha_machine"
 	base_icon_state = "gacha_machine"
-	layer = BELOW_OBJ_LAYER // So dispensed balls don't end up underneath the machine
-	density = TRUE // So players can't pass through
+	layer = BELOW_OBJ_LAYER // So dispensed capsules don't end up underneath the machine
+	density = TRUE
 
-	// Health/armor stuff
+	// Health/armor is set up similar to that of a vending machine
 	max_integrity = 300
 	integrity_failure = 0.33
 	armor_type = /datum/armor/machinery_vending
 
-	// Misc. stuff yoinked from vendor machine code
-	circuit = /obj/item/circuitboard/machine/vendor
-	light_power = 0.7
+	light_power = 1
 	light_range = MINIMUM_USEFUL_LIGHT_RANGE
+	can_atmos_pass = ATMOS_PASS_NO
 
 	var/list/prize_pool = list()
+	var/obj/item/coin/stuck_coin = null
+	var/stuck_coin_chance = 5
+	var/stuck_coin_eject_chance = 25
+
+/obj/machinery/gacha/attackby(obj/item/weapon, mob/living/user, params)
+	. = ..()
+	spit_out_stuck_coin(user, (machine_stat & BROKEN))
 
 /obj/machinery/gacha/item_interaction(mob/living/user, obj/item/tool, list/modifiers)
-	if (istype(tool, /obj/item/coin))
-		qdel(tool)
-		dispense_gacha_capsule(user)
-		balloon_alert(user, "ka-chunk!")
+	..()
+
+	// Gacha machines take coins rather than credits to give coins a purpose.
+	// One coin = one capsule regardless of the coin's type for now.
+	if (!istype(tool, /obj/item/coin))
+		return NONE
+
+	// Broken machines can't dispense capsules
+	if (machine_stat & BROKEN)
+		to_chat(user, span_notice("The machine is broken."))
+		return ITEM_INTERACT_BLOCKING
+
+	// Machines with a coin stuck in them should be bonked a few times first
+	if (stuck_coin)
+		to_chat(user, span_notice("The coin slot seems to be blocked..."))
+		return ITEM_INTERACT_BLOCKING
+
+	// There's a chance the coin gets stuck inside the machine
+	if(rand(1, 100) <= stuck_coin_chance)
+		var/mob/owner = tool.loc
+		owner.transferItemToLoc(tool, src, TRUE)
+		stuck_coin = tool
+		to_chat(user, span_notice("The machine takes [tool] and... it gets stuck!"))
 		return ITEM_INTERACT_SUCCESS
 
-	return NONE
+	qdel(tool)
+	dispense_gacha_capsule(user)
+	return ITEM_INTERACT_SUCCESS
+
+/obj/machinery/gacha/examine_more(mob/user)
+	. = ..()
+
+	if (stuck_coin)
+		. += span_notice("Upon closer inspection... there seems to be a coin stuck inside the machine!")
 
 /obj/machinery/gacha/proc/dispense_gacha_capsule(mob/living/user)
 	var/obj/item/gacha_capsule/gacha_capsule = new /obj/item/gacha_capsule(get_turf(src))
 	gacha_capsule.prize = pick_weight(fill_with_ones(src.prize_pool))
+	balloon_alert(user, "ka-chunk!")
 	playsound(src, 'sound/machines/machine_vend.ogg', 50, TRUE, extrarange = -3)
 	visible_message(span_notice("[src] dispenses [gacha_capsule]!"), span_notice("You hear a chime and a clunk."))
 
-/obj/item/gacha_capsule
-	name = "gacha capsule"
-	desc = "What could be inside?"
-	icon_state = "gacha_capsule_green"
-	w_class = WEIGHT_CLASS_TINY
-	icon = 'russstation/icons/obj/gacha_capsules.dmi'
-	var/prize = null
+/obj/machinery/gacha/proc/spit_out_stuck_coin(mob/living/user, force = FALSE)
+	if (!stuck_coin)
+		return
 
-/obj/item/gacha_capsule/Initialize(mapload)
-	. = ..()
-	var/capsule_color = pick("pink", "green", "blue", "red", "orange", "purple", "yellow")
-	icon_state = "gacha_capsule_[capsule_color]"
+	if (!force && rand(1, 100) > stuck_coin_eject_chance)
+		return
 
-/obj/item/gacha_capsule/attack_self(mob/user)
-	..()
-
-	if (src.prize)
-		var/prize = new src.prize(get_turf(src))
-		to_chat(user, span_notice("You open [src] and find [prize] inside!"))
-	else
-		to_chat(user, span_notice("You open [src] and... it's empty! What a scam."))
-
-	qdel(src)
+	stuck_coin.forceMove(get_turf(src))
+	balloon_alert(user, "clink-clink-thunk!")
+	playsound(src, 'sound/machines/coindrop.ogg', 50, TRUE, extrarange = -3)
+	to_chat(user, span_notice("The machine spits out [stuck_coin] that was stuck."))
+	stuck_coin = null
 
 // Plushies!
 /obj/machinery/gacha/plush
@@ -86,3 +109,25 @@
 		/obj/item/toy/plush/donkpocket,
 		/obj/item/toy/plush/ducky
 	)
+
+/obj/machinery/gacha/update_appearance(updates=ALL)
+	. = ..()
+
+	set_light((!(machine_stat & BROKEN) && powered()) ? MINIMUM_USEFUL_LIGHT_RANGE : 0)
+
+/obj/machinery/gacha/update_icon_state()
+	icon_state = "[base_icon_state]"
+	if(machine_stat & BROKEN)
+		icon_state += "_broken"
+	return ..()
+
+/obj/machinery/gacha/play_attack_sound(damage_amount, damage_type = BRUTE, damage_flag = 0)
+	switch(damage_type)
+		if(BRUTE)
+			playsound(src.loc, 'sound/effects/glass/glasshit.ogg', 75, TRUE)
+		if(BURN)
+			playsound(src.loc, 'sound/items/tools/welder.ogg', 100, TRUE)
+
+/obj/machinery/gacha/atom_break(damage_flag)
+	playsound(src, SFX_SHATTER, 50, TRUE)
+	return ..()
