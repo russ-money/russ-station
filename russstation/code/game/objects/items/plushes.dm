@@ -21,7 +21,7 @@
 	desc = "A long friend for the long days..."
 	icon_state = "cat_long"
 	inhand_icon_state = "cat_long"
-	squeak_override = list('russstation/sound/items/long_cat_plush.ogg' = 1)
+	squeak_override = list('russstation/sound/items/cat_long_plush.ogg' = 1)
 
 /obj/item/toy/plush/russstation/hyena
 	name = "hyena plushie"
@@ -41,19 +41,19 @@
 	name = "black blobcat plushie"
 	desc = "This plush is filled with Sulfur Hexafluoride!"
 	icon_state = "cat_round_black"
-	squeak_override = list('russstation/sound/items/round_cat_plush.ogg' = 1)
+	squeak_override = list('russstation/sound/items/cat_round_plush.ogg' = 1)
 
 /obj/item/toy/plush/russstation/cat_round_calico
 	name = "calico blobcat plushie"
 	desc = "This plush is filled with Sulfur Hexafluoride!"
 	icon_state = "cat_round_calico"
-	squeak_override = list('russstation/sound/items/round_cat_plush.ogg' = 1)
+	squeak_override = list('russstation/sound/items/cat_round_plush.ogg' = 1)
 
 /obj/item/toy/plush/russstation/cat_round_tuxedo
 	name = "tuxedo blobcat plushie"
 	desc = "This plush is filled with Sulfur Hexafluoride!"
 	icon_state = "cat_round_tuxedo"
-	squeak_override = list('russstation/sound/items/round_cat_plush.ogg' = 1)
+	squeak_override = list('russstation/sound/items/cat_round_plush.ogg' = 1)
 
 /obj/item/toy/plush/russstation/duckling
 	name = "duckling plushie"
