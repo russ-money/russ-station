@@ -83,6 +83,7 @@ GLOBAL_LIST_INIT(phobia_mobs, list(
 	"insects" = typecacheof(list(
 		/mob/living/basic/cockroach,
 		/mob/living/basic/bee,
+		/mob/living/basic/mothroach, // honk -- Upstream doesn't define mothroaches as insect mobs. This should probably be fixed upstream at some point.
 	)),
 	"lizards" = typecacheof(list(/mob/living/basic/lizard)),
 	"robots" = typecacheof(list(
@@ -425,6 +426,12 @@ GLOBAL_LIST_INIT(phobia_objs, list(
 		/obj/item/toy/plush/beeplushie,
 		/obj/item/toy/plush/moth,
 		/obj/structure/beebox,
+
+		// honk start -- our insect objs
+		/obj/item/toy/plush/russstation/moth_lunar,
+		/obj/item/toy/plush/russstation/moth_banana,
+		/obj/item/toy/plush/russstation/moth_poly,
+		// honk end
 	)),
 	"lizards" = typecacheof(list(
 		/obj/item/clothing/head/costume/lizard,
@@ -433,6 +440,13 @@ GLOBAL_LIST_INIT(phobia_objs, list(
 		/obj/item/organ/tail/lizard,
 		/obj/item/reagent_containers/cup/glass/bottle/lizardwine,
 		/obj/item/toy/plush/lizard_plushie,
+
+		// honk start -- our lizard objs
+		/obj/item/toy/plush/russstation/lizard,
+		/obj/item/toy/plush/russstation/lizard_spine,
+		/obj/item/toy/plush/russstation/lizard_frill,
+		/obj/item/toy/plush/russstation/lizard_horn
+		// honk end
 	)),
 	"ocky icky" = typecacheof(list(
 		/obj/item/banhammer,
