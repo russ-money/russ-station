@@ -3,7 +3,6 @@
 #define PET_OPTION_FOX "Fox"
 #define PET_OPTION_VERMIN "Vermin"
 #define PET_OPTION_BIRD "Bird"
-#define PET_OPTION_HYENA "Hyena"
 
 GLOBAL_LIST_INIT(pet_options, list(
 	PET_OPTION_DOG = list(
@@ -28,11 +27,6 @@ GLOBAL_LIST_INIT(pet_options, list(
 	),
 	PET_OPTION_BIRD = list(
 		/mob/living/basic/parrot,
-	),
-	PET_OPTION_HYENA = list(
-		/mob/living/basic/pet/cat/hyena,
-		/mob/living/basic/pet/cat/hyena/second,
-		/mob/living/basic/pet/cat/hyena/cub,
 	),
 ))
 

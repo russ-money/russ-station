@@ -21,5 +21,20 @@
 		))
 	)
 
+	var/phobia_mobs = list(
+		"insects" = typecacheof(list(
+			/mob/living/basic/mothroach // Upstream doesn't define mothroaches as insect mobs. This should probably be fixed upstream at some point.
+		))
+	)
+
 	for (var/phobia_type in phobia_objs)
-		GLOB.phobia_objs[phobia_type] = typecacheof(unique_merge_list(GLOB.phobia_objs[phobia_type], phobia_objs[phobia_type]))
+		if (phobia_type in GLOB.phobia_objs)
+			GLOB.phobia_objs[phobia_type] = typecacheof(unique_merge_list(GLOB.phobia_objs[phobia_type], phobia_objs[phobia_type]))
+		else
+			GLOB.phobia_objs[phobia_type] = phobia_objs[phobia_type]
+
+	for (var/phobia_type in phobia_mobs)
+		if (phobia_type in GLOB.phobia_mobs)
+			GLOB.phobia_mobs[phobia_type] = typecacheof(unique_merge_list(GLOB.phobia_mobs[phobia_type], phobia_mobs[phobia_type]))
+		else
+			GLOB.phobia_mobs[phobia_type] = phobia_mobs[phobia_type]
