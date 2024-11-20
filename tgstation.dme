@@ -6633,7 +6633,6 @@
 #include "russstation\code\modules\mob\living\basic\hyena.dm"
 #include "russstation\code\modules\mob\living\basic\mothroach.dm"
 #include "russstation\code\modules\mob\living\basic\mouse.dm"
-#include "russstation\code\modules\mob\living\basic\pet_designer.dm"
 #include "russstation\code\modules\mob\living\basic\poly_raptor.dm"
 #include "russstation\code\modules\mob\living\basic\poly_raptor_ai.dm"
 #include "russstation\code\modules\mob\living\carbon\human\species_types\diona.dm"
