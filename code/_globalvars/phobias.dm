@@ -83,7 +83,7 @@ GLOBAL_LIST_INIT(phobia_mobs, list(
 	"insects" = typecacheof(list(
 		/mob/living/basic/cockroach,
 		/mob/living/basic/bee,
-		/mob/living/basic/mothroach, // honk: Upstream doesn't define mothroaches as insect mobs. This should probably be fixed upstream at some point.
+		/mob/living/basic/mothroach, // honk -- Upstream doesn't define mothroaches as insect mobs. This should probably be fixed upstream at some point.
 	)),
 	"lizards" = typecacheof(list(/mob/living/basic/lizard)),
 	"robots" = typecacheof(list(
