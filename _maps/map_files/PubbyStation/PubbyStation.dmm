@@ -44598,7 +44598,7 @@
 "tVc" = (
 /obj/effect/landmark/start/prisoner,
 /obj/structure/bed,
-/obj/item/toy/plush/ducky,
+/obj/item/toy/plush/russstation/ducky,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/station/security/prison)
