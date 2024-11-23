@@ -499,9 +499,25 @@
 		"wiz",
 		"wizard",
 		"zombie"
+	],
+
+	"plushies": [
+		"plush",
+		"plushie",
+		"plushies",
+		"plushes",
+		"cuddly",
+		"stuffed",
+		"fuzzy",
+		"soft",
+		"teddy bear",
+		"snuggly",
+		"huggable",
+		"fluff",
+		"squishy",
+		"fabric",
+		"cuddle buddy",
+		"embroidered",
+		"stuffing"
 	]
-
-
-
-
 }

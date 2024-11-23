@@ -25,6 +25,7 @@ GLOBAL_LIST_INIT(phobia_types, sort_list(list(
 	"spiders",
 	"strangers",
 	"the supernatural",
+	"plushies", // honk -- plushies can be terrifying too
 )))
 
 GLOBAL_LIST_INIT(phobia_regexes, list(
@@ -52,6 +53,7 @@ GLOBAL_LIST_INIT(phobia_regexes, list(
 	"spiders" = construct_phobia_regex("spiders"),
 	"strangers" = construct_phobia_regex("strangers"),
 	"the supernatural" = construct_phobia_regex("the supernatural"),
+	"plushies" = construct_phobia_regex("plushies"), // honk -- TODO
 ))
 
 GLOBAL_LIST_INIT(phobia_mobs, list(
@@ -533,6 +535,9 @@ GLOBAL_LIST_INIT(phobia_objs, list(
 		/obj/structure/destructible/cult,
 		/obj/structure/destructible/eldritch_crucible,
 		/obj/structure/spirit_board,
+	)),
+	"plushies" = typecacheof(list( // honk -- TODO
+		/obj/item/toy/plush
 	)),
 ))
 
