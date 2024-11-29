@@ -2,3 +2,6 @@
 /config/dbconfig.txt
 /config/in_character_filter.txt
 /config/comms.txt
+
+# upstream github workflows (until we integrate them)
+/.github/workflows/*
